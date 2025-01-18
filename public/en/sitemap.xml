@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/work/</loc>
-    <lastmod>2025-01-18T14:52:43+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/lavora-con-me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/work/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/categories/</loc>
-    <lastmod>2025-01-18T08:41:33+01:00</lastmod>
+    <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
@@ -29,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/en/categories/page/</loc>
-    <lastmod>2025-01-18T08:41:33+01:00</lastmod>
+    <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
@@ -39,6 +26,32 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/en/categories/page/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/work/</loc>
+    <lastmod>2025-01-18T14:52:50+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/categories/work/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/categories/work/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/work/</loc>
+    <lastmod>2025-01-18T14:52:50+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/lavora-con-me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/work/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/tags/scalability/</loc>
@@ -78,19 +91,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/en/business-scalability-engineer/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/categories/work/</loc>
-    <lastmod>2025-01-18T08:41:33+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/categories/work/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/categories/work/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/categories/about/</loc>
