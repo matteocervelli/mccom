@@ -95,7 +95,7 @@ Che tu sia interessato a un corso accademico, una testimonianza della mia esperi
 
 Insieme alla formazione, possiamo attivare percorsi di supporto e coaching.
 
-<a href="#book-now" class="mc-button">
+<a href="#prenota-ora" class="f3 link dim br2 ph4 pv3 mb2 dib white bg-mc-purple" style="display: block; max-width: 500px; text-align: center; margin: 0 auto; font-family: 'Raleway Bold', sans-serif; color: #ffffff !important;">
     Prenota ora una sessione gratuita
     <br>
     per parlarmi della tua idea
