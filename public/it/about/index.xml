@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Matteo Cervelli</title>
+    <link>http://localhost:1313/it/about/</link>
+    <description>Recent content in Abouts on Matteo Cervelli</description>
+    <generator>Hugo</generator>
+    <language>it-IT</language>
+    <lastBuildDate>Thu, 16 Jan 2025 17:26:30 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/it/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Su di me</title>
+      <link>http://localhost:1313/it/about/about/</link>
+      <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
+      <guid>http://localhost:1313/it/about/about/</guid>
+      <description>&lt;h2 id=&#34;in-breve&#34;&gt;In breve&lt;/h2&gt;&#xA;&lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;http://localhost:1313/work/business-scalability-engineer&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;http://localhost:1313/it/work/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Oggi aiuto imprenditori e leader a crescere il proprio business, nella strategia, gestione, vendite, implementando i principi della scalabilità.&lt;/p&gt;&#xA;&lt;p&gt;Il mio scopo è innescare le persone a costruire un mondo più bello, insieme.&lt;/p&gt;&#xA;&lt;p&gt;Sono un padre di 3 bambine piccole, Emma, Maria ed Emma, e di due cani: Maple e Cookie. Prima ancora, sono un marito: con Sara ci conosciamo dal 2005 e in questi 20 anni ci siamo amati e siamo sempre stati l&amp;rsquo;uno per l&amp;rsquo;altra, uno, due e infinito.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

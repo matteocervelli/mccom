@@ -1,0 +1,215 @@
+/* Put your custom styles here and run `npm start` from the "src" directory on */
+
+#TableOfContents ul li {
+  margin-bottom: 1em;
+}
+
+.lh-copy blockquote {
+  display: block;
+  font-size: .875em;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+
+}
+
+.nested-links a{
+  overflow-wrap: break-word;
+}
+
+body h2, h3 {
+  margin-top: 2rem !important;
+  padding-top: 2rem !important;
+}
+
+h2, h3 {
+  margin-top: 2rem !important;
+  padding-top: 2rem !important;
+}
+
+h4 {
+  margin-top: 1rem !important;
+  padding-top: 2rem !important;
+}
+
+/* Importazione dei font da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap');
+
+/* Definizione dei colori base */
+:root {
+--mc-purple: #A700BF;      /* Il tuo viola */
+--mc-black: #303030;       /* Nero */
+--mc-orange: #FF7E00;       /* Arancione */
+--mc-white: #FFFFFF;       /* Bianco */
+--mc-peach: #FFE8D1;       /* Il colore pesca del background */
+
+/* Varianti di opacità se necessarie */
+--mc-purple-90: rgba(156, 39, 176, 0.9);
+--mc-purple-70: rgba(156, 39, 176, 0.7);
+--mc-black-60: rgba(0, 0, 0, 0.6);
+}
+
+/* Classi di utilità per background */
+.bg-mc-purple { background-color: var(--mc-purple); }
+.bg-mc-orange { background-color: var(--mc-orange); }
+.bg-mc-black { background-color: var(--mc-black); }
+.bg-mc-peach { background-color: var(--mc-peach); }
+.bg-mc-white { background-color: var(--mc-white); }
+
+/* Classi di utilità per testo */
+.text-mc-purple { color: var(--mc-purple); }
+.text-mc-black { color: var(--mc-black); }
+.text-mc-white { color: var(--mc-white); }
+.text-mc-orange { color: var(--mc-orange); }
+
+/* Classi per hover se necessarie */
+.hover-mc-purple:hover { color: var(--mc-purple); }
+.hover-bg-mc-purple:hover { background-color: var(--mc-purple); }
+.hover-mc-orange:hover { color: var(--mc-orange); }
+.hover-bg-mc-orange:hover { background-color: var(--mc-orange); }
+
+/* Classi di utilità per bordi */
+.b--mc-purple { border-color: var(--mc-purple); }
+.b--mc-orange { border-color: var(--mc-orange); }
+.b--mc-black { border-color: var(--mc-black); }
+.b--mc-peach { border-color: var(--mc-peach); }
+.b--mc-white { border-color: var(--mc-white); }
+
+/* Colore di sfondo del body e della barra di navigazione */
+.bg-black-90 {
+    background-color: var(--mc-peach) !important;
+}
+
+/* Colore di sfondo del body */
+body, .bg-near-white {
+    background-color: var(--mc-peach) !important;
+}
+
+body {
+  color: var(--mc-black) !important;
+}
+
+/* Assicurati che tutti gli elementi di testo ereditino il colore corretto */
+p, li, .content-copy, article, .content, .post, 
+.nested-copy-line-height p, .nested-copy-line-height li,
+.f6, .measure, label, input, textarea, select, 
+.nested-links, .nav-links, .ananke-socials {
+  color: var(--mc-black) !important;
+}
+
+/* Mantieni le eccezioni per elementi specifici che devono avere colori diversi */
+a, .nested-links a, .link {
+  color: var(--mc-purple) !important;
+}
+
+.white, .hover-white:hover {
+  color: var(--mc-white) !important;
+}
+
+
+/* Reset colore headings a nero e imposta font */
+h2, h3, h4, h5, h6 {
+    color: var(--mc-black) !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+body, article, .content, .post, p {
+    text-align: left !important;
+}
+
+/* Stile specifico per h1 (titolo) */
+h1.f1, h1.primary-color-dark {
+    color: var(--mc-purple) !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+/* Stile per tutti i link */
+a, .nested-links a, .link {
+    color: var(--mc-purple) !important;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Stile per i link hover */
+a:hover, .nested-links a:hover, .link:hover {
+    color: var(--mc-purple) !important;
+}
+
+/* Font del corpo del testo */
+body, .nested-copy-line-height p, .nested-copy-line-height li {
+    font-family: 'Lora', serif !important;
+}
+
+/* Stile per il menu di navigazione */
+.ananke-socials a, .nav-links a, .f6 {
+    font-family: 'Lora', serif !important;
+}
+
+/* Assicurati che il colore di sfondo sia applicato ovunque */
+.bg-white, article, .content, main, .page-header {
+    background-color: var(--mc-peach) !important;
+}
+
+/* Forza il colore del testo normale */
+p, li, .content-copy {
+    color: var(--mc-black) !important;
+    font-family: 'Lora', serif !important;
+}
+
+/* Larghezza default */
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 54em;
+    width: min(54em, 100%);
+    padding: 0 1rem;
+  }
+  
+  @media (max-width: 860px) {
+    .content-wrapper {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 1rem;
+      margin: 0 auto;
+    }
+  }
+
+  .footer {
+    /* Larghezza massima e wrapping del testo */
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    /* Font size responsive */
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+/* Stile comune per i pulsanti principali del sito */
+.mc-button {
+  display: block;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Raleway Bold', sans-serif;
+  color: #ffffff !important;
+  background-color: var(--mc-purple);
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.mc-button:hover,
+.mc-button:focus,
+.mc-button:active,
+.mc-button:visited,
+a.mc-button:hover,
+a.mc-button:focus,
+a.mc-button:active,
+a.mc-button:visited {
+    text-decoration: underline;
+    opacity: 0.9;
+    transform: translateY(-1px);
+    color: #ffffff !important;
+}
