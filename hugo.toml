@@ -1,4 +1,4 @@
-baseURL = "https://matteocervelli.com"
+baseURL = "https://matteocervelli.netlify.app"
 languageCode = "en-us"
 title = "Matteo Cervelli"
 theme = "ananke"

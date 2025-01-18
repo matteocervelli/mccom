@@ -1,0 +1,17 @@
+{{ if .hugo.IsMultiLingual }}
+<nav aria-label="Language switcher">
+  <ul>
+    {{ range .Site.Languages }}
+    {{ if eq . $.Site.Language }}
+    <li><span aria-label="{{ i18n "ariaLanguage" }}{{ .LanguageName }}">{{ .LanguageName }}</span>
+      {{ end }}
+      {{ end }}
+      <ul aria-labelledby="dropdown-title">
+        {{ range $.Translations }}
+        <li><a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" aria-label="{{ i18n "ariaTranslation" }}{{ .Language.LanguageName }}">{{ .Language.LanguageName }}</a></li>
+      </ul>
+        {{ end }}
+    </li>
+  </ul>
+</nav>
+{{ end }}
