@@ -1,10 +1,18 @@
-{{ if hugo.IsMultilingual }}
-<h4>{{ i18n "translations" }}</h4>
-<ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
-    {{ range .Translations }}
-    <li class="list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-        <a class="hover-white no-underline white-90" href="{{ .RelPermalink }}">{{ .Lang }}</a>
+<ul class="language-list flex items-center m0 p0 list-none">
+    <!-- Lingua corrente -->
+    <li class="language-item mr2">
+      <span class="current-lang">
+        <i class="fi fi-{{ if eq .Language.Lang "en" }}gb{{ else }}{{ .Language.Lang }}{{ end }}"></i>
+        <span class="lang-name">{{ if eq .Language.Lang "en" }}EN{{ else }}{{ upper .Language.Lang }}{{ end }}</span>
+      </span>
     </li>
-    {{ end}}
-</ul>
-{{ end }}
+    <!-- Altre lingue -->
+    {{ range .Translations }}
+    <li class="language-item mr2">
+      <a href="{{ .RelPermalink }}" class="lang-link" title="{{ .Language.LanguageName }}">
+        <i class="fi fi-{{ if eq .Language.Lang "en" }}gb{{ else }}{{ .Language.Lang }}{{ end }}"></i>
+        <span class="lang-code">{{ if eq .Language.Lang "en" }}EN{{ else }}{{ upper .Language.Lang }}{{ end }}</span>
+      </a>
+    </li>
+    {{ end }}
+  </ul>

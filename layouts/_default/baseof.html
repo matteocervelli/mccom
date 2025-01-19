@@ -31,6 +31,7 @@
     {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
     {{ end }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
 
     {{ if .OutputFormats.Get "RSS" }}
     {{ with .OutputFormats.Get "RSS" }}
@@ -57,9 +58,9 @@
   </head>
 
   {{- $environment := hugo.Environment | default "production" -}}
-  <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}} {{ $environment }}">
+  <body class="{{ $.Param "body_classes"  | default "Lora mc--peach"}} {{ $environment }}">
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-    <main style="margin: 0 auto; max-width: 54em; width: 54em;" class="pb7" role="main">
+    <main style="margin: 0 auto; max-width: 54em;" class="pb3" role="main">
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}

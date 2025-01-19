@@ -33,7 +33,7 @@ Faccio il consulente, l'advisor e il formatore, oltre ad investire personalmente
 - Un'impresa che evolve è basata su pochi **esperimenti**, ma di grande potenzialità. E allo stesso tempo, tanti stimoli diversificati di mastodontiche opportunità che crogiolano in silenzio.
 
 
-<a href="#book-now" class="mc-button">
+<a href="#prenota-ora" class="mc-button">
     Prenota ora una sessione gratuita
     <br>
     per parlarmi della tua idea
@@ -95,7 +95,7 @@ Che tu sia interessato a un corso accademico, una testimonianza della mia esperi
 
 Insieme alla formazione, possiamo attivare percorsi di supporto e coaching.
 
-<a href="#prenota-ora" class="f3 link dim br2 ph4 pv3 mb2 dib white bg-mc-purple" style="display: block; max-width: 500px; text-align: center; margin: 0 auto; font-family: 'Raleway Bold', sans-serif; color: #ffffff !important;">
+<a href="#prenota-ora" class="mc-button">
     Prenota ora una sessione gratuita
     <br>
     per parlarmi della tua idea

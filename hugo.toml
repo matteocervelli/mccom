@@ -1,5 +1,5 @@
 baseURL = "https://matteocervelli.netlify.app"
-languageCode = "en-us"
+languageCode = "en"
 title = "Matteo Cervelli"
 theme = "ananke"
 defaultContentLanguage = "en"
@@ -60,7 +60,8 @@ defaultContentLanguageInSubdir = true
                     url = "/it/ora/"
                     weight = 4
 [params]
-    custom_css = ["/css/_styles.css"]
+    custom_css = ["css/styles.css"]
+    author = "Matteo Cervelli"
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
