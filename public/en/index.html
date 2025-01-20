@@ -24,7 +24,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.bdb26c12d9668623b6a40051a4b616934185f48e54983f27a1963d158b4d098f.css" integrity="sha256-vbJsEtlmhiO2pABRpLYWk0GF9I5UmD8noZY9FYtNCY8=">
+  <link rel="stylesheet" href="/css/styles.min.670f63d856ef42ab7e137440fb847bbc07dc0bf091f80c2e2b237cf7af2b1a60.css" integrity="sha256-Zw9j2FbvQqt&#43;E3RA&#43;4R7vAfcC/CR&#43;AwuKyN8968rGmA=">
 
     
 
@@ -62,7 +62,12 @@
   <meta name="twitter:description" content="Ideas, essays, and projects, from Matteo Cervelli">
 
 	
-  </head><body class="Lora mc--peach development">
+  </head><body class="">
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.querySelector('body').classList.add('theme-dark')
+      }
+    </script>
     <header>
     <nav class="flex align-center font-ui flex-wrap" role="navigation">
   
@@ -88,14 +93,18 @@
           
         </ul>
       </span>
-      <span id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" role="switch" aria-checked="false">
+      <span id="theme-toggle" 
+            title="Toggle dark mode" 
+            aria-label="Toggle dark mode" 
+            role="switch" 
+            aria-checked="false">
         <div class="theme-toggle-slide"></div>
         <div class="theme-toggle-switch"></div>
-      </span>
+    </span>
    </span>
   </span>
 </nav>
-  </header>
+</header>
     <main style="margin: 0 auto; max-width: 54em;" class="pb3" role="main">
       
   <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray" style="margin: 0 auto; max-width: 54em; width: 54em;">
@@ -257,6 +266,41 @@
       </div>
     </div>
 </footer>
-    <script src="/assets/js/theme-light-dark.js"></script>
+    <script>
+      
+      var darkModeToggle = document.querySelector("#theme-toggle");
+
+      function toggleTheme() {
+        document.body.classList.toggle("theme-dark");
+        updateThemeState();
+      }
+
+      function updateThemeState() {
+        let isDarkMode = document.body.classList.contains("theme-dark");
+        let theme = isDarkMode ? "dark" : "light";
+        localStorage.setItem("theme", theme);
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+
+      function initializeTheme() {
+        let isDarkMode = document.body.classList.contains("theme-dark");
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+
+      darkModeToggle.addEventListener("click", toggleTheme);
+
+      window.addEventListener('keydown', function(e) {
+          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+            return;
+          }
+          if ((e.key === 'd' || e.key === 'D') && !e.ctrlKey && !e.metaKey) {
+            toggleTheme();
+          }
+      });
+
+      initializeTheme();
+    
+    </script>
+
   </body>
 </html>

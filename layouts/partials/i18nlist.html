@@ -3,7 +3,7 @@
     <li class="language-item mr2">
       <span>
         <i class="fi fi-{{ if eq .Language.Lang "en" }}gb{{ else }}{{ .Language.Lang }}{{ end }}"></i>
-        <span class="current-lang">{{ if eq .Language.Lang "en" }}EN{{ else }}{{ upper .Language.Lang }}{{ end }}</span>
+        <span>{{ if eq .Language.Lang "en" }}EN{{ else }}{{ upper .Language.Lang }}{{ end }}</span>
       </span>
     </li>
     <!-- Altre lingue -->

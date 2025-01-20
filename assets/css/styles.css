@@ -23,8 +23,8 @@ html {
   --mc-black-rgb: 48,48,48;
   --mc-black-light: #4d4d4d;
   --mc-black-light-rgb: 77,77,77;
-  --mc-black-dark: #1a1a1a;
-  --mc-black-dark-rgb: 26,26,26;
+  --mc-black-dark: #0f0f0f;
+  --mc-black-dark-rgb: 15,15,15;
   --mc-orange: #FF7E00;
   --mc-orange-rgb: 255,126,0;
   --mc-orange-light: #ff9e4d;
@@ -59,7 +59,7 @@ html {
   --mc-black-60: rgba(0, 0, 0, 0.6);
 }
 
-:root {
+:root,.theme-light {
   --color-bg-primary: var(--mc-peach-light);
   --color-bg-primary-rgb: var(--mc-peach-light-rgb);
   --color-inverted-rgb: var(--mc-black-rgb);
@@ -85,6 +85,8 @@ html {
   --color-highlight-faint: var(--mc-purple-light);
   --color-link: var(--mc-peach);
   --color-selection: var(--mc-purple-light);
+  --color-bg-secondary: var(--mc-black-dark);
+  --color-action: var(--mc-purple-light);
 }
 
 ::selection {
@@ -373,7 +375,9 @@ a.plain,a.muted {
 .nav-links {
   color: var(--color-highlight);
   font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
   white-space: nowrap;
+  align-items: center;
 }
 
 /* Navigazione */
@@ -390,18 +394,25 @@ a.plain,a.muted {
   nav > div:last-child {
     width: 100%;
     justify-content: flex-end;
+    white-space: nowrap;
     gap: 1rem;
   }
 }
 
 .language-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 /* Lingue */
 .fi {
   margin-right: 0.3em;
-  font-size: 1.2em;
+  font-size: 2 rem;
+  line-height: 1; /* Impedisce lo spostamento verticale dell'icona */
+  vertical-align: middle;
 }
 
 .current-lang {
@@ -414,8 +425,10 @@ a.plain,a.muted {
 
 .i18n-link {
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .i18n-link span.lang-link {
@@ -435,6 +448,7 @@ nav {
   display: flex;
   align-items: center;  /* Aggiunto */
   justify-content: space-between;  /* Aggiunto */
+  gap: 1rem;
 }
 
 nav > div {
@@ -446,6 +460,7 @@ nav > div {
 }
 
 .logo {
+  font-size: 2rem;
   white-space: nowrap; /* Impedisce l'andare a capo del logo */
   display: inline-flex;
   align-items: center;
@@ -517,7 +532,7 @@ nav > div {
 
 .theme-toggle-switch {
   position: absolute;
-  z-index: 9;
+  z-index: 2;
   top: 1px;
   left: 1px;
   right: auto;
@@ -537,7 +552,7 @@ nav > div {
 }
 
 .theme-dark .theme-toggle-switch {
-  left: 16px;
+  left: 17px;
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24' %3E%3Cpath d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24' %3E%3Cpath d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z' /%3E%3C/svg%3E");
 }
@@ -595,22 +610,14 @@ nav > div {
   color: inherit;
 }
 
-/* Dimensione bandiere */
-.fi {
-  font-size: 1.5rem;  /* o puoi usare un valore specifico come 16px */
-}
-
 .dropdown-menu li {
   list-style-type: none;
 }
 
-/* Assicuriamoci che tutti gli elementi nella nav siano allineati */
+nav, 
 .nav-links,
-.logo,
 .language-list,
-#theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
+.i18n-link,
+.logo {
+  line-height: 1; /* Forza un line-height uniforme per tutti gli elementi di navigazione */
 }
-
