@@ -1,0 +1,70 @@
+[more]
+other = "Altro"
+
+[and]
+other = "e"
+
+[other]
+other = "altro"
+
+[allTitle]
+other = "Tutti {{.Title }}"
+
+[recentTitle]
+other = "Recenti {{.Title }}"
+
+[readMore]
+other = "leggi di più"
+
+[by]
+other = "Da"
+
+[whatsInThis]
+other = "Cosa c'è in {{ .Type }}"
+
+[related]
+other = "Correlati"
+
+[yourName]
+other = "Il tuo nome"
+
+[emailAddress]
+other = "Indirizzo email"
+
+[message]
+other = "Messaggio"
+
+[emailRequiredNote]
+other = "Indirizzo email obbligatorio."
+
+[send]
+other = "Invia"
+
+[taxonomyPageList]
+other = "Di seguito troverai le pagine che utilizzano il termine “{{ .Title }}”"
+
+[pageTitle]
+other = "{{ .Name }} pagina"
+
+# Nuove traduzioni per il footer
+[lets_stay_in_touch]
+other = "Restiamo in contatto via"
+
+[email_placeholder]
+other = "La tua email"
+
+[sign_up]
+other = "Registrati"
+
+[built_with]
+other = "Creato con"
+
+# Configurazione form newsletter
+[newsletter_form_action]
+other = "https://app.kit.com/forms/7578384/subscriptions"
+
+[newsletter_form_id]
+other = "7578384"
+
+[newsletter_form_uid]
+other = "b47db62f73"

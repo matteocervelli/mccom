@@ -1,37 +1,52 @@
-<nav class="flex items-center justify-between w-100 font-ui flex-wrap" role="navigation">
+<nav class="flex align-center font-ui flex-wrap" role="navigation">
   <!-- Logo e sezione a sinistra -->
-  <div class="flex items-center">
-    <a class="internal-link plain" href="{{ .Site.Home.RelPermalink }}">
-      <span class="logo">{{ .Site.Title }}</span>
-    </a>
+  <span class="flex-grow">
+    <a class="internal-link plain logo" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
     {{- if .Section -}}
       <span class="faint nav-links">/</span> 
-      <a href="{{ .Section | relLangURL }}" class="muted plain">{{ .Section | humanize }}</a>
+      <a href="{{ .Section | relLangURL }}" class="nav-links muted plain">{{ .Section | humanize }}</a>
     {{- end -}}
-  </div>
+  </span>
 
   <!-- Menu e lingua a destra -->
-  <div class="flex items-center justify-end">
-    <!-- Selettore lingua -->
-    {{- if .IsTranslated -}}
-      <div class="language-selector mr3">
-        {{ partial "i18nlist.html" . }}
-      </div>
-    {{- end -}}
+  <span class="flex-shrink ml1 flex align-center">
 
     <!-- Menu principale -->
     {{- if .Site.Menus.main -}}
-      <div class="menu-items">
-        {{- range .Site.Menus.main -}}
-          <a href="{{ .URL }}" class="muted plain mr3">{{ .Name }}</a>
+    <span class="flex flex-wrap mr2">
+      {{- range .Site.Menus.main -}}
+          <a href="{{ .URL }}" class="plain mr2 nav-links">{{ .Name }}</a>
         {{- end -}}
-      </div>
+    </span>
     {{- end -}}
 
-    <!-- Theme toggle -->
-    <span id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" role="switch" aria-checked="false">
-      <div class="theme-toggle-slide"></div>
-      <div class="theme-toggle-switch"></div>
-    </span>
-  </div>
+    <!-- Contenitore per elementi fissi -->
+    <span class="flex align-center">
+      <!-- Selettore lingua -->
+      {{- if .IsTranslated -}}
+      <span class="dropdown mr2">
+        <a data-mdb-dropdown-init class="dropdown-toggle" href="#" id="languageDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          <i class="fi fi-{{ if eq .Language.LanguageName "Italian" }}it{{ else if eq .Language.LanguageName "English" }}gb{{ end }} me-2"></i>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+          {{ range .Translations }}
+            <li>
+              <a class="dropdown-item" href="{{ .Permalink }}">
+                <i class="fi fi-{{ if eq .Language.LanguageName "Italian" }}it{{ else if eq .Language.LanguageName "English" }}gb{{ end }} me-2"></i>
+                {{- if eq . $ }}<i class="fa fa-check text-success ms-2"></i>{{- end -}}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </span>
+      {{- end -}}
+
+      <!-- Theme toggle -->
+      <span id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" role="switch" aria-checked="false">
+        <div class="theme-toggle-slide"></div>
+        <div class="theme-toggle-switch"></div>
+      </span>
+   </span>
+  </span>
 </nav>

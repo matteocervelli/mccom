@@ -1,17 +1,17 @@
-<ul class="language-list flex items-center m0 p0 list-none">
+<ul class="language-list flex m0 p0">
     <!-- Lingua corrente -->
     <li class="language-item mr2">
-      <span class="current-lang">
+      <span>
         <i class="fi fi-{{ if eq .Language.Lang "en" }}gb{{ else }}{{ .Language.Lang }}{{ end }}"></i>
-        <span class="lang-name">{{ if eq .Language.Lang "en" }}EN{{ else }}{{ upper .Language.Lang }}{{ end }}</span>
+        <span class="current-lang">{{ if eq .Language.Lang "en" }}EN{{ else }}{{ upper .Language.Lang }}{{ end }}</span>
       </span>
     </li>
     <!-- Altre lingue -->
     {{ range .Translations }}
-    <li class="language-item mr2">
-      <a href="{{ .RelPermalink }}" class="lang-link" title="{{ .Language.LanguageName }}">
+    <li class="mr2">
+      <a class="i18n-link" href="{{ .RelPermalink }}" title="{{ .Language.LanguageName }}">
         <i class="fi fi-{{ if eq .Language.Lang "en" }}gb{{ else }}{{ .Language.Lang }}{{ end }}"></i>
-        <span class="lang-code">{{ if eq .Language.Lang "en" }}EN{{ else }}{{ upper .Language.Lang }}{{ end }}</span>
+        <span class="lang-link">{{ if eq .Language.Lang "en" }}EN{{ else }}{{ upper .Language.Lang }}{{ end }}</span>
       </a>
     </li>
     {{ end }}

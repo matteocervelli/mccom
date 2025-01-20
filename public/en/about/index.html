@@ -28,7 +28,7 @@ I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs:
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.221300e3250b7d425e1ae37c7e59485cd15454f2f1da28d45cfa6d30dc56393b.css" integrity="sha256-IhMA4yULfUJeGuN8fllIXNFUVPLx2ijUXPptMNxWOTs=">
+  <link rel="stylesheet" href="/css/styles.min.bdb26c12d9668623b6a40051a4b616934185f48e54983f27a1963d158b4d098f.css" integrity="sha256-vbJsEtlmhiO2pABRpLYWk0GF9I5UmD8noZY9FYtNCY8=">
 
     
 
@@ -77,40 +77,36 @@ I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs:
     
    
   <header>
-    <nav class="flex items-center justify-between w-100 font-ui flex-wrap" role="navigation">
+    <nav class="flex align-center font-ui flex-wrap" role="navigation">
   
-  <div class="flex items-center">
-    <a class="internal-link plain" href="/en/">
-      <span class="logo">Matteo Cervelli</span>
-    </a></div>
+  <span class="flex-grow">
+    <a class="internal-link plain logo" href="/en/">Matteo Cervelli</a></span>
 
   
-  <div class="flex items-center justify-end">
-    <div class="language-selector mr3">
-        <ul class="language-list flex items-center m0 p0 list-none">
-    
-    <li class="language-item mr2">
-      <span class="current-lang">
-        <i class="fi fi-gb"></i>
-        <span class="lang-name">EN</span>
+  <span class="flex-shrink ml1 flex align-center">
+
+    <span class="flex flex-wrap mr2"><a href="/en/about/" class="plain mr2 nav-links">About</a><a href="/en/posts/" class="plain mr2 nav-links">Posts</a><a href="/en/work/" class="plain mr2 nav-links">Work</a><a href="/en/now/" class="plain mr2 nav-links">Now</a></span>
+    <span class="flex align-center">
+      <span class="dropdown mr2">
+        <a data-mdb-dropdown-init class="dropdown-toggle" href="#" id="languageDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          <i class="fi fi-gb me-2"></i>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+          
+            <li>
+              <a class="dropdown-item" href="http://localhost:1313/it/about/">
+                <i class="fi fi-it me-2"></i></a>
+            </li>
+          
+        </ul>
       </span>
-    </li>
-    
-    
-    <li class="language-item mr2">
-      <a href="/it/about/" class="lang-link" title="Italian">
-        <i class="fi fi-it"></i>
-        <span class="lang-code">IT</span>
-      </a>
-    </li>
-    
-  </ul>
-      </div><div class="menu-items"><a href="/en/about/" class="muted plain mr3">About</a><a href="/en/posts/" class="muted plain mr3">Posts</a><a href="/en/work/" class="muted plain mr3">Work</a><a href="/en/now/" class="muted plain mr3">Now</a></div>
-    <span id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" role="switch" aria-checked="false">
-      <div class="theme-toggle-slide"></div>
-      <div class="theme-toggle-switch"></div>
-    </span>
-  </div>
+      <span id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" role="switch" aria-checked="false">
+        <div class="theme-toggle-slide"></div>
+        <div class="theme-toggle-switch"></div>
+      </span>
+   </span>
+  </span>
 </nav>
   </header>
 
@@ -123,7 +119,7 @@ I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs:
           About Me
         </h1>
       </header>
-      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray"><h2 id="in-short">In short</h2>
+      <div class="nested-copy-line-height lh-copy 4vw nested-links mid-gray"><h2 id="in-short">In short</h2>
 <p>I&rsquo;m Matteo Cervelli. I am <a href="/work/business-scalability-engineer">Business Scalability Engineer</a>. I act as a <a href="/en/work/">Consultant and Advisor</a>. Previously I managed <a href="https://www.urania.group">Urania Group</a> as Co-CEO.</p>
 <p>Today I help entrepreneurs and leaders to grow their business, in strategy, management, sales, implementing the principles of scalability.</p>
 <p>My purpose is to trigger people to build a more beautiful world, together.</p>
@@ -177,55 +173,66 @@ I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs:
   </div>
 
     </main>
-    <footer class="bg-mc-peach bottom-0 w-100" role="contentinfo">
-    <div style="margin: 0 auto; max-width: 54em; width: 54em; padding: 1rem;">
+    <footer role="contentinfo" aria-label="Site footer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.js"></script>
+    
+    <script src="/js/dropdown.js"></script>
+    <div>
       
-      <div class="bt b--mc-purple"></div>
+      <div class="bt b--mc-purple" aria-hidden="true"></div>
       
       
-      <div class="f5 fw4 text-mc-purple pb2">
-        <h4>Let's stay in touch via
-          <a href="mailto:info@matteocervelli.com" class="link text-mc-black hover-mc-purple">email</a>,
-          <a href="https://matteocervelli.com/it/feed" class="link text-mc-black hover-mc-purple">RSS</a>,
-          <a href="https://www.linkedin.com/in/matteocervelli/" class="link white-70 hover-mc-purple">LinkedIn</a>,
-          <a href="https://x.com/matteocervelli" class="link white-70 hover-mc-purple">X/Twitter</a> and
-          <a href="/subscribe" class="link white-70 hover-mc-purple">other options</a>.
-        </h4>
+      <div>
+        <p>Let&#39;s stay in touch via 
+          <a href="mailto:info@matteocervelli.com" aria-label="Contact via email">email</a>,
+          <a href="https://matteocervelli.com/it/feed" aria-label="Subscribe to RSS feed">RSS</a>,
+          <a href="https://www.linkedin.com/in/matteocervelli/" aria-label="Connect on LinkedIn">LinkedIn</a>,
+          <a href="https://x.com/matteocervelli" aria-label="Follow on X/Twitter">X/Twitter</a> and
+          <a href="/subscribe" aria-label="View other contact options">other options</a>.
+        </p>
       </div>
   
       
-      <div class="pv2" style="max-width: 24em; margin-right: auto;">
+      <div style="max-width: 24em; margin: 3em auto 3em 0;">
         <form id="newsletter-form" 
-              class="flex flex-wrap items-center bb b--mc-purple" 
-              mb6 
-              action="https://app.kit.com/forms/7578059/subscriptions" 
-              method="post"
-              data-sv-form="7578059" 
-              data-uid="455bee90fa">
+          class="newsletter-form"
+          action="https://app.kit.com/forms/7578059/subscriptions"
+          method="post"
+          data-sv-form="7578059"
+          data-uid="455bee90fa"
+          aria-label="Newsletter subscription form">
           <input type="email" 
-                 name="email_address"
-                 placeholder="Email Address" 
-                 class="f5 input-reset bn fl text-mc-black bg-transparent pa2 lh-solid w-70 bb b--mc-purple"
-                 style="outline: none;"
-                 required>
+                name="email_address"
+                placeholder="Email Address"
+                class="newsletter-form__input"
+                aria-label="Enter your email address"
+                required>
           <button type="submit"
-                  class="f5 button-reset fl pa2 tc bn white pointer w-30 bg-mc-purple hover-opacity-90">
-            Subscribe
+                  class="newsletter-form__button"
+                  aria-label="Subscribe to newsletter">
+            Sign up
           </button>
         </form>
       </div>
-
+  
       
-      <div class="pb f5 text-mc-black">
+      <div class="pb f3 text-mc-black">
         
           Matteo Cervelli &copy; 2025
          
-        — Built with 
-        <a href="https://gohugo.io" class="link text-mc-black hover-mc-purple">Hugo</a>,
-        <a href="https://netlify.com" class="link text-mc-black hover-mc-purple">Netlify</a> and
-        <a href="/en/tech-stack" class="link text-mc-black hover-mc-purple">other</a>.
+        — Built with
+        <a href="https://gohugo.io" 
+           class="link text-mc-black hover-mc-purple"
+           aria-label="Built with Hugo">Hugo</a>,
+        <a href="https://netlify.com" 
+           class="link text-mc-black hover-mc-purple"
+           aria-label="Hosted on Netlify">Netlify</a> and
+        <a href="/en/tech-stack" 
+           class="link text-mc-black hover-mc-purple"
+           aria-label="View tech stack details">other</a>.
       </div>
     </div>
-  </footer>
+</footer>
+    <script src="/assets/js/theme-light-dark.js"></script>
   </body>
 </html>

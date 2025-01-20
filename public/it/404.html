@@ -24,7 +24,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.709840e8e05c16b9c34b51f4261850577737c8929a4c716e66c241d473ebf21f.css" integrity="sha256-cJhA6OBcFrnDS1H0JhhQV3c3yJKaTHFuZsJB1HPr8h8=">
+  <link rel="stylesheet" href="/css/styles.min.bdb26c12d9668623b6a40051a4b616934185f48e54983f27a1963d158b4d098f.css" integrity="sha256-vbJsEtlmhiO2pABRpLYWk0GF9I5UmD8noZY9FYtNCY8=">
 
     
 
@@ -32,6 +32,7 @@
       
 
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
 
     
 
@@ -54,63 +55,38 @@
     
 
   <header>
-    <div style="margin: 0 auto; max-width: 54em; width: 54em;">
-      <div class="bg-mc-peach">
-        <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/it/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        Matteo Cervelli
-      
-    </a>
-    <div class="flex-l items-center">
-      
-<h4></h4>
-<ul class="pl0 mr3">
-    
-    <li class="list f5 f4-ns fw4 dib pr3">
-        <a class="hover-white no-underline white-90" href="/en/404.html">en</a>
-    </li>
-    
-</ul>
+    <div class="bg-black">
+      <nav class="flex align-center font-ui flex-wrap" role="navigation">
+  
+  <span class="flex-grow">
+    <a class="internal-link plain logo" href="/it/">Matteo Cervelli</a></span>
 
+  
+  <span class="flex-shrink ml1 flex align-center">
 
-      
-        <ul class="pl0 mr3">
+    <span class="flex flex-wrap mr2"><a href="/it/about/" class="plain mr2 nav-links">Su di me</a><a href="/it/posts/" class="plain mr2 nav-links">Articoli</a><a href="/it/lavora-con-me/" class="plain mr2 nav-links">Lavoro</a><a href="/it/ora/" class="plain mr2 nav-links">Ora</a></span>
+    <span class="flex align-center">
+      <span class="dropdown mr2">
+        <a data-mdb-dropdown-init class="dropdown-toggle" href="#" id="languageDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          <i class="fi fi-it me-2"></i>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
           
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/it/about/" title="Su di me pagina">
-              Su di me
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/it/posts/" title="Articoli pagina">
-              Articoli
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/it/lavora-con-me/" title="Lavoro pagina">
-              Lavoro
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/it/ora/" title="Ora pagina">
-              Ora
-            </a>
-          </li>
+            <li>
+              <a class="dropdown-item" href="http://localhost:1313/en/404.html">
+                <i class="fi fi-gb me-2"></i></a>
+            </li>
           
         </ul>
-      
-      <div class="ananke-socials"></div>
-
-    </div>
-  </div>
+      </span>
+      <span id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" role="switch" aria-checked="false">
+        <div class="theme-toggle-slide"></div>
+        <div class="theme-toggle-switch"></div>
+      </span>
+   </span>
+  </span>
 </nav>
-
-      </div>
     </div>
   </header>
 
@@ -124,55 +100,66 @@
     </article>
 
     </main>
-    <footer class="bg-mc-peach bottom-0 w-100" role="contentinfo">
-    <div style="margin: 0 auto; max-width: 54em; width: 54em; padding: 1rem;">
+    <footer role="contentinfo" aria-label="Site footer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.js"></script>
+    
+    <script src="/js/dropdown.js"></script>
+    <div>
       
-      <div class="bt b--mc-purple"></div>
+      <div class="bt b--mc-purple" aria-hidden="true"></div>
       
       
-      <div class="f5 fw4 text-mc-purple pb2">
-        <h4>Restiamo in contatto via 
-          <a href="mailto:info@matteocervelli.com" class="link text-mc-black hover-mc-purple">email</a>,
-          <a href="https://matteocervelli.com/it/feed" class="link text-mc-black hover-mc-purple">RSS</a>,
-          <a href="https://www.linkedin.com/in/matteocervelli/" class="link white-70 hover-mc-purple">LinkedIn</a>,
-          <a href="https://x.com/matteocervelli" class="link white-70 hover-mc-purple">X/Twitter</a> e
-          <a href="/subscribe" class="link white-70 hover-mc-purple">altre opzioni</a>.
-        </h4>
+      <div>
+        <p>Restiamo in contatto via 
+          <a href="mailto:info@matteocervelli.com" aria-label="Contact via email">email</a>,
+          <a href="https://matteocervelli.com/it/feed" aria-label="Subscribe to RSS feed">RSS</a>,
+          <a href="https://www.linkedin.com/in/matteocervelli/" aria-label="Connect on LinkedIn">LinkedIn</a>,
+          <a href="https://x.com/matteocervelli" aria-label="Follow on X/Twitter">X/Twitter</a> and
+          <a href="/subscribe" aria-label="View other contact options">other options</a>.
+        </p>
       </div>
   
       
-      <div class="pv2" style="max-width: 24em; margin-right: auto;">
+      <div style="max-width: 24em; margin: 3em auto 3em 0;">
         <form id="newsletter-form" 
-              class="flex flex-wrap items-center bb b--mc-purple" 
-              mb6 
-              action="https://app.kit.com/forms/7578384/subscriptions" 
-              method="post"
-              data-sv-form="7578384" 
-              data-uid="b47db62f73">
+          class="newsletter-form"
+          action="https://app.kit.com/forms/7578384/subscriptions"
+          method="post"
+          data-sv-form="7578384"
+          data-uid="b47db62f73"
+          aria-label="Newsletter subscription form">
           <input type="email" 
-                 name="email_address"
-                 placeholder="La tua email" 
-                 class="f5 input-reset bn fl text-mc-black bg-transparent pa2 lh-solid w-70 bb b--mc-purple"
-                 style="outline: none;"
-                 required>
+                name="email_address"
+                placeholder="La tua email"
+                class="newsletter-form__input"
+                aria-label="Enter your email address"
+                required>
           <button type="submit"
-                  class="f5 button-reset fl pa2 tc bn white pointer w-30 bg-mc-purple hover-opacity-90">
-            Iscriviti
+                  class="newsletter-form__button"
+                  aria-label="Subscribe to newsletter">
+            Registrati
           </button>
         </form>
       </div>
-
+  
       
-      <div class="pb f5 text-mc-black">
+      <div class="pb f3 text-mc-black">
         
           Matteo Cervelli &copy; 2025
          
-        — Creato con 
-        <a href="https://gohugo.io" class="link text-mc-black hover-mc-purple">Hugo</a>,
-        <a href="https://netlify.com" class="link text-mc-black hover-mc-purple">Netlify</a> e
-        <a href="/it/tech-stack" class="link text-mc-black hover-mc-purple">altro</a>.
+        — Creato con
+        <a href="https://gohugo.io" 
+           class="link text-mc-black hover-mc-purple"
+           aria-label="Built with Hugo">Hugo</a>,
+        <a href="https://netlify.com" 
+           class="link text-mc-black hover-mc-purple"
+           aria-label="Hosted on Netlify">Netlify</a> e
+        <a href="/en/tech-stack" 
+           class="link text-mc-black hover-mc-purple"
+           aria-label="View tech stack details">altro</a>.
       </div>
     </div>
-  </footer>
+</footer>
+    <script src="/assets/js/theme-light-dark.js"></script>
   </body>
 </html>
