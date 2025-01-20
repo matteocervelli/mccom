@@ -33,9 +33,10 @@
         &nbsp &mdash; {{ .ReadingTime }} {{ if eq .ReadingTime 1 }}{{ i18n "minute" }}{{ else }}{{ i18n "minutes" }}{{ end }}</a>
       </header>
       <div>
+        <img src="/images/{{- .Params.translationKey -}}.jpg">
         {{- .Content -}}
         {{- partial "tags.html" . -}}
-        <div class="mt6 instapaper_ignoref">
+        w<div class="mt6 instapaper_ignoref">
           {{ if .Site.Config.Services.Disqus.Shortname }}
             {{ template "_internal/disqus.html" . }}
           {{ end }}

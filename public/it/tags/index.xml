@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Matteo Cervelli</description>
     <generator>Hugo</generator>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 18 Jan 2025 08:41:14 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jan 2025 14:27:58 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/it/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lessons, Learned</title>
+      <link>http://localhost:1313/it/tags/lessons-learned/</link>
+      <pubDate>Mon, 20 Jan 2025 14:27:58 +0100</pubDate>
+      <guid>http://localhost:1313/it/tags/lessons-learned/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mission</title>
+      <link>http://localhost:1313/it/tags/mission/</link>
+      <pubDate>Mon, 20 Jan 2025 14:27:58 +0100</pubDate>
+      <guid>http://localhost:1313/it/tags/mission/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Purpose</title>
+      <link>http://localhost:1313/it/tags/purpose/</link>
+      <pubDate>Mon, 20 Jan 2025 14:27:58 +0100</pubDate>
+      <guid>http://localhost:1313/it/tags/purpose/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Scalability</title>
       <link>http://localhost:1313/it/tags/scalability/</link>

@@ -5,6 +5,7 @@ slug: "tech-stack"
 translationKey: "tech-stack"
 language: it
 date: 2025-01-17T16:12:52+01:00
+Lastmod: 
 draft: false
 tags: ['tech-stack', 'guide']
 categories: ['page']

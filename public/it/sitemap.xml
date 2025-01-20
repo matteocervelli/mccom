@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/it/categories/</loc>
-    <lastmod>2025-01-18T14:52:50+01:00</lastmod>
+    <lastmod>2025-01-20T14:27:58+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -13,6 +13,97 @@
                 rel="alternate"
                 hreflang="it-IT"
                 href="http://localhost:1313/it/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/it/tags/lessons-learned/</loc>
+    <lastmod>2025-01-20T14:27:58+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/lessons-learned/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/tags/lessons-learned/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/it/tags/mission/</loc>
+    <lastmod>2025-01-20T14:27:58+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/mission/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/tags/mission/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/it/posts/</loc>
+    <lastmod>2025-01-20T14:27:58+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/it/categories/posts/</loc>
+    <lastmod>2025-01-20T14:27:58+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/categories/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/categories/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/it/tags/purpose/</loc>
+    <lastmod>2025-01-20T14:27:58+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/purpose/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/tags/purpose/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/it/tags/</loc>
+    <lastmod>2025-01-20T14:27:58+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/it/find-your-villain-learn-your-mission/</loc>
+    <lastmod>2025-01-20T14:27:58+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/find-your-villain-learn-your-mission/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/find-your-villain-learn-your-mission/"
                 />
   </url><url>
     <loc>http://localhost:1313/it/lavora-con-me/</loc>
@@ -78,19 +169,6 @@
                 rel="alternate"
                 hreflang="it-IT"
                 href="http://localhost:1313/it/tags/scalability/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/it/tags/</loc>
-    <lastmod>2025-01-18T08:41:14+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/it/ora/</loc>
@@ -182,19 +260,6 @@
                 rel="alternate"
                 hreflang="it-IT"
                 href="http://localhost:1313/it/my-second-post/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/it/posts/</loc>
-    <lastmod>2025-01-16T10:52:26+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="http://localhost:1313/it/posts/"
                 />
   </url><url>
     <loc>http://localhost:1313/it/my-first-post/</loc>

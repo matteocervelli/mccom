@@ -6,7 +6,7 @@ aliases: []
 translationKey: "{{ .File.ContentBaseName }}"
 language: en
 date: {{ .Date }}
-Lastmod: {( .Date )}
+Lastmod: 
 draft: true 
 tags: []
 categories: []
