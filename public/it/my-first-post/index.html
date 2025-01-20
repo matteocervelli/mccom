@@ -26,7 +26,7 @@ Visita il sito web di Hugo!">
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.bdb26c12d9668623b6a40051a4b616934185f48e54983f27a1963d158b4d098f.css" integrity="sha256-vbJsEtlmhiO2pABRpLYWk0GF9I5UmD8noZY9FYtNCY8=">
+  <link rel="stylesheet" href="/css/styles.min.c016ec58924cbaa718188002ff3a3e350d6539c330123e3adf641267bebeaffb.css" integrity="sha256-wBbsWJJMuqcYGIAC/zo&#43;NQ1lOcMwEj4632QSZ76&#43;r/s=">
 
     
 
@@ -65,7 +65,12 @@ Visita il sito web di Hugo!">
 Visita il sito web di Hugo!">
 
 	
-  </head><body class="Lora mc--peach development">
+  </head><body class="">
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.querySelector('body').classList.add('theme-dark')
+      }
+    </script>
     
    
   <header>
@@ -94,34 +99,35 @@ Visita il sito web di Hugo!">
           
         </ul>
       </span>
-      <span id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" role="switch" aria-checked="false">
+      <span id="theme-toggle" 
+            title="Toggle dark mode" 
+            aria-label="Toggle dark mode" 
+            role="switch" 
+            aria-checked="false">
         <div class="theme-toggle-slide"></div>
         <div class="theme-toggle-switch"></div>
-      </span>
+    </span>
    </span>
   </span>
 </nav>
-  </header>
+</header>
 
-    <main style="margin: 0 auto; max-width: 54em;" class="pb3" role="main">
+    <main role="main">
       
-  <div style="margin: 0 auto; max-width: 54em; width: 54em;">
-    <article class="flex-l flex-wrap justify-between center ph3 content-wrapper">
-      <header class="mt4 w-100">
-        <aside class="instapaper_ignoref b helvetica tracked ttu">
-          Posts
-        </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">Il mio Primo Post</h1>
+  <div class="content-wrapper">
+    <article>
+      <header class="mb4">
+        <h1 class="f1">Il mio Primo Post</h1>
         
-        <p class="tracked">
-          Da <strong>Matteo Cervelli</strong>
-        </p>
+        <a class="meta-post">Matteo Cervelli&nbsp &mdash; &nbsp;
         
         
-        <time class="f6 mv4 dib tracked" datetime="2025-01-16T10:45:44+01:00">gennaio 16, 2025</time>
+        <time class="faint" datetime="2025-01-16T10:45:44+01:00">2025/01/16</time>
         
+        
+        &nbsp &mdash; 1 minuto di lettura</a>
       </header>
-      <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="introduzione">Introduzione</h2>
+      <div><h2 id="introduzione">Introduzione</h2>
 <p>Questo è un testo in <strong>grassetto</strong>, e questo è un testo in <em>corsivo</em>.</p>
 <p>Visita il sito web di <a href="https://gohugo.io">Hugo</a>!</p>
 <ul class="pa0">
@@ -202,6 +208,41 @@ Visita il sito web di Hugo!">
       </div>
     </div>
 </footer>
-    <script src="/assets/js/theme-light-dark.js"></script>
+    <script>
+      
+      var darkModeToggle = document.querySelector("#theme-toggle");
+
+      function toggleTheme() {
+        document.body.classList.toggle("theme-dark");
+        updateThemeState();
+      }
+
+      function updateThemeState() {
+        let isDarkMode = document.body.classList.contains("theme-dark");
+        let theme = isDarkMode ? "dark" : "light";
+        localStorage.setItem("theme", theme);
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+
+      function initializeTheme() {
+        let isDarkMode = document.body.classList.contains("theme-dark");
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+
+      darkModeToggle.addEventListener("click", toggleTheme);
+
+      window.addEventListener('keydown', function(e) {
+          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+            return;
+          }
+          if ((e.key === 'd' || e.key === 'D') && !e.ctrlKey && !e.metaKey) {
+            toggleTheme();
+          }
+      });
+
+      initializeTheme();
+    
+    </script>
+
   </body>
 </html>

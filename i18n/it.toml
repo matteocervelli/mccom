@@ -68,3 +68,51 @@ other = "7578384"
 
 [newsletter_form_uid]
 other = "b47db62f73"
+
+[published]
+other = "pubblicato il"
+
+[updated]
+other = "aggiornato il"
+
+[minute]
+other = "minuto di lettura"
+
+[minutes]
+other = "minuti di lettura"
+
+[January]
+other = "Gennaio"
+
+[February]
+other = "Febbraio"
+
+[March]
+other = "Marzo"
+
+[April]
+other = "Aprile"
+
+[May]
+other = "Maggio"
+
+[June]
+other = "Giugno"
+
+[July]
+other = "Luglio"
+
+[August]
+other = "Agosto"
+
+[September]
+other = "Settembre"
+
+[October]
+other = "Ottobre"
+
+[November]
+other = "Novembre"
+
+[December]
+other = "Dicembre"

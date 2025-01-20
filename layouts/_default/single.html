@@ -4,34 +4,35 @@
 {{ end }}
 
 {{ define "main" }}
-  <div style="margin: 0 auto; max-width: 54em; width: 54em;">
-    <article class="flex-l flex-wrap justify-between center ph3 content-wrapper">
-      <header class="mt4 w-100">
-        <aside class="instapaper_ignoref b helvetica tracked ttu">
-          {{ .CurrentSection.Title }}
-        </aside>
-        {{- partialCached "social/share.html" . . -}}
-        <h1 class="f1 athelas mt3 mb1">
+  <div class="content-wrapper">
+    <article>
+      <header class="mb4">
+        <h1 class="f1">
           {{- .Title -}}
         </h1>
         {{ with .Params.author | default .Site.Params.author }}
-        <p class="tracked">
-          {{ $.Render "by" }} <strong>
+        <a class="meta-post">
           {{- if reflect.IsSlice . -}}
               {{ delimit . ", " | markdownify }}
           {{- else -}}
               {{ . | markdownify }}
           {{- end -}}
-          </strong>
-        </p>
+          &nbsp &mdash; &nbsp;
         {{ end }}
         {{ if not .Date.IsZero }}
-        <time class="f6 mv4 dib tracked" {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
-          {{- .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) -}}
+        <time class="faint" {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
+          {{- .Date.Format "2006/01/02" -}}
         </time>
         {{end}}
+        {{ if and (not .Lastmod.IsZero) (ne .Lastmod .Date) }}
+        &mdash; {{ i18n "updated"}}
+        <time class="faint" {{ printf `datetime="%s"` (.Lastmod.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
+          {{- .Lastmod.Format "2006/01/02" -}}
+        </time>
+        {{end}}
+        &nbsp &mdash; {{ .ReadingTime }} {{ if eq .ReadingTime 1 }}{{ i18n "minute" }}{{ else }}{{ i18n "minutes" }}{{ end }}</a>
       </header>
-      <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl4-l" "pr4-l" }} w-two-thirds-l">
+      <div>
         {{- .Content -}}
         {{- partial "tags.html" . -}}
         <div class="mt6 instapaper_ignoref">

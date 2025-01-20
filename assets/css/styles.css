@@ -39,6 +39,7 @@ html {
   --mc-peach-light-rgb: 255,242,229;
   --mc-peach-dark: #ffdbb8;
   --mc-peach-dark-rgb: 255,219,184;
+  --mc-peach-faint: #aa9682;
 
   /* Elementi responsive */
   --font-content: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial, sans-serif;
@@ -51,7 +52,7 @@ html {
   --wrap-normal: 37em;
   --input-width: 20em;
   --image-radius: 6px;
-  --line-height: 1.5;
+  --line-height: 1.8;
 
   /* Varianti di opacità */
   --mc-purple-90: rgba(156, 39, 176, 0.9);
@@ -80,7 +81,7 @@ html {
   --color-tx-normal: var(--mc-peach-light);
   --color-tx-normal-rgb: var(--mc-peach-light-rgb);
   --color-tx-muted: var(--mc-peach);
-  --color-tx-faint: var(--mc-peach-dark);
+  --color-tx-faint: var(--mc-peach-faint);
   --color-highlight: var(--mc-purple);
   --color-highlight-faint: var(--mc-purple-light);
   --color-link: var(--mc-peach);
@@ -111,6 +112,7 @@ body {
   margin: 2vw auto 0 auto;
   padding: 2rem 0 24rem;
   font-size: calc(1.5rem + 0.25vw);
+  line-height: var(--line-height);
 }
 
 footer {
@@ -121,16 +123,15 @@ footer {
 }
 
 /* Unified headings styles */
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   color: var(--color-tx-normal);
 }
 
-h1.f1, h1.primary-color-dark {
-  color: var(--color-highlight);
-}
-
-h1.f1, h1.primary-color-dark {
+h1, h1.f1, h1.primary-color-dark {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4rem;
+  margin: 2rem 0 0.67rem;
   color: var(--color-highlight);
 }
 
@@ -620,4 +621,22 @@ nav,
 .i18n-link,
 .logo {
   line-height: 1; /* Forza un line-height uniforme per tutti gli elementi di navigazione */
+}
+
+.meta-post {
+  font-size: 1.5rem;
+  color: var(--mc-peach-faint);
+}
+
+hr {
+  margin: 1.5rem auto 4rem;
+  border: none;
+  text-align: center;
+  height: 1em;
+}
+
+hr::before {
+  content: "...";
+  letter-spacing: 0.6em;
+  font-size: 1.2em;
 }

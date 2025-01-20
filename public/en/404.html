@@ -24,7 +24,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.bdb26c12d9668623b6a40051a4b616934185f48e54983f27a1963d158b4d098f.css" integrity="sha256-vbJsEtlmhiO2pABRpLYWk0GF9I5UmD8noZY9FYtNCY8=">
+  <link rel="stylesheet" href="/css/styles.min.eb223abdeaebf694f121507e1895736176b2d63da58a79026a5f7d27e6c7101b.css" integrity="sha256-6yI6verr9pTxIVB&#43;GJVzYXay1j2linkCal99J&#43;bHEBs=">
 
     
 
@@ -51,7 +51,12 @@
   <meta name="twitter:title" content="404 Page not found">
 
 	
-  </head><body class="Lora mc--peach development">
+  </head><body class="">
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.querySelector('body').classList.add('theme-dark')
+      }
+    </script>
     
 
   <header>
@@ -80,10 +85,14 @@
           
         </ul>
       </span>
-      <span id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" role="switch" aria-checked="false">
+      <span id="theme-toggle" 
+            title="Toggle dark mode" 
+            aria-label="Toggle dark mode" 
+            role="switch" 
+            aria-checked="false">
         <div class="theme-toggle-slide"></div>
         <div class="theme-toggle-switch"></div>
-      </span>
+    </span>
    </span>
   </span>
 </nav>
@@ -91,7 +100,7 @@
   </header>
 
 
-    <main style="margin: 0 auto; max-width: 54em;" class="pb3" role="main">
+    <main style="margin: 0 auto; max-width: 54em;" role="main">
       
     <article class="center cf pv5 measure-wide-l">
       <h1>
@@ -160,6 +169,41 @@
       </div>
     </div>
 </footer>
-    <script src="/assets/js/theme-light-dark.js"></script>
+    <script>
+      
+      var darkModeToggle = document.querySelector("#theme-toggle");
+
+      function toggleTheme() {
+        document.body.classList.toggle("theme-dark");
+        updateThemeState();
+      }
+
+      function updateThemeState() {
+        let isDarkMode = document.body.classList.contains("theme-dark");
+        let theme = isDarkMode ? "dark" : "light";
+        localStorage.setItem("theme", theme);
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+
+      function initializeTheme() {
+        let isDarkMode = document.body.classList.contains("theme-dark");
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+
+      darkModeToggle.addEventListener("click", toggleTheme);
+
+      window.addEventListener('keydown', function(e) {
+          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+            return;
+          }
+          if ((e.key === 'd' || e.key === 'D') && !e.ctrlKey && !e.metaKey) {
+            toggleTheme();
+          }
+      });
+
+      initializeTheme();
+    
+    </script>
+
   </body>
 </html>

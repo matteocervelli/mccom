@@ -65,7 +65,7 @@
       }
     </script>
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-    <main style="margin: 0 auto; max-width: 54em;" class="pb3" role="main">
+    <main role="main">
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
