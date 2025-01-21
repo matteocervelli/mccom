@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Matteo Cervelli</title>
-    <link>http://localhost:1313/en/categories/about/</link>
+    <link>https://matteocervelli.netlify.app/en/categories/about/</link>
     <description>Recent content in About on Matteo Cervelli</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 17 Jan 2025 16:12:52 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://matteocervelli.netlify.app/en/categories/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Technologies used to build this site</title>
-      <link>http://localhost:1313/en/tech-stack/</link>
+      <link>https://matteocervelli.netlify.app/en/tech-stack/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
-      <guid>http://localhost:1313/en/tech-stack/</guid>
+      <guid>https://matteocervelli.netlify.app/en/tech-stack/</guid>
       <description>&lt;p&gt;Updated: 2025-01-17&lt;/p&gt;&#xA;&lt;p&gt;This website was created by Matteo Cervelli using a mix of personal skills and AI. I previously had a website hosted and built on WordPress, but I decided to rebuild it myself in early 2025 to &amp;ldquo;keep control&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;I wanted a lightweight, fast, and responsive website. And I wanted to learn the basics by leveraging what technology has to offer.&lt;/p&gt;&#xA;&lt;p&gt;First of all, matteocervelli.com is a static website. It&amp;rsquo;s built with &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; as SSG—Static Site Generator—and is hosted on &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt; via &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;, while DNS is managed through &lt;a href=&#34;https://www.cloudflare.com&#34;&gt;Cloudflare&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/en/about/</link>
+      <link>https://matteocervelli.netlify.app/en/about/</link>
       <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
-      <guid>http://localhost:1313/en/about/</guid>
-      <description>&lt;h2 id=&#34;in-short&#34;&gt;In short&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Matteo Cervelli. I am &lt;a href=&#34;http://localhost:1313/work/business-scalability-engineer&#34;&gt;Business Scalability Engineer&lt;/a&gt;. I act as a &lt;a href=&#34;http://localhost:1313/en/work/&#34;&gt;Consultant and Advisor&lt;/a&gt;. Previously I managed &lt;a href=&#34;https://www.urania.group&#34;&gt;Urania Group&lt;/a&gt; as Co-CEO.&lt;/p&gt;&#xA;&lt;p&gt;Today I help entrepreneurs and leaders to grow their business, in strategy, management, sales, implementing the principles of scalability.&lt;/p&gt;&#xA;&lt;p&gt;My purpose is to trigger people to build a more beautiful world, together.&lt;/p&gt;&#xA;&lt;p&gt;I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs: Maple and Cookie. Even before that, I am a husband: Sara and I have known each other since 2005 and in these 20 years we have loved each other and have always been there for each other, one, two and infinite.&lt;/p&gt;</description>
+      <guid>https://matteocervelli.netlify.app/en/about/</guid>
+      <description>&lt;h2 id=&#34;in-short&#34;&gt;In short&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Matteo Cervelli. I am &lt;a href=&#34;https://matteocervelli.netlify.app/work/business-scalability-engineer&#34;&gt;Business Scalability Engineer&lt;/a&gt;. I act as a &lt;a href=&#34;https://matteocervelli.netlify.app/en/work/&#34;&gt;Consultant and Advisor&lt;/a&gt;. Previously I managed &lt;a href=&#34;https://www.urania.group&#34;&gt;Urania Group&lt;/a&gt; as Co-CEO.&lt;/p&gt;&#xA;&lt;p&gt;Today I help entrepreneurs and leaders to grow their business, in strategy, management, sales, implementing the principles of scalability.&lt;/p&gt;&#xA;&lt;p&gt;My purpose is to trigger people to build a more beautiful world, together.&lt;/p&gt;&#xA;&lt;p&gt;I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs: Maple and Cookie. Even before that, I am a husband: Sara and I have known each other since 2005 and in these 20 years we have loved each other and have always been there for each other, one, two and infinite.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

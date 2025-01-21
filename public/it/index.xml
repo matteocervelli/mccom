@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matteo Cervelli</title>
-    <link>http://localhost:1313/it/</link>
+    <link>https://matteocervelli.netlify.app/it/</link>
     <description>Recent content on Matteo Cervelli</description>
     <generator>Hugo</generator>
     <language>it-IT</language>
     <lastBuildDate>Sat, 18 Jan 2025 14:52:50 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/it/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://matteocervelli.netlify.app/it/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lavora con me</title>
-      <link>http://localhost:1313/it/lavora-con-me/</link>
+      <link>https://matteocervelli.netlify.app/it/lavora-con-me/</link>
       <pubDate>Sat, 18 Jan 2025 14:52:50 +0100</pubDate>
-      <guid>http://localhost:1313/it/lavora-con-me/</guid>
-      <description>&lt;h2 id=&#34;il-mio-sistema-di-valori&#34;&gt;Il mio sistema di valori&lt;/h2&gt;&#xA;&lt;h3 id=&#34;perché&#34;&gt;Perché&lt;/h3&gt;&#xA;&lt;p&gt;Innesco il talento e il potenziale delle persone per costruire insieme un mondo più bello.&lt;/p&gt;&#xA;&lt;h3 id=&#34;come&#34;&gt;Come&lt;/h3&gt;&#xA;&lt;p&gt;Aiuto le aziende a crescere in modo scalabile, per costruire ecosistemi che abilitino il confort, le competenze e in generale il benessere.&lt;/p&gt;&#xA;&lt;h3 id=&#34;cosa&#34;&gt;Cosa&lt;/h3&gt;&#xA;&lt;p&gt;Faccio il consulente, l&amp;rsquo;advisor e il formatore, oltre ad investire personalmente.&lt;/p&gt;&#xA;&lt;h3 id=&#34;principi&#34;&gt;Principi&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;La &lt;strong&gt;Bellezza&lt;/strong&gt; è la chiave per liberare la creatività e eliminare la povertà.&lt;/li&gt;&#xA;&lt;li&gt;Che tu scelga &lt;strong&gt;sfide&lt;/strong&gt; facili o difficili, richiedono la stessa energia. Punta sempre in alto.&lt;/li&gt;&#xA;&lt;li&gt;Imparare, &lt;strong&gt;sbagliare&lt;/strong&gt; e riprovare sono gli unici modi per crescere.&lt;/li&gt;&#xA;&lt;li&gt;La capacità delle imprese è proposta di valore unica, il potenziale la forza delle &lt;strong&gt;relazioni&lt;/strong&gt; che il vertice intrattiene.&lt;/li&gt;&#xA;&lt;li&gt;Un&amp;rsquo;impresa che evolve è basata su pochi &lt;strong&gt;esperimenti&lt;/strong&gt;, ma di grande potenzialità. E allo stesso tempo, tanti stimoli diversificati di mastodontiche opportunità che crogiolano in silenzio.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;a href=&#34;#prenota-ora&#34; class=&#34;mc-button&#34;&gt;&#xA;    Prenota ora una sessione gratuita&#xA;    &lt;br&gt;&#xA;    per parlarmi della tua idea&#xA;&lt;/a&gt;&#xA;&lt;h2 id=&#34;quali-servizi-offro&#34;&gt;Quali servizi offro&lt;/h2&gt;&#xA;&lt;h3 id=&#34;consulenza-direzionale&#34;&gt;Consulenza direzionale&lt;/h3&gt;&#xA;&lt;p&gt;I miei servizi di consulenza sono personalizzati per &lt;a href=&#34;http://localhost:1313/it/business-scalability-engineer&#34;&gt;sbloccare il potenziale della tua azienda&lt;/a&gt; e guidarti verso il successo. Collaborando insieme, trasformeremo le sfide in opportunità. Posso supportarti con metodologie su misura, visione strategica, insights ed eccellenza operativa.&lt;/p&gt;</description>
+      <guid>https://matteocervelli.netlify.app/it/lavora-con-me/</guid>
+      <description>&lt;h2 id=&#34;il-mio-sistema-di-valori&#34;&gt;Il mio sistema di valori&lt;/h2&gt;&#xA;&lt;h3 id=&#34;perché&#34;&gt;Perché&lt;/h3&gt;&#xA;&lt;p&gt;Innesco il talento e il potenziale delle persone per costruire insieme un mondo più bello.&lt;/p&gt;&#xA;&lt;h3 id=&#34;come&#34;&gt;Come&lt;/h3&gt;&#xA;&lt;p&gt;Aiuto le aziende a crescere in modo scalabile, per costruire ecosistemi che abilitino il confort, le competenze e in generale il benessere.&lt;/p&gt;&#xA;&lt;h3 id=&#34;cosa&#34;&gt;Cosa&lt;/h3&gt;&#xA;&lt;p&gt;Faccio il consulente, l&amp;rsquo;advisor e il formatore, oltre ad investire personalmente.&lt;/p&gt;&#xA;&lt;h3 id=&#34;principi&#34;&gt;Principi&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;La &lt;strong&gt;Bellezza&lt;/strong&gt; è la chiave per liberare la creatività e eliminare la povertà.&lt;/li&gt;&#xA;&lt;li&gt;Che tu scelga &lt;strong&gt;sfide&lt;/strong&gt; facili o difficili, richiedono la stessa energia. Punta sempre in alto.&lt;/li&gt;&#xA;&lt;li&gt;Imparare, &lt;strong&gt;sbagliare&lt;/strong&gt; e riprovare sono gli unici modi per crescere.&lt;/li&gt;&#xA;&lt;li&gt;La capacità delle imprese è proposta di valore unica, il potenziale la forza delle &lt;strong&gt;relazioni&lt;/strong&gt; che il vertice intrattiene.&lt;/li&gt;&#xA;&lt;li&gt;Un&amp;rsquo;impresa che evolve è basata su pochi &lt;strong&gt;esperimenti&lt;/strong&gt;, ma di grande potenzialità. E allo stesso tempo, tanti stimoli diversificati di mastodontiche opportunità che crogiolano in silenzio.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;a href=&#34;#prenota-ora&#34; class=&#34;mc-button&#34;&gt;&#xA;    Prenota ora una sessione gratuita&#xA;    &lt;br&gt;&#xA;    per parlarmi della tua idea&#xA;&lt;/a&gt;&#xA;&lt;h2 id=&#34;quali-servizi-offro&#34;&gt;Quali servizi offro&lt;/h2&gt;&#xA;&lt;h3 id=&#34;consulenza-direzionale&#34;&gt;Consulenza direzionale&lt;/h3&gt;&#xA;&lt;p&gt;I miei servizi di consulenza sono personalizzati per &lt;a href=&#34;https://matteocervelli.netlify.app/it/business-scalability-engineer&#34;&gt;sbloccare il potenziale della tua azienda&lt;/a&gt; e guidarti verso il successo. Collaborando insieme, trasformeremo le sfide in opportunità. Posso supportarti con metodologie su misura, visione strategica, insights ed eccellenza operativa.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sblocca la crescita della tua impresa con un Ingegnere della Scalabilità</title>
-      <link>http://localhost:1313/it/business-scalability-engineer/</link>
+      <link>https://matteocervelli.netlify.app/it/business-scalability-engineer/</link>
       <pubDate>Sat, 18 Jan 2025 08:41:14 +0100</pubDate>
-      <guid>http://localhost:1313/it/business-scalability-engineer/</guid>
+      <guid>https://matteocervelli.netlify.app/it/business-scalability-engineer/</guid>
       <description>&lt;h2 id=&#34;ecco-perché-hai-bisogno-di-un-ingegnere-della-scalabilità-dellimpresa-per-far-crescere-il-tuo-business-come-merita&#34;&gt;Ecco perché hai bisogno di un Ingegnere della Scalabilità dell&amp;rsquo;impresa per far crescere il tuo business come merita.&lt;/h2&gt;&#xA;&lt;p&gt;Hai presente quando un’azienda sembra bloccata, la crescita rallenta, i problemi si moltiplicano e non sai da dove partire per rimettere ordine?&lt;/p&gt;&#xA;&lt;p&gt;Ecco, io sono quello che aiuta a sbloccare tutto questo.&lt;/p&gt;&#xA;&lt;p&gt;Senti che ci sono mille problemi nella tua azienda?&lt;/p&gt;&#xA;&lt;p&gt;Forse pensi che tutto vada cambiato: processi, ruoli, vendite, persino la cultura aziendale.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cosa sto facendo ora</title>
-      <link>http://localhost:1313/it/ora/</link>
+      <link>https://matteocervelli.netlify.app/it/ora/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
-      <guid>http://localhost:1313/it/ora/</guid>
+      <guid>https://matteocervelli.netlify.app/it/ora/</guid>
       <description>&lt;p&gt;&lt;em&gt;Nota: questa è una pagina &lt;a href=&#34;https://nownownow.com&#34;&gt;Now&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Aggiornato: 2025-01-18, dalla mia casa a Poggibonsi, Toscana, Italia.&lt;/p&gt;&#xA;&lt;h2 id=&#34;aiuto-le-aziende-a-crescere-in-modo-scalabile&#34;&gt;Aiuto le aziende a crescere in modo scalabile&lt;/h2&gt;&#xA;&lt;p&gt;Sono un consulente e advisor per le imprese.&lt;/p&gt;&#xA;&lt;p&gt;Il mio lavoro consiste nell&amp;rsquo;aiutare le aziende a crescere in modo scalabile, attraverso Strategia, Gestione del Cambiamento, Sviluppo delle Vendite e del Business, Formazione e Coaching dei Leader.&lt;/p&gt;&#xA;&lt;p&gt;Adotto un modello a 3 fasi: analisi inziale, progetto sprint (con implementazione), e follow-up con advisory.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tecnologie usate per costruire questo sito</title>
-      <link>http://localhost:1313/it/tech-stack/</link>
+      <link>https://matteocervelli.netlify.app/it/tech-stack/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
-      <guid>http://localhost:1313/it/tech-stack/</guid>
+      <guid>https://matteocervelli.netlify.app/it/tech-stack/</guid>
       <description>&lt;p&gt;Aggiornato: 2025-01-17&lt;/p&gt;&#xA;&lt;p&gt;Questo sito è stato realizzato da Matteo Cervelli con un mix di competenze personali ed AI. Provenivo da un sito hostato e realizzato su WordPress.com e ho preferito ricostruire da me il sito a inizio 2025 per &amp;ldquo;tenere&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;Volevo un sito leggero, veloce e responsive. E volevo imparare le basi sfruttando quello che la tecnologia mette a disposizione.&lt;/p&gt;&#xA;&lt;p&gt;Prima di tutto, matteocervelli.com è un sito internet statico. È realizzato con &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; come SSG—Static Site Generator— ed è hostato su &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt; tramite &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;, mentre i DNS sono gestiti tramite &lt;a href=&#34;https://www.cloudflare.com&#34;&gt;Cloudflare&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Su di me</title>
-      <link>http://localhost:1313/it/about/</link>
+      <link>https://matteocervelli.netlify.app/it/about/</link>
       <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
-      <guid>http://localhost:1313/it/about/</guid>
-      <description>&lt;h2 id=&#34;in-breve&#34;&gt;In breve&lt;/h2&gt;&#xA;&lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;http://localhost:1313/work/business-scalability-engineer&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;http://localhost:1313/it/lavora-con-me/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Oggi aiuto imprenditori e leader a crescere il proprio business, nella strategia, gestione, vendite, implementando i principi della scalabilità.&lt;/p&gt;&#xA;&lt;p&gt;Il mio scopo è innescare le persone a costruire un mondo più bello, insieme.&lt;/p&gt;&#xA;&lt;p&gt;Sono un padre di 3 bambine piccole, Emma, Maria ed Emma, e di due cani: Maple e Cookie. Prima ancora, sono un marito: con Sara ci conosciamo dal 2005 e in questi 20 anni ci siamo amati e siamo sempre stati l&amp;rsquo;uno per l&amp;rsquo;altra, uno, due e infinito.&lt;/p&gt;</description>
+      <guid>https://matteocervelli.netlify.app/it/about/</guid>
+      <description>&lt;h2 id=&#34;in-breve&#34;&gt;In breve&lt;/h2&gt;&#xA;&lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;https://matteocervelli.netlify.app/work/business-scalability-engineer&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;https://matteocervelli.netlify.app/it/lavora-con-me/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Oggi aiuto imprenditori e leader a crescere il proprio business, nella strategia, gestione, vendite, implementando i principi della scalabilità.&lt;/p&gt;&#xA;&lt;p&gt;Il mio scopo è innescare le persone a costruire un mondo più bello, insieme.&lt;/p&gt;&#xA;&lt;p&gt;Sono un padre di 3 bambine piccole, Emma, Maria ed Emma, e di due cani: Maple e Cookie. Prima ancora, sono un marito: con Sara ci conosciamo dal 2005 e in questi 20 anni ci siamo amati e siamo sempre stati l&amp;rsquo;uno per l&amp;rsquo;altra, uno, due e infinito.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trova il Tuo Antagonista, Scopri la Tua Missione</title>
-      <link>http://localhost:1313/it/find-your-villain-learn-your-mission/</link>
+      <link>https://matteocervelli.netlify.app/it/find-your-villain-learn-your-mission/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/it/find-your-villain-learn-your-mission/</guid>
+      <guid>https://matteocervelli.netlify.app/it/find-your-villain-learn-your-mission/</guid>
       <description>&lt;p&gt;Ognuno ha un antagonista. Ho conosciuto il mio cinque anni fa in una sala riunioni.&lt;/p&gt;&#xA;&lt;p&gt;Era una calda giornata estiva e stavo presentando un aggiornamento trimestrale su un&amp;rsquo;azienda che avevamo recentemente acquisito. Non riuscivamo a vedere la luce in fondo al tunnel, ma stavo mostrando una presentazione PowerPoint piena di dati e approfondimenti. All&amp;rsquo;improvviso, il signor Bowser ha iniziato a esporre la sua visione del mondo, ignorando completamente le informazioni che avevo fornito. Era come se tutto il lavoro che avevo fatto con il mio team non fosse reale, mentre soccombeva sotto una mitragliatrice che sparava ripetuti colpi pieni di convinzioni tratte da chissà quale esperienza di vita.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Empatia 101</title>
-      <link>http://localhost:1313/it/empathy/</link>
+      <link>https://matteocervelli.netlify.app/it/empathy/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/it/empathy/</guid>
+      <guid>https://matteocervelli.netlify.app/it/empathy/</guid>
       <description>&lt;p&gt;L&amp;rsquo;&lt;em&gt;empatia&lt;/em&gt; è la &lt;em&gt;capacità di mettersi nei panni degli altri&lt;/em&gt;.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;p&gt;In altre parole, comprendere come vedono la loro realtà e come si sentono riguardo alle cose.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;L&amp;rsquo;empatia è &lt;em&gt;sentire con le persone&lt;/em&gt;&amp;rdquo;&#xA;—Dr. Brené Brown&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;div style=&#34;display: flex; justify-content: center;&#34;&gt;&#xA;    &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/1Evwgu369Jw?si=S2GlLl0sJ2HRCyLv&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;L&amp;rsquo;empatia è una competenza allenabile. Ecco una guida per imparare ad essere una persona con cui tutti parlano volentieri.&lt;/p&gt;&#xA;&lt;h2 id=&#34;classificazione-dellempatia&#34;&gt;Classificazione dell&amp;rsquo;empatia&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.verywellmind.com/what-is-empathy-2795562&#34;&gt;Secondo Kendra Cherry&lt;/a&gt;, esistono tre tipi di empatia:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Umiltà &#43; Determinazione per una Grande Leadership</title>
-      <link>http://localhost:1313/it/humility-will-for-great-leadership/</link>
+      <link>https://matteocervelli.netlify.app/it/humility-will-for-great-leadership/</link>
       <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/it/humility-will-for-great-leadership/</guid>
+      <guid>https://matteocervelli.netlify.app/it/humility-will-for-great-leadership/</guid>
       <description>&lt;p&gt;I leader delle grandi organizzazioni concentrano tutti gli sforzi nel trovare i loro successori.&lt;/p&gt;&#xA;&lt;p&gt;I capi di maggior successo non micro-gestiscono. Invece, aiutano le persone ad assumere maggiori responsabilità. E per fare questo, il ruolo del leader cambia da risolutore di problemi a facilitatore di persone.&lt;/p&gt;&#xA;&lt;p&gt;D&amp;rsquo;altra parte, la micro-gestione ha effetti collaterali negativi:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Burocrazia&lt;/li&gt;&#xA;&lt;li&gt;Meno tempo dedicato al successo a lungo termine&lt;/li&gt;&#xA;&lt;li&gt;L&amp;rsquo;azienda non sopravvive oltre l&amp;rsquo;attuale leader&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ecco invece cosa fanno i grandi leader.&lt;/p&gt;</description>
     </item>
   </channel>
