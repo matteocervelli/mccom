@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/matteocervelli/websites/mccom",
+	"sourceRoot": "/users/matteocervelli/websites/mccom",
 	"sources": [
 		"ananke/css/main.css"
 	],

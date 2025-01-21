@@ -112,3 +112,7 @@ It is faster, easier, and utterly more effective than looking into yourself.
 
 
 It helped me to see and to take action, to build on the bad moments. Your mission creates a positive impact: find your villain, discover the purpose and dedicate your life to forge the best possible world where it is worth to live in, for you and for who cames next.
+
+---
+
+*Cover image by <a href="https://www.flickr.com/photos/fallentomato/">BRICK 101</a> on <a href="https://www.flickr.com/photos/fallentomato/19926380608/in/album-72157639419298165/">flickr</a>*

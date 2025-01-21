@@ -239,6 +239,58 @@
                 href="http://localhost:1313/en/posts/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/tags/coaching/</loc>
+    <lastmod>2022-02-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/tags/coaching/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/coaching/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/communication/</loc>
+    <lastmod>2022-02-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/tags/communication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/communication/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/empathy/</loc>
+    <lastmod>2022-02-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/tags/empathy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/empathy/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/empathy/</loc>
+    <lastmod>2022-02-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:1313/it/empathy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/empathy/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/humility-will-for-great-leadership/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link

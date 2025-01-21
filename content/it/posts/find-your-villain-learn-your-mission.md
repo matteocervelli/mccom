@@ -75,3 +75,7 @@ Spesso pensiamo che la nostra missione sia qualcosa che dobbiamo scoprire scavan
 È più veloce, più facile e decisamente più efficace che guardare dentro se stessi.
 
 Mi ha aiutato a vedere e ad agire, a costruire sui momenti negativi. La tua missione crea un impatto positivo: trova il tuo antagonista, scopri lo scopo e dedica la tua vita a forgiare il miglior mondo possibile in cui valga la pena vivere, per te e per chi verrà dopo.
+
+---
+
+*Immagine di copertina di <a href="https://www.flickr.com/photos/fallentomato/">BRICK 101</a> su <a href="https://www.flickr.com/photos/fallentomato/19926380608/in/album-72157639419298165/">flickr</a>*

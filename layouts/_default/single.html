@@ -24,6 +24,12 @@
       </div>
     </header>
 
+    {{ with .Params.featured_image }}
+    <div class="image-container featured-image-container">
+      <img src="/{{ . }}" alt="{{ $.Title }}">
+    </div>
+    {{ end }}
+
     <div class="content">
       {{ .Content }}
     </div>
