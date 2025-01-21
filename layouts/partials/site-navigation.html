@@ -1,10 +1,18 @@
 <nav class="flex align-center font-ui flex-wrap" role="navigation">
   <!-- Logo e sezione a sinistra -->
-  <span class="flex-grow">
-    <a class="internal-link plain logo" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+  <span>
+    <a class="internal-link plain logo" href="/{{ .Site.Language.Lang }}/">Matteo Cervelli</a>
     {{- if .Section -}}
-      <span class="faint nav-links">/</span> 
-      <a href="{{ .Section | relLangURL }}" class="nav-links muted plain">{{ .Section | humanize }}</a>
+      <span class="faint nav-breadcrumb">/</span> 
+      <a href="{{ .Section | relLangURL }}" class="nav-breadcrumb muted plain">
+        {{- if eq .Section "posts" -}}
+          {{ i18n "menuPosts" }}
+        {{- else if eq .Section "tags" -}}
+          {{ i18n "tags" }}
+        {{- else -}}
+          {{ .Section | humanize }}
+        {{- end -}}
+      </a>
     {{- end -}}
   </span>
 
@@ -13,9 +21,9 @@
 
     <!-- Menu principale -->
     {{- if .Site.Menus.main -}}
-    <span class="flex flex-wrap mr2">
+    <span class="flex flex-wrap">
       {{- range .Site.Menus.main -}}
-          <a href="{{ .URL }}" class="plain mr2 nav-links">{{ .Name }}</a>
+          <a href="{{ .URL }}" class="plain nav-links">{{ .Name }}</a>
         {{- end -}}
     </span>
     {{- end -}}
@@ -26,14 +34,14 @@
       {{- if .IsTranslated -}}
       <span class="dropdown mr2">
         <a data-mdb-dropdown-init class="dropdown-toggle" href="#" id="languageDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-          <i class="fi fi-{{ if eq .Language.LanguageName "Italian" }}it{{ else if eq .Language.LanguageName "English" }}gb{{ end }} me-2"></i>
+          <i class="fi fi-{{ if eq .Language.LanguageName "Italian" }}it{{ else if eq .Language.LanguageName "English" }}gb{{ end }}"></i>
         </a>
 
         <ul class="dropdown-menu" aria-labelledby="languageDropdown">
           {{ range .Translations }}
             <li>
               <a class="dropdown-item" href="{{ .Permalink }}">
-                <i class="fi fi-{{ if eq .Language.LanguageName "Italian" }}it{{ else if eq .Language.LanguageName "English" }}gb{{ end }} me-2"></i>
+                <i class="fi fi-{{ if eq .Language.LanguageName "Italian" }}it{{ else if eq .Language.LanguageName "English" }}gb{{ end }}"></i>
                 {{- if eq . $ }}<i class="fa fa-check text-success ms-2"></i>{{- end -}}
               </a>
             </li>

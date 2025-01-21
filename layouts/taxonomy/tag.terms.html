@@ -1,0 +1,21 @@
+{{ define "title" }}
+  {{- i18n "tags" | default "Tags" -}} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+  <div class="content-wrapper">
+    <article>
+      <section>
+        <h1>{{ i18n "tags" }}</h1>
+      </section>
+      <ul class="posts-list">
+        {{ range .Data.Terms.Alphabetical }}
+          <li>
+            <span class="post-date">({{ .Count }})</span>
+            <a href="{{ .Page.RelPermalink }}">{{ partial "translate-tag" (dict "tag" .Page.Title "context" $) }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </article>
+  </div>
+{{ end }} 

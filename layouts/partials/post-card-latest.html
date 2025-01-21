@@ -1,0 +1,25 @@
+<article class="post-card latest">
+  <div class="latest-content">
+    <div class="latest-text">
+      <h3>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h3>
+      <div class="meta-post">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "2006/01" }}
+        </time>
+      </div>
+      {{ with .Description }}
+        <p class="excerpt">{{ . }}</p>
+      {{ end }}
+      <a href="{{ .RelPermalink }}" class="read-more">
+        {{ i18n "readMore" }} →
+      </a>
+    </div>
+    {{ with .Params.image }}
+    <div class="latest-image">
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    </div>
+    {{ end }}
+  </div>
+</article> 

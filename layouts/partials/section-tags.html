@@ -1,0 +1,8 @@
+<section class="topics">
+    <h2>{{ i18n "topics" }}</h2>
+    <div class="topics-list">
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ partial "translate-tag" (dict "tag" $name "context" $) }}</a>
+      {{ end }}
+    </div>
+  </section>

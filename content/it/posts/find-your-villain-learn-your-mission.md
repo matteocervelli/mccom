@@ -5,10 +5,10 @@ slug: "trova-lantagonista-scopri-la-missione"
 aliases: []
 translationKey: "find-your-villain-learn-your-mission"
 language: it
-date: 2025-01-20T14:27:58+01:00
+date: 2024-04-17T00:00:00+01:00
 Lastmod: 
 draft: false 
-tags: ['purpose', 'mission', 'lessons, learned']
+tags: ['purpose', 'mission', 'lessons-learned']
 categories: ['posts']
 featured_image: "images/find-your-villain-learn-your-mission.jpg"
 ---
@@ -44,7 +44,7 @@ Ed ecco la rivelazione: ciò che ci dà un senso di missione non è quello che v
 
 ---
 
-Momento didattico: Cos'è una missione? Una missione è uno scopo o una causa che motiva profondamente le persone a intraprendere azioni significative basate sui loro valori e interessi.
+<u>Momento didattico: Cos'è una missione? Una missione è uno scopo o una causa che motiva profondamente le persone a intraprendere azioni significative basate sui loro valori e interessi.</u>>
 
 **La mia missione è quella di permettere ad altri talenti di concentrarsi più sulla creatività e meno sulla distruzione. Definisco questo stato come *Beautyvision***&mdash;uno stato in cui la creatività è liberata dalle catene del conformismo e le persone sono dotate di una visione del costruire invece che del distruggere.
 

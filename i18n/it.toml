@@ -41,7 +41,7 @@ other = "Indirizzo email obbligatorio."
 other = "Invia"
 
 [taxonomyPageList]
-other = "Di seguito troverai le pagine che utilizzano il termine “{{ .Title }}”"
+other = "Di seguito troverai le pagine che utilizzano il termine \"{{ .Title }}\""
 
 [pageTitle]
 other = "{{ .Name }} pagina"
@@ -116,3 +116,32 @@ other = "Novembre"
 
 [December]
 other = "Dicembre"
+
+[allPosts]
+other = "Tutti gli articoli"
+
+[postsTaggedWith]
+other = "Articoli taggati con:"
+
+[tags]
+other = "Tag"
+
+[topics]
+other = "Argomenti"
+
+[latestPost]
+other = "Ultimo"
+
+[featuredPosts]
+other = "Post selezionati"
+
+[menuPosts]
+other = "Articoli"
+
+[readingTime]
+one = "Un minuto di lettura"
+other = "{{ .Count }} minuti di lettura"
+
+[articlesAboutTopic]
+one = "{{ .Count }} articolo su questo argomento:"
+other = "{{ .Count }} articoli su questo argomento:" 

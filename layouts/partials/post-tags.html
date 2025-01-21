@@ -1,0 +1,11 @@
+{{- $context := . -}}
+<div class="post-tags">
+  {{- with .Params.tags -}}
+    {{- range $i, $tag := . -}}
+      {{- if $i }}, {{ end -}}
+      <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">
+        {{- partial "translate-tag" (dict "tag" $tag "context" $context) -}}
+      </a>
+    {{- end -}}
+  {{- end -}}
+</div> 

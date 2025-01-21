@@ -1,0 +1,25 @@
+tags:
+  guide:
+    en: "guide"
+    it: "guida"
+  leadership:
+    en: "leadership"
+    it: "leadership"
+  learning-organization:
+    en: "learning organization"
+    it: "organizzazione che apprende"
+  lessons-learned:
+    en: "lessons learned"
+    it: "lezioni apprese"
+  mission:
+    en: "mission"
+    it: "missione"
+  purpose:
+    en: "purpose"
+    it: "scopo"
+  scalability:
+    en: "scalability"
+    it: "scalabilità"
+  tech-stack:
+    en: "tech stack"
+    it: "stack tecnologico" 

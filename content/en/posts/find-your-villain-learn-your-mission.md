@@ -5,10 +5,10 @@ slug: "find-your-villain-learn-your-mission"
 aliases: []
 translationKey: "find-your-villain-learn-your-mission"
 language: en
-date: 2025-01-20T14:27:51+01:00
+date: 2024-04-17T00:00:00+01:00
 Lastmod: 
 draft: false 
-tags: ['purpose', 'mission', 'lessons, learned']
+tags: ['purpose', 'mission', 'lessons-learned']
 categories: ['posts']
 featured_image: "images/find-your-villain-learn-your-mission.jpg"
 ---
@@ -64,7 +64,8 @@ And here is the revelation: what brings us a sense of mission is not what we wou
 
 ---
 
-Teaching moment: What is a mission? A mission is a purpose or cause that deeply motivates people to take meaningful actions based on their values and interests. 
+<u>Teaching moment: What is a mission? A mission is a purpose or cause that deeply motivates people to take meaningful actions based on their values and interests. 
+</u>>
 
 **My mission is to empower other talents to focus more on creativity and less on destruction. I define this state as *Beautyvision***&mdash;a state in which creativity is freed from the chains of conformity, and people are empowered with a vision of building instead of destroying.
 

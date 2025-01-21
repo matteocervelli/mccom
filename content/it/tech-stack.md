@@ -51,13 +51,16 @@ Altri strumenti che utilizzo per gestire il sito e la mia attività personale:
 - [Clop](https://www.clop.ai) per ottimizzare le immagini
 - [Unsplash](https://unsplash.com) per le immagini stock
 
-Strumenti da implementare:
-- [ ] Cookie e Policy (presumibilmente [Iubenda](https://www.iubenda.com) per Cookie e Privacy)
-- [ ] HTTPS SSL (Ipotesi) [Let's Encrypt](https://letsencrypt.org)
-- [ ] Analytics
-- [ ] Searching
-- [ ] Dark Theme
-- [ ] Breadcrumb Navigation menu
-- [ ] Migliorare il Responsive Design tramite [Bootstrap](https://getbootstrap.com)
-- [ ] Bootstrap Responsive Design
+---
 
+Strumenti da implementare:
+<ul class="checklist">
+<li><input type="checkbox"> Cookie/Privacy e Policy (presumibilmente <a href="https://www.iubenda.com">Iubenda</a>)</li>
+<li><input type="checkbox"> HTTPS SSL (Ipotesi) Let's Encrypt</li>
+<li><input type="checkbox"> Analytics</li>
+<li><input type="checkbox"> Searching</li>
+</ul>
+
+---
+
+<mark>*Nota finale: Un grandissimo **Grazie** a [Steph Ango](https://stephango.com/), sia per il lavoro su Obsidian, sia la grafica e logica del suo blog da cui il mio prende molta ispirazione.*</mark>

@@ -1,0 +1,23 @@
+{{ define "title" }}
+  {{ partial "translate-tag" (dict "tag" .Data.Term "context" .) }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+  <div class="content-wrapper">
+    <article>
+      <section>
+        <h1>{{ partial "translate-tag" (dict "tag" .Data.Term "context" .) }}</h1>
+        <p>{{ i18n "articlesAboutTopic" (dict "Count" (len .Pages)) }}</p>
+      </section>
+      <ul class="posts-list">
+        {{ range .Pages }}
+          <li>
+            <span class="post-date">{{ .Date.Format "2006/01" }}</span>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      {{ template "_internal/pagination.html" . }}
+    </article>
+  </div>
+{{ end }} 

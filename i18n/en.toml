@@ -41,7 +41,7 @@ other = "An email address is required."
 other = "Send"
 
 [taxonomyPageList]
-other = "Below you will find pages that utilize the taxonomy term “{{ .Title }}”"
+other = "Below you will find pages that utilize the taxonomy term \"{{ .Title }}\""
 
 [readingTime]
 one = "One minute read"
@@ -124,3 +124,28 @@ other = "November"
 
 [December]
 other = "December"
+
+[allPosts]
+other = "All posts"
+
+[postsTaggedWith]
+other = "Posts tagged with:"
+
+[tags]
+other = "Tags"
+
+[topics]
+other = "Topics"
+
+[articlesAboutTopic]
+one = "{{ .Count }} entry about this topic:"
+other = "{{ .Count }} entries about this topic:"
+
+[latestPost]
+other = "Latest"
+
+[featuredPosts]
+other = "Featured Posts"
+
+[menuPosts]
+other = "Posts" 

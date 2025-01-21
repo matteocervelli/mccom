@@ -1,0 +1,12 @@
+<div class="topics-list">
+  {{ $taxonomies := .Site.Taxonomies.tags }}
+  {{ $length := len $taxonomies }}
+  {{ $counter := 0 }}
+  {{ range $name, $taxonomy := $taxonomies }}
+    {{ $counter = add $counter 1 }}
+    {{ $tag := $.Site.GetPage (printf "/tags/%s" $name) }}
+    <a href="{{ $tag.RelPermalink }}">{{ partial "translate-tag" (dict "tag" $name "context" $) }}</a>
+    ({{ $taxonomy.Count }})
+    {{ if ne $counter $length }}•{{ end }}
+  {{ end }}
+</div> 

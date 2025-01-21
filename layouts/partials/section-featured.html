@@ -1,0 +1,17 @@
+<section class="featured-posts">
+    <h2>{{ i18n "featuredPosts" }}</h2>
+    <div class="featured-grid">
+      {{ range .Site.Data.featured.posts }}
+        {{ with $.Site.GetPage . }}
+        <div class="featured-card">
+          {{ if .Params.featured_image }}
+            <img src="/{{ .Params.featured_image }}" alt="{{ .Title }}">
+          {{ end }}
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p class="excerpt">{{ .Description | default (truncate 150 .Plain) }}</p>
+          <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "readMore" }} →</a>
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>

@@ -1,0 +1,15 @@
+<div class="featured-grid">
+  {{ range .Site.Data.featured.posts }}
+    {{ with $.Site.GetPage . }}
+      <a href="{{ .RelPermalink }}" class="featured-card">
+        {{ with .Params.image }}
+          <img src="{{ . }}" alt="{{ $.Title }}">
+        {{ end }}
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}
+          <p>{{ . }}</p>
+        {{ end }}
+      </a>
+    {{ end }}
+  {{ end }}
+</div> 

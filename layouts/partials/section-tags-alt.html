@@ -1,0 +1,15 @@
+<section class="topics">
+  <h2>{{ i18n "topics" }}</h2>
+  <p class="topics-list-alt">
+    {{- $taxonomies := .Site.Taxonomies.tags -}}
+    {{- $taxonomyList := slice -}}
+    {{- range $key, $value := $taxonomies -}}
+      {{- $taxonomyList = $taxonomyList | append $key -}}
+    {{- end -}}
+    {{- $lastIndex := sub (len $taxonomyList) 1 -}}
+    {{- range $i, $key := $taxonomyList -}}
+      <a href="{{ "/tags/" | relLangURL }}{{ $key | urlize }}">{{ partial "translate-tag" (dict "tag" $key "context" $) }}</a>
+      {{- if ne $i $lastIndex }}, {{ end -}}
+    {{- end -}}
+  </p>
+</section> 

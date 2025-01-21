@@ -1,0 +1,27 @@
+<section class="latest-post">
+    <h2>{{ i18n "latestPost" }}</h2>
+    {{ $posts := where .Site.RegularPages "Type" "posts" }}
+    {{ $featuredPosts := where $posts "Params.featured_image" "!=" "" }}
+    {{ if $featuredPosts }}
+    {{ range first 1 $featuredPosts.ByDate.Reverse }}
+      <div class="post-card latest">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <div class="meta-post">
+          {{ if not .Date.IsZero }}
+            <time class="faint">{{- .Date.Format "2006/01/02" -}}</time>
+          {{end}}
+          &nbsp &mdash; {{ .ReadingTime }} {{ if eq .ReadingTime 1 }}{{ i18n "minute" }}{{ else }}{{ i18n "minutes" }}{{ end }}
+        </div>
+        <div class="latest-content">
+          <div class="latest-text">
+            <p class="excerpt">{{ .Plain | truncate 200 "..." }}</p>
+            <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "readMore" }} →</a>
+          </div>
+          <div class="latest-image">
+            <img src="/{{ .Params.featured_image }}" alt="{{ .Title }}">
+          </div>
+        </div>
+      </div>
+    {{ end }}
+    {{ end }}
+  </section>

@@ -116,14 +116,6 @@ Un case study featured
 ## <a id="prenota-ora">Prenota ora una sessione gratuita per parlarmi della tua idea</a>
 
 <!-- Calendly inline widget begin -->
-<div 
-    class="calendly-inline-widget" 
-    data-url="https://calendly.com/matteo-cervelli/coaching-strategico-gratuito?text_color=303030&primary_color=af00bf" 
-    style="min-width:320px;height:700px;">
-</div>
-<script
-    type="text/javascript" 
-    src="https://assets.calendly.com/assets/external/widget.js" 
-    async>
-</script>
+<div class="calendly-inline-widget" data-url="https://calendly.com/matteo-cervelli/free-strategic-coaching-session?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->

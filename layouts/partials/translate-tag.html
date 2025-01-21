@@ -1,0 +1,15 @@
+{{/* Input: un dict con il tag da tradurre e il contesto */}}
+{{- $tag := .tag | lower | urlize -}}
+{{- $context := .context -}}
+{{- $lang := $context.Page.Language.Lang -}}
+
+{{/* Cerca prima nel file tag_translations.yaml */}}
+{{- with $context.Site.Data.tag_translations.tags -}}
+  {{- if isset . $tag -}}
+    {{- index (index . $tag) $lang | default $tag | title -}}
+  {{- else -}}
+    {{- .tag | title -}}
+  {{- end -}}
+{{- else -}}
+  {{- .tag | title -}}
+{{- end -}} 
