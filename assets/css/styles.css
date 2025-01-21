@@ -72,6 +72,7 @@ html {
   --color-highlight-faint: var(--mc-purple-light);
   --color-link: var(--mc-black-dark);
   --color-selection: var(--mc-purple-light);
+  --color-tx-selection: var(--mc-peach-light);
 }
 
 .theme-dark {
@@ -86,12 +87,19 @@ html {
   --color-highlight-faint: var(--mc-purple-light);
   --color-link: var(--mc-peach);
   --color-selection: var(--mc-purple-light);
+  --color-tx-selection: var(--mc-peach-light);
   --color-bg-secondary: var(--mc-black-dark);
   --color-action: var(--mc-purple-light);
 }
 
+mark {
+  background-color: var(--color-selection);
+  color:  var(--color-tx-selection);
+}
+
 ::selection {
   background: var(--color-selection);
+  color: var(--color-tx-selection);
 }
 
 /* Main content area */
@@ -162,6 +170,11 @@ h2, h3, h4 {
 
 a, .nested-links a, .link {
   color: var(--color-link);
+  transition: color 0.2s ease-in-out;
+}
+
+mark a, .nested-links a,.link {
+  color: var(--color-tx-selection);
   transition: color 0.2s ease-in-out;
 }
 

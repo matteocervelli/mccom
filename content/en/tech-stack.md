@@ -30,10 +30,9 @@ Today, I write my texts in Markdown, in multiple languages, through Obsidian whe
 The theme is based on [Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke), where I made personal modifications to both style and structure. 
 
 The color palette used is:
-- MC Purple: **<span style="color: #AF00BF">#AF00BF</span>**
-- MC Peach: **<span style="color: #FFE8D1; text-shadow: -2px -2px #303030, 2px 2px #303030, -2px -2px #303030, 2px 2px #303030">#FFE8D1</span>**
-- MC Orange: **<span style="color: #FF7E00">#FF7E00</span>**
-- MC Black: **<span style="color: #303030">#303030</span>**
+- MC Purple: #AF00BF
+- MC Peach Light: #FFE8D1
+- MC Black: #303030
 
 The Fonts are two of my companions:
 - [Raleway](https://fonts.google.com/specimen/Raleway) for headings
@@ -63,4 +62,4 @@ Tools to implement:
 
 ---
 
-<mark>*Final note: A huge **Thank you** to [Steph Ango](https://stephango.com/), both for his work on Obsidian and for the design and logic of his blog from which mine takes much inspiration.*</mark>
+<mark>*Final note: A huge **Thank you** to <b>[Steph Ango](https://stephango.com/)</b>, both for his work on Obsidian and for the design and logic of his blog from which mine takes much inspiration.*</mark>

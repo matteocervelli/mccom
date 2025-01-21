@@ -31,8 +31,7 @@ Il tema è basato su [Ananke](https://github.com/theNewDynamic/gohugo-theme-anan
 
 La palette di colori usata è:
 - MC Purple: #AF00BF
-- MC Peach: #FFE8D1
-- MC Orange: #FF7E00
+- MC Peach Light: #FFE8D1
 - MC Black: #303030
 
 I Font sono due miei compagni:
@@ -63,4 +62,4 @@ Strumenti da implementare:
 
 ---
 
-<mark>*Nota finale: Un grandissimo **Grazie** a [Steph Ango](https://stephango.com/), sia per il lavoro su Obsidian, sia la grafica e logica del suo blog da cui il mio prende molta ispirazione.*</mark>
+<mark>*Nota finale: Un grandissimo **Grazie** a <b>[Steph Ango](https://stephango.com/)</b>, sia per il lavoro su Obsidian, sia la grafica e logica del suo blog da cui il mio prende molta ispirazione.*</mark>
