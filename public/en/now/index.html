@@ -24,7 +24,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.aaa6dc5eca96960665788a4bc1c85a5b3dcd6b87086583d1f24a1e022f38f53c.css" integrity="sha256-qqbcXsqWlgZleIpLwchaWz3Na4cIZYPR8koeAi849Tw=">
+  <link rel="stylesheet" href="/css/styles.min.b53f6b741dfd9a5970e24cb7d72cd3db584e6ce730de746e669945871daf5c93.css" integrity="sha256-tT9rdB39mllw4ky31yzT21hObOcw3nRuZplFhx2vXJM=">
 
     
 
@@ -62,12 +62,15 @@
       
     
 	
+  
+  
+    <script src="/js/youtube-embed.min.8eeb8c4544eaca34bd0d7654c75ed792997845f16214f04753f91aa577568837.js"></script>
+    
   </head><body class="">
-    <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.querySelector('body').classList.add('theme-dark')
-      }
-    </script>
+    
+    
+    <script src="/js/theme-light-dark-cache.min.097b151ad2ce76d0f78bfa652245f9f8b688a7aaf7fe59c89ad11b72891ddf73.js"></script>
+    
     
    
   <header>
@@ -156,7 +159,7 @@ Hopefully, this will also revitalize my social media management.</p>
     <footer role="contentinfo" aria-label="Site footer">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.js"></script>
     
-    <script src="/js/dropdown.js"></script>
+    <script src="/js/dropdown.min.4012e2973ab5e591a68041bc12b0f1661ba78d4527715a5bda3b621d235cf613.js"></script>
     <div>
       
       <div class="bt b--mc-purple" aria-hidden="true"></div>
@@ -213,41 +216,11 @@ Hopefully, this will also revitalize my social media management.</p>
       </div>
     </div>
 </footer>
-    <script>
-      
-      var darkModeToggle = document.querySelector("#theme-toggle");
-
-      function toggleTheme() {
-        document.body.classList.toggle("theme-dark");
-        updateThemeState();
-      }
-
-      function updateThemeState() {
-        let isDarkMode = document.body.classList.contains("theme-dark");
-        let theme = isDarkMode ? "dark" : "light";
-        localStorage.setItem("theme", theme);
-        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
-      }
-
-      function initializeTheme() {
-        let isDarkMode = document.body.classList.contains("theme-dark");
-        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
-      }
-
-      darkModeToggle.addEventListener("click", toggleTheme);
-
-      window.addEventListener('keydown', function(e) {
-          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
-            return;
-          }
-          if ((e.key === 'd' || e.key === 'D') && !e.ctrlKey && !e.metaKey) {
-            toggleTheme();
-          }
-      });
-
-      initializeTheme();
     
-    </script>
-
+    
+    <script src="/js/theme-light-dark-function.min.2ad1fc97100f8d4eed4abff70b46f89f55a91921225ba3de04726cb3ae1b5326.js"></script>
+    
+    
+    <script src="/js/backToTop.min.a00f7fa9bd8f406e062eb6ef89963a398eadbe94b3f2b0e4fbfd3dce0b80b46e.js"></script>
   </body>
 </html>

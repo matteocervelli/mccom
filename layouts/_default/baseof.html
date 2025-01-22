@@ -61,55 +61,28 @@
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
+  
+  {{ $embedYouTube := resources.Get "js/youtube-embed.js" | minify | fingerprint }}
+    <script src="{{ $embedYouTube.RelPermalink }}"></script>
+    
   </head>
 
   {{- $environment := hugo.Environment | default "production" -}}
   <body class="">
-    <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.querySelector('body').classList.add('theme-dark')
-      }
-    </script>
+    
+    {{ $cacheLightDark := resources.Get "js/theme-light-dark-cache.js" | minify | fingerprint }}
+    <script src="{{ $cacheLightDark.RelPermalink }}"></script>
+    
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     <main role="main">
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
-    <script>
-      
-      var darkModeToggle = document.querySelector("#theme-toggle");
-
-      function toggleTheme() {
-        document.body.classList.toggle("theme-dark");
-        updateThemeState();
-      }
-
-      function updateThemeState() {
-        let isDarkMode = document.body.classList.contains("theme-dark");
-        let theme = isDarkMode ? "dark" : "light";
-        localStorage.setItem("theme", theme);
-        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
-      }
-
-      function initializeTheme() {
-        let isDarkMode = document.body.classList.contains("theme-dark");
-        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
-      }
-
-      darkModeToggle.addEventListener("click", toggleTheme);
-
-      window.addEventListener('keydown', function(e) {
-          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
-            return;
-          }
-          if ((e.key === 'd' || e.key === 'D') && !e.ctrlKey && !e.metaKey) {
-            toggleTheme();
-          }
-      });
-
-      initializeTheme();
     
-    </script>
-
+    {{ $themeLightDark := resources.Get "js/theme-light-dark-function.js" | minify | fingerprint }}
+    <script src="{{ $themeLightDark.RelPermalink }}"></script>
+    
+    {{ $backToTop := resources.Get "js/backToTop.js" | minify | fingerprint }}
+    <script src="{{ $backToTop.RelPermalink }}"></script>
   </body>
 </html>

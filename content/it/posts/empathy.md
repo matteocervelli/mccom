@@ -19,9 +19,7 @@ In altre parole, comprendere come vedono la loro realtà e come si sentono rigua
 > "L'empatia è *sentire con le persone*"
 > —Dr. Brené Brown
 
-<div style="display: flex; justify-content: center;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Evwgu369Jw?si=S2GlLl0sJ2HRCyLv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+@https://www.youtube.com/watch?v=1Evwgu369Jw
 
 L'empatia è una competenza allenabile. Ecco una guida per imparare ad essere una persona con cui tutti parlano volentieri.
 
