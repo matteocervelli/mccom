@@ -49,7 +49,7 @@ html {
   --font-small: 0.875em;
   --font-smaller: 0.8em;
   --wrap-wide: 54em;
-  --wrap-normal: 37em;
+  --wrap-normal: 44.1735em;
   --input-width: 20em;
   --image-radius: 6px;
   --line-height: 1.8;
@@ -73,6 +73,7 @@ html {
   --color-link: var(--mc-black-dark);
   --color-selection: var(--mc-purple-light);
   --color-tx-selection: var(--mc-peach-light);
+  --color-action: var(--mc-purple-light);
 }
 
 .theme-dark {
@@ -304,25 +305,6 @@ a.plain,a.muted {
   text-decoration: none
 }
 
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  white-space: nowrap; /* Impedisce l'andare a capo del logo */
-  display: inline-flex;
-  align-items: center;
-  margin-right: 1rem;
-}
-
-.nav-breadcrumb {
-  color: var(--color-highlight);
-  font-family: 'Raleway', sans-serif;
-  font-size: 2rem;
-  white-space: nowrap;
-  align-items: center;
-  line-height: 1;
-}
-
 .faint {
   color: var(--color-tx-faint);
 }
@@ -398,32 +380,101 @@ a.plain,a.muted {
 .mb6 { margin-bottom: 6rem }
 .mb8 { margin-bottom: 8rem }
 
-.nav-links {
+
+
+
+
+
+
+/* Navigation section */
+
+header {
+  width: 100%;
+  max-width: var(--wrap-normal);
+  margin: 0 auto 3rem;
+}
+
+.nav-logo,
+.nav-breadcrumb,
+.nav-links,
+.nav-logoBreadcrumb,
+.nav-menu,
+.nav-langTheme,
+.language-list,
+.i18n-link,
+.nav-menu-items {
+  line-height: 1;
+  text-decoration: none;
   color: var(--color-highlight);
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   white-space: nowrap;
-  align-items: center;
-  line-height: 1;
-  margin-right: 2rem;
 }
 
-/* Navigazione */
+/*
+nav > div {
+  white-space: nowrap; 
+  gap: 1rem;
+}
+*/
+
+nav {
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav-links {
+  flex-wrap: wrap;
+  display: flex;
+  flex: 1;  /* Occupa lo spazio disponibile */
+}
+
+.nav-logoBreadcrumb {
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-right: auto;
+}
+
+.nav-logo {
+  flex-wrap: wrap;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.nav-breadcrumb {
+  flex-wrap: wrap;
+  margin-right: 1rem;
+  opacity: 0.6;
+}
+
+.nav-menu {
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.nav-menu-items {
+  margin-right: 1rem;
+}
+
+.nav-menu-items:last-child {
+  margin-right: 0;
+}
+
+.nav-langTheme {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
 @media (max-width: 860px) {
-  nav {
-    margin: 0 auto 3em;
-    width: var(--wrap-normal);
-    max-width: var(--wrap-wide);
+  .nav-menu {
+    flex-wrap: wrap;
     display: flex;
-    align-items: center;  /* Aggiunto */
-    justify-content: space-between;  /* Aggiunto */
-  }
-  
-  nav > div:last-child {
-    width: 100%;
-    justify-content: flex-end;
-    white-space: nowrap;
-    gap: 1rem;
   }
 }
 
@@ -432,14 +483,11 @@ a.plain,a.muted {
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center;
 }
 
-/* Lingue */
 .fi {
   font-size: 2.2rem;
   line-height: 1;
-  vertical-align: middle;
   border: none !important;
 }
 
@@ -451,7 +499,6 @@ a.plain,a.muted {
 .current-lang {
   color: var(--color-highlight);
   font-weight: 600;
-  align-items: center;
   font-family: 'Raleway', sans-serif;
   text-decoration: underline solid;
 }
@@ -459,7 +506,6 @@ a.plain,a.muted {
 .i18n-link {
   text-decoration: none;
   display: inline-flex;
-  align-items: center;
   padding: 0;
   margin: 0;
 }
@@ -474,23 +520,7 @@ a.plain,a.muted {
   opacity: 0.9;
 }
 
-nav {
-  margin: 0 auto 3em;
-  width: var(--wrap-normal);
-  max-width: var(--wrap-wide);
-  display: flex;
-  align-items: center;  /* Aggiunto */
-  justify-content: space-between;  /* Aggiunto */
-  gap: 1rem;
-}
 
-nav > div {
-  display: flex;
-  align-items: center;
-  white-space: nowrap; 
-  gap: 1rem;
-  
-}
 /* Newsletter Form */
 .newsletter-form {
   display: flex;
@@ -532,7 +562,6 @@ nav > div {
   height: 20px;
   width: 36px;
   display: inline-flex;  /* Modificato da block a flex */
-  align-items: center;  /* Aggiunto */
   position: relative;
   border: none;
   cursor: pointer;
@@ -621,7 +650,7 @@ nav > div {
   border: 0;
   color: #212529;
   justify-content: center;
-  align-items: center;
+
 }
 
 /* Hover sugli elementi del menu */
@@ -635,7 +664,6 @@ nav > div {
   font-family: 'Raleway', sans-serif;
   line-height: 1;
   display: flex;
-  align-items: center;
   height: 100%;
   border: none;
   border-image-width: 0;
@@ -644,7 +672,6 @@ nav > div {
 
 .dropdown-toggle i {
   display: flex;
-  align-items: center;
   font-size: 2.2rem;
   height: 20px;
 }
@@ -657,13 +684,6 @@ nav > div {
   list-style-type: none;
 }
 
-nav, 
-.nav-links,
-.language-list,
-.i18n-link,
-.logo {
-  line-height: 1; /* Forza un line-height uniforme per tutti gli elementi di navigazione */
-}
 
 .meta-post {
   font-size: 1.5rem;
