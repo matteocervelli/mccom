@@ -148,4 +148,10 @@ other = "Latest"
 other = "Featured Posts"
 
 [menuPosts]
-other = "Posts" 
+other = "Posts"
+
+[tableOfContents]
+other = "Table of Contents"
+
+[toggleSidebar]
+other = "Toggle sidebar" 

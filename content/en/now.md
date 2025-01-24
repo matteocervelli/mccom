@@ -25,7 +25,7 @@ Many of my entrepreneur friends have noticed that I've switched to the other sid
 Yet I believe in the power of ecosystems and the need to do holistic and fractal work together to grow the country's system.
 
 ## Family Man
-I have 3 daughters, two dogs, a beautiful house in the countryside. And I live close to my parents to help and support them through my mother's illness. 
+I live with my beautiful wife Sara and our 3 daughters, two dogs, in our beautiful house in the countryside. And I live close to my parents to help and support them through my mother's illness. 
 Maybe not the kind of update you'd expect from a Now page, but it's reality.
 
 ## I've Restarted my Blog

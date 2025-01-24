@@ -29,7 +29,7 @@ Eppure io credo nella forza degli ecosistemi e nella necessita di fare un lavoro
 Per assumermi ed entrare in contatto con me, visita la pagina [Lavoro](https://www.matteocervelli.com/it/work/).
 
 ## Uomo di famiglia
-Ho 3 figlie, due cani, una bella casa in campagna. E vivo vicino ai miei genitori per aiutarli e sostenerli nella malattia che sta attraversando mia mamma. 
+Vivo con la mia bellissima moglie Sara e le nostre 3 figlie, due cani, nella nostra bellissima casa in campagna. E vivo vicino ai miei genitori per aiutarli e sostenerli nella malattia che sta attraversando mia mamma. 
 Magari non il tipo di aggiornamento che ci si aspetta da un Now page, ma è la realtà.
 
 ## Ho riavviato il mio blog

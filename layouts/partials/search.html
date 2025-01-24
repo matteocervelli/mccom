@@ -1,0 +1,18 @@
+<div class="search-container" id="searchContainer">
+  <div class="search-box">
+    <input 
+      type="text" 
+      class="search-input" 
+      id="searchInput" 
+      placeholder="{{ if eq .Site.Language.Lang "it" }}Cerca nel sito...{{ else }}Search the site...{{ end }}"
+    >
+    <div class="search-shortcut">
+      {{ if eq .Site.Language.Lang "it" }}
+        ESC per chiudere / ⌘K per aprire
+      {{ else }}
+        ESC to close / ⌘K to open
+      {{ end }}
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div> 

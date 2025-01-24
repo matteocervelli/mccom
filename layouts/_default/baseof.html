@@ -65,15 +65,44 @@
   {{ $embedYouTube := resources.Get "js/youtube-embed.js" | minify | fingerprint }}
     <script src="{{ $embedYouTube.RelPermalink }}"></script>
     
+    <!-- Search -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+    {{ $search := resources.Get "js/search.js" | minify | fingerprint }}
+    <script src="{{ $search.RelPermalink }}"></script>
+    
   </head>
 
   {{- $environment := hugo.Environment | default "production" -}}
   <body class="">
+    {{ partial "search.html" . }}
     
     {{ $cacheLightDark := resources.Get "js/theme-light-dark-cache.js" | minify | fingerprint }}
     <script src="{{ $cacheLightDark.RelPermalink }}"></script>
     
+    {{/* Verifica se la pagina dovrebbe avere la sidebar */}}
+    {{ $shouldHaveSidebar := and 
+        (not .IsHome) 
+        (not .IsSection) 
+        (gt (countwords .TableOfContents) 0) 
+    }}
+
+    {{/* Se dovrebbe avere la sidebar, la mostriamo */}}
+    {{ if $shouldHaveSidebar }}
+        <button class="sidebar-toggle" onclick="toggleSidebar()" title="{{ i18n "toggleSidebar" }}">
+            <svg height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="m17 0h-16a1 1 0 0 0 -1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-16a1 1 0 0 0 -1-1zm-14 16a1 1 0 0 1 0-2 1 1 0 0 1 0 2zm0-4a.945.945 0 0 1 -1-1 .945.945 0 0 1 1-1 .945.945 0 0 1 1 1 .945.945 0 0 1 -1 1zm0-4a.945.945 0 0 1 -1-1 .945.945 0 0 1 1-1 .945.945 0 0 1 1 1 .945.945 0 0 1 -1 1zm0-4a.945.945 0 0 1 -1-1 .945.945 0 0 1 1-1 .945.945 0 0 1 1 1 .945.945 0 0 1 -1 1zm12 12h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-4h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-4h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-4h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"/>
+            </svg>
+        </button>
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <h3>{{ i18n "tableOfContents" }}</h3>
+                {{ .TableOfContents }}
+            </div>
+        </div>
+    {{ end }}
+    
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+    
     <main role="main">
       {{ block "main" . }}{{ end }}
     </main>
@@ -84,5 +113,14 @@
     
     {{ $backToTop := resources.Get "js/backToTop.js" | minify | fingerprint }}
     <script src="{{ $backToTop.RelPermalink }}"></script>
+  
+    {{ $toggleTOC := resources.Get "js/toggleTOC.js" | minify | fingerprint }}
+    <script src="{{ $toggleTOC.RelPermalink }}"></script>
+
+    <!-- Search scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+    {{ $search := resources.Get "js/search.js" | minify | fingerprint }}
+    <script src="{{ $search.RelPermalink }}"></script>
+   
   </body>
 </html>

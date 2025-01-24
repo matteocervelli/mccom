@@ -10,6 +10,7 @@ draft: false
 tags: []
 categories: ['page', 'about']
 featured_image: ""
+sidebar: true
 ---
 ## In short
 
@@ -23,7 +24,7 @@ I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs:
 
 I live in Tuscany.
 
-On thwebsite, you can find:
+On this website, you can find:
 - My [essays and thoughts](/posts)
 - My [work method](/work)
 - What I am focused on [now](/now)

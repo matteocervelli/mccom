@@ -2,345 +2,345 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://matteocervelli.netlify.app/en/categories/</loc>
+    <loc>http://localhost:59625/en/categories/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/categories/"
+                href="http://localhost:59625/it/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/categories/"
+                href="http://localhost:59625/en/categories/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/categories/page/</loc>
+    <loc>http://localhost:59625/en/categories/page/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/categories/page/"
+                href="http://localhost:59625/it/categories/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/categories/page/"
+                href="http://localhost:59625/en/categories/page/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/categories/work/</loc>
+    <loc>http://localhost:59625/en/categories/work/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/categories/work/"
+                href="http://localhost:59625/it/categories/work/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/categories/work/"
+                href="http://localhost:59625/en/categories/work/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/work/</loc>
+    <loc>http://localhost:59625/en/work/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/lavora-con-me/"
+                href="http://localhost:59625/it/lavora-con-me/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/work/"
+                href="http://localhost:59625/en/work/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/scalability/</loc>
+    <loc>http://localhost:59625/en/tags/scalability/</loc>
     <lastmod>2025-01-18T08:41:33+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/scalability/"
+                href="http://localhost:59625/it/tags/scalability/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/scalability/"
+                href="http://localhost:59625/en/tags/scalability/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/</loc>
+    <loc>http://localhost:59625/en/tags/</loc>
     <lastmod>2025-01-18T08:41:33+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/"
+                href="http://localhost:59625/it/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/"
+                href="http://localhost:59625/en/tags/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/business-scalability-engineer/</loc>
+    <loc>http://localhost:59625/en/business-scalability-engineer/</loc>
     <lastmod>2025-01-18T08:41:33+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/business-scalability-engineer/"
+                href="http://localhost:59625/it/business-scalability-engineer/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/business-scalability-engineer/"
+                href="http://localhost:59625/en/business-scalability-engineer/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/categories/about/</loc>
+    <loc>http://localhost:59625/en/categories/about/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/guide/</loc>
-    <lastmod>2025-01-17T16:12:52+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/guide/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/guide/"
-                />
-  </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/tech-stack/</loc>
+    <loc>http://localhost:59625/en/tags/guide/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/tech-stack/"
+                href="http://localhost:59625/it/tags/guide/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/tech-stack/"
+                href="http://localhost:59625/en/tags/guide/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tech-stack/</loc>
+    <loc>http://localhost:59625/en/tags/tech-stack/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tech-stack/"
+                href="http://localhost:59625/it/tags/tech-stack/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tech-stack/"
+                href="http://localhost:59625/en/tags/tech-stack/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/now/</loc>
+    <loc>http://localhost:59625/en/tech-stack/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/ora/"
+                href="http://localhost:59625/it/tech-stack/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/now/"
+                href="http://localhost:59625/en/tech-stack/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/about/</loc>
+    <loc>http://localhost:59625/en/now/</loc>
+    <lastmod>2025-01-17T16:12:52+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-IT"
+                href="http://localhost:59625/it/ora/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:59625/en/now/"
+                />
+  </url><url>
+    <loc>http://localhost:59625/en/about/</loc>
     <lastmod>2025-01-16T17:26:30+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/about/"
+                href="http://localhost:59625/it/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/about/"
+                href="http://localhost:59625/en/about/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/find-your-villain-learn-your-mission/</loc>
+    <loc>http://localhost:59625/en/find-your-villain-learn-your-mission/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/find-your-villain-learn-your-mission/"
+                href="http://localhost:59625/it/find-your-villain-learn-your-mission/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/find-your-villain-learn-your-mission/"
+                href="http://localhost:59625/en/find-your-villain-learn-your-mission/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/lessons-learned/</loc>
+    <loc>http://localhost:59625/en/tags/lessons-learned/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/lessons-learned/"
+                href="http://localhost:59625/it/tags/lessons-learned/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/lessons-learned/"
+                href="http://localhost:59625/en/tags/lessons-learned/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/mission/</loc>
+    <loc>http://localhost:59625/en/tags/mission/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/mission/"
+                href="http://localhost:59625/it/tags/mission/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/mission/"
+                href="http://localhost:59625/en/tags/mission/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/categories/posts/</loc>
+    <loc>http://localhost:59625/en/categories/posts/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/categories/posts/"
+                href="http://localhost:59625/it/categories/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/categories/posts/"
+                href="http://localhost:59625/en/categories/posts/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/purpose/</loc>
+    <loc>http://localhost:59625/en/tags/purpose/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/purpose/"
+                href="http://localhost:59625/it/tags/purpose/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/purpose/"
+                href="http://localhost:59625/en/tags/purpose/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/posts/</loc>
+    <loc>http://localhost:59625/en/posts/</loc>
     <lastmod>2024-03-21T10:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/posts/"
+                href="http://localhost:59625/it/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/posts/"
+                href="http://localhost:59625/en/posts/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/coaching/</loc>
+    <loc>http://localhost:59625/en/tags/coaching/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/coaching/"
+                href="http://localhost:59625/it/tags/coaching/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/coaching/"
+                href="http://localhost:59625/en/tags/coaching/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/communication/</loc>
+    <loc>http://localhost:59625/en/tags/communication/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/communication/"
+                href="http://localhost:59625/it/tags/communication/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/communication/"
+                href="http://localhost:59625/en/tags/communication/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/empathy/</loc>
+    <loc>http://localhost:59625/en/tags/empathy/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/empathy/"
+                href="http://localhost:59625/it/tags/empathy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/empathy/"
+                href="http://localhost:59625/en/tags/empathy/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/empathy/</loc>
+    <loc>http://localhost:59625/en/empathy/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/empathy/"
+                href="http://localhost:59625/it/empathy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/empathy/"
+                href="http://localhost:59625/en/empathy/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/humility-will-for-great-leadership/</loc>
+    <loc>http://localhost:59625/en/humility-will-for-great-leadership/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/humility-will-for-great-leadership/"
+                href="http://localhost:59625/it/humility-will-for-great-leadership/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/humility-will-for-great-leadership/"
+                href="http://localhost:59625/en/humility-will-for-great-leadership/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/leadership/</loc>
+    <loc>http://localhost:59625/en/tags/leadership/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/leadership/"
+                href="http://localhost:59625/it/tags/leadership/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/leadership/"
+                href="http://localhost:59625/en/tags/leadership/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/tags/learning-organization/</loc>
+    <loc>http://localhost:59625/en/tags/learning-organization/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/tags/learning-organization/"
+                href="http://localhost:59625/it/tags/learning-organization/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/tags/learning-organization/"
+                href="http://localhost:59625/en/tags/learning-organization/"
                 />
   </url><url>
-    <loc>https://matteocervelli.netlify.app/en/</loc>
+    <loc>http://localhost:59625/en/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="https://matteocervelli.netlify.app/it/"
+                href="http://localhost:59625/it/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://matteocervelli.netlify.app/en/"
+                href="http://localhost:59625/en/"
                 />
   </url>
 </urlset>

@@ -72,3 +72,20 @@ defaultContentLanguageInSubdir = true
 [taxonomies]
     tag = 'tags'
     category = 'categories'
+[frontmatter]
+  [frontmatter.default]
+    # Per tutti i contenuti in content/posts
+    [frontmatter.default.posts]
+      sidebar = true
+    
+    # Per tutti i contenuti singoli che non sono home o sezioni
+    [frontmatter.default.pages]
+      sidebar = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"

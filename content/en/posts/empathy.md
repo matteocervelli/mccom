@@ -16,8 +16,8 @@ featured_image: "images/empathy.jpg"
 
 In other words, to understand how they view their reality and how they feel about things.
 
-> "Empathy is *feeling with people*"
-> —Dr. Brené Brown
+> Empathy is **feeling with people**
+> <br>&mdash; Dr. Brené Brown
 
 @https://www.youtube.com/watch?v=1Evwgu369Jw
 

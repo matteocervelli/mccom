@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matteo Cervelli</title>
-    <link>https://matteocervelli.netlify.app/en/</link>
+    <link>http://localhost:59625/en/</link>
     <description>Recent content on Matteo Cervelli</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 18 Jan 2025 14:52:50 +0100</lastBuildDate>
-    <atom:link href="https://matteocervelli.netlify.app/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:59625/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Work with me</title>
-      <link>https://matteocervelli.netlify.app/en/work/</link>
+      <link>http://localhost:59625/en/work/</link>
       <pubDate>Sat, 18 Jan 2025 14:52:50 +0100</pubDate>
-      <guid>https://matteocervelli.netlify.app/en/work/</guid>
-      <description>&lt;h2 id=&#34;my-value-system&#34;&gt;My value system&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why&#34;&gt;Why&lt;/h3&gt;&#xA;&lt;p&gt;I unlock people&amp;rsquo;s talent and potential to build a more beautiful world together.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how&#34;&gt;How&lt;/h3&gt;&#xA;&lt;p&gt;I help companies grow in a scalable way, to build ecosystems that enable comfort, skills, and overall well-being.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what&#34;&gt;What&lt;/h3&gt;&#xA;&lt;p&gt;I work as a consultant, advisor, and trainer, as well as making personal investments.&lt;/p&gt;&#xA;&lt;h3 id=&#34;principles&#34;&gt;Principles&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Beauty&lt;/strong&gt; is the key to unleashing creativity and eliminating poverty.&lt;/li&gt;&#xA;&lt;li&gt;Whether you choose easy or difficult &lt;strong&gt;challenges&lt;/strong&gt;, they require the same energy. Always aim high.&lt;/li&gt;&#xA;&lt;li&gt;Learning, &lt;strong&gt;failing&lt;/strong&gt;, and trying again are the only ways to grow.&lt;/li&gt;&#xA;&lt;li&gt;A company&amp;rsquo;s capability is its unique value proposition, its potential lies in the strength of &lt;strong&gt;relationships&lt;/strong&gt; that leadership maintains.&lt;/li&gt;&#xA;&lt;li&gt;An evolving business is based on few &lt;strong&gt;experiments&lt;/strong&gt;, but with great potential. And at the same time, many diversified stimuli of mammoth opportunities that simmer quietly.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;a href=&#34;#book-now&#34; class=&#34;mc-button&#34;&gt;&#xA;    Book now a free session&#xA;    &lt;br&gt;&#xA;    to talk about your idea&#xA;&lt;/a&gt;&#xA;&lt;h2 id=&#34;services-i-offer&#34;&gt;Services I offer&lt;/h2&gt;&#xA;&lt;h3 id=&#34;management-consulting&#34;&gt;Management Consulting&lt;/h3&gt;&#xA;&lt;p&gt;My consulting services are customized to &lt;a href=&#34;https://matteocervelli.netlify.app/en/business-scalability-engineer&#34;&gt;unlock your company&amp;rsquo;s potential&lt;/a&gt; and guide you toward success. Working together, we&amp;rsquo;ll transform challenges into opportunities. I can support you with tailored methodologies, strategic vision, insights, and operational excellence.&lt;/p&gt;</description>
+      <guid>http://localhost:59625/en/work/</guid>
+      <description>&lt;h2 id=&#34;my-value-system&#34;&gt;My value system&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why&#34;&gt;Why&lt;/h3&gt;&#xA;&lt;p&gt;I unlock people&amp;rsquo;s talent and potential to build a more beautiful world together.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how&#34;&gt;How&lt;/h3&gt;&#xA;&lt;p&gt;I help companies grow in a scalable way, to build ecosystems that enable comfort, skills, and overall well-being.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what&#34;&gt;What&lt;/h3&gt;&#xA;&lt;p&gt;I work as a consultant, advisor, and trainer, as well as making personal investments.&lt;/p&gt;&#xA;&lt;h3 id=&#34;principles&#34;&gt;Principles&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Beauty&lt;/strong&gt; is the key to unleashing creativity and eliminating poverty.&lt;/li&gt;&#xA;&lt;li&gt;Whether you choose easy or difficult &lt;strong&gt;challenges&lt;/strong&gt;, they require the same energy. Always aim high.&lt;/li&gt;&#xA;&lt;li&gt;Learning, &lt;strong&gt;failing&lt;/strong&gt;, and trying again are the only ways to grow.&lt;/li&gt;&#xA;&lt;li&gt;A company&amp;rsquo;s capability is its unique value proposition, its potential lies in the strength of &lt;strong&gt;relationships&lt;/strong&gt; that leadership maintains.&lt;/li&gt;&#xA;&lt;li&gt;An evolving business is based on few &lt;strong&gt;experiments&lt;/strong&gt;, but with great potential. And at the same time, many diversified stimuli of mammoth opportunities that simmer quietly.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;a href=&#34;#book-now&#34; class=&#34;mc-button&#34;&gt;&#xA;    Book now a free session&#xA;    &lt;br&gt;&#xA;    to talk about your idea&#xA;&lt;/a&gt;&#xA;&lt;h2 id=&#34;services-i-offer&#34;&gt;Services I offer&lt;/h2&gt;&#xA;&lt;h3 id=&#34;management-consulting&#34;&gt;Management Consulting&lt;/h3&gt;&#xA;&lt;p&gt;My consulting services are customized to &lt;a href=&#34;http://localhost:59625/en/business-scalability-engineer&#34;&gt;unlock your company&amp;rsquo;s potential&lt;/a&gt; and guide you toward success. Working together, we&amp;rsquo;ll transform challenges into opportunities. I can support you with tailored methodologies, strategic vision, insights, and operational excellence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Unlock your business growth with a Scalability Engineer</title>
-      <link>https://matteocervelli.netlify.app/en/business-scalability-engineer/</link>
+      <link>http://localhost:59625/en/business-scalability-engineer/</link>
       <pubDate>Sat, 18 Jan 2025 08:41:33 +0100</pubDate>
-      <guid>https://matteocervelli.netlify.app/en/business-scalability-engineer/</guid>
+      <guid>http://localhost:59625/en/business-scalability-engineer/</guid>
       <description>&lt;h2 id=&#34;here-is-why-you-need-a-business-scalability-engineer-to-grow-your-business-the-way-it-deserves&#34;&gt;Here is why you need a Business Scalability Engineer to grow your business the way it deserves.&lt;/h2&gt;&#xA;&lt;p&gt;Do you know when a company seems blocked, growth slows down, problems multiply and you don&amp;rsquo;t know where to start to put things back in order?&lt;/p&gt;&#xA;&lt;p&gt;Here, I&amp;rsquo;m the one who helps unlock all this.&lt;/p&gt;&#xA;&lt;p&gt;Do you feel like there are a thousand problems in your company?&lt;/p&gt;&#xA;&lt;p&gt;Maybe you think everything needs to be changed: processes, roles, sales, even company culture.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Technologies used to build this site</title>
-      <link>https://matteocervelli.netlify.app/en/tech-stack/</link>
+      <link>http://localhost:59625/en/tech-stack/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
-      <guid>https://matteocervelli.netlify.app/en/tech-stack/</guid>
+      <guid>http://localhost:59625/en/tech-stack/</guid>
       <description>&lt;p&gt;Updated: 2025-01-17&lt;/p&gt;&#xA;&lt;p&gt;This website was created by Matteo Cervelli using a mix of personal skills and AI. I previously had a website hosted and built on WordPress, but I decided to rebuild it myself in early 2025 to &amp;ldquo;keep control&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;I wanted a lightweight, fast, and responsive website. And I wanted to learn the basics by leveraging what technology has to offer.&lt;/p&gt;&#xA;&lt;p&gt;First of all, matteocervelli.com is a static website. It&amp;rsquo;s built with &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; as SSG—Static Site Generator—and is hosted on &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt; via &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;, while DNS is managed through &lt;a href=&#34;https://www.cloudflare.com&#34;&gt;Cloudflare&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What I&#39;m doing now</title>
-      <link>https://matteocervelli.netlify.app/en/now/</link>
+      <link>http://localhost:59625/en/now/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
-      <guid>https://matteocervelli.netlify.app/en/now/</guid>
+      <guid>http://localhost:59625/en/now/</guid>
       <description>&lt;p&gt;&lt;em&gt;Note: this is a &lt;a href=&#34;https://nownownow.com&#34;&gt;Now&lt;/a&gt; page.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Updated: 2025-01-18, from my home in Poggibonsi, Tuscany, Italy.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-help-companies-grow-in-a-scalable-way&#34;&gt;I help companies grow in a scalable way&lt;/h2&gt;&#xA;&lt;p&gt;I am a business consultant and advisor.&lt;/p&gt;&#xA;&lt;p&gt;My work consists of helping companies grow in a scalable way through Strategy, Change Management, Sales and Business Development, Leadership Training and Coaching.&lt;/p&gt;&#xA;&lt;p&gt;Many of my entrepreneur friends have noticed that I&amp;rsquo;ve switched to the other side of the fence. My strength lies precisely in combining my experience as a family business partner + medium/large company management + international sales with my skills as a Scalability Engineer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>https://matteocervelli.netlify.app/en/about/</link>
+      <link>http://localhost:59625/en/about/</link>
       <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
-      <guid>https://matteocervelli.netlify.app/en/about/</guid>
-      <description>&lt;h2 id=&#34;in-short&#34;&gt;In short&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Matteo Cervelli. I am &lt;a href=&#34;https://matteocervelli.netlify.app/work/business-scalability-engineer&#34;&gt;Business Scalability Engineer&lt;/a&gt;. I act as a &lt;a href=&#34;https://matteocervelli.netlify.app/en/work/&#34;&gt;Consultant and Advisor&lt;/a&gt;. Previously I managed &lt;a href=&#34;https://www.urania.group&#34;&gt;Urania Group&lt;/a&gt; as Co-CEO.&lt;/p&gt;&#xA;&lt;p&gt;Today I help entrepreneurs and leaders to grow their business, in strategy, management, sales, implementing the principles of scalability.&lt;/p&gt;&#xA;&lt;p&gt;My purpose is to trigger people to build a more beautiful world, together.&lt;/p&gt;&#xA;&lt;p&gt;I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs: Maple and Cookie. Even before that, I am a husband: Sara and I have known each other since 2005 and in these 20 years we have loved each other and have always been there for each other, one, two and infinite.&lt;/p&gt;</description>
+      <guid>http://localhost:59625/en/about/</guid>
+      <description>&lt;h2 id=&#34;in-short&#34;&gt;In short&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Matteo Cervelli. I am &lt;a href=&#34;http://localhost:59625/work/business-scalability-engineer&#34;&gt;Business Scalability Engineer&lt;/a&gt;. I act as a &lt;a href=&#34;http://localhost:59625/en/work/&#34;&gt;Consultant and Advisor&lt;/a&gt;. Previously I managed &lt;a href=&#34;https://www.urania.group&#34;&gt;Urania Group&lt;/a&gt; as Co-CEO.&lt;/p&gt;&#xA;&lt;p&gt;Today I help entrepreneurs and leaders to grow their business, in strategy, management, sales, implementing the principles of scalability.&lt;/p&gt;&#xA;&lt;p&gt;My purpose is to trigger people to build a more beautiful world, together.&lt;/p&gt;&#xA;&lt;p&gt;I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs: Maple and Cookie. Even before that, I am a husband: Sara and I have known each other since 2005 and in these 20 years we have loved each other and have always been there for each other, one, two and infinite.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Find Your Villain, Learn Your Mission</title>
-      <link>https://matteocervelli.netlify.app/en/find-your-villain-learn-your-mission/</link>
+      <link>http://localhost:59625/en/find-your-villain-learn-your-mission/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
-      <guid>https://matteocervelli.netlify.app/en/find-your-villain-learn-your-mission/</guid>
+      <guid>http://localhost:59625/en/find-your-villain-learn-your-mission/</guid>
       <description>&lt;p&gt;Everyone has a villain. I got acquainted with mine five years ago in a meeting room.&lt;/p&gt;&#xA;&lt;p&gt;It was a hot summer day, and I was presenting a quarter update about a company we recently acquired. We couldn’t see the light at the end of the tunnel, but I was showing a PowerPoint filled with data and insights. Suddenly, Mr. Bowser started giving his own vision of the world, not caring about the information I provided. It was like all the job I did with my team was not real, while it was succumbing under a machine gun that fires repeated shots full of convictions taken from who knows what life experience.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Empathy 101</title>
-      <link>https://matteocervelli.netlify.app/en/empathy/</link>
+      <link>http://localhost:59625/en/empathy/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://matteocervelli.netlify.app/en/empathy/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Empathy&lt;/em&gt; is the &lt;em&gt;capacity to put oneself in the shoes of others&lt;/em&gt;.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;p&gt;In other words, to understand how they view their reality and how they feel about things.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Empathy is &lt;em&gt;feeling with people&lt;/em&gt;&amp;rdquo;&#xA;—Dr. Brené Brown&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;@https://www.youtube.com/watch?v=1Evwgu369Jw&lt;/p&gt;&#xA;&lt;p&gt;Empathy is a trainable skill. Here is a guide to learn how to be a person whom everyone talk to with joy.&lt;/p&gt;&#xA;&lt;h2 id=&#34;empathy-classification&#34;&gt;Empathy classification&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.verywellmind.com/what-is-empathy-2795562&#34;&gt;According to Kendra Cherry&lt;/a&gt;, there are three kinds of empathy:&lt;/p&gt;</description>
+      <guid>http://localhost:59625/en/empathy/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Empathy&lt;/em&gt; is the &lt;em&gt;capacity to put oneself in the shoes of others&lt;/em&gt;.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;p&gt;In other words, to understand how they view their reality and how they feel about things.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Empathy is &lt;strong&gt;feeling with people&lt;/strong&gt;&#xA;&lt;br&gt;— Dr. Brené Brown&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;@https://www.youtube.com/watch?v=1Evwgu369Jw&lt;/p&gt;&#xA;&lt;p&gt;Empathy is a trainable skill. Here is a guide to learn how to be a person whom everyone talk to with joy.&lt;/p&gt;&#xA;&lt;h2 id=&#34;empathy-classification&#34;&gt;Empathy classification&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.verywellmind.com/what-is-empathy-2795562&#34;&gt;According to Kendra Cherry&lt;/a&gt;, there are three kinds of empathy:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Humility &#43; Will for Great Leadership</title>
-      <link>https://matteocervelli.netlify.app/en/humility-will-for-great-leadership/</link>
+      <link>http://localhost:59625/en/humility-will-for-great-leadership/</link>
       <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://matteocervelli.netlify.app/en/humility-will-for-great-leadership/</guid>
+      <guid>http://localhost:59625/en/humility-will-for-great-leadership/</guid>
       <description>&lt;p&gt;Leaders of great organizations focus all efforts on finding their successors.&lt;/p&gt;&#xA;&lt;p&gt;The most successful bosses don’t micromanage. Instead, they help people to have greater responsibility. And to make this, the leader’s role change from a problem solver to a people enabler.&lt;/p&gt;&#xA;&lt;p&gt;On the other hand, micro-management has bad side effects:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bureaucracy&lt;/li&gt;&#xA;&lt;li&gt;Less time spent on long term success&lt;/li&gt;&#xA;&lt;li&gt;The company don’t resist over the actual leader&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Here is what great leaders do, instead.&lt;/p&gt;</description>
     </item>
   </channel>

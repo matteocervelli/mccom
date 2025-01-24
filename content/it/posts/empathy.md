@@ -16,8 +16,8 @@ L'*empatia* è la *capacità di mettersi nei panni degli altri*.[^1]
 
 In altre parole, comprendere come vedono la loro realtà e come si sentono riguardo alle cose.
 
-> "L'empatia è *sentire con le persone*"
-> —Dr. Brené Brown
+> L'empatia è **sentire con le persone**
+> <br>&mdash; Dr. Brené Brown
 
 @https://www.youtube.com/watch?v=1Evwgu369Jw
 

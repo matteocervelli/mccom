@@ -1,0 +1,17 @@
+{{- /* Questo è un template Hugo che genera JSON - ignora gli errori del linter */ -}}
+{{- $pages := where .Site.RegularPages "Section" "posts" -}}
+{{- $len := len $pages -}}
+{
+    "items": [
+        {{- range $index, $page := $pages -}}
+            {
+                "title": {{ $page.Title | jsonify }},
+                "content": {{ $page.Plain | jsonify }},
+                "permalink": {{ $page.RelPermalink | jsonify }},
+                "tags": {{ $page.Params.tags | default slice | jsonify }},
+                "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
+                "summary": {{ $page.Summary | jsonify }}
+            }{{- if not (eq (add $index 1) $len) -}},{{- end -}}
+        {{- end -}}
+    ]
+} 
