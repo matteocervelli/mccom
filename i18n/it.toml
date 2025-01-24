@@ -145,3 +145,18 @@ other = "{{ .Count }} minuti di lettura"
 [articlesAboutTopic]
 one = "{{ .Count }} articolo su questo argomento:"
 other = "{{ .Count }} articoli su questo argomento:" 
+
+[tableOfContents]
+other = "Sommario"
+
+[toggleSidebar]
+other = "Mostra/Nascondi sidebar"
+
+[search]
+other = "Cerca"
+
+[searchPlaceholder]
+other = "Cerca nel sito"
+
+[searchResults]
+other = "Risultati della ricerca per: {{ .Query }}"
