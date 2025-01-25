@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   let fuse = null;
+  let isTransitioning = false;
   
   // Carica i dati di ricerca
   const jsonUrl = currentLang === 'it' ? '/it/index.json' : '/en/index.json';
@@ -38,7 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
   // Event Listeners
-  searchButton.addEventListener('click', () => toggleSearch(true));
+  searchButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    
+    if (isTransitioning) return;
+    
+    isTransitioning = true;
+    const isActive = searchContainer.classList.contains('active');
+    toggleSearch(!isActive);
+    
+    setTimeout(() => {
+      isTransitioning = false;
+    }, 400);
+  });
   
   // Gestione degli eventi della tastiera
   document.addEventListener('keydown', function(e) {
@@ -94,19 +107,23 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function toggleSearch(show) {
+    const searchContainer = document.querySelector('.search-container');
+    
     if (show) {
-      searchContainer.style.display = 'block';
-      setTimeout(() => {
-        searchContainer.classList.add('active');
-        searchInput.focus();
-      }, 10);
+        searchContainer.style.display = 'block';
+        setTimeout(() => {
+            searchContainer.classList.add('active');
+            document.body.classList.add('scroll-lock');
+            searchInput.focus();
+        }, 10);
     } else {
-      searchContainer.classList.remove('active');
-      setTimeout(() => {
-        searchContainer.style.display = 'none';
-        searchInput.value = '';
-        clearResults();
-      }, 300);
+        searchContainer.classList.remove('active');
+        document.body.classList.remove('scroll-lock');
+        setTimeout(() => {
+            searchContainer.style.display = 'none';
+            searchInput.value = '';
+            clearResults();
+        }, 300);
     }
   }
 
@@ -176,5 +193,31 @@ document.addEventListener('DOMContentLoaded', function() {
       clearTimeout(timeout);
       timeout = setTimeout(() => func.apply(this, args), wait);
     };
+  }
+
+  // Aggiungi event listener per il click fuori dai risultati
+  searchContainer.addEventListener('click', function(e) {
+    // Se il click è sul container stesso (non sui suoi figli)
+    if (e.target === searchContainer) {
+      toggleSearch(false);
+    }
+  });
+
+  // Aggiungi gestione del click sui risultati per evitare la chiusura
+  searchResults.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+
+  // Previeni la chiusura quando si clicca sulla search box
+  searchInput.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+
+  // Aggiungi anche lo stopPropagation al form di ricerca
+  const searchForm = document.querySelector('.search-box');
+  if (searchForm) {
+    searchForm.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
   }
 }); 

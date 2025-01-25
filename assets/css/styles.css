@@ -706,7 +706,7 @@ hr::before {
 /* Topics */
 .topics-list {
   color: var(--color-tx-muted);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .topics-list a {
@@ -873,7 +873,11 @@ hr::before {
   margin-bottom: 3rem;
 }
 
-.latest-post h2,
+.latest-post h2 {
+margin-bottom: 1.5rem;
+padding-top: 0;
+}
+
 .topics h2,
 .featured-posts h2,
 .all-posts h2 {
@@ -1289,15 +1293,17 @@ input[type="checkbox"]:checked::before {
   backdrop-filter: blur(5px);
   display: none;
   padding: 20px;
-  z-index: 1000;
+  z-index: 1001;
   transition: opacity 0.3s ease;
   opacity: 0;
   pointer-events: none;
+  overflow-y: auto;
 }
 
 .search-container.active {
   opacity: 1;
   pointer-events: auto;
+  display: block;
 }
 
 .search-box {
@@ -1305,7 +1311,7 @@ input[type="checkbox"]:checked::before {
   width: 90%;
   margin: 0 auto;
   position: fixed;
-  bottom: 184px; /* 64px (altezza control-bar) + 28px (spazio) */
+  bottom: 204px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -1438,7 +1444,7 @@ input[type="checkbox"]:checked::before {
     padding: 12px 0; /* Rimuoviamo il padding orizzontale */
     display: flex;
     justify-content: center; /* Centrato orizzontalmente */
-    z-index: 1000;
+    z-index: 1002;
     transition: transform 0.3s ease;
     backdrop-filter: blur(10px);
     box-shadow: 0 -2px 10px var(--color-control-shadow);
@@ -1467,7 +1473,7 @@ input[type="checkbox"]:checked::before {
   width: 48px;
   height: 48px;
   padding: 12px;
-  color: var(--color-highlight);
+  color: var(--color-highlight-faint);
   text-decoration: none;
   cursor: pointer;
   display: flex;
@@ -1528,4 +1534,10 @@ audio::-webkit-media-controls-panel {
 
 audio::-webkit-media-controls-current-time-display {
   color: var(--color-tx-selection);
+}
+
+/* Aggiungi questa nuova classe */
+.scroll-lock {
+    overflow: hidden;
+    height: 100vh;
 }
