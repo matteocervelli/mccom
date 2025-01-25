@@ -24,7 +24,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.c62b421f88ca46ac97793529415e08996f7cc7e5d11e89a4b9ae0123e259bc5e.css" integrity="sha256-xitCH4jKRqyXeTUpQV4ImW98x&#43;XRHomkua4BI&#43;JZvF4=">
+  <link rel="stylesheet" href="/css/styles.min.62b1ce4ab7cdcd56c3bdbe9016683cf464a36a8ad54f83a819795e695ebd4b41.css" integrity="sha256-YrHOSrfNzVbDvb6QFmg89GSjaorVT4OoGXleaV69S0E=">
 
     
 
@@ -281,7 +281,8 @@ window.addEventListener('scroll', () => {
   </div>
 
     </main>
-    <footer role="contentinfo" aria-label="Site footer">
+    
+<footer role="contentinfo" aria-label="Site footer">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.js"></script>
     
     <script src="/js/dropdown.min.4012e2973ab5e591a68041bc12b0f1661ba78d4527715a5bda3b621d235cf613.js"></script>
@@ -295,33 +296,35 @@ window.addEventListener('scroll', () => {
           <a href="mailto:info@matteocervelli.com" aria-label="Contact via email">email</a>,
           <a href="https://matteocervelli.com/it/feed" aria-label="Subscribe to RSS feed">RSS</a>,
           <a href="https://www.linkedin.com/in/matteocervelli/" aria-label="Connect on LinkedIn">LinkedIn</a>,
-          <a href="https://x.com/matteocervelli" aria-label="Follow on X/Twitter">X/Twitter</a> and
-          <a href="/subscribe" aria-label="View other contact options">other options</a>.
+          <a href="https://x.com/matteocervelli" aria-label="Follow on X/Twitter">X/Twitter</a> e
+          <a href="/it/contatti" 
+             aria-label="View other contact options">altre opzioni</a>.
         </p>
       </div>
   
       
       <div style="max-width: 24em; margin: 3em auto 3em 0;">
-        <form id="newsletter-form" 
-          class="newsletter-form"
-          action="https://app.kit.com/forms/7578384/subscriptions"
-          method="post"
-          data-sv-form="7578384"
-          data-uid="b47db62f73"
-          aria-label="Newsletter subscription form">
-          <input type="email" 
-                name="email_address"
-                placeholder="La tua email"
-                class="newsletter-form__input"
-                aria-label="Enter your email address"
-                required>
-          <button type="submit"
-                  class="newsletter-form__button"
-                  aria-label="Subscribe to newsletter">
-            Registrati
-          </button>
-        </form>
-      </div>
+    <form id="newsletter-form" 
+      class="newsletter-form"
+      action="https://app.kit.com/forms/7578384/subscriptions"
+      method="post"
+      data-sv-form="7578384"
+      data-uid="b47db62f73"
+      aria-label="Newsletter subscription form">
+      <input type="email" 
+            name="email_address"
+            placeholder="La tua email"
+            class="newsletter-form__input"
+            aria-label="Enter your email address"
+            id="newsletter-email"
+            required>
+      <button type="submit"
+              class="newsletter-form__button"
+              aria-label="Subscribe to newsletter">
+        Registrati
+      </button>
+    </form>
+  </div>
   
       
       <div class="pb f3 text-mc-black">
@@ -335,12 +338,13 @@ window.addEventListener('scroll', () => {
         <a href="https://netlify.com" 
            class="link text-mc-black hover-mc-purple"
            aria-label="Hosted on Netlify">Netlify</a> e
-        <a href="/en/tech-stack" 
+        <a href="/it/tech-stack" 
            class="link text-mc-black hover-mc-purple"
            aria-label="View tech stack details">altro</a>.
       </div>
     </div>
 </footer>
+
     
     
     <script src="/js/theme-light-dark-function.min.2ad1fc97100f8d4eed4abff70b46f89f55a91921225ba3de04726cb3ae1b5326.js"></script>
