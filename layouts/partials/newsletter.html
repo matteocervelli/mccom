@@ -1,0 +1,22 @@
+<div style="max-width: 24em; margin: 3em auto 3em 0;">
+    <form id="newsletter-form" 
+      class="newsletter-form"
+      action="{{ i18n "newsletter_form_action" }}"
+      method="post"
+      data-sv-form="{{ i18n "newsletter_form_id" }}"
+      data-uid="{{ i18n "newsletter_form_uid" }}"
+      aria-label="Newsletter subscription form">
+      <input type="email" 
+            name="email_address"
+            placeholder="{{ i18n "email_placeholder" }}"
+            class="newsletter-form__input"
+            aria-label="Enter your email address"
+            id="newsletter-email"
+            required>
+      <button type="submit"
+              class="newsletter-form__button"
+              aria-label="Subscribe to newsletter">
+        {{ i18n "sign_up" }}
+      </button>
+    </form>
+  </div>

@@ -1,11 +1,11 @@
-[more]
-other = "More"
-
 [and]
 other = "and"
 
 [other]
 other = "other"
+
+[otherOptions]
+other = "other options"
 
 [allTitle]
 other = "All {{.Title }}"
@@ -160,4 +160,7 @@ other = "Toggle sidebar"
 other = "ESC to close / ⌘K or CTRL+K to open"
 
 [footnotes]
-other = "Footnotes" 
+other = "Footnotes"
+
+[contact_page]
+other = "subscribe" 

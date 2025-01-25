@@ -1,11 +1,11 @@
-[more]
-other = "Altro"
-
 [and]
 other = "e"
 
 [other]
 other = "altro"
+
+[otherOptions]
+other = "altre opzioni"
 
 [allTitle]
 other = "Tutti {{.Title }}"
@@ -166,3 +166,6 @@ other = "ESC per chiudere / ⌘K o CTRL+K per aprire"
 
 [footnotes]
 other = "Note a piè di pagina"
+
+[contact_page]
+other = "contatti"
