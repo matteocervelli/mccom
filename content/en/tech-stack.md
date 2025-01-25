@@ -53,12 +53,8 @@ Other tools I use to manage the site and my personal activity:
 ---
 
 Tools to implement:
-<ul class="checklist">
-<li><input type="checkbox"> Cookie/Privacy and Policy (presumably <a href="https://www.iubenda.com">Iubenda</a>)</li>
-<li><input type="checkbox"> HTTPS SSL (Hypothesis) Let's Encrypt</li>
-<li><input type="checkbox"> Analytics</li>
-<li><input type="checkbox"> Searching</li>
-</ul>
+- Cookie/Privacy and Policy
+- Analytics
 
 ---
 

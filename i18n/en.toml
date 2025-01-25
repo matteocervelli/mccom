@@ -157,4 +157,7 @@ other = "Table of Contents"
 other = "Toggle sidebar"
 
 [searchShortcut]
-other = "ESC to close / ⌘K or CTRL+K to open" 
+other = "ESC to close / ⌘K or CTRL+K to open"
+
+[footnotes]
+other = "Footnotes" 

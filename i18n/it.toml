@@ -163,3 +163,6 @@ other = "Risultati della ricerca per: {{ .Query }}"
 
 [searchShortcut]
 other = "ESC per chiudere / ⌘K o CTRL+K per aprire"
+
+[footnotes]
+other = "Note a piè di pagina"

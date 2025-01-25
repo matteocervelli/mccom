@@ -53,12 +53,8 @@ Altri strumenti che utilizzo per gestire il sito e la mia attività personale:
 ---
 
 Strumenti da implementare:
-<ul class="checklist">
-<li><input type="checkbox"> Cookie/Privacy e Policy (presumibilmente <a href="https://www.iubenda.com">Iubenda</a>)</li>
-<li><input type="checkbox"> HTTPS SSL (Ipotesi) Let's Encrypt</li>
-<li><input type="checkbox"> Analytics</li>
-<li><input type="checkbox"> Searching</li>
-</ul>
+- Cookie/Privacy e Policy
+- Analytics
 
 ---
 
