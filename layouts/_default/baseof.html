@@ -62,10 +62,10 @@
     {{ end }}
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
   
-  {{ $embedYouTube := resources.Get "js/youtube-embed.js" | minify | fingerprint }}
+    {{ $embedYouTube := resources.Get "js/youtube-embed.js" | minify | fingerprint }}
     <script src="{{ $embedYouTube.RelPermalink }}"></script>
     
-    <!-- Search -->
+    <!-- Search scripts (solo una volta) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
     {{ $search := resources.Get "js/search.js" | minify | fingerprint }}
     <script src="{{ $search.RelPermalink }}"></script>
@@ -76,9 +76,6 @@
   <body class="">
     {{ partial "search.html" . }}
     
-    {{ $cacheLightDark := resources.Get "js/theme-light-dark-cache.js" | minify | fingerprint }}
-    <script src="{{ $cacheLightDark.RelPermalink }}"></script>
-    
     {{/* Verifica se la pagina dovrebbe avere la sidebar */}}
     {{ $shouldHaveSidebar := and 
         (not .IsHome) 
@@ -86,6 +83,11 @@
         (gt (countwords .TableOfContents) 0) 
     }}
 
+    {{ partial "control-bar.html" (dict "context" . "shouldHaveSidebar" $shouldHaveSidebar) }}
+    
+    {{ $cacheLightDark := resources.Get "js/theme-light-dark-cache.js" | minify | fingerprint }}
+    <script src="{{ $cacheLightDark.RelPermalink }}"></script>
+    
     {{/* Se dovrebbe avere la sidebar, la mostriamo */}}
     {{ if $shouldHaveSidebar }}
         <button class="sidebar-toggle" onclick="toggleSidebar()" title="{{ i18n "toggleSidebar" }}">
@@ -117,10 +119,5 @@
     {{ $toggleTOC := resources.Get "js/toggleTOC.js" | minify | fingerprint }}
     <script src="{{ $toggleTOC.RelPermalink }}"></script>
 
-    <!-- Search scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
-    {{ $search := resources.Get "js/search.js" | minify | fingerprint }}
-    <script src="{{ $search.RelPermalink }}"></script>
-   
   </body>
 </html>

@@ -68,7 +68,7 @@ defaultContentLanguageInSubdir = true
         [markup.goldmark.renderer]
             unsafe = true
 [permalinks] 
-    posts = "/:filename"
+    posts = "/:slug"
 [taxonomies]
     tag = 'tags'
     category = 'categories'

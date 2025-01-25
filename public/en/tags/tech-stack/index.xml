@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech-Stack on Matteo Cervelli</title>
-    <link>http://localhost:59625/en/tags/tech-stack/</link>
+    <link>http://localhost:1313/en/tags/tech-stack/</link>
     <description>Recent content in Tech-Stack on Matteo Cervelli</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 17 Jan 2025 16:12:52 +0100</lastBuildDate>
-    <atom:link href="http://localhost:59625/en/tags/tech-stack/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/tech-stack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Technologies used to build this site</title>
-      <link>http://localhost:59625/en/tech-stack/</link>
+      <link>http://localhost:1313/en/tech-stack/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
-      <guid>http://localhost:59625/en/tech-stack/</guid>
+      <guid>http://localhost:1313/en/tech-stack/</guid>
       <description>&lt;p&gt;Updated: 2025-01-17&lt;/p&gt;&#xA;&lt;p&gt;This website was created by Matteo Cervelli using a mix of personal skills and AI. I previously had a website hosted and built on WordPress, but I decided to rebuild it myself in early 2025 to &amp;ldquo;keep control&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;I wanted a lightweight, fast, and responsive website. And I wanted to learn the basics by leveraging what technology has to offer.&lt;/p&gt;&#xA;&lt;p&gt;First of all, matteocervelli.com is a static website. It&amp;rsquo;s built with &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; as SSG—Static Site Generator—and is hosted on &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt; via &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;, while DNS is managed through &lt;a href=&#34;https://www.cloudflare.com&#34;&gt;Cloudflare&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

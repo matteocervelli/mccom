@@ -2,342 +2,342 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:59625/it/categories/</loc>
+    <loc>http://localhost:1313/it/categories/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/categories/"
+                href="http://localhost:1313/it/categories/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/lavora-con-me/</loc>
+    <loc>http://localhost:1313/it/lavora-con-me/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/work/"
+                href="http://localhost:1313/en/work/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/lavora-con-me/"
+                href="http://localhost:1313/it/lavora-con-me/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/categories/page/</loc>
+    <loc>http://localhost:1313/it/categories/page/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/categories/page/"
+                href="http://localhost:1313/en/categories/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/categories/page/"
+                href="http://localhost:1313/it/categories/page/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/categories/work/</loc>
+    <loc>http://localhost:1313/it/categories/work/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/categories/work/"
+                href="http://localhost:1313/en/categories/work/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/categories/work/"
+                href="http://localhost:1313/it/categories/work/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/business-scalability-engineer/</loc>
+    <loc>http://localhost:1313/it/business-scalability-engineer/</loc>
     <lastmod>2025-01-18T08:41:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/business-scalability-engineer/"
+                href="http://localhost:1313/en/business-scalability-engineer/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/business-scalability-engineer/"
+                href="http://localhost:1313/it/business-scalability-engineer/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/scalability/</loc>
+    <loc>http://localhost:1313/it/tags/scalability/</loc>
     <lastmod>2025-01-18T08:41:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/scalability/"
+                href="http://localhost:1313/en/tags/scalability/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/scalability/"
+                href="http://localhost:1313/it/tags/scalability/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/</loc>
+    <loc>http://localhost:1313/it/tags/</loc>
     <lastmod>2025-01-18T08:41:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/"
+                href="http://localhost:1313/it/tags/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/ora/</loc>
+    <loc>http://localhost:1313/it/ora/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/now/"
+                href="http://localhost:1313/en/now/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/ora/"
+                href="http://localhost:1313/it/ora/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/guide/</loc>
+    <loc>http://localhost:1313/it/tags/guide/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/guide/"
+                href="http://localhost:1313/en/tags/guide/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/guide/"
+                href="http://localhost:1313/it/tags/guide/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/tech-stack/</loc>
+    <loc>http://localhost:1313/it/tags/tech-stack/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/tech-stack/"
+                href="http://localhost:1313/en/tags/tech-stack/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/tech-stack/"
+                href="http://localhost:1313/it/tags/tech-stack/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tech-stack/</loc>
+    <loc>http://localhost:1313/it/tech-stack/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tech-stack/"
+                href="http://localhost:1313/en/tech-stack/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tech-stack/"
+                href="http://localhost:1313/it/tech-stack/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/</loc>
+    <loc>http://localhost:1313/it/</loc>
     <lastmod>2025-01-17T09:52:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/"
+                href="http://localhost:1313/it/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/about/</loc>
+    <loc>http://localhost:1313/it/about/</loc>
     <lastmod>2025-01-16T17:26:30+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/about/"
+                href="http://localhost:1313/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/about/"
+                href="http://localhost:1313/it/about/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/lessons-learned/</loc>
+    <loc>http://localhost:1313/it/tags/lessons-learned/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/lessons-learned/"
+                href="http://localhost:1313/en/tags/lessons-learned/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/lessons-learned/"
+                href="http://localhost:1313/it/tags/lessons-learned/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/mission/</loc>
+    <loc>http://localhost:1313/it/tags/mission/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/mission/"
+                href="http://localhost:1313/en/tags/mission/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/mission/"
+                href="http://localhost:1313/it/tags/mission/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/categories/posts/</loc>
+    <loc>http://localhost:1313/it/categories/posts/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/categories/posts/"
+                href="http://localhost:1313/en/categories/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/categories/posts/"
+                href="http://localhost:1313/it/categories/posts/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/purpose/</loc>
+    <loc>http://localhost:1313/it/tags/purpose/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/purpose/"
+                href="http://localhost:1313/en/tags/purpose/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/purpose/"
+                href="http://localhost:1313/it/tags/purpose/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/find-your-villain-learn-your-mission/</loc>
+    <loc>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/find-your-villain-learn-your-mission/"
+                href="http://localhost:1313/en/find-your-villain-learn-your-mission/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/find-your-villain-learn-your-mission/"
+                href="http://localhost:1313/it/trova-lantagonista-scopri-la-missione/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/posts/</loc>
+    <loc>http://localhost:1313/it/posts/</loc>
     <lastmod>2024-03-21T10:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/posts/"
+                href="http://localhost:1313/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/posts/"
+                href="http://localhost:1313/it/posts/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/coaching/</loc>
+    <loc>http://localhost:1313/it/tags/coaching/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/coaching/"
+                href="http://localhost:1313/en/tags/coaching/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/coaching/"
+                href="http://localhost:1313/it/tags/coaching/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/communication/</loc>
+    <loc>http://localhost:1313/it/tags/communication/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/communication/"
+                href="http://localhost:1313/en/tags/communication/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/communication/"
+                href="http://localhost:1313/it/tags/communication/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/empathy/</loc>
+    <loc>http://localhost:1313/it/tags/empathy/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/empathy/"
+                href="http://localhost:1313/en/tags/empathy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/empathy/"
+                href="http://localhost:1313/it/tags/empathy/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/empathy/</loc>
+    <loc>http://localhost:1313/it/empatia/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/empathy/"
+                href="http://localhost:1313/en/empathy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/empathy/"
+                href="http://localhost:1313/it/empatia/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/leadership/</loc>
+    <loc>http://localhost:1313/it/tags/leadership/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/leadership/"
+                href="http://localhost:1313/en/tags/leadership/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/leadership/"
+                href="http://localhost:1313/it/tags/leadership/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/tags/learning-organization/</loc>
+    <loc>http://localhost:1313/it/tags/learning-organization/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/tags/learning-organization/"
+                href="http://localhost:1313/en/tags/learning-organization/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/tags/learning-organization/"
+                href="http://localhost:1313/it/tags/learning-organization/"
                 />
   </url><url>
-    <loc>http://localhost:59625/it/humility-will-for-great-leadership/</loc>
+    <loc>http://localhost:1313/it/umilta-determinazione-per-grande-leadership/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:59625/en/humility-will-for-great-leadership/"
+                href="http://localhost:1313/en/humility-will-for-great-leadership/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-IT"
-                href="http://localhost:59625/it/humility-will-for-great-leadership/"
+                href="http://localhost:1313/it/umilta-determinazione-per-grande-leadership/"
                 />
   </url>
 </urlset>

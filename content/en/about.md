@@ -10,7 +10,6 @@ draft: false
 tags: []
 categories: ['page', 'about']
 featured_image: ""
-sidebar: true
 ---
 ## In short
 

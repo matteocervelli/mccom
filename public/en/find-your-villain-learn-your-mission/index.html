@@ -24,7 +24,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.43ab99f455b414e7f49a0dbb81c824b6c421ecfcf790d71de9655f9205a42269.css" integrity="sha256-Q6uZ9FW0FOf0mg27gcgktsQh7Pz3kNcd6WVfkgWkImk=">
+  <link rel="stylesheet" href="/css/styles.min.f1716b253cbbb0fcb379585fe3596361d0aa08fd12f5bb067ae57833e23616be.css" integrity="sha256-8XFrJTy7sPyzeVhf41ljYdCqCP0S9bsGeuV4M&#43;I2Fr4=">
 
     
 
@@ -65,7 +65,7 @@
 
 	
   
-  
+    
     <script src="/js/youtube-embed.min.8eeb8c4544eaca34bd0d7654c75ed792997845f16214f04753f91aa577568837.js"></script>
     
     
@@ -76,33 +76,103 @@
   </head><body class="">
     <div class="search-container" id="searchContainer">
   <div class="search-box">
+    <div class="search-results" id="searchResults"></div>
+    
+    <div class="search-shortcut">
+      ESC to close / ⌘K or CTRL&#43;K to open
+    </div>
+
     <input 
       type="text" 
       class="search-input" 
       id="searchInput" 
       placeholder="Search the site..."
     >
-    <div class="search-shortcut">
-      
-        ESC to close / ⌘K to open
-      
-    </div>
-    <div class="search-results" id="searchResults"></div>
+    
   </div>
 </div> 
+    
+    
+    
+
+    
+
+<div class="control-bar">
+    <div class="control-bar-content wrap-normal">
+        
+        
+        <button class="control-button">
+            
+            <a href="http://localhost:1313/it/trova-lantagonista-scopri-la-missione/" class="language-switcher">
+                <span class="fi fi-it"></span>
+            </a>
+            
+        </button>
+        
+
+        
+        <button id="searchButton" class="control-button" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
+
+        
+        <button class="control-button comments-button" aria-label="Comments">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+
+        
+        <div class="control-button">
+            <div id="theme-toggle" 
+            title="Toggle dark mode" 
+            aria-label="Toggle dark mode" 
+            role="switch" 
+            aria-checked="false">
+                <div class="theme-toggle-slide"></div>
+                <div class="theme-toggle-switch"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let lastScrollY = window.pageYOffset;
+const controlBar = document.querySelector('.control-bar');
+
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.pageYOffset;
+    
+    if (currentScrollY > lastScrollY) {
+        controlBar.classList.add('hidden');
+    } else {
+        controlBar.classList.remove('hidden');
+    }
+    
+    lastScrollY = currentScrollY;
+});
+</script> 
     
     
     <script src="/js/theme-light-dark-cache.min.097b151ad2ce76d0f78bfa652245f9f8b688a7aaf7fe59c89ad11b72891ddf73.js"></script>
     
     
     
-
-    
-    
     
     
    
   <header>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+
+    
+    
+    <script src="/js/search.min.dcf41c5deae301d952fb4b95695ad11c307e59bca5f3816e34930f097c32d379.js"></script>
+
     
 <nav class="content-wrapper" role="navigation bar">
   
@@ -121,65 +191,9 @@
     <div class="nav-menu flex-shrink" role="menu"><div class="flex flex-wrap"><a href="/en/about/" class="nav-menu-items">About</a><a href="/en/posts/" class="nav-menu-items">Posts</a><a href="/en/work/" class="nav-menu-items">Work</a><a href="/en/now/" class="nav-menu-items">Now</a></div></div>
   </div>
 
-  
-  <div class="nav-langTheme">
-    <div class="dropdown mr1">
-      <a data-mdb-dropdown-init class="dropdown-toggle" href="#" id="languageDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-        <i class="fi fi-gb"></i>
-      </a>
-
-      <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-        
-          <li>
-            <a class="dropdown-item" href="http://localhost:1313/it/find-your-villain-learn-your-mission/">
-              <i class="fi fi-it"></i></a>
-          </li>
-        
-      </ul>
-    </div>
-    <div id="theme-toggle" 
-          title="Toggle dark mode" 
-          aria-label="Toggle dark mode" 
-          role="switch" 
-          aria-checked="false">
-      <div class="theme-toggle-slide"></div>
-      <div class="theme-toggle-switch"></div>
-    </div>
   </div>
 </nav>
-        
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
-    
-    
-    
-    <script src="/js/search.min.dcf41c5deae301d952fb4b95695ad11c307e59bca5f3816e34930f097c32d379.js"></script>
-    
-    
-    <div class="search-container" id="searchContainer">
-  <div class="search-box">
-    <input 
-      type="text" 
-      class="search-input" 
-      id="searchInput" 
-      placeholder="Search the site..."
-    >
-    <div class="search-shortcut">
-      
-        ESC to close / ⌘K to open
-      
-    </div>
-    <div class="search-results" id="searchResults"></div>
-  </div>
-</div> 
-    <div class="search-trigger">
-        <button id="searchButton" aria-label="Cerca">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-        </button>
-    </div>
 </header>
 
     
@@ -338,12 +352,7 @@
     <script src="/js/backToTop.min.a00f7fa9bd8f406e062eb6ef89963a398eadbe94b3f2b0e4fbfd3dce0b80b46e.js"></script>
   
     
-    <script src="/js/toggleTOC.min.0f605948c2411e690d5778149066f7f9d0f5046697e3c51987fcc89a0e837d96.js"></script>
+    <script src="/js/toggleTOC.min.f22d2234570c8c36c0f3dcb6506564e6d1921f8257b573ae89174665219ee9c6.js"></script>
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
-    
-    <script src="/js/search.min.dcf41c5deae301d952fb4b95695ad11c307e59bca5f3816e34930f097c32d379.js"></script>
-   
   </body>
 </html>

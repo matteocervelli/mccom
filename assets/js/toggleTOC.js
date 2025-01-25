@@ -23,18 +23,10 @@ function setHeaderHeight() {
                 const totalLogoHeight = logoHeight + logoMarginBottom;
                 document.documentElement.style.setProperty('--logo-section-height', `${totalLogoHeight}px`);
             }
-
-            // Allinea il pulsante toggle con l'h1 principale SOLO su desktop
-            if (window.innerWidth >= 1560) {
-                const h1Rect = mainH1.getBoundingClientRect();
-                toggleButton.style.top = `${h1Rect.top + window.scrollY}px`;
-            } else {
-                toggleButton.style.removeProperty('top'); // Rimuove lo style inline su mobile
-            }
             
             // Calcola la posizione del TOC
             const h1Rect = mainH1.getBoundingClientRect();
-            const tocPosition = h1Rect.bottom + window.scrollY + 32;
+            const tocPosition = h1Rect.top + window.scrollY + 20;
             document.documentElement.style.setProperty('--toc-position', `${tocPosition}px`);
         });
     }

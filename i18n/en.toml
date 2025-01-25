@@ -154,4 +154,7 @@ other = "Posts"
 other = "Table of Contents"
 
 [toggleSidebar]
-other = "Toggle sidebar" 
+other = "Toggle sidebar"
+
+[searchShortcut]
+other = "ESC to close / ⌘K or CTRL+K to open" 

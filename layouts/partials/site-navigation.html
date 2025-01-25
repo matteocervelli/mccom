@@ -38,36 +38,5 @@
     </div>
   </div>
 
-  <!-- Language and Theme -->
-  <div class="nav-langTheme">
-    <!-- Selettore lingua -->
-    {{- if .IsTranslated -}}
-    <div class="dropdown mr1">
-      <a data-mdb-dropdown-init class="dropdown-toggle" href="#" id="languageDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-        <i class="fi fi-{{ if eq .Language.LanguageName "Italian" }}it{{ else if eq .Language.LanguageName "English" }}gb{{ end }}"></i>
-      </a>
-
-      <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-        {{ range .Translations }}
-          <li>
-            <a class="dropdown-item" href="{{ .Permalink }}">
-              <i class="fi fi-{{ if eq .Language.LanguageName "Italian" }}it{{ else if eq .Language.LanguageName "English" }}gb{{ end }}"></i>
-              {{- if eq . $ }}<i class="fa fa-check text-success ms-2"></i>{{- end -}}
-            </a>
-          </li>
-        {{ end }}
-      </ul>
-    </div>
-    {{- end -}}
-
-    <!-- Theme toggle -->
-    <div id="theme-toggle" 
-          title="Toggle dark mode" 
-          aria-label="Toggle dark mode" 
-          role="switch" 
-          aria-checked="false">
-      <div class="theme-toggle-slide"></div>
-      <div class="theme-toggle-switch"></div>
-    </div>
   </div>
 </nav>

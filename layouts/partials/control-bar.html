@@ -1,0 +1,62 @@
+{{ $context := .context }}
+
+<div class="control-bar">
+    <div class="control-bar-content wrap-normal">
+        {{/* Language switcher */}}
+        {{ if $context.IsTranslated }}
+        <button class="control-button">
+            {{ range $context.Translations }}
+            <a href="{{ .Permalink }}" class="language-switcher">
+                <span class="fi fi-{{ if eq .Language.Lang "en" }}gb{{ else }}{{ .Language.Lang }}{{ end }}"></span>
+            </a>
+            {{ end }}
+        </button>
+        {{ else }}
+        <div class="control-button-placeholder"></div>
+        {{ end }}
+
+        {{/* Search button */}}
+        <button id="searchButton" class="control-button" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
+
+        {{/* Comments button */}}
+        <button class="control-button comments-button" aria-label="Comments">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+
+        {{/* Theme toggle */}}
+        <div class="control-button">
+            <div id="theme-toggle" 
+            title="Toggle dark mode" 
+            aria-label="Toggle dark mode" 
+            role="switch" 
+            aria-checked="false">
+                <div class="theme-toggle-slide"></div>
+                <div class="theme-toggle-switch"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let lastScrollY = window.pageYOffset;
+const controlBar = document.querySelector('.control-bar');
+
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.pageYOffset;
+    
+    if (currentScrollY > lastScrollY) {
+        controlBar.classList.add('hidden');
+    } else {
+        controlBar.classList.remove('hidden');
+    }
+    
+    lastScrollY = currentScrollY;
+});
+</script> 
