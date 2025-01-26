@@ -26,10 +26,12 @@ Oppure salvare il [RSS Feed](https://matteocervelli.com/it/feed) nel tuo feed re
 ## Contatti
 Puoi contattarmi via [email](mailto:info@matteocervelli.com) per qualsiasi domanda o feedback.  
 
+Parlo diverse lingue, quindi possiamo parlare in: inglese, francese, italiano, portoghese e spagnolo.
+
 ## Social
 Sono su molti social:
 - [LinkedIn](https://www.linkedin.com/in/matteocervelli/)
-- [X/Twitter](https://x.com/matteocervelli)
+- [X (formerly Twitter)](https://x.com/matteocervelli)
 - [BlueSky](https://bsky.app/profile/matteocervelli.bsky.social)
 - [Facebook](https://www.facebook.com/matteocervelli)
 - [Instagram](https://www.instagram.com/matteocervelli)

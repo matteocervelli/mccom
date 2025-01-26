@@ -23,13 +23,15 @@ You can sign up below:
 
 Or save my [RSS Feed](https://matteocervelli.com/en/feed) in your feed reader.
 
-## Contact
+## Contact me
 You can reach me via [email](mailto:info@matteocervelli.com) for any questions or feedback.  
+
+I speak different languages, so we can talk in: English, French, Italian, Portuguese and Spanish.
 
 ## Social
 I'm on several social platforms:
 - [LinkedIn](https://www.linkedin.com/in/matteocervelli/) 
-- [X/Twitter](https://x.com/matteocervelli)
+- [X (formerly Twitter)](https://x.com/matteocervelli)
 - [BlueSky](https://bsky.app/profile/matteocervelli.bsky.social)
 - [Facebook](https://www.facebook.com/matteocervelli)
 - [Instagram](https://www.instagram.com/matteocervelli)

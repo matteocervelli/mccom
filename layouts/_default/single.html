@@ -17,10 +17,10 @@
           <time class="faint">{{- .Date.Format "2006/01/02" -}}</time>
         {{end}}
         {{ if and (not .Lastmod.IsZero) (ne .Lastmod .Date) }}
-          &nbsp &mdash; {{ i18n "updated"}}
+          &nbsp &mdash; &nbsp;{{ i18n "updated"}}
           <time class="faint">{{- .Lastmod.Format "2006/01/02" -}}</time>
         {{end}}
-        &nbsp &mdash; {{ .ReadingTime }} {{ if eq .ReadingTime 1 }}{{ i18n "minute" }}{{ else }}{{ i18n "minutes" }}{{ end }}
+        &nbsp &mdash; &nbsp; {{ .ReadingTime }} {{ if eq .ReadingTime 1 }}{{ i18n "minute" }}{{ else }}{{ i18n "minutes" }}{{ end }}
       </div>
     </header>
 

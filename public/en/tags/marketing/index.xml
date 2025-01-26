@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marketing on Matteo Cervelli</title>
+    <link>http://localhost:1313/en/tags/marketing/</link>
+    <description>Recent content in Marketing on Matteo Cervelli</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 26 Jan 2025 09:52:22 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/marketing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Purple Cow</title>
+      <link>http://localhost:1313/en/the-purple-cow/</link>
+      <pubDate>Sun, 26 Jan 2025 09:52:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/the-purple-cow/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This blog post collects my takeaway from the book: &lt;a href=&#34;https://amzn.to/3E4vBx9&#34;&gt;The Purple Cow by Seth Godin&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is nothing but an ingredient to be successful: being a Purple Cow.&lt;/p&gt;&#xA;&lt;p&gt;Wait, what&amp;rsquo;s a Purple Cow?&lt;/p&gt;&#xA;&lt;p&gt;The Purple Cow is a concept defined by Seth Godin to indicate the extraordinary that allows a business to stand out from the mass and build success. It&amp;rsquo;s not just an advantage.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s the necessary choice.&lt;/p&gt;&#xA;&lt;p&gt;And, unfortunately, it&amp;rsquo;s not enough.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
