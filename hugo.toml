@@ -3,7 +3,6 @@ languageCode = "en"
 title = "Matteo Cervelli"
 theme = "ananke"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
     [languages]
         [languages.en]
             contentDir = "content/en"
@@ -63,6 +62,7 @@ defaultContentLanguageInSubdir = true
     custom_css = ["css/styles.css"]
     author = "Matteo Cervelli"
     dateFormat = "2 January 2006"
+    languageMenuAnchor = "left"
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]

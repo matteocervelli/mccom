@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/tags/book-review/</loc>
+    <loc>http://localhost:1313/tags/book-review/</loc>
     <lastmod>2025-01-26T09:52:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -12,10 +12,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/book-review/"
+                href="http://localhost:1313/tags/book-review/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/business/</loc>
+    <loc>http://localhost:1313/tags/business/</loc>
     <lastmod>2025-01-26T09:52:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -25,10 +25,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/business/"
+                href="http://localhost:1313/tags/business/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-01-26T09:52:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -38,10 +38,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/marketing/</loc>
+    <loc>http://localhost:1313/tags/marketing/</loc>
     <lastmod>2025-01-26T09:52:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -51,10 +51,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/marketing/"
+                href="http://localhost:1313/tags/marketing/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/posts/</loc>
+    <loc>http://localhost:1313/categories/posts/</loc>
     <lastmod>2025-01-26T09:52:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -64,10 +64,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/posts/"
+                href="http://localhost:1313/categories/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/strategy/</loc>
+    <loc>http://localhost:1313/tags/strategy/</loc>
     <lastmod>2025-01-26T09:52:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -77,10 +77,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/strategy/"
+                href="http://localhost:1313/tags/strategy/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-01-26T09:52:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -90,10 +90,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
+                href="http://localhost:1313/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/the-purple-cow/</loc>
+    <loc>http://localhost:1313/the-purple-cow/</loc>
     <lastmod>2025-01-26T09:52:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -103,10 +103,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/the-purple-cow/"
+                href="http://localhost:1313/the-purple-cow/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/subscribe/</loc>
+    <loc>http://localhost:1313/subscribe/</loc>
     <lastmod>2025-01-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -116,10 +116,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/subscribe/"
+                href="http://localhost:1313/subscribe/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/page/</loc>
+    <loc>http://localhost:1313/categories/page/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -129,10 +129,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/page/"
+                href="http://localhost:1313/categories/page/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/work/</loc>
+    <loc>http://localhost:1313/categories/work/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -142,10 +142,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/work/"
+                href="http://localhost:1313/categories/work/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/work/</loc>
+    <loc>http://localhost:1313/work/</loc>
     <lastmod>2025-01-18T14:52:50+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -155,10 +155,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/work/"
+                href="http://localhost:1313/work/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/scalability/</loc>
+    <loc>http://localhost:1313/tags/scalability/</loc>
     <lastmod>2025-01-26T08:37:42+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -168,10 +168,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/scalability/"
+                href="http://localhost:1313/tags/scalability/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/business-scalability-engineer/</loc>
+    <loc>http://localhost:1313/business-scalability-engineer/</loc>
     <lastmod>2025-01-18T08:41:33+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -181,13 +181,13 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/business-scalability-engineer/"
+                href="http://localhost:1313/business-scalability-engineer/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/about/</loc>
+    <loc>http://localhost:1313/categories/about/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/tags/guide/</loc>
+    <loc>http://localhost:1313/tags/guide/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -197,10 +197,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/guide/"
+                href="http://localhost:1313/tags/guide/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/tech-stack/</loc>
+    <loc>http://localhost:1313/tags/tech-stack/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -210,10 +210,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/tech-stack/"
+                href="http://localhost:1313/tags/tech-stack/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tech-stack/</loc>
+    <loc>http://localhost:1313/tech-stack/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -223,10 +223,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tech-stack/"
+                href="http://localhost:1313/tech-stack/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/now/</loc>
+    <loc>http://localhost:1313/now/</loc>
     <lastmod>2025-01-17T16:12:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -236,10 +236,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/now/"
+                href="http://localhost:1313/now/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-01-16T17:26:30+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -249,10 +249,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/about/"
+                href="http://localhost:1313/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/delegation/</loc>
+    <loc>http://localhost:1313/tags/delegation/</loc>
     <lastmod>2025-01-26T08:37:42+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -262,10 +262,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/delegation/"
+                href="http://localhost:1313/tags/delegation/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/leadership/</loc>
+    <loc>http://localhost:1313/tags/leadership/</loc>
     <lastmod>2025-01-26T08:37:42+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -275,10 +275,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/leadership/"
+                href="http://localhost:1313/tags/leadership/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tightrope-walker-manager/</loc>
+    <loc>http://localhost:1313/tightrope-walker-manager/</loc>
     <lastmod>2025-01-26T08:37:42+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -288,10 +288,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tightrope-walker-manager/"
+                href="http://localhost:1313/tightrope-walker-manager/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/find-your-villain-learn-your-mission/</loc>
+    <loc>http://localhost:1313/find-your-villain-learn-your-mission/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -301,10 +301,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/find-your-villain-learn-your-mission/"
+                href="http://localhost:1313/find-your-villain-learn-your-mission/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/lessons-learned/</loc>
+    <loc>http://localhost:1313/tags/lessons-learned/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -314,10 +314,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/lessons-learned/"
+                href="http://localhost:1313/tags/lessons-learned/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/mission/</loc>
+    <loc>http://localhost:1313/tags/mission/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -327,10 +327,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/mission/"
+                href="http://localhost:1313/tags/mission/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/purpose/</loc>
+    <loc>http://localhost:1313/tags/purpose/</loc>
     <lastmod>2024-04-17T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -340,10 +340,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/purpose/"
+                href="http://localhost:1313/tags/purpose/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-03-21T10:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -353,10 +353,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/"
+                href="http://localhost:1313/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/alberto-rossi/</loc>
+    <loc>http://localhost:1313/testimonials/alberto-rossi/</loc>
     <lastmod>2024-05-01T16:52:20+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -366,10 +366,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/alberto-rossi/"
+                href="http://localhost:1313/testimonials/alberto-rossi/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/alexia-redini/</loc>
+    <loc>http://localhost:1313/testimonials/alexia-redini/</loc>
     <lastmod>2024-04-11T10:13:34+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -379,10 +379,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/alexia-redini/"
+                href="http://localhost:1313/testimonials/alexia-redini/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/fabrice-pettoello/</loc>
+    <loc>http://localhost:1313/testimonials/fabrice-pettoello/</loc>
     <lastmod>2024-05-02T15:07:25+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -392,10 +392,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/fabrice-pettoello/"
+                href="http://localhost:1313/testimonials/fabrice-pettoello/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/federico-trippi/</loc>
+    <loc>http://localhost:1313/testimonials/federico-trippi/</loc>
     <lastmod>2024-04-26T10:41:07+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -405,10 +405,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/federico-trippi/"
+                href="http://localhost:1313/testimonials/federico-trippi/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/filippo-maone/</loc>
+    <loc>http://localhost:1313/testimonials/filippo-maone/</loc>
     <lastmod>2024-04-30T15:16:56+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -418,10 +418,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/filippo-maone/"
+                href="http://localhost:1313/testimonials/filippo-maone/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/francesca-sernissi/</loc>
+    <loc>http://localhost:1313/testimonials/francesca-sernissi/</loc>
     <lastmod>2024-05-15T10:55:40+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -431,10 +431,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/francesca-sernissi/"
+                href="http://localhost:1313/testimonials/francesca-sernissi/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/francesco-ferraro/</loc>
+    <loc>http://localhost:1313/testimonials/francesco-ferraro/</loc>
     <lastmod>2024-04-29T13:56:56+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -444,10 +444,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/francesco-ferraro/"
+                href="http://localhost:1313/testimonials/francesco-ferraro/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/francesco-lagonigro/</loc>
+    <loc>http://localhost:1313/testimonials/francesco-lagonigro/</loc>
     <lastmod>2024-04-23T14:42:13+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -457,10 +457,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/francesco-lagonigro/"
+                href="http://localhost:1313/testimonials/francesco-lagonigro/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/gianni-cordaro/</loc>
+    <loc>http://localhost:1313/testimonials/gianni-cordaro/</loc>
     <lastmod>2024-04-30T08:03:17+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -470,10 +470,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/gianni-cordaro/"
+                href="http://localhost:1313/testimonials/gianni-cordaro/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/laura-masoni/</loc>
+    <loc>http://localhost:1313/testimonials/laura-masoni/</loc>
     <lastmod>2024-05-01T19:14:33+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -483,10 +483,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/laura-masoni/"
+                href="http://localhost:1313/testimonials/laura-masoni/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/luigi-paganelli/</loc>
+    <loc>http://localhost:1313/testimonials/luigi-paganelli/</loc>
     <lastmod>2024-04-11T12:28:21+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -496,10 +496,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/luigi-paganelli/"
+                href="http://localhost:1313/testimonials/luigi-paganelli/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/mattia-guida/</loc>
+    <loc>http://localhost:1313/testimonials/mattia-guida/</loc>
     <lastmod>2024-04-11T17:20:32+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -509,10 +509,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/mattia-guida/"
+                href="http://localhost:1313/testimonials/mattia-guida/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/michele-lasi/</loc>
+    <loc>http://localhost:1313/testimonials/michele-lasi/</loc>
     <lastmod>2024-08-20T07:13:03+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -522,10 +522,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/michele-lasi/"
+                href="http://localhost:1313/testimonials/michele-lasi/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/rossana-gloriosi/</loc>
+    <loc>http://localhost:1313/testimonials/rossana-gloriosi/</loc>
     <lastmod>2024-04-28T18:07:47+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -535,10 +535,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/rossana-gloriosi/"
+                href="http://localhost:1313/testimonials/rossana-gloriosi/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/stefano-boldrini/</loc>
+    <loc>http://localhost:1313/testimonials/stefano-boldrini/</loc>
     <lastmod>2024-04-26T10:53:58+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -548,10 +548,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/stefano-boldrini/"
+                href="http://localhost:1313/testimonials/stefano-boldrini/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/testimonials/</loc>
+    <loc>http://localhost:1313/categories/testimonials/</loc>
     <lastmod>2024-08-20T07:13:03+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -561,10 +561,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/testimonials/"
+                href="http://localhost:1313/categories/testimonials/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/testimonials/</loc>
+    <loc>http://localhost:1313/testimonials/</loc>
     <lastmod>2024-03-19T10:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -574,10 +574,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/testimonials/"
+                href="http://localhost:1313/testimonials/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/coaching/</loc>
+    <loc>http://localhost:1313/tags/coaching/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -587,10 +587,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/coaching/"
+                href="http://localhost:1313/tags/coaching/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/communication/</loc>
+    <loc>http://localhost:1313/tags/communication/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -600,10 +600,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/communication/"
+                href="http://localhost:1313/tags/communication/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/empathy/</loc>
+    <loc>http://localhost:1313/tags/empathy/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -613,10 +613,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/empathy/"
+                href="http://localhost:1313/tags/empathy/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/empathy/</loc>
+    <loc>http://localhost:1313/empathy/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -626,10 +626,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/empathy/"
+                href="http://localhost:1313/empathy/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/humility-will-for-great-leadership/</loc>
+    <loc>http://localhost:1313/humility-will-for-great-leadership/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -639,10 +639,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/humility-will-for-great-leadership/"
+                href="http://localhost:1313/humility-will-for-great-leadership/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/learning-organization/</loc>
+    <loc>http://localhost:1313/tags/learning-organization/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -652,10 +652,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/learning-organization/"
+                href="http://localhost:1313/tags/learning-organization/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -665,7 +665,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/"
+                href="http://localhost:1313/"
                 />
   </url>
 </urlset>

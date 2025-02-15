@@ -140,7 +140,7 @@ body {
   padding: 2rem 0 24rem;
   font-size: calc(1.5rem + 0.25vw);
   line-height: var(--line-height);
-  padding-top: 56px; /* Height of control bar + padding */
+  padding-top: 2rem; /* Height of control bar + padding */
   padding-bottom: 64px; /* Spazio per la barra in basso */
 }
 
