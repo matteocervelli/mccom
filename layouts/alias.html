@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Permalink }}</title>
+    <link rel="canonical" href="{{ .Permalink }}"/>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8"/>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url={{ .Permalink }}"/>
+    </noscript>
+    <script>
+      ;(function () {
+        console.log('Script iniziato');
+        console.log('Path attuale:', window.location.pathname);
+        
+        // Only do i18n at root, 
+        // otherwise, redirect immediately
+        if (window.location.pathname !== '/') {
+          console.log('Non nella root, redirect a:', '{{ .Permalink }}');
+          window.location.replace('{{ .Permalink }}')
+          return
+        }
+
+        var getFirstBrowserLanguage = function () {
+          var nav = window.navigator,
+          browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
+          i,
+          language
+
+          console.log('Navigator languages:', nav.languages);
+
+          if (Array.isArray(nav.languages)) {
+            for (i = 0; i < nav.languages.length; i++) {
+              language = nav.languages[i]
+              if (language && language.length) {
+                console.log('Trovata lingua da array:', language);
+                return language
+              }
+            }
+          }
+
+          // support for other well known properties in browsers
+          for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
+            language = nav[browserLanguagePropertyKeys[i]]
+            if (language && language.length) {
+              console.log('Trovata lingua da properties:', language);
+              return language
+            }
+          }
+          console.log('Nessuna lingua trovata, uso default: en');
+          return 'en'
+        }
+
+        var preferLang = getFirstBrowserLanguage()
+        console.log('Lingua preferita rilevata:', preferLang);
+        
+        if (preferLang.indexOf('it') !== -1) {
+          console.log('Redirezione alla versione italiana');
+          window.location.replace('/it/')
+        } else {
+          console.log('Redirezione alla versione inglese');
+          window.location.replace('/en/')
+        }
+      })()
+    </script>
+</head>
+<body>
+<h1>{{ i18n "rerouting" }}</h1>
+<p>{{ i18n "rerouting_message"}} <a href="{{ .Permalink }}">{{ i18n "click_here" }}</a>.</p>
+</body>
+</html>

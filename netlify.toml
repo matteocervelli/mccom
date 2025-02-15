@@ -27,9 +27,22 @@
     Content-Type = "text/plain; charset=utf-8"
 
 [[redirects]]
-  from = "/*"
-  to = "/en/404.html"
-  status = 404
+  from = "/essays/the-purple-cow/*"
+  to = "/en/the-purple-cow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/essays/the-people-garden-manifesto/*"
+  to = "/en/the-people-garden-manifesto"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/essays/fake-purpose-undermines-company-success/*"
+  to = "/en/fake-purpose-undermines-company-success"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/it/*"
@@ -38,5 +51,10 @@
 
 [[redirects]]
   from = "/en/*"
+  to = "/en/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/*"
   to = "/en/404.html"
   status = 404

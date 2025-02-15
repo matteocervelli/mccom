@@ -8,8 +8,8 @@ language: en
 date: 2025-02-15
 Lastmod: 2025-02-15
 draft: false 
-tags: ["ai"]
-categories: ["page", "about"]
+tags: ['ai']
+categories: ['page', 'meta']
 featured_image: ""
 bsky: false
 ---

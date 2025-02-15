@@ -7,8 +7,8 @@ language: en
 date: 2025-01-17T16:12:52+01:00
 Lastmod: 
 draft: false
-tags: ['tech-stack', 'guide']
-categories: ['page', 'about']
+tags: ['tech-stack']
+categories: ['page', 'meta']
 featured_image: ""
 ---
 Updated: 2025-01-17

@@ -1,5 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on Matteo Cervelli</title><link>https://matteocervelli.com/it/categories/about/</link><description>Recent content in About on Matteo Cervelli</description><generator>Hugo</generator><language>it-IT</language><lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://matteocervelli.com/it/categories/about/feed.xml" rel="self" type="application/rss"/><item><title>Uso dell'AI</title><link>https://matteocervelli.com/it/ai/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><guid>https://matteocervelli.com/it/ai/</guid><description>&lt;p>Aggiornamento del 15 febbraio 2025.&lt;/p>
-&lt;hr>
-&lt;p>I LLM sono uno strumento che recentemente sta prendendo molto spazio nel mondo, e anche in come io approccio il mio lavoro.&lt;/p>
-&lt;p>Sebbene non siano infallibili, l&amp;rsquo;utilizzo di questi strumenti mi ha permesso di potenziare le mie capacità di realizzazione di contenuti e anche per scrivere codice.&lt;/p>
-&lt;p>Ogni contenuto che vedete prodotto sul sito è stato da me scritto, originariamente, in almeno una delle lingue che supporto, cioè italiano e inglese. Per la traduzione spesso mi affido a una prima bozza autotradotta. Può capitare quindi che una delle due lingue presenti forme verbali generate da un LLM che non ho riscritto totalmente, soprattutto negli articoli più vecchi, precedenti a 15 febbraio 2025, data in cui ho pubblicato la nuova versione del sito su Netlify.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Matteo Cervelli</title>
+    <link>https://matteocervelli.com/it/categories/about/</link>
+    <description>Recent content in About on Matteo Cervelli</description>
+    <generator>Hugo</generator>
+    <language>it-IT</language>
+    <lastBuildDate>Sat, 15 Feb 2025 17:29:32 +0100</lastBuildDate>
+    <atom:link href="https://matteocervelli.com/it/categories/about/feed.xml" rel="self" type="application/rss" />
+    <item>
+      <title>Cosa sto facendo ora</title>
+      <link>https://matteocervelli.com/it/ora/</link>
+      <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
+      <guid>https://matteocervelli.com/it/ora/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Nota: questa è una pagina &lt;a href=&#34;https://nownownow.com&#34;&gt;Now&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Aggiornato: 2025-01-18, dalla mia casa a Poggibonsi, Toscana, Italia.&lt;/p&gt;&#xA;&lt;h2 id=&#34;aiuto-le-aziende-a-crescere-in-modo-scalabile&#34;&gt;Aiuto le aziende a crescere in modo scalabile&lt;/h2&gt;&#xA;&lt;p&gt;Sono un consulente e advisor per le imprese.&lt;/p&gt;&#xA;&lt;p&gt;Il mio lavoro consiste nell&amp;rsquo;aiutare le aziende a crescere in modo scalabile, attraverso Strategia, Gestione del Cambiamento, Sviluppo delle Vendite e del Business, Formazione e Coaching dei Leader.&lt;/p&gt;&#xA;&lt;p&gt;Adotto un modello a 3 fasi: analisi inziale, progetto sprint (con implementazione), e follow-up con advisory.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Su di me</title>
+      <link>https://matteocervelli.com/it/about/</link>
+      <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
+      <guid>https://matteocervelli.com/it/about/</guid>
+      <description>&lt;h2 id=&#34;in-breve&#34;&gt;In breve&lt;/h2&gt;&#xA;&lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;https://matteocervelli.com/work/business-scalability-engineer&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;https://matteocervelli.com/it/lavora-con-me/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Oggi aiuto imprenditori e leader a crescere il proprio business, nella strategia, gestione, vendite, implementando i principi della scalabilità.&lt;/p&gt;&#xA;&lt;p&gt;Il mio scopo è innescare le persone a costruire un mondo più bello, insieme.&lt;/p&gt;&#xA;&lt;p&gt;Sono un padre di 3 bambine piccole, Emma, Maria ed Emma, e di due cani: Maple e Cookie. Prima ancora, sono un marito: con Sara ci conosciamo dal 2005 e in questi 20 anni ci siamo amati e siamo sempre stati l&amp;rsquo;uno per l&amp;rsquo;altra, uno, due e infinito.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,181 @@
+and:
+  other: "and"
+here:
+  other: "here"
+other:
+  other: "other"
+otherOptions:
+  other: "other options"
+allTitle:
+  other: "All {{.Title }}"
+recentTitle:
+  other: "Recent {{.Title }}"
+readMore:
+  other: "read more"
+by:
+  other: "By"
+whatsInThis:
+  other: "What's in this {{ .Type }}"
+related:
+  other: "Related"
+yourName:
+  other: "Your Name"
+emailAddress:
+  other: "Email Address"
+message:
+  other: "Message"
+emailRequiredNote:
+  other: "An email address is required."
+send:
+  other: "Send"
+taxonomyPageList:
+  other: "Below you will find pages that utilize the taxonomy term \"{{ .Title }}\""
+readingTime:
+  one: "One minute read"
+  other: "{{ .Count }} minutes read"
+wordCount:
+  one: "One word"
+  other: "{{ .Count }} words"
+pageTitle:
+  other: "{{ .Name }} page"
+lets_stay_in_touch:
+  other: "Let's stay in touch via"
+email_placeholder:
+  other: "Email Address"
+sign_up:
+  other: "Sign up"
+built_with:
+  other: "Built with"
+newsletter_form_action:
+  other: "https://app.kit.com/forms/7578059/subscriptions"
+newsletter_form_id:
+  other: "7578059"
+newsletter_form_uid:
+  other: "455bee90fa"
+published:
+  other: "published"
+updated:
+  other: "updated"
+minute:
+  other: "minute read"
+minutes:
+  other: "minutes read"
+January:
+  other: "January"
+February:
+  other: "February"
+March:
+  other: "March"
+April:
+  other: "April"
+May:
+  other: "May"
+June:
+  other: "June"
+July:
+  other: "July"
+August:
+  other: "August"
+September:
+  other: "September"
+October:
+  other: "October"
+November:
+  other: "November"
+December:
+  other: "December"
+allPosts:
+  other: "All posts"
+postsTaggedWith:
+  other: "Posts tagged with:"
+tags:
+  other: "Tags"
+topics:
+  other: "Topics"
+articlesAboutTopic:
+  one: "{{ .Count }} entry about this topic:"
+  other: "{{ .Count }} entries about this topic:"
+latestPost:
+  other: "Latest"
+featuredPosts:
+  one: "Featured Post"
+  other: "Featured Posts"
+menuPosts:
+  other: "Posts"
+tableOfContents:
+  other: "Table of Contents"
+toggleSidebar:
+  other: "Toggle sidebar"
+searchShortcut:
+  other: "ESC to close / ⌘K or CTRL+K to open"
+footnotes:
+  other: "Footnotes"
+contact_page:
+  other: "subscribe"
+industry:
+  other: "Industry"
+all_industries:
+  other: "All Industries"
+role:
+  other: "Role"
+all_roles:
+  other: "All Roles"
+department:
+  other: "Department"
+all_departments:
+  other: "All Departments"
+expertise:
+  other: "Expertise"
+all_tags:
+  other: "All Areas"
+search:
+  other: "Search"
+search_placeholder:
+  other: "Search testimonials..."
+read_more:
+  other: "Read full testimonial"
+what_people_say:
+  other: "What People Say About Working With Me"
+view_all_testimonials:
+  other: "View All Testimonials"
+clear_filters:
+  other: "Clear filters"
+sort:
+  other: "Sort by"
+sort_newest:
+  other: "Date (newest)"
+sort_oldest:
+  other: "Date (oldest)"
+sort_az:
+  other: "Name (A-Z)"
+sort_za:
+  other: "Name (Z-A)"
+sitemap:
+  other: "Sitemap"
+home:
+  other: "Home"
+homepage:
+  other: "Homepage"
+posts:
+  one: "Post"
+  other: "Posts"
+article:
+  one: "article"
+  other: "articles"
+articles:
+  other: "articles"
+testimonial:
+  one: "Testimonial"
+  other: "Testimonials"
+category_about:
+  other: "About"
+category_work:
+  other: "Work"
+category_meta:
+  other: "Meta" 
+rerouting:
+  other: "Rerouting"
+rerouting_message:
+  other: "You should be rerouted in a jiff, if not,"
+click_here:
+  other: "click here"

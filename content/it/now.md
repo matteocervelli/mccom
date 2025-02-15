@@ -1,6 +1,6 @@
 ---
 title: "Cosa sto facendo ora"
-description: "Progetti e lavori attuali &emdash; Matteo Cervelli"
+description: "Progetti e lavori attuali"
 slug: "ora"
 translationKey: "now"
 language: it
@@ -8,7 +8,7 @@ date: 2025-01-17T16:12:52+01:00
 Lastmod: 
 draft: false 
 tags: []
-categories: ['page']
+categories: ['page', 'about']
 featured_image: ""
 ---
 *Nota: questa è una pagina [Now](https://nownownow.com).*

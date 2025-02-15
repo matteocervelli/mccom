@@ -6,8 +6,15 @@
     <description>Recent content in Page on Matteo Cervelli</description>
     <generator>Hugo</generator>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 15 Feb 2025 10:23:19 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2025 17:30:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/it/categories/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mappa del sito</title>
+      <link>http://localhost:1313/it/sitemap/</link>
+      <pubDate>Sat, 15 Feb 2025 17:30:00 +0100</pubDate>
+      <guid>http://localhost:1313/it/sitemap/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Uso dell&#39;AI</title>
       <link>http://localhost:1313/it/ai/</link>

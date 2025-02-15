@@ -9,7 +9,7 @@ date: 2025-01-25
 Lastmod: 2025-01-25
 draft: false 
 tags: []
-categories: []
+categories: ['page', 'meta']
 featured_image: ""
 bsky: false
 layout: subscribe

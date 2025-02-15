@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-description: ""
+description: "Something to know about me"
 slug: "about"
 translationKey: "about"
 language: en

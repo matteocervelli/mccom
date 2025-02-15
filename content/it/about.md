@@ -1,6 +1,6 @@
 ---
 title: "Su di me"
-description: ""
+description: "Cosa sapere su di me"
 slug: "about"
 translationKey: "about"
 language: it
@@ -8,7 +8,7 @@ date: 2025-01-16T17:26:30+01:00
 Lastmod: 
 draft: false 
 tags: []
-categories: ['page']
+categories: ['page', 'about']
 featured_image: ""
 ---
 ## In breve

@@ -1,0 +1,67 @@
+{{ define "main" }}
+<div class="page-content">
+    <article class="container mx-auto px-4 py-8">
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold mb-2">{{ .Title }}</h1>
+            {{ with .Description }}
+            <p class="text-gray-600">{{ . }}</p>
+            {{ end }}
+        </header>
+
+        <!-- Home Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">{{ T "home" }}</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                <li><a href="{{ .Site.BaseURL }}" class="text-blue-600 hover:text-blue-800">{{ T "homepage" }}</a></li>
+            </ul>
+        </section>
+
+        <!-- Pages by Category -->
+        {{ $pages := where .Site.RegularPages "Type" "!=" "posts" }}
+        {{ $categories := slice "about" "work" "meta" }}
+        {{ range $categories }}
+        {{ $category := . }}
+        {{ $categoryPages := where $pages "Params.categories" "intersect" (slice $category) }}
+        {{ if $categoryPages }}
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">{{ T (printf "category_%s" $category) }}</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                {{ range $categoryPages }}
+                <li>
+                    <a href="{{ .Permalink }}" class="text-blue-600 hover:text-blue-800">{{ .Title }}</a>
+                    {{ with .Description }}<span class="text-gray-500 text-sm ml-2">- {{ . }}</span>{{ end }}
+                </li>
+                {{ end }}
+            </ul>
+        </section>
+        {{ end }}
+        {{ end }}
+
+        <!-- Posts Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">{{ T "posts" }}</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                {{ range where .Site.RegularPages "Type" "posts" }}
+                <li>
+                    <a href="{{ .Permalink }}" class="text-blue-600 hover:text-blue-800">{{ .Title }}</a>
+                    <span class="text-gray-500 text-sm ml-2">({{ .Date.Format "2006-01-02" }})</span>
+                </li>
+                {{ end }}
+            </ul>
+        </section>
+
+        <!-- Tags Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">{{ T "tags" }}</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                {{ range .Site.Taxonomies.tags }}
+                <li>
+                    <a href="{{ .Page.Permalink }}" class="text-blue-600 hover:text-blue-800">{{ .Page.Title }}</a>
+                    <span class="text-gray-500 text-sm ml-2">({{ .Count }} {{ if eq .Count 1 }}{{ T "article" }}{{ else }}{{ T "articles" }}{{ end }})</span>
+                </li>
+                {{ end }}
+            </ul>
+        </section>
+    </article>
+</div>
+{{ end }} 
