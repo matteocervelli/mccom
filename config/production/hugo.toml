@@ -1,0 +1,36 @@
+baseURL = "https://matteocervelli.com/"
+
+[params]
+    custom_css = ["css/styles.css"]
+    author = "Matteo Cervelli"
+    dateFormat = "2 January 2006"
+    languageMenuAnchor = "left"
+    changefreq = "monthly"
+    priority = 0.5
+
+[outputs]
+    home = ["HTML", "RSS", "SITEMAP", "JSON"]
+    section = ["HTML", "RSS", "SITEMAP"]
+    taxonomy = ["HTML", "RSS"]
+    term = ["HTML", "RSS"]
+
+[sitemap]
+    changefreq = "monthly"
+    priority = 0.5
+    filename = "sitemap.xml"
+
+[outputFormats]
+    [outputFormats.RSS]
+        mediatype = "application/rss"
+        baseName = "feed"
+    [outputFormats.SITEMAP]
+        mediaType = "application/xml"
+        baseName = "sitemap"
+        isPlainText = true
+        rel = "sitemap"
+
+[mediaTypes]
+    [mediaTypes."application/rss"]
+        suffixes = ["xml"]
+    [mediaTypes."application/xml"]
+        suffixes = ["xml"]

@@ -1,21 +1,38 @@
-{{ `<?xml version="1.0" encoding="UTF-8"?>` | safeHTML }}
+{{- $xmlString := `<?xml version="1.0" encoding="UTF-8"?>` -}}
+{{- $xmlString | safeHTML }}
+{{- $urlset := `
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{- range where .Site.Pages "Language.Lang" .Site.Language.Lang -}}
-  {{- if not .Params.private -}}
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">` -}}
+{{- $urlset | safeHTML -}}
+{{- range where .Site.Pages "Language.Lang" .Site.Language.Lang -}}
+{{- if not .Params.private -}}
+{{- $url := printf `
   <url>
-    <loc>{{ .Permalink }}</loc>
-    {{- if not .Lastmod.IsZero }}
-    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
-    {{- end }}
-    <changefreq>{{- if isset .Params "changefreq" -}}{{ .Params.changefreq }}{{- else if eq .Kind "home" -}}daily{{- else -}}monthly{{- end -}}</changefreq>
-    <priority>{{- if isset .Params "priority" -}}{{ .Params.priority }}{{- else if eq .Kind "home" -}}1.0{{- else if eq .Kind "section" -}}0.9{{- else -}}0.8{{- end -}}</priority>
-    {{- if .IsTranslated }}
-    {{- range .Translations }}
-    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}"/>
-    {{- end }}
-    {{- end }}
-  </url>
-  {{- end -}}
-  {{- end }}
-</urlset> 
+    <loc>%s</loc>` .Permalink -}}
+{{- $url | safeHTML -}}
+{{- if not .Lastmod.IsZero -}}
+{{- $lastmod := printf `
+    <lastmod>%s</lastmod>` (.Lastmod.Format "2006-01-02T15:04:05-07:00") -}}
+{{- $lastmod | safeHTML -}}
+{{- end -}}
+{{- $changefreq := printf `
+    <changefreq>%s</changefreq>` (cond (eq .Kind "home") "daily" "monthly") -}}
+{{- $changefreq | safeHTML -}}
+{{- $priority := printf `
+    <priority>%s</priority>` (cond (eq .Kind "home") "1.0" (cond (eq .Kind "section") "0.9" "0.8")) -}}
+{{- $priority | safeHTML -}}
+{{- if .IsTranslated -}}
+{{- range .Translations -}}
+{{- $alternate := printf `
+    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>` .Language.Lang .Permalink -}}
+{{- $alternate | safeHTML -}}
+{{- end -}}
+{{- end -}}
+{{- $urlclose := `
+  </url>` -}}
+{{- $urlclose | safeHTML -}}
+{{- end -}}
+{{- end -}}
+{{- $urlsetclose := `
+</urlset>` -}}
+{{- $urlsetclose | safeHTML -}} 

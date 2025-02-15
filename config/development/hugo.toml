@@ -1,0 +1,17 @@
+baseURL = "http://localhost:1313/"
+
+[params]
+    custom_css = ["css/styles.css"]
+    author = "Matteo Cervelli"
+    dateFormat = "2 January 2006"
+    languageMenuAnchor = "left"
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+    section = ["HTML", "RSS"]
+    taxonomy = ["HTML", "RSS"]
+    term = ["HTML", "RSS"]
+
+[server]
+  [[server.errorPages]]
+    notFound = "/404.html"

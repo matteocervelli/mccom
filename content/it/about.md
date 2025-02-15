@@ -28,6 +28,7 @@ Su questo sito trovi:
 - I miei [pensieri e articoli](/posts)
 - Il mio [metodo di lavoro](/work)
 - Cosa sto concentrando su [adesso](/now)
+- Come utilizzo l'AI per questo sito e miei contenuti — [qui](/ai)
 
 ## Benvenuti nel mio giardino
 

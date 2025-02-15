@@ -1,0 +1,117 @@
+Watching for changes in /Users/matteocervelli/websites/mccom/{archetypes,assets,content,data,i18n,layouts,package.json,static,themes}
+Watching for config changes in /Users/matteocervelli/websites/mccom/config/_default, /Users/matteocervelli/websites/mccom/config/development, /Users/matteocervelli/websites/mccom/themes/ananke/config/_default
+Start building sites … 
+hugo v0.140.2+extended+withdeploy darwin/arm64 BuildDate=2024-12-30T15:01:53Z VendorInfo=brew
+
+INFO  static: syncing static files to / duration 29.853958ms
+INFO  build:  step process substep collect files 60 files_total 60 pages_total 60 resources_total 0 duration 273.530917ms
+INFO  build:  step process duration 273.931875ms
+DEBUG Set expanded permalink path for page posts/empathy.md to "/empathy"
+DEBUG Set expanded permalink path for page posts/find-your-villain-learn-your-mission.md to "/find-your-villain-learn-your-mission"
+DEBUG Set expanded permalink path for page posts/humility-will-for-great-leadership.md to "/humility-will-for-great-leadership"
+DEBUG Set expanded permalink path for page posts/the-purple-cow.md to "/the-purple-cow"
+DEBUG Set expanded permalink path for page posts/tightrope-walker-manager.md to "/tightrope-walker-manager"
+DEBUG Set expanded permalink path for page posts/empathy.md to "/empatia"
+DEBUG Set expanded permalink path for page posts/find-your-villain-learn-your-mission.md to "/trova-lantagonista-scopri-la-missione"
+DEBUG Set expanded permalink path for page posts/humility-will-for-great-leadership.md to "/umilta-determinazione-per-grande-leadership"
+DEBUG Set expanded permalink path for page posts/the-purple-cow.md to "/la-mucca-viola"
+DEBUG Set expanded permalink path for page posts/tightrope-walker-manager.md to "/manager-funambolo"
+INFO  build:  step assemble duration 3.187416ms
+DEBUG Write redirect to main language en: http://localhost:1313/en/
+INFO  build:  step render substep pages site en outputFormat html duration 114.61175ms
+INFO  build:  step render substep pages site en outputFormat json duration 2.219834ms
+INFO  build:  step render substep pages site en outputFormat rss duration 2.810542ms
+INFO  build:  step render substep pages site it outputFormat html duration 55.02925ms
+INFO  build:  step render substep pages site it outputFormat json duration 2.452084ms
+INFO  build:  step render substep pages site it outputFormat rss duration 2.8585ms
+INFO  build:  step render pages 170 content 110 duration 180.359125ms
+INFO  build:  step render deferred count 0 duration 1.541µs
+INFO  build:  step postProcess duration 7.875µs
+INFO  build:  duration 457.891875ms
+
+                   | EN | IT  
+-------------------+----+-----
+  Pages            | 86 | 84  
+  Paginator pages  |  0 |  0  
+  Non-page files   |  0 |  0  
+  Static files     | 47 | 47  
+  Processed images |  0 |  0  
+  Aliases          | 20 | 19  
+  Cleaned          |  0 |  0  
+
+Built in 459 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) 
+Press Ctrl+C to stop
+INFO  build:  step render substep pages site en outputFormat html duration 180.125µs
+INFO  build:  step render substep pages site en outputFormat json duration 143.834µs
+INFO  build:  step render substep pages site en outputFormat rss duration 72.375µs
+INFO  build:  step render substep pages site it outputFormat html duration 57.459µs
+INFO  build:  step render substep pages site it outputFormat json duration 42.292µs
+INFO  build:  step render substep pages site it outputFormat rss duration 108.166µs
+INFO  build:  step render pages 0 content 0 duration 5.24475ms
+INFO  build:  step render deferred count 0 duration 30.208µs
+INFO  build:  step postProcess duration 102.5µs
+INFO  build:  duration 5.757208ms
+
+Change of config file detected, rebuilding site (#1).
+2025-02-15 17:22:12.425 +0100
+INFO  static: syncing static files to / duration 25.421292ms
+INFO  build:  step process substep collect files 60 files_total 60 pages_total 60 resources_total 0 duration 270.90375ms
+INFO  build:  step process duration 270.991166ms
+DEBUG Set expanded permalink path for page posts/empathy.md to "/empathy"
+DEBUG Set expanded permalink path for page posts/find-your-villain-learn-your-mission.md to "/find-your-villain-learn-your-mission"
+DEBUG Set expanded permalink path for page posts/humility-will-for-great-leadership.md to "/humility-will-for-great-leadership"
+DEBUG Set expanded permalink path for page posts/the-purple-cow.md to "/the-purple-cow"
+DEBUG Set expanded permalink path for page posts/tightrope-walker-manager.md to "/tightrope-walker-manager"
+DEBUG Set expanded permalink path for page posts/empathy.md to "/empatia"
+DEBUG Set expanded permalink path for page posts/find-your-villain-learn-your-mission.md to "/trova-lantagonista-scopri-la-missione"
+DEBUG Set expanded permalink path for page posts/humility-will-for-great-leadership.md to "/umilta-determinazione-per-grande-leadership"
+DEBUG Set expanded permalink path for page posts/the-purple-cow.md to "/la-mucca-viola"
+DEBUG Set expanded permalink path for page posts/tightrope-walker-manager.md to "/manager-funambolo"
+INFO  build:  step assemble duration 2.371541ms
+DEBUG Write redirect to main language en: http://localhost:1313/en/
+INFO  build:  step render substep pages site en outputFormat html duration 123.647708ms
+INFO  build:  step render substep pages site en outputFormat json duration 3.914292ms
+INFO  build:  step render substep pages site en outputFormat rss duration 4.80775ms
+INFO  build:  step render substep pages site it outputFormat html duration 64.482375ms
+INFO  build:  step render substep pages site it outputFormat json duration 3.949208ms
+INFO  build:  step render substep pages site it outputFormat rss duration 5.661042ms
+INFO  build:  step render pages 170 content 110 duration 207.067625ms
+INFO  build:  step render deferred count 0 duration 1.709µs
+INFO  build:  step postProcess duration 10.375µs
+INFO  build:  duration 480.554209ms
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 568 ms
+
+Change of config file detected, rebuilding site (#2).
+2025-02-15 17:22:15.924 +0100
+INFO  static: syncing static files to / duration 5.648666ms
+INFO  build:  step process substep collect files 60 files_total 60 pages_total 60 resources_total 0 duration 100.00375ms
+INFO  build:  step process duration 100.062ms
+DEBUG Set expanded permalink path for page posts/empathy.md to "/empathy"
+DEBUG Set expanded permalink path for page posts/find-your-villain-learn-your-mission.md to "/find-your-villain-learn-your-mission"
+DEBUG Set expanded permalink path for page posts/humility-will-for-great-leadership.md to "/humility-will-for-great-leadership"
+DEBUG Set expanded permalink path for page posts/the-purple-cow.md to "/the-purple-cow"
+DEBUG Set expanded permalink path for page posts/tightrope-walker-manager.md to "/tightrope-walker-manager"
+DEBUG Set expanded permalink path for page posts/empathy.md to "/empatia"
+DEBUG Set expanded permalink path for page posts/find-your-villain-learn-your-mission.md to "/trova-lantagonista-scopri-la-missione"
+DEBUG Set expanded permalink path for page posts/humility-will-for-great-leadership.md to "/umilta-determinazione-per-grande-leadership"
+DEBUG Set expanded permalink path for page posts/the-purple-cow.md to "/la-mucca-viola"
+DEBUG Set expanded permalink path for page posts/tightrope-walker-manager.md to "/manager-funambolo"
+INFO  build:  step assemble duration 2.94625ms
+DEBUG Write redirect to main language en: http://localhost:1313/en/
+INFO  build:  step render substep pages site en outputFormat html duration 125.63525ms
+INFO  build:  step render substep pages site en outputFormat json duration 4.772125ms
+INFO  build:  step render substep pages site en outputFormat rss duration 14.271333ms
+INFO  build:  step render substep pages site it outputFormat html duration 42.437542ms
+INFO  build:  step render substep pages site it outputFormat json duration 4.862042ms
+INFO  build:  step render substep pages site it outputFormat rss duration 4.371125ms
+INFO  build:  step render pages 170 content 110 duration 196.885417ms
+INFO  build:  step render deferred count 0 duration 1.25µs
+INFO  build:  step postProcess duration 9.542µs
+INFO  build:  duration 300.032041ms
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 339 ms

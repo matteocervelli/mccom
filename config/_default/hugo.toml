@@ -1,0 +1,82 @@
+languageCode = "en"
+title = "Matteo Cervelli"
+theme = "ananke"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+enableGitInfo = true
+
+[languages]
+    [languages.en]
+        contentDir = "content/en"
+        disabled = false
+        languageCode = "en-US"
+        languageDirection = "ltr"
+        languageName = "English"
+        title = "Matteo Cervelli"
+        weight = 1
+        [languages.en.params]
+            subtitle = "Business Growth Engineer"
+    [languages.it]
+        contentDir = "content/it"
+        disabled = false
+        languageCode = "it-IT"
+        languageDirection = "ltr"
+        languageName = "Italian"
+        title = "Matteo Cervelli"
+        weight = 2
+        [languages.it.params]
+            subtitle = "Ingegnere della Crescita delle Imprese"
+
+[languages.en.menus]
+    [[languages.en.menus.main]]
+        name = "About"
+        url = "/en/about/"
+        weight = 1
+    [[languages.en.menus.main]]
+        name = "Posts"
+        url = "/en/posts/"
+        weight = 2
+    [[languages.en.menus.main]]
+        name = "Work"
+        url = "/en/work/"
+        weight = 3
+    [[languages.en.menus.main]]
+        name = "Now"
+        url = "/en/now/"
+        weight = 4
+
+[languages.it.menus]
+    [[languages.it.menus.main]]
+        name = "Su di me"
+        url = "/it/about/"
+        weight = 1
+    [[languages.it.menus.main]]
+        name = "Articoli"
+        url = "/it/posts/"
+        weight = 2
+    [[languages.it.menus.main]]
+        name = "Lavoro"
+        url = "/it/lavora-con-me/"
+        weight = 3
+    [[languages.it.menus.main]]
+        name = "Ora"
+        url = "/it/ora/"
+        weight = 4
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+
+[permalinks] 
+    posts = "/:slug"
+
+[taxonomies]
+    tag = 'tags'
+    category = 'categories'
+
+[module]
+    [module.hugoVersion]
+        extended = true
+        min = "0.55.0"

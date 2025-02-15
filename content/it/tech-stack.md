@@ -21,9 +21,11 @@ Prima di tutto, matteocervelli.com è un sito internet statico. È realizzato co
 
 La passione per il Markdown viene da un recente passaggio di tutta la mia gestione a [Obsidian](https://obsidian.md), che ho "annusato" per anni e alla fine mi sono deciso.
 
-Ma non avrei potuto costruire il sito senza due aiutanti formidabili di AI: [Claude](https://claude.ai) 3.5-sonnet e [Cursor](https://cursor.sh). Cursor mi ha cambiato completamente la vita, laddove Claude è il miglior aiutante per l'apprendimento possibile. 
+Ma non avrei potuto costruire il sito senza due aiutanti formidabili di AI: [Claude](https://claude.ai) 3.5-sonnet e [Cursor](https://cursor.sh). Cursor mi ha cambiato completamente la vita, laddove Claude è il miglior aiutante per l'apprendimento possibile.
 
 È solo tramite loro se mi è bastato un xml di export da WordPress per avere tutto il sito in Markdown, organizzato per cartelle, tramite uno Script Python.
+
+Per sapere di più su come utilizzo l'AI per il sito, puoi leggere [qui](https://matteocervelli.com/it/ai).
 
 Ad oggi, scrivo i miei testi in Markdown, in multilingua, tramite Obsidian dove mi sono costruito la struttura del sito, e poi li costruisco tramite Terminal (direttamente in Cursor) sulla cartella Hugo. Per me che venivo da un sistema chiuso come CMS avere tutto sul mio PC è incredibilmente liberante. Ovviamente, con backup continuo su Cloud e NAS.
 
@@ -44,17 +46,11 @@ Altri strumenti che utilizzo per gestire il sito e la mia attività personale:
 - [Kit](https://kit.co) per raccogliere contatti e inviare la newsletter
 - [Stripe](https://stripe.com) per gestire i pagamenti.
 - [Fiscozen](https://cervelli.link/fiscozen) (per partite IVA italiane) per la contabilità — Affiliate.
-- [Google Analytics](https://analytics.google.com)
+- [Umami Analytics](https://umami.is) per le metriche
 - [Canva](https://www.canva.com) per le grafiche
-- [Arc Browser](https://arc.net) come browser principale
 - [Clop](https://www.clop.ai) per ottimizzare le immagini
 - [Unsplash](https://unsplash.com) per le immagini stock
 
----
-
-Strumenti da implementare:
-- Cookie/Privacy e Policy
-- Analytics
 
 ---
 

@@ -28,6 +28,7 @@ On this website, you can find:
 - My [essays and thoughts](/posts)
 - My [work method](/work)
 - What I am focused on [now](/now)
+- How I use AI for this site and my content — [here](/ai).
 
 ## Welcome to my garden
 

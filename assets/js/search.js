@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Ottieni la lingua corrente dall'URL
-  const currentLang = window.location.pathname.split('/')[1] || 'en';
+  const pathParts = window.location.pathname.split('/');
+  const currentLang = pathParts[1] === 'it' || pathParts[1] === 'en' ? pathParts[1] : 'en';
   
   const searchButton = document.getElementById('searchButton');
   const searchContainer = document.getElementById('searchContainer');
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let isTransitioning = false;
   
   // Carica i dati di ricerca
-  const jsonUrl = currentLang === 'it' ? '/it/index.json' : '/en/index.json';
+  const jsonUrl = `/${currentLang}/index.json`;
   console.log('Fetching search data from:', jsonUrl);
   
   fetch(jsonUrl)

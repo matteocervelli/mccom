@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-# Permetti l'accesso a tutti i contenuti principali
 Allow: /posts/
 Allow: /blog/
 Allow: /it/
@@ -9,9 +8,7 @@ Allow: /en/
 Allow: /work/
 Allow: /testimonials/
 
-# Blocca eventuali URL di anteprima o bozze
 Disallow: /draft/
 Disallow: /preview/
 
-# Sitemap
-Sitemap: https://matteocervelli.com/sitemap.xml 
+Sitemap: http://localhost:1313/sitemap.xml 

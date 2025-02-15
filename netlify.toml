@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo --minify"
+  command = "hugo --gc --minify --cleanDestinationDir --environment production"
 
 [build.environment]
   HUGO_VERSION = "0.140.2"

@@ -1,6 +1,6 @@
 {
     "MD033": {
-        "allowed_elements": ["article", "div", "img", "p", "a", "label", "select", "option", "input", "br", "script"]
+        "allowed_elements": ["article", "div", "img", "p", "a", "label", "select", "option", "input", "br", "script", "b", "mark"]
     },
     "MD013": false
 } 
