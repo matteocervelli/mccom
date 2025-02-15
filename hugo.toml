@@ -3,6 +3,8 @@ languageCode = "en"
 title = "Matteo Cervelli"
 theme = "ananke"
 defaultContentLanguage = "en"
+enableRobotsTXT = true
+enableGitInfo = true
     [languages]
         [languages.en]
             contentDir = "content/en"
@@ -63,6 +65,8 @@ defaultContentLanguage = "en"
     author = "Matteo Cervelli"
     dateFormat = "2 January 2006"
     languageMenuAnchor = "left"
+    changefreq = "monthly"  # default changefreq
+    priority = 0.5         # default priority
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
@@ -83,7 +87,24 @@ defaultContentLanguage = "en"
       sidebar = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "SITEMAP"]
+  section = ["HTML", "RSS", "SITEMAP"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"
+
+[mediaTypes]
+  [mediaTypes."application/rss"]
+    suffixes = ["xml"]
 
 [module]
   [module.hugoVersion]
