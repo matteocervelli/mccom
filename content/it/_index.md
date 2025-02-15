@@ -28,8 +28,7 @@ featured_image: ""
 </article>
 
 Su questo sito trovi:
+
 - I miei [pensieri e articoli](/posts)
 - Il mio [metodo di lavoro](/work)
 - Su quali progetti sono attivo [adesso](/now)
-
----

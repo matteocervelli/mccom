@@ -43,5 +43,12 @@
       <guid>http://localhost:1313/en/about/</guid>
       <description>&lt;h2 id=&#34;in-short&#34;&gt;In short&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Matteo Cervelli. I am &lt;a href=&#34;http://localhost:1313/work/business-scalability-engineer&#34;&gt;Business Scalability Engineer&lt;/a&gt;. I act as a &lt;a href=&#34;http://localhost:1313/en/work/&#34;&gt;Consultant and Advisor&lt;/a&gt;. Previously I managed &lt;a href=&#34;https://www.urania.group&#34;&gt;Urania Group&lt;/a&gt; as Co-CEO.&lt;/p&gt;&#xA;&lt;p&gt;Today I help entrepreneurs and leaders to grow their business, in strategy, management, sales, implementing the principles of scalability.&lt;/p&gt;&#xA;&lt;p&gt;My purpose is to trigger people to build a more beautiful world, together.&lt;/p&gt;&#xA;&lt;p&gt;I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs: Maple and Cookie. Even before that, I am a husband: Sara and I have known each other since 2005 and in these 20 years we have loved each other and have always been there for each other, one, two and infinite.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Testimonials</title>
+      <link>http://localhost:1313/en/testimonials/</link>
+      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/en/testimonials/</guid>
+      <description>&lt;h2 id=&#34;what-people-say-about-working-with-me&#34;&gt;What People Say About Working With Me&lt;/h2&gt;&#xA;&lt;div class=&#34;testimonials-filters&#34;&gt;&#xA;    &lt;div class=&#34;filter-group&#34;&gt;&#xA;        &lt;label for=&#34;industry-filter&#34;&gt;Industry:&lt;/label&gt;&#xA;        &lt;select id=&#34;industry-filter&#34;&gt;&#xA;            &lt;option value=&#34;all&#34;&gt;All Industries&lt;/option&gt;&#xA;        &lt;/select&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;filter-group&#34;&gt;&#xA;        &lt;label for=&#34;keyword-search&#34;&gt;Search:&lt;/label&gt;&#xA;        &lt;input type=&#34;text&#34; id=&#34;keyword-search&#34; placeholder=&#34;Search testimonials...&#34;&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;testimonials-grid&#34; id=&#34;testimonials-container&#34;&gt;&#xA;    &lt;!-- Testimonials will be loaded here --&gt;&#xA;&lt;/div&gt;</description>
+    </item>
   </channel>
 </rss>

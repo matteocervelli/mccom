@@ -33,7 +33,6 @@ Faccio il consulente, l'advisor e il formatore, oltre ad investire personalmente
 - La capacità delle imprese è proposta di valore unica, il potenziale la forza delle **relazioni** che il vertice intrattiene.
 - Un'impresa che evolve è basata su pochi **esperimenti**, ma di grande potenzialità. E allo stesso tempo, tanti stimoli diversificati di mastodontiche opportunità che crogiolano in silenzio.
 
-
 <a href="#prenota-ora" class="mc-button">
     Prenota ora una sessione gratuita
     <br>
@@ -50,7 +49,7 @@ Il mio metodo è costituito da 3 modalità (che insieme costituiscono un process
 
 #### Assessment iniziale
 
-Scegli il tuo passo, percorso accelerato in una settimana o percorso distribuito nel corso di un mese. 
+Scegli il tuo passo, percorso accelerato in una settimana o percorso distribuito nel corso di un mese.
 
 Il risultato è un report approfondito, da buon ingegnere, che aiuta a individuare gli ostacoli alla crescita, come velocizzare il business e il piano d'azione.
 
@@ -62,35 +61,35 @@ L'obiettivo è portare risultati tangibili e misurabili in poco tempo, per testa
 
 #### Advisory continuativa
 
-Supporto continuativo per consigliare, monitorare e sviluppare processi e capacità dell'impresa e delle persone; per dare il ritmo e assicurare che le azioni procedano. 
+Supporto continuativo per consigliare, monitorare e sviluppare processi e capacità dell'impresa e delle persone; per dare il ritmo e assicurare che le azioni procedano.
 
 Opero con metodi di coaching in questa modalità.
 
 ### Fractional Executive
 
-Mi specializzo nell'ottimizzazione dei processi aziendali. 
+Mi specializzo nell'ottimizzazione dei processi aziendali.
 
-Analizzo approfonditamente ogni aspetto per garantire un funzionamento efficiente e fluido. 
+Analizzo approfonditamente ogni aspetto per garantire un funzionamento efficiente e fluido.
 
 Il mio obiettivo è trasformare le idee in risultati concreti e significativi, offrendoti una prospettiva strategica completa per guidare il successo della tua impresa.
- 
-Rispetto alla consulenza pura, il Fractional Executive acquisisce una responsabilità che esercita in uno spazio ridotto. Uno/due giorni a settimana. 
+
+Rispetto alla consulenza pura, il Fractional Executive acquisisce una responsabilità che esercita in uno spazio ridotto. Uno/due giorni a settimana.
 
 Il Fractional Executive è la risposta migliore per portare a casa competenze non presenti in azienda, quando non c'è spazio per un dirigente a tempo pieno.
 
 ### Membro indipendente del Consiglio d'Amministrazione
 
-Come membro indipendente del consiglio di amministrazione, porto una prospettiva fresca, visione strategica e la capacità di stimolare riflessioni attraverso domande mirate. 
+Come membro indipendente del consiglio di amministrazione, porto una prospettiva fresca, visione strategica e la capacità di stimolare riflessioni attraverso domande mirate.
 
 Mi impegno a contribuire alla crescita e al successo della tua organizzazione attraverso la mia esperienza e il mio punto di vista unico.
 
-La forza delle imprese è nella loro Capacità Relazionale, nel network che generano. 
+La forza delle imprese è nella loro Capacità Relazionale, nel network che generano.
 
 Un membro di CDA indipendente assicura anche un punteggio molto migliore per le tematiche ESG.
 
 ### Formazione e Insegnamento
 
-Credo fortemente nel potere trasformativo della conoscenza. I miei programmi formativi sono accuratamente progettati per elevare le competenze, aumentare la fiducia e promuovere l'innovazione. 
+Credo fortemente nel potere trasformativo della conoscenza. I miei programmi formativi sono accuratamente progettati per elevare le competenze, aumentare la fiducia e promuovere l'innovazione.
 
 Che tu sia interessato a un corso accademico, una testimonianza della mia esperienza o un programma di formazione aziendale, posso aiutarti a trasmettere un messaggio efficace.
 
@@ -103,15 +102,14 @@ Insieme alla formazione, possiamo attivare percorsi di supporto e coaching.
 </a>
 
 ## Cosa dicono di me
-Carosello con 3 recensioni
 
-[Leggi altre recensioni](/it/testimonials)
+{{< featured-testimonials >}}
 
 ## Case studies
+
 Un case study featured
 
 [Leggi altri case study](/it/projects)
-
 
 ## <a id="prenota-ora">Prenota ora una sessione gratuita per parlarmi della tua idea</a>
 

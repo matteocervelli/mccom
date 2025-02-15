@@ -24,28 +24,30 @@ Sono un padre di 3 bambine piccole, Emma, Maria ed Emma, e di due cani: Maple e 
 Vivo in Toscana.
 
 Su questo sito trovi:
+
 - I miei [pensieri e articoli](/posts)
 - Il mio [metodo di lavoro](/work)
 - Cosa sto concentrando su [adesso](/now)
 
 ## Benvenuti nel mio giardino
+
 Questa è la mia casa digitale. Puoi trovare i miei pensieri, i miei scritti e come lavorare con me.
 
 In definitiva, lavoro per costruire imprese che scalano, lavoro con le persone e attraverso un unione di intenti, riusciamo a costruire ecosistemi che portano bellezza.
 
-C'è un filo che unisce la genitorialità, l'educazione e il fare impresa: l'innescare il talento. Ognuno ha potenziale inespresso e attraverso il mio lavoro, m impegno affinché questo emerga. 
+C'è un filo che unisce la genitorialità, l'educazione e il fare impresa: l'innescare il talento. Ognuno ha potenziale inespresso e attraverso il mio lavoro, m impegno affinché questo emerga.
 
 Come leader, questo si traduce nella continua ricerca di autonomia dei collaboratori, un approccio che si può adattare a tutti i contesti. Guidati da uno scopo.
 
 ## Le mie Skill principali
+
 Il mio vantaggio principale è quello di aver operato come CEO di una medio/grande azienda, presente in molti paesi. Oltre a parlare molte lingue, inglese, francese, portoghese e spagnolo, oltre alla madrelingua italiano, ho visto molte culture e ho imparato a vendere andando direttamente a casa dei clienti.
 
-Ho trattato con imprenditori e con manager di grandi imprese miliardarie, finanziate da Private Equity. 
+Ho trattato con imprenditori e con manager di grandi imprese miliardarie, finanziate da Private Equity.
 
 In azienda, un Family Business "moderno", ho visto l'M&A, la strategia, la finanza e mi sono specializzato nella gestione del cambiamento, una skill, un metodo reale per mettere a terra i cambiamenti.
 
 Da Ingegnere, costruisco metodi, o li applico, per rendere le cose più efficaci. A proposito, cerco sempre modi per rendere i processi più ripetibili e scalabili, esponenziali.
-
 
 ## Il mio background
 
@@ -71,9 +73,13 @@ Da Ingegnere, costruisco metodi, o li applico, per rendere le cose più efficaci
 
 1988 — Nasco a Poggibonsi, in Toscana.
 
-
 ## Social proof
+
 - Ospite nel podcast "Beyond 8 Figures" di A.J. Lawrence — [Fostering autonomy for business growth](https://beyond8figures.com/podcast_episode/fostering-autonomy-for-business-growth-with-matteo-cervelli-urania/)
-- Ospite nel podcast "Do Good Work" di Raul Hernandez Ochoa — [Do Good Work \| How a $60M B2B Manufacturing CEO Thinks About Impact & The Resonance Framework to Create Frictionless Management with Matteo Cervelli](https://dogoodwork.io/blog/how-a-60m-b2b-manufacturing-ceo-thinks-about-impact-the-resonance-framework-to-create-frictionless-management-with-matteo-cervelli)
+- Ospite nel podcast "Do Good Work" di Raul Hernandez Ochoa — [Do Good Work | How a $60M B2B Manufacturing CEO Thinks About Impact & The Resonance Framework to Create Frictionless Management with Matteo Cervelli](https://dogoodwork.io/blog/how-a-60m-b2b-manufacturing-ceo-thinks-about-impact-the-resonance-framework-to-create-frictionless-management-with-matteo-cervelli)
 - Intervista a Confindustria Firenze — [Racconti di impresa: Matteo Cervelli, "l'imprenditore è colui che trasforma sogni in progetti". - Confindustria Firenze](https://www.confindustriafirenze.it/racconti-di-impresa-matteo-cervelli-limprenditore-e-colui-che-trasforma-sogni-in-progetti/)
-- Il feedback è un *vantaggio disonesto*, con Euxilia — [Intervista con euXilia in Unox](https://www.linkedin.com/posts/euxilia_euxilia-performancebypeople-feedbacksystem-activity-7110580430386475008-9FPp/)
+- Il feedback è un *vantaggio disonesto*, con Euxilia — [Intervista con euXilia in Unox](https://www.linkedin.com/posts/euxilia_euxilia-performancebypeople-feedbacksystem-activity-7110580430386475008-9FPp)
+
+## Cosa dicono di me
+
+{{< featured-testimonials >}}

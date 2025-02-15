@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container">
+    <header class="page-header">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ .Content }}
+
+    <h2 id="what-people-say-about-me">{{ i18n "what_people_say" }}</h2>
+    {{ partial "page-testimonials.html" . }}
+</div>
+{{ end }} 

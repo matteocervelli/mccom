@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="container">
+    <article class="content-wrapper">
+        <div class="testimonial-single">
+            <div class="testimonial-single-header">
+                {{ if .Params.person_image }}
+                    {{ $originalImage := .Params.person_image }}
+                    {{ $fullImage := replace $originalImage "/testimonials/" "/testimonials/full/" }}
+                    {{ $imagePath := printf "static%s" $fullImage }}
+                    {{ if fileExists $imagePath }}
+                        <img src="{{ $fullImage }}" alt="{{ .Params.person_name }}" class="testimonial-single-image">
+                    {{ else }}
+                        <div class="testimonial-single-image placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    {{ end }}
+                {{ else }}
+                    <div class="testimonial-single-image placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                {{ end }}
+                
+                <div class="testimonial-single-meta">
+                    <h1>{{ .Params.person_name }}</h1>
+                    <p class="testimonial-single-role">{{ .Params.person_role }}</p>
+                    <p class="testimonial-single-company">{{ .Params.person_company }}</p>
+                    {{ if .Params.linkedin_profile }}
+                        <a href="{{ .Params.linkedin_profile }}" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    {{ end }}
+                </div>
+            </div>
+
+            <div class="testimonial-single-content">
+                <blockquote>
+                    <span class="quote-marks">"</span>{{ .Content }}<span class="quote-marks">"</span>
+                </blockquote>
+            </div>
+        </div>
+    </article>
+</div>
+{{ end }} 

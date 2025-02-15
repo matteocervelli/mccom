@@ -1,0 +1,58 @@
+{{ $testimonials := where .Site.RegularPages "Section" "testimonials" }}
+{{ $currentLang := .Page.Language.Lang }}
+{{ $testimonials := where $testimonials "Params.language" $currentLang }}
+{{ $testimonials := where $testimonials "Params.draft" false }}
+{{ $testimonials := sort $testimonials "Params.person_name" }}
+
+<div class="testimonials-grid" id="testimonials-container">
+    {{ range $testimonials }}
+    <div class="testimonial-card" 
+         data-name="{{ .Params.person_name }}"
+         data-lastmod="{{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z07:00" }}"
+         data-roles="{{ if .Params.roles }}{{ range $index, $role := .Params.roles }}{{ if $index }},{{ end }}{{ $role | urlize }}{{ end }}{{ end }}"
+         data-departments="{{ if .Params.departments }}{{ range $index, $dept := .Params.departments }}{{ if $index }},{{ end }}{{ $dept | urlize }}{{ end }}{{ end }}"
+         data-company="{{ .Params.person_company }}"
+         data-industry="{{ .Params.industry | urlize }}"
+         data-date="{{ .Date.Format "2006-01-02" }}"
+         data-pubdate="{{ .PublishDate.Format "2006-01-02" }}"
+         data-search="{{ .Params.person_name }} {{ .Params.person_role }} {{ .Params.person_company }} {{ .Content }}"
+         data-debug-date="{{ .Lastmod }}">
+        <div class="testimonial-content-wrapper">
+            <div class="testimonial-header">
+                {{ if .Params.person_image }}
+                    {{ $originalImage := .Params.person_image }}
+                    {{ $fullImage := replace $originalImage "/testimonials/" "/testimonials/full/" }}
+                    {{ $imagePath := printf "static%s" $fullImage }}
+                    {{ if fileExists $imagePath }}
+                        <img src="{{ $fullImage }}" alt="{{ .Params.person_name }}" class="testimonial-image">
+                    {{ else }}
+                        <div class="testimonial-image placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    {{ end }}
+                {{ else }}
+                    <div class="testimonial-image placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                {{ end }}
+                <div class="testimonial-meta">
+                    <h3 class="testimonial-name">{{ .Params.person_name }}</h3>
+                    <p class="testimonial-role">{{ .Params.person_role }}</p>
+                    <p class="testimonial-company">{{ .Params.person_company }}</p>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <blockquote>{{ .Params.featured_quote }}</blockquote>
+                <a href="{{ .Permalink }}" class="read-more">{{ i18n "read_more" }}</a>
+            </div>
+        </div>
+        {{ if .Params.linkedin_profile }}
+        <div class="testimonial-social">
+            <a href="{{ .Params.linkedin_profile }}" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</div> 

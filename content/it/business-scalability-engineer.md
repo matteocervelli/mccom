@@ -11,7 +11,7 @@ tags: ['scalability']
 categories: ['page', 'work']
 featured_image: ""
 ---
-## Ecco perché hai bisogno di un Ingegnere della Scalabilità dell'impresa per far crescere il tuo business come merita.
+## Ecco perché hai bisogno di un Ingegnere della Scalabilità dell'impresa per far crescere il tuo business come merita
 
 Hai presente quando un’azienda sembra bloccata, la crescita rallenta, i problemi si moltiplicano e non sai da dove partire per rimettere ordine?
 
@@ -48,11 +48,15 @@ Le mie specializzazioni includono un mix di competenze trasversali e verticali p
 * **Controllo di gestione:**  misurare e monitorare i risultati per prendere decisioni basate sui dati.
 * **Innovazione:**  introdurre nuovi modelli di business e processi per migliorare la competitività.
 * **Delega e responsabilità:**  costruire una leadership diffusa e team autonomi.
+
 ### Perché scegliere me
+
 La mia esperienza come **CEO di aziende medio-grandi e e come investitore e imprenditore in un family business**, mi ha dato una visione completa e pratica delle sfide che affrontano le imprese in crescita.
 
 Non porto solo soluzioni: **costruisco insieme a te il percorso per realizzarle, sviluppando la leadership e il potenziale del tuo team per concretizzare la tua visione aziendale**.
+
 ### **Agisci ora**
+
 Smetti di rincorrere mille problemi senza affrontare quello giusto.
 
 Elimina i veri ostacoli alla crescita della tua azienda.
@@ -60,14 +64,14 @@ Elimina i veri ostacoli alla crescita della tua azienda.
 **Prenota ora una sessione gratuita**: scopri il collo di bottiglia che ti frena e inizia a risolverlo oggi stesso.
 
 <!-- Calendly inline widget begin -->
-<div 
-    class="calendly-inline-widget" 
-    data-url="https://calendly.com/matteo-cervelli/coaching-strategico-gratuito?text_color=303030&primary_color=af00bf" 
+<div
+    class="calendly-inline-widget"
+    data-url="https://calendly.com/matteo-cervelli/coaching-strategico-gratuito?text_color=303030&primary_color=af00bf"
     style="min-width:320px;height:700px;">
 </div>
 <script
-    type="text/javascript" 
-    src="https://assets.calendly.com/assets/external/widget.js" 
+    type="text/javascript"
+    src="https://assets.calendly.com/assets/external/widget.js"
     async>
 </script>
 <!-- Calendly inline widget end -->

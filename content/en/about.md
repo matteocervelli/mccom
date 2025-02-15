@@ -24,28 +24,30 @@ I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs:
 I live in Tuscany.
 
 On this website, you can find:
+
 - My [essays and thoughts](/posts)
 - My [work method](/work)
 - What I am focused on [now](/now)
 
 ## Welcome to my garden
+
 This is my digital home. You can find my thoughts, my writings and how to work with me.
 
 Ultimately, I work to build businesses that scale, I work with people and through a union of purpose, we are able to build ecosystems that bring beauty.
 
-There is a thread that unites parenting, education and doing business: triggering talent. Everyone has unexpressed potential and through my work, I strive to ensure that this emerges. 
+There is a thread that unites parenting, education and doing business: triggering talent. Everyone has unexpressed potential and through my work, I strive to ensure that this emerges.
 
 As a leader, this translates into the continuous search for autonomy of collaborators, an approach that can be adapted to all contexts. Driven by purpose.
 
 ## My main skills
+
 My main advantage is that of having operated as CEO of a medium/large company, present in many countries. In addition to speaking many languages, English, French, Portuguese and Spanish, in addition to my mother tongue Italian, I have seen many cultures and learned to sell by going directly to customers' homes.
 
-I have dealt with entrepreneurs and managers of large billion-dollar companies, financed by Private Equity. 
+I have dealt with entrepreneurs and managers of large billion-dollar companies, financed by Private Equity.
 
 In the company, a "modern" Family Business, I saw M&A, strategy, finance and specialized in change management, a skill, a real method for grounding changes.
 
 As an Engineer, I build methods, or apply them, to make things more effective. By the way, I'm always looking for ways to make processes more repeatable and scalable, exponentially.
-
 
 ## My background
 
@@ -78,6 +80,9 @@ As an Engineer, I build methods, or apply them, to make things more effective. B
 - Interview with Confindustria Firenze - [Racconti d'impresa "L'imprenditore è colui che trasforma i sogni in progetti"](https://www.confindustriafirenze.it/racconti-di-impresa-matteo-cervelli-limprenditore-e-colui-che-trasforma-sogni-in-progetti/)
 - Feedback is an *unfair advantage*, with Euxilia - [UNOX's event on feedback](https://www.linkedin.com/posts/euxilia_euxilia-performancebypeople-feedbacksystem-activity-7110580430386475008-9FPp)
 
+## What people say about me
+
+{{< featured-testimonials >}}
 
 ## Name Pronunciation
 

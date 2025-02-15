@@ -1,0 +1,142 @@
+{{ define "main" }}
+{{ $testimonials := where .Site.RegularPages "Section" "testimonials" }}
+{{ $currentLang := .Page.Language.Lang }}
+{{ $testimonials := where $testimonials "Params.language" $currentLang }}
+{{ $testimonials := where $testimonials "Params.draft" false }}
+
+<div class="content-wrapper">
+    <div class="testimonials-container">
+        <div class="mobile-filter-button" onclick="toggleMobileFilters()">
+            <i class="fas fa-filter"></i>
+        {{ i18n "filter_and_search" }}
+    </div>
+
+    <div class="testimonials-sidebar" id="filters-sidebar">
+        <div class="sidebar-content">
+            <div class="filter-section">
+                <button class="clear-filters" onclick="clearFilters()">{{ i18n "clear_filters" }}</button>
+                
+                <div class="filter-group">
+                    <div class="filter-header" onclick="toggleFilter('sort')">
+                        <span>{{ i18n "sort" }}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="filter-options" id="sort-options">
+                        <select id="sort-select" class="sort-select" onchange="sortTestimonials()">
+                            <option value="newest">{{ i18n "sort_newest" }}</option>
+                            <option value="oldest">{{ i18n "sort_oldest" }}</option>
+                            <option value="az">{{ i18n "sort_az" }}</option>
+                            <option value="za">{{ i18n "sort_za" }}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr class="filter-divider">
+
+                <div class="filter-group">
+                    <div class="filter-header" onclick="toggleFilter('role')">
+                        <span>{{ i18n "role" }}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="filter-options" id="role-options">
+                        <label class="filter-option">
+                            <input type="checkbox" value="all" checked>
+                            {{ i18n "all_roles" }}
+                        </label>
+                        {{ $roles := slice }}
+                        {{ range $testimonials }}
+                            {{ if .Params.roles }}
+                                {{ range .Params.roles }}
+                                    {{ $roles = $roles | append . }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                        {{ range ($roles | uniq | sort) }}
+                        <label class="filter-option">
+                            <input type="checkbox" value="{{ . | urlize }}">
+                            {{ . }}
+                        </label>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <hr class="filter-divider">
+
+                <div class="filter-group">
+                    <div class="filter-header" onclick="toggleFilter('department')">
+                        <span>{{ i18n "department" }}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="filter-options" id="department-options">
+                        <label class="filter-option">
+                            <input type="checkbox" value="all" checked>
+                            {{ i18n "all_departments" }}
+                        </label>
+                        {{ $departments := slice }}
+                        {{ range $testimonials }}
+                            {{ if .Params.departments }}
+                                {{ range .Params.departments }}
+                                    {{ $departments = $departments | append . }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                        {{ range ($departments | uniq | sort) }}
+                        <label class="filter-option">
+                            <input type="checkbox" value="{{ . | urlize }}">
+                            {{ . }}
+                        </label>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <hr class="filter-divider">
+
+                <div class="filter-group">
+                    <div class="filter-header" onclick="toggleFilter('industry')">
+                        <span>{{ i18n "industry" }}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="filter-options" id="industry-options">
+                        <label class="filter-option">
+                            <input type="checkbox" value="all" checked>
+                            {{ i18n "all_industries" }}
+                        </label>
+                        {{ $industries := slice }}
+                        {{ range $testimonials }}
+                            {{ $industries = $industries | append .Params.industry }}
+                        {{ end }}
+                        {{ range ($industries | uniq | sort) }}
+                        <label class="filter-option">
+                            <input type="checkbox" value="{{ . | urlize }}">
+                            {{ . }}
+                        </label>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <hr class="filter-divider">
+
+                <div class="filter-group search-group">
+                    <input type="text" id="search-filter" class="testimonials-search-input" placeholder="{{ i18n "search_placeholder" }}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header class="page-header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+        </header>
+
+        {{ partial "testimonials-grid.html" . }}
+    </div>
+</div>
+
+<!-- Add required assets -->
+{{ $testimonialsJs := resources.Get "js/testimonials.js" | resources.Minify }}
+<script src="{{ $testimonialsJs.RelPermalink }}"></script>
+
+<!-- Font Awesome for LinkedIn icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+{{ end }} 

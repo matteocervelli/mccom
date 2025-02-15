@@ -16,7 +16,8 @@ layout: subscribe
 ---
 
 ## Ricevi i miei aggiornamenti
-Ho una newsletter in Italiano che invio sporadicamente, dove condivido idee, articoli e progetti. 
+
+Ho una newsletter in Italiano che invio sporadicamente, dove condivido idee, articoli e progetti.
 Puoi registrarti qui sotto:
 
 {{% newsletter %}}
@@ -24,12 +25,15 @@ Puoi registrarti qui sotto:
 Oppure salvare il [RSS Feed](https://matteocervelli.com/it/feed) nel tuo feed reader.
 
 ## Contatti
+
 Puoi contattarmi via [email](mailto:info@matteocervelli.com) per qualsiasi domanda o feedback.  
 
 Parlo diverse lingue, quindi possiamo parlare in: inglese, francese, italiano, portoghese e spagnolo.
 
 ## Social
+
 Sono su molti social:
+
 - [LinkedIn](https://www.linkedin.com/in/matteocervelli/)
 - [X (formerly Twitter)](https://x.com/matteocervelli)
 - [BlueSky](https://bsky.app/profile/matteocervelli.bsky.social)

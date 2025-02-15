@@ -163,4 +163,61 @@ other = "ESC to close / ⌘K or CTRL+K to open"
 other = "Footnotes"
 
 [contact_page]
-other = "subscribe" 
+other = "subscribe"
+
+[industry]
+other = "Industry"
+
+[all_industries]
+other = "All Industries"
+
+[role]
+other = "Role"
+
+[all_roles]
+other = "All Roles"
+
+[department]
+other = "Department"
+
+[all_departments]
+other = "All Departments"
+
+[expertise]
+other = "Expertise"
+
+[all_tags]
+other = "All Areas"
+
+[search]
+other = "Search"
+
+[search_placeholder]
+other = "Search testimonials..."
+
+[read_more]
+other = "Read full testimonial"
+
+[what_people_say]
+other = "What People Say About Working With Me"
+
+[view_all_testimonials]
+other = "View All Testimonials"
+
+[clear_filters]
+other = "Clear filters"
+
+[sort]
+other = "Sort by"
+
+[sort_newest]
+other = "Date (newest)"
+
+[sort_oldest]
+other = "Date (oldest)"
+
+[sort_az]
+other = "Name (A-Z)"
+
+[sort_za]
+other = "Name (Z-A)" 

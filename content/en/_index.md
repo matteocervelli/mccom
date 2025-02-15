@@ -32,5 +32,3 @@ On this website, you can find:
 - My [essays and thoughts](/posts)
 - My [work method](/work)
 - What I am focused on [now](/now)
-
----
