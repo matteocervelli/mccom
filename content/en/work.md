@@ -33,7 +33,7 @@ I work as a consultant, advisor, and trainer, as well as making personal investm
 - A company's capability is its unique value proposition, its potential lies in the strength of **relationships** that leadership maintains.
 - An evolving business is based on few **experiments**, but with great potential. And at the same time, many diversified stimuli of mammoth opportunities that simmer quietly.
 
-<a href="#book-now" class="mc-button" id="book-now-button" data-umami-event="Book Now Button Click 1">
+<a href="#book-now-a-free-session-to-talk-about-your-idea" class="mc-button" id="book-now-button" data-umami-event="Book Now Button Click 1">
     Book now a free session
     <br>
     to talk about your idea
@@ -95,7 +95,7 @@ Whether you're interested in an academic course, a testimony of my experience, o
 
 Along with training, we can activate support and coaching paths.
 
-<a href="#book-now" class="mc-button" id="book-now-button" data-umami-event="Book Now Button Click 2">
+<a href="#book-now-a-free-session-to-talk-about-your-idea" class="mc-button" id="book-now-button" data-umami-event="Book Now Button Click 2">
     Book now a free session
     <br>
     to talk about your idea
@@ -111,7 +111,7 @@ A featured case study
 
 [Read more case studies](/en/projects)
 
-## <a id="book-now">Book now a free session to talk about your idea</a>
+## Book now a free session to talk about your idea
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/matteo-cervelli/free-strategic-coaching-session" style="min-width:320px;height:700px;"></div>

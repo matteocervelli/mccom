@@ -5,7 +5,7 @@
     <url>
       <loc>http://localhost:1313/it/categories/</loc>
       
-        <lastmod>2025-02-15T17:30:00+01:00</lastmod>
+        <lastmod>2025-02-15T21:53:30+01:00</lastmod>
       
       
     </url>
@@ -13,7 +13,7 @@
     <url>
       <loc>http://localhost:1313/it/sitemap/</loc>
       
-        <lastmod>2025-02-15T17:30:00+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -21,7 +21,7 @@
     <url>
       <loc>http://localhost:1313/it/categories/meta/</loc>
       
-        <lastmod>2025-02-15T17:30:00+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -29,7 +29,7 @@
     <url>
       <loc>http://localhost:1313/it/categories/page/</loc>
       
-        <lastmod>2025-02-15T17:30:00+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -37,7 +37,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/ai/</loc>
       
-        <lastmod>2025-02-15T17:29:32+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -45,7 +45,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/</loc>
       
-        <lastmod>2025-02-15T17:29:32+01:00</lastmod>
+        <lastmod>2025-02-15T21:53:30+01:00</lastmod>
       
       
     </url>
@@ -53,7 +53,7 @@
     <url>
       <loc>http://localhost:1313/it/ai/</loc>
       
-        <lastmod>2025-02-15T17:29:32+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -93,7 +93,7 @@
     <url>
       <loc>http://localhost:1313/it/categories/posts/</loc>
       
-        <lastmod>2025-02-15T10:23:19+01:00</lastmod>
+        <lastmod>2025-02-15T21:53:30+01:00</lastmod>
       
       
     </url>
@@ -149,7 +149,7 @@
     <url>
       <loc>http://localhost:1313/it/categories/about/</loc>
       
-        <lastmod>2025-02-15T17:29:32+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -157,7 +157,7 @@
     <url>
       <loc>http://localhost:1313/it/ora/</loc>
       
-        <lastmod>2025-02-15T10:23:19+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -165,7 +165,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/tech-stack/</loc>
       
-        <lastmod>2025-02-15T17:29:32+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -173,7 +173,7 @@
     <url>
       <loc>http://localhost:1313/it/tech-stack/</loc>
       
-        <lastmod>2025-02-15T17:29:32+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -189,7 +189,7 @@
     <url>
       <loc>http://localhost:1313/it/about/</loc>
       
-        <lastmod>2025-02-15T17:29:32+01:00</lastmod>
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
     </url>
@@ -323,6 +323,14 @@
     </url>
   
     <url>
+      <loc>http://localhost:1313/it/testimonials/gianni-cordaro/</loc>
+      
+        <lastmod>2025-02-15T10:23:19+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
       <loc>http://localhost:1313/it/testimonials/laura-masoni/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
@@ -389,7 +397,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/coaching/</loc>
       
-        <lastmod>2025-01-24T23:07:36+01:00</lastmod>
+        <lastmod>2025-02-15T21:53:30+01:00</lastmod>
       
       
     </url>
@@ -397,7 +405,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/communication/</loc>
       
-        <lastmod>2025-01-24T23:07:36+01:00</lastmod>
+        <lastmod>2025-02-15T21:53:30+01:00</lastmod>
       
       
     </url>
@@ -405,7 +413,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/empathy/</loc>
       
-        <lastmod>2025-01-24T23:07:36+01:00</lastmod>
+        <lastmod>2025-02-15T21:53:30+01:00</lastmod>
       
       
     </url>
@@ -413,7 +421,7 @@
     <url>
       <loc>http://localhost:1313/it/empatia/</loc>
       
-        <lastmod>2025-01-24T23:07:36+01:00</lastmod>
+        <lastmod>2025-02-15T21:53:30+01:00</lastmod>
       
       
     </url>
@@ -421,7 +429,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/guide/</loc>
       
-        <lastmod>2025-01-24T23:07:36+01:00</lastmod>
+        <lastmod>2025-02-15T21:53:30+01:00</lastmod>
       
       
     </url>

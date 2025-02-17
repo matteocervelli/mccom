@@ -33,7 +33,7 @@ Faccio il consulente, l'advisor e il formatore, oltre ad investire personalmente
 - La capacità delle imprese è proposta di valore unica, il potenziale la forza delle **relazioni** che il vertice intrattiene.
 - Un'impresa che evolve è basata su pochi **esperimenti**, ma di grande potenzialità. E allo stesso tempo, tanti stimoli diversificati di mastodontiche opportunità che crogiolano in silenzio.
 
-<a href="#prenota-ora" class="mc-button">
+<a href="#prenota-ora-una-sessione-gratuita-per-parlarmi-della-tua-idea" class="mc-button">
     Prenota ora una sessione gratuita
     <br>
     per parlarmi della tua idea
@@ -95,7 +95,7 @@ Che tu sia interessato a un corso accademico, una testimonianza della mia esperi
 
 Insieme alla formazione, possiamo attivare percorsi di supporto e coaching.
 
-<a href="#prenota-ora" class="mc-button">
+<a href="#prenota-ora-una-sessione-gratuita-per-parlarmi-della-tua-idea" class="mc-button">
     Prenota ora una sessione gratuita
     <br>
     per parlarmi della tua idea
@@ -111,7 +111,7 @@ Un case study featured
 
 [Leggi altri case study](/it/projects)
 
-## <a id="prenota-ora">Prenota ora una sessione gratuita per parlarmi della tua idea</a>
+## Prenota ora una sessione gratuita per parlarmi della tua idea
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/matteo-cervelli/free-strategic-coaching-session?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
