@@ -6,7 +6,7 @@
     <description>Recent content in Work on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 18 Jan 2025 14:52:50 +0100</lastBuildDate><atom:link href="https://localhost:1313/en/categories/work/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Feb 2025 10:00:00 +0100</lastBuildDate><atom:link href="https://localhost:1313/en/categories/work/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PanHouse Cittareale School</title>
       <link>http://localhost:1313/en/projects/panhouse-cittareale/</link>
@@ -100,101 +100,17 @@ document.addEventListener(&#39;keydown&#39;, function(e) {
     }
 });
 &lt;/script&gt;
-
-&lt;style&gt;
-.image-with-caption {
-    margin: 2rem 0;
-    cursor: pointer;
-}
-
-.image-with-caption img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.image-with-caption:hover img {
-    transform: scale(1.02);
-}
-
-.image-caption {
-    margin-top: 0.5rem;
-    text-align: center;
-    color: #666;
-    font-size: 1.1rem;
-    font-style: italic;
-}
-
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox-content {
-    max-width: 90%;
-    max-height: 90vh;
-    position: relative;
-}
-
-.lightbox-content img {
-    max-width: 100%;
-    max-height: 80vh;
-    object-fit: contain;
-}
-
-.lightbox-content .image-caption {
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-.lightbox-close,
-.lightbox-prev,
-.lightbox-next {
-    position: fixed;
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 1rem;
-    z-index: 1001;
-}
-
-.lightbox-close {
-    top: 1rem;
-    right: 1rem;
-}
-
-.lightbox-prev {
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.lightbox-next {
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.lightbox-close:hover,
-.lightbox-prev:hover,
-.lightbox-next:hover {
-    color: var(--color-primary);
-}
-&lt;/style&gt;
  
 &lt;p&gt;The event devastated small villages, some of them also famous for tourism, like Norcia, the hometown of Saint Benedict, or Amatrice, well known for an Italian sauce for pasta called Amatriciana, which combines tomato, pig&amp;rsquo;s cheek, and pecorino for a divine taste.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/en/projects/</link>
+      <pubDate>Wed, 19 Feb 2025 10:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/en/projects/</guid>
+      <description>&lt;p&gt;Each case study represents a unique challenge and solution. Here you&amp;rsquo;ll find detailed accounts of projects I&amp;rsquo;ve led, problems I&amp;rsquo;ve solved, and the measurable impact achieved for my clients.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -263,6 +179,30 @@ document.addEventListener(&#39;keydown&#39;, function(e) {
   
 &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;Type the name of the person you&amp;rsquo;re looking for, press enter, and click on their name in the search results that appear.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Testimonials</title>
+      <link>http://localhost:1313/en/testimonials/</link>
+      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/en/testimonials/</guid>
+      <description>&lt;h2 id=&#34;what-people-say-about-working-with-me&#34;&gt;What People Say About Working With Me&lt;/h2&gt;
+&lt;div class=&#34;testimonials-filters&#34;&gt;
+    &lt;div class=&#34;filter-group&#34;&gt;
+        &lt;label for=&#34;industry-filter&#34;&gt;Industry:&lt;/label&gt;
+        &lt;select id=&#34;industry-filter&#34;&gt;
+            &lt;option value=&#34;all&#34;&gt;All Industries&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;filter-group&#34;&gt;
+        &lt;label for=&#34;keyword-search&#34;&gt;Search:&lt;/label&gt;
+        &lt;input type=&#34;text&#34; id=&#34;keyword-search&#34; placeholder=&#34;Search testimonials...&#34;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;testimonials-grid&#34; id=&#34;testimonials-container&#34;&gt;
+    &lt;!-- Testimonials will be loaded here --&gt;
+&lt;/div&gt;</description>
     </item>
     
   </channel>

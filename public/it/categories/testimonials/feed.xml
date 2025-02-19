@@ -160,29 +160,5 @@ Sono davvero affascinato dalla leadership naturale di Matteo e dalla sua capacit
 &lt;p&gt;Dopo aver svolto lui stesso un percorso formativo molto importante ha deciso di non riservare quell&amp;rsquo;esperienza per sé ma di condividerla appunto con me, permettendomi di fare il medesimo percorso, questo mi ha permesso di entrare in contatto con persone e competenze che non avrei mai immaginato e per me ciò rappresenta una forma molto bella e chiara di come poter far crescere chi ti sta intorno e in cui credi fortemente.&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>Testimonianze</title>
-      <link>http://localhost:1313/it/testimonials/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/testimonials/</guid>
-      <description>&lt;h2 id=&#34;cosa-dicono-di-me&#34;&gt;Cosa Dicono di Me&lt;/h2&gt;
-&lt;div class=&#34;testimonials-filters&#34;&gt;
-    &lt;div class=&#34;filter-group&#34;&gt;
-        &lt;label for=&#34;industry-filter&#34;&gt;Settore:&lt;/label&gt;
-        &lt;select id=&#34;industry-filter&#34;&gt;
-            &lt;option value=&#34;all&#34;&gt;Tutti i Settori&lt;/option&gt;
-        &lt;/select&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;filter-group&#34;&gt;
-        &lt;label for=&#34;keyword-search&#34;&gt;Cerca:&lt;/label&gt;
-        &lt;input type=&#34;text&#34; id=&#34;keyword-search&#34; placeholder=&#34;Cerca testimonianze...&#34;&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;testimonials-grid&#34; id=&#34;testimonials-container&#34;&gt;
-    &lt;!-- Le testimonianze saranno caricate qui --&gt;
-&lt;/div&gt;</description>
-    </item>
-    
   </channel>
 </rss> 

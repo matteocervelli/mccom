@@ -8,7 +8,6 @@ html {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  font-size: 62.5%;
 }
 
 /* Definizione dei colori base */
@@ -78,31 +77,6 @@ html {
   --font-size-2xl: calc(2.4rem + 0.4vw);         /* 2X Large: +60% */
   --font-size-3xl: calc(2.7rem + 0.45vw);        /* 3X Large: +80% */
   --font-size-4xl: calc(3rem + 0.5vw);           /* 4X Large: +100% */
-
-  /* Font size clamp values for better control */
-  @media screen and (max-width: 640px) {
-    --font-size-normal: calc(1.4rem + 0.25vw);
-    --font-size-xs: calc(1.1rem + 0.2vw);
-    --font-size-sm: calc(1.25rem + 0.225vw);
-    --font-size-md: calc(1.55rem + 0.275vw);
-    --font-size-lg: calc(1.7rem + 0.3vw);
-    --font-size-xl: calc(2rem + 0.35vw);
-    --font-size-2xl: calc(2.3rem + 0.4vw);
-    --font-size-3xl: calc(2.6rem + 0.45vw);
-    --font-size-4xl: calc(2.9rem + 0.5vw);
-  }
-
-  @media screen and (min-width: 1920px) {
-    --font-size-normal: calc(1.6rem + 0.25vw);
-    --font-size-xs: calc(1.3rem + 0.2vw);
-    --font-size-sm: calc(1.45rem + 0.225vw);
-    --font-size-md: calc(1.75rem + 0.275vw);
-    --font-size-lg: calc(1.9rem + 0.3vw);
-    --font-size-xl: calc(2.2rem + 0.35vw);
-    --font-size-2xl: calc(2.5rem + 0.4vw);
-    --font-size-3xl: calc(2.8rem + 0.45vw);
-    --font-size-4xl: calc(3.1rem + 0.5vw);
-  }
 }
 
 :root,.theme-light {
@@ -267,7 +241,7 @@ blockquote:before {
     color: var(--color-highlight-faint);
     content: open-quote;
     font-family: 'Lora', serif;
-    font-size: 6rem;
+    font-size: calc(var(--font-size-4xl) * 2);
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
@@ -703,7 +677,7 @@ hr {
 hr::before {
   content: "...";
   letter-spacing: 0.6em;
-  font-size: 1.2em;
+  font-size: var(--font-size-xs);
 }
 
 /* Post Cards */
@@ -994,7 +968,7 @@ padding-top: 0;
 }
 
 .related-card h3 {
-  font-size: 1.6rem;
+  font-size: var(--font-size-md);
   margin: 0.5rem 0;
   line-height: 1.3;
 }
@@ -1005,7 +979,7 @@ padding-top: 0;
 }
 
 .related-card .excerpt {
-  font-size: 1.4rem;
+  font-size: var(--font-size-sm);
   line-height: 1.4;
   margin: 0.5rem 0;
   color: var(--mc-white);
@@ -1188,7 +1162,7 @@ input[type="checkbox"]:checked::before {
   content: '✓';
   position: absolute;
   color: var(--color-highlight);
-  font-size: 16px;
+  font-size: var(--font-size-md);
   line-height: 1;
   top: 50%;
   left: 50%;
@@ -1243,7 +1217,7 @@ input[type="checkbox"]:checked::before {
     content: "↑";
     color: var(--mc-white);
     font-family: var(--font-ui);
-    font-size: 24px;
+    font-size: calc(var(--font-size-4xl) * 8);
     font-weight: 600;
 }
 
@@ -1295,7 +1269,7 @@ input[type="checkbox"]:checked::before {
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-size: 1.8rem;
+    font-size: var(--font-size-md);
 }
 
 /* Stile base per il pulsante toggle */
@@ -1384,7 +1358,7 @@ input[type="checkbox"]:checked::before {
 .search-input {
   width: 100%;
   padding: 15px;
-  font-size: 1.2em;
+  font-size: var(--font-size-sm);
   background: var(--search-input-bg);
   border: 2px solid var(--search-input-border);
   border-radius: 8px;
@@ -1572,7 +1546,7 @@ input[type="checkbox"]:checked::before {
 
 /* Dimensioni specifiche per le bandiere nella barra di controllo */
 .control-bar .fi {
-  font-size: 1.5em;
+  font-size: var(--font-size-md);
   line-height: 1;
 } 
 
@@ -1580,7 +1554,7 @@ input[type="checkbox"]:checked::before {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: var(--font-size-md);
   opacity: 0.7;
 }
 
@@ -1613,7 +1587,7 @@ audio::-webkit-media-controls-current-time-display {
     border-radius: 10%;
     padding: 12px;
     max-width: 300px;
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     box-shadow: 0 2px 8px var(--color-control-shadow);
     transform: translateY(-100%) translateX(-50%);
     opacity: 0;
@@ -1678,12 +1652,12 @@ audio::-webkit-media-controls-current-time-display {
 .footnotes-hr::before {
     content: "...";
     letter-spacing: 0.6rem;
-    font-size: 1.2rem;
+    font-size: var(--font-size-sm);
 }
 
 .footnotes-title {
     font-family: 'Raleway', sans-serif;
-    font-size: 2.5rem;
+    font-size: var(--font-size-3xl);
     margin: 0 0 1rem;
     color: var(--color-highlight);
     text-align: left;
@@ -1704,12 +1678,12 @@ audio::-webkit-media-controls-current-time-display {
 .comments-hr::before {
   content: "...";
   letter-spacing: 0.6rem;
-  font-size: 1.2rem;
+  font-size: var(--font-size-sm);
 }
 
 .comments-header {
   font-family: 'Raleway', sans-serif;
-  font-size: 2.5rem;
+  font-size: var(--font-size-3xl);
   margin: 0 0 1rem;
   color: var(--color-highlight);
   text-align: left;
@@ -2064,7 +2038,7 @@ audio::-webkit-media-controls-current-time-display {
   }
   
   .testimonial-content blockquote {
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
   }
   
   .testimonial-header {
@@ -2077,7 +2051,7 @@ audio::-webkit-media-controls-current-time-display {
   }
 
   .testimonial-content {
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
   }
 }
 
@@ -2126,7 +2100,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .testimonial-image.placeholder i {
-  font-size: 4rem;
+  font-size: calc(var(--font-size-xl) * 2);
   color: var(--color-tx-muted);
 }
 
@@ -2186,14 +2160,14 @@ audio::-webkit-media-controls-current-time-display {
 .featured-header h3 {
   margin: 0;
   padding: 0;
-  font-size: 2rem;
+  font-size: var(--font-size-xl);
   color: var(--color-tx-normal);
 }
 
 .featured-role,
 .featured-company {
   margin: 0.5rem 0;
-  font-size: 1.4rem;
+  font-size: var(--font-size-sm);
   color: var(--color-tx-muted);
 }
 
@@ -2222,7 +2196,7 @@ audio::-webkit-media-controls-current-time-display {
 
 .quote-marks {
   font-family: "Georgia", serif;
-  font-size: 2em;
+  font-size: var(--font-size-xl);
   line-height: 0;
   vertical-align: -0.1em;
   color: var(--color-highlight);
@@ -2268,7 +2242,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .testimonial-single-image.placeholder i {
-    font-size: 4rem;
+    font-size: calc(var(--font-size-4xl) * 2);
     color: var(--color-tx-muted);
 }
 
@@ -2323,7 +2297,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .linkedin-link i {
-    font-size: 2rem;
+    font-size: var(--font-size-xl);
 }
 
 @media (max-width: 768px) {
@@ -2379,7 +2353,7 @@ audio::-webkit-media-controls-current-time-display {
     cursor: pointer;
     margin-bottom: 0.8rem;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     color: var(--color-tx-normal);
     padding: 0.5rem 0;
 }
@@ -2400,7 +2374,7 @@ audio::-webkit-media-controls-current-time-display {
     display: inline-block;
     width: 100%;
     padding: 0.5rem 1rem;
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     color: var(--color-highlight);
     background: none;
     border: 1px solid var(--color-highlight);
@@ -2456,7 +2430,7 @@ audio::-webkit-media-controls-current-time-display {
     border-radius: 4px;
     background: var(--color-bg-primary);
     color: var(--color-tx-normal);
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     transition: border-color 0.3s ease;
 }
 
@@ -2466,7 +2440,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .toggle-icon {
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     transition: transform 0.3s ease;
 }
 
@@ -2537,7 +2511,7 @@ audio::-webkit-media-controls-current-time-display {
 
     .mobile-filter-header h3 {
         margin: 0;
-        font-size: 1.8rem;
+        font-size: var(--font-size-lg);
         font-family: 'Raleway', sans-serif;
     }
 
@@ -2545,7 +2519,7 @@ audio::-webkit-media-controls-current-time-display {
         background: none;
         border: none;
         color: var(--color-tx-normal);
-        font-size: 1.8rem;
+        font-size: var(--font-size-lg);
         cursor: pointer;
         padding: 0.5rem;
         display: flex;
@@ -2569,7 +2543,7 @@ audio::-webkit-media-controls-current-time-display {
     border-radius: 4px;
     background: var(--color-bg-primary);
     color: var(--color-tx-normal);
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     transition: border-color 0.3s ease;
     cursor: pointer;
 }
@@ -2676,7 +2650,7 @@ audio::-webkit-media-controls-current-time-display {
 
 .sdg-icon p {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     color: var(--mc-white);
     line-height: 1.3;
     width: 100%;
@@ -2734,7 +2708,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .meta-item .label {
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     color: rgba(255,255,255,0.5);
     margin-bottom: 0.25rem;
     text-transform: uppercase;
@@ -2744,7 +2718,7 @@ audio::-webkit-media-controls-current-time-display {
 
 .meta-item .value {
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     color: rgba(255,255,255,0.95);
 }
 
@@ -2782,7 +2756,7 @@ audio::-webkit-media-controls-current-time-display {
 .sidebar-section h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-size: 1.6rem;
+    font-size: var(--font-size-md);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--color-text-secondary);
@@ -2798,7 +2772,7 @@ audio::-webkit-media-controls-current-time-display {
     margin-bottom: 0.5rem;
     padding-left: 1.2rem;
     position: relative;
-    font-size: 1.6rem;
+    font-size: var(--font-size-md);
     line-height: 1.4;
 }
 
@@ -2807,7 +2781,7 @@ audio::-webkit-media-controls-current-time-display {
     position: absolute;
     left: 0;
     color: var(--color-highlight);
-    font-size: 1.6rem;
+    font-size: var(--font-size-md);
     top: 0.2rem;
 }
 
@@ -2899,7 +2873,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: var(--font-size-4xl);
     margin-bottom: 1rem;
     line-height: 1.1;
     font-weight: 700;
@@ -2925,7 +2899,7 @@ audio::-webkit-media-controls-current-time-display {
     padding: 0.6rem 1.2rem;
     margin: 0.25rem;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     transition: all 0.3s ease;
 }
 
@@ -2943,7 +2917,7 @@ audio::-webkit-media-controls-current-time-display {
 
 .related-projects h2 {
     margin-bottom: 2rem;
-    font-size: 1.8rem;
+    font-size: var(--font-size-lg);
 }
 
 .related-projects-grid {
@@ -2987,13 +2961,13 @@ audio::-webkit-media-controls-current-time-display {
 
 .related-project-content h3 {
     margin: 0 0 1rem;
-    font-size: 1.6rem;
+    font-size: var(--font-size-md);
     line-height: 1.4;
 }
 
 .related-project-meta {
     color: var(--color-text-secondary);
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     margin-bottom: 1rem;
 }
 
@@ -3003,7 +2977,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .related-project-content .description {
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     line-height: 1.5;
     margin-bottom: 1rem;
     color: var(--color-text-secondary);
@@ -3041,11 +3015,11 @@ audio::-webkit-media-controls-current-time-display {
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: var(--font-size-2xl);
     }
 
     .hero-content .lead {
-        font-size: 1.2rem;
+        font-size: var(--font-size-xs);
     }
 
     .project-meta {
@@ -3116,7 +3090,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .post-hero h1 {
-    font-size: 3.5rem;
+    font-size: var(--font-size-4xl);
     margin-bottom: 1rem;
     line-height: 1.1;
     font-weight: 700;
@@ -3149,7 +3123,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .post-hero .meta-item .label {
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     color: rgba(255,255,255,0.5);
     margin-bottom: 0.25rem;
     text-transform: uppercase;
@@ -3159,7 +3133,7 @@ audio::-webkit-media-controls-current-time-display {
 
 .post-hero .meta-item .value {
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     color: rgba(255,255,255,0.95);
 }
 
@@ -3191,7 +3165,7 @@ audio::-webkit-media-controls-current-time-display {
     padding: 0.6rem 1.2rem;
     margin: 0.25rem;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
@@ -3212,11 +3186,11 @@ audio::-webkit-media-controls-current-time-display {
     }
 
     .post-hero h1 {
-        font-size: 2.5rem;
+        font-size: var(--font-size-2xl);
     }
 
     .post-hero .lead {
-        font-size: 1.2rem;
+        font-size: var(--font-size-xs);
     }
 
     .post-hero .post-meta {
@@ -3285,7 +3259,7 @@ audio::-webkit-media-controls-current-time-display {
 
 .project-meta {
     color: var(--color-text-secondary);
-    font-size: 1.2rem;
+    font-size: var(--font-size-xs);
     margin: 0;
     display: flex;
     align-items: center;
@@ -3306,7 +3280,7 @@ audio::-webkit-media-controls-current-time-display {
 
 .description {
     color: var(--color-text-secondary);
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     line-height: 1.4;
     margin: 0;
     overflow: hidden;
@@ -3324,7 +3298,7 @@ audio::-webkit-media-controls-current-time-display {
     color: var(--color-text);
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     transition: all 0.2s ease;
 }
 
@@ -3439,13 +3413,13 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 .lightbox-title {
-    font-size: 2rem;
+    font-size: var(--font-size-xl);
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .lightbox-description {
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     color: #eee;
     line-height: 1.5;
     max-width: 800px;
@@ -3513,7 +3487,7 @@ audio::-webkit-media-controls-current-time-display {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: var(--font-size-xl);
     padding: 0;
 }
 
@@ -3579,7 +3553,7 @@ audio::-webkit-media-controls-current-time-display {
 .info-section h3 {
     margin-top: 0;
     margin-bottom: 1.5rem;
-    font-size: 1.8rem;
+    font-size: var(--font-size-lg);
     color: var(--color-highlight);
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--color-highlight);
@@ -3595,7 +3569,7 @@ audio::-webkit-media-controls-current-time-display {
     margin-bottom: 1rem;
     padding-left: 2rem;
     position: relative;
-    font-size: 1.6rem;
+    font-size: var(--font-size-md);
     line-height: 1.4;
 }
 
@@ -3716,7 +3690,7 @@ audio::-webkit-media-controls-current-time-display {
     margin-top: 0.5rem;
     text-align: center;
     color: var(--color-tx-muted);
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     font-style: italic;
 }
 
@@ -3758,7 +3732,7 @@ audio::-webkit-media-controls-current-time-display {
     background: transparent;
     border: none;
     color: var(--mc-white);
-    font-size: 2rem;
+    font-size: var(--font-size-xl);
     cursor: pointer;
     padding: 1rem;
     z-index: 1001;
