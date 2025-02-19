@@ -72,6 +72,7 @@
     {{ $search := resources.Get "js/search.js" | minify | fingerprint }}
     <script src="{{ $search.RelPermalink }}"></script>
     
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="WVZPgYoen8uQz3GD87Degg" async></script>
   </head>
 
   {{- $environment := hugo.Environment | default "production" -}}

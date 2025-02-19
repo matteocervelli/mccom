@@ -26,6 +26,33 @@
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
 
+# Force WWW to non-WWW redirect
+[[redirects]]
+  from = "https://www.matteocervelli.com/*"
+  to = "https://matteocervelli.com/:splat"
+  status = 301
+  force = true
+
+# Force HTTP to HTTPS redirect
+[[redirects]]
+  from = "http://matteocervelli.com/*"
+  to = "https://matteocervelli.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.matteocervelli.com/*"
+  to = "https://matteocervelli.com/:splat"
+  status = 301
+  force = true
+
+# Root path redirect to default language
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  force = true
+
 [[redirects]]
   from = "/essays/the-purple-cow/*"
   to = "/en/the-purple-cow"
@@ -44,17 +71,22 @@
   status = 301
   force = true
 
+# Language-specific 404 pages
 [[redirects]]
   from = "/it/*"
   to = "/it/404.html"
   status = 404
+  conditions = {Language = ["it"]}
 
 [[redirects]]
   from = "/en/*"
   to = "/en/404.html"
   status = 404
+  conditions = {Language = ["en"]}
 
+# Final catch-all redirect
 [[redirects]]
   from = "/*"
-  to = "/en/404.html"
-  status = 404
+  to = "/en/:splat"
+  status = 302
+  force = true
