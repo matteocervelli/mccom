@@ -65,20 +65,20 @@
   status = 200
   force = true
 
-# Root path redirect based on browser language
+# Direct language paths should never be redirected elsewhere
 [[redirects]]
-  from = "/"
-  to = "/it/"
-  status = 302
-  conditions = {Language = ["it"]}
+  from = "/it/*"
+  to = "/it/:splat"
+  status = 200
   force = true
 
 [[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 302
+  from = "/en/*"
+  to = "/en/:splat"
+  status = 200
   force = true
 
+# Old essays redirects
 [[redirects]]
   from = "/essays/the-purple-cow/*"
   to = "/en/the-purple-cow"
@@ -99,18 +99,30 @@
 
 # Language-specific 404 pages
 [[redirects]]
-  from = "/it/*"
+  from = "/it/404"
   to = "/it/404.html"
   status = 404
-  conditions = {Language = ["it"]}
 
 [[redirects]]
-  from = "/en/*"
+  from = "/en/404"
   to = "/en/404.html"
   status = 404
-  conditions = {Language = ["en"]}
 
-# Final catch-all redirect
+# Root path redirect based on browser language
+[[redirects]]
+  from = "/"
+  to = "/it/"
+  status = 302
+  conditions = {Language = ["it-IT", "it"]}
+  force = true
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  force = true
+
+# Final catch-all redirect for unknown paths
 [[redirects]]
   from = "/*"
   to = "/en/:splat"
