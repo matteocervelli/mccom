@@ -1218,7 +1218,7 @@ input[type="checkbox"]:checked::before {
     content: "↑";
     color: var(--mc-white);
     font-family: var(--font-ui);
-    font-size: calc(var(--font-size-4xl) * 8);
+    font-size: var(--font-size-4xl);
     font-weight: 600;
 }
 
