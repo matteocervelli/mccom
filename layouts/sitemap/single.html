@@ -17,7 +17,7 @@
         </section>
 
         <!-- Pages by Category -->
-        {{ $pages := where .Site.RegularPages "Type" "!=" "posts" }}
+        {{ $pages := where .Site.Pages "Type" "!=" "posts" }}
         {{ $categories := slice "about" "work" "meta" }}
         {{ range $categories }}
         {{ $category := . }}

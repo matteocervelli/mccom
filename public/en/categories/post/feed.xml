@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on Matteo Cervelli</title>
+    <link>http://localhost:1313/en/categories/post/</link>
+    <description>Recent content in Post on Matteo Cervelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 19 Apr 2024 16:00:00 +0100</lastBuildDate><atom:link href="https://localhost:1313/en/categories/post/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Give LinkedIn Recommendations</title>
+      <link>http://localhost:1313/en/linkedin-referral/</link>
+      <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/en/linkedin-referral/</guid>
+      <description>&lt;h2 id=&#34;step-1-log-into-linkedin&#34;&gt;Step 1: Log into LinkedIn&lt;/h2&gt;
+&lt;p&gt;First, make sure you&amp;rsquo;re logged into your LinkedIn account. Go to &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;www.linkedin.com&lt;/a&gt; and sign in with your credentials.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;image-container&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: LinkedIn Login&#34;&gt;
+  
+&lt;/div&gt; &lt;/p&gt;
+&lt;h2 id=&#34;step-2-access-the-profile-of-the-person-you-want-to-recommend&#34;&gt;Step 2: Access the Profile of the Person You Want to Recommend&lt;/h2&gt;
+&lt;p&gt;Important note: to leave a recommendation, you need to be a 1st-degree connection with the person you want to recommend.&lt;/p&gt;
+&lt;p&gt;To begin, use the search bar at the top:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;image-container&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Search profile&#34;&gt;
+  
+&lt;/div&gt; &lt;/p&gt;
+&lt;p&gt;Type the name of the person you&amp;rsquo;re looking for, press enter, and click on their name in the search results that appear.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss> 

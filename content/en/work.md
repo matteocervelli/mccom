@@ -105,6 +105,10 @@ Along with training, we can activate support and coaching paths.
 
 {{< featured-testimonials >}}
 
+## My projects
+
+{{< featured-projects >}}
+
 ## Book now a free session to talk about your idea
 
 <!-- Calendly inline widget begin -->

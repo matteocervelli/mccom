@@ -19,17 +19,21 @@
 &lt;p&gt;L&amp;rsquo;empatia è &lt;strong&gt;sentire con le persone&lt;/strong&gt;
 &lt;br&gt;— Dr. Brené Brown&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;@https://www.youtube.com/watch?v=1Evwgu369Jw&lt;/p&gt;
+&lt;div class=&#34;youtube-container&#34;&gt;
+    &lt;iframe 
+        width=&#34;560&#34; 
+        height=&#34;315&#34; 
+        src=&#34;https://www.youtube.com/embed/1Evwgu369Jw&#34; 
+        title=&#34;YouTube video player&#34; 
+        frameborder=&#34;0&#34; 
+        allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; 
+        referrerpolicy=&#34;strict-origin-when-cross-origin&#34; 
+        allowfullscreen&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt; 
 &lt;p&gt;L&amp;rsquo;empatia è una competenza allenabile. Ecco una guida per imparare ad essere una persona con cui tutti parlano volentieri.&lt;/p&gt;
 &lt;h2 id=&#34;classificazione-dellempatia&#34;&gt;Classificazione dell&amp;rsquo;empatia&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.verywellmind.com/what-is-empathy-2795562&#34;&gt;Secondo Kendra Cherry&lt;/a&gt;, esistono tre tipi di empatia:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Empatia affettiva&lt;/strong&gt; implica comprendere le emozioni di un&amp;rsquo;altra persona e rispondere in modo appropriato.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Empatia somatica&lt;/strong&gt; implica un rispecchiamento fisico dei sentimenti dell&amp;rsquo;altro.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Empatia cognitiva&lt;/strong&gt; implica comprendere lo stato mentale di un&amp;rsquo;altra persona.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;lempatia-è-una-competenza-allenabile&#34;&gt;L&amp;rsquo;empatia è una competenza allenabile&lt;/h2&gt;
-&lt;p&gt;Le persone pensano che l&amp;rsquo;empatia sia una capacità innata. Si sbagliano. Tutti possono allenarla.&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://www.verywellmind.com/what-is-empathy-2795562&#34;&gt;Secondo Kendra Cherry&lt;/a&gt;, esistono tre tipi di empatia:&lt;/p&gt;</description>
     </item>
     
   </channel>

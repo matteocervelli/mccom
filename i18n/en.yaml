@@ -1,5 +1,7 @@
 and:
   other: "and"
+mantra:
+  other: "Trigger talent, build beauty, scale impact."
 here:
   other: "here"
 other:
@@ -31,8 +33,10 @@ send:
 taxonomyPageList:
   other: "Below you will find pages that utilize the taxonomy term \"{{ .Title }}\""
 readingTime:
-  one: "One minute read"
-  other: "{{ .Count }} minutes read"
+  other: "Reading Time"
+minute-read:
+  one: "minute read"
+  other: "minutes read"
 wordCount:
   one: "One word"
   other: "{{ .Count }} words"
@@ -56,10 +60,9 @@ published:
   other: "published"
 updated:
   other: "updated"
-minute:
-  other: "minute read"
 minutes:
-  other: "minutes read"
+  one: "minute"
+  other: "minutes"
 January:
   other: "January"
 February:
@@ -116,8 +119,6 @@ industry:
   other: "Industry"
 all_industries:
   other: "All Industries"
-role:
-  other: "Role"
 all_roles:
   other: "All Roles"
 department:
@@ -179,3 +180,32 @@ rerouting_message:
   other: "You should be rerouted in a jiff, if not,"
 click_here:
   other: "click here"
+related_projects: "Related Projects"
+role:
+  other: "Role"
+client:
+  other: "Client"
+year:
+  other: "Year"
+author:
+  other: "Author"
+view_all_project_projects:
+  other: "View All Project Projects"
+project-projects:
+  other: "project-projects"
+gallery:
+  other: "Gallery"
+tools:
+  other: "Tools"
+methods:
+  other: "Methods"
+key_results:
+  other: "Key Results"
+project_details:
+  other: "Project Details"
+projects:
+  other: "projects"
+view_all_projects:
+  other: "View All Projects"
+Projects:
+  other: "Projects"

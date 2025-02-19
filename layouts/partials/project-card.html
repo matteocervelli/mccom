@@ -1,0 +1,17 @@
+<article class="project-card">
+    {{ with .Params.featured_image }}
+    <div class="project-image">
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+    </div>
+    {{ end }}
+    <div class="project-content">
+        <h2>{{ .Title }}</h2>
+        <p class="project-meta">
+            {{ with .Params.client }}<span class="client">{{ . }}</span>{{ end }}
+            {{ with .Params.year }}<span class="year">{{ . }}</span>{{ end }}
+        </p>
+        <p class="description">{{ .Description }}</p>
+        
+        <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "readMore" }}</a>
+    </div>
+</article> 

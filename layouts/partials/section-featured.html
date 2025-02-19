@@ -9,7 +9,7 @@
           {{ end }}
           <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
           <p class="excerpt">{{ .Description | default (truncate 150 .Plain) }}</p>
-          <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "readMore" }} →</a>
+          <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "readMore" }}</a>
         </div>
         {{ end }}
       {{ end }}

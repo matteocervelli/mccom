@@ -54,7 +54,18 @@
 &lt;p&gt;Empathy is &lt;strong&gt;feeling with people&lt;/strong&gt;
 &lt;br&gt;— Dr. Brené Brown&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;@https://www.youtube.com/watch?v=1Evwgu369Jw&lt;/p&gt;
+&lt;div class=&#34;youtube-container&#34;&gt;
+    &lt;iframe 
+        width=&#34;560&#34; 
+        height=&#34;315&#34; 
+        src=&#34;https://www.youtube.com/embed/1Evwgu369Jw&#34; 
+        title=&#34;YouTube video player&#34; 
+        frameborder=&#34;0&#34; 
+        allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; 
+        referrerpolicy=&#34;strict-origin-when-cross-origin&#34; 
+        allowfullscreen&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt; 
 &lt;p&gt;Empathy is a trainable skill. Here is a guide to learn how to be a person whom everyone talk to with joy.&lt;/p&gt;
 &lt;h2 id=&#34;empathy-classification&#34;&gt;Empathy classification&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.verywellmind.com/what-is-empathy-2795562&#34;&gt;According to Kendra Cherry&lt;/a&gt;, there are three kinds of empathy:&lt;/p&gt;</description>

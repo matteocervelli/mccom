@@ -19,12 +19,12 @@
 
     
 
-<link rel="stylesheet" href="/css/styles.min.e7aa82381d7efa7ad67187b10004dcd3b17651d816a21d3dc8cc8079cb1c9339.css" integrity="sha256-56qCOB1&#43;&#43;nrWcYexAATc07F2UdgWoh09yMyAecsckzk=">
+<link rel="stylesheet" href="/css/styles.min.01a51e7fabb003673f28169b6d810b23036a25862181f5302aabdb3b79565e6d.css" integrity="sha256-AaUef6uwA2c/KBabbYELIwNqJYYhgfUwKqvbO3lWXm0=">
 
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.37684d3d4188123218b7b43135ff859a346ac9d9ab7aac5572d5dba34fa5f5bb.css" integrity="sha256-N2hNPUGIEjIYt7QxNf&#43;FmjRqydmreqxVctXbo0&#43;l9bs=">
+  <link rel="stylesheet" href="/css/styles.min.09672ff6018d1ec6ab73a8c9c3fa5948edfe697b81935bce3aea06ea0f979fb6.css" integrity="sha256-CWcv9gGNHsarc6jJw/pZSO3&#43;aXuBk1vOOuoG6g&#43;Xn7Y=">
 
     
 
@@ -53,7 +53,7 @@
   <meta itemprop="description" content="Progetti e lavori attuali">
   <meta itemprop="datePublished" content="2025-01-17T16:12:52+01:00">
   <meta itemprop="dateModified" content="2025-02-19T09:38:07+01:00">
-  <meta itemprop="wordCount" content="452">
+  <meta itemprop="wordCount" content="482">
   <meta itemprop="keywords" content="Page,About">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Cosa sto facendo ora">
@@ -72,6 +72,10 @@
     <script src="/js/search.min.c4b28f1c73d2ae2b7abeca333346a238a1a82f9bfdc1ac2b1ae301344d65f8d3.js"></script>
     
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="WVZPgYoen8uQz3GD87Degg" async></script>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head><body class="">
     <div class="search-container" id="searchContainer">
   <div class="search-box">
@@ -223,13 +227,23 @@ window.addEventListener('scroll', () => {
     
     <main role="main">
       
-  <div class="content-wrapper">
-    <article class="flex-l flex-wrap justify-between center">
-      <h1>
-        Cosa sto facendo ora
-      </h1>
-      <div><p><em>Nota: questa è una pagina <a href="https://nownownow.com">Now</a>.</em></p>
+<article class="page">
+    <header class="page-header">
+        <div class="container">
+            <h1>Cosa sto facendo ora</h1>
+            <p class="lead">Progetti e lavori attuali</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+
+        
+
+        <div class="page-content">
+            <p><em>Nota: questa è una pagina <a href="https://nownownow.com">Now</a>.</em></p>
 <p>Aggiornato: 2025-01-18, dalla mia casa a Poggibonsi, Toscana, Italia.</p>
+<p>Questi progetti attuali si allineano con il mio <a href="/scopo-e-valori/">scopo</a> di innescare talenti per costruire un mondo più bello. Leggi di più sul mio <a href="/it/about/">background</a> per capire come sono arrivato qui.</p>
 <h2 id="aiuto-le-aziende-a-crescere-in-modo-scalabile">Aiuto le aziende a crescere in modo scalabile</h2>
 <p>Sono un consulente e advisor per le imprese.</p>
 <p>Il mio lavoro consiste nell&rsquo;aiutare le aziende a crescere in modo scalabile, attraverso Strategia, Gestione del Cambiamento, Sviluppo delle Vendite e del Business, Formazione e Coaching dei Leader.</p>
@@ -258,9 +272,49 @@ Speriamo di ridare linfa anche alla gestione dei miei social.</p>
 <p>Ho gestito come CEO la <a href="https://www.serrall.com">Serrall</a>, un&rsquo;azienda di quasi 100 dipendenti che realizza porte e serramenti per edilizia modulare temporanea e off-site, in Europa.</p>
 <h3 id="pan-urania--urania-group">Pan Urania / Urania Group</h3>
 <p>Ho svolto il ruolo di CSO in <a href="https://www.panurania.com">Pan Urania</a>, azienda principale di <a href="https://www.uraniagroup.com">Urania Group</a>, in particolare gestendo prima il mercato brasiliano, quindi il progetto <a href="https://panhouse.it">Panhouse</a> e infine operando su strategia, innovazione, sviluppo dei talenti e ESG.</p>
-</div>
-    </article>
-  </div>
+
+        </div>
+    </div>
+</article>
+
+<style>
+.section-nav {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--color-bg-secondary);
+    border-radius: 8px;
+}
+
+.section-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.section-nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.section-nav a:hover,
+.section-nav a.active {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+@media (max-width: 768px) {
+    .section-nav ul {
+        flex-direction: column;
+    }
+}
+</style>
 
     </main>
     
@@ -270,7 +324,12 @@ Speriamo di ridare linfa anche alla gestione dei miei social.</p>
     <script src="/js/dropdown.min.4012e2973ab5e591a68041bc12b0f1661ba78d4527715a5bda3b621d235cf613.js"></script>
     <div>
       
-      <div class="bt b--mc-purple" aria-hidden="true"></div>
+      <div class="footer-border-top" aria-hidden="true"></div>
+      
+      
+      <div>
+        <p><em>Innesca talenti, costruisci bellezza, scala l&#39;impatto.</em></p>
+      </div>
       
       
       <div>
@@ -335,7 +394,7 @@ Speriamo di ridare linfa anche alla gestione dei miei social.</p>
     <script src="/js/backToTop.min.a00f7fa9bd8f406e062eb6ef89963a398eadbe94b3f2b0e4fbfd3dce0b80b46e.js"></script>
   
     
-    <script src="/js/toggleTOC.min.f22d2234570c8c36c0f3dcb6506564e6d1921f8257b573ae89174665219ee9c6.js"></script>
+    <script src="/js/toggleTOC.min.32567bcfa153068d2cae0ef111f598fa558cd7a4a2c4b8c4b88287cfacd579a2.js"></script>
 
     
     <script src="/js/footnote-tooltips.min.2b06730b56de12b749607f951eff5983b3a6252c486e64ea9387c02fc58eed03.js"></script>

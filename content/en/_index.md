@@ -19,10 +19,11 @@ featured_image: ""
             <img src="/images/profile.jpg" alt="Matteo Cervelli">
         </div>
         <div class="intro-text">
+            <p><em>Trigger talent, build beauty, scale impact.</em></p>
             <p>I am a Business Scalability Engineer.</p>
             <p>My purpose is to trigger people to build a more beautiful world, together.</p>
             <p>I work as an Advisor and Consultant. I help entrepreneurs and leaders grow their business, in strategy, management, sales, implementing the principles of scalability.</p>
-            <p>If you want to know more about my story as an entrepreneur, CEO and father, <a href="/en/about">read here</a>.</p>
+            <p>If you want to know more about my story, purpose, and vision, <a href="/en/about">read here</a>.</p>
         </div>
     </div>
 </article>

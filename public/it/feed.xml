@@ -8,6 +8,30 @@
     <language>it-IT</language>
     <lastBuildDate>Fri, 17 Jan 2025 09:52:52 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Scuola PanHouse Cittareale</title>
+      <link>http://localhost:1313/it/projects/panhouse-cittareale/</link>
+      <pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/projects/panhouse-cittareale/</guid>
+      <description>&lt;h2 id=&#34;contesto&#34;&gt;Contesto&lt;/h2&gt;
+&lt;p&gt;Nell&amp;rsquo;agosto 2016, i terremoti hanno scosso l&amp;rsquo;Italia centrale ad Amatrice e Norcia. L&amp;rsquo;Italia è sempre stata un paese con attività sismica, ma non abbiamo la stessa cultura edile del Giappone o di Taiwan.&lt;/p&gt;
+
+
+
+
+&lt;figure class=&#34;image-with-caption lightbox-trigger&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/projects/panhouse-cittareale/earthquake-damage.jpg&#34; alt=&#34;Un centro storico distrutto dal terremoto&#34; loading=&#34;lazy&#34; data-caption=&#34;L&amp;#39;impatto devastante del terremoto sulle comunità locali&#34; onclick=&#34;openLightbox(this)&#34;&gt;
+    
+    &lt;figcaption class=&#34;image-caption&#34;&gt;L&amp;#39;impatto devastante del terremoto sulle comunità locali&lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+ 
+&lt;p&gt;L&amp;rsquo;evento ha devastato piccoli paesi, alcuni dei quali famosi anche per il turismo, come Norcia, città natale di San Benedetto, o Amatrice, ben nota per una salsa italiana per la pasta chiamata Amatriciana, che combina pomodoro, guanciale e pecorino per un sapore divino.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Mappa del sito</title>
       <link>http://localhost:1313/it/sitemap/</link>
       <pubDate>Sat, 15 Feb 2025 17:30:00 +0100</pubDate>
@@ -133,10 +157,10 @@ Puoi registrarti qui sotto:&lt;/p&gt;
       <guid>http://localhost:1313/it/ora/</guid>
       <description>&lt;p&gt;&lt;em&gt;Nota: questa è una pagina &lt;a href=&#34;https://nownownow.com&#34;&gt;Now&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Aggiornato: 2025-01-18, dalla mia casa a Poggibonsi, Toscana, Italia.&lt;/p&gt;
+&lt;p&gt;Questi progetti attuali si allineano con il mio &lt;a href=&#34;http://localhost:1313/scopo-e-valori/&#34;&gt;scopo&lt;/a&gt; di innescare talenti per costruire un mondo più bello. Leggi di più sul mio &lt;a href=&#34;http://localhost:1313/it/about/&#34;&gt;background&lt;/a&gt; per capire come sono arrivato qui.&lt;/p&gt;
 &lt;h2 id=&#34;aiuto-le-aziende-a-crescere-in-modo-scalabile&#34;&gt;Aiuto le aziende a crescere in modo scalabile&lt;/h2&gt;
 &lt;p&gt;Sono un consulente e advisor per le imprese.&lt;/p&gt;
-&lt;p&gt;Il mio lavoro consiste nell&amp;rsquo;aiutare le aziende a crescere in modo scalabile, attraverso Strategia, Gestione del Cambiamento, Sviluppo delle Vendite e del Business, Formazione e Coaching dei Leader.&lt;/p&gt;
-&lt;p&gt;Adotto un modello a 3 fasi: analisi inziale, progetto sprint (con implementazione), e follow-up con advisory.&lt;/p&gt;</description>
+&lt;p&gt;Il mio lavoro consiste nell&amp;rsquo;aiutare le aziende a crescere in modo scalabile, attraverso Strategia, Gestione del Cambiamento, Sviluppo delle Vendite e del Business, Formazione e Coaching dei Leader.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -159,9 +183,8 @@ Puoi registrarti qui sotto:&lt;/p&gt;
       <guid>http://localhost:1313/it/about/</guid>
       <description>&lt;h2 id=&#34;in-breve&#34;&gt;In breve&lt;/h2&gt;
 &lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;http://localhost:1313/it/business-scalability-engineer/&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;http://localhost:1313/it/lavora-con-me/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Oggi aiuto imprenditori e leader a crescere il proprio business, nella strategia, gestione, vendite, implementando i principi della scalabilità.&lt;/p&gt;
-&lt;p&gt;Il mio scopo è innescare le persone a costruire un mondo più bello, insieme.&lt;/p&gt;
-&lt;p&gt;Sono un padre di 3 bambine piccole, Emma, Maria ed Emma, e di due cani: Maple e Cookie. Prima ancora, sono un marito: con Sara ci conosciamo dal 2005 e in questi 20 anni ci siamo amati e siamo sempre stati l&amp;rsquo;uno per l&amp;rsquo;altra, uno, due e infinito.&lt;/p&gt;</description>
+&lt;p&gt;Il mio scopo è innescare le persone a costruire un mondo più bello, insieme. Oggi aiuto imprenditori e leader a crescere il proprio business, attraverso lo sviluppo strategico, una gestione efficace, e processi di vendita scalabile.&lt;/p&gt;
+&lt;p&gt;Sono marito di Sara da oltre 10 anni, padre di 3 bambine piccole, Emma, Maria ed Anna, e di due cani (Maple e Cookie). Vivo in Toscana.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -177,6 +200,30 @@ Puoi registrarti qui sotto:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Come Fare Referral su LinkedIn</title>
+      <link>http://localhost:1313/it/referral-linkedin/</link>
+      <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/it/referral-linkedin/</guid>
+      <description>&lt;h2 id=&#34;step-1-accedere-a-linkedin&#34;&gt;Step 1: Accedere a LinkedIn&lt;/h2&gt;
+&lt;p&gt;Prima di tutto, assicurati di essere connesso al tuo account LinkedIn. Vai su &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;www.linkedin.com&lt;/a&gt; e accedi con le tue credenziali.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;image-container&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: Login LinkedIn&#34;&gt;
+  
+&lt;/div&gt; &lt;/p&gt;
+&lt;h2 id=&#34;step-2-accedere-al-profilo-della-persona-che-vuoi-raccomandare&#34;&gt;Step 2: Accedere al profilo della persona che vuoi raccomandare&lt;/h2&gt;
+&lt;p&gt;Nota importante: per lasciare una referenza, dovrai avere un collegamento di 1° grado con la persona che vuoi raccomandare.&lt;/p&gt;
+&lt;p&gt;Per cominciare, sulla barra di ricerca in alto:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;image-container&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Cerca profilo&#34;&gt;
+  
+&lt;/div&gt; &lt;/p&gt;
+&lt;p&gt;Digita il nome della persona che stai cercando, premi invio e clicca sul nome nei risultati di ricerca che appariranno.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Trova il Tuo Antagonista, Scopri la Tua Missione</title>
       <link>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
@@ -184,6 +231,20 @@ Puoi registrarti qui sotto:&lt;/p&gt;
       <guid>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</guid>
       <description>&lt;p&gt;Ognuno ha un antagonista. Ho conosciuto il mio cinque anni fa in una sala riunioni.&lt;/p&gt;
 &lt;p&gt;Era una calda giornata estiva e stavo presentando un aggiornamento trimestrale su un&amp;rsquo;azienda che avevamo recentemente acquisito. Non riuscivamo a vedere la luce in fondo al tunnel, ma stavo mostrando una presentazione PowerPoint piena di dati e approfondimenti. All&amp;rsquo;improvviso, il signor Bowser ha iniziato a esporre la sua visione del mondo, ignorando completamente le informazioni che avevo fornito. Era come se tutto il lavoro che avevo fatto con il mio team non fosse reale, mentre soccombeva sotto una mitragliatrice che sparava ripetuti colpi pieni di convinzioni tratte da chissà quale esperienza di vita.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scopo e Valori</title>
+      <link>http://localhost:1313/it/scopo-e-valori/</link>
+      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/scopo-e-valori/</guid>
+      <description>&lt;h2 id=&#34;il-mio-golden-circle&#34;&gt;Il mio Golden Circle&lt;/h2&gt;
+&lt;h3 id=&#34;perché-why&#34;&gt;Perché (WHY)&lt;/h3&gt;
+&lt;p&gt;Il mio scopo è &lt;strong&gt;innescare il talento delle persone per costruire un mondo più bello.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;attivazione del potenziale delle persone fa divampare la generatività: spinge le persone a dedicare la propria intelligenza e il proprio tempo a rende il mondo un posto bello, diffondendo amore e riducendo la povertà.&lt;/p&gt;
+&lt;p&gt;La bellezza stimola a compiere gesti positivi.&lt;/p&gt;
+&lt;p&gt;Sogno un mondo in cui ognuno possa dedicare il proprio tempo ad azioni ricche di significato, e voglio renderlo possibile attraverso le mie azioni.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -242,35 +303,6 @@ Puoi registrarti qui sotto:&lt;/p&gt;
       
       <guid>http://localhost:1313/it/testimonials/francesca-sernissi/</guid>
       <description>&lt;p&gt;Conosco Matteo già da qualche anno, perché abbiamo frequentato insieme un Master delle Università di Pisa, Firenze, Siena e Scuola Superiore Sant&amp;rsquo;Anna&amp;hellip;per imparare a Scalare! Partecipando al master con Matteo ho capito che per lui scalare non è solo un modo per arrivare in alto, ma e soprattutto IL modo per determinare un impatto, nel mondo, che sia sostenibile (sotto tutti i punti di vista, ovvero sociale, economico e di governance) e quindi avere successo nel senso più ampio e nobile del termine.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Francesco Ferraro</title>
-      <link>http://localhost:1313/it/testimonials/francesco-ferraro/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/testimonials/francesco-ferraro/</guid>
-      <description>&lt;p&gt;Ho conosciuto Matteo nell&amp;rsquo;azienda per cui lavoro, è una persona molto preparata e determinata, Matteo è un mentore, lavorare con lui, oltre ad essere un privilegio, è molto importante: la sua capacità di visione sul futuro abbinata alla realtà esterna, e il suo modo di trasmetterla è sempre stata per me fonte di grande motivazione.&lt;/p&gt;
-&lt;p&gt;Ogni progetto, ogni obiettivo da raggiungere, diventa sempre sfidante e allo stesso tempo formativo. Il modo in cui lui ha strutturato e reso tangibile i valori dell&amp;rsquo;azienda, che sono diventati i nostri punti cardini, è stato talmente coinvolgente che ad oggi non ci permettono di perdere la rotta.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Francesco Lagonigro</title>
-      <link>http://localhost:1313/it/testimonials/francesco-lagonigro/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/testimonials/francesco-lagonigro/</guid>
-      <description>&lt;p&gt;Matteo è una persona trasparente, curiosa, guidata da una forte etica nella gestione delle relazioni ed uno spiccato senso di innovazione.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Gianni Cordaro</title>
-      <link>http://localhost:1313/it/testimonials/gianni-cordaro/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/testimonials/gianni-cordaro/</guid>
-      <description>&lt;p&gt;Matteo è un professionista straordinario che mi ha aiutato a trovare il percorso migliore per la mia azienda. E adesso funziona perfettamente.&lt;/p&gt;
-&lt;p&gt;Lo raccomando vivamente a quegli imprenditori che vogliono fare scelte decisive per le loro aziende e a tutte le aziende che vogliono imbarcarsi su un percorso di innovazione e cambiamento.&lt;/p&gt;</description>
     </item>
     
   </channel>

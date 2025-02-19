@@ -1,0 +1,15 @@
+{{ $number := .Get "number" }}
+{{ $title := .Get "title" }}
+{{ $description := .Get "description" }}
+{{ $description_it := .Get "description_it" }}
+
+<div class="sdg-block" data-sdg="{{ $number }}">
+    <div class="sdg-icon">
+        <img src="/images/sdgs/E-WEB-Goal-{{ $number }}.png" alt="SDG {{ $number }}" loading="lazy">
+        {{ if eq $.Page.Language.Lang "it" }}
+        <p>{{ $description_it }}</p>
+        {{ else }}
+        <p>{{ $description }}</p>
+        {{ end }}
+    </div>
+</div> 

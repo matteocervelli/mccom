@@ -20,7 +20,7 @@ In other words, to understand how they view their reality and how they feel abou
 > Empathy is **feeling with people**
 > <br>&mdash; Dr. Brené Brown
 
-@https://www.youtube.com/watch?v=1Evwgu369Jw
+{{< youtube 1Evwgu369Jw >}}
 
 Empathy is a trainable skill. Here is a guide to learn how to be a person whom everyone talk to with joy.
 

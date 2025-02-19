@@ -13,77 +13,102 @@ featured_image: ""
 ---
 ## In short
 
-I'm Matteo Cervelli. I am [Business Scalability Engineer](/business-scalability-engineer). I act as a [Consultant and Advisor](/work). Previously I managed [Urania Group](https://www.urania.group) as Co-CEO.
+I'm Matteo Cervelli. I am a [Business Scalability Engineer](/business-scalability-engineer). I act as a [Consultant and Advisor](/work). Previously I managed [Urania Group](https://urania.group) as Co-CEO.
 
-Today I help entrepreneurs and leaders to grow their business, in strategy, management, sales, implementing the principles of scalability.
+My purpose is to trigger people to build a more beautiful world, together. Today I help entrepreneurs and leaders grow their business through strategic development, effective management, and scalable sales processes.
 
-My purpose is to trigger people to build a more beautiful world, together.
-
-I am a father of 3 little girls, Emma, ​​Maria and Emma, ​​and two dogs: Maple and Cookie. Even before that, I am a husband: Sara and I have known each other since 2005 and in these 20 years we have loved each other and have always been there for each other, one, two and infinite.
-
-I live in Tuscany.
+I have been Sara's husband for over 10 years, father of 3 little girls, Emma, Maria and Anna, and two dogs (Maple and Cookie). I live in Tuscany.
 
 On this website, you can find:
 
-- My [essays and thoughts](/posts)
+- My [thoughts and articles](/posts)
 - My [work method](/work)
+- My [purpose and vision](/purpose-and-values)
 - What I am focused on [now](/now)
-- How I use AI for this site and my content — [here](/ai).
+- How I use AI for this site and my content, [here](/ai)
 
-## Welcome to my garden
+## What I do
 
-This is my digital home. You can find my thoughts, my writings and how to work with me.
+I activate talents, build beauty, scale on impact.
 
-Ultimately, I work to build businesses that scale, I work with people and through a union of purpose, we are able to build ecosystems that bring beauty.
+Beauty leads people to generativity, to apply their intelligence in building a better world.
 
-There is a thread that unites parenting, education and doing business: triggering talent. Everyone has unexpressed potential and through my work, I strive to ensure that this emerges.
+### My main skills
 
-As a leader, this translates into the continuous search for autonomy of collaborators, an approach that can be adapted to all contexts. Driven by purpose.
-
-## My main skills
-
-My main advantage is that of having operated as CEO of a medium/large company, present in many countries. In addition to speaking many languages, English, French, Portuguese and Spanish, in addition to my mother tongue Italian, I have seen many cultures and learned to sell by going directly to customers' homes.
+My main advantage is having operated as CEO of a medium/large company, present in many countries. In addition to speaking many languages - English, French, Portuguese and Spanish, besides my native Italian - I have seen many cultures and learned to sell by going directly to customers' homes.
 
 I have dealt with entrepreneurs and managers of large billion-dollar companies, financed by Private Equity.
 
 In the company, a "modern" Family Business, I saw M&A, strategy, finance and specialized in change management, a skill, a real method for grounding changes.
 
-As an Engineer, I build methods, or apply them, to make things more effective. By the way, I'm always looking for ways to make processes more repeatable and scalable, exponentially.
+As an Engineer, I build methods, or apply them, to make things more effective. By the way, I'm always looking for ways to make processes more repeatable and scalable, exponential.
 
-## My background
+### My journey
 
-2025 — We launch a new consulting project called [Ad Limen Consulting](https://adlimen.com), specifically aimed at supporting business scalability.
+- **2025** — I launched [Ad Limen Consulting](https://adlimen.com), specifically aimed at supporting business scalability.
+- **2024** — Anna is born. In July I left the management of [Urania Group](https://www.urania.group), remaining a partner. I started my management consulting business. I invest in [Mokapen](https://mokapen.it) and we start the Business Angel Club of Pisa.
+- **2023** — Cookie arrives.
+- **2022** — Complete, first ever, the Master in Scalability and Company Growth, organized by Universities of Pisa, Florence, Siena and [Scuola Sant'Anna](https://www.santannapisa.it/en). I launch my website for the first time and begin to explore content publishing.
+- **2021** — Maria is born. Together with the role of CEO in [Serrall](https://www.serrall.com), I acquire that of CSO in Pan Urania
+- **2020** — With COVID we launch a heavy digital revolution and I acquire complete management of Serrall company.
+- **2019** — Emma is born. At Serrall we overturn processes with the [Lean approach](https://www.lean.org/explore-lean/what-is-lean/), [Hoshin Kanri](https://kanbanize.com/lean-management/hoshin-kanri/what-is-hoshin-kanri) and [Toyota Kata](https://www.toyota-global.com/company/toyota_traditions/quality/mar_apr_2008.html).
+- **2018** — Maple arrives in the family. And I move, as CEO, to restructure Serrall company in Umbria, which went through an M&A operation.
+- **2016** — After a period as Innovation Manager, I move to the PanHouse project where, as PM, we rebuild the New School of Cittareale, destroyed in the summer earthquake, in just 19 days of construction.
+- **2015** — I complete my Master's Degree in [Management Engineering](https://www.unipi.it/index.php/english/course/10275) in Pisa with highest honors.
+- **2014** — I marry Sara. The same year I had started my first serious job at Pan Urania. I start working on industrial innovation, but almost immediately end up doing 3 years as Area Manager in Brazil.
+- **1988** — I was born in Poggibonsi, Tuscany.
 
-2024 — In July I leave the management of [Urania Group](https://www.urania.group), I remain a partner. I started my own management consulting business. I invest in [Mokapen](https://mokapen.it) and we start the Business Angel Club of Pisa.
+### My values
 
-2022 — Complete, first ever, the Master in Scalability and Company Growth, organized by the Universities of Pisa, Florence, Siena and [Scuola Sant'Anna](https://www.santannapisa.it/en). I launch my own website, for the first time, and begin to explore publishing content.
+- **Curiosity** — Continuous exploration
+- **Critical thinking** — Rigorous analysis
+- **Creativity** — Connecting distant points
+- **Excellence** — Pursuit of continuous improvement
+- **Autonomy** — Promotion of independence and responsibility
 
-2021 — Together with the role of CEO in [Serrall](https://www.serrall.com), I acquire that of CSO in Pan Urania
+## My vision
 
-2020 — With COVID we start a heavy digital revolution and I acquire complete management of the Serrall company.
+### Whakapapa: beyond my life (50+ years)
 
-2019 — Emma is born. At Serrall we turn processes around with the [Lean approach](https://www.lean.org/explore-lean/what-is-lean/), [Hoshin Kanri](https://kanbanize.com/lean-management/hoshin-kanri/what-is-hoshin-kanri) and [Toyota Kata](https://www.toyota-global.com/company/toyota_traditions/quality/mar_apr_2008.html).
+> Whakapapa. Plant trees you'll never see.
 
-2018 — Maple arrives in the family. And I move, as CEO, to restructure the Serrall company, in Umbria, which went through an M&A operation.
+One life might not be enough, but here's what I'd like to leave:
 
-2016 — After a period as Innovation Manager, I moved to the PanHouse project where, as PM, we rebuilt the New School of Cittareale, which was destroyed in the summer earthquake, in just 19 days of construction.
+- Create an impact legacy that fights poverty through creativity and beauty
+- Transform Valdelsa into a thriving innovation ecosystem
+- Raise daughters who become positive change agents
+- Establish regenerative enterprises
+- Leave knowledge that continues to inspire
 
-2015 — I completed my Master's Degree in [Management Engineering](https://www.unipi.it/index.php/english/course/10275)—*Ingegneria Gestionale* in italian— in Pisa with 110 cum laude.
+### Vision 2040 (15 years)
 
-2014 — I get married to Sara. The same year I began my first serious job in Pan Urania. I start working on industrial innovation, but almost immediately I end up doing 3 years as an Area Manager in Brazil.
+- Built a business with positive global impact
+- Maintained a balanced family life
+- Achieved optimal physical condition
+- Mastered 10 languages and built a global network
+- Developed a deep spiritual connection
+- Simplified life to focus on the essential
 
-1988 — I was born in Poggibonsi, Tuscany.
+### 3-year goals (2027)
 
-## Social proof
-
-- Guest in "Beyond 8 Figures" Podcast by A.J. Lawrence - [Fostering](https://beyond8figures.com/podcast_episode/fostering-autonomy-for-business-growth-with-matteo-cervelli-urania/) [Autonomy for Business Growth](https://beyond8figures.com/podcast_episode/fostering-autonomy-for-business-growth-with-matteo-cervelli-urania/)
-- Guest in "Do Good Work" Podcast by Raul Hernandez Ochoa - [How a $60M B2B Manufacturing CEO Thinks About Impact & The Resonance Framework to Create Frictionless Management](https://dogoodwork.io/blog/how-a-60m-b2b-manufacturing-ceo-thinks-about-impact-the-resonance-framework-to-create-frictionless-management-with-matteo-cervelli)
-- Interview with Confindustria Firenze - [Racconti d'impresa "L'imprenditore è colui che trasforma i sogni in progetti"](https://www.confindustriafirenze.it/racconti-di-impresa-matteo-cervelli-limprenditore-e-colui-che-trasforma-sogni-in-progetti/)
-- Feedback is an *unfair advantage*, with Euxilia - [UNOX's event on feedback](https://www.linkedin.com/posts/euxilia_euxilia-performancebypeople-feedbacksystem-activity-7110580430386475008-9FPp)
+- Established Ad Limen Consulting as a reference for business scalability
+- Published my first book on scalability principles
+- Developed a replicable method for talent activation
+- Strengthened my presence in content creation
+- Implemented projects to develop talent in Valdelsa
 
 ## What people say about me
 
+### Testimonials
+
 {{< featured-testimonials >}}
+
+### Social proof
+
+- Guest in "Beyond 8 Figures" Podcast by A.J. Lawrence — [Fostering autonomy for business growth](https://beyond8figures.com/podcast_episode/fostering-autonomy-for-business-growth-with-matteo-cervelli-urania/)
+- Guest in "Do Good Work" Podcast by Raul Hernandez Ochoa — [Do Good Work | How a $60M B2B Manufacturing CEO Thinks About Impact & The Resonance Framework to Create Frictionless Management with Matteo Cervelli](https://dogoodwork.io/blog/how-a-60m-b2b-manufacturing-ceo-thinks-about-impact-the-resonance-framework-to-create-frictionless-management-with-matteo-cervelli)
+- Interview with Confindustria Firenze — [Racconti di impresa: Matteo Cervelli, "l'imprenditore è colui che trasforma sogni in progetti". - Confindustria Firenze](https://www.confindustriafirenze.it/racconti-di-impresa-matteo-cervelli-limprenditore-e-colui-che-trasforma-sogni-in-progetti/)
+- Feedback is an *unfair advantage*, with Euxilia — [Interview with euXilia in Unox](https://www.linkedin.com/posts/euxilia_euxilia-performancebypeople-feedbacksystem-activity-7110580430386475008-9FPp)
 
 ## Name Pronunciation
 

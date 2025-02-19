@@ -20,20 +20,11 @@
         <div class="testimonial-content-wrapper">
             <div class="testimonial-header">
                 {{ if .Params.person_image }}
-                    {{ $originalImage := .Params.person_image }}
-                    {{ $fullImage := replace $originalImage "/testimonials/" "/testimonials/full/" }}
-                    {{ $imagePath := printf "static%s" $fullImage }}
-                    {{ if fileExists $imagePath }}
-                        <img src="{{ $fullImage }}" alt="{{ .Params.person_name }}" class="testimonial-image">
-                    {{ else }}
-                        <div class="testimonial-image placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    {{ end }}
+                <img src="{{ .Params.person_image }}" alt="{{ .Params.person_name }}" class="testimonial-image">
                 {{ else }}
-                    <div class="testimonial-image placeholder">
-                        <i class="fas fa-user"></i>
-                    </div>
+                <div class="testimonial-image placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
                 {{ end }}
                 <div class="testimonial-meta">
                     <h3 class="testimonial-name">{{ .Params.person_name }}</h3>

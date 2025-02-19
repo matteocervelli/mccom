@@ -105,6 +105,10 @@ Insieme alla formazione, possiamo attivare percorsi di supporto e coaching.
 
 {{< featured-testimonials >}}
 
+## I miei progetti
+
+{{< featured-projects >}}
+
 ## Prenota ora una sessione gratuita per parlarmi della tua idea
 
 <!-- Calendly inline widget begin -->

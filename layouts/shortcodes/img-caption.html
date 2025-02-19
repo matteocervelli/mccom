@@ -1,0 +1,86 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" }}
+
+<figure class="image-with-caption lightbox-trigger">
+    <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" data-caption="{{ $caption }}" onclick="openLightbox(this)">
+    {{ with $caption }}
+    <figcaption class="image-caption">{{ . }}</figcaption>
+    {{ end }}
+</figure>
+
+<!-- Lightbox Modal -->
+{{ if not (.Page.Scratch.Get "lightboxLoaded") }}
+{{ .Page.Scratch.Set "lightboxLoaded" true }}
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-prev" onclick="changeLightboxImage(-1)">&lt;</button>
+    <button class="lightbox-next" onclick="changeLightboxImage(1)">&gt;</button>
+    <div class="lightbox-content">
+        <img src="" alt="">
+        <figcaption class="image-caption"></figcaption>
+    </div>
+</div>
+
+<script>
+let currentImageIndex = 0;
+const images = [];
+
+function openLightbox(img) {
+    event.stopPropagation();
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    const lightboxCaption = lightbox.querySelector('figcaption');
+    
+    // Collect all images on the page with their captions
+    images.length = 0;
+    document.querySelectorAll('.lightbox-trigger img').forEach(image => {
+        images.push({
+            src: image.src,
+            alt: image.alt,
+            caption: image.dataset.caption
+        });
+    });
+    
+    // Find current image index
+    currentImageIndex = images.findIndex(image => image.src === img.src);
+    
+    // Set image and caption
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = img.dataset.caption;
+    
+    // Show lightbox
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+function changeLightboxImage(direction) {
+    event.stopPropagation();
+    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+    const image = images[currentImageIndex];
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    const lightboxCaption = lightbox.querySelector('figcaption');
+    
+    lightboxImg.src = image.src;
+    lightboxImg.alt = image.alt;
+    lightboxCaption.textContent = image.caption;
+}
+
+// Handle keyboard navigation
+document.addEventListener('keydown', function(e) {
+    if (document.getElementById('lightbox').style.display === 'flex') {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') changeLightboxImage(-1);
+        if (e.key === 'ArrowRight') changeLightboxImage(1);
+    }
+});
+</script>
+{{ end }} 

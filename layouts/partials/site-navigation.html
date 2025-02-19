@@ -18,6 +18,8 @@
           {{ i18n "menuPosts" }}
         {{- else if eq .Section "tags" -}}
           {{ i18n "tags" }}
+        {{- else if eq .Section "projects" -}}
+          {{ i18n "Projects" }}
         {{- else -}}
           {{ .Section | humanize }}
         {{- end -}}

@@ -8,6 +8,196 @@
     <language>it-IT</language>
     <lastBuildDate>Sat, 18 Jan 2025 14:52:50 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/categories/work/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Scuola PanHouse Cittareale</title>
+      <link>http://localhost:1313/it/projects/panhouse-cittareale/</link>
+      <pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/projects/panhouse-cittareale/</guid>
+      <description>&lt;h2 id=&#34;contesto&#34;&gt;Contesto&lt;/h2&gt;
+&lt;p&gt;Nell&amp;rsquo;agosto 2016, i terremoti hanno scosso l&amp;rsquo;Italia centrale ad Amatrice e Norcia. L&amp;rsquo;Italia è sempre stata un paese con attività sismica, ma non abbiamo la stessa cultura edile del Giappone o di Taiwan.&lt;/p&gt;
+
+
+
+
+&lt;figure class=&#34;image-with-caption lightbox-trigger&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/projects/panhouse-cittareale/earthquake-damage.jpg&#34; alt=&#34;Un centro storico distrutto dal terremoto&#34; loading=&#34;lazy&#34; data-caption=&#34;L&amp;#39;impatto devastante del terremoto sulle comunità locali&#34; onclick=&#34;openLightbox(this)&#34;&gt;
+    
+    &lt;figcaption class=&#34;image-caption&#34;&gt;L&amp;#39;impatto devastante del terremoto sulle comunità locali&lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+
+
+&lt;div id=&#34;lightbox&#34; class=&#34;lightbox&#34; onclick=&#34;closeLightbox()&#34;&gt;
+    &lt;button class=&#34;lightbox-close&#34; onclick=&#34;closeLightbox()&#34;&gt;&amp;times;&lt;/button&gt;
+    &lt;button class=&#34;lightbox-prev&#34; onclick=&#34;changeLightboxImage(-1)&#34;&gt;&amp;lt;&lt;/button&gt;
+    &lt;button class=&#34;lightbox-next&#34; onclick=&#34;changeLightboxImage(1)&#34;&gt;&amp;gt;&lt;/button&gt;
+    &lt;div class=&#34;lightbox-content&#34;&gt;
+        &lt;img src=&#34;&#34; alt=&#34;&#34;&gt;
+        &lt;figcaption class=&#34;image-caption&#34;&gt;&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+let currentImageIndex = 0;
+const images = [];
+
+function openLightbox(img) {
+    event.stopPropagation();
+    const lightbox = document.getElementById(&#39;lightbox&#39;);
+    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
+    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
+    
+    
+    images.length = 0;
+    document.querySelectorAll(&#39;.lightbox-trigger img&#39;).forEach(image =&gt; {
+        images.push({
+            src: image.src,
+            alt: image.alt,
+            caption: image.dataset.caption
+        });
+    });
+    
+    
+    currentImageIndex = images.findIndex(image =&gt; image.src === img.src);
+    
+    
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = img.dataset.caption;
+    
+    
+    lightbox.style.display = &#39;flex&#39;;
+    document.body.style.overflow = &#39;hidden&#39;;
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById(&#39;lightbox&#39;);
+    lightbox.style.display = &#39;none&#39;;
+    document.body.style.overflow = &#39;auto&#39;;
+}
+
+function changeLightboxImage(direction) {
+    event.stopPropagation();
+    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+    const image = images[currentImageIndex];
+    const lightbox = document.getElementById(&#39;lightbox&#39;);
+    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
+    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
+    
+    lightboxImg.src = image.src;
+    lightboxImg.alt = image.alt;
+    lightboxCaption.textContent = image.caption;
+}
+
+
+document.addEventListener(&#39;keydown&#39;, function(e) {
+    if (document.getElementById(&#39;lightbox&#39;).style.display === &#39;flex&#39;) {
+        if (e.key === &#39;Escape&#39;) closeLightbox();
+        if (e.key === &#39;ArrowLeft&#39;) changeLightboxImage(-1);
+        if (e.key === &#39;ArrowRight&#39;) changeLightboxImage(1);
+    }
+});
+&lt;/script&gt;
+
+&lt;style&gt;
+.image-with-caption {
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+.image-with-caption img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-with-caption:hover img {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    margin-top: 0.5rem;
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90vh;
+    position: relative;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.lightbox-content .image-caption {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: fixed;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 1001;
+}
+
+.lightbox-close {
+    top: 1rem;
+    right: 1rem;
+}
+
+.lightbox-prev {
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-next {
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: var(--color-primary);
+}
+&lt;/style&gt;
+ 
+&lt;p&gt;L&amp;rsquo;evento ha devastato piccoli paesi, alcuni dei quali famosi anche per il turismo, come Norcia, città natale di San Benedetto, o Amatrice, ben nota per una salsa italiana per la pasta chiamata Amatriciana, che combina pomodoro, guanciale e pecorino per un sapore divino.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Lavora con me</title>
       <link>http://localhost:1313/it/lavora-con-me/</link>
       <pubDate>Sat, 18 Jan 2025 14:52:50 +0100</pubDate>
@@ -49,6 +239,30 @@
 &lt;p&gt;Ecco, io sono quello che aiuta a sbloccare tutto questo.&lt;/p&gt;
 &lt;p&gt;Senti che ci sono mille problemi nella tua azienda?&lt;/p&gt;
 &lt;p&gt;Forse pensi che tutto vada cambiato: processi, ruoli, vendite, persino la cultura aziendale.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Come Fare Referral su LinkedIn</title>
+      <link>http://localhost:1313/it/referral-linkedin/</link>
+      <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/it/referral-linkedin/</guid>
+      <description>&lt;h2 id=&#34;step-1-accedere-a-linkedin&#34;&gt;Step 1: Accedere a LinkedIn&lt;/h2&gt;
+&lt;p&gt;Prima di tutto, assicurati di essere connesso al tuo account LinkedIn. Vai su &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;www.linkedin.com&lt;/a&gt; e accedi con le tue credenziali.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;image-container&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: Login LinkedIn&#34;&gt;
+  
+&lt;/div&gt; &lt;/p&gt;
+&lt;h2 id=&#34;step-2-accedere-al-profilo-della-persona-che-vuoi-raccomandare&#34;&gt;Step 2: Accedere al profilo della persona che vuoi raccomandare&lt;/h2&gt;
+&lt;p&gt;Nota importante: per lasciare una referenza, dovrai avere un collegamento di 1° grado con la persona che vuoi raccomandare.&lt;/p&gt;
+&lt;p&gt;Per cominciare, sulla barra di ricerca in alto:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;image-container&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Cerca profilo&#34;&gt;
+  
+&lt;/div&gt; &lt;/p&gt;
+&lt;p&gt;Digita il nome della persona che stai cercando, premi invio e clicca sul nome nei risultati di ricerca che appariranno.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="content-wrapper">
+
+    <h1>
+        {{ .Title }}
+    </h1>
+<article class="page projects-list">
+
+    <div class="container">
+        <div class="content">
+            {{ .Content }}
+        </div>
+        <div class="projects-grid">
+            {{ range .Pages.ByDate.Reverse }}
+            {{ partial "project-card.html" . }}
+            {{ end }}
+        </div>
+    </div>
+</article>
+</div>
+{{ end }} 

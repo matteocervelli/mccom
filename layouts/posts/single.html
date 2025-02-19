@@ -1,0 +1,79 @@
+{{ define "main" }}
+<article class="page post">
+    {{ if .Params.featured_image }}
+    <header class="post-hero">
+        <div class="hero-background" style="background-image: url('/{{ .Params.featured_image }}')"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>{{ .Title }}</h1>
+                    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+                    
+                    <div class="post-meta">
+                        <div class="meta-item" data-type="date">
+                            <span class="label">{{ i18n "published" }}</span>
+                            <span class="value">{{ .Date.Format "January 2, 2006" }}</span>
+                        </div>
+                        
+                        {{ if ne .Lastmod .Date }}
+                        <div class="meta-item" data-type="updated">
+                            <span class="label">{{ i18n "updated" }}</span>
+                            <span class="value">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                        </div>
+                        {{ end }}
+
+                        <div class="meta-item" data-type="reading-time">
+                            <span class="label">{{ i18n "readingTime" }}</span>
+                            <span class="value">{{ .ReadingTime }} {{ i18n "minutes" }}</span>
+                        </div>
+                        
+                        <div class="meta-item" data-type="author">
+                            <span class="label">{{ i18n "author" }}</span>
+                            <span class="value">Matteo Cervelli</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    {{ else }}
+    <header>
+        <h1>{{ .Title }}</h1>
+        <div class="meta-posts">
+            Matteo Cervelli — {{ i18n "published" }} {{ .Date.Format "2006/01/02" }} — {{ if ne .Lastmod .Date }} {{ i18n "updated" }} {{ .Lastmod.Format "2006/01/02" }} — {{ end }}{{ .ReadingTime }} {{ i18n "minute-read" }}
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="post-content">
+            {{ .Content }}
+            
+            {{ with .Params.tags }}
+            <div class="post-tags">
+                {{ range . }}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{ if .Params.featured_image }}
+    <div class="container">
+        <div class="post-content">
+            {{ .Content }}
+            
+            {{ with .Params.tags }}
+            <div class="post-tags">
+                {{ range . }}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</article>
+{{ end }} 

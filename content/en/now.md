@@ -15,6 +15,8 @@ _Note: this is a [Now](https://nownownow.com) page._
 
 Updated: 2025-01-18, from my home in Poggibonsi, Tuscany, Italy.
 
+These current projects align with my core [purpose](/purpose-and-values/) of triggering talent to build a more beautiful world. Read more about my [background](/about) to understand how I got here.
+
 ## I help companies grow in a scalable way
 
 I am a business consultant and advisor.

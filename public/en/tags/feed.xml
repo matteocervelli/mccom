@@ -89,6 +89,15 @@
     </item>
     
     <item>
+      <title>Guide</title>
+      <link>http://localhost:1313/en/tags/guide/</link>
+      <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/en/tags/guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Lessons-Learned</title>
       <link>http://localhost:1313/en/tags/lessons-learned/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
@@ -116,6 +125,15 @@
     </item>
     
     <item>
+      <title>Purpose and Vision</title>
+      <link>http://localhost:1313/en/tags/purpose-and-vision/</link>
+      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/tags/purpose-and-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Coaching</title>
       <link>http://localhost:1313/en/tags/coaching/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
@@ -139,15 +157,6 @@
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/en/tags/empathy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Guide</title>
-      <link>http://localhost:1313/en/tags/guide/</link>
-      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/en/tags/guide/</guid>
       <description></description>
     </item>
     

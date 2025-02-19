@@ -12,27 +12,18 @@
             <div class="featured-testimonial-content">
                 <div class="featured-image-container">
                     {{ if .Params.person_image }}
-                        {{ $originalImage := .Params.person_image }}
-                        {{ $fullImage := replace $originalImage "/testimonials/" "/testimonials/full/" }}
-                        {{ $imagePath := printf "static%s" $fullImage }}
-                        {{ if fileExists $imagePath }}
-                            <img src="{{ $fullImage }}" alt="{{ .Params.person_name }}" class="testimonial-image">
-                        {{ else }}
-                            <div class="testimonial-image placeholder">
-                                <i class="fas fa-user"></i>
-                            </div>
-                        {{ end }}
+                    <img src="{{ .Params.person_image }}" alt="{{ .Params.person_name }}" class="testimonial-image">
                     {{ else }}
-                        <div class="testimonial-image placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
+                    <div class="testimonial-image placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
                     {{ end }}
                 </div>
                 <div class="featured-text-content">
                     <div class="featured-header">
                         <p><b>{{ .Params.person_name }}</b> – {{ .Params.person_role }} at {{ .Params.person_company }}</p>
                     </div>
-                    <blockquote><span class="quote-marks">"</span>{{ .Params.featured_quote | markdownify }}<span class="quote-marks">"</span></blockquote>
+                    <blockquote><span class="quote-marks">"</span>{{ .Params.featured_quote }}<span class="quote-marks">"</span></blockquote>
                     <a href="{{ .Permalink }}" class="read-more">{{ i18n "read_more" }}</a>
                 </div>
             </div>

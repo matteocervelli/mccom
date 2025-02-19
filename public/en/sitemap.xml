@@ -3,9 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
+      <loc>http://localhost:1313/en/projects/panhouse-cittareale/</loc>
+      
+        <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/projects/</loc>
+      
+        <lastmod>2025-02-19T10:00:00+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
       <loc>http://localhost:1313/en/categories/</loc>
       
-        <lastmod>2025-02-19T09:38:07+01:00</lastmod>
+        <lastmod>2025-02-19T16:00:00+01:00</lastmod>
       
       
     </url>
@@ -53,7 +69,7 @@
     <url>
       <loc>http://localhost:1313/en/tags/</loc>
       
-        <lastmod>2025-02-17T15:34:26+01:00</lastmod>
+        <lastmod>2025-02-19T16:00:00+01:00</lastmod>
       
       
     </url>
@@ -117,7 +133,7 @@
     <url>
       <loc>http://localhost:1313/en/categories/work/</loc>
       
-        <lastmod>2025-02-19T09:38:07+01:00</lastmod>
+        <lastmod>2025-02-19T16:00:00+01:00</lastmod>
       
       
     </url>
@@ -211,6 +227,30 @@
     </url>
   
     <url>
+      <loc>http://localhost:1313/en/tags/guide/</loc>
+      
+        <lastmod>2025-02-19T16:00:00+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/linkedin-referral/</loc>
+      
+        <lastmod>2025-02-19T16:00:00+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/categories/post/</loc>
+      
+        <lastmod>2025-02-19T16:00:00+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
       <loc>http://localhost:1313/en/find-your-villain-learn-your-mission/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
@@ -246,6 +286,22 @@
       <loc>http://localhost:1313/en/posts/</loc>
       
         <lastmod>2025-01-21T11:44:42+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/purpose-and-values/</loc>
+      
+        <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/purpose-and-vision/</loc>
+      
+        <lastmod>2024-03-21T00:00:00+00:00</lastmod>
       
       
     </url>
@@ -419,14 +475,6 @@
     </url>
   
     <url>
-      <loc>http://localhost:1313/en/tags/guide/</loc>
-      
-        <lastmod>2025-02-17T15:34:26+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
       <loc>http://localhost:1313/en/humility-will-for-great-leadership/</loc>
       
         <lastmod>2025-01-21T11:44:42+01:00</lastmod>
@@ -446,6 +494,14 @@
       <loc>http://localhost:1313/en/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/categories/projects/</loc>
+      
+        <lastmod>2024-04-10T00:00:00+00:00</lastmod>
       
       
     </url>

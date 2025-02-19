@@ -1,0 +1,204 @@
+{{ define "main" }} 
+<article class="page project">
+    <header class="project-hero">
+        {{ with .Params.featured_image }}
+        <div class="hero-background" style="background-image: url('{{ . }}')"></div>
+        {{ end }}
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>{{ .Title }}</h1>
+                    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+                        
+                    <div class="project-meta">
+                        {{ with .Params.year }}
+                        <div class="meta-item" data-type="year">
+                            <span class="label">{{ i18n "year" }}</span>
+                            <span class="value">{{ . }}</span>
+                        </div>
+                        {{ end }}   
+
+                        {{ with .Params.client }}
+                        <div class="meta-item" data-type="client">
+                            <span class="label">{{ i18n "client" }}</span>
+                            <span class="value">{{ . }}</span>
+                        </div>
+                        {{ end }}
+
+                        {{ with .Params.role }}
+                        <div class="meta-item" data-type="role">
+                            <span class="label">{{ i18n "role" }}</span>
+                            <span class="value">{{ . }}</span>
+                        </div>
+                        {{ end }}
+                    </div>
+
+                    {{ with .Params.keywords }}
+                    <div class="tags">
+                        {{ range . }}
+                        <span class="tag">#{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="project-content">
+            <div class="project-main">
+                {{ .Content }}
+            </div>
+        </div>
+
+        <div class="project-info">
+            <h2>{{ i18n "project_details" }}</h2>
+            <div class="info-sections">
+                {{ with .Params.results }}
+                <div class="info-section">
+                    <h3>{{ i18n "key_results" }}</h3>
+                    <ul class="results-list">
+                        {{ range . }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+
+                {{ with .Params.methods }}
+                <div class="info-section">
+                    <h3>{{ i18n "methods" }}</h3>
+                    <ul class="methods-list">
+                        {{ range . }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+
+                {{ with .Params.software }}
+                <div class="info-section">
+                    <h3>{{ i18n "tools" }}</h3>
+                    <ul class="software-list">
+                        {{ range . }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
+        {{ with .Params.gallery }}
+        <div class="project-gallery">
+            <h2>{{ i18n "gallery" }}</h2>
+            <div class="gallery-grid">
+                {{ range $index, $image := . }}
+                <div class="gallery-item lightbox-trigger" data-index="{{ $index }}">
+                    <img src="{{ . }}" 
+                        alt="{{ $.Title }}" 
+                        loading="lazy"
+                        data-caption="{{ $.Title }}"
+                        data-action="open"
+                        data-index="{{ $index }}">
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- Lightbox Modal -->
+        <div id="gallery-lightbox" class="lightbox" onclick="closeGalleryLightbox()" data-gallery='{{ .Params.gallery | jsonify }}'>
+            <button class="lightbox-close" onclick="closeGalleryLightbox()">&times;</button>
+            <button class="lightbox-prev" onclick="changeGalleryImage(-1)">&lt;</button>
+            <button class="lightbox-next" onclick="changeGalleryImage(1)">&gt;</button>
+            <div class="lightbox-content">
+                <img src="" alt="">
+                <div class="lightbox-info">
+                    <h3 class="lightbox-title"></h3>
+                    <p class="lightbox-description"></p>
+                </div>
+                <div class="lightbox-thumbnails">
+                    {{ range $index, $image := .Params.gallery }}
+                    <div class="thumbnail" data-action="jump" data-index="{{ $index }}">
+                        <img src="{{ $image }}" alt="{{ $.Title }}" loading="lazy">
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+
+        {{ $currentPage := . }}
+        {{ $relatedCases := slice }}
+        
+        {{ range where .Site.RegularPages "Section" "projects" }}
+            {{ if ne . $currentPage }}
+                {{ $score := 0 }}
+                
+                {{/* Check keywords */}}
+                {{ $commonKeywords := intersect $currentPage.Params.keywords .Params.keywords | len }}
+                {{ $score = add $score (mul $commonKeywords 2) }}
+                
+                {{/* Check methods */}}
+                {{ $commonMethods := intersect $currentPage.Params.methods .Params.methods | len }}
+                {{ $score = add $score (mul $commonMethods 3) }}
+                
+                {{/* Check software */}}
+                {{ $commonSoftware := intersect $currentPage.Params.software .Params.software | len }}
+                {{ $score = add $score (mul $commonSoftware 2) }}
+                
+                {{/* Check industry if present */}}
+                {{ if and $currentPage.Params.industry .Params.industry }}
+                    {{ if eq $currentPage.Params.industry .Params.industry }}
+                        {{ $score = add $score 4 }}
+                    {{ end }}
+                {{ end }}
+                
+                {{ if gt $score 0 }}
+                    {{ $relatedCases = $relatedCases | append (dict "page" . "score" $score) }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        
+        {{ $relatedCases = sort $relatedCases "score" "desc" }}
+        {{ $relatedCases = first 3 $relatedCases }}
+        
+        {{ if $relatedCases }}
+        <div class="related-projects">
+            <h2>{{ i18n "related_cases" }}</h2>
+            <div class="related-projects-grid">
+                {{ range $relatedCases }}
+                {{ with .page }}
+                <article class="related-project-card">
+                    {{ with .Params.featured_image }}
+                    <div class="related-project-image">
+                        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+                    </div>
+                    {{ end }}
+                    <div class="related-project-content">
+                        <h3>{{ .Title }}</h3>
+                        <p class="related-project-meta">
+                            {{ with .Params.client }}<span class="client">{{ . }}</span>{{ end }}
+                            {{ with .Params.year }}<span class="year">{{ . }}</span>{{ end }}
+                        </p>
+                        <p class="description">{{ .Description }}</p>
+                        {{ with .Params.keywords }}
+                        
+                        {{ end }}
+                        <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "readMore" | default "Read More" }}</a>
+                    </div>
+                </article>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</article>
+
+{{ $lightboxJs := resources.Get "js/gallery-lightbox.js" }}
+{{ $lightboxJs = $lightboxJs | resources.Minify }}
+<script src="{{ $lightboxJs.RelPermalink }}"></script>
+{{ end }} 

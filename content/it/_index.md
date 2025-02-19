@@ -19,10 +19,11 @@ featured_image: ""
             <img src="/images/profile.jpg" alt="Matteo Cervelli">
         </div>
         <div class="intro-text">
+            <p><em>Innesca talento, costruisci bellezza, scala l'impatto.</em></p>
             <p>Sono un Ingegnere per la Scalabilità delle Imprese.</p>
             <p>Il mio scopo è innescare le persone a costruire un mondo più bello, insieme.</p>
             <p>Opero come Advisor e Consulente. Aiuto imprenditori e leader a crescere il proprio business, nella strategia, gestione, vendite, implementando i principi della scalabilità.</p>
-            <p>Se vuoi sapere di più sulla mia storia come imprenditore, CEO e padre, <a href="/it/about">leggi qui</a>.</p>
+            <p>Se vuoi sapere di più sulla mia storia, scopo e visione, <a href="/it/about">leggi qui</a>.</p>
         </div>
     </div>
 </article>

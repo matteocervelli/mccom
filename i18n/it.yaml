@@ -1,5 +1,7 @@
 and:
   other: "e"
+mantra:
+  other: "Innesca talenti, costruisci bellezza, scala l'impatto."
 here:
   other: "qui"
 other:
@@ -50,10 +52,9 @@ published:
   other: "pubblicato il"
 updated:
   other: "aggiornato il"
-minute:
-  other: "minuto di lettura"
 minutes:
-  other: "minuti di lettura"
+  one: "minuto"
+  other: "minuti"
 January:
   other: "Gennaio"
 February:
@@ -94,8 +95,10 @@ featuredPosts:
 menuPosts:
   other: "Articoli"
 readingTime:
-  one: "Un minuto di lettura"
-  other: "{{ .Count }} minuti di lettura"
+  other: "Tempo di lettura"
+minute-read:
+  one: "minuto di lettura"
+  other: "minuti di lettura"
 articlesAboutTopic:
   one: "{{ .Count }} articolo su questo argomento:"
   other: "{{ .Count }} articoli su questo argomento:"
@@ -119,8 +122,6 @@ industry:
   other: "Settore"
 all_industries:
   other: "Tutti i Settori"
-role:
-  other: "Ruolo"
 all_roles:
   other: "Tutti i Ruoli"
 department:
@@ -181,3 +182,32 @@ rerouting_message:
   other: "Dovresti essere reindirizzato in un attimo, altrimenti"
 click_here:
   other: "clicca qui"
+related_projects: "Casi Studio Correlati"
+role:
+  other: "Ruolo"
+client:
+  other: "Cliente"
+year:
+  other: "Anno"
+author:
+  other: "Autore"
+view_all_project_projects:
+  other: "Vedi Tutti i Casi Studio"
+project-projects:
+  other: "casi-studio"
+gallery:
+  other: "Galleria"
+tools:
+  other: "Strumenti"
+methods:
+  other: "Metodi"
+key_results:
+  other: "Risultati"
+project_details:
+  other: "Dettagli del Caso Studio"
+projects:
+  other: "progetti"
+view_all_projects:
+  other: "Vedi Tutti i Progetti"
+Projects:
+  other: "Progetti"

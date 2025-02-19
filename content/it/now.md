@@ -15,6 +15,8 @@ featured_image: ""
 
 Aggiornato: 2025-01-18, dalla mia casa a Poggibonsi, Toscana, Italia.
 
+Questi progetti attuali si allineano con il mio [scopo](/scopo-e-valori/) di innescare talenti per costruire un mondo più bello. Leggi di più sul mio [background](/about) per capire come sono arrivato qui.
+
 ## Aiuto le aziende a crescere in modo scalabile
 
 Sono un consulente e advisor per le imprese.

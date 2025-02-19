@@ -4,14 +4,42 @@
 {{ end }}
 
 {{ define "main" }}
-  <div class="content-wrapper">
-    <article class="flex-l flex-wrap justify-between center">
-      <h1>
-        {{ .Title }}
-      </h1>
-      <div>
-        {{- .Content -}}
-      </div>
-    </article>
-  </div>
+<article class="page">
+    <header class="page-header">
+        <div class="container">
+            <h1>{{ .Title }}</h1>
+            {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+        </div>
+    </header>
+
+    <div class="container">
+        {{ if eq .Section "work" }}
+            {{ if (index site.Menus .Site.Language.Lang).work }}
+            <nav class="section-nav">
+                <ul>
+                    {{ range (index site.Menus .Site.Language.Lang).work }}
+                    <li><a href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+            {{ end }}
+        {{ end }}
+
+        {{ if eq .Section "about" }}
+            {{ if (index site.Menus .Site.Language.Lang).about }}
+            <nav class="section-nav">
+                <ul>
+                    {{ range (index site.Menus .Site.Language.Lang).about }}
+                    <li><a href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+            {{ end }}
+        {{ end }}
+
+        <div class="page-content">
+            {{ .Content }}
+        </div>
+    </div>
+</article>
 {{ end }}

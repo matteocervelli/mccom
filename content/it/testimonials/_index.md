@@ -8,7 +8,7 @@ date: 2024-03-19T10:00:00+01:00
 lastmod: 2024-03-19T10:00:00+01:00
 draft: false
 tags: []
-categories: ['testimonials', 'page']
+categories: ['page', 'work']
 featured_image: ""
 ---
 

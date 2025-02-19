@@ -1,0 +1,27 @@
+{{ $featured := where (where .Site.RegularPages "Section" "projects") "Params.featured" true }}
+
+<div class="featured-projects-container">
+    <div class="featured-projects-grid">
+        {{ range $featured }}
+        <article class="project-card">
+            {{ with .Params.featured_image }}
+            <div class="project-image">
+                <img src="{{ . }}" alt="{{ $.Page.Title }}" loading="lazy">
+            </div>
+            {{ end }}
+            <div class="project-content">
+                <h2>{{ .Title }}</h2>
+                <p class="project-meta">
+                    {{ with .Params.client }}<span class="client">{{ . }}</span>{{ end }}
+                    {{ with .Params.year }}<span class="year">{{ . }}</span>{{ end }}
+                </p>
+                <p class="description">{{ .Description }}</p>
+                
+                <a href="/{{ .Site.Language.Lang }}/projects/{{ .Slug }}" class="read-more">{{ i18n "readMore" }}</a>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+    
+    <a href="/{{ .Site.Language.Lang }}/projects" class="view-all">{{ i18n "view_all_projects" }} →</a>
+</div> 

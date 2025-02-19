@@ -4,20 +4,11 @@
         <div class="testimonial-single">
             <div class="testimonial-single-header">
                 {{ if .Params.person_image }}
-                    {{ $originalImage := .Params.person_image }}
-                    {{ $fullImage := replace $originalImage "/testimonials/" "/testimonials/full/" }}
-                    {{ $imagePath := printf "static%s" $fullImage }}
-                    {{ if fileExists $imagePath }}
-                        <img src="{{ $fullImage }}" alt="{{ .Params.person_name }}" class="testimonial-single-image">
-                    {{ else }}
-                        <div class="testimonial-single-image placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    {{ end }}
+                <img src="{{ .Params.person_image }}" alt="{{ .Params.person_name }}" class="testimonial-single-image">
                 {{ else }}
-                    <div class="testimonial-single-image placeholder">
-                        <i class="fas fa-user"></i>
-                    </div>
+                <div class="testimonial-single-image placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
                 {{ end }}
                 
                 <div class="testimonial-single-meta">

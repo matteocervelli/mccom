@@ -11,7 +11,7 @@ featured_image: ""
 description: "That's why you need a growth engineer to get your business where it deserves to be."
 slug: "business-scalability-engineer"
 ---
-## Here is why you need a Business Scalability Engineer to grow your business the way it deserves.
+## Here is why you need a Business Scalability Engineer to grow your business the way it deserves
 
 Do you know when a company seems blocked, growth slows down, problems multiply and you don't know where to start to put things back in order?
 
@@ -48,11 +48,15 @@ My specializations include a mix of transversal and vertical skills to address t
 * **Management control:** measure and monitor results to make data-driven decisions.
 * **Innovation:** introduce new business models and processes to improve competitiveness.
 * **Delegation and responsibility:** build widespread leadership and autonomous teams.
+
 ### Why choose me
+
 My experience as **CEO of medium-large companies and as an investor and entrepreneur in a family business**, has given me a comprehensive and practical view of the challenges facing growing businesses.
 
 I don't just bring solutions: **I build with you the path to realize them, developing the leadership and potential of your team to realize your business vision**.
+
 ### **Act now**
+
 Stop chasing a thousand problems without tackling the right one.
 
 Eliminate real obstacles to your company's growth.
