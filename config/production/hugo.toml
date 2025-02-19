@@ -1,7 +1,7 @@
 baseURL = "https://matteocervelli.com/"
 
 [params]
-    custom_css = ["css/styles.css"]
+    custom_css = []
     author = "Matteo Cervelli"
     dateFormat = "2 January 2006"
     languageMenuAnchor = "left"
