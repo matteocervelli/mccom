@@ -13,7 +13,7 @@ featured_image: ""
 ---
 ## In short
 
-I'm Matteo Cervelli. I am [Business Scalability Engineer](/work/business-scalability-engineer). I act as a [Consultant and Advisor](/work). Previously I managed [Urania Group](https://www.urania.group) as Co-CEO.
+I'm Matteo Cervelli. I am [Business Scalability Engineer](/business-scalability-engineer). I act as a [Consultant and Advisor](/work). Previously I managed [Urania Group](https://www.urania.group) as Co-CEO.
 
 Today I help entrepreneurs and leaders to grow their business, in strategy, management, sales, implementing the principles of scalability.
 

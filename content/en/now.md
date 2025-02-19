@@ -27,7 +27,7 @@ Yet I believe in the power of ecosystems and the need to do holistic and fractal
 
 My working model is based on 3 phases: assessment, sprint project (with implementation), and follow-up with advisory.
 
-To hire me and get in touch, visit the [Work](https://www.matteocervelli.com/en/work/) page.
+To hire me and get in touch, visit the [Work](/work) page.
 
 ## Family Man
 

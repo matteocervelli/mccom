@@ -105,12 +105,6 @@ Along with training, we can activate support and coaching paths.
 
 {{< featured-testimonials >}}
 
-## Case studies
-
-A featured case study
-
-[Read more case studies](/en/projects)
-
 ## Book now a free session to talk about your idea
 
 <!-- Calendly inline widget begin -->

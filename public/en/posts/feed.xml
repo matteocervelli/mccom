@@ -1,26 +1,81 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Matteo Cervelli</title><link>https://matteocervelli.com/en/posts/</link><description>Recent content in Posts on Matteo Cervelli</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Mon, 17 Feb 2025 15:34:26 +0100</lastBuildDate><atom:link href="https://matteocervelli.com/en/posts/feed.xml" rel="self" type="application/rss"/><item><title>The Purple Cow</title><link>https://matteocervelli.com/en/the-purple-cow/</link><pubDate>Sun, 26 Jan 2025 09:52:22 +0100</pubDate><guid>https://matteocervelli.com/en/the-purple-cow/</guid><description>&lt;p>&lt;em>This blog post collects my takeaway from the book: &lt;a href="https://amzn.to/3E4vBx9">The Purple Cow by Seth Godin&lt;/a>&lt;/em>&lt;/p>
-&lt;p>There is nothing but an ingredient to be successful: being a Purple Cow.&lt;/p>
-&lt;p>Wait, what&amp;rsquo;s a Purple Cow?&lt;/p>
-&lt;p>The Purple Cow is a concept defined by Seth Godin to indicate the extraordinary that allows a business to stand out from the mass and build success. It&amp;rsquo;s not just an advantage.&lt;/p>
-&lt;p>It&amp;rsquo;s the necessary choice.&lt;/p>
-&lt;p>And, unfortunately, it&amp;rsquo;s not enough.&lt;/p></description></item><item><title>The Tightrope Walker Manager: Mastering Leadership's Balancing Act</title><link>https://matteocervelli.com/en/tightrope-walker-manager/</link><pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate><guid>https://matteocervelli.com/en/tightrope-walker-manager/</guid><description>&lt;p>It takes 20 years to build a new manager. 20 years where those responsible for delegating constantly oscillate on the edge of anxiety.&lt;/p>
-&lt;h2 id="the-risk-behind-delegation">The risk behind delegation&lt;/h2>
-&lt;p>Like tightrope walkers, managers swing between the fear of being surpassed by people who might have something more than them and the risk that their team will lose drive and, ultimately, competitiveness by relying on inadequate people. Leaders who take the path of delegation risk falling painfully. But those who make it and get to the end receive applause from the audience—the same audience that lives in constant expectation of the fatal misstep.&lt;/p></description></item><item><title>Find Your Villain, Learn Your Mission</title><link>https://matteocervelli.com/en/find-your-villain-learn-your-mission/</link><pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate><guid>https://matteocervelli.com/en/find-your-villain-learn-your-mission/</guid><description>&lt;p>Everyone has a villain. I got acquainted with mine five years ago in a meeting room.&lt;/p>
-&lt;p>It was a hot summer day, and I was presenting a quarter update about a company we recently acquired. We couldn’t see the light at the end of the tunnel, but I was showing a PowerPoint filled with data and insights. Suddenly, Mr. Bowser started giving his own vision of the world, not caring about the information I provided. It was like all the job I did with my team was not real, while it was succumbing under a machine gun that fires repeated shots full of convictions taken from who knows what life experience.&lt;/p></description></item><item><title>Empathy 101</title><link>https://matteocervelli.com/en/empathy/</link><pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><guid>https://matteocervelli.com/en/empathy/</guid><description>&lt;p>&lt;em>Empathy&lt;/em> is the &lt;em>capacity to put oneself in the shoes of others&lt;/em>.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;p>In other words, to understand how they view their reality and how they feel about things.&lt;/p>
-&lt;blockquote>
-&lt;p>Empathy is &lt;strong>feeling with people&lt;/strong>
-&lt;br>— Dr. Brené Brown&lt;/p>
-&lt;/blockquote>
-&lt;p>@https://www.youtube.com/watch?v=1Evwgu369Jw&lt;/p>
-&lt;p>Empathy is a trainable skill. Here is a guide to learn how to be a person whom everyone talk to with joy.&lt;/p>
-&lt;h2 id="empathy-classification">Empathy classification&lt;/h2>
-&lt;p>&lt;a href="https://www.verywellmind.com/what-is-empathy-2795562">According to Kendra Cherry&lt;/a>, there are three kinds of empathy:&lt;/p></description></item><item><title>Humility + Will for Great Leadership</title><link>https://matteocervelli.com/en/humility-will-for-great-leadership/</link><pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate><guid>https://matteocervelli.com/en/humility-will-for-great-leadership/</guid><description>&lt;p>Leaders of great organizations focus all efforts on finding their successors.&lt;/p>
-&lt;p>The most successful bosses don’t micromanage. Instead, they help people to have greater responsibility. And to make this, the leader’s role change from a problem solver to a people enabler.&lt;/p>
-&lt;p>On the other hand, micro-management has bad side effects:&lt;/p>
-&lt;ul>
-&lt;li>Bureaucracy&lt;/li>
-&lt;li>Less time spent on long term success&lt;/li>
-&lt;li>The company don’t resist over the actual leader&lt;/li>
-&lt;/ul>
-&lt;p>Here is what great leaders do, instead.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Matteo Cervelli</title>
+    <link>https://matteocervelli.com/en/posts/</link>
+    <description>Recent content in Posts on Matteo Cervelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 21 Mar 2024 10:00:00 +0100</lastBuildDate><atom:link href="https://matteocervelli.com/en/posts/feed.xml" rel="self" type="application/rss" />
+    <item>
+      <title>The Purple Cow</title>
+      <link>https://matteocervelli.com/en/the-purple-cow/</link>
+      <pubDate>Sun, 26 Jan 2025 09:52:22 +0100</pubDate>
+      
+      <guid>https://matteocervelli.com/en/the-purple-cow/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This blog post collects my takeaway from the book: &lt;a href=&#34;https://amzn.to/3E4vBx9&#34;&gt;The Purple Cow by Seth Godin&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There is nothing but an ingredient to be successful: being a Purple Cow.&lt;/p&gt;
+&lt;p&gt;Wait, what&amp;rsquo;s a Purple Cow?&lt;/p&gt;
+&lt;p&gt;The Purple Cow is a concept defined by Seth Godin to indicate the extraordinary that allows a business to stand out from the mass and build success. It&amp;rsquo;s not just an advantage.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s the necessary choice.&lt;/p&gt;
+&lt;p&gt;And, unfortunately, it&amp;rsquo;s not enough.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Tightrope Walker Manager: Mastering Leadership&#39;s Balancing Act</title>
+      <link>https://matteocervelli.com/en/tightrope-walker-manager/</link>
+      <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://matteocervelli.com/en/tightrope-walker-manager/</guid>
+      <description>&lt;p&gt;It takes 20 years to build a new manager. 20 years where those responsible for delegating constantly oscillate on the edge of anxiety.&lt;/p&gt;
+&lt;h2 id=&#34;the-risk-behind-delegation&#34;&gt;The risk behind delegation&lt;/h2&gt;
+&lt;p&gt;Like tightrope walkers, managers swing between the fear of being surpassed by people who might have something more than them and the risk that their team will lose drive and, ultimately, competitiveness by relying on inadequate people. Leaders who take the path of delegation risk falling painfully. But those who make it and get to the end receive applause from the audience—the same audience that lives in constant expectation of the fatal misstep.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Find Your Villain, Learn Your Mission</title>
+      <link>https://matteocervelli.com/en/find-your-villain-learn-your-mission/</link>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
+      
+      <guid>https://matteocervelli.com/en/find-your-villain-learn-your-mission/</guid>
+      <description>&lt;p&gt;Everyone has a villain. I got acquainted with mine five years ago in a meeting room.&lt;/p&gt;
+&lt;p&gt;It was a hot summer day, and I was presenting a quarter update about a company we recently acquired. We couldn’t see the light at the end of the tunnel, but I was showing a PowerPoint filled with data and insights. Suddenly, Mr. Bowser started giving his own vision of the world, not caring about the information I provided. It was like all the job I did with my team was not real, while it was succumbing under a machine gun that fires repeated shots full of convictions taken from who knows what life experience.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Empathy 101</title>
+      <link>https://matteocervelli.com/en/empathy/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://matteocervelli.com/en/empathy/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Empathy&lt;/em&gt; is the &lt;em&gt;capacity to put oneself in the shoes of others&lt;/em&gt;.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;In other words, to understand how they view their reality and how they feel about things.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Empathy is &lt;strong&gt;feeling with people&lt;/strong&gt;
+&lt;br&gt;— Dr. Brené Brown&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;@https://www.youtube.com/watch?v=1Evwgu369Jw&lt;/p&gt;
+&lt;p&gt;Empathy is a trainable skill. Here is a guide to learn how to be a person whom everyone talk to with joy.&lt;/p&gt;
+&lt;h2 id=&#34;empathy-classification&#34;&gt;Empathy classification&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.verywellmind.com/what-is-empathy-2795562&#34;&gt;According to Kendra Cherry&lt;/a&gt;, there are three kinds of empathy:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Humility &#43; Will for Great Leadership</title>
+      <link>https://matteocervelli.com/en/humility-will-for-great-leadership/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://matteocervelli.com/en/humility-will-for-great-leadership/</guid>
+      <description>&lt;p&gt;Leaders of great organizations focus all efforts on finding their successors.&lt;/p&gt;
+&lt;p&gt;The most successful bosses don’t micromanage. Instead, they help people to have greater responsibility. And to make this, the leader’s role change from a problem solver to a people enabler.&lt;/p&gt;
+&lt;p&gt;On the other hand, micro-management has bad side effects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bureaucracy&lt;/li&gt;
+&lt;li&gt;Less time spent on long term success&lt;/li&gt;
+&lt;li&gt;The company don’t resist over the actual leader&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is what great leaders do, instead.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss> 

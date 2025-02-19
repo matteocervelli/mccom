@@ -1,2 +1,71 @@
-<!doctype html><html><head><title>https://matteocervelli.com/en/tags/scalability/</title>
-<link rel=canonical href=https://matteocervelli.com/en/tags/scalability/><meta name=robots content="noindex"><meta charset=utf-8><noscript><meta http-equiv=refresh content="0; url=https://matteocervelli.com/en/tags/scalability/"></noscript><script>(function(){if(console.log("Script iniziato"),console.log("Path attuale:",window.location.pathname),window.location.pathname!=="/"){console.log("Non nella root, redirect a:","https://matteocervelli.com/en/tags/scalability/"),window.location.replace("https://matteocervelli.com/en/tags/scalability/");return}var t=function(){var e,t,n=window.navigator,s=["language","browserLanguage","systemLanguage","userLanguage"];if(console.log("Navigator languages:",n.languages),Array.isArray(n.languages))for(t=0;t<n.languages.length;t++)if(e=n.languages[t],e&&e.length)return console.log("Trovata lingua da array:",e),e;for(t=0;t<s.length;t++)if(e=n[s[t]],e&&e.length)return console.log("Trovata lingua da properties:",e),e;return console.log("Nessuna lingua trovata, uso default: en"),"en"},e=t();console.log("Lingua preferita rilevata:",e),e.indexOf("it")!==-1?(console.log("Redirezione alla versione italiana"),window.location.replace("/it/")):(console.log("Redirezione alla versione inglese"),window.location.replace("/en/"))})()</script></head><body><h1>Rerouting</h1><p>You should be rerouted in a jiff, if not, <a href=https://matteocervelli.com/en/tags/scalability/>click here</a>.</p></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>https://matteocervelli.com/en/tags/scalability/</title>
+    <link rel="canonical" href="https://matteocervelli.com/en/tags/scalability/"/>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8"/>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://matteocervelli.com/en/tags/scalability/"/>
+    </noscript>
+    <script>
+      ;(function () {
+        console.log('Script iniziato');
+        console.log('Path attuale:', window.location.pathname);
+        
+        
+        
+        if (window.location.pathname !== '/') {
+          console.log('Non nella root, redirect a:', 'https:\/\/matteocervelli.com\/en\/tags\/scalability\/');
+          window.location.replace('https:\/\/matteocervelli.com\/en\/tags\/scalability\/')
+          return
+        }
+
+        var getFirstBrowserLanguage = function () {
+          var nav = window.navigator,
+          browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
+          i,
+          language
+
+          console.log('Navigator languages:', nav.languages);
+
+          if (Array.isArray(nav.languages)) {
+            for (i = 0; i < nav.languages.length; i++) {
+              language = nav.languages[i]
+              if (language && language.length) {
+                console.log('Trovata lingua da array:', language);
+                return language
+              }
+            }
+          }
+
+          
+          for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
+            language = nav[browserLanguagePropertyKeys[i]]
+            if (language && language.length) {
+              console.log('Trovata lingua da properties:', language);
+              return language
+            }
+          }
+          console.log('Nessuna lingua trovata, uso default: en');
+          return 'en'
+        }
+
+        var preferLang = getFirstBrowserLanguage()
+        console.log('Lingua preferita rilevata:', preferLang);
+        
+        if (preferLang.indexOf('it') !== -1) {
+          console.log('Redirezione alla versione italiana');
+          window.location.replace('/it/')
+        } else {
+          console.log('Redirezione alla versione inglese');
+          window.location.replace('/en/')
+        }
+      })()
+    </script>
+</head>
+<body>
+<h1>Rerouting</h1>
+<p>You should be rerouted in a jiff, if not, <a href="https://matteocervelli.com/en/tags/scalability/">click here</a>.</p>
+</body>
+</html>

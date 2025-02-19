@@ -80,3 +80,25 @@ enableGitInfo = true
     [module.hugoVersion]
         extended = true
         min = "0.55.0"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss+xml"
+    baseName = "feed"
+    isPlainText = true
+    protocol = "https://"
+    noUgly = true
+
+[mediaTypes]
+  [mediaTypes."application/rss+xml"]
+    suffixes = ["xml"]
+
+[services]
+  [services.rss]
+    limit = 20

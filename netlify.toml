@@ -26,43 +26,22 @@
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
 
-# Force all variants to HTTPS non-WWW with language preference
-[[redirects]]
-  from = "http://www.matteocervelli.com/*"
-  to = "https://matteocervelli.com/it/:splat"
-  status = 301
-  conditions = {Language = ["it-IT", "it"]}
-  force = true
-
+# Force WWW and HTTP to HTTPS non-WWW
 [[redirects]]
   from = "https://www.matteocervelli.com/*"
-  to = "https://matteocervelli.com/it/:splat"
+  to = "https://matteocervelli.com/:splat"
   status = 301
-  conditions = {Language = ["it-IT", "it"]}
-  force = true
-
-[[redirects]]
-  from = "http://matteocervelli.com/*"
-  to = "https://matteocervelli.com/it/:splat"
-  status = 301
-  conditions = {Language = ["it-IT", "it"]}
   force = true
 
 [[redirects]]
   from = "http://www.matteocervelli.com/*"
-  to = "https://matteocervelli.com/en/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.matteocervelli.com/*"
-  to = "https://matteocervelli.com/en/:splat"
+  to = "https://matteocervelli.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "http://matteocervelli.com/*"
-  to = "https://matteocervelli.com/en/:splat"
+  to = "https://matteocervelli.com/:splat"
   status = 301
   force = true
 
@@ -147,4 +126,28 @@
   from = "/*"
   to = "/en/:splat"
   status = 302
+  force = true
+
+[[redirects]]
+  from = "/en/feed"
+  to = "/en/feed.xml"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/en/feed/"
+  to = "/en/feed.xml"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/it/feed"
+  to = "/it/feed.xml"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/it/feed/"
+  to = "/it/feed.xml"
+  status = 200
   force = true

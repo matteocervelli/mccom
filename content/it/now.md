@@ -27,7 +27,7 @@ Molti dei miei amici imprenditori hanno notato che sono passato dall'altra parte
 
 Eppure io credo nella forza degli ecosistemi e nella necessita di fare un lavoro d'insieme, olistico e frattale, per far crescere il sistema paese.
 
-Per assumermi ed entrare in contatto con me, visita la pagina [Lavoro](https://www.matteocervelli.com/it/work/).
+Per assumermi ed entrare in contatto con me, visita la pagina [Lavoro](/work).
 
 ## Uomo di famiglia
 

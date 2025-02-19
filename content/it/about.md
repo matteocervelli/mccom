@@ -13,7 +13,7 @@ featured_image: ""
 ---
 ## In breve
 
-Sono Matteo Cervelli. Sono un [Ingegnere per la Scalabilità delle Imprese](/work/business-scalability-engineer). [Agisco come Consulente e Advisor](/work). In precedenza ho gestito come Co-CEO [Urania Group](https://urania.group).
+Sono Matteo Cervelli. Sono un [Ingegnere per la Scalabilità delle Imprese](/business-scalability-engineer). [Agisco come Consulente e Advisor](/work). In precedenza ho gestito come Co-CEO [Urania Group](https://urania.group).
 
 Oggi aiuto imprenditori e leader a crescere il proprio business, nella strategia, gestione, vendite, implementando i principi della scalabilità.
 

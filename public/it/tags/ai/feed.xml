@@ -1,5 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ai on Matteo Cervelli</title><link>https://matteocervelli.com/it/tags/ai/</link><description>Recent content in Ai on Matteo Cervelli</description><generator>Hugo</generator><language>it-IT</language><lastBuildDate>Sat, 15 Feb 2025 19:24:29 +0100</lastBuildDate><atom:link href="https://matteocervelli.com/it/tags/ai/feed.xml" rel="self" type="application/rss"/><item><title>Uso dell'AI</title><link>https://matteocervelli.com/it/ai/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><guid>https://matteocervelli.com/it/ai/</guid><description>&lt;p>Aggiornamento del 15 febbraio 2025.&lt;/p>
-&lt;hr>
-&lt;p>I LLM sono uno strumento che recentemente sta prendendo molto spazio nel mondo, e anche in come io approccio il mio lavoro.&lt;/p>
-&lt;p>Sebbene non siano infallibili, l&amp;rsquo;utilizzo di questi strumenti mi ha permesso di potenziare le mie capacità di realizzazione di contenuti e anche per scrivere codice.&lt;/p>
-&lt;p>Ogni contenuto che vedete prodotto sul sito è stato da me scritto, originariamente, in almeno una delle lingue che supporto, cioè italiano e inglese. Per la traduzione spesso mi affido a una prima bozza autotradotta. Può capitare quindi che una delle due lingue presenti forme verbali generate da un LLM che non ho riscritto totalmente, soprattutto negli articoli più vecchi, precedenti a 15 febbraio 2025, data in cui ho pubblicato la nuova versione del sito su Netlify.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on Matteo Cervelli</title>
+    <link>https://matteocervelli.com/it/tags/ai/</link>
+    <description>Recent content in Ai on Matteo Cervelli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-IT</language>
+    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://matteocervelli.com/it/tags/ai/feed.xml" rel="self" type="application/rss" />
+    <item>
+      <title>Uso dell&#39;AI</title>
+      <link>https://matteocervelli.com/it/ai/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://matteocervelli.com/it/ai/</guid>
+      <description>&lt;p&gt;Aggiornamento del 15 febbraio 2025.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I LLM sono uno strumento che recentemente sta prendendo molto spazio nel mondo, e anche in come io approccio il mio lavoro.&lt;/p&gt;
+&lt;p&gt;Sebbene non siano infallibili, l&amp;rsquo;utilizzo di questi strumenti mi ha permesso di potenziare le mie capacità di realizzazione di contenuti e anche per scrivere codice.&lt;/p&gt;
+&lt;p&gt;Ogni contenuto che vedete prodotto sul sito è stato da me scritto, originariamente, in almeno una delle lingue che supporto, cioè italiano e inglese. Per la traduzione spesso mi affido a una prima bozza autotradotta. Può capitare quindi che una delle due lingue presenti forme verbali generate da un LLM che non ho riscritto totalmente, soprattutto negli articoli più vecchi, precedenti a 15 febbraio 2025, data in cui ho pubblicato la nuova versione del sito su Netlify.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss> 

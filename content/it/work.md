@@ -105,12 +105,6 @@ Insieme alla formazione, possiamo attivare percorsi di supporto e coaching.
 
 {{< featured-testimonials >}}
 
-## Case studies
-
-Un case study featured
-
-[Leggi altri case study](/it/projects)
-
 ## Prenota ora una sessione gratuita per parlarmi della tua idea
 
 <!-- Calendly inline widget begin -->
