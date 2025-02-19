@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work on Matteo Cervelli</title>
-    <link>https://matteocervelli.com/it/categories/work/</link>
+    <link>http://localhost:1313/it/categories/work/</link>
     <description>Recent content in Work on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 18 Jan 2025 14:52:50 +0100</lastBuildDate><atom:link href="https://matteocervelli.com/it/categories/work/feed.xml" rel="self" type="application/rss" />
+    <lastBuildDate>Sat, 18 Jan 2025 14:52:50 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/categories/work/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lavora con me</title>
-      <link>https://matteocervelli.com/it/lavora-con-me/</link>
+      <link>http://localhost:1313/it/lavora-con-me/</link>
       <pubDate>Sat, 18 Jan 2025 14:52:50 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/lavora-con-me/</guid>
+      <guid>http://localhost:1313/it/lavora-con-me/</guid>
       <description>&lt;h2 id=&#34;il-mio-sistema-di-valori&#34;&gt;Il mio sistema di valori&lt;/h2&gt;
 &lt;h3 id=&#34;perché&#34;&gt;Perché&lt;/h3&gt;
 &lt;p&gt;Innesco il talento e il potenziale delle persone per costruire insieme un mondo più bello.&lt;/p&gt;
@@ -35,15 +35,15 @@
 &lt;/a&gt;
 &lt;h2 id=&#34;quali-servizi-offro&#34;&gt;Quali servizi offro&lt;/h2&gt;
 &lt;h3 id=&#34;consulenza-direzionale&#34;&gt;Consulenza direzionale&lt;/h3&gt;
-&lt;p&gt;I miei servizi di consulenza sono personalizzati per &lt;a href=&#34;https://matteocervelli.com/it/business-scalability-engineer&#34;&gt;sbloccare il potenziale della tua azienda&lt;/a&gt; e guidarti verso il successo. Collaborando insieme, trasformeremo le sfide in opportunità. Posso supportarti con metodologie su misura, visione strategica, insights ed eccellenza operativa.&lt;/p&gt;</description>
+&lt;p&gt;I miei servizi di consulenza sono personalizzati per &lt;a href=&#34;http://localhost:1313/it/business-scalability-engineer&#34;&gt;sbloccare il potenziale della tua azienda&lt;/a&gt; e guidarti verso il successo. Collaborando insieme, trasformeremo le sfide in opportunità. Posso supportarti con metodologie su misura, visione strategica, insights ed eccellenza operativa.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sblocca la crescita della tua impresa con un Ingegnere della Scalabilità</title>
-      <link>https://matteocervelli.com/it/business-scalability-engineer/</link>
+      <link>http://localhost:1313/it/business-scalability-engineer/</link>
       <pubDate>Sat, 18 Jan 2025 08:41:14 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/business-scalability-engineer/</guid>
+      <guid>http://localhost:1313/it/business-scalability-engineer/</guid>
       <description>&lt;h2 id=&#34;ecco-perché-hai-bisogno-di-un-ingegnere-della-scalabilità-dellimpresa-per-far-crescere-il-tuo-business-come-merita&#34;&gt;Ecco perché hai bisogno di un Ingegnere della Scalabilità dell&amp;rsquo;impresa per far crescere il tuo business come merita&lt;/h2&gt;
 &lt;p&gt;Hai presente quando un’azienda sembra bloccata, la crescita rallenta, i problemi si moltiplicano e non sai da dove partire per rimettere ordine?&lt;/p&gt;
 &lt;p&gt;Ecco, io sono quello che aiuta a sbloccare tutto questo.&lt;/p&gt;

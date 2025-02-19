@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marketing on Matteo Cervelli</title>
-    <link>https://matteocervelli.com/en/tags/marketing/</link>
+    <link>http://localhost:1313/en/tags/marketing/</link>
     <description>Recent content in Marketing on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 26 Jan 2025 09:52:22 +0100</lastBuildDate><atom:link href="https://matteocervelli.com/en/tags/marketing/feed.xml" rel="self" type="application/rss" />
+    <lastBuildDate>Sun, 26 Jan 2025 09:52:22 +0100</lastBuildDate><atom:link href="https://localhost:1313/en/tags/marketing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Purple Cow</title>
-      <link>https://matteocervelli.com/en/the-purple-cow/</link>
+      <link>http://localhost:1313/en/the-purple-cow/</link>
       <pubDate>Sun, 26 Jan 2025 09:52:22 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/en/the-purple-cow/</guid>
+      <guid>http://localhost:1313/en/the-purple-cow/</guid>
       <description>&lt;p&gt;&lt;em&gt;This blog post collects my takeaway from the book: &lt;a href=&#34;https://amzn.to/3E4vBx9&#34;&gt;The Purple Cow by Seth Godin&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There is nothing but an ingredient to be successful: being a Purple Cow.&lt;/p&gt;
 &lt;p&gt;Wait, what&amp;rsquo;s a Purple Cow?&lt;/p&gt;

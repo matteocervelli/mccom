@@ -151,3 +151,8 @@
   to = "/it/feed.xml"
   status = 200
   force = true
+
+[[headers]]
+  for = "/*/feed/"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"

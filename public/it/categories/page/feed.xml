@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page on Matteo Cervelli</title>
-    <link>https://matteocervelli.com/it/categories/page/</link>
+    <link>http://localhost:1313/it/categories/page/</link>
     <description>Recent content in Page on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 15 Feb 2025 17:30:00 +0100</lastBuildDate><atom:link href="https://matteocervelli.com/it/categories/page/feed.xml" rel="self" type="application/rss" />
+    <lastBuildDate>Sat, 15 Feb 2025 17:30:00 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/categories/page/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mappa del sito</title>
-      <link>https://matteocervelli.com/it/sitemap/</link>
+      <link>http://localhost:1313/it/sitemap/</link>
       <pubDate>Sat, 15 Feb 2025 17:30:00 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/sitemap/</guid>
+      <guid>http://localhost:1313/it/sitemap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Uso dell&#39;AI</title>
-      <link>https://matteocervelli.com/it/ai/</link>
+      <link>http://localhost:1313/it/ai/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://matteocervelli.com/it/ai/</guid>
+      <guid>http://localhost:1313/it/ai/</guid>
       <description>&lt;p&gt;Aggiornamento del 15 febbraio 2025.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;I LLM sono uno strumento che recentemente sta prendendo molto spazio nel mondo, e anche in come io approccio il mio lavoro.&lt;/p&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>Lavora con me</title>
-      <link>https://matteocervelli.com/it/lavora-con-me/</link>
+      <link>http://localhost:1313/it/lavora-con-me/</link>
       <pubDate>Sat, 18 Jan 2025 14:52:50 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/lavora-con-me/</guid>
+      <guid>http://localhost:1313/it/lavora-con-me/</guid>
       <description>&lt;h2 id=&#34;il-mio-sistema-di-valori&#34;&gt;Il mio sistema di valori&lt;/h2&gt;
 &lt;h3 id=&#34;perché&#34;&gt;Perché&lt;/h3&gt;
 &lt;p&gt;Innesco il talento e il potenziale delle persone per costruire insieme un mondo più bello.&lt;/p&gt;
@@ -57,15 +57,15 @@
 &lt;/a&gt;
 &lt;h2 id=&#34;quali-servizi-offro&#34;&gt;Quali servizi offro&lt;/h2&gt;
 &lt;h3 id=&#34;consulenza-direzionale&#34;&gt;Consulenza direzionale&lt;/h3&gt;
-&lt;p&gt;I miei servizi di consulenza sono personalizzati per &lt;a href=&#34;https://matteocervelli.com/it/business-scalability-engineer&#34;&gt;sbloccare il potenziale della tua azienda&lt;/a&gt; e guidarti verso il successo. Collaborando insieme, trasformeremo le sfide in opportunità. Posso supportarti con metodologie su misura, visione strategica, insights ed eccellenza operativa.&lt;/p&gt;</description>
+&lt;p&gt;I miei servizi di consulenza sono personalizzati per &lt;a href=&#34;http://localhost:1313/it/business-scalability-engineer&#34;&gt;sbloccare il potenziale della tua azienda&lt;/a&gt; e guidarti verso il successo. Collaborando insieme, trasformeremo le sfide in opportunità. Posso supportarti con metodologie su misura, visione strategica, insights ed eccellenza operativa.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sblocca la crescita della tua impresa con un Ingegnere della Scalabilità</title>
-      <link>https://matteocervelli.com/it/business-scalability-engineer/</link>
+      <link>http://localhost:1313/it/business-scalability-engineer/</link>
       <pubDate>Sat, 18 Jan 2025 08:41:14 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/business-scalability-engineer/</guid>
+      <guid>http://localhost:1313/it/business-scalability-engineer/</guid>
       <description>&lt;h2 id=&#34;ecco-perché-hai-bisogno-di-un-ingegnere-della-scalabilità-dellimpresa-per-far-crescere-il-tuo-business-come-merita&#34;&gt;Ecco perché hai bisogno di un Ingegnere della Scalabilità dell&amp;rsquo;impresa per far crescere il tuo business come merita&lt;/h2&gt;
 &lt;p&gt;Hai presente quando un’azienda sembra bloccata, la crescita rallenta, i problemi si moltiplicano e non sai da dove partire per rimettere ordine?&lt;/p&gt;
 &lt;p&gt;Ecco, io sono quello che aiuta a sbloccare tutto questo.&lt;/p&gt;
@@ -75,10 +75,10 @@
     
     <item>
       <title>Cosa sto facendo ora</title>
-      <link>https://matteocervelli.com/it/ora/</link>
+      <link>http://localhost:1313/it/ora/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/ora/</guid>
+      <guid>http://localhost:1313/it/ora/</guid>
       <description>&lt;p&gt;&lt;em&gt;Nota: questa è una pagina &lt;a href=&#34;https://nownownow.com&#34;&gt;Now&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Aggiornato: 2025-01-18, dalla mia casa a Poggibonsi, Toscana, Italia.&lt;/p&gt;
 &lt;h2 id=&#34;aiuto-le-aziende-a-crescere-in-modo-scalabile&#34;&gt;Aiuto le aziende a crescere in modo scalabile&lt;/h2&gt;
@@ -89,10 +89,10 @@
     
     <item>
       <title>Tecnologie usate per costruire questo sito</title>
-      <link>https://matteocervelli.com/it/tech-stack/</link>
+      <link>http://localhost:1313/it/tech-stack/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/tech-stack/</guid>
+      <guid>http://localhost:1313/it/tech-stack/</guid>
       <description>&lt;p&gt;Aggiornato: 2025-01-17&lt;/p&gt;
 &lt;p&gt;Questo sito è stato realizzato da Matteo Cervelli con un mix di competenze personali ed AI. Provenivo da un sito hostato e realizzato su WordPress.com e ho preferito ricostruire da me il sito a inizio 2025 per &amp;ldquo;tenere&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Volevo un sito leggero, veloce e responsive. E volevo imparare le basi sfruttando quello che la tecnologia mette a disposizione.&lt;/p&gt;
@@ -101,12 +101,12 @@
     
     <item>
       <title>Su di me</title>
-      <link>https://matteocervelli.com/it/about/</link>
+      <link>http://localhost:1313/it/about/</link>
       <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/about/</guid>
+      <guid>http://localhost:1313/it/about/</guid>
       <description>&lt;h2 id=&#34;in-breve&#34;&gt;In breve&lt;/h2&gt;
-&lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;https://matteocervelli.com/it/business-scalability-engineer/&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;https://matteocervelli.com/it/lavora-con-me/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;http://localhost:1313/it/business-scalability-engineer/&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;http://localhost:1313/it/lavora-con-me/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Oggi aiuto imprenditori e leader a crescere il proprio business, nella strategia, gestione, vendite, implementando i principi della scalabilità.&lt;/p&gt;
 &lt;p&gt;Il mio scopo è innescare le persone a costruire un mondo più bello, insieme.&lt;/p&gt;
 &lt;p&gt;Sono un padre di 3 bambine piccole, Emma, Maria ed Emma, e di due cani: Maple e Cookie. Prima ancora, sono un marito: con Sara ci conosciamo dal 2005 e in questi 20 anni ci siamo amati e siamo sempre stati l&amp;rsquo;uno per l&amp;rsquo;altra, uno, due e infinito.&lt;/p&gt;</description>
@@ -114,10 +114,10 @@
     
     <item>
       <title>Testimonianze</title>
-      <link>https://matteocervelli.com/it/testimonials/</link>
+      <link>http://localhost:1313/it/testimonials/</link>
       <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/testimonials/</guid>
+      <guid>http://localhost:1313/it/testimonials/</guid>
       <description>&lt;h2 id=&#34;cosa-dicono-di-me&#34;&gt;Cosa Dicono di Me&lt;/h2&gt;
 &lt;div class=&#34;testimonials-filters&#34;&gt;
     &lt;div class=&#34;filter-group&#34;&gt;

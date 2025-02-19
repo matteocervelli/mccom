@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leadership on Matteo Cervelli</title>
-    <link>https://matteocervelli.com/en/tags/leadership/</link>
+    <link>http://localhost:1313/en/tags/leadership/</link>
     <description>Recent content in Leadership on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 25 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://matteocervelli.com/en/tags/leadership/feed.xml" rel="self" type="application/rss" />
+    <lastBuildDate>Sat, 25 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/en/tags/leadership/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Tightrope Walker Manager: Mastering Leadership&#39;s Balancing Act</title>
-      <link>https://matteocervelli.com/en/tightrope-walker-manager/</link>
+      <link>http://localhost:1313/en/tightrope-walker-manager/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://matteocervelli.com/en/tightrope-walker-manager/</guid>
+      <guid>http://localhost:1313/en/tightrope-walker-manager/</guid>
       <description>&lt;p&gt;It takes 20 years to build a new manager. 20 years where those responsible for delegating constantly oscillate on the edge of anxiety.&lt;/p&gt;
 &lt;h2 id=&#34;the-risk-behind-delegation&#34;&gt;The risk behind delegation&lt;/h2&gt;
 &lt;p&gt;Like tightrope walkers, managers swing between the fear of being surpassed by people who might have something more than them and the risk that their team will lose drive and, ultimately, competitiveness by relying on inadequate people. Leaders who take the path of delegation risk falling painfully. But those who make it and get to the end receive applause from the audience—the same audience that lives in constant expectation of the fatal misstep.&lt;/p&gt;</description>
@@ -20,10 +20,10 @@
     
     <item>
       <title>Humility &#43; Will for Great Leadership</title>
-      <link>https://matteocervelli.com/en/humility-will-for-great-leadership/</link>
+      <link>http://localhost:1313/en/humility-will-for-great-leadership/</link>
       <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://matteocervelli.com/en/humility-will-for-great-leadership/</guid>
+      <guid>http://localhost:1313/en/humility-will-for-great-leadership/</guid>
       <description>&lt;p&gt;Leaders of great organizations focus all efforts on finding their successors.&lt;/p&gt;
 &lt;p&gt;The most successful bosses don’t micromanage. Instead, they help people to have greater responsibility. And to make this, the leader’s role change from a problem solver to a people enabler.&lt;/p&gt;
 &lt;p&gt;On the other hand, micro-management has bad side effects:&lt;/p&gt;

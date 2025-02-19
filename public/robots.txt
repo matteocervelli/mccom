@@ -11,4 +11,4 @@ Allow: /testimonials/
 Disallow: /draft/
 Disallow: /preview/
 
-Sitemap: https://matteocervelli.com/sitemap.xml 
+Sitemap: http://localhost:1313/sitemap.xml 

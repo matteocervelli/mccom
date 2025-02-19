@@ -3,552 +3,450 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://matteocervelli.com/it/categories/</loc>
+      <loc>http://localhost:1313/it/categories/</loc>
+      
+        <lastmod>2025-02-19T09:38:07+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/sitemap/</loc>
+      
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/categories/meta/</loc>
+      
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/categories/page/</loc>
+      
+        <lastmod>2025-02-19T09:38:07+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/tags/ai/</loc>
+      
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/tags/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/sitemap/</loc>
+      <loc>http://localhost:1313/it/ai/</loc>
       
         <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/categories/meta/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-    </url>
-  
-    <url>
-      <loc>https://matteocervelli.com/it/categories/page/</loc>
-      
-        <lastmod>2025-02-17T15:34:26+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-    </url>
-  
-    <url>
-      <loc>https://matteocervelli.com/it/tags/ai/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-    </url>
-  
-    <url>
-      <loc>https://matteocervelli.com/it/tags/</loc>
-      
-        <lastmod>2025-02-17T15:34:26+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-    </url>
-  
-    <url>
-      <loc>https://matteocervelli.com/it/ai/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-    </url>
-  
-    <url>
-      <loc>https://matteocervelli.com/it/tags/book-review/</loc>
+      <loc>http://localhost:1313/it/tags/book-review/</loc>
       
         <lastmod>2025-01-26T10:14:51+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/business/</loc>
+      <loc>http://localhost:1313/it/tags/business/</loc>
       
         <lastmod>2025-01-26T10:14:51+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/la-mucca-viola/</loc>
+      <loc>http://localhost:1313/it/la-mucca-viola/</loc>
       
         <lastmod>2025-01-26T10:14:51+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/marketing/</loc>
+      <loc>http://localhost:1313/it/tags/marketing/</loc>
       
         <lastmod>2025-01-26T10:14:51+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/categories/posts/</loc>
+      <loc>http://localhost:1313/it/categories/posts/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/strategy/</loc>
+      <loc>http://localhost:1313/it/tags/strategy/</loc>
       
         <lastmod>2025-01-26T10:14:51+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/contatti/</loc>
+      <loc>http://localhost:1313/it/contatti/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/lavora-con-me/</loc>
+      
+        <lastmod>2025-02-19T09:38:07+01:00</lastmod>
+      
       
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/lavora-con-me/</loc>
+      <loc>http://localhost:1313/it/categories/work/</loc>
       
-        <lastmod>2025-02-17T15:34:26+01:00</lastmod>
+        <lastmod>2025-02-19T09:38:07+01:00</lastmod>
       
-      
-        <changefreq>monthly</changefreq>
       
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/categories/work/</loc>
-      
-        <lastmod>2025-02-17T15:34:26+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-    </url>
-  
-    <url>
-      <loc>https://matteocervelli.com/it/business-scalability-engineer/</loc>
+      <loc>http://localhost:1313/it/business-scalability-engineer/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/scalability/</loc>
+      <loc>http://localhost:1313/it/tags/scalability/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/categories/about/</loc>
+      
+        <lastmod>2025-02-19T09:38:07+01:00</lastmod>
+      
       
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/categories/about/</loc>
+      <loc>http://localhost:1313/it/ora/</loc>
+      
+        <lastmod>2025-02-19T09:38:07+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/tags/tech-stack/</loc>
       
         <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/ora/</loc>
+      <loc>http://localhost:1313/it/tech-stack/</loc>
       
         <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/tech-stack/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-    </url>
-  
-    <url>
-      <loc>https://matteocervelli.com/it/tech-stack/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-    </url>
-  
-    <url>
-      <loc>https://matteocervelli.com/it/</loc>
+      <loc>http://localhost:1313/it/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/about/</loc>
+      
+        <lastmod>2025-02-19T09:38:07+01:00</lastmod>
+      
       
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/about/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-    </url>
-  
-    <url>
-      <loc>https://matteocervelli.com/it/tags/delegation/</loc>
+      <loc>http://localhost:1313/it/tags/delegation/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/manager-funambolo/</loc>
+      <loc>http://localhost:1313/it/manager-funambolo/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/leadership/</loc>
+      <loc>http://localhost:1313/it/tags/leadership/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/lessons-learned/</loc>
+      <loc>http://localhost:1313/it/tags/lessons-learned/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/mission/</loc>
+      <loc>http://localhost:1313/it/tags/mission/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/purpose/</loc>
+      <loc>http://localhost:1313/it/tags/purpose/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/trova-lantagonista-scopri-la-missione/</loc>
+      <loc>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/posts/</loc>
+      <loc>http://localhost:1313/it/posts/</loc>
       
         <lastmod>2025-01-21T11:44:42+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/alberto-rossi/</loc>
+      <loc>http://localhost:1313/it/testimonials/alberto-rossi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/alexia-redini/</loc>
+      <loc>http://localhost:1313/it/testimonials/alexia-redini/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/fabrice-pettoello/</loc>
+      <loc>http://localhost:1313/it/testimonials/fabrice-pettoello/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/federico-trippi/</loc>
+      <loc>http://localhost:1313/it/testimonials/federico-trippi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/filippo-maone/</loc>
+      <loc>http://localhost:1313/it/testimonials/filippo-maone/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/francesca-sernissi/</loc>
+      <loc>http://localhost:1313/it/testimonials/francesca-sernissi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/francesco-ferraro/</loc>
+      <loc>http://localhost:1313/it/testimonials/francesco-ferraro/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/francesco-lagonigro/</loc>
+      <loc>http://localhost:1313/it/testimonials/francesco-lagonigro/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/laura-masoni/</loc>
+      <loc>http://localhost:1313/it/testimonials/gianni-cordaro/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/luigi-paganelli/</loc>
+      <loc>http://localhost:1313/it/testimonials/laura-masoni/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/mattia-guida/</loc>
+      <loc>http://localhost:1313/it/testimonials/luigi-paganelli/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/michele-lasi/</loc>
+      <loc>http://localhost:1313/it/testimonials/mattia-guida/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/rossana-gloriosi/</loc>
+      <loc>http://localhost:1313/it/testimonials/michele-lasi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/stefano-boldrini/</loc>
+      <loc>http://localhost:1313/it/testimonials/rossana-gloriosi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/categories/testimonials/</loc>
+      <loc>http://localhost:1313/it/testimonials/stefano-boldrini/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/testimonials/</loc>
+      <loc>http://localhost:1313/it/categories/testimonials/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/testimonials/</loc>
+      
+        <lastmod>2025-02-15T10:23:19+01:00</lastmod>
+      
       
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/coaching/</loc>
+      <loc>http://localhost:1313/it/tags/coaching/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/communication/</loc>
+      <loc>http://localhost:1313/it/tags/communication/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/empathy/</loc>
+      <loc>http://localhost:1313/it/tags/empathy/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/empatia/</loc>
+      <loc>http://localhost:1313/it/empatia/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/guide/</loc>
+      <loc>http://localhost:1313/it/tags/guide/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/tags/learning-organization/</loc>
+      <loc>http://localhost:1313/it/tags/learning-organization/</loc>
       
         <lastmod>2025-01-21T11:44:42+01:00</lastmod>
       
       
-        <changefreq>monthly</changefreq>
-      
     </url>
   
     <url>
-      <loc>https://matteocervelli.com/it/umilta-determinazione-per-grande-leadership/</loc>
+      <loc>http://localhost:1313/it/umilta-determinazione-per-grande-leadership/</loc>
       
         <lastmod>2025-01-21T11:44:42+01:00</lastmod>
       
-      
-        <changefreq>monthly</changefreq>
       
     </url>
   

@@ -15,8 +15,8 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ hugo.Generator }}
     {{ $production := hugo.IsProduction }}
-    {{ $public := not .Params.private }}
-    {{ if and $production $public }}
+    {{ $private := .Params.private | default false }}
+    {{ if and $production (not $private) }}
       <meta name="robots" content="index, follow">
     {{ else }}
       <meta name="robots" content="noindex, nofollow">

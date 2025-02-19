@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scalability on Matteo Cervelli</title>
-    <link>https://matteocervelli.com/it/tags/scalability/</link>
+    <link>http://localhost:1313/it/tags/scalability/</link>
     <description>Recent content in Scalability on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 18 Jan 2025 08:41:14 +0100</lastBuildDate><atom:link href="https://matteocervelli.com/it/tags/scalability/feed.xml" rel="self" type="application/rss" />
+    <lastBuildDate>Sat, 18 Jan 2025 08:41:14 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/tags/scalability/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sblocca la crescita della tua impresa con un Ingegnere della Scalabilità</title>
-      <link>https://matteocervelli.com/it/business-scalability-engineer/</link>
+      <link>http://localhost:1313/it/business-scalability-engineer/</link>
       <pubDate>Sat, 18 Jan 2025 08:41:14 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/business-scalability-engineer/</guid>
+      <guid>http://localhost:1313/it/business-scalability-engineer/</guid>
       <description>&lt;h2 id=&#34;ecco-perché-hai-bisogno-di-un-ingegnere-della-scalabilità-dellimpresa-per-far-crescere-il-tuo-business-come-merita&#34;&gt;Ecco perché hai bisogno di un Ingegnere della Scalabilità dell&amp;rsquo;impresa per far crescere il tuo business come merita&lt;/h2&gt;
 &lt;p&gt;Hai presente quando un’azienda sembra bloccata, la crescita rallenta, i problemi si moltiplicano e non sai da dove partire per rimettere ordine?&lt;/p&gt;
 &lt;p&gt;Ecco, io sono quello che aiuta a sbloccare tutto questo.&lt;/p&gt;
@@ -22,10 +22,10 @@
     
     <item>
       <title>Il Manager Funambolo: Padroneggiare l&#39;Arte dell&#39;Equilibrio nella Leadership</title>
-      <link>https://matteocervelli.com/it/manager-funambolo/</link>
+      <link>http://localhost:1313/it/manager-funambolo/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://matteocervelli.com/it/manager-funambolo/</guid>
+      <guid>http://localhost:1313/it/manager-funambolo/</guid>
       <description>&lt;p&gt;Ci vogliono 20 anni per far crescere un nuovo manager.&lt;/p&gt;
 &lt;p&gt;20 anni in cui chi ha il compito di delegare oscilla continuamente sul filo dell&amp;rsquo;ansia.&lt;/p&gt;
 &lt;h2 id=&#34;il-rischio-dietro-la-delega&#34;&gt;Il rischio dietro la delega&lt;/h2&gt;

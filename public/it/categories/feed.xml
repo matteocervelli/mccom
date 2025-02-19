@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Matteo Cervelli</title>
-    <link>https://matteocervelli.com/it/categories/</link>
+    <link>http://localhost:1313/it/categories/</link>
     <description>Recent content in Categories on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 15 Feb 2025 17:30:00 +0100</lastBuildDate><atom:link href="https://matteocervelli.com/it/categories/feed.xml" rel="self" type="application/rss" />
+    <lastBuildDate>Sat, 15 Feb 2025 17:30:00 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/categories/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meta</title>
-      <link>https://matteocervelli.com/it/categories/meta/</link>
+      <link>http://localhost:1313/it/categories/meta/</link>
       <pubDate>Sat, 15 Feb 2025 17:30:00 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/categories/meta/</guid>
+      <guid>http://localhost:1313/it/categories/meta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Page</title>
-      <link>https://matteocervelli.com/it/categories/page/</link>
+      <link>http://localhost:1313/it/categories/page/</link>
       <pubDate>Sat, 15 Feb 2025 17:30:00 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/categories/page/</guid>
+      <guid>http://localhost:1313/it/categories/page/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>https://matteocervelli.com/it/categories/posts/</link>
+      <link>http://localhost:1313/it/categories/posts/</link>
       <pubDate>Sun, 26 Jan 2025 09:52:29 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/categories/posts/</guid>
+      <guid>http://localhost:1313/it/categories/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Work</title>
-      <link>https://matteocervelli.com/it/categories/work/</link>
+      <link>http://localhost:1313/it/categories/work/</link>
       <pubDate>Sat, 18 Jan 2025 14:52:50 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/categories/work/</guid>
+      <guid>http://localhost:1313/it/categories/work/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://matteocervelli.com/it/categories/about/</link>
+      <link>http://localhost:1313/it/categories/about/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/categories/about/</guid>
+      <guid>http://localhost:1313/it/categories/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testimonials</title>
-      <link>https://matteocervelli.com/it/categories/testimonials/</link>
+      <link>http://localhost:1313/it/categories/testimonials/</link>
       <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
       
-      <guid>https://matteocervelli.com/it/categories/testimonials/</guid>
+      <guid>http://localhost:1313/it/categories/testimonials/</guid>
       <description></description>
     </item>
     
