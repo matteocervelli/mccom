@@ -46,7 +46,33 @@
   status = 301
   force = true
 
-# Root path redirect to default language
+# Static assets should bypass language redirects
+[[redirects]]
+  from = "/css/*"
+  to = "/css/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/js/*"
+  to = "/js/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/images/*"
+  to = "/images/:splat"
+  status = 200
+  force = true
+
+# Root path redirect based on browser language
+[[redirects]]
+  from = "/"
+  to = "/it/"
+  status = 302
+  conditions = {Language = ["it"]}
+  force = true
+
 [[redirects]]
   from = "/"
   to = "/en/"
