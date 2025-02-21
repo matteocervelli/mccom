@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articoli on Matteo Cervelli</title>
-    <link>http://localhost:63796/it/posts/</link>
+    <link>http://localhost:1313/it/posts/</link>
     <description>Recent content in Articoli on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Thu, 21 Mar 2024 10:00:00 +0100</lastBuildDate><atom:link href="https://localhost:63796/it/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Mar 2024 10:00:00 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/posts/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>37, l&#39;Anno della Discesa</title>
-      <link>http://localhost:63796/it/37-anno-della-discesa/</link>
+      <link>http://localhost:1313/it/37-anno-della-discesa/</link>
       <pubDate>Fri, 21 Feb 2025 10:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/37-anno-della-discesa/</guid>
+      <guid>http://localhost:1313/it/37-anno-della-discesa/</guid>
       <description>&lt;p&gt;Oggi spengo 37 candeline.&lt;/p&gt;
 &lt;p&gt;Questo è stato l&amp;rsquo;anno più intenso, difficile e ricco di senso della mia vita.&lt;/p&gt;
 &lt;p&gt;Se devo scegliere una parola che più di tutte contraddistingue questo anno, scelgo &lt;strong&gt;discesa&lt;/strong&gt;.&lt;/p&gt;
@@ -21,10 +21,10 @@
     
     <item>
       <title>La mucca viola</title>
-      <link>http://localhost:63796/it/la-mucca-viola/</link>
+      <link>http://localhost:1313/it/la-mucca-viola/</link>
       <pubDate>Sun, 26 Jan 2025 09:52:29 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/la-mucca-viola/</guid>
+      <guid>http://localhost:1313/it/la-mucca-viola/</guid>
       <description>&lt;p&gt;&lt;em&gt;Questo articolo raccoglie ciò che ho imparato dal libro: &lt;a href=&#34;https://amzn.to/40LVevK&#34;&gt;La Mucca Viola di Seth Godin&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Esiste un ingrediente unico per avere successo: essere una Mucca Viola.&lt;/p&gt;
 &lt;p&gt;Aspetta, cos&amp;rsquo;è una mucca viola?&lt;/p&gt;
@@ -36,10 +36,10 @@ E, purtroppo, non basta.&lt;/p&gt;
     
     <item>
       <title>Il Manager Funambolo: Padroneggiare l&#39;Arte dell&#39;Equilibrio nella Leadership</title>
-      <link>http://localhost:63796/it/manager-funambolo/</link>
+      <link>http://localhost:1313/it/manager-funambolo/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:63796/it/manager-funambolo/</guid>
+      <guid>http://localhost:1313/it/manager-funambolo/</guid>
       <description>&lt;p&gt;Ci vogliono 20 anni per far crescere un nuovo manager.&lt;/p&gt;
 &lt;p&gt;20 anni in cui chi ha il compito di delegare oscilla continuamente sul filo dell&amp;rsquo;ansia.&lt;/p&gt;
 &lt;h2 id=&#34;il-rischio-dietro-la-delega&#34;&gt;Il rischio dietro la delega&lt;/h2&gt;
@@ -48,15 +48,15 @@ E, purtroppo, non basta.&lt;/p&gt;
     
     <item>
       <title>Come Fare Referral su LinkedIn</title>
-      <link>http://localhost:63796/it/referral-linkedin/</link>
+      <link>http://localhost:1313/it/referral-linkedin/</link>
       <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/referral-linkedin/</guid>
+      <guid>http://localhost:1313/it/referral-linkedin/</guid>
       <description>&lt;h2 id=&#34;step-1-accedere-a-linkedin&#34;&gt;Step 1: Accedere a LinkedIn&lt;/h2&gt;
 &lt;p&gt;Prima di tutto, assicurati di essere connesso al tuo account LinkedIn. Vai su &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;www.linkedin.com&lt;/a&gt; e accedi con le tue credenziali.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:63796/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: Login LinkedIn&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: Login LinkedIn&#34;&gt;
   
 &lt;/div&gt; &lt;/p&gt;
 &lt;h2 id=&#34;step-2-accedere-al-profilo-della-persona-che-vuoi-raccomandare&#34;&gt;Step 2: Accedere al profilo della persona che vuoi raccomandare&lt;/h2&gt;
@@ -64,7 +64,7 @@ E, purtroppo, non basta.&lt;/p&gt;
 &lt;p&gt;Per cominciare, sulla barra di ricerca in alto:&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:63796/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Cerca profilo&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Cerca profilo&#34;&gt;
   
 &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;Digita il nome della persona che stai cercando, premi invio e clicca sul nome nei risultati di ricerca che appariranno.&lt;/p&gt;</description>
@@ -72,20 +72,20 @@ E, purtroppo, non basta.&lt;/p&gt;
     
     <item>
       <title>Trova il Tuo Antagonista, Scopri la Tua Missione</title>
-      <link>http://localhost:63796/it/trova-lantagonista-scopri-la-missione/</link>
+      <link>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/trova-lantagonista-scopri-la-missione/</guid>
+      <guid>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</guid>
       <description>&lt;p&gt;Ognuno ha un antagonista. Ho conosciuto il mio cinque anni fa in una sala riunioni.&lt;/p&gt;
 &lt;p&gt;Era una calda giornata estiva e stavo presentando un aggiornamento trimestrale su un&amp;rsquo;azienda che avevamo recentemente acquisito. Non riuscivamo a vedere la luce in fondo al tunnel, ma stavo mostrando una presentazione PowerPoint piena di dati e approfondimenti. All&amp;rsquo;improvviso, il signor Bowser ha iniziato a esporre la sua visione del mondo, ignorando completamente le informazioni che avevo fornito. Era come se tutto il lavoro che avevo fatto con il mio team non fosse reale, mentre soccombeva sotto una mitragliatrice che sparava ripetuti colpi pieni di convinzioni tratte da chissà quale esperienza di vita.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Empatia 101</title>
-      <link>http://localhost:63796/it/empatia/</link>
+      <link>http://localhost:1313/it/empatia/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:63796/it/empatia/</guid>
+      <guid>http://localhost:1313/it/empatia/</guid>
       <description>&lt;p&gt;L&amp;rsquo;&lt;em&gt;empatia&lt;/em&gt; è la &lt;em&gt;capacità di mettersi nei panni degli altri&lt;/em&gt;.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;In altre parole, comprendere come vedono la loro realtà e come si sentono riguardo alle cose.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -111,10 +111,10 @@ E, purtroppo, non basta.&lt;/p&gt;
     
     <item>
       <title>Umiltà &#43; Determinazione per una Grande Leadership</title>
-      <link>http://localhost:63796/it/umilta-determinazione-per-grande-leadership/</link>
+      <link>http://localhost:1313/it/umilta-determinazione-per-grande-leadership/</link>
       <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:63796/it/umilta-determinazione-per-grande-leadership/</guid>
+      <guid>http://localhost:1313/it/umilta-determinazione-per-grande-leadership/</guid>
       <description>&lt;p&gt;I leader delle grandi organizzazioni concentrano tutti gli sforzi nel trovare i loro successori.&lt;/p&gt;
 &lt;p&gt;I capi di maggior successo non micro-gestiscono. Invece, aiutano le persone ad assumere maggiori responsabilità. E per fare questo, il ruolo del leader cambia da risolutore di problemi a facilitatore di persone.&lt;/p&gt;
 &lt;p&gt;D&amp;rsquo;altra parte, la micro-gestione ha effetti collaterali negativi:&lt;/p&gt;

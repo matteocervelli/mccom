@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matteo Cervelli</title>
-    <link>http://localhost:63796/it/</link>
+    <link>http://localhost:1313/it/</link>
     <description>Recent content on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Fri, 17 Jan 2025 09:52:52 +0100</lastBuildDate><atom:link href="https://localhost:63796/it/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jan 2025 09:52:52 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scuola PanHouse Cittareale</title>
-      <link>http://localhost:63796/it/projects/panhouse-cittareale/</link>
+      <link>http://localhost:1313/it/projects/panhouse-cittareale/</link>
       <pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:63796/it/projects/panhouse-cittareale/</guid>
+      <guid>http://localhost:1313/it/projects/panhouse-cittareale/</guid>
       <description>&lt;h2 id=&#34;contesto&#34;&gt;Contesto&lt;/h2&gt;
 &lt;p&gt;Nell&amp;rsquo;agosto 2016, i terremoti hanno scosso l&amp;rsquo;Italia centrale ad Amatrice e Norcia. L&amp;rsquo;Italia è sempre stata un paese con attività sismica, ma non abbiamo la stessa cultura edile del Giappone o di Taiwan.&lt;/p&gt;
 
@@ -20,7 +20,7 @@
 
 
 &lt;figure class=&#34;image-with-caption lightbox-trigger&#34;&gt;
-    &lt;img src=&#34;http://localhost:63796/images/projects/panhouse-cittareale/earthquake-damage.jpg&#34; alt=&#34;Un centro storico distrutto dal terremoto&#34; loading=&#34;lazy&#34; data-caption=&#34;L&amp;#39;impatto devastante del terremoto sulle comunità locali&#34; onclick=&#34;openLightbox(this)&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/projects/panhouse-cittareale/earthquake-damage.jpg&#34; alt=&#34;Un centro storico distrutto dal terremoto&#34; loading=&#34;lazy&#34; data-caption=&#34;L&amp;#39;impatto devastante del terremoto sulle comunità locali&#34; onclick=&#34;openLightbox(this)&#34;&gt;
     
     &lt;figcaption class=&#34;image-caption&#34;&gt;L&amp;#39;impatto devastante del terremoto sulle comunità locali&lt;/figcaption&gt;
     
@@ -106,10 +106,10 @@ document.addEventListener(&#39;keydown&#39;, function(e) {
     
     <item>
       <title>37, l&#39;Anno della Discesa</title>
-      <link>http://localhost:63796/it/37-anno-della-discesa/</link>
+      <link>http://localhost:1313/it/37-anno-della-discesa/</link>
       <pubDate>Fri, 21 Feb 2025 10:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/37-anno-della-discesa/</guid>
+      <guid>http://localhost:1313/it/37-anno-della-discesa/</guid>
       <description>&lt;p&gt;Oggi spengo 37 candeline.&lt;/p&gt;
 &lt;p&gt;Questo è stato l&amp;rsquo;anno più intenso, difficile e ricco di senso della mia vita.&lt;/p&gt;
 &lt;p&gt;Se devo scegliere una parola che più di tutte contraddistingue questo anno, scelgo &lt;strong&gt;discesa&lt;/strong&gt;.&lt;/p&gt;
@@ -118,19 +118,19 @@ document.addEventListener(&#39;keydown&#39;, function(e) {
     
     <item>
       <title>Mappa del sito</title>
-      <link>http://localhost:63796/it/sitemap/</link>
+      <link>http://localhost:1313/it/sitemap/</link>
       <pubDate>Sat, 15 Feb 2025 17:30:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/sitemap/</guid>
+      <guid>http://localhost:1313/it/sitemap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Uso dell&#39;AI</title>
-      <link>http://localhost:63796/it/ai/</link>
+      <link>http://localhost:1313/it/ai/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:63796/it/ai/</guid>
+      <guid>http://localhost:1313/it/ai/</guid>
       <description>&lt;p&gt;Aggiornamento del 15 febbraio 2025.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;I LLM sono uno strumento che recentemente sta prendendo molto spazio nel mondo, e anche in come io approccio il mio lavoro.&lt;/p&gt;
@@ -140,10 +140,10 @@ document.addEventListener(&#39;keydown&#39;, function(e) {
     
     <item>
       <title>La mucca viola</title>
-      <link>http://localhost:63796/it/la-mucca-viola/</link>
+      <link>http://localhost:1313/it/la-mucca-viola/</link>
       <pubDate>Sun, 26 Jan 2025 09:52:29 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/la-mucca-viola/</guid>
+      <guid>http://localhost:1313/it/la-mucca-viola/</guid>
       <description>&lt;p&gt;&lt;em&gt;Questo articolo raccoglie ciò che ho imparato dal libro: &lt;a href=&#34;https://amzn.to/40LVevK&#34;&gt;La Mucca Viola di Seth Godin&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Esiste un ingrediente unico per avere successo: essere una Mucca Viola.&lt;/p&gt;
 &lt;p&gt;Aspetta, cos&amp;rsquo;è una mucca viola?&lt;/p&gt;
@@ -155,10 +155,10 @@ E, purtroppo, non basta.&lt;/p&gt;
     
     <item>
       <title>Rimaniamo in contatto</title>
-      <link>http://localhost:63796/it/contatti/</link>
+      <link>http://localhost:1313/it/contatti/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:63796/it/contatti/</guid>
+      <guid>http://localhost:1313/it/contatti/</guid>
       <description>&lt;h2 id=&#34;ricevi-i-miei-aggiornamenti&#34;&gt;Ricevi i miei aggiornamenti&lt;/h2&gt;
 &lt;p&gt;Ho una newsletter in Italiano che invio sporadicamente, dove condivido idee, articoli e progetti.
 Puoi registrarti qui sotto:&lt;/p&gt;
@@ -192,10 +192,10 @@ Puoi registrarti qui sotto:&lt;/p&gt;
     
     <item>
       <title>Lavora con me</title>
-      <link>http://localhost:63796/it/lavora-con-me/</link>
+      <link>http://localhost:1313/it/lavora-con-me/</link>
       <pubDate>Sat, 18 Jan 2025 14:52:50 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/lavora-con-me/</guid>
+      <guid>http://localhost:1313/it/lavora-con-me/</guid>
       <description>&lt;h2 id=&#34;il-mio-sistema-di-valori&#34;&gt;Il mio sistema di valori&lt;/h2&gt;
 &lt;h3 id=&#34;perché&#34;&gt;Perché&lt;/h3&gt;
 &lt;p&gt;Innesco il talento e il potenziale delle persone per costruire insieme un mondo più bello.&lt;/p&gt;
@@ -218,15 +218,15 @@ Puoi registrarti qui sotto:&lt;/p&gt;
 &lt;/a&gt;
 &lt;h2 id=&#34;quali-servizi-offro&#34;&gt;Quali servizi offro&lt;/h2&gt;
 &lt;h3 id=&#34;consulenza-direzionale&#34;&gt;Consulenza direzionale&lt;/h3&gt;
-&lt;p&gt;I miei servizi di consulenza sono personalizzati per &lt;a href=&#34;http://localhost:63796/it/business-scalability-engineer&#34;&gt;sbloccare il potenziale della tua azienda&lt;/a&gt; e guidarti verso il successo. Collaborando insieme, trasformeremo le sfide in opportunità. Posso supportarti con metodologie su misura, visione strategica, insights ed eccellenza operativa.&lt;/p&gt;</description>
+&lt;p&gt;I miei servizi di consulenza sono personalizzati per &lt;a href=&#34;http://localhost:1313/it/business-scalability-engineer&#34;&gt;sbloccare il potenziale della tua azienda&lt;/a&gt; e guidarti verso il successo. Collaborando insieme, trasformeremo le sfide in opportunità. Posso supportarti con metodologie su misura, visione strategica, insights ed eccellenza operativa.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sblocca la crescita della tua impresa con un Ingegnere della Scalabilità</title>
-      <link>http://localhost:63796/it/business-scalability-engineer/</link>
+      <link>http://localhost:1313/it/business-scalability-engineer/</link>
       <pubDate>Sat, 18 Jan 2025 08:41:14 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/business-scalability-engineer/</guid>
+      <guid>http://localhost:1313/it/business-scalability-engineer/</guid>
       <description>&lt;h2 id=&#34;ecco-perché-hai-bisogno-di-un-ingegnere-della-scalabilità-dellimpresa-per-far-crescere-il-tuo-business-come-merita&#34;&gt;Ecco perché hai bisogno di un Ingegnere della Scalabilità dell&amp;rsquo;impresa per far crescere il tuo business come merita&lt;/h2&gt;
 &lt;p&gt;Hai presente quando un’azienda sembra bloccata, la crescita rallenta, i problemi si moltiplicano e non sai da dove partire per rimettere ordine?&lt;/p&gt;
 &lt;p&gt;Ecco, io sono quello che aiuta a sbloccare tutto questo.&lt;/p&gt;
@@ -236,13 +236,13 @@ Puoi registrarti qui sotto:&lt;/p&gt;
     
     <item>
       <title>Cosa sto facendo ora</title>
-      <link>http://localhost:63796/it/ora/</link>
+      <link>http://localhost:1313/it/ora/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/ora/</guid>
+      <guid>http://localhost:1313/it/ora/</guid>
       <description>&lt;p&gt;&lt;em&gt;Nota: questa è una pagina &lt;a href=&#34;https://nownownow.com&#34;&gt;Now&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Aggiornato: 2025-01-18, dalla mia casa a Poggibonsi, Toscana, Italia.&lt;/p&gt;
-&lt;p&gt;Questi progetti attuali si allineano con il mio &lt;a href=&#34;http://localhost:63796/scopo-e-valori/&#34;&gt;scopo&lt;/a&gt; di innescare talenti per costruire un mondo più bello. Leggi di più sul mio &lt;a href=&#34;http://localhost:63796/it/about/&#34;&gt;background&lt;/a&gt; per capire come sono arrivato qui.&lt;/p&gt;
+&lt;p&gt;Questi progetti attuali si allineano con il mio &lt;a href=&#34;http://localhost:1313/scopo-e-valori/&#34;&gt;scopo&lt;/a&gt; di innescare talenti per costruire un mondo più bello. Leggi di più sul mio &lt;a href=&#34;http://localhost:1313/it/about/&#34;&gt;background&lt;/a&gt; per capire come sono arrivato qui.&lt;/p&gt;
 &lt;h2 id=&#34;aiuto-le-aziende-a-crescere-in-modo-scalabile&#34;&gt;Aiuto le aziende a crescere in modo scalabile&lt;/h2&gt;
 &lt;p&gt;Sono un consulente e advisor per le imprese.&lt;/p&gt;
 &lt;p&gt;Il mio lavoro consiste nell&amp;rsquo;aiutare le aziende a crescere in modo scalabile, attraverso Strategia, Gestione del Cambiamento, Sviluppo delle Vendite e del Business, Formazione e Coaching dei Leader.&lt;/p&gt;</description>
@@ -250,10 +250,10 @@ Puoi registrarti qui sotto:&lt;/p&gt;
     
     <item>
       <title>Tecnologie usate per costruire questo sito</title>
-      <link>http://localhost:63796/it/tech-stack/</link>
+      <link>http://localhost:1313/it/tech-stack/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/tech-stack/</guid>
+      <guid>http://localhost:1313/it/tech-stack/</guid>
       <description>&lt;p&gt;Aggiornato: 2025-01-17&lt;/p&gt;
 &lt;p&gt;Questo sito è stato realizzato da Matteo Cervelli con un mix di competenze personali ed AI. Provenivo da un sito hostato e realizzato su WordPress.com e ho preferito ricostruire da me il sito a inizio 2025 per &amp;ldquo;tenere&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Volevo un sito leggero, veloce e responsive. E volevo imparare le basi sfruttando quello che la tecnologia mette a disposizione.&lt;/p&gt;
@@ -262,22 +262,22 @@ Puoi registrarti qui sotto:&lt;/p&gt;
     
     <item>
       <title>Su di me</title>
-      <link>http://localhost:63796/it/about/</link>
+      <link>http://localhost:1313/it/about/</link>
       <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/about/</guid>
+      <guid>http://localhost:1313/it/about/</guid>
       <description>&lt;h2 id=&#34;in-breve&#34;&gt;In breve&lt;/h2&gt;
-&lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;http://localhost:63796/it/business-scalability-engineer/&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;http://localhost:63796/it/lavora-con-me/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;http://localhost:1313/it/business-scalability-engineer/&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;http://localhost:1313/it/lavora-con-me/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Il mio scopo è innescare le persone a costruire un mondo più bello, insieme. Oggi aiuto imprenditori e leader a crescere il proprio business, attraverso lo sviluppo strategico, una gestione efficace, e processi di vendita scalabile.&lt;/p&gt;
 &lt;p&gt;Sono marito di Sara da oltre 10 anni, padre di 3 bambine piccole, Emma, Maria ed Anna, e di due cani (Maple e Cookie). Vivo in Toscana.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Il Manager Funambolo: Padroneggiare l&#39;Arte dell&#39;Equilibrio nella Leadership</title>
-      <link>http://localhost:63796/it/manager-funambolo/</link>
+      <link>http://localhost:1313/it/manager-funambolo/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:63796/it/manager-funambolo/</guid>
+      <guid>http://localhost:1313/it/manager-funambolo/</guid>
       <description>&lt;p&gt;Ci vogliono 20 anni per far crescere un nuovo manager.&lt;/p&gt;
 &lt;p&gt;20 anni in cui chi ha il compito di delegare oscilla continuamente sul filo dell&amp;rsquo;ansia.&lt;/p&gt;
 &lt;h2 id=&#34;il-rischio-dietro-la-delega&#34;&gt;Il rischio dietro la delega&lt;/h2&gt;
@@ -286,15 +286,15 @@ Puoi registrarti qui sotto:&lt;/p&gt;
     
     <item>
       <title>Come Fare Referral su LinkedIn</title>
-      <link>http://localhost:63796/it/referral-linkedin/</link>
+      <link>http://localhost:1313/it/referral-linkedin/</link>
       <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/referral-linkedin/</guid>
+      <guid>http://localhost:1313/it/referral-linkedin/</guid>
       <description>&lt;h2 id=&#34;step-1-accedere-a-linkedin&#34;&gt;Step 1: Accedere a LinkedIn&lt;/h2&gt;
 &lt;p&gt;Prima di tutto, assicurati di essere connesso al tuo account LinkedIn. Vai su &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;www.linkedin.com&lt;/a&gt; e accedi con le tue credenziali.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:63796/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: Login LinkedIn&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: Login LinkedIn&#34;&gt;
   
 &lt;/div&gt; &lt;/p&gt;
 &lt;h2 id=&#34;step-2-accedere-al-profilo-della-persona-che-vuoi-raccomandare&#34;&gt;Step 2: Accedere al profilo della persona che vuoi raccomandare&lt;/h2&gt;
@@ -302,7 +302,7 @@ Puoi registrarti qui sotto:&lt;/p&gt;
 &lt;p&gt;Per cominciare, sulla barra di ricerca in alto:&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:63796/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Cerca profilo&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Cerca profilo&#34;&gt;
   
 &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;Digita il nome della persona che stai cercando, premi invio e clicca sul nome nei risultati di ricerca che appariranno.&lt;/p&gt;</description>
@@ -310,20 +310,20 @@ Puoi registrarti qui sotto:&lt;/p&gt;
     
     <item>
       <title>Trova il Tuo Antagonista, Scopri la Tua Missione</title>
-      <link>http://localhost:63796/it/trova-lantagonista-scopri-la-missione/</link>
+      <link>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/trova-lantagonista-scopri-la-missione/</guid>
+      <guid>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</guid>
       <description>&lt;p&gt;Ognuno ha un antagonista. Ho conosciuto il mio cinque anni fa in una sala riunioni.&lt;/p&gt;
 &lt;p&gt;Era una calda giornata estiva e stavo presentando un aggiornamento trimestrale su un&amp;rsquo;azienda che avevamo recentemente acquisito. Non riuscivamo a vedere la luce in fondo al tunnel, ma stavo mostrando una presentazione PowerPoint piena di dati e approfondimenti. All&amp;rsquo;improvviso, il signor Bowser ha iniziato a esporre la sua visione del mondo, ignorando completamente le informazioni che avevo fornito. Era come se tutto il lavoro che avevo fatto con il mio team non fosse reale, mentre soccombeva sotto una mitragliatrice che sparava ripetuti colpi pieni di convinzioni tratte da chissà quale esperienza di vita.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Scopo e Valori</title>
-      <link>http://localhost:63796/it/scopo-e-valori/</link>
+      <link>http://localhost:1313/it/scopo-e-valori/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:63796/it/scopo-e-valori/</guid>
+      <guid>http://localhost:1313/it/scopo-e-valori/</guid>
       <description>&lt;h2 id=&#34;il-mio-golden-circle&#34;&gt;Il mio Golden Circle&lt;/h2&gt;
 &lt;h3 id=&#34;perché-why&#34;&gt;Perché (WHY)&lt;/h3&gt;
 &lt;p&gt;Il mio scopo è &lt;strong&gt;innescare il talento delle persone per costruire un mondo più bello.&lt;/strong&gt;&lt;/p&gt;
@@ -334,49 +334,49 @@ Puoi registrarti qui sotto:&lt;/p&gt;
     
     <item>
       <title>Alberto Rossi</title>
-      <link>http://localhost:63796/it/testimonials/alberto-rossi/</link>
+      <link>http://localhost:1313/it/testimonials/alberto-rossi/</link>
       <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/testimonials/alberto-rossi/</guid>
+      <guid>http://localhost:1313/it/testimonials/alberto-rossi/</guid>
       <description>&lt;p&gt;Ho conosciuto molti imprenditori, molti amministratori delegati bravi e qualcuno straordinario. Matteo ha il coraggio di andare oltre, dal punto di vista umano e dal punto di vista di visione del business. Ha anche la stamina che serve giorno per giorno per costruire quella visione. E&amp;rsquo; un piacere lavorare con lui.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Alexia Redini</title>
-      <link>http://localhost:63796/it/testimonials/alexia-redini/</link>
+      <link>http://localhost:1313/it/testimonials/alexia-redini/</link>
       <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/testimonials/alexia-redini/</guid>
+      <guid>http://localhost:1313/it/testimonials/alexia-redini/</guid>
       <description>&lt;p&gt;Ho avuto il piacere di lavorare con Matteo per un lungo periodo durante il quale si è dimostrato eccezionalmente affidabile e focalizzato.&lt;/p&gt;
 &lt;p&gt;Una delle sue maggiori qualità è la sua capacità di pianificare e gestire progetti complessi. La sua abilità nel prevedere differenti scenari e creare piani dettagliati ha portato a miglioramenti significativi nelle operazioni e nei processi all&amp;rsquo;interno del nostro team. Grazie alla sua prospettiva lungimirante e alla sua attenzione ai dettagli ha generato un impatto positivo notevole sul nostro lavoro, contribuendo alla crescita di tutti e al raggiungimento degli obiettivi.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Fabrice Pettoello</title>
-      <link>http://localhost:63796/it/testimonials/fabrice-pettoello/</link>
+      <link>http://localhost:1313/it/testimonials/fabrice-pettoello/</link>
       <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/testimonials/fabrice-pettoello/</guid>
+      <guid>http://localhost:1313/it/testimonials/fabrice-pettoello/</guid>
       <description>&lt;p&gt;Matteo è una figura che incarna la curiosità e l&amp;rsquo;energia intellettuale. Il suo sguardo vivace riflette una mente che non si accontenta mai di risposte superficiali o banali. Sempre alla ricerca del perché delle cose, Matteo non si limita ad osservare la superficie, ma si immerge direttamente nell&amp;rsquo;essenza delle questioni per capire come migliorare.&lt;/p&gt;
 &lt;p&gt;Il suo atteggiamento verso l&amp;rsquo;innovazione e il cambiamento è contagioso e ispirante. Non si tratta solo di voler migliorare i processi esistenti, ma di trasformare l&amp;rsquo;intera struttura organizzativa in qualcosa di bello e significativo. Questa visione della bellezza non si limita all&amp;rsquo;estetica, ma si estende alla bellezza del funzionamento efficiente, dell&amp;rsquo;obiettivo a lungo termine e della crescita personale e professionale delle persone che lo circondano.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Federico Trippi</title>
-      <link>http://localhost:63796/it/testimonials/federico-trippi/</link>
+      <link>http://localhost:1313/it/testimonials/federico-trippi/</link>
       <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/testimonials/federico-trippi/</guid>
+      <guid>http://localhost:1313/it/testimonials/federico-trippi/</guid>
       <description>&lt;p&gt;Matteo è una persona con capacità di visione, che non rinuncia alla lettura oltre la superficie. Ama osare nel porsi sfide che siano concrete ma al contempo sopra la linea del &amp;ldquo;subito fattibile&amp;rdquo;. Questa attitudine sa essere virale e permette anche alle persone che lo circondano di guardare oltre i risultati immediatamente raggiungibili (spesso di modesto valore), per porsi obiettivi più ambiziosi e sicuramente più appaganti.&lt;/p&gt;
 &lt;p&gt;Abbiamo costruito dei progetti assieme, nell&amp;rsquo;ambito della ricerca e dello sviluppo. Costruire una compagine di fronte ad un idea, è sempre un percorso ambizioso e mai scontato perché significa mettere a sistema le necessità e i voleri di più soggetti. Il risultato atteso, la capacità di trasmettere il senso concreto dell&amp;rsquo;idea, tanto da costruire un team di lavoro articolato, è già in se un grande risultato che, indipendentemente dall&amp;rsquo;esito di finanziamento del bando, crea comunque legami e contatti tra persone e professionalità.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Filippo Maone</title>
-      <link>http://localhost:63796/it/testimonials/filippo-maone/</link>
+      <link>http://localhost:1313/it/testimonials/filippo-maone/</link>
       <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
       
-      <guid>http://localhost:63796/it/testimonials/filippo-maone/</guid>
+      <guid>http://localhost:1313/it/testimonials/filippo-maone/</guid>
       <description>&lt;p&gt;Matteo è una guida che mi accompagna verso obiettivi mirati al miglioramento personale e lavorativo. Un alleato che mi ha insegnato a farmi sempre domande stimolanti, che dalle loro risposte ho appreso sempre nuove cose. Ricordo il primo giorno di Kata, con il suo entusiasmo mi ha coinvolto in un progetto che ci ha permesso di vincere sfide, che prima sembravano utopie.&lt;/p&gt;
 &lt;p&gt;In pochi mesi abbiamo raddoppiato la produzione di porte giornaliere, raggiungendo i 100 pezzi al giorno. Ma la cosa che mi ha fatto crescere di più è stata l&amp;rsquo;attitudine al cambiamento. Mi ha dato gli strumenti, e mi ha insegnato ad usarli, e grazie a questo nessun nuovo ruolo o mansione mi spaventa, sono stato responsabile acquisti, responsabile di un reparto produttivo e responsabile delivery.&lt;/p&gt;</description>
     </item>

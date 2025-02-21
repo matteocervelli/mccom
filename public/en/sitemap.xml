@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>http://localhost:63796/en/projects/panhouse-cittareale/</loc>
+      <loc>http://localhost:1313/en/projects/panhouse-cittareale/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -11,7 +11,71 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/categories/</loc>
+      <loc>http://localhost:1313/en/37-year-of-descent/</loc>
+      
+        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/business/</loc>
+      
+        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/categories/</loc>
+      
+        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/family/</loc>
+      
+        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/personal/</loc>
+      
+        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/categories/post/</loc>
+      
+        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/</loc>
+      
+        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/transformation/</loc>
+      
+        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/categories/page/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -19,7 +83,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/categories/page/</loc>
+      <loc>http://localhost:1313/en/projects/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -27,7 +91,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/projects/</loc>
+      <loc>http://localhost:1313/en/categories/work/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -35,15 +99,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/categories/work/</loc>
-      
-        <lastmod>2025-02-20T00:16:38+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/categories/meta/</loc>
+      <loc>http://localhost:1313/en/categories/meta/</loc>
       
         <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
@@ -51,7 +107,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/sitemap/</loc>
+      <loc>http://localhost:1313/en/sitemap/</loc>
       
         <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
@@ -59,7 +115,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/ai/</loc>
+      <loc>http://localhost:1313/en/tags/ai/</loc>
       
         <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
@@ -67,7 +123,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/ai/</loc>
+      <loc>http://localhost:1313/en/ai/</loc>
       
         <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
@@ -75,7 +131,55 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/</loc>
+      <loc>http://localhost:1313/en/tags/book-review/</loc>
+      
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/marketing/</loc>
+      
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/categories/posts/</loc>
+      
+        <lastmod>2025-02-21T12:30:07+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/strategy/</loc>
+      
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/the-purple-cow/</loc>
+      
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/subscribe/</loc>
+      
+        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/work/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -83,31 +187,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/book-review/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/business/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/marketing/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/categories/posts/</loc>
+      <loc>http://localhost:1313/en/tags/scalability/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -115,7 +195,23 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/strategy/</loc>
+      <loc>http://localhost:1313/en/business-scalability-engineer/</loc>
+      
+        <lastmod>2025-02-20T00:16:38+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/categories/about/</loc>
+      
+        <lastmod>2025-02-20T00:16:38+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/tech-stack/</loc>
       
         <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
@@ -123,7 +219,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/the-purple-cow/</loc>
+      <loc>http://localhost:1313/en/tech-stack/</loc>
       
         <lastmod>2025-02-15T19:24:29+01:00</lastmod>
       
@@ -131,15 +227,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/subscribe/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/work/</loc>
+      <loc>http://localhost:1313/en/now/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -147,7 +235,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/scalability/</loc>
+      <loc>http://localhost:1313/en/about/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -155,55 +243,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/business-scalability-engineer/</loc>
-      
-        <lastmod>2025-02-20T00:16:38+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/categories/about/</loc>
-      
-        <lastmod>2025-02-20T00:16:38+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/tech-stack/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tech-stack/</loc>
-      
-        <lastmod>2025-02-15T19:24:29+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/now/</loc>
-      
-        <lastmod>2025-02-20T00:16:38+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/about/</loc>
-      
-        <lastmod>2025-02-20T00:16:38+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/delegation/</loc>
+      <loc>http://localhost:1313/en/tags/delegation/</loc>
       
         <lastmod>2025-01-26T10:14:51+01:00</lastmod>
       
@@ -211,7 +251,15 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/leadership/</loc>
+      <loc>http://localhost:1313/en/tags/leadership/</loc>
+      
+        <lastmod>2025-02-21T12:30:07+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tightrope-walker-manager/</loc>
       
         <lastmod>2025-01-26T10:14:51+01:00</lastmod>
       
@@ -219,15 +267,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tightrope-walker-manager/</loc>
-      
-        <lastmod>2025-01-26T10:14:51+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/guide/</loc>
+      <loc>http://localhost:1313/en/tags/guide/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -235,7 +275,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/linkedin-referral/</loc>
+      <loc>http://localhost:1313/en/linkedin-referral/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -243,15 +283,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/categories/post/</loc>
-      
-        <lastmod>2025-02-20T00:16:38+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/find-your-villain-learn-your-mission/</loc>
+      <loc>http://localhost:1313/en/find-your-villain-learn-your-mission/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
@@ -259,7 +291,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/lessons-learned/</loc>
+      <loc>http://localhost:1313/en/tags/lessons-learned/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
@@ -267,7 +299,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/mission/</loc>
+      <loc>http://localhost:1313/en/tags/mission/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
@@ -275,7 +307,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/purpose/</loc>
+      <loc>http://localhost:1313/en/tags/purpose/</loc>
       
         <lastmod>2025-02-17T15:34:26+01:00</lastmod>
       
@@ -283,7 +315,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/posts/</loc>
+      <loc>http://localhost:1313/en/posts/</loc>
       
         <lastmod>2025-01-21T11:44:42+01:00</lastmod>
       
@@ -291,7 +323,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/purpose-and-values/</loc>
+      <loc>http://localhost:1313/en/purpose-and-values/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -299,7 +331,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/purpose-and-vision/</loc>
+      <loc>http://localhost:1313/en/tags/purpose-and-vision/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -307,7 +339,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/alberto-rossi/</loc>
+      <loc>http://localhost:1313/en/testimonials/alberto-rossi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -315,7 +347,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/alexia-redini/</loc>
+      <loc>http://localhost:1313/en/testimonials/alexia-redini/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -323,7 +355,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/fabrice-pettoello/</loc>
+      <loc>http://localhost:1313/en/testimonials/fabrice-pettoello/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -331,7 +363,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/federico-trippi/</loc>
+      <loc>http://localhost:1313/en/testimonials/federico-trippi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -339,7 +371,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/filippo-maone/</loc>
+      <loc>http://localhost:1313/en/testimonials/filippo-maone/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -347,7 +379,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/francesca-sernissi/</loc>
+      <loc>http://localhost:1313/en/testimonials/francesca-sernissi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -355,7 +387,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/francesco-ferraro/</loc>
+      <loc>http://localhost:1313/en/testimonials/francesco-ferraro/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -363,7 +395,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/francesco-lagonigro/</loc>
+      <loc>http://localhost:1313/en/testimonials/francesco-lagonigro/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -371,7 +403,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/gianni-cordaro/</loc>
+      <loc>http://localhost:1313/en/testimonials/gianni-cordaro/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -379,7 +411,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/laura-masoni/</loc>
+      <loc>http://localhost:1313/en/testimonials/laura-masoni/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -387,7 +419,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/luigi-paganelli/</loc>
+      <loc>http://localhost:1313/en/testimonials/luigi-paganelli/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -395,7 +427,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/mattia-guida/</loc>
+      <loc>http://localhost:1313/en/testimonials/mattia-guida/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -403,7 +435,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/michele-lasi/</loc>
+      <loc>http://localhost:1313/en/testimonials/michele-lasi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -411,7 +443,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/rossana-gloriosi/</loc>
+      <loc>http://localhost:1313/en/testimonials/rossana-gloriosi/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -419,7 +451,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/stefano-boldrini/</loc>
+      <loc>http://localhost:1313/en/testimonials/stefano-boldrini/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -427,7 +459,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/categories/testimonials/</loc>
+      <loc>http://localhost:1313/en/categories/testimonials/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -435,7 +467,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/testimonials/</loc>
+      <loc>http://localhost:1313/en/testimonials/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -443,39 +475,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/37-year-of-descent/</loc>
-      
-        <lastmod>2024-02-21T10:00:00+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/family/</loc>
-      
-        <lastmod>2024-02-21T10:00:00+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/personal/</loc>
-      
-        <lastmod>2024-02-21T10:00:00+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/transformation/</loc>
-      
-        <lastmod>2024-02-21T10:00:00+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/coaching/</loc>
+      <loc>http://localhost:1313/en/tags/coaching/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -483,7 +483,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/communication/</loc>
+      <loc>http://localhost:1313/en/tags/communication/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -491,7 +491,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/tags/empathy/</loc>
+      <loc>http://localhost:1313/en/tags/empathy/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -499,7 +499,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/empathy/</loc>
+      <loc>http://localhost:1313/en/empathy/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -507,23 +507,23 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/humility-will-for-great-leadership/</loc>
+      <loc>http://localhost:1313/en/humility-will-for-great-leadership/</loc>
       
-        <lastmod>2025-01-21T11:44:42+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:63796/en/tags/learning-organization/</loc>
-      
-        <lastmod>2025-01-21T11:44:42+01:00</lastmod>
+        <lastmod>2025-02-21T12:30:07+01:00</lastmod>
       
       
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/</loc>
+      <loc>http://localhost:1313/en/tags/learning-organization/</loc>
+      
+        <lastmod>2025-02-21T12:30:07+01:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
@@ -531,7 +531,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:63796/en/categories/projects/</loc>
+      <loc>http://localhost:1313/en/categories/projects/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       
