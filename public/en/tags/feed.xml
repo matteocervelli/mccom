@@ -2,170 +2,188 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Matteo Cervelli</title>
-    <link>http://localhost:1313/en/tags/</link>
+    <link>http://localhost:63796/en/tags/</link>
     <description>Recent content in Tags on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/en/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:63796/en/tags/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ai</title>
-      <link>http://localhost:1313/en/tags/ai/</link>
+      <link>http://localhost:63796/en/tags/ai/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/tags/ai/</guid>
+      <guid>http://localhost:63796/en/tags/ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Book-Review</title>
-      <link>http://localhost:1313/en/tags/book-review/</link>
+      <link>http://localhost:63796/en/tags/book-review/</link>
       <pubDate>Sun, 26 Jan 2025 09:52:22 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/book-review/</guid>
+      <guid>http://localhost:63796/en/tags/book-review/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Business</title>
-      <link>http://localhost:1313/en/tags/business/</link>
+      <link>http://localhost:63796/en/tags/business/</link>
       <pubDate>Sun, 26 Jan 2025 09:52:22 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/business/</guid>
+      <guid>http://localhost:63796/en/tags/business/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Marketing</title>
-      <link>http://localhost:1313/en/tags/marketing/</link>
+      <link>http://localhost:63796/en/tags/marketing/</link>
       <pubDate>Sun, 26 Jan 2025 09:52:22 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/marketing/</guid>
+      <guid>http://localhost:63796/en/tags/marketing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Strategy</title>
-      <link>http://localhost:1313/en/tags/strategy/</link>
+      <link>http://localhost:63796/en/tags/strategy/</link>
       <pubDate>Sun, 26 Jan 2025 09:52:22 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/strategy/</guid>
+      <guid>http://localhost:63796/en/tags/strategy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scalability</title>
-      <link>http://localhost:1313/en/tags/scalability/</link>
+      <link>http://localhost:63796/en/tags/scalability/</link>
       <pubDate>Sat, 18 Jan 2025 08:41:33 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/scalability/</guid>
+      <guid>http://localhost:63796/en/tags/scalability/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tech-Stack</title>
-      <link>http://localhost:1313/en/tags/tech-stack/</link>
+      <link>http://localhost:63796/en/tags/tech-stack/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/tech-stack/</guid>
+      <guid>http://localhost:63796/en/tags/tech-stack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Delegation</title>
-      <link>http://localhost:1313/en/tags/delegation/</link>
+      <link>http://localhost:63796/en/tags/delegation/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/tags/delegation/</guid>
+      <guid>http://localhost:63796/en/tags/delegation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Leadership</title>
-      <link>http://localhost:1313/en/tags/leadership/</link>
+      <link>http://localhost:63796/en/tags/leadership/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/tags/leadership/</guid>
+      <guid>http://localhost:63796/en/tags/leadership/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Guide</title>
-      <link>http://localhost:1313/en/tags/guide/</link>
+      <link>http://localhost:63796/en/tags/guide/</link>
       <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/guide/</guid>
+      <guid>http://localhost:63796/en/tags/guide/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lessons-Learned</title>
-      <link>http://localhost:1313/en/tags/lessons-learned/</link>
+      <link>http://localhost:63796/en/tags/lessons-learned/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/lessons-learned/</guid>
+      <guid>http://localhost:63796/en/tags/lessons-learned/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mission</title>
-      <link>http://localhost:1313/en/tags/mission/</link>
+      <link>http://localhost:63796/en/tags/mission/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/mission/</guid>
+      <guid>http://localhost:63796/en/tags/mission/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Purpose</title>
-      <link>http://localhost:1313/en/tags/purpose/</link>
+      <link>http://localhost:63796/en/tags/purpose/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tags/purpose/</guid>
+      <guid>http://localhost:63796/en/tags/purpose/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Purpose and Vision</title>
-      <link>http://localhost:1313/en/tags/purpose-and-vision/</link>
+      <link>http://localhost:63796/en/tags/purpose-and-vision/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/tags/purpose-and-vision/</guid>
+      <guid>http://localhost:63796/en/tags/purpose-and-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Family</title>
+      <link>http://localhost:63796/en/tags/family/</link>
+      <pubDate>Wed, 21 Feb 2024 10:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:63796/en/tags/family/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personal</title>
+      <link>http://localhost:63796/en/tags/personal/</link>
+      <pubDate>Wed, 21 Feb 2024 10:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:63796/en/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transformation</title>
+      <link>http://localhost:63796/en/tags/transformation/</link>
+      <pubDate>Wed, 21 Feb 2024 10:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:63796/en/tags/transformation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coaching</title>
-      <link>http://localhost:1313/en/tags/coaching/</link>
+      <link>http://localhost:63796/en/tags/coaching/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/tags/coaching/</guid>
+      <guid>http://localhost:63796/en/tags/coaching/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Communication</title>
-      <link>http://localhost:1313/en/tags/communication/</link>
+      <link>http://localhost:63796/en/tags/communication/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/tags/communication/</guid>
+      <guid>http://localhost:63796/en/tags/communication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Empathy</title>
-      <link>http://localhost:1313/en/tags/empathy/</link>
+      <link>http://localhost:63796/en/tags/empathy/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/tags/empathy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning-Organization</title>
-      <link>http://localhost:1313/en/tags/learning-organization/</link>
-      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/en/tags/learning-organization/</guid>
+      <guid>http://localhost:63796/en/tags/empathy/</guid>
       <description></description>
     </item>
     

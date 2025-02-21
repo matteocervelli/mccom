@@ -75,5 +75,10 @@
         </div>
     </div>
     {{ end }}
+
+    <div id="comments-section" data-bsky-uri="{{ .Params.bsky }}"></div>
+
+    {{ $comments := resources.Get "js/comments.js" | minify | fingerprint }}
+    <script src="{{ $comments.RelPermalink }}"></script>
 </article>
 {{ end }} 

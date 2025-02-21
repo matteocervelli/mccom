@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page on Matteo Cervelli</title>
-    <link>http://localhost:1313/en/categories/page/</link>
+    <link>http://localhost:63796/en/categories/page/</link>
     <description>Recent content in Page on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 19 Feb 2025 10:00:00 +0100</lastBuildDate><atom:link href="https://localhost:1313/en/categories/page/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Feb 2025 10:00:00 +0100</lastBuildDate><atom:link href="https://localhost:63796/en/categories/page/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/en/projects/</link>
+      <link>http://localhost:63796/en/projects/</link>
       <pubDate>Wed, 19 Feb 2025 10:00:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/projects/</guid>
+      <guid>http://localhost:63796/en/projects/</guid>
       <description>&lt;p&gt;Each case study represents a unique challenge and solution. Here you&amp;rsquo;ll find detailed accounts of projects I&amp;rsquo;ve led, problems I&amp;rsquo;ve solved, and the measurable impact achieved for my clients.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sitemap</title>
-      <link>http://localhost:1313/en/sitemap/</link>
+      <link>http://localhost:63796/en/sitemap/</link>
       <pubDate>Sat, 15 Feb 2025 17:30:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/sitemap/</guid>
+      <guid>http://localhost:63796/en/sitemap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AI Usage</title>
-      <link>http://localhost:1313/en/ai/</link>
+      <link>http://localhost:63796/en/ai/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/ai/</guid>
+      <guid>http://localhost:63796/en/ai/</guid>
       <description>&lt;p&gt;Updated February 15, 2025.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;LLMs are a tool that has recently been taking up a lot of space in the world, and also in how I approach my work.&lt;/p&gt;
@@ -40,10 +40,10 @@
     
     <item>
       <title>Stay in Touch</title>
-      <link>http://localhost:1313/en/subscribe/</link>
+      <link>http://localhost:63796/en/subscribe/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/subscribe/</guid>
+      <guid>http://localhost:63796/en/subscribe/</guid>
       <description>&lt;h2 id=&#34;get-my-updates&#34;&gt;Get My Updates&lt;/h2&gt;
 &lt;p&gt;I have a newsletter where I occasionally share ideas, articles, and projects.
 You can sign up below:&lt;/p&gt;
@@ -77,10 +77,10 @@ You can sign up below:&lt;/p&gt;
     
     <item>
       <title>Work with me</title>
-      <link>http://localhost:1313/en/work/</link>
+      <link>http://localhost:63796/en/work/</link>
       <pubDate>Sat, 18 Jan 2025 14:52:50 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/work/</guid>
+      <guid>http://localhost:63796/en/work/</guid>
       <description>&lt;h2 id=&#34;my-value-system&#34;&gt;My value system&lt;/h2&gt;
 &lt;h3 id=&#34;why&#34;&gt;Why&lt;/h3&gt;
 &lt;p&gt;I unlock people&amp;rsquo;s talent and potential to build a more beautiful world together.&lt;/p&gt;
@@ -103,15 +103,15 @@ You can sign up below:&lt;/p&gt;
 &lt;/a&gt;
 &lt;h2 id=&#34;services-i-offer&#34;&gt;Services I offer&lt;/h2&gt;
 &lt;h3 id=&#34;management-consulting&#34;&gt;Management Consulting&lt;/h3&gt;
-&lt;p&gt;My consulting services are customized to &lt;a href=&#34;http://localhost:1313/en/business-scalability-engineer&#34;&gt;unlock your company&amp;rsquo;s potential&lt;/a&gt; and guide you toward success. Working together, we&amp;rsquo;ll transform challenges into opportunities. I can support you with tailored methodologies, strategic vision, insights, and operational excellence.&lt;/p&gt;</description>
+&lt;p&gt;My consulting services are customized to &lt;a href=&#34;http://localhost:63796/en/business-scalability-engineer&#34;&gt;unlock your company&amp;rsquo;s potential&lt;/a&gt; and guide you toward success. Working together, we&amp;rsquo;ll transform challenges into opportunities. I can support you with tailored methodologies, strategic vision, insights, and operational excellence.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Unlock your business growth with a Scalability Engineer</title>
-      <link>http://localhost:1313/en/business-scalability-engineer/</link>
+      <link>http://localhost:63796/en/business-scalability-engineer/</link>
       <pubDate>Sat, 18 Jan 2025 08:41:33 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/business-scalability-engineer/</guid>
+      <guid>http://localhost:63796/en/business-scalability-engineer/</guid>
       <description>&lt;h2 id=&#34;here-is-why-you-need-a-business-scalability-engineer-to-grow-your-business-the-way-it-deserves&#34;&gt;Here is why you need a Business Scalability Engineer to grow your business the way it deserves&lt;/h2&gt;
 &lt;p&gt;Do you know when a company seems blocked, growth slows down, problems multiply and you don&amp;rsquo;t know where to start to put things back in order?&lt;/p&gt;
 &lt;p&gt;Here, I&amp;rsquo;m the one who helps unlock all this.&lt;/p&gt;
@@ -121,10 +121,10 @@ You can sign up below:&lt;/p&gt;
     
     <item>
       <title>Technologies used to build this site</title>
-      <link>http://localhost:1313/en/tech-stack/</link>
+      <link>http://localhost:63796/en/tech-stack/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tech-stack/</guid>
+      <guid>http://localhost:63796/en/tech-stack/</guid>
       <description>&lt;p&gt;Updated: 2025-01-17&lt;/p&gt;
 &lt;p&gt;This website was created by Matteo Cervelli using a mix of personal skills and AI. I previously had a website hosted and built on WordPress, but I decided to rebuild it myself in early 2025 to &amp;ldquo;keep control&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;I wanted a lightweight, fast, and responsive website. And I wanted to learn the basics by leveraging what technology has to offer.&lt;/p&gt;
@@ -133,13 +133,13 @@ You can sign up below:&lt;/p&gt;
     
     <item>
       <title>What I&#39;m doing now</title>
-      <link>http://localhost:1313/en/now/</link>
+      <link>http://localhost:63796/en/now/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/now/</guid>
+      <guid>http://localhost:63796/en/now/</guid>
       <description>&lt;p&gt;&lt;em&gt;Note: this is a &lt;a href=&#34;https://nownownow.com&#34;&gt;Now&lt;/a&gt; page.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Updated: 2025-01-18, from my home in Poggibonsi, Tuscany, Italy.&lt;/p&gt;
-&lt;p&gt;These current projects align with my core &lt;a href=&#34;http://localhost:1313/en/purpose-and-values/&#34;&gt;purpose&lt;/a&gt; of triggering talent to build a more beautiful world. Read more about my &lt;a href=&#34;http://localhost:1313/en/about/&#34;&gt;background&lt;/a&gt; to understand how I got here.&lt;/p&gt;
+&lt;p&gt;These current projects align with my core &lt;a href=&#34;http://localhost:63796/en/purpose-and-values/&#34;&gt;purpose&lt;/a&gt; of triggering talent to build a more beautiful world. Read more about my &lt;a href=&#34;http://localhost:63796/en/about/&#34;&gt;background&lt;/a&gt; to understand how I got here.&lt;/p&gt;
 &lt;h2 id=&#34;i-help-companies-grow-in-a-scalable-way&#34;&gt;I help companies grow in a scalable way&lt;/h2&gt;
 &lt;p&gt;I am a business consultant and advisor.&lt;/p&gt;
 &lt;p&gt;My work consists of helping companies grow in a scalable way through Strategy, Change Management, Sales and Business Development, Leadership Training and Coaching.&lt;/p&gt;</description>
@@ -147,22 +147,22 @@ You can sign up below:&lt;/p&gt;
     
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/en/about/</link>
+      <link>http://localhost:63796/en/about/</link>
       <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/about/</guid>
+      <guid>http://localhost:63796/en/about/</guid>
       <description>&lt;h2 id=&#34;in-short&#34;&gt;In short&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m Matteo Cervelli. I am a &lt;a href=&#34;http://localhost:1313/en/business-scalability-engineer/&#34;&gt;Business Scalability Engineer&lt;/a&gt;. I act as a &lt;a href=&#34;http://localhost:1313/en/work/&#34;&gt;Consultant and Advisor&lt;/a&gt;. Previously I managed &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt; as Co-CEO.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m Matteo Cervelli. I am a &lt;a href=&#34;http://localhost:63796/en/business-scalability-engineer/&#34;&gt;Business Scalability Engineer&lt;/a&gt;. I act as a &lt;a href=&#34;http://localhost:63796/en/work/&#34;&gt;Consultant and Advisor&lt;/a&gt;. Previously I managed &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt; as Co-CEO.&lt;/p&gt;
 &lt;p&gt;My purpose is to trigger people to build a more beautiful world, together. Today I help entrepreneurs and leaders grow their business through strategic development, effective management, and scalable sales processes.&lt;/p&gt;
 &lt;p&gt;I have been Sara&amp;rsquo;s husband for over 10 years, father of 3 little girls, Emma, Maria and Anna, and two dogs (Maple and Cookie). I live in Tuscany.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Purpose and Values</title>
-      <link>http://localhost:1313/en/purpose-and-values/</link>
+      <link>http://localhost:63796/en/purpose-and-values/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/purpose-and-values/</guid>
+      <guid>http://localhost:63796/en/purpose-and-values/</guid>
       <description>&lt;h2 id=&#34;my-golden-circle&#34;&gt;My Golden Circle&lt;/h2&gt;
 &lt;h3 id=&#34;why&#34;&gt;Why&lt;/h3&gt;
 &lt;p&gt;My purpose is to &lt;strong&gt;trigger people&amp;rsquo;s talent to build a more beautiful world.&lt;/strong&gt;&lt;/p&gt;
@@ -173,10 +173,10 @@ You can sign up below:&lt;/p&gt;
     
     <item>
       <title>Testimonials</title>
-      <link>http://localhost:1313/en/testimonials/</link>
+      <link>http://localhost:63796/en/testimonials/</link>
       <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/testimonials/</guid>
+      <guid>http://localhost:63796/en/testimonials/</guid>
       <description>&lt;h2 id=&#34;what-people-say-about-working-with-me&#34;&gt;What People Say About Working With Me&lt;/h2&gt;
 &lt;div class=&#34;testimonials-filters&#34;&gt;
     &lt;div class=&#34;filter-group&#34;&gt;

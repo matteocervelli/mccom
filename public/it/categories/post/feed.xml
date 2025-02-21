@@ -2,22 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post on Matteo Cervelli</title>
-    <link>http://localhost:1313/it/categories/post/</link>
+    <link>http://localhost:63796/it/categories/post/</link>
     <description>Recent content in Post on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Fri, 19 Apr 2024 16:00:00 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/categories/post/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Feb 2025 10:00:00 +0100</lastBuildDate><atom:link href="https://localhost:63796/it/categories/post/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>37, l&#39;Anno della Discesa</title>
+      <link>http://localhost:63796/it/37-anno-della-discesa/</link>
+      <pubDate>Fri, 21 Feb 2025 10:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:63796/it/37-anno-della-discesa/</guid>
+      <description>&lt;p&gt;Oggi spengo 37 candeline.&lt;/p&gt;
+&lt;p&gt;Questo è stato l&amp;rsquo;anno più intenso, difficile e ricco di senso della mia vita.&lt;/p&gt;
+&lt;p&gt;Se devo scegliere una parola che più di tutte contraddistingue questo anno, scelgo &lt;strong&gt;discesa&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;É stato un anno in cui ho scelto di scendere. Avrei voluto anche risalire, ma si sta bene anche in basso. E il basso non finisce mai, il basso della frustrazione, il basso della rabbia repressa, il basso della vergogna e il basso del giudizio altrui.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Come Fare Referral su LinkedIn</title>
-      <link>http://localhost:1313/it/referral-linkedin/</link>
+      <link>http://localhost:63796/it/referral-linkedin/</link>
       <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/it/referral-linkedin/</guid>
+      <guid>http://localhost:63796/it/referral-linkedin/</guid>
       <description>&lt;h2 id=&#34;step-1-accedere-a-linkedin&#34;&gt;Step 1: Accedere a LinkedIn&lt;/h2&gt;
 &lt;p&gt;Prima di tutto, assicurati di essere connesso al tuo account LinkedIn. Vai su &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;www.linkedin.com&lt;/a&gt; e accedi con le tue credenziali.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: Login LinkedIn&#34;&gt;
+  &lt;img src=&#34;http://localhost:63796/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: Login LinkedIn&#34;&gt;
   
 &lt;/div&gt; &lt;/p&gt;
 &lt;h2 id=&#34;step-2-accedere-al-profilo-della-persona-che-vuoi-raccomandare&#34;&gt;Step 2: Accedere al profilo della persona che vuoi raccomandare&lt;/h2&gt;
@@ -25,7 +37,7 @@
 &lt;p&gt;Per cominciare, sulla barra di ricerca in alto:&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Cerca profilo&#34;&gt;
+  &lt;img src=&#34;http://localhost:63796/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Cerca profilo&#34;&gt;
   
 &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;Digita il nome della persona che stai cercando, premi invio e clicca sul nome nei risultati di ricerca che appariranno.&lt;/p&gt;</description>

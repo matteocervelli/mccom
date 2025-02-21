@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech-Stack on Matteo Cervelli</title>
-    <link>http://localhost:1313/en/tags/tech-stack/</link>
+    <link>http://localhost:63796/en/tags/tech-stack/</link>
     <description>Recent content in Tech-Stack on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 17 Jan 2025 16:12:52 +0100</lastBuildDate><atom:link href="https://localhost:1313/en/tags/tech-stack/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jan 2025 16:12:52 +0100</lastBuildDate><atom:link href="https://localhost:63796/en/tags/tech-stack/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Technologies used to build this site</title>
-      <link>http://localhost:1313/en/tech-stack/</link>
+      <link>http://localhost:63796/en/tech-stack/</link>
       <pubDate>Fri, 17 Jan 2025 16:12:52 +0100</pubDate>
       
-      <guid>http://localhost:1313/en/tech-stack/</guid>
+      <guid>http://localhost:63796/en/tech-stack/</guid>
       <description>&lt;p&gt;Updated: 2025-01-17&lt;/p&gt;
 &lt;p&gt;This website was created by Matteo Cervelli using a mix of personal skills and AI. I previously had a website hosted and built on WordPress, but I decided to rebuild it myself in early 2025 to &amp;ldquo;keep control&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;I wanted a lightweight, fast, and responsive website. And I wanted to learn the basics by leveraging what technology has to offer.&lt;/p&gt;
