@@ -11,7 +11,7 @@ draft: false
 tags: ['personal', 'business', 'transformation', 'family']
 categories: ['post']
 featured_image: "images/io-e-sara-velati.png"
-bsky: ""
+bsky: "https://bsky.app/profile/matteocervelli.com/post/3lioor4vpac2n"
 ---
 
 37, the year of descent.
