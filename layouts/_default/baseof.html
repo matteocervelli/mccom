@@ -62,17 +62,18 @@
     {{ end }}
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
   
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="40d83e8d-a45a-43d8-b9c8-db93176c0420"></script>
+    {{ if hugo.IsProduction }}
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="40d83e8d-a45a-43d8-b9c8-db93176c0420"></script>
+      <script src="https://analytics.ahrefs.com/analytics.js" data-key="WVZPgYoen8uQz3GD87Degg" async></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+    {{ end }}
 
-    {{ $embedYouTube := resources.Get "js/youtube-embed.js" | minify | fingerprint }}
+    {{ $embedYouTube := resources.Get "js/youtube-embed.js" | js.Build | minify | fingerprint }}
     <script src="{{ $embedYouTube.RelPermalink }}"></script>
     
     <!-- Search scripts (solo una volta) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
-    {{ $search := resources.Get "js/search.js" | minify | fingerprint }}
+    {{ $search := resources.Get "js/search.js" | js.Build | minify | fingerprint }}
     <script src="{{ $search.RelPermalink }}"></script>
-    
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="WVZPgYoen8uQz3GD87Degg" async></script>
 
     <!-- Swiper.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -93,7 +94,7 @@
 
     {{ partial "control-bar.html" (dict "context" . "shouldHaveSidebar" $shouldHaveSidebar) }}
     
-    {{ $cacheLightDark := resources.Get "js/theme-light-dark-cache.js" | minify | fingerprint }}
+    {{ $cacheLightDark := resources.Get "js/theme-light-dark-cache.js" | js.Build | minify | fingerprint }}
     <script src="{{ $cacheLightDark.RelPermalink }}"></script>
     
     {{/* Se dovrebbe avere la sidebar, la mostriamo */}}
@@ -118,16 +119,16 @@
     </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
     
-    {{ $themeLightDark := resources.Get "js/theme-light-dark-function.js" | minify | fingerprint }}
+    {{ $themeLightDark := resources.Get "js/theme-light-dark-function.js" | js.Build | minify | fingerprint }}
     <script src="{{ $themeLightDark.RelPermalink }}"></script>
     
-    {{ $backToTop := resources.Get "js/backToTop.js" | minify | fingerprint }}
+    {{ $backToTop := resources.Get "js/backToTop.js" | js.Build | minify | fingerprint }}
     <script src="{{ $backToTop.RelPermalink }}"></script>
   
-    {{ $toggleTOC := resources.Get "js/toggleTOC.js" | minify | fingerprint }}
+    {{ $toggleTOC := resources.Get "js/toggleTOC.js" | js.Build | minify | fingerprint }}
     <script src="{{ $toggleTOC.RelPermalink }}"></script>
 
-    {{ $footnoteTooltips := resources.Get "js/footnote-tooltips.js" | minify | fingerprint }}
+    {{ $footnoteTooltips := resources.Get "js/footnote-tooltips.js" | js.Build | minify | fingerprint }}
     <script src="{{ $footnoteTooltips.RelPermalink }}"></script>
 
     {{ partial "cookie-consent.html" . }}

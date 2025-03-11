@@ -25,7 +25,7 @@
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/it/legal/privacy-policy/</guid>
-      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 7 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 11 gennaio 2025&lt;/em&gt;&lt;/p&gt;
  
 &lt;h2 id=&#34;1-introduzione&#34;&gt;1. Introduzione&lt;/h2&gt;
 &lt;p&gt;La presente Privacy Policy descrive come il sito web &lt;a href=&#34;https://matteocervelli.com&#34;&gt;https://matteocervelli.com&lt;/a&gt; raccoglie, utilizza e protegge i dati personali degli utenti. Ci impegniamo a garantire che la tua privacy sia protetta e che i tuoi dati personali siano trattati nel rispetto del Regolamento UE 679/2016 (GDPR) e del D.lgs. 196/2003 (Codice Privacy).&lt;/p&gt;
@@ -86,7 +86,7 @@
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/it/legal/note-legali/</guid>
-      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 8 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 11 gennaio 2025&lt;/em&gt;&lt;/p&gt;
  
 &lt;p&gt;Il sito &lt;a href=&#34;https://matteocervelli.com&#34;&gt;https://matteocervelli.com&lt;/a&gt; (di seguito &amp;ldquo;Sito&amp;rdquo;) è di proprietà e gestito da Cervelli Matteo, libero professionista con partita IVA IT01596300523, con sede in 53036 Poggibonsi (SI), Italia (di seguito &amp;ldquo;Titolare&amp;rdquo;). Il Sito è stato creato per offrire contenuti informativi (blog) e presentare servizi professionali di consulenza ingegneristica (sito vetrina).&lt;/p&gt;
 &lt;h2 id=&#34;1-informazioni-societarie&#34;&gt;1. Informazioni societarie&lt;/h2&gt;
@@ -109,63 +109,13 @@ Sito web: &lt;a href=&#34;https://www.netlify.com&#34;&gt;https://www.netlify.co
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/it/legal/termini-di-utilizzo/</guid>
-      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 8 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 11 gennaio 2025&lt;/em&gt;&lt;/p&gt;
  
 &lt;h2 id=&#34;1-accettazione-dei-termini&#34;&gt;1. Accettazione dei termini&lt;/h2&gt;
 &lt;p&gt;Accedendo e utilizzando questo sito web, accetti di essere vincolato dai presenti termini e condizioni di utilizzo. Se non accetti questi termini, ti preghiamo di non utilizzare il sito.&lt;/p&gt;
 &lt;h2 id=&#34;2-proprietà-intellettuale&#34;&gt;2. Proprietà intellettuale&lt;/h2&gt;
 &lt;p&gt;Tutto il contenuto presente su questo sito web, inclusi ma non limitati a testi, grafica, loghi, immagini, clip audio, download digitali, compilazioni di dati e software, è di proprietà del sito o dei suoi fornitori di contenuti ed è protetto dalle leggi sul diritto d&amp;rsquo;autore.
 È vietata la riproduzione, distribuzione o modifica senza autorizzazione scritta.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Gestione Consensi</title>
-      <link>http://localhost:1313/it/legal/gestione-consensi/</link>
-      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/it/legal/gestione-consensi/</guid>
-      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 6 gennaio 2025&lt;/em&gt;&lt;/p&gt;
- 
-&lt;h2 id=&#34;le-tue-preferenze-attuali&#34;&gt;Le tue preferenze attuali&lt;/h2&gt;
-&lt;div id=&#34;current-preferences&#34; class=&#34;bg-gray-50 p-4 rounded-lg mb-8&#34;&gt;
-    &lt;div class=&#34;flex justify-between items-center mb-4&#34;&gt;
-        &lt;h2 class=&#34;text-lg font-semibold&#34;&gt;Stato attuale dei consensi&lt;/h2&gt;
-        &lt;button id=&#34;revoke-all&#34; class=&#34;px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors&#34;&gt;
-            Revoca tutti i consensi
-        &lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;space-y-4&#34;&gt;
-        &lt;div class=&#34;flex items-center justify-between&#34;&gt;
-            &lt;div&gt;
-                &lt;h3 class=&#34;font-medium&#34;&gt;Cookie analitici&lt;/h3&gt;
-                &lt;p class=&#34;text-sm text-gray-600&#34;&gt;Google Analytics, Umami e Ahrefs&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;span id=&#34;analytics-status&#34; class=&#34;px-3 py-1 rounded-full text-sm&#34;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;flex items-center justify-between&#34;&gt;
-            &lt;div&gt;
-                &lt;h3 class=&#34;font-medium&#34;&gt;Cookie di funzionalità&lt;/h3&gt;
-                &lt;p class=&#34;text-sm text-gray-600&#34;&gt;Swiper.js e Calendly&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;span id=&#34;functionality-status&#34; class=&#34;px-3 py-1 rounded-full text-sm&#34;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;flex items-center justify-between&#34;&gt;
-            &lt;div&gt;
-                &lt;h3 class=&#34;font-medium&#34;&gt;Cookie di marketing&lt;/h3&gt;
-                &lt;p class=&#34;text-sm text-gray-600&#34;&gt;ConvertKit&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;span id=&#34;marketing-status&#34; class=&#34;px-3 py-1 rounded-full text-sm&#34;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;modifica-le-tue-preferenze&#34;&gt;Modifica le tue preferenze&lt;/h2&gt;
-&lt;div class=&#34;bg-white p-6 rounded-lg shadow-sm&#34;&gt;
-    &lt;form id=&#34;consent-form&#34; class=&#34;space-y-6&#34;&gt;
-        &lt;div class=&#34;space-y-4&#34;&gt;
-            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
-                &lt;div&gt;
-                    &lt;h3 class=&#34;font-medium&#34;&gt;Cookie analitici&lt;/h3&gt;
-                    &lt;p class=&#34;text-sm text-gray-600&#34;&gt;Permettono di analizzare l&#39;utilizzo del sito per migliorarlo&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -269,28 +269,48 @@ class CookieConsent {
     }
 
     enableAnalytics() {
-        // Enable Umami Analytics (only in production)
-        if (!document.querySelector('script[data-website-id="40d83e8d-a45a-43d8-b9c8-db93176c0420"]') && window.location.hostname !== 'localhost') {
+        // Check if we're in production environment
+        const isProduction = window.location.hostname !== 'localhost' && 
+                            window.location.hostname !== '127.0.0.1' &&
+                            !window.location.hostname.includes('dev.') &&
+                            !window.location.hostname.includes('staging.') &&
+                            !window.location.hostname.includes('test.');
+        
+        if (!isProduction) {
+            console.log('Analytics disabled in non-production environment');
+            return;
+        }
+
+        // Enable Umami Analytics
+        if (!document.querySelector('script[data-website-id="40d83e8d-a45a-43d8-b9c8-db93176c0420"]')) {
             const umamiScript = document.createElement('script');
             umamiScript.setAttribute('async', '');
             umamiScript.setAttribute('defer', '');
             umamiScript.setAttribute('data-website-id', '40d83e8d-a45a-43d8-b9c8-db93176c0420');
             umamiScript.setAttribute('src', 'https://cloud.umami.is/script.js');
             document.head.appendChild(umamiScript);
-
+    
             // Set cookie for Umami
             const expiryDate = new Date();
             expiryDate.setFullYear(expiryDate.getFullYear() + 1);
             document.cookie = `umami.uuid=${this.generateUUID()}; expires=${expiryDate.toUTCString()}; path=/; SameSite=Lax`;
         }
         
-        // Enable Ahrefs Analytics (only in production)
-        if (!document.querySelector('script[data-key="WVZPgYoen8uQz3GD87Degg"]') && window.location.hostname !== 'localhost') {
+        // Enable Ahrefs Analytics
+        if (!document.querySelector('script[data-key="WVZPgYoen8uQz3GD87Degg"]')) {
             const ahrefsScript = document.createElement('script');
             ahrefsScript.setAttribute('async', '');
             ahrefsScript.setAttribute('src', 'https://analytics.ahrefs.com/analytics.js');
             ahrefsScript.setAttribute('data-key', 'WVZPgYoen8uQz3GD87Degg');
             document.head.appendChild(ahrefsScript);
+        }
+
+        // Enable Cloudflare Analytics if needed
+        if (!document.querySelector('script[src*="cloudflare.com/beacon.min.js"]')) {
+            const cloudflareScript = document.createElement('script');
+            cloudflareScript.setAttribute('defer', '');
+            cloudflareScript.setAttribute('src', 'https://static.cloudflareinsights.com/beacon.min.js');
+            document.head.appendChild(cloudflareScript);
         }
     }
 
@@ -308,6 +328,12 @@ class CookieConsent {
         const ahrefsScript = document.querySelector('script[data-key="WVZPgYoen8uQz3GD87Degg"]');
         if (ahrefsScript) {
             ahrefsScript.remove();
+        }
+
+        // Remove Cloudflare Analytics
+        const cloudflareScript = document.querySelector('script[src*="cloudflare.com/beacon.min.js"]');
+        if (cloudflareScript) {
+            cloudflareScript.remove();
         }
         
         // Clean up analytics objects safely
@@ -345,41 +371,39 @@ class CookieConsent {
                     await new Promise((resolve, reject) => {
                         calendlyScript.onload = () => {
                             if (window.Calendly) {
-                                // Re-initialize any inline widgets after script loads
-                                const calendlyWidgets = document.querySelectorAll('.calendly-inline-widget');
-                                calendlyWidgets.forEach(widget => {
-                                    widget.style.display = 'block';
-                                    window.Calendly.initInlineWidget({
-                                        url: widget.getAttribute('data-url'),
-                                        parentElement: widget
-                                    });
-                                });
                                 resolve();
                             } else {
-                                reject(new Error('Calendly not properly initialized'));
+                                console.warn('Calendly not properly initialized');
+                                resolve(); // Continuiamo comunque
                             }
                         };
-                        calendlyScript.onerror = () => reject(new Error('Failed to load Calendly'));
+                        calendlyScript.onerror = () => {
+                            console.warn('Failed to load Calendly');
+                            resolve(); // Continuiamo anche in caso di errore
+                        };
                         document.head.appendChild(calendlyScript);
                     });
                 }
 
-                // Enable Kit
-                if (!document.querySelector('script[src*="kit"]')) {
+                // Enable Kit - rimuovo temporaneamente Kit se non è necessario
+                /* if (!document.querySelector('script[src*="kit"]')) {
                     const kitScript = document.createElement('script');
                     kitScript.setAttribute('type', 'text/javascript');
                     kitScript.setAttribute('src', 'https://js.kit.co/v1/kit.js');
                     
                     await new Promise((resolve, reject) => {
                         kitScript.onload = resolve;
-                        kitScript.onerror = () => reject(new Error('Failed to load Kit'));
+                        kitScript.onerror = () => {
+                            console.warn('Failed to load Kit');
+                            resolve(); // Continuiamo anche in caso di errore
+                        };
                         document.head.appendChild(kitScript);
                     });
-                }
+                } */
 
             } catch (error) {
-                console.error('Error loading profiling scripts:', error);
-                throw error;
+                console.warn('Error loading profiling scripts:', error);
+                // Non lanciamo l'errore, continuiamo l'esecuzione
             }
         };
 
@@ -392,10 +416,10 @@ class CookieConsent {
                     break;
                 } catch (error) {
                     if (i === retries - 1) {
-                        console.error('Failed to load scripts after', retries, 'attempts:', error);
+                        console.warn('Failed to load scripts after', retries, 'attempts:', error);
                     } else {
                         console.warn('Retry attempt', i + 1, 'of', retries);
-                        await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1))); // Exponential backoff
+                        await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)));
                     }
                 }
             }
@@ -477,17 +501,20 @@ class CookieConsent {
 document.addEventListener('DOMContentLoaded', function() {
     const cookieConsent = new CookieConsent();
 
-// Event listeners for cookie modal
-document.querySelectorAll('[data-open-cookie-settings]').forEach(button => {
-    button.addEventListener('click', () => {
-        cookieConsent.openModal({ defaultTab: 'details' }); // Apre direttamente nella scheda details
+    // Event listeners for cookie modal
+    document.querySelectorAll('[data-open-cookie-settings]').forEach(button => {
+        button.addEventListener('click', () => {
+            cookieConsent.openModal({ defaultTab: 'details' });
+        });
     });
-});
 
-this.bannerButtons.customize?.addEventListener('click', () => {
-    this.hideBanner();
-    this.openModal({ defaultTab: 'details' }); // Apre direttamente nella scheda details
-});
+    // Correggo l'accesso al bannerButtons che era undefined
+    if (cookieConsent.bannerButtons && cookieConsent.bannerButtons.customize) {
+        cookieConsent.bannerButtons.customize.addEventListener('click', () => {
+            cookieConsent.hideBanner();
+            cookieConsent.openModal({ defaultTab: 'details' });
+        });
+    }
 
     document.getElementById('cookie-consent-modal')?.addEventListener('click', function(e) {
         if (e.target === this) {

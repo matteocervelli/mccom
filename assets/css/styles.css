@@ -4092,13 +4092,22 @@ tr:nth-child(even) {
 }
 
 /* Categories */
-.category, .tab-content {
+.tab-content {
     background: var(--color-bg-primary);
     border-radius: var(--border-radius);
     padding: 0;
     margin-bottom: 0;
     border: 1px solid var(--color-border);
     margin-bottom: var(--font-size-normal);
+}
+
+.category {
+  background: var(--color-bg-primary);
+  border-radius: var(--border-radius);
+  padding: 0;
+  margin-bottom: 0;
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--font-size-normal);
 }
 
 .category-header {

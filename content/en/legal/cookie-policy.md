@@ -32,40 +32,40 @@ Below, the trackers active on the Website are categorized by type:
 
 Cookies necessary for the Website to function. They do not require consent.
 
-| Tracker | Provider | Purpose | Maximum Duration | Type |
-|---------|----------|---------|------------------|------|
-| Cloudflare Insights | Cloudflare | Site performance analysis | 1 year | Technical |
-| Swiper.js | Swiper | Navigation functionality | Session | Technical |
-| Umami Analytics | Umami | Anonymous traffic statistics | 1 year | Technical |
-| Fuse.js | Fuse | Search functionality | Session | Technical |
-| Theme Preference | Local | User theme preference (light/dark) | 1 year | Technical |
-| Language Preference | Local | User language preference | 1 year | Technical |
+| Tracker | Provider | Purpose | Maximum Duration |
+|---------|----------|---------|------------------|
+| Cloudflare Insights | Cloudflare | Site performance analysis | 1 year |
+| Swiper.js | Swiper | Navigation functionality | Session |
+| Fuse.js | Fuse | Search functionality | Session |
+| Theme Preference | Local | User theme preference (light/dark) | 1 year |
+| Language Preference | Local | User language preference | 1 year |
 
 ### Analytical Cookies
 
 Cookies to analyze Website traffic. Active only with consent.
 
-| Tracker | Provider | Purpose | Maximum Duration | Type |
-|---------|----------|---------|------------------|------|
-| Ahrefs Analytics | Ahrefs | SEO Analysis | 2 years | Analytical |
+| Tracker | Provider | Purpose | Maximum Duration |
+|---------|----------|---------|------------------|
+| Ahrefs Analytics | Ahrefs | SEO Analysis | 2 years |
+| Umami Analytics | Umami | Anonymous traffic statistics | 1 year |
 
 ### Profiling Cookies
 
 Cookies for marketing and profiling purposes. Active only with consent.
 
-| Tracker | Provider | Purpose | Maximum Duration | Type |
-|---------|----------|---------|------------------|------|
-| Calendly | Calendly | Booking management | 1 year | Profiling |
-| Kit | Kit | Newsletter management | 1 year | Profiling |
+| Tracker | Provider | Purpose | Maximum Duration |
+|---------|----------|---------|------------------|
+| Calendly | Calendly | Booking management | 1 year |
+| Kit | Kit | Newsletter management | 1 year |
 
 ### Social Cookies
 
 Cookies for embedded content from social platforms. Active only with consent.
 
-| Tracker | Provider | Purpose | Maximum Duration | Type |
-|---------|----------|---------|------------------|------|
-| YouTube Embed | YouTube | Video embedding | Session | Social |
-| Bluesky | Bluesky | Social post embedding | Session | Social |
+| Tracker | Provider | Purpose | Maximum Duration |
+|---------|----------|---------|------------------|
+| YouTube Embed | YouTube | Video embedding | Session |
+| Bluesky | Bluesky | Social post embedding | Session |
 
 ## 3. Third Parties
 

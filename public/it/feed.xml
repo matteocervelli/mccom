@@ -27,6 +27,79 @@
 &lt;/figure&gt;
 
 
+
+
+&lt;div id=&#34;lightbox&#34; class=&#34;lightbox&#34; onclick=&#34;closeLightbox()&#34;&gt;
+    &lt;button class=&#34;lightbox-close&#34; onclick=&#34;closeLightbox()&#34;&gt;&amp;times;&lt;/button&gt;
+    &lt;button class=&#34;lightbox-prev&#34; onclick=&#34;changeLightboxImage(-1)&#34;&gt;&amp;lt;&lt;/button&gt;
+    &lt;button class=&#34;lightbox-next&#34; onclick=&#34;changeLightboxImage(1)&#34;&gt;&amp;gt;&lt;/button&gt;
+    &lt;div class=&#34;lightbox-content&#34;&gt;
+        &lt;img src=&#34;&#34; alt=&#34;&#34;&gt;
+        &lt;figcaption class=&#34;image-caption&#34;&gt;&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+let currentImageIndex = 0;
+const images = [];
+
+function openLightbox(img) {
+    event.stopPropagation();
+    const lightbox = document.getElementById(&#39;lightbox&#39;);
+    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
+    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
+    
+    
+    images.length = 0;
+    document.querySelectorAll(&#39;.lightbox-trigger img&#39;).forEach(image =&gt; {
+        images.push({
+            src: image.src,
+            alt: image.alt,
+            caption: image.dataset.caption
+        });
+    });
+    
+    
+    currentImageIndex = images.findIndex(image =&gt; image.src === img.src);
+    
+    
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = img.dataset.caption;
+    
+    
+    lightbox.style.display = &#39;flex&#39;;
+    document.body.style.overflow = &#39;hidden&#39;;
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById(&#39;lightbox&#39;);
+    lightbox.style.display = &#39;none&#39;;
+    document.body.style.overflow = &#39;auto&#39;;
+}
+
+function changeLightboxImage(direction) {
+    event.stopPropagation();
+    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+    const image = images[currentImageIndex];
+    const lightbox = document.getElementById(&#39;lightbox&#39;);
+    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
+    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
+    
+    lightboxImg.src = image.src;
+    lightboxImg.alt = image.alt;
+    lightboxCaption.textContent = image.caption;
+}
+
+
+document.addEventListener(&#39;keydown&#39;, function(e) {
+    if (document.getElementById(&#39;lightbox&#39;).style.display === &#39;flex&#39;) {
+        if (e.key === &#39;Escape&#39;) closeLightbox();
+        if (e.key === &#39;ArrowLeft&#39;) changeLightboxImage(-1);
+        if (e.key === &#39;ArrowRight&#39;) changeLightboxImage(1);
+    }
+});
+&lt;/script&gt;
  
 &lt;p&gt;L&amp;rsquo;evento ha devastato piccoli paesi, alcuni dei quali famosi anche per il turismo, come Norcia, città natale di San Benedetto, o Amatrice, ben nota per una salsa italiana per la pasta chiamata Amatriciana, che combina pomodoro, guanciale e pecorino per un sapore divino.&lt;/p&gt;</description>
     </item>
@@ -37,7 +110,7 @@
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/it/legal/privacy-policy/</guid>
-      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 7 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 11 gennaio 2025&lt;/em&gt;&lt;/p&gt;
  
 &lt;h2 id=&#34;1-introduzione&#34;&gt;1. Introduzione&lt;/h2&gt;
 &lt;p&gt;La presente Privacy Policy descrive come il sito web &lt;a href=&#34;https://matteocervelli.com&#34;&gt;https://matteocervelli.com&lt;/a&gt; raccoglie, utilizza e protegge i dati personali degli utenti. Ci impegniamo a garantire che la tua privacy sia protetta e che i tuoi dati personali siano trattati nel rispetto del Regolamento UE 679/2016 (GDPR) e del D.lgs. 196/2003 (Codice Privacy).&lt;/p&gt;
@@ -98,7 +171,7 @@
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/it/legal/note-legali/</guid>
-      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 8 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 11 gennaio 2025&lt;/em&gt;&lt;/p&gt;
  
 &lt;p&gt;Il sito &lt;a href=&#34;https://matteocervelli.com&#34;&gt;https://matteocervelli.com&lt;/a&gt; (di seguito &amp;ldquo;Sito&amp;rdquo;) è di proprietà e gestito da Cervelli Matteo, libero professionista con partita IVA IT01596300523, con sede in 53036 Poggibonsi (SI), Italia (di seguito &amp;ldquo;Titolare&amp;rdquo;). Il Sito è stato creato per offrire contenuti informativi (blog) e presentare servizi professionali di consulenza ingegneristica (sito vetrina).&lt;/p&gt;
 &lt;h2 id=&#34;1-informazioni-societarie&#34;&gt;1. Informazioni societarie&lt;/h2&gt;
@@ -121,13 +194,26 @@ Sito web: &lt;a href=&#34;https://www.netlify.com&#34;&gt;https://www.netlify.co
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/it/legal/termini-di-utilizzo/</guid>
-      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 8 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 11 gennaio 2025&lt;/em&gt;&lt;/p&gt;
  
 &lt;h2 id=&#34;1-accettazione-dei-termini&#34;&gt;1. Accettazione dei termini&lt;/h2&gt;
 &lt;p&gt;Accedendo e utilizzando questo sito web, accetti di essere vincolato dai presenti termini e condizioni di utilizzo. Se non accetti questi termini, ti preghiamo di non utilizzare il sito.&lt;/p&gt;
 &lt;h2 id=&#34;2-proprietà-intellettuale&#34;&gt;2. Proprietà intellettuale&lt;/h2&gt;
 &lt;p&gt;Tutto il contenuto presente su questo sito web, inclusi ma non limitati a testi, grafica, loghi, immagini, clip audio, download digitali, compilazioni di dati e software, è di proprietà del sito o dei suoi fornitori di contenuti ed è protetto dalle leggi sul diritto d&amp;rsquo;autore.
 È vietata la riproduzione, distribuzione o modifica senza autorizzazione scritta.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Informativa sui Cookie</title>
+      <link>http://localhost:1313/it/legal/cookie-policy/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/legal/cookie-policy/</guid>
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 7 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+ 
+&lt;p&gt;Il sito &lt;a href=&#34;https://matteocervelli.com&#34;&gt;https://matteocervelli.com&lt;/a&gt; (di seguito &amp;ldquo;Sito&amp;rdquo;) utilizza cookie e tecnologie simili per migliorare l&amp;rsquo;esperienza utente.&lt;/p&gt;
+&lt;h2 id=&#34;1-cosa-sono-i-cookie&#34;&gt;1. Cosa sono i Cookie&lt;/h2&gt;
+&lt;p&gt;I cookie sono piccoli file di testo che vengono memorizzati sul tuo computer o dispositivo mobile quando visiti un sito web. I cookie sono ampiamente utilizzati dai proprietari di siti web per far funzionare i propri siti web, o per lavorare in modo più efficiente, nonché per fornire informazioni di reporting.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -365,16 +451,6 @@ Puoi registrarti qui sotto:&lt;/p&gt;
       
       <guid>http://localhost:1313/it/testimonials/alberto-rossi/</guid>
       <description>&lt;p&gt;Ho conosciuto molti imprenditori, molti amministratori delegati bravi e qualcuno straordinario. Matteo ha il coraggio di andare oltre, dal punto di vista umano e dal punto di vista di visione del business. Ha anche la stamina che serve giorno per giorno per costruire quella visione. E&amp;rsquo; un piacere lavorare con lui.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Alexia Redini</title>
-      <link>http://localhost:1313/it/testimonials/alexia-redini/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/testimonials/alexia-redini/</guid>
-      <description>&lt;p&gt;Ho avuto il piacere di lavorare con Matteo per un lungo periodo durante il quale si è dimostrato eccezionalmente affidabile e focalizzato.&lt;/p&gt;
-&lt;p&gt;Una delle sue maggiori qualità è la sua capacità di pianificare e gestire progetti complessi. La sua abilità nel prevedere differenti scenari e creare piani dettagliati ha portato a miglioramenti significativi nelle operazioni e nei processi all&amp;rsquo;interno del nostro team. Grazie alla sua prospettiva lungimirante e alla sua attenzione ai dettagli ha generato un impatto positivo notevole sul nostro lavoro, contribuendo alla crescita di tutti e al raggiungimento degli obiettivi.&lt;/p&gt;</description>
     </item>
     
   </channel>
