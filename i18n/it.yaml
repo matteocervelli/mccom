@@ -211,3 +211,144 @@ view_all_projects:
   other: "Vedi Tutti i Progetti"
 Projects:
   other: "Progetti"
+privacy_policy:
+  other: "Privacy Policy"
+cookie_policy:
+  other: "Cookie Policy"
+terms_of_use:
+  other: "Termini di Utilizzo"
+legal_notice:
+  other: "Note Legali"
+privacy_policy_page:
+  other: "privacy-policy"
+cookie_policy_page:
+  other: "cookie-policy"
+terms_of_use_page:
+  other: "termini-utilizzo"
+legal_notice_page:
+  other: "note-legali"
+manage_cookie_consent: 
+  other: "Gestisci Consenso Privacy"
+do_not_sell:
+  other: "Non vendete o condividete le mie informazioni personali"
+view_document: 
+  other: "Visualizza Documento"
+last_updated: 
+  other: "Ultimo aggiornamento"
+all_legal_documents: 
+  other: "Tutti i Documenti Legali"
+document_title: 
+  other: "Documento"
+document_description: 
+  other: "Descrizione"
+
+# Cookie Consent
+cookie_banner_text:
+  other: "Utilizziamo i cookie per migliorare la tua esperienza di navigazione, mostrare contenuti personalizzati e analizzare il nostro traffico. Cliccando su 'Accetta tutti', acconsenti all'uso dei cookie."
+cookie_preferences:
+  other: "Preferenze Cookie"
+cookie_preferences_text:
+  other: "Utilizziamo i cookie per aiutarti a navigare in modo efficiente ed eseguire determinate funzioni. Troverai informazioni dettagliate su tutti i cookie sotto ogni categoria di consenso."
+
+# Cookie Categories
+technical_cookies:
+  other: "Cookie Tecnici"
+technical_cookies_description:
+  other: "Questi cookie sono essenziali per il corretto funzionamento del sito web. Includono cookie per funzionalità di base, prestazioni del sito e preferenze utente. Non possono essere disattivati."
+
+analytics_cookies:
+  other: "Cookie Analitici"
+analytics_cookies_description:
+  other: "Questi cookie ci aiutano ad analizzare il traffico del sito per migliorare i nostri servizi. Raccolgono dati anonimi su come i visitatori utilizzano il nostro sito."
+
+profiling_cookies:
+  other: "Cookie di Profilazione"
+profiling_cookies_description:
+  other: "Questi cookie sono utilizzati per gestire le prenotazioni tramite Calendly e l'iscrizione alla newsletter tramite Kit. Sono necessari per fornire questi servizi personalizzati e vengono attivati solo con il tuo consenso esplicito."
+
+social_cookies:
+  other: "Cookie Social"
+social_cookies_description:
+  other: "Questi cookie permettono la visualizzazione di contenuti incorporati da piattaforme social come YouTube e Bluesky. Vengono attivati solo con il tuo consenso."
+
+# Cookie Purposes
+cloudflare_purpose:
+  other: "Analisi prestazioni e sicurezza del sito"
+swiper_purpose:
+  other: "Funzionalità slider contenuti"
+umami_purpose:
+  other: "Statistiche anonime del traffico"
+fuse_purpose:
+  other: "Funzionalità di ricerca"
+theme_purpose:
+  other: "Memorizza preferenza tema utente"
+language_purpose:
+  other: "Memorizza preferenza lingua utente"
+ahrefs_purpose:
+  other: "Analisi prestazioni SEO"
+calendly_purpose:
+  other: "Gestione sistema prenotazioni"
+kit_purpose:
+  other: "Gestione iscrizione newsletter"
+youtube_purpose:
+  other: "Incorporamento video YouTube"
+bluesky_purpose:
+  other: "Incorporamento post Bluesky"
+
+# Cookie Duration
+cookie_session:
+  other: "Sessione"
+cookie_year:
+  one: "anno"
+  other: "anni"
+cookie_month:
+  one: "mese"
+  other: "mesi"
+
+# Cookie Actions
+accept_all:
+  other: "Accetta Tutti"
+customize:
+  other: "Personalizza"
+save_preferences:
+  other: "Salva Preferenze"
+reject_all:
+  other: "Rifiuta Tutti"
+
+# Cookie Table Headers
+cookie_name:
+  other: "Nome Cookie"
+cookie_purpose:
+  other: "Scopo"
+cookie_duration:
+  other: "Durata"
+
+# Additional Cookie Consent Keys
+consent:
+  other: "Consenso"
+about_cookies:
+  other: "Informazioni"
+this_website_uses_cookies:
+  other: "Questo sito web utilizza i cookie"
+cookie_technical_explanation:
+  other: "Utilizzo i cookie e i tracker per fornire funzioni tecniche, come la ricerca e analizzare l'accesso del sito, per la sicurezza e migliorare l'esperienza."
+cookie_analytics_explanation:
+  other: "Analizzo il traffico in modo anonimo, e con cookie non obbligatori fornisco funzioni di commento ai post, social e di gestione newsletter e appuntamenti."
+cookie_consent_control:
+  other: "Puoi sempre decidere quali cookie accettare e rifiutare, e modificare i tuoi consensi in qualsiasi momento."
+reject_optional:
+  other: "Rifiuta opzionali"
+always_allowed:
+  other: "Sempre consentiti"
+cookies_explanation:
+  other: "I cookie sono piccoli file di testo che vengono memorizzati sul tuo computer o dispositivo mobile quando visiti un sito web."
+cookies_law_explanation:
+  other: "La legge afferma che posso memorizzare i cookie sul tuo dispositivo se sono strettamente necessari per il funzionamento di questo sito. Per tutti gli altri tipi di cookie ho bisogno del tuo permesso."
+cookies_banner_explanation:
+  other: "Al primo accesso al Sito, un banner consente di accettare o rifiutare i cookie non tecnici. È possibile revocare o aggiornare i consensi in qualsiasi momento tramite la pagina dedicata sul Sito."
+privacy_policy_link_prefix:
+  other: "Scopri come contattarmi e come tratto i dati personali nella mia"
+cookie_policy_link_prefix:
+  other: "Scopri come tratto i cookie nella mia"
+
+  

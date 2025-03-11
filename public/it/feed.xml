@@ -27,81 +27,107 @@
 &lt;/figure&gt;
 
 
-
-
-&lt;div id=&#34;lightbox&#34; class=&#34;lightbox&#34; onclick=&#34;closeLightbox()&#34;&gt;
-    &lt;button class=&#34;lightbox-close&#34; onclick=&#34;closeLightbox()&#34;&gt;&amp;times;&lt;/button&gt;
-    &lt;button class=&#34;lightbox-prev&#34; onclick=&#34;changeLightboxImage(-1)&#34;&gt;&amp;lt;&lt;/button&gt;
-    &lt;button class=&#34;lightbox-next&#34; onclick=&#34;changeLightboxImage(1)&#34;&gt;&amp;gt;&lt;/button&gt;
-    &lt;div class=&#34;lightbox-content&#34;&gt;
-        &lt;img src=&#34;&#34; alt=&#34;&#34;&gt;
-        &lt;figcaption class=&#34;image-caption&#34;&gt;&lt;/figcaption&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
-let currentImageIndex = 0;
-const images = [];
-
-function openLightbox(img) {
-    event.stopPropagation();
-    const lightbox = document.getElementById(&#39;lightbox&#39;);
-    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
-    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
-    
-    
-    images.length = 0;
-    document.querySelectorAll(&#39;.lightbox-trigger img&#39;).forEach(image =&gt; {
-        images.push({
-            src: image.src,
-            alt: image.alt,
-            caption: image.dataset.caption
-        });
-    });
-    
-    
-    currentImageIndex = images.findIndex(image =&gt; image.src === img.src);
-    
-    
-    lightboxImg.src = img.src;
-    lightboxImg.alt = img.alt;
-    lightboxCaption.textContent = img.dataset.caption;
-    
-    
-    lightbox.style.display = &#39;flex&#39;;
-    document.body.style.overflow = &#39;hidden&#39;;
-}
-
-function closeLightbox() {
-    const lightbox = document.getElementById(&#39;lightbox&#39;);
-    lightbox.style.display = &#39;none&#39;;
-    document.body.style.overflow = &#39;auto&#39;;
-}
-
-function changeLightboxImage(direction) {
-    event.stopPropagation();
-    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
-    const image = images[currentImageIndex];
-    const lightbox = document.getElementById(&#39;lightbox&#39;);
-    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
-    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
-    
-    lightboxImg.src = image.src;
-    lightboxImg.alt = image.alt;
-    lightboxCaption.textContent = image.caption;
-}
-
-
-document.addEventListener(&#39;keydown&#39;, function(e) {
-    if (document.getElementById(&#39;lightbox&#39;).style.display === &#39;flex&#39;) {
-        if (e.key === &#39;Escape&#39;) closeLightbox();
-        if (e.key === &#39;ArrowLeft&#39;) changeLightboxImage(-1);
-        if (e.key === &#39;ArrowRight&#39;) changeLightboxImage(1);
-    }
-});
-&lt;/script&gt;
  
 &lt;p&gt;L&amp;rsquo;evento ha devastato piccoli paesi, alcuni dei quali famosi anche per il turismo, come Norcia, città natale di San Benedetto, o Amatrice, ben nota per una salsa italiana per la pasta chiamata Amatriciana, che combina pomodoro, guanciale e pecorino per un sapore divino.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Informativa sulla Privacy</title>
+      <link>http://localhost:1313/it/legal/privacy-policy/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/legal/privacy-policy/</guid>
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 7 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+ 
+&lt;h2 id=&#34;1-introduzione&#34;&gt;1. Introduzione&lt;/h2&gt;
+&lt;p&gt;La presente Privacy Policy descrive come il sito web &lt;a href=&#34;https://matteocervelli.com&#34;&gt;https://matteocervelli.com&lt;/a&gt; raccoglie, utilizza e protegge i dati personali degli utenti. Ci impegniamo a garantire che la tua privacy sia protetta e che i tuoi dati personali siano trattati nel rispetto del Regolamento UE 679/2016 (GDPR) e del D.lgs. 196/2003 (Codice Privacy).&lt;/p&gt;
+&lt;h2 id=&#34;2-titolare-del-trattamento&#34;&gt;2. Titolare del trattamento&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Identità: Cervelli Matteo.&lt;/li&gt;
+&lt;li&gt;Contatti: &lt;a href=&#34;mailto:legal@matteocervelli.com&#34;&gt;legal@matteocervelli.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-dati-raccolti&#34;&gt;2. Dati raccolti&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dati di navigazione: indirizzo IP, dati di utilizzo (raccolti tramite Google Analytics, Umami Analytics, Ahrefs Analytics, Swiper.js).&lt;/li&gt;
+&lt;li&gt;Dati personali: email (newsletter via Kit), nome e informazioni di contatto (Calendly)&lt;/li&gt;
+&lt;li&gt;Dati tecnici: tipo e versione del browser, impostazione del fuso orario e posizione, sistema operativo e piattaforma.&lt;/li&gt;
+&lt;li&gt;Modalità: automatica (cookie) e volontaria (form, Calendly).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;cookie-consent-section&#34;&gt;
+
+
+
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css&#34;&gt;
+
+&lt;button class=&#34;consent-manager-btn &#34; data-open-cookie-settings&gt;
+    &lt;i class=&#34;fas fa-cookie-bite&#34;&gt;&lt;/i&gt;
+    Gestisci Consenso Privacy
+&lt;/button&gt;
+
+ 
+&lt;/div&gt;
+&lt;h2 id=&#34;3-finalità-del-trattamento&#34;&gt;3. Finalità del trattamento&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Analisi statistiche del traffico (Google Analytics, Umami Analytics, Ahrefs Analytics).&lt;/li&gt;
+&lt;li&gt;Gestione delle prenotazioni (Calendly).&lt;/li&gt;
+&lt;li&gt;Invio di newsletter con doppio opt-in (Kit).&lt;/li&gt;
+&lt;li&gt;Fornire e migliorare i servizi offerti dal Sito.&lt;/li&gt;
+&lt;li&gt;Rispettare gli obblighi legali&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-base-giuridica-del-trattamento&#34;&gt;4. Base giuridica del trattamento&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Consenso (art. 6(1)(a) GDPR) per newsletter, cookie non tecnici e form.&lt;/li&gt;
+&lt;li&gt;Legittimo interesse (art. 6(1)(f) GDPR) per analisi statistiche e funzionamento del Sito.&lt;/li&gt;
+&lt;li&gt;Esecuzione di un contratto quando utilizzi i nostri servizi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-terze-parti&#34;&gt;5. Terze Parti&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Analytics (Google LLC, USA).&lt;/li&gt;
+&lt;li&gt;mami Analytics (cloud.umami.is).&lt;/li&gt;
+&lt;li&gt;Ahrefs Analytics (Ahrefs Pte. Ltd.).&lt;/li&gt;
+&lt;li&gt;Calendly (Calendly LLC, USA).&lt;/li&gt;
+&lt;li&gt;Kit (newsletter).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nei casi in cui i dati personali vengono trasferiti verso paesi al di fuori dell&amp;rsquo;Unione Europea o dello Spazio Economico Europeo (come gli Stati Uniti, dove hanno sede Google LLC e Calendly LLC), implementiamo specifiche misure di salvaguardia tra cui:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Note Legali</title>
+      <link>http://localhost:1313/it/legal/note-legali/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/legal/note-legali/</guid>
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 8 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+ 
+&lt;p&gt;Il sito &lt;a href=&#34;https://matteocervelli.com&#34;&gt;https://matteocervelli.com&lt;/a&gt; (di seguito &amp;ldquo;Sito&amp;rdquo;) è di proprietà e gestito da Cervelli Matteo, libero professionista con partita IVA IT01596300523, con sede in 53036 Poggibonsi (SI), Italia (di seguito &amp;ldquo;Titolare&amp;rdquo;). Il Sito è stato creato per offrire contenuti informativi (blog) e presentare servizi professionali di consulenza ingegneristica (sito vetrina).&lt;/p&gt;
+&lt;h2 id=&#34;1-informazioni-societarie&#34;&gt;1. Informazioni societarie&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Nome&lt;/strong&gt;: Cervelli Matteo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partita IVA&lt;/strong&gt;: IT01596300523&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sede legale&lt;/strong&gt;: 53036 Poggibonsi (SI), Italia&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;a href=&#34;mailto:legal@matteocervelli.com&#34;&gt;legal@matteocervelli.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-informazioni-sullhosting-e-responsabilità-editoriale&#34;&gt;2. Informazioni sull&amp;rsquo;hosting e responsabilità editoriale&lt;/h2&gt;
+&lt;h3 id=&#34;21-provider-di-hosting&#34;&gt;2.1 Provider di Hosting&lt;/h3&gt;
+&lt;p&gt;Il Sito è ospitato su Netlify, Inc. con sede negli Stati Uniti.
+Indirizzo: 2325 3rd Street, Suite 215, San Francisco, California 94107, USA
+Sito web: &lt;a href=&#34;https://www.netlify.com&#34;&gt;https://www.netlify.com&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Termini di Utilizzo</title>
+      <link>http://localhost:1313/it/legal/termini-di-utilizzo/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/legal/termini-di-utilizzo/</guid>
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 8 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+ 
+&lt;h2 id=&#34;1-accettazione-dei-termini&#34;&gt;1. Accettazione dei termini&lt;/h2&gt;
+&lt;p&gt;Accedendo e utilizzando questo sito web, accetti di essere vincolato dai presenti termini e condizioni di utilizzo. Se non accetti questi termini, ti preghiamo di non utilizzare il sito.&lt;/p&gt;
+&lt;h2 id=&#34;2-proprietà-intellettuale&#34;&gt;2. Proprietà intellettuale&lt;/h2&gt;
+&lt;p&gt;Tutto il contenuto presente su questo sito web, inclusi ma non limitati a testi, grafica, loghi, immagini, clip audio, download digitali, compilazioni di dati e software, è di proprietà del sito o dei suoi fornitori di contenuti ed è protetto dalle leggi sul diritto d&amp;rsquo;autore.
+È vietata la riproduzione, distribuzione o modifica senza autorizzazione scritta.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -349,36 +375,6 @@ Puoi registrarti qui sotto:&lt;/p&gt;
       <guid>http://localhost:1313/it/testimonials/alexia-redini/</guid>
       <description>&lt;p&gt;Ho avuto il piacere di lavorare con Matteo per un lungo periodo durante il quale si è dimostrato eccezionalmente affidabile e focalizzato.&lt;/p&gt;
 &lt;p&gt;Una delle sue maggiori qualità è la sua capacità di pianificare e gestire progetti complessi. La sua abilità nel prevedere differenti scenari e creare piani dettagliati ha portato a miglioramenti significativi nelle operazioni e nei processi all&amp;rsquo;interno del nostro team. Grazie alla sua prospettiva lungimirante e alla sua attenzione ai dettagli ha generato un impatto positivo notevole sul nostro lavoro, contribuendo alla crescita di tutti e al raggiungimento degli obiettivi.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Fabrice Pettoello</title>
-      <link>http://localhost:1313/it/testimonials/fabrice-pettoello/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/testimonials/fabrice-pettoello/</guid>
-      <description>&lt;p&gt;Matteo è una figura che incarna la curiosità e l&amp;rsquo;energia intellettuale. Il suo sguardo vivace riflette una mente che non si accontenta mai di risposte superficiali o banali. Sempre alla ricerca del perché delle cose, Matteo non si limita ad osservare la superficie, ma si immerge direttamente nell&amp;rsquo;essenza delle questioni per capire come migliorare.&lt;/p&gt;
-&lt;p&gt;Il suo atteggiamento verso l&amp;rsquo;innovazione e il cambiamento è contagioso e ispirante. Non si tratta solo di voler migliorare i processi esistenti, ma di trasformare l&amp;rsquo;intera struttura organizzativa in qualcosa di bello e significativo. Questa visione della bellezza non si limita all&amp;rsquo;estetica, ma si estende alla bellezza del funzionamento efficiente, dell&amp;rsquo;obiettivo a lungo termine e della crescita personale e professionale delle persone che lo circondano.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Federico Trippi</title>
-      <link>http://localhost:1313/it/testimonials/federico-trippi/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/testimonials/federico-trippi/</guid>
-      <description>&lt;p&gt;Matteo è una persona con capacità di visione, che non rinuncia alla lettura oltre la superficie. Ama osare nel porsi sfide che siano concrete ma al contempo sopra la linea del &amp;ldquo;subito fattibile&amp;rdquo;. Questa attitudine sa essere virale e permette anche alle persone che lo circondano di guardare oltre i risultati immediatamente raggiungibili (spesso di modesto valore), per porsi obiettivi più ambiziosi e sicuramente più appaganti.&lt;/p&gt;
-&lt;p&gt;Abbiamo costruito dei progetti assieme, nell&amp;rsquo;ambito della ricerca e dello sviluppo. Costruire una compagine di fronte ad un idea, è sempre un percorso ambizioso e mai scontato perché significa mettere a sistema le necessità e i voleri di più soggetti. Il risultato atteso, la capacità di trasmettere il senso concreto dell&amp;rsquo;idea, tanto da costruire un team di lavoro articolato, è già in se un grande risultato che, indipendentemente dall&amp;rsquo;esito di finanziamento del bando, crea comunque legami e contatti tra persone e professionalità.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Filippo Maone</title>
-      <link>http://localhost:1313/it/testimonials/filippo-maone/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/testimonials/filippo-maone/</guid>
-      <description>&lt;p&gt;Matteo è una guida che mi accompagna verso obiettivi mirati al miglioramento personale e lavorativo. Un alleato che mi ha insegnato a farmi sempre domande stimolanti, che dalle loro risposte ho appreso sempre nuove cose. Ricordo il primo giorno di Kata, con il suo entusiasmo mi ha coinvolto in un progetto che ci ha permesso di vincere sfide, che prima sembravano utopie.&lt;/p&gt;
-&lt;p&gt;In pochi mesi abbiamo raddoppiato la produzione di porte giornaliere, raggiungendo i 100 pezzi al giorno. Ma la cosa che mi ha fatto crescere di più è stata l&amp;rsquo;attitudine al cambiamento. Mi ha dato gli strumenti, e mi ha insegnato ad usarli, e grazie a questo nessun nuovo ruolo o mansione mi spaventa, sono stato responsabile acquisti, responsabile di un reparto produttivo e responsabile delivery.&lt;/p&gt;</description>
     </item>
     
   </channel>

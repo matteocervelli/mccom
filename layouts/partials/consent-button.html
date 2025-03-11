@@ -1,0 +1,10 @@
+{{ $size := .size | default "normal" }}
+
+<!-- Add Font Awesome if not already loaded -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<button class="consent-manager-btn {{ if eq $size "small" }}small{{ end }}" data-open-cookie-settings>
+    <i class="fas fa-cookie-bite"></i>
+    {{ i18n "manage_cookie_consent" }}
+</button>
+

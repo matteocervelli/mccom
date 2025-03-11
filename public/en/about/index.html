@@ -19,12 +19,12 @@
 
     
 
-<link rel="stylesheet" href="/css/styles.min.c4deb950ea48eb95708cb144f294ac02a985a1b0f56e91d97e7f7474104d392e.css" integrity="sha256-xN65UOpI65VwjLFE8pSsAqmFobD1bpHZfn90dBBNOS4=">
+<link rel="stylesheet" href="/css/styles.min.e019cca855e7440c329e95ee213fec726400b398422bc43551aea940a1a31eee.css" integrity="sha256-4BnMqFXnRAwynpXuIT/scmQAs5hCK8Q1Ua6pQKGjHu4=">
 
 
   
   
-  <link rel="stylesheet" href="/css/styles.min.1cd54ad1bef0d3fbe8746898c8f98f4a0b6ef65d2e3345fef5240847861c0b01.css" integrity="sha256-HNVK0b7w0/vodGiYyPmPSgtu9l0uM0X&#43;9SQIR4YcCwE=">
+  <link rel="stylesheet" href="/css/styles.min.9b9f77ba31613e25924817e6b3b7d87496621aad3d27d3742610aa6abd87284b.css" integrity="sha256-m593ujFhPiWSSBfms7fYdJZiGq09J9N0JhCqar2HKEs=">
 
     
 
@@ -76,6 +76,7 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   </head><body class="">
     <div class="search-container" id="searchContainer">
   <div class="search-box">
@@ -242,7 +243,6 @@ window.addEventListener('scroll', () => {
     <header class="page-header">
         <div class="container">
             <h1>About Me</h1>
-            <p class="lead">Something to know about me</p>
         </div>
     </header>
 
@@ -400,7 +400,6 @@ window.addEventListener('scroll', () => {
     </main>
     
 <footer role="contentinfo" aria-label="Site footer">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.js"></script>
     
     <script src="/js/dropdown.min.4012e2973ab5e591a68041bc12b0f1661ba78d4527715a5bda3b621d235cf613.js"></script>
     <div>
@@ -416,7 +415,7 @@ window.addEventListener('scroll', () => {
       <div>
         <p>Let&#39;s stay in touch via 
           <a href="mailto:info@matteocervelli.com" aria-label="Contact via email">email</a>,
-          <a href="https://matteocervelli.com/it/feed" aria-label="Subscribe to RSS feed">RSS</a>,
+          <a href="https://matteocervelli.com/en/feed" aria-label="Subscribe to RSS feed">RSS</a>,
           <a href="https://www.linkedin.com/in/matteocervelli/" aria-label="Connect on LinkedIn">LinkedIn</a>,
           <a href="https://x.com/matteocervelli" aria-label="Follow on X/Twitter">X/Twitter</a> and
           <a href="/en/subscribe" 
@@ -449,6 +448,33 @@ window.addEventListener('scroll', () => {
   </div>
   
       
+      <div class="legal-links">
+        <a href="/en/legal/privacy-policy">Privacy Policy</a> |
+        <a href="/en/legal/cookie-policy">Cookie Policy</a> |
+        <a href="/en/legal/terms-of-use">Terms of Use</a> |
+        <a href="/en/legal/legal-notice">Legal Notice</a> |
+        <a href="/en/sitemap" aria-label="View site map">Sitemap</a>.
+      </div>
+  
+      
+      
+      <div>
+        <a href="#" data-open-cookie-settings>Do Not Sell or Share My Personal Information</a>
+          
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<button class="consent-manager-btn small" data-open-cookie-settings>
+    <i class="fas fa-cookie-bite"></i>
+    Manage Privacy Consent
+</button>
+
+
+      </div>
+
+      <br>
+      
       <div class="pb f3 text-mc-black">
         
           Matteo Cervelli &copy; 2025
@@ -462,7 +488,7 @@ window.addEventListener('scroll', () => {
            aria-label="Hosted on Netlify">Netlify</a> and
         <a href="/en/tech-stack" 
            class="link text-mc-black hover-mc-purple"
-           aria-label="View tech stack details">other</a>. <a href="/en/sitemap" aria-label="View site map">Sitemap</a>.
+           aria-label="View tech stack details">other</a>
       </div>
     </div>
 </footer>
@@ -479,6 +505,271 @@ window.addEventListener('scroll', () => {
 
     
     <script src="/js/footnote-tooltips.min.2b06730b56de12b749607f951eff5983b3a6252c486e64ea9387c02fc58eed03.js"></script>
+
+    <div id="cookie-consent-banner" class="cookie-consent-banner">
+    <div class="banner-content">
+        <div class="banner-text">
+            <h3>This website uses cookies</h3>
+            <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking &#39;Accept All&#39;, you consent to our use of cookies.</p>
+        </div>
+        <div class="banner-actions">
+            <button class="consent-button" data-action="reject-optional">Reject optional</button>
+            <button class="consent-button" data-action="customize" data-open-cookie-settings>Customize</button>
+            <button class="consent-button" data-action="accept-all">Accept All</button>
+        </div>
+    </div>
+</div>
+
+<div id="cookie-consent-modal" class="cookie-consent-modal">
+    <div class="cookie-consent-container">
+        
+        <div class="modal-header">
+            <div class="consent-tabs">
+                <button class="tab-button" data-tab="consent">
+                    Consent
+                </button>
+                <button class="tab-button active" data-tab="details">
+                    Customize
+                </button>
+                <button class="tab-button" data-tab="about">
+                    About
+                </button>
+            </div>
+            <img src="/images/MC%20extendend%20logo%20white.png" alt="Matteo Cervelli" class="header-logo">
+        </div>
+
+        
+        <div class="tab-content">
+            
+            <div id="consent-tab" class="tab-pane">
+                <h3>This website uses cookies</h3>
+                <p>I use cookies and trackers to provide technical functions, such as search and site access analysis, for security and to improve the experience.</p>
+                <p>I analyze traffic anonymously, and with optional cookies I provide post commenting, social features and newsletter and appointment management functions.</p>
+                <p>You can always decide which cookies to accept and reject, and modify your consent at any time.</p>
+                
+            </div>
+
+            
+            <div id="details-tab" class="tab-pane active">
+                
+                <div class="tracking-categories">
+                    
+
+
+    
+    <div class="category" data-category="technical">
+        <div class="category-header">
+            <button class="details-toggle" aria-expanded="false" aria-controls="technical-details">
+                <span class="chevron">></span>
+            </button>
+            <div>
+                <h3>Technical Cookies</h3>
+            </div>
+            <div class="always-allowed">
+                
+                    Always allowed
+                
+            </div>
+        </div>
+        <div class="category-description">
+            <p>These cookies are essential for the website to function properly. They include cookies for basic functionality, site performance, and user preferences. They cannot be disabled.</p>
+        </div>
+
+        <div id="technical-details" class="details-content" hidden>
+            <table>
+                <tr>
+                    <th>Cookie Name</th>
+                    <th>Purpose</th>
+                    <th>Duration</th>
+                </tr>
+                
+                    <tr>
+                        <td>Cloudflare Insights</td>
+                        <td>Site performance and security analysis</td>
+                        <td>year</td>
+                    </tr>
+                    <tr>
+                        <td>Swiper.js</td>
+                        <td>Content slider functionality</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>Umami Analytics</td>
+                        <td>Anonymous traffic statistics</td>
+                        <td>year</td>
+                    </tr>
+                    <tr>
+                        <td>Fuse.js</td>
+                        <td>Search functionality</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>Theme Preference</td>
+                        <td>Store user theme preference</td>
+                        <td>year</td>
+                    </tr>
+                    <tr>
+                        <td>Language Preference</td>
+                        <td>Store user language preference</td>
+                        <td>year</td>
+                    </tr>
+                
+            </table>
+        </div>
+    </div>
+
+    
+    <div class="category" data-category="analytics">
+        <div class="category-header">
+            <button class="details-toggle" aria-expanded="false" aria-controls="analytics-details">
+                <span class="chevron">></span>
+            </button>
+            <div>
+                <h3>Analytics Cookies</h3>
+            </div>
+            <div class="toggle-container">
+                
+                    <input type="checkbox" class="cookie-toggle" id="analytics-cookies">
+                    <div class="toggle-switch" data-category="analytics"></div>
+                
+            </div>
+        </div>
+        <div class="category-description">
+            <p>These cookies help us analyze website traffic to improve our services. They collect anonymous data about how visitors use our site.</p>
+        </div>
+
+        <div id="analytics-details" class="details-content" hidden>
+            <table>
+                <tr>
+                    <th>Cookie Name</th>
+                    <th>Purpose</th>
+                    <th>Duration</th>
+                </tr>
+                
+                    <tr>
+                        <td>Ahrefs Analytics</td>
+                        <td>SEO performance analysis</td>
+                        <td>years</td>
+                    </tr>
+                
+            </table>
+        </div>
+    </div>
+
+    
+    <div class="category" data-category="profiling">
+        <div class="category-header">
+            <button class="details-toggle" aria-expanded="false" aria-controls="profiling-details">
+                <span class="chevron">></span>
+            </button>
+            <div>
+                <h3>Profiling Cookies</h3>
+            </div>
+            <div class="toggle-container">
+                
+                    <input type="checkbox" class="cookie-toggle" id="profiling-cookies">
+                    <div class="toggle-switch" data-category="profiling"></div>
+                
+            </div>
+        </div>
+        <div class="category-description">
+            <p>These cookies are used to manage bookings through Calendly and newsletter subscriptions through Kit. They are necessary to provide these personalized services and are only activated with your explicit consent.</p>
+        </div>
+
+        <div id="profiling-details" class="details-content" hidden>
+            <table>
+                <tr>
+                    <th>Cookie Name</th>
+                    <th>Purpose</th>
+                    <th>Duration</th>
+                </tr>
+                
+                    <tr>
+                        <td>Calendly</td>
+                        <td>Booking system management</td>
+                        <td>year</td>
+                    </tr>
+                    <tr>
+                        <td>Kit</td>
+                        <td>Newsletter subscription management</td>
+                        <td>year</td>
+                    </tr>
+                
+            </table>
+        </div>
+    </div>
+
+    
+    <div class="category" data-category="social">
+        <div class="category-header">
+            <button class="details-toggle" aria-expanded="false" aria-controls="social-details">
+                <span class="chevron">></span>
+            </button>
+            <div>
+                <h3>Social Cookies</h3>
+            </div>
+            <div class="toggle-container">
+                
+                    <input type="checkbox" class="cookie-toggle" id="social-cookies">
+                    <div class="toggle-switch" data-category="social"></div>
+                
+            </div>
+        </div>
+        <div class="category-description">
+            <p>These cookies enable the display of embedded content from social platforms like YouTube and Bluesky. They are only activated with your consent.</p>
+        </div>
+
+        <div id="social-details" class="details-content" hidden>
+            <table>
+                <tr>
+                    <th>Cookie Name</th>
+                    <th>Purpose</th>
+                    <th>Duration</th>
+                </tr>
+                
+                    <tr>
+                        <td>YouTube</td>
+                        <td>YouTube video embedding</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>Bluesky</td>
+                        <td>Bluesky post embedding</td>
+                        <td>Session</td>
+                    </tr>
+                
+            </table>
+        </div>
+    </div>
+ 
+                </div>
+
+            </div>
+
+            
+            <div id="about-tab" class="tab-pane">
+                <p>Cookies are small text files that are stored on your computer or mobile device when you visit a website.</p>
+                <p>The law states that I can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies I need your permission.</p>
+                <p>On first access to the Site, a banner allows you to accept or reject non-technical cookies. You can revoke or update your consent at any time through the dedicated page on the Site.</p>
+                <p>Find out how to contact me and how I handle personal data in my&nbsp;<a href="">Privacy Policy</a>.</p>
+
+            </div>
+        </div>
+
+            
+        <div class="consent-actions">
+            <button class="consent-button" data-action="reject-optional">Reject optional</button>
+            <button class="consent-button" data-action="customize" data-target-tab="details">Customize</button>
+            <button class="consent-button" data-action="accept-all">Accept All</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/accordion.min.435a877a927f597b2b555549ed3bf3e3a4648168b02c7856d70ec37f4a1d8d3f.js"></script>
+
+
+<script src="/js/cookie-consent.min.8425e38ebae14554f79621f3fd41baaf0d87251810a043f09224db9226a3a22d.js"></script>
 
   </body>
 </html>

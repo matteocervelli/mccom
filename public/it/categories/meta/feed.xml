@@ -6,7 +6,19 @@
     <description>Recent content in Meta on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 15 Feb 2025 17:30:00 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/categories/meta/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/it/categories/meta/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documenti Legali</title>
+      <link>http://localhost:1313/it/legal/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/legal/</guid>
+      <description>&lt;p&gt;Benvenuto nell&amp;rsquo;hub legale.&lt;/p&gt;
+&lt;p&gt;Qui puoi consultare i vari termini di servizio, le politiche aziendali e vedere come proteggo i dati personali in conformità con il GDPR.&lt;/p&gt;
+&lt;p&gt;Questi documenti costituiscono le fondamenta del mio blog e definiscono i termini secondo i quali verranno gestiti tutti i servizi forniti.&lt;/p&gt;
+&lt;p&gt;Ti consiglio di dedicare del tempo alla lettura di questi documenti e di controllarli periodicamente per prendere nota di eventuali modifiche che potremmo aver apportato, in quanto sono vincolanti per te.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Mappa del sito</title>
       <link>http://localhost:1313/it/sitemap/</link>

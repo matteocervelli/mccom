@@ -1,6 +1,5 @@
 {{ if ne .Params.hide_footer true }}
 <footer role="contentinfo" aria-label="Site footer">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.js"></script>
     {{ $dropdown := resources.Get "js/dropdown.js" | js.Build | minify | fingerprint }}
     <script src="{{ $dropdown.RelPermalink }}"></script>
     <div>
@@ -16,7 +15,7 @@
       <div>
         <p>{{ i18n "lets_stay_in_touch" }} 
           <a href="mailto:info@matteocervelli.com" aria-label="Contact via email">email</a>,
-          <a href="https://matteocervelli.com/it/feed" aria-label="Subscribe to RSS feed">RSS</a>,
+          <a href="https://matteocervelli.com/{{ .Site.Language.Lang }}/feed" aria-label="Subscribe to RSS feed">RSS</a>,
           <a href="https://www.linkedin.com/in/matteocervelli/" aria-label="Connect on LinkedIn">LinkedIn</a>,
           <a href="https://x.com/matteocervelli" aria-label="Follow on X/Twitter">X/Twitter</a> {{ i18n "and" }}
           <a href="/{{ .Site.Language.Lang }}/{{ i18n "contact_page" }}" 
@@ -27,6 +26,23 @@
       <!-- Simple newsletter form -->
       {{ partial "newsletter.html" . }}
   
+      <!-- Legal links -->
+      <div class="legal-links">
+        <a href="/{{ .Site.Language.Lang }}/legal/{{ i18n "privacy_policy_page" }}">{{ i18n "privacy_policy" }}</a> |
+        <a href="/{{ .Site.Language.Lang }}/legal/{{ i18n "cookie_policy_page" }}">{{ i18n "cookie_policy" }}</a> |
+        <a href="/{{ .Site.Language.Lang }}/legal/{{ i18n "terms_of_use_page" }}">{{ i18n "terms_of_use" }}</a> |
+        <a href="/{{ .Site.Language.Lang }}/legal/{{ i18n "legal_notice_page" }}">{{ i18n "legal_notice" }}</a> |
+        <a href="/{{ .Site.Language.Lang }}/sitemap" aria-label="View site map">{{ i18n "sitemap" }}</a>.
+      </div>
+  
+      
+      <!-- Cookie Consent Management Button -->
+      <div>
+        <a href="#" data-open-cookie-settings>{{ i18n "do_not_sell"}}</a>
+          {{ partial "consent-button.html" (dict "size" "small") }}
+      </div>
+
+      <br>
       <!-- Copyright -->
       <div class="pb f3 text-mc-black">
         {{ with $.Site.Copyright | default $.Site.Title }}
@@ -41,7 +57,7 @@
            aria-label="Hosted on Netlify">Netlify</a> {{ i18n "and" }}
         <a href="/{{ .Site.Language.Lang }}/tech-stack" 
            class="link text-mc-black hover-mc-purple"
-           aria-label="View tech stack details">{{ i18n "other" }}</a>. <a href="/{{ .Site.Language.Lang }}/sitemap" aria-label="View site map">{{ i18n "sitemap" }}</a>.
+           aria-label="View tech stack details">{{ i18n "other" }}</a>
       </div>
     </div>
 </footer>

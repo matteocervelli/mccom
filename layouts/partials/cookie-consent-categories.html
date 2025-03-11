@@ -1,0 +1,96 @@
+{{ $categories := slice "technical" "analytics" "profiling" "social" }}
+
+{{ range $categories }}
+    {{ $category := . }}
+    <div class="category" data-category="{{ $category }}">
+        <div class="category-header">
+            <button class="details-toggle" aria-expanded="false" aria-controls="{{ $category }}-details">
+                <span class="chevron">></span>
+            </button>
+            <div>
+                <h3>{{ i18n (printf "%s_cookies" $category) }}</h3>
+            </div>
+            <div class="{{ if eq $category "technical" }}always-allowed{{ else }}toggle-container{{ end }}">
+                {{ if eq $category "technical" }}
+                    {{ i18n "always_allowed" }}
+                {{ else }}
+                    <input type="checkbox" class="cookie-toggle" id="{{ $category }}-cookies">
+                    <div class="toggle-switch" data-category="{{ $category }}"></div>
+                {{ end }}
+            </div>
+        </div>
+        <div class="category-description">
+            <p>{{ i18n (printf "%s_cookies_description" $category) }}</p>
+        </div>
+
+        <div id="{{ $category }}-details" class="details-content" hidden>
+            <table>
+                <tr>
+                    <th>{{ i18n "cookie_name" }}</th>
+                    <th>{{ i18n "cookie_purpose" }}</th>
+                    <th>{{ i18n "cookie_duration" }}</th>
+                </tr>
+                {{ if eq $category "technical" }}
+                    <tr>
+                        <td>Cloudflare Insights</td>
+                        <td>{{ i18n "cloudflare_purpose" }}</td>
+                        <td>{{ i18n "cookie_year" 1 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Swiper.js</td>
+                        <td>{{ i18n "swiper_purpose" }}</td>
+                        <td>{{ i18n "cookie_session" }}</td>
+                    </tr>
+                    <tr>
+                        <td>Umami Analytics</td>
+                        <td>{{ i18n "umami_purpose" }}</td>
+                        <td>{{ i18n "cookie_year" 1 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Fuse.js</td>
+                        <td>{{ i18n "fuse_purpose" }}</td>
+                        <td>{{ i18n "cookie_session" }}</td>
+                    </tr>
+                    <tr>
+                        <td>Theme Preference</td>
+                        <td>{{ i18n "theme_purpose" }}</td>
+                        <td>{{ i18n "cookie_year" 1 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Language Preference</td>
+                        <td>{{ i18n "language_purpose" }}</td>
+                        <td>{{ i18n "cookie_year" 1 }}</td>
+                    </tr>
+                {{ else if eq $category "analytics" }}
+                    <tr>
+                        <td>Ahrefs Analytics</td>
+                        <td>{{ i18n "ahrefs_purpose" }}</td>
+                        <td>{{ i18n "cookie_year" 2 }}</td>
+                    </tr>
+                {{ else if eq $category "profiling" }}
+                    <tr>
+                        <td>Calendly</td>
+                        <td>{{ i18n "calendly_purpose" }}</td>
+                        <td>{{ i18n "cookie_year" 1 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Kit</td>
+                        <td>{{ i18n "kit_purpose" }}</td>
+                        <td>{{ i18n "cookie_year" 1 }}</td>
+                    </tr>
+                {{ else if eq $category "social" }}
+                    <tr>
+                        <td>YouTube</td>
+                        <td>{{ i18n "youtube_purpose" }}</td>
+                        <td>{{ i18n "cookie_session" }}</td>
+                    </tr>
+                    <tr>
+                        <td>Bluesky</td>
+                        <td>{{ i18n "bluesky_purpose" }}</td>
+                        <td>{{ i18n "cookie_session" }}</td>
+                    </tr>
+                {{ end }}
+            </table>
+        </div>
+    </div>
+{{ end }} 

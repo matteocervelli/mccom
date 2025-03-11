@@ -1,0 +1,77 @@
+{{ define "main" }}
+{{ $legal := where .Site.RegularPages "Params.categories" "intersect" (slice "legal") }}
+{{ $currentLang := .Page.Language.Lang }}
+{{ $legal := where $legal "Params.language" $currentLang }}
+{{ $legal := where $legal "Params.draft" false }}
+
+<div class="content-wrapper">
+
+    <div class="container">
+        <header class="page-header">
+            <h1>{{ .Title }}</h1>
+        </header>
+    
+        {{ .Content }}
+
+        <!-- Cookie Consent Management Button -->
+        <div class="cookie-consent-section">
+            {{ partial "consent-button.html" (dict "size" "normal") }}
+        </div>
+
+        <!-- Legal Documents Table -->
+        <div class="legal-documents-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>{{ i18n "document_title" }}</th>
+                        <th>{{ i18n "document_description" }}</th>
+                        <th>{{ i18n "last_updated" }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range $legal }}
+                    <tr>
+                        <td>
+                            <a href="{{ .RelPermalink }}" class="view-document-button"><strong>{{ .Title }}</strong></a>
+                        </td>
+                        <td>
+                            {{ with .Description }}
+                                <p>{{ . }}</p>
+                            {{ end }}
+                            {{ with .Params.meta_description }}
+                                <p class="meta-description">{{ . }}</p>
+                            {{ end }}
+                        </td>
+                        <td>
+                            {{ with .Params.Lastmod }}
+                                {{ if eq $currentLang "it" }}
+                                    {{ . | time.Format "2 January 2006" }}
+                                {{ else }}
+                                    {{ . | time.Format "January 2, 2006" }}
+                                {{ end }}
+                            {{ end }}
+                        </td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Add Cookie Management JavaScript -->
+<script>
+function openCookiePreferences() {
+    // Trigger the cookie preferences modal
+    if (window.openCookieModal) {
+        window.openCookieModal();
+    } else {
+        console.warn('Cookie modal function not found');
+    }
+}
+</script>
+
+{{ end }} 

@@ -1,0 +1,8 @@
+{{ $lastmod := .Page.Lastmod }}
+{{ $lang := .Page.Language.Lang }}
+
+{{ if eq $lang "it" }}
+<p class="last-updated"><em>Ultimo aggiornamento: {{ $lastmod.Format "2 Gennaio 2006" | humanize }}</em></p>
+{{ else }}
+<p class="last-updated"><em>Last updated: {{ $lastmod.Format "January 2, 2006" }}</em></p>
+{{ end }} 

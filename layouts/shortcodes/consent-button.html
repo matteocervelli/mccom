@@ -1,0 +1,2 @@
+{{ $size := .Get "size" | default "normal" }}
+{{ partial "consent-button.html" (dict "size" $size) }} 

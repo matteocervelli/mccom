@@ -1,0 +1,77 @@
+<div id="cookie-consent-banner" class="cookie-consent-banner">
+    <div class="banner-content">
+        <div class="banner-text">
+            <h3>{{ i18n "this_website_uses_cookies" }}</h3>
+            <p>{{ i18n "cookie_banner_text" }}</p>
+        </div>
+        <div class="banner-actions">
+            <button class="consent-button" data-action="reject-optional">{{ i18n "reject_optional" }}</button>
+            <button class="consent-button" data-action="customize" data-open-cookie-settings>{{ i18n "customize" }}</button>
+            <button class="consent-button" data-action="accept-all">{{ i18n "accept_all" }}</button>
+        </div>
+    </div>
+</div>
+
+<div id="cookie-consent-modal" class="cookie-consent-modal">
+    <div class="cookie-consent-container">
+        <!-- Header with logo -->
+        <div class="modal-header">
+            <div class="consent-tabs">
+                <button class="tab-button" data-tab="consent">
+                    {{ i18n "consent" }}
+                </button>
+                <button class="tab-button active" data-tab="details">
+                    {{ i18n "customize" }}
+                </button>
+                <button class="tab-button" data-tab="about">
+                    {{ i18n "about_cookies" }}
+                </button>
+            </div>
+            <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}" class="header-logo">
+        </div>
+
+        <!-- Tabs content -->
+        <div class="tab-content">
+            <!-- Consent tab -->
+            <div id="consent-tab" class="tab-pane">
+                <h3>{{ i18n "this_website_uses_cookies" }}</h3>
+                <p>{{ i18n "cookie_technical_explanation" }}</p>
+                <p>{{ i18n "cookie_analytics_explanation" }}</p>
+                <p>{{ i18n "cookie_consent_control" }}</p>
+                
+            </div>
+
+            <!-- Details tab -->
+            <div id="details-tab" class="tab-pane active">
+                <!-- Categories -->
+                <div class="tracking-categories">
+                    {{ partial "cookie-consent-categories.html" . }}
+                </div>
+
+            </div>
+
+            <!-- About tab -->
+            <div id="about-tab" class="tab-pane">
+                <p>{{ i18n "cookies_explanation" }}</p>
+                <p>{{ i18n "cookies_law_explanation" }}</p>
+                <p>{{ i18n "cookies_banner_explanation" }}</p>
+                <p>{{ i18n "privacy_policy_link_prefix" }}&nbsp;<a href="{{ with .Site.GetPage "privacy_policy_page" }}{{ .RelPermalink }}{{ end }}">{{ i18n "privacy_policy" }}</a>.</p>
+                <p>{{ i18n "cookie_policy_link_prefix" }}&nbsp;<a href="{{ with .Site.GetPage "cookie_policy_page" }}{{ .RelPermalink }}{{ end }}">{{ i18n "cookie_policy" }}</a>.</p>
+
+            </div>
+        </div>
+
+        <div class="consent-actions">
+            <button class="consent-button save-preferences-btn" data-action="save-preferences" style="display: none;">{{ i18n "save_preferences" }}</button>
+            <button class="consent-button" data-action="reject-optional">{{ i18n "reject_optional" }}</button>
+            <button class="consent-button" data-action="customize" data-target-tab="details">{{ i18n "customize" }}</button>
+            <button class="consent-button" data-action="accept-all">{{ i18n "accept_all" }}</button>
+        </div>
+    </div>
+</div>
+
+{{ $accordion := resources.Get "js/accordion.js" | js.Build | minify | fingerprint }}
+<script src="{{ $accordion.RelPermalink }}"></script>
+
+{{ $cookieConsent := resources.Get "js/cookie-consent.js" | js.Build | minify | fingerprint }}
+<script src="{{ $cookieConsent.RelPermalink }}"></script>

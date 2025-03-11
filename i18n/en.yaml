@@ -209,3 +209,142 @@ view_all_projects:
   other: "View All Projects"
 Projects:
   other: "Projects"
+privacy_policy:
+  other: "Privacy Policy"
+cookie_policy:
+  other: "Cookie Policy"
+terms_of_use:
+  other: "Terms of Use"
+legal_notice:
+  other: "Legal Notice"
+privacy_policy_page:
+  other: "privacy-policy"
+cookie_policy_page:
+  other: "cookie-policy"
+terms_of_use_page:
+  other: "terms-of-use"
+legal_notice_page:
+  other: "legal-notice"
+manage_cookie_consent: 
+  other: "Manage Privacy Consent"
+do_not_sell:
+  other: "Do Not Sell or Share My Personal Information"
+view_document: 
+  other: "View Document"
+last_updated: 
+  other: "Last updated"
+all_legal_documents: 
+  other: "All Legal Documents"
+document_title: 
+  other: "Document"
+document_description: 
+  other: "Description"
+
+# Cookie Consent
+cookie_banner_text:
+  other: "We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies."
+cookie_preferences:
+  other: "Cookie Preferences"
+cookie_preferences_text:
+  other: "We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below."
+
+# Cookie Categories
+technical_cookies:
+  other: "Technical Cookies"
+technical_cookies_description:
+  other: "These cookies are essential for the website to function properly. They include cookies for basic functionality, site performance, and user preferences. They cannot be disabled."
+
+analytics_cookies:
+  other: "Analytics Cookies"
+analytics_cookies_description:
+  other: "These cookies help us analyze website traffic to improve our services. They collect anonymous data about how visitors use our site."
+
+profiling_cookies:
+  other: "Profiling Cookies"
+profiling_cookies_description:
+  other: "These cookies are used to manage bookings through Calendly and newsletter subscriptions through Kit. They are necessary to provide these personalized services and are only activated with your explicit consent."
+
+social_cookies:
+  other: "Social Cookies"
+social_cookies_description:
+  other: "These cookies enable the display of embedded content from social platforms like YouTube and Bluesky. They are only activated with your consent."
+
+# Cookie Purposes
+cloudflare_purpose:
+  other: "Site performance and security analysis"
+swiper_purpose:
+  other: "Content slider functionality"
+umami_purpose:
+  other: "Anonymous traffic statistics"
+fuse_purpose:
+  other: "Search functionality"
+theme_purpose:
+  other: "Store user theme preference"
+language_purpose:
+  other: "Store user language preference"
+ahrefs_purpose:
+  other: "SEO performance analysis"
+calendly_purpose:
+  other: "Booking system management"
+kit_purpose:
+  other: "Newsletter subscription management"
+youtube_purpose:
+  other: "YouTube video embedding"
+bluesky_purpose:
+  other: "Bluesky post embedding"
+
+# Cookie Duration
+cookie_session:
+  other: "Session"
+cookie_year:
+  one: "year"
+  other: "years"
+cookie_month:
+  one: "month"
+  other: "months"
+
+# Cookie Actions
+accept_all:
+  other: "Accept All"
+customize:
+  other: "Customize"
+save_preferences:
+  other: "Save Preferences"
+reject_all:
+  other: "Reject All"
+
+# Cookie Table Headers
+cookie_name:
+  other: "Cookie Name"
+cookie_purpose:
+  other: "Purpose"
+cookie_duration:
+  other: "Duration"
+
+# Additional Cookie Consent Keys
+consent:
+  other: "Consent"
+about_cookies:
+  other: "About"
+this_website_uses_cookies:
+  other: "This website uses cookies"
+cookie_technical_explanation:
+  other: "I use cookies and trackers to provide technical functions, such as search and site access analysis, for security and to improve the experience."
+cookie_analytics_explanation:
+  other: "I analyze traffic anonymously, and with optional cookies I provide post commenting, social features and newsletter and appointment management functions."
+cookie_consent_control:
+  other: "You can always decide which cookies to accept and reject, and modify your consent at any time."
+reject_optional:
+  other: "Reject optional"
+always_allowed:
+  other: "Always allowed"
+cookies_explanation:
+  other: "Cookies are small text files that are stored on your computer or mobile device when you visit a website."
+cookies_law_explanation:
+  other: "The law states that I can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies I need your permission."
+cookies_banner_explanation:
+  other: "On first access to the Site, a banner allows you to accept or reject non-technical cookies. You can revoke or update your consent at any time through the dedicated page on the Site."
+privacy_policy_link_prefix:
+  other: "Find out how to contact me and how I handle personal data in my"
+cookie_policy_link_prefix:
+  other: "Find out how I handle cookies in my"
