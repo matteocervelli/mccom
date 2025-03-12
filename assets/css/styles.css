@@ -4045,10 +4045,10 @@ tr:nth-child(even) {
 
 .header-logo {
   display: flex;
-    height: 50px;
-    width: auto;
-    margin: 0.5rem 0.5rem 0.5rem auto;
-    align-items: right;
+  height: 50px;
+  width: auto;
+  margin: 0.5rem 0.5rem 0.5rem auto;
+  align-items: right;
 }
 
 /* Tabs */
@@ -4421,6 +4421,10 @@ tr:nth-child(even) {
         border-radius: 0;
         display: flex;
         flex-direction: column;
+    }
+
+    .cookie-consent-container.details-active {
+      height: 95vh;
     }
 
     .tab-content {
