@@ -15,6 +15,9 @@
 <div id="cookie-consent-modal" class="cookie-consent-modal">
     <div class="cookie-consent-container">
         <!-- Header with logo -->
+        <div>
+            <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}" class="header-logo">
+        </div>
         <div class="modal-header">
             <div class="consent-tabs">
                 <button class="tab-button" data-tab="consent">
@@ -27,7 +30,6 @@
                     {{ i18n "about_cookies" }}
                 </button>
             </div>
-            <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}" class="header-logo">
         </div>
 
         <!-- Tabs content -->
@@ -60,8 +62,8 @@
         </div>
 
         <div class="consent-actions">
-            <button class="consent-button save-preferences-btn" data-action="save-preferences" style="display: none;">{{ i18n "save_preferences" }}</button>
             <button class="consent-button" data-action="reject-optional">{{ i18n "reject_optional" }}</button>
+            <button class="consent-button save-preferences-btn" data-action="save-preferences" style="display: none;">{{ i18n "save_preferences" }}</button>
             <button class="consent-button" data-action="customize" data-target-tab="details">{{ i18n "customize" }}</button>
             <button class="consent-button" data-action="accept-all">{{ i18n "accept_all" }}</button>
         </div>
