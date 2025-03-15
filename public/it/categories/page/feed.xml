@@ -38,8 +38,9 @@
 &lt;ul&gt;
 &lt;li&gt;Dati di navigazione: indirizzo IP, dati di utilizzo (raccolti tramite Google Analytics, Umami Analytics, Ahrefs Analytics, Swiper.js).&lt;/li&gt;
 &lt;li&gt;Dati personali: email (newsletter via Kit), nome e informazioni di contatto (Calendly)&lt;/li&gt;
+&lt;li&gt;Dati di pagamento: dati delle transazioni e informazioni di pagamento (Stripe)&lt;/li&gt;
 &lt;li&gt;Dati tecnici: tipo e versione del browser, impostazione del fuso orario e posizione, sistema operativo e piattaforma.&lt;/li&gt;
-&lt;li&gt;Modalità: automatica (cookie) e volontaria (form, Calendly).&lt;/li&gt;
+&lt;li&gt;Modalità: automatica (cookie) e volontaria (form, Calendly, pagamenti).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;cookie-consent-section&#34;&gt;
 
@@ -60,24 +61,27 @@
 &lt;li&gt;Analisi statistiche del traffico (Google Analytics, Umami Analytics, Ahrefs Analytics).&lt;/li&gt;
 &lt;li&gt;Gestione delle prenotazioni (Calendly).&lt;/li&gt;
 &lt;li&gt;Invio di newsletter con doppio opt-in (Kit).&lt;/li&gt;
+&lt;li&gt;Elaborazione pagamenti e gestione transazioni (Stripe).&lt;/li&gt;
 &lt;li&gt;Fornire e migliorare i servizi offerti dal Sito.&lt;/li&gt;
 &lt;li&gt;Rispettare gli obblighi legali&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;4-base-giuridica-del-trattamento&#34;&gt;4. Base giuridica del trattamento&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Consenso (art. 6(1)(a) GDPR) per newsletter, cookie non tecnici e form.&lt;/li&gt;
+&lt;li&gt;Esecuzione del contratto (art. 6(1)(b) GDPR) per l&amp;rsquo;elaborazione dei pagamenti e la fornitura dei servizi.&lt;/li&gt;
 &lt;li&gt;Legittimo interesse (art. 6(1)(f) GDPR) per analisi statistiche e funzionamento del Sito.&lt;/li&gt;
-&lt;li&gt;Esecuzione di un contratto quando utilizzi i nostri servizi.&lt;/li&gt;
+&lt;li&gt;Obbligo legale (art. 6(1)(c) GDPR) per requisiti fiscali e contabili.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;5-terze-parti&#34;&gt;5. Terze Parti&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Google Analytics (Google LLC, USA).&lt;/li&gt;
-&lt;li&gt;mami Analytics (cloud.umami.is).&lt;/li&gt;
+&lt;li&gt;Umami Analytics (cloud.umami.is).&lt;/li&gt;
 &lt;li&gt;Ahrefs Analytics (Ahrefs Pte. Ltd.).&lt;/li&gt;
 &lt;li&gt;Calendly (Calendly LLC, USA).&lt;/li&gt;
 &lt;li&gt;Kit (newsletter).&lt;/li&gt;
+&lt;li&gt;Stripe (Stripe Inc., USA) per l&amp;rsquo;elaborazione dei pagamenti.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Nei casi in cui i dati personali vengono trasferiti verso paesi al di fuori dell&amp;rsquo;Unione Europea o dello Spazio Economico Europeo (come gli Stati Uniti, dove hanno sede Google LLC e Calendly LLC), implementiamo specifiche misure di salvaguardia tra cui:&lt;/p&gt;</description>
+&lt;p&gt;Nei casi in cui i dati personali vengono trasferiti verso paesi al di fuori dell&amp;rsquo;Unione Europea o dello Spazio Economico Europeo (come gli Stati Uniti, dove hanno sede Google LLC, Calendly LLC e Stripe Inc.), implementiamo specifiche misure di salvaguardia tra cui:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -124,7 +128,7 @@ Sito web: &lt;a href=&#34;https://www.netlify.com&#34;&gt;https://www.netlify.co
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/it/legal/cookie-policy/</guid>
-      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 11 gennaio 2025&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Ultimo aggiornamento: 15 gennaio 2025&lt;/em&gt;&lt;/p&gt;
  
 &lt;p&gt;Il sito &lt;a href=&#34;https://matteocervelli.com&#34;&gt;https://matteocervelli.com&lt;/a&gt; (di seguito &amp;ldquo;Sito&amp;rdquo;) utilizza cookie e tecnologie simili per migliorare l&amp;rsquo;esperienza utente.&lt;/p&gt;
 &lt;h2 id=&#34;1-cosa-sono-i-cookie&#34;&gt;1. Cosa sono i Cookie&lt;/h2&gt;

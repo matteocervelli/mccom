@@ -29,8 +29,9 @@ La presente Privacy Policy descrive come il sito web <https://matteocervelli.com
 
 - Dati di navigazione: indirizzo IP, dati di utilizzo (raccolti tramite Google Analytics, Umami Analytics, Ahrefs Analytics, Swiper.js).
 - Dati personali: email (newsletter via Kit), nome e informazioni di contatto (Calendly)
+- Dati di pagamento: dati delle transazioni e informazioni di pagamento (Stripe)
 - Dati tecnici: tipo e versione del browser, impostazione del fuso orario e posizione, sistema operativo e piattaforma.
-- Modalità: automatica (cookie) e volontaria (form, Calendly).
+- Modalità: automatica (cookie) e volontaria (form, Calendly, pagamenti).
 
 <div class="cookie-consent-section">
 {{< consent-button size="normal" >}}
@@ -41,24 +42,27 @@ La presente Privacy Policy descrive come il sito web <https://matteocervelli.com
 - Analisi statistiche del traffico (Google Analytics, Umami Analytics, Ahrefs Analytics).
 - Gestione delle prenotazioni (Calendly).
 - Invio di newsletter con doppio opt-in (Kit).
+- Elaborazione pagamenti e gestione transazioni (Stripe).
 - Fornire e migliorare i servizi offerti dal Sito.
 - Rispettare gli obblighi legali
 
 ## 4. Base giuridica del trattamento
 
 - Consenso (art. 6(1)(a) GDPR) per newsletter, cookie non tecnici e form.
+- Esecuzione del contratto (art. 6(1)(b) GDPR) per l'elaborazione dei pagamenti e la fornitura dei servizi.
 - Legittimo interesse (art. 6(1)(f) GDPR) per analisi statistiche e funzionamento del Sito.
-- Esecuzione di un contratto quando utilizzi i nostri servizi.
+- Obbligo legale (art. 6(1)(c) GDPR) per requisiti fiscali e contabili.
 
 ## 5. Terze Parti
 
 - Google Analytics (Google LLC, USA).
-- mami Analytics (cloud.umami.is).
+- Umami Analytics (cloud.umami.is).
 - Ahrefs Analytics (Ahrefs Pte. Ltd.).
 - Calendly (Calendly LLC, USA).
 - Kit (newsletter).
+- Stripe (Stripe Inc., USA) per l'elaborazione dei pagamenti.
 
-Nei casi in cui i dati personali vengono trasferiti verso paesi al di fuori dell'Unione Europea o dello Spazio Economico Europeo (come gli Stati Uniti, dove hanno sede Google LLC e Calendly LLC), implementiamo specifiche misure di salvaguardia tra cui:
+Nei casi in cui i dati personali vengono trasferiti verso paesi al di fuori dell'Unione Europea o dello Spazio Economico Europeo (come gli Stati Uniti, dove hanno sede Google LLC, Calendly LLC e Stripe Inc.), implementiamo specifiche misure di salvaguardia tra cui:
 
 - Clausole Contrattuali Standard approvate dalla Commissione Europea che impongono obblighi contrattuali vincolanti ai destinatari dei dati;
 - Valutazioni d'Impatto sul Trasferimento per verificare le leggi del paese di destinazione;

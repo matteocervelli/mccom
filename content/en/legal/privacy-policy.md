@@ -29,8 +29,9 @@ This Privacy Policy describes how the website <https://matteocervelli.com> colle
 
 - Navigation data: IP address, usage data (collected through Google Analytics, Umami Analytics, Ahrefs Analytics, Swiper.js)
 - Personal data: email (newsletter via Kit), name and contact information (Calendly)
+- Payment data: transaction data and payment information (Stripe)
 - Technical data: browser type and version, timezone setting and location, operating system and platform
-- Collection methods: automatic (cookies) and voluntary (forms, Calendly)
+- Collection methods: automatic (cookies) and voluntary (forms, Calendly, payments)
 
 <div class="cookie-consent-section">
 {{< consent-button size="normal" >}}
@@ -41,14 +42,16 @@ This Privacy Policy describes how the website <https://matteocervelli.com> colle
 - Statistical traffic analysis (Google Analytics, Umami Analytics, Ahrefs Analytics)
 - Booking management (Calendly)
 - Newsletter delivery with double opt-in (Kit)
+- Payment processing and transaction management (Stripe)
 - Providing and improving Website services
 - Compliance with legal obligations
 
 ## 4. Legal Basis for Processing
 
 - Consent (Art. 6(1)(a) GDPR) for newsletter, non-technical cookies, and forms
+- Contract execution (Art. 6(1)(b) GDPR) for payment processing and service delivery
 - Legitimate interest (Art. 6(1)(f) GDPR) for statistical analysis and Website operation
-- Contract execution when using our services
+- Legal obligation (Art. 6(1)(c) GDPR) for tax and accounting requirements
 
 ## 5. Third Parties
 
@@ -57,8 +60,9 @@ This Privacy Policy describes how the website <https://matteocervelli.com> colle
 - Ahrefs Analytics (Ahrefs Pte. Ltd.)
 - Calendly (Calendly LLC, USA)
 - Kit (newsletter)
+- Stripe (Stripe Inc., USA) for payment processing
 
-In cases where personal data is transferred to countries outside the European Union or the European Economic Area (such as the United States, where Google LLC and Calendly LLC are based), we implement specific safeguards including:
+In cases where personal data is transferred to countries outside the European Union or the European Economic Area (such as the United States, where Google LLC, Calendly LLC, and Stripe Inc. are based), we implement specific safeguards including:
 
 - Standard Contractual Clauses approved by the European Commission that impose binding contractual obligations on data recipients
 - Transfer Impact Assessments to verify destination country laws

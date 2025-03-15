@@ -14,4 +14,4 @@ baseURL = "http://localhost:1313/"
 
 [server]
   [[server.errorPages]]
-    notFound = "/404.html"
+    notFound = "404.html"

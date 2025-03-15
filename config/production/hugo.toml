@@ -1,6 +1,7 @@
 baseURL = "https://matteocervelli.com/"
 
 [params]
+    env = "production"
     custom_css = []
     author = "Matteo Cervelli"
     dateFormat = "2 January 2006"
@@ -34,3 +35,7 @@ baseURL = "https://matteocervelli.com/"
         suffixes = ["xml"]
     [mediaTypes."application/xml"]
         suffixes = ["xml"]
+
+[server]
+  [[server.errorPages]]
+    notFound = "404.html"

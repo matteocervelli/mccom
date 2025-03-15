@@ -61,8 +61,9 @@ Website: &lt;a href=&#34;https://www.netlify.com&#34;&gt;https://www.netlify.com
 &lt;ul&gt;
 &lt;li&gt;Navigation data: IP address, usage data (collected through Google Analytics, Umami Analytics, Ahrefs Analytics, Swiper.js)&lt;/li&gt;
 &lt;li&gt;Personal data: email (newsletter via Kit), name and contact information (Calendly)&lt;/li&gt;
+&lt;li&gt;Payment data: transaction data and payment information (Stripe)&lt;/li&gt;
 &lt;li&gt;Technical data: browser type and version, timezone setting and location, operating system and platform&lt;/li&gt;
-&lt;li&gt;Collection methods: automatic (cookies) and voluntary (forms, Calendly)&lt;/li&gt;
+&lt;li&gt;Collection methods: automatic (cookies) and voluntary (forms, Calendly, payments)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;cookie-consent-section&#34;&gt;
 
@@ -83,14 +84,16 @@ Website: &lt;a href=&#34;https://www.netlify.com&#34;&gt;https://www.netlify.com
 &lt;li&gt;Statistical traffic analysis (Google Analytics, Umami Analytics, Ahrefs Analytics)&lt;/li&gt;
 &lt;li&gt;Booking management (Calendly)&lt;/li&gt;
 &lt;li&gt;Newsletter delivery with double opt-in (Kit)&lt;/li&gt;
+&lt;li&gt;Payment processing and transaction management (Stripe)&lt;/li&gt;
 &lt;li&gt;Providing and improving Website services&lt;/li&gt;
 &lt;li&gt;Compliance with legal obligations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;4-legal-basis-for-processing&#34;&gt;4. Legal Basis for Processing&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Consent (Art. 6(1)(a) GDPR) for newsletter, non-technical cookies, and forms&lt;/li&gt;
+&lt;li&gt;Contract execution (Art. 6(1)(b) GDPR) for payment processing and service delivery&lt;/li&gt;
 &lt;li&gt;Legitimate interest (Art. 6(1)(f) GDPR) for statistical analysis and Website operation&lt;/li&gt;
-&lt;li&gt;Contract execution when using our services&lt;/li&gt;
+&lt;li&gt;Legal obligation (Art. 6(1)(c) GDPR) for tax and accounting requirements&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;5-third-parties&#34;&gt;5. Third Parties&lt;/h2&gt;
 &lt;ul&gt;
@@ -99,8 +102,9 @@ Website: &lt;a href=&#34;https://www.netlify.com&#34;&gt;https://www.netlify.com
 &lt;li&gt;Ahrefs Analytics (Ahrefs Pte. Ltd.)&lt;/li&gt;
 &lt;li&gt;Calendly (Calendly LLC, USA)&lt;/li&gt;
 &lt;li&gt;Kit (newsletter)&lt;/li&gt;
+&lt;li&gt;Stripe (Stripe Inc., USA) for payment processing&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;In cases where personal data is transferred to countries outside the European Union or the European Economic Area (such as the United States, where Google LLC and Calendly LLC are based), we implement specific safeguards including:&lt;/p&gt;</description>
+&lt;p&gt;In cases where personal data is transferred to countries outside the European Union or the European Economic Area (such as the United States, where Google LLC, Calendly LLC, and Stripe Inc. are based), we implement specific safeguards including:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -124,7 +128,7 @@ Reproduction, distribution, or modification without written authorization is pro
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/en/legal/cookie-policy/</guid>
-      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Last updated: March 11, 2025&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p class=&#34;last-updated&#34;&gt;&lt;em&gt;Last updated: March 15, 2025&lt;/em&gt;&lt;/p&gt;
  
 &lt;p&gt;The website &lt;a href=&#34;https://matteocervelli.com&#34;&gt;https://matteocervelli.com&lt;/a&gt; (hereinafter &amp;ldquo;Website&amp;rdquo;) uses cookies and similar technologies to improve user experience.&lt;/p&gt;
 &lt;p&gt;Cookies are small text files that are stored on your computer or mobile device when you visit a website. Cookies are widely used by website owners to make their websites work, or to work more efficiently, as well as to provide reporting information.&lt;/p&gt;

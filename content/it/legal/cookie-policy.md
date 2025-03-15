@@ -41,7 +41,7 @@ Cookie necessari per il funzionamento del Sito. Non richiedono consenso.
 | Font Awesome | Font Awesome | Icone e risorse grafiche | Sessione |
 | jsDelivr CDN | jsDelivr | Rete di distribuzione contenuti | Sessione |
 | Netlify | Netlify | Hosting e funzionalità del sito | 1 anno |
-| Stripe | Stripe | Elaborazione pagamenti | 1 anno |
+| Stripe | Stripe | Elaborazione pagamenti essenziale e prevenzione frodi | 1 anno |
 | Swiper.js | Swiper | Funzionalità di navigazione | Sessione |
 | Fuse.js | Fuse | Funzionalità di ricerca | Sessione |
 | Preferenza Tema | Locale | Preferenza tema utente (chiaro/scuro) | 1 anno |
@@ -82,7 +82,7 @@ Il Sito utilizza cookie forniti da terze parti come indicato nelle tabelle sopra
 - Font Awesome: [Privacy Policy](https://fontawesome.com/privacy)
 - jsDelivr: [Privacy Policy](https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net)
 - Netlify: [Privacy Policy](https://www.netlify.com/privacy/)
-- Stripe: [Privacy Policy](https://stripe.com/privacy)
+- Stripe: [Privacy Policy](https://stripe.com/privacy) e [Cookie Policy](https://stripe.com/cookies-policy/legal)
 - Umami Analytics: [Privacy Policy](https://umami.is/privacy)
 - Ahrefs Analytics: [Privacy Policy](https://ahrefs.com/privacy)
 - Calendly: [Privacy Policy](https://calendly.com/privacy)
