@@ -153,6 +153,12 @@
   force = true
 
 [[headers]]
-  for = "/*/feed/"
+  for = "/*/feed.xml"
   [headers.values]
-    Content-Type = "application/xml; charset=utf-8"
+    Content-Type = "application/rss+xml; charset=utf-8"
+
+[[redirects]]
+  from = "/*/legal/*"
+  to = "/*/legal/:splat.html"
+  status = 200
+  force = true

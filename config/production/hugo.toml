@@ -21,7 +21,7 @@ baseURL = "https://matteocervelli.com/"
 
 [outputFormats]
     [outputFormats.RSS]
-        mediatype = "application/rss"
+        mediatype = "application/rss+xml"
         baseName = "feed"
     [outputFormats.SITEMAP]
         mediaType = "application/xml"

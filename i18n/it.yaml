@@ -274,6 +274,16 @@ social_cookies_description:
 # Cookie Purposes
 cloudflare_purpose:
   other: "Analisi prestazioni e sicurezza del sito"
+cloudflare_hosting_purpose:
+  other: "Hosting del sito e distribuzione dei contenuti"
+fontawesome_purpose:
+  other: "Icone e risorse grafiche"
+jsdelivr_purpose:
+  other: "Rete di distribuzione contenuti"
+netlify_purpose:
+  other: "Hosting e funzionalità del sito"
+stripe_purpose:
+  other: "Elaborazione pagamenti"
 swiper_purpose:
   other: "Funzionalità slider contenuti"
 umami_purpose:

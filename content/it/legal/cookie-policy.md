@@ -36,7 +36,12 @@ Cookie necessari per il funzionamento del Sito. Non richiedono consenso.
 
 | Tracker | Fornitore | Scopo | Durata Massima |
 |---------|-----------|-------|----------------|
+| Cloudflare | Cloudflare | Hosting del sito e distribuzione dei contenuti | 1 anno |
 | Cloudflare Insights | Cloudflare | Analisi prestazioni sito | 1 anno |
+| Font Awesome | Font Awesome | Icone e risorse grafiche | Sessione |
+| jsDelivr CDN | jsDelivr | Rete di distribuzione contenuti | Sessione |
+| Netlify | Netlify | Hosting e funzionalità del sito | 1 anno |
+| Stripe | Stripe | Elaborazione pagamenti | 1 anno |
 | Swiper.js | Swiper | Funzionalità di navigazione | Sessione |
 | Fuse.js | Fuse | Funzionalità di ricerca | Sessione |
 | Preferenza Tema | Locale | Preferenza tema utente (chiaro/scuro) | 1 anno |
@@ -74,6 +79,10 @@ Cookie per contenuti incorporati da piattaforme social. Attivi solo con consenso
 Il Sito utilizza cookie forniti da terze parti come indicato nelle tabelle sopra. Per maggiori informazioni sulle loro policy privacy:
 
 - Cloudflare: [Privacy Policy](https://www.cloudflare.com/privacypolicy/)
+- Font Awesome: [Privacy Policy](https://fontawesome.com/privacy)
+- jsDelivr: [Privacy Policy](https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net)
+- Netlify: [Privacy Policy](https://www.netlify.com/privacy/)
+- Stripe: [Privacy Policy](https://stripe.com/privacy)
 - Umami Analytics: [Privacy Policy](https://umami.is/privacy)
 - Ahrefs Analytics: [Privacy Policy](https://ahrefs.com/privacy)
 - Calendly: [Privacy Policy](https://calendly.com/privacy)

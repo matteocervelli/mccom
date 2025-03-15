@@ -34,7 +34,12 @@ Cookies necessary for the Website to function. They do not require consent.
 
 | Tracker | Provider | Purpose | Maximum Duration |
 |---------|----------|---------|------------------|
+| Cloudflare | Cloudflare | Website hosting and content delivery | 1 year |
 | Cloudflare Insights | Cloudflare | Site performance analysis | 1 year |
+| Font Awesome | Font Awesome | Icons and graphical resources | Session |
+| jsDelivr CDN | jsDelivr | Content delivery network | Session |
+| Netlify | Netlify | Website hosting and functionality | 1 year |
+| Stripe | Stripe | Payment processing | 1 year |
 | Swiper.js | Swiper | Navigation functionality | Session |
 | Fuse.js | Fuse | Search functionality | Session |
 | Theme Preference | Local | User theme preference (light/dark) | 1 year |
@@ -72,6 +77,10 @@ Cookies for embedded content from social platforms. Active only with consent.
 The Website uses cookies provided by third parties as indicated in the tables above. For more information about their privacy policies:
 
 - Cloudflare: [Privacy Policy](https://www.cloudflare.com/privacypolicy/)
+- Font Awesome: [Privacy Policy](https://fontawesome.com/privacy)
+- jsDelivr: [Privacy Policy](https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net)
+- Netlify: [Privacy Policy](https://www.netlify.com/privacy/)
+- Stripe: [Privacy Policy](https://stripe.com/privacy)
 - Umami Analytics: [Privacy Policy](https://umami.is/privacy)
 - Ahrefs Analytics: [Privacy Policy](https://ahrefs.com/privacy)
 - Calendly: [Privacy Policy](https://calendly.com/privacy)

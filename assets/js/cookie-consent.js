@@ -7,6 +7,20 @@ class CookieConsent {
         this.banner = document.getElementById('cookie-consent-banner');
         this.container = document.querySelector('.cookie-consent-container');
         
+        // Track technical services
+        this.technicalServices = {
+            cloudflare: true,
+            cloudflareInsights: true,
+            fontawesome: true,
+            jsdelivr: true,
+            netlify: true,
+            stripe: true,
+            swiper: true,
+            fuse: true,
+            themePreference: true,
+            languagePreference: true
+        };
+
         // Se non ci sono consensi salvati, mostra il banner invece del modal
         if (!this.hasStoredConsent()) {
             this.showBanner();
