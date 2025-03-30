@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    
+    {{/* Meta tags social */}}
+    {{ partial "head-meta.html" . }}
+    
+    {{/* CSS */}}
+    {{ $style := resources.Get "css/custom.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    
+    {{/* Favicon */}}
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    {{/* RSS */}}
+    {{ range .AlternativeOutputFormats -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+</head> 

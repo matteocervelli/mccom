@@ -1,0 +1,21 @@
+.ananke-socials {
+  margin: 1rem 0;
+}
+
+.ananke-socials a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.ananke-socials a:hover {
+  color: #000;
+}
+
+.ananke-socials .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+} 

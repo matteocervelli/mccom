@@ -1,0 +1,32 @@
+{{/* Meta tags per Open Graph e Twitter Cards */}}
+{{ $description := .Description | default .Summary | default .Site.Params.description }}
+{{ $title := .Title | default .Site.Title }}
+{{ $image := .Params.featured_image | default .Site.Params.featured_image | default "img/default-social.jpg" }}
+{{ $type := cond (eq .Type "posts") "article" "website" }}
+{{ $locale := .Site.Language.Lang | default "en" }}
+
+{{/* Open Graph */}}
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:type" content="{{ $type }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ absURL $image }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:locale" content="{{ $locale }}" />
+
+{{/* Twitter Card */}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@matteocervelli" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+<meta name="twitter:image" content="{{ absURL $image }}" />
+
+{{/* LinkedIn */}}
+<meta property="linkedin:title" content="{{ $title }}" />
+<meta property="linkedin:description" content="{{ $description }}" />
+<meta property="linkedin:image" content="{{ absURL $image }}" />
+
+{{/* BlueSky */}}
+<meta property="bsky:title" content="{{ $title }}" />
+<meta property="bsky:description" content="{{ $description }}" />
+<meta property="bsky:image" content="{{ absURL $image }}" /> 
