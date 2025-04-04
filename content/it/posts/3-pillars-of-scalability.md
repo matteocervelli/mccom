@@ -110,7 +110,7 @@ Avere i tre pilastri ben definiti non basta, perché esistono sempre elementi na
 
 Per aiutarti a identificare questi colli di bottiglia, ho uno strumento pratico: la Matrice di Autovalutazione della Scalabilità. Questo strumento, basato sui tre pilastri, ti permette di esplorare in modo sistematico la tua azienda, facendo emergere chiaramente dove intervenire per ottimizzare la tua capacità di scalare.
 
-<a href="#scalability-score" class="mc-button">
+<a href="https://scalabilityscore.adlimen.com/" class="mc-button" id="scalability-score" data-umami-event="scalability-score-3-pillars-it">
     Calcola il tuo score di scalabilità
 </a>
 
