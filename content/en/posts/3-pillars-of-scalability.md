@@ -11,7 +11,7 @@ draft: false
 tags: ['scalability']
 categories: ['post']
 featured_image: "images/teatro-solomeo.jpeg"
-bsky: false
+bsky: "https://bsky.app/profile/matteocervelli.com/post/3llyl3hqwjs25"
 ---
 
 ## 150 grams
