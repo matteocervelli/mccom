@@ -7,7 +7,7 @@
     <title>37, l&#39;Anno della Discesa | Matteo Cervelli</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="A 37 anni, racconto il mio anno di trasformazione: dalla decisione di lasciare l&#39;azienda di famiglia alla nascita di Ad Limen Consulting, attraverso sfide personali, rinascita professionale e la riscoperta del valore della discesa.">
-    <meta name="generator" content="Hugo 0.140.2">
+    <meta name="generator" content="Hugo 0.145.0">
     
     
     
@@ -48,7 +48,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-02-21T10:00:00+01:00">
-    <meta property="article:modified_time" content="2025-02-21T12:31:17+01:00">
+    <meta property="article:modified_time" content="2025-02-21T10:00:00+01:00">
     <meta property="article:tag" content="Personal">
     <meta property="article:tag" content="Business">
     <meta property="article:tag" content="Transformation">
@@ -57,8 +57,8 @@
   <meta itemprop="name" content="37, l&#39;Anno della Discesa">
   <meta itemprop="description" content="A 37 anni, racconto il mio anno di trasformazione: dalla decisione di lasciare l&#39;azienda di famiglia alla nascita di Ad Limen Consulting, attraverso sfide personali, rinascita professionale e la riscoperta del valore della discesa.">
   <meta itemprop="datePublished" content="2025-02-21T10:00:00+01:00">
-  <meta itemprop="dateModified" content="2025-02-21T12:31:17+01:00">
-  <meta itemprop="wordCount" content="3080">
+  <meta itemprop="dateModified" content="2025-02-21T10:00:00+01:00">
+  <meta itemprop="wordCount" content="3077">
   <meta itemprop="keywords" content="Personal,Business,Transformation,Family">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="37, l&#39;Anno della Discesa">
@@ -240,11 +240,6 @@ window.addEventListener('scroll', () => {
                         </div>
                         
                         
-                        <div class="meta-item" data-type="updated">
-                            <span class="label">aggiornato il</span>
-                            <span class="value">February 21, 2025</span>
-                        </div>
-                        
 
                         <div class="meta-item" data-type="reading-time">
                             <span class="label">Tempo di lettura</span>
@@ -287,79 +282,6 @@ window.addEventListener('scroll', () => {
 </figure>
 
 
-
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-    <button class="lightbox-prev" onclick="changeLightboxImage(-1)">&lt;</button>
-    <button class="lightbox-next" onclick="changeLightboxImage(1)">&gt;</button>
-    <div class="lightbox-content">
-        <img src="" alt="">
-        <figcaption class="image-caption"></figcaption>
-    </div>
-</div>
-
-<script>
-let currentImageIndex = 0;
-const images = [];
-
-function openLightbox(img) {
-    event.stopPropagation();
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = lightbox.querySelector('img');
-    const lightboxCaption = lightbox.querySelector('figcaption');
-    
-    
-    images.length = 0;
-    document.querySelectorAll('.lightbox-trigger img').forEach(image => {
-        images.push({
-            src: image.src,
-            alt: image.alt,
-            caption: image.dataset.caption
-        });
-    });
-    
-    
-    currentImageIndex = images.findIndex(image => image.src === img.src);
-    
-    
-    lightboxImg.src = img.src;
-    lightboxImg.alt = img.alt;
-    lightboxCaption.textContent = img.dataset.caption;
-    
-    
-    lightbox.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-}
-
-function closeLightbox() {
-    const lightbox = document.getElementById('lightbox');
-    lightbox.style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
-function changeLightboxImage(direction) {
-    event.stopPropagation();
-    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
-    const image = images[currentImageIndex];
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = lightbox.querySelector('img');
-    const lightboxCaption = lightbox.querySelector('figcaption');
-    
-    lightboxImg.src = image.src;
-    lightboxImg.alt = image.alt;
-    lightboxCaption.textContent = image.caption;
-}
-
-
-document.addEventListener('keydown', function(e) {
-    if (document.getElementById('lightbox').style.display === 'flex') {
-        if (e.key === 'Escape') closeLightbox();
-        if (e.key === 'ArrowLeft') changeLightboxImage(-1);
-        if (e.key === 'ArrowRight') changeLightboxImage(1);
-    }
-});
-</script>
  
 
 
@@ -467,7 +389,7 @@ Il nostro &ldquo;Ad&rdquo; racconta di un attraversare una nuova soglia. La sogl
     
 <footer role="contentinfo" aria-label="Site footer">
     
-    <script src="/js/dropdown.min.4012e2973ab5e591a68041bc12b0f1661ba78d4527715a5bda3b621d235cf613.js"></script>
+    <script src="/js/dropdown.min.5893964a9bed5f2c5f87709075f3f0b02ce6a1940160f29c897b061e236f485e.js"></script>
     <div>
       
       <div class="footer-border-top" aria-hidden="true"></div>
