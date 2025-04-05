@@ -97,7 +97,7 @@ Having the three pillars well-defined is not enough, because there are always hi
 
 To help you identify these bottlenecks, I have a practical tool: the Scalability Self-Assessment Matrix. This tool, based on the three pillars, allows you to systematically explore your company, clearly highlighting where to intervene to optimize your ability to scale.
 
-<a href="https://scalabilityscore.adlimen.com/" class="mc-button" id="scalability-score" data-umami-event="scalability-score-3-pillars-en">
+<a href="https://adlimen.com/en/services/scalability-score" class="mc-button" id="scalability-score" data-umami-event="scalability-score-3-pillars-en">
     Calculate your scalability score
 </a>
 
