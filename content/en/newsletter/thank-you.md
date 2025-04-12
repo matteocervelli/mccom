@@ -23,6 +23,7 @@ If you don't see the email in your inbox, please check your spam or promotions f
 </div>
 
 <script>
+//<![CDATA[
 document.addEventListener('DOMContentLoaded', function() {
   const resendLink = document.getElementById('resend-link');
   const messageEl = document.getElementById('resend-message');
@@ -92,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
     return /\S+@\S+\.\S+/.test(emailToCheck);
   }
 });
+//]]>
 </script>
 
 You can return to the [Homepage](/en/) or explore the [Newsletter Archive](/en/newsletter/).

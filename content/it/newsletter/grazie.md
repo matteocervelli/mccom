@@ -24,6 +24,7 @@ Se non vedi l'email nella tua casella di posta, controlla nella cartella spam o 
 </div>
 
 <script>
+//<![CDATA[
 document.addEventListener('DOMContentLoaded', function() {
   const resendLink = document.getElementById('resend-link');
   const messageEl = document.getElementById('resend-message');
@@ -93,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     return /\S+@\S+\.\S+/.test(emailToCheck);
   }
 });
+//]]>
 </script>
 
 Puoi tornare alla [Homepage](/it/) o esplorare l'[Archivio Newsletter](/it/newsletter/). 
