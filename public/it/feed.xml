@@ -27,6 +27,79 @@
 &lt;/figure&gt;
 
 
+
+
+&lt;div id=&#34;lightbox&#34; class=&#34;lightbox&#34; onclick=&#34;closeLightbox()&#34;&gt;
+    &lt;button class=&#34;lightbox-close&#34; onclick=&#34;closeLightbox()&#34;&gt;&amp;times;&lt;/button&gt;
+    &lt;button class=&#34;lightbox-prev&#34; onclick=&#34;changeLightboxImage(-1)&#34;&gt;&amp;lt;&lt;/button&gt;
+    &lt;button class=&#34;lightbox-next&#34; onclick=&#34;changeLightboxImage(1)&#34;&gt;&amp;gt;&lt;/button&gt;
+    &lt;div class=&#34;lightbox-content&#34;&gt;
+        &lt;img src=&#34;&#34; alt=&#34;&#34;&gt;
+        &lt;figcaption class=&#34;image-caption&#34;&gt;&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+let currentImageIndex = 0;
+const images = [];
+
+function openLightbox(img) {
+    event.stopPropagation();
+    const lightbox = document.getElementById(&#39;lightbox&#39;);
+    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
+    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
+    
+    
+    images.length = 0;
+    document.querySelectorAll(&#39;.lightbox-trigger img&#39;).forEach(image =&gt; {
+        images.push({
+            src: image.src,
+            alt: image.alt,
+            caption: image.dataset.caption
+        });
+    });
+    
+    
+    currentImageIndex = images.findIndex(image =&gt; image.src === img.src);
+    
+    
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = img.dataset.caption;
+    
+    
+    lightbox.style.display = &#39;flex&#39;;
+    document.body.style.overflow = &#39;hidden&#39;;
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById(&#39;lightbox&#39;);
+    lightbox.style.display = &#39;none&#39;;
+    document.body.style.overflow = &#39;auto&#39;;
+}
+
+function changeLightboxImage(direction) {
+    event.stopPropagation();
+    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+    const image = images[currentImageIndex];
+    const lightbox = document.getElementById(&#39;lightbox&#39;);
+    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
+    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
+    
+    lightboxImg.src = image.src;
+    lightboxImg.alt = image.alt;
+    lightboxCaption.textContent = image.caption;
+}
+
+
+document.addEventListener(&#39;keydown&#39;, function(e) {
+    if (document.getElementById(&#39;lightbox&#39;).style.display === &#39;flex&#39;) {
+        if (e.key === &#39;Escape&#39;) closeLightbox();
+        if (e.key === &#39;ArrowLeft&#39;) changeLightboxImage(-1);
+        if (e.key === &#39;ArrowRight&#39;) changeLightboxImage(1);
+    }
+});
+&lt;/script&gt;
  
 &lt;p&gt;L&amp;rsquo;evento ha devastato piccoli paesi, alcuni dei quali famosi anche per il turismo, come Norcia, città natale di San Benedetto, o Amatrice, ben nota per una salsa italiana per la pasta chiamata Amatriciana, che combina pomodoro, guanciale e pecorino per un sapore divino.&lt;/p&gt;</description>
     </item>
@@ -48,6 +121,7 @@
   &lt;p id=&#34;resend-message&#34; class=&#34;resend-message&#34;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;script&gt;
+//&lt;![CDATA[
 document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   const resendLink = document.getElementById(&#39;resend-link&#39;);
   const messageEl = document.getElementById(&#39;resend-message&#39;);
@@ -117,6 +191,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
     return /\S+@\S+\.\S+/.test(emailToCheck);
   }
 });
+//]]&gt;
 &lt;/script&gt;
 &lt;p&gt;Puoi tornare alla &lt;a href=&#34;http://localhost:1313/it/&#34;&gt;Homepage&lt;/a&gt; o esplorare l&amp;rsquo;&lt;a href=&#34;http://localhost:1313/it/newsletter/&#34;&gt;Archivio Newsletter&lt;/a&gt;.&lt;/p&gt;</description>
     </item>

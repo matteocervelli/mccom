@@ -126,14 +126,86 @@ document.addEventListener(&#39;keydown&#39;, function(e) {
 &lt;p&gt;Your subscription request to &lt;em&gt;The Scalability Compass&lt;/em&gt; has been received.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;To complete your subscription, please confirm your email address by clicking the link in the email we just sent you.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If you don&amp;rsquo;t see the email in your inbox, please check your spam or promotions folder.&lt;/p&gt;
-&lt;div class=&#34;my-4 text-sm&#34;&gt;
-  &lt;p&gt;&lt;a href=&#34;#&#34; id=&#34;toggle-resend&#34;&gt;Didn&#39;t receive the confirmation email? Click here to request a new one&lt;/a&gt;&lt;/p&gt;
-  &lt;div id=&#34;resend-container&#34; class=&#34;my-3 hidden&#34;&gt;
-    &lt;form id=&#34;resend-form&#34; class=&#34;flex items-center&#34;&gt;
-      &lt;input type=&#34;email&#34; id=&#34;resend-email&#34; class=&#34;border px-2 py-1 text-sm rounded-l w-64&#34; placeholder=&#34;Your email address&#34;&gt;
-      &lt;button type=&#34;submit&#34; id=&#34;resend-btn&#34; class=&#34;bg-blue-600 text-white px-3 py-1 text-sm rounded-r&#34;&gt;Send&lt;/button&gt;
-    &lt;/form&gt;
-    &lt;p id=&#34;resend-message&#34; class=&#34;mt-2 hidden&#34;&gt;&lt;/p&gt;</description>
+&lt;div class=&#34;resend-section&#34;&gt;
+  &lt;p&gt;
+    &lt;a href=&#34;javascript:void(0);&#34; id=&#34;resend-link&#34; class=&#34;resend-link&#34;&gt;Didn&#39;t receive the confirmation email? Click here to request a new one&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;p id=&#34;resend-message&#34; class=&#34;resend-message&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;script&gt;
+//&lt;![CDATA[
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+  const resendLink = document.getElementById(&#39;resend-link&#39;);
+  const messageEl = document.getElementById(&#39;resend-message&#39;);
+  let isSending = false; // Flag to prevent multiple clicks
+  
+  // Get email from URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  let email = urlParams.get(&#39;email&#39;) || &#39;&#39;;
+  
+  // Handle link click
+  resendLink.addEventListener(&#39;click&#39;, function(e) {
+    e.preventDefault();
+    if (isSending) return; // Prevent multiple submissions
+    
+    let emailToUse = email;
+    
+    // If we don&#39;t have an email in URL, show a prompt
+    if (!emailToUse) {
+      const userEmail = prompt(&#39;Enter your email address to request a new confirmation:&#39;);
+      if (!userEmail || !isValidEmail(userEmail)) {
+        showMessage(&#39;Please enter a valid email address.&#39;, &#39;error&#39;);
+        return;
+      }
+      emailToUse = userEmail;
+    }
+    
+    sendConfirmationRequest(emailToUse);
+  });
+  
+  function sendConfirmationRequest(emailAddress) {
+    isSending = true;
+    // Update UI
+    resendLink.classList.add(&#39;sending&#39;);
+    resendLink.textContent = &#39;Sending...&#39;;
+    showMessage(&#39;&#39;, &#39;&#39;); // Clear previous message
+    
+    // Send request
+    fetch(&#39;/api/resend-confirmation&#39;, {
+      method: &#39;POST&#39;,
+      headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+      body: JSON.stringify({ email: emailAddress, language: &#39;en&#39; })
+    })
+    .then(response =&gt; response.json())
+    .then(data =&gt; {
+      showMessage(&#39;Request sent! Please check your inbox (and spam folder) for the confirmation email.&#39;, &#39;success&#39;);
+    })
+    .catch(error =&gt; {
+      console.error(&#39;Error:&#39;, error);
+      showMessage(&#39;An error occurred. Please try again later or contact support.&#39;, &#39;error&#39;);
+    })
+    .finally(() =&gt; {
+      isSending = false;
+      resendLink.classList.remove(&#39;sending&#39;);
+      resendLink.textContent = &#39;Didn\&#39;t receive the confirmation email? Click here to request a new one&#39;;
+    });
+  }
+  
+  function showMessage(text, type) {
+    messageEl.textContent = text;
+    messageEl.className = &#39;resend-message &#39; + type;
+    // Make message visible if there is text
+    messageEl.style.display = text ? &#39;block&#39; : &#39;none&#39;;
+  }
+  
+  function isValidEmail(emailToCheck) {
+    // Simple regex for email validation
+    return /\S+@\S+\.\S+/.test(emailToCheck);
+  }
+});
+//]]&gt;
+&lt;/script&gt;
+&lt;p&gt;You can return to the &lt;a href=&#34;http://localhost:1313/en/&#34;&gt;Homepage&lt;/a&gt; or explore the &lt;a href=&#34;http://localhost:1313/en/newsletter/&#34;&gt;Newsletter Archive&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

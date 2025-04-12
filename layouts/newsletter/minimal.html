@@ -10,4 +10,15 @@
     </div>
   </div>
 </article>
+
+{{/* Includi lo script solo se esiste */}}
+{{ $script := resources.Get "js/resend-confirmation.js" }}
+{{ if $script }}
+  {{/* Aggiungi integrità e minificazione per produzione */}}
+  {{ if hugo.IsProduction }}
+    {{ $script = $script | minify | fingerprint }}
+  {{ end }}
+  <script src="{{ $script.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $script.Data.Integrity }}"{{ end }} defer></script>
+{{ end }}
+
 {{ end }} 
