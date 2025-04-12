@@ -22,6 +22,7 @@ If you don't see the email in your inbox, please check your spam or promotions f
   <p id="resend-message" class="resend-message"></p>
 </div>
 
+<!--
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const resendLink = document.getElementById('resend-link');
@@ -93,5 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+-->
 
 You can return to the [Homepage](/en/) or explore the [Newsletter Archive](/en/newsletter/).
