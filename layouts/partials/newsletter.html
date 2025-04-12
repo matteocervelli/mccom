@@ -1,22 +1,67 @@
-<div style="max-width: 24em; margin: 3em auto 3em 0;">
+<div id="{{ if eq .Site.Language.Lang "en" }}mlb2-24760757{{ else }}mlb2-24694811{{ end }}" 
+     class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-{{ if eq .Site.Language.Lang "en" }}24760757{{ else }}24694811{{ end }}"
+     data-form-id="{{ if eq .Site.Language.Lang "en" }}24760757{{ else }}24694811{{ end }}"
+     data-redirect-url="{{ if eq .Site.Language.Lang "en" }}{{ printf "/%s/newsletter/thank-you/" .Site.Language.Lang | absURL }}{{ else }}{{ printf "/%s/newsletter/grazie/" .Site.Language.Lang | absURL }}{{ end }}"
+     data-tracker-url="{{ if eq .Site.Language.Lang "en" }}https://assets.mailerlite.com/jsonp/1430245/forms/151481753002837465/takel{{ else }}https://assets.mailerlite.com/jsonp/1430245/forms/151309607914964876/takel{{ end }}">
+  <div style="max-width: 24em; margin: 3em auto 3em 0;"> 
     <form id="newsletter-form" 
-      class="newsletter-form"
+      class="newsletter-form" 
       action="{{ i18n "newsletter_form_action" }}"
       method="post"
-      data-sv-form="{{ i18n "newsletter_form_id" }}"
-      data-uid="{{ i18n "newsletter_form_uid" }}"
+      data-form-id="{{ i18n "newsletter_form_id" }}" 
       aria-label="Newsletter subscription form">
       <input type="email" 
-            name="email_address"
+            name="fields[email]"
             placeholder="{{ i18n "email_placeholder" }}"
-            class="newsletter-form__input"
+            class="newsletter-form__input" 
             aria-label="Enter your email address"
             id="newsletter-email"
+            autocomplete="email"
             required>
       <button id="newsletter-submit" data-umami-event="Newsletter Submit" type="submit"
-              class="newsletter-form__button"
+              class="newsletter-form__button" 
               aria-label="Subscribe to newsletter">
         {{ i18n "sign_up" }}
       </button>
+      
+      <input type="hidden" name="fields[language]" value="{{ .Site.Language.Lang }}">
+      <input type="hidden" name="ml-submit" value="1">
+      <input type="hidden" name="anticsrf" value="true">
+
     </form>
   </div>
+</div>
+
+<!-- MailerLite Universal -->
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '1430245');
+</script>
+<!-- End MailerLite Universal -->
+
+<script>
+  // Recupero i dati dagli attributi data-*
+  var container = document.querySelector('.ml-form-embedContainer');
+  var formId = container.getAttribute('data-form-id');
+  var redirectUrl = container.getAttribute('data-redirect-url');
+  var trackerUrl = container.getAttribute('data-tracker-url');
+  
+  // Definizione della funzione di successo
+  window["ml_webform_success_" + formId] = function() {
+    try {
+      window.top.location.href = redirectUrl;
+    } catch (e) {
+      window.location.href = redirectUrl;
+    }
+  };
+  
+  // Tracciamento al caricamento della pagina
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch(trackerUrl);
+  });
+</script>
+
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>

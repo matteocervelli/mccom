@@ -4446,3 +4446,40 @@ tr:nth-child(even) {
     font-weight: 600 !important;
     font-size: var(--font-size-md) !important;
 }
+
+/* Resend Confirmation Link Styles */
+.resend-section {
+  margin-top: var(--mt-md);
+  font-size: var(--font-size-md);
+}
+
+.resend-link {
+  color: var(--color-highlight); /* Usa variabile CSS o fallback viola */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.resend-link:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.resend-message {
+  margin-top: 8px;
+  display: none; /* Nascosto di default */
+  font-weight: 500;
+}
+
+.resend-message.success {
+  color: var(--color-success, #28a745); /* Usa variabile CSS o fallback verde */
+}
+
+.resend-message.error {
+  color: var(--color-error, #dc3545); /* Usa variabile CSS o fallback rosso */
+}
+
+.resend-link.sending {
+  opacity: 0.6;
+  cursor: not-allowed; /* Cursore che indica attesa */
+  text-decoration: none;
+}

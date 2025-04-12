@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/it/categories/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Apr 2025 07:46:24 +0200</lastBuildDate><atom:link href="https://localhost:1313/it/categories/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Newsletter</title>
+      <link>http://localhost:1313/it/categories/newsletter/</link>
+      <pubDate>Thu, 10 Apr 2025 07:46:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/it/categories/newsletter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post</title>
+      <link>http://localhost:1313/it/categories/post/</link>
+      <pubDate>Thu, 10 Apr 2025 07:46:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/it/categories/post/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Legal</title>
       <link>http://localhost:1313/it/categories/legal/</link>
@@ -31,15 +49,6 @@
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/it/categories/page/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Post</title>
-      <link>http://localhost:1313/it/categories/post/</link>
-      <pubDate>Fri, 21 Feb 2025 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/categories/post/</guid>
       <description></description>
     </item>
     

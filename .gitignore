@@ -1,0 +1,16 @@
+# Environment variables
+.env
+
+# Hugo build directories
+/public/
+/resources/
+
+# Netlify build directory
+.netlify/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node dependencies (if used)
+/node_modules/ 

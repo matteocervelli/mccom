@@ -48,7 +48,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-02-21T10:00:00+01:00">
-    <meta property="article:modified_time" content="2025-02-21T10:00:00+01:00">
+    <meta property="article:modified_time" content="2025-04-04T15:54:05+02:00">
     <meta property="article:tag" content="Personal">
     <meta property="article:tag" content="Business">
     <meta property="article:tag" content="Transformation">
@@ -57,8 +57,8 @@
   <meta itemprop="name" content="37, l&#39;Anno della Discesa">
   <meta itemprop="description" content="A 37 anni, racconto il mio anno di trasformazione: dalla decisione di lasciare l&#39;azienda di famiglia alla nascita di Ad Limen Consulting, attraverso sfide personali, rinascita professionale e la riscoperta del valore della discesa.">
   <meta itemprop="datePublished" content="2025-02-21T10:00:00+01:00">
-  <meta itemprop="dateModified" content="2025-02-21T10:00:00+01:00">
-  <meta itemprop="wordCount" content="3077">
+  <meta itemprop="dateModified" content="2025-04-04T15:54:05+02:00">
+  <meta itemprop="wordCount" content="3080">
   <meta itemprop="keywords" content="Personal,Business,Transformation,Family">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="37, l&#39;Anno della Discesa">
@@ -240,6 +240,11 @@ window.addEventListener('scroll', () => {
                         </div>
                         
                         
+                        <div class="meta-item" data-type="updated">
+                            <span class="label">aggiornato il</span>
+                            <span class="value">April 4, 2025</span>
+                        </div>
+                        
 
                         <div class="meta-item" data-type="reading-time">
                             <span class="label">Tempo di lettura</span>
@@ -282,6 +287,79 @@ window.addEventListener('scroll', () => {
 </figure>
 
 
+
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-prev" onclick="changeLightboxImage(-1)">&lt;</button>
+    <button class="lightbox-next" onclick="changeLightboxImage(1)">&gt;</button>
+    <div class="lightbox-content">
+        <img src="" alt="">
+        <figcaption class="image-caption"></figcaption>
+    </div>
+</div>
+
+<script>
+let currentImageIndex = 0;
+const images = [];
+
+function openLightbox(img) {
+    event.stopPropagation();
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    const lightboxCaption = lightbox.querySelector('figcaption');
+    
+    
+    images.length = 0;
+    document.querySelectorAll('.lightbox-trigger img').forEach(image => {
+        images.push({
+            src: image.src,
+            alt: image.alt,
+            caption: image.dataset.caption
+        });
+    });
+    
+    
+    currentImageIndex = images.findIndex(image => image.src === img.src);
+    
+    
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = img.dataset.caption;
+    
+    
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+function changeLightboxImage(direction) {
+    event.stopPropagation();
+    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+    const image = images[currentImageIndex];
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    const lightboxCaption = lightbox.querySelector('figcaption');
+    
+    lightboxImg.src = image.src;
+    lightboxImg.alt = image.alt;
+    lightboxCaption.textContent = image.caption;
+}
+
+
+document.addEventListener('keydown', function(e) {
+    if (document.getElementById('lightbox').style.display === 'flex') {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') changeLightboxImage(-1);
+        if (e.key === 'ArrowRight') changeLightboxImage(1);
+    }
+});
+</script>
  
 
 
@@ -412,34 +490,79 @@ Il nostro &ldquo;Ad&rdquo; racconta di un attraversare una nuova soglia. La sogl
       </div>
   
       
-      <div style="max-width: 24em; margin: 3em auto 3em 0;">
+      <div id="mlb2-24694811" 
+     class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-24694811"
+     data-form-id="24694811"
+     data-redirect-url="http://localhost:1313/it/newsletter/grazie/"
+     data-tracker-url="https://assets.mailerlite.com/jsonp/1430245/forms/151309607914964876/takel">
+  <div style="max-width: 24em; margin: 3em auto 3em 0;"> 
     <form id="newsletter-form" 
-      class="newsletter-form"
-      action="https://app.kit.com/forms/7578384/subscriptions"
+      class="newsletter-form" 
+      action="https://assets.mailerlite.com/jsonp/1430245/forms/151309607914964876/subscribe"
       method="post"
-      data-sv-form="7578384"
-      data-uid="b47db62f73"
+      data-form-id="7578384" 
       aria-label="Newsletter subscription form">
       <input type="email" 
-            name="email_address"
+            name="fields[email]"
             placeholder="La tua email"
-            class="newsletter-form__input"
+            class="newsletter-form__input" 
             aria-label="Enter your email address"
             id="newsletter-email"
+            autocomplete="email"
             required>
       <button id="newsletter-submit" data-umami-event="Newsletter Submit" type="submit"
-              class="newsletter-form__button"
+              class="newsletter-form__button" 
               aria-label="Subscribe to newsletter">
         Registrati
       </button>
+      
+      <input type="hidden" name="fields[language]" value="it">
+      <input type="hidden" name="ml-submit" value="1">
+      <input type="hidden" name="anticsrf" value="true">
+
     </form>
   </div>
+</div>
+
+
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '1430245');
+</script>
+
+
+<script>
+  
+  var container = document.querySelector('.ml-form-embedContainer');
+  var formId = container.getAttribute('data-form-id');
+  var redirectUrl = container.getAttribute('data-redirect-url');
+  var trackerUrl = container.getAttribute('data-tracker-url');
+  
+  
+  window["ml_webform_success_" + formId] = function() {
+    try {
+      window.top.location.href = redirectUrl;
+    } catch (e) {
+      window.location.href = redirectUrl;
+    }
+  };
+  
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch(trackerUrl);
+  });
+</script>
+
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
   
       
       <div class="legal-links">
         <a href="/it/legal/privacy-policy">Privacy Policy</a> |
         <a href="/it/legal/cookie-policy">Cookie Policy</a> |
-        <a href="/it/legal/termini-utilizzo">Termini di Utilizzo</a> |
+        <a href="/it/legal/termini-di-utilizzo">Termini di Utilizzo</a> |
         <a href="/it/legal/note-legali">Note Legali</a> |
         <a href="/it/sitemap" aria-label="View site map">Mappa del sito</a>.
       </div>

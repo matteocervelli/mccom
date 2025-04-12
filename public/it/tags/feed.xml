@@ -6,13 +6,40 @@
     <description>Recent content in Tags on Matteo Cervelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Fri, 21 Feb 2025 10:00:00 +0100</lastBuildDate><atom:link href="https://localhost:1313/it/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Apr 2025 07:46:24 +0200</lastBuildDate><atom:link href="https://localhost:1313/it/tags/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Business</title>
       <link>http://localhost:1313/it/tags/business/</link>
-      <pubDate>Fri, 21 Feb 2025 10:00:00 +0100</pubDate>
+      <pubDate>Thu, 10 Apr 2025 07:46:24 +0200</pubDate>
       
       <guid>http://localhost:1313/it/tags/business/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kpi</title>
+      <link>http://localhost:1313/it/tags/kpi/</link>
+      <pubDate>Thu, 10 Apr 2025 07:46:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/it/tags/kpi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Newsletter</title>
+      <link>http://localhost:1313/it/tags/newsletter/</link>
+      <pubDate>Thu, 10 Apr 2025 07:46:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/it/tags/newsletter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalability</title>
+      <link>http://localhost:1313/it/tags/scalability/</link>
+      <pubDate>Thu, 10 Apr 2025 07:46:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/it/tags/scalability/</guid>
       <description></description>
     </item>
     
@@ -76,15 +103,6 @@
       <pubDate>Sun, 26 Jan 2025 09:52:29 +0100</pubDate>
       
       <guid>http://localhost:1313/it/tags/strategy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scalability</title>
-      <link>http://localhost:1313/it/tags/scalability/</link>
-      <pubDate>Sat, 18 Jan 2025 08:41:14 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/tags/scalability/</guid>
       <description></description>
     </item>
     
@@ -166,24 +184,6 @@
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/it/tags/coaching/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Communication</title>
-      <link>http://localhost:1313/it/tags/communication/</link>
-      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/it/tags/communication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Empathy</title>
-      <link>http://localhost:1313/it/tags/empathy/</link>
-      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/it/tags/empathy/</guid>
       <description></description>
     </item>
     

@@ -11,9 +11,121 @@
     </url>
   
     <url>
+      <loc>http://localhost:1313/en/newsletter/</loc>
+      
+        <lastmod>2025-04-12T00:00:00+00:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/newsletter/confirmed/</loc>
+      
+        <lastmod>2025-04-12T00:00:00+00:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/newsletter/thank-you/</loc>
+      
+        <lastmod>2025-04-12T00:00:00+00:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/5-kpi-scalability/</loc>
+      
+        <lastmod>2025-04-10T07:46:49+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/business/</loc>
+      
+        <lastmod>2025-04-10T07:46:49+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
       <loc>http://localhost:1313/en/categories/</loc>
       
-        <lastmod>2025-03-15T17:47:12+01:00</lastmod>
+        <lastmod>2025-04-10T07:46:49+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/kpi/</loc>
+      
+        <lastmod>2025-04-10T07:46:49+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/categories/post/</loc>
+      
+        <lastmod>2025-04-10T07:46:49+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/scalability/</loc>
+      
+        <lastmod>2025-04-10T07:46:49+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/</loc>
+      
+        <lastmod>2025-04-10T07:46:49+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/newsletter/predicting-growth-potential/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/categories/newsletter/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/tags/newsletter/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/newsletter/3-pillars-scalability/</loc>
+      
+        <lastmod>2025-04-04T15:00:00+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/en/3-pillars-of-scalability/</loc>
+      
+        <lastmod>2025-04-05T08:26:27+02:00</lastmod>
       
       
     </url>
@@ -91,14 +203,6 @@
     </url>
   
     <url>
-      <loc>http://localhost:1313/en/tags/business/</loc>
-      
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
       <loc>http://localhost:1313/en/tags/family/</loc>
       
         <lastmod>2025-02-21T12:31:17+01:00</lastmod>
@@ -108,22 +212,6 @@
   
     <url>
       <loc>http://localhost:1313/en/tags/personal/</loc>
-      
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:1313/en/categories/post/</loc>
-      
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:1313/en/tags/</loc>
       
         <lastmod>2025-02-21T12:31:17+01:00</lastmod>
       
@@ -228,14 +316,6 @@
   
     <url>
       <loc>http://localhost:1313/en/work/</loc>
-      
-        <lastmod>2025-02-20T00:16:38+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:1313/en/tags/scalability/</loc>
       
         <lastmod>2025-02-20T00:16:38+01:00</lastmod>
       

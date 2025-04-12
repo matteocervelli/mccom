@@ -1,0 +1,164 @@
+---
+description: 
+globs: **/*.js
+alwaysApply: false
+---
+
+# JavaScript Development Rules
+
+## Principi Generali
+
+- Mantenere JavaScript minimo e focalizzato su miglioramenti UX
+- Utilizzare ES6+ e funzioni moderne dove supportato
+- Implementare caricamento asincrono per script non critici
+- Preferire approcci vanilla JS a framework pesanti
+- Utilizzare pattern modulari per manutenibilità
+
+## Organizzazione del Codice
+
+- Strutturare JavaScript in moduli logici
+- Utilizzare IIFE per evitare inquinamento scope globale
+- Implementare pattern di lazy loading per script
+- Separare logica in file distinti per funzionalità
+- Utilizzare bundle/minification per produzione
+
+## Esempio di Codice
+
+```javascript
+// assets/js/modules/newsletter-form.js
+(function() {
+  'use strict';
+  
+  // Funzione di inizializzazione
+  function initNewsletterForm() {
+    const form = document.querySelector('.newsletter-form');
+    if (!form) return;
+    
+    form.addEventListener('submit', handleSubmit);
+  }
+  
+  // Gestione submit
+  async function handleSubmit(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const statusMessage = form.querySelector('.form-status');
+    
+    // Validazione
+    const email = form.querySelector('input[name="email"]').value;
+    if (!validateEmail(email)) {
+      showStatus(statusMessage, 'Per favore, inserisci un indirizzo email valido.', 'error');
+      return;
+    }
+    
+    // Cambio stato UI
+    toggleLoadingState(submitBtn, true);
+    
+    try {
+      // Invio dati
+      const response = await subscribeToNewsletter({
+        email,
+        source: form.dataset.source || 'website'
+      });
+      
+      if (response.success) {
+        showStatus(statusMessage, 'Grazie per l\'iscrizione!', 'success');
+        form.reset();
+      } else {
+        showStatus(statusMessage, response.message || 'Si è verificato un errore.', 'error');
+      }
+    } catch (error) {
+      console.error('Newsletter subscription error:', error);
+      showStatus(statusMessage, 'Si è verificato un errore. Riprova più tardi.', 'error');
+    } finally {
+      toggleLoadingState(submitBtn, false);
+    }
+  }
+  
+  // Funzioni di utilità
+  function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+  
+  function showStatus(element, message, type) {
+    if (!element) return;
+    
+    element.textContent = message;
+    element.className = `form-status form-status--${type}`;
+    element.setAttribute('aria-hidden', 'false');
+    
+    // Auto-hide success message
+    if (type === 'success') {
+      setTimeout(() => {
+        element.setAttribute('aria-hidden', 'true');
+      }, 5000);
+    }
+  }
+  
+  function toggleLoadingState(button, isLoading) {
+    if (!button) return;
+    
+    button.disabled = isLoading;
+    button.classList.toggle('is-loading', isLoading);
+    button.setAttribute('aria-busy', isLoading);
+  }
+  
+  // API call
+  async function subscribeToNewsletter(data) {
+    try {
+      const response = await fetch('/.netlify/functions/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      
+      return await response.json();
+    } catch (error) {
+      console.error('API error:', error);
+      throw error;
+    }
+  }
+  
+  // Init on DOM ready
+  document.addEventListener('DOMContentLoaded', initNewsletterForm);
+})();
+```
+
+## Performance
+
+- Minimizzare dimensione bundle JavaScript
+- Utilizzare defer per script non critici
+- Evitare manipolazioni DOM eccessive
+- Implementare throttle/debounce per eventi frequenti
+- Ottimizzare per core web vitals (CLS, LCP, FID)
+
+## Anti-Pattern
+
+```javascript
+// ❌ Evitare questo approccio
+// Tutto il JavaScript in un singolo file
+// Uso di jQuery per operazioni semplici
+$('.button').click(function() {
+  // Manipolazione DOM inefficiente
+  $('.element').html(largeHTMLString);
+  
+  // Query DOM ripetute
+  const value1 = $('#input1').val();
+  const value2 = $('#input2').val();
+  
+  // Console log in produzione
+  console.log('Button clicked', value1, value2);
+});
+```
+
+## Note Aggiuntive
+
+- Utilizzare linting (ESLint) per qualità codice
+- Implementare error tracking in produzione
+- Testare su diversi browser
+- Considerare progressive enhancement
+- Documentare funzioni complesse

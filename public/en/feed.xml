@@ -105,6 +105,79 @@ document.addEventListener(&#39;keydown&#39;, function(e) {
     </item>
     
     <item>
+      <title>Subscription Confirmed!</title>
+      <link>http://localhost:1313/en/newsletter/confirmed/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/newsletter/confirmed/</guid>
+      <description>&lt;h2 id=&#34;subscription-confirmed&#34;&gt;Subscription Confirmed!&lt;/h2&gt;
+&lt;p&gt;Thank you for confirming your email address.&lt;/p&gt;
+&lt;p&gt;You are now officially subscribed to &lt;em&gt;The Scalability Compass&lt;/em&gt; newsletter. You&amp;rsquo;ll receive the next updates directly in your inbox soon.&lt;/p&gt;
+&lt;p&gt;You can return to the &lt;a href=&#34;http://localhost:1313/en/&#34;&gt;Homepage&lt;/a&gt; or explore the &lt;a href=&#34;http://localhost:1313/en/newsletter/&#34;&gt;Newsletter Archive&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Thanks for Subscribing!</title>
+      <link>http://localhost:1313/en/newsletter/thank-you/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/newsletter/thank-you/</guid>
+      <description>&lt;h2 id=&#34;thanks-for-subscribing&#34;&gt;Thanks for Subscribing!&lt;/h2&gt;
+&lt;p&gt;Your subscription request to &lt;em&gt;The Scalability Compass&lt;/em&gt; has been received.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To complete your subscription, please confirm your email address by clicking the link in the email we just sent you.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t see the email in your inbox, please check your spam or promotions folder.&lt;/p&gt;
+&lt;div class=&#34;my-4 text-sm&#34;&gt;
+  &lt;p&gt;&lt;a href=&#34;#&#34; id=&#34;toggle-resend&#34;&gt;Didn&#39;t receive the confirmation email? Click here to request a new one&lt;/a&gt;&lt;/p&gt;
+  &lt;div id=&#34;resend-container&#34; class=&#34;my-3 hidden&#34;&gt;
+    &lt;form id=&#34;resend-form&#34; class=&#34;flex items-center&#34;&gt;
+      &lt;input type=&#34;email&#34; id=&#34;resend-email&#34; class=&#34;border px-2 py-1 text-sm rounded-l w-64&#34; placeholder=&#34;Your email address&#34;&gt;
+      &lt;button type=&#34;submit&#34; id=&#34;resend-btn&#34; class=&#34;bg-blue-600 text-white px-3 py-1 text-sm rounded-r&#34;&gt;Send&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;p id=&#34;resend-message&#34; class=&#34;mt-2 hidden&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beyond Revenue: 5 KPIs that Predict Your Scaling Capability</title>
+      <link>http://localhost:1313/en/5-kpi-scalability/</link>
+      <pubDate>Thu, 10 Apr 2025 07:46:49 +0200</pubDate>
+      
+      <guid>http://localhost:1313/en/5-kpi-scalability/</guid>
+      <description>&lt;p&gt;Are you driving your company looking only at the rearview mirror?&lt;/p&gt;
+&lt;p&gt;Revenue tells you where you have been, not where you are going. Healthy and sustainable companies in the long term monitor indicators that can predict opportunities and risks. Leaders know that long-term success requires a complete vision beyond sales numbers.&lt;/p&gt;
+&lt;p&gt;Do you want to know which are the key indicators that forward-thinking entrepreneurs monitor?&lt;/p&gt;
+&lt;p&gt;In this article I will show you the dashboard of indicators to constantly update that make the difference between a resilient business and one vulnerable to unforeseen events.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Predict Your Company&#39;s Growth Potential (Before It&#39;s Too Late)</title>
+      <link>http://localhost:1313/en/newsletter/predicting-growth-potential/</link>
+      <pubDate>Thu, 10 Apr 2025 07:46:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/en/newsletter/predicting-growth-potential/</guid>
+      <description>Discover the 5 predictive KPIs that reveal your company&amp;rsquo;s true ability to scale sustainably, moving beyond simple revenue.</description>
+    </item>
+    
+    <item>
+      <title>The 3 Fundamental Pillars for Your Business Scalability</title>
+      <link>http://localhost:1313/en/newsletter/3-pillars-scalability/</link>
+      <pubDate>Fri, 04 Apr 2025 15:00:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/en/newsletter/3-pillars-scalability/</guid>
+      <description>Learn how to build a scalable business model by focusing on People, Processes, and Technology, inspired by Brunello Cucinelli&amp;rsquo;s success.</description>
+    </item>
+    
+    <item>
+      <title>The 3 Pillars of Scalability: The Essential Elements for a Successful Business</title>
+      <link>http://localhost:1313/en/3-pillars-of-scalability/</link>
+      <pubDate>Fri, 04 Apr 2025 15:00:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/en/3-pillars-of-scalability/</guid>
+      <description>&lt;h2 id=&#34;150-grams&#34;&gt;150 grams&lt;/h2&gt;
+&lt;p&gt;Do you know why cashmere costs so much? Because the raw material is rare. Cashmere production is based on the wool produced by the so-called common goat, the Capra hircus, the classic white goat, considered one of the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_the_world%27s_100_worst_invasive_species&#34;&gt;100 most invasive species in the world&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;150 grams is the amount of cashmere a goat produces in a year. In fact, cashmere is obtained by combing the goat&amp;rsquo;s neck, not shearing. And to produce cashmere, the goat must live in very cold regions, which develop secondary follicles creating this undercoat from which the wool is derived. Hand-combed, cared for, and prepared through a very labor-intensive process.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Legal Notice</title>
       <link>http://localhost:1313/en/legal/legal-notice/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
@@ -296,7 +369,7 @@ You can sign up below:&lt;/p&gt;
 &lt;div style=&#34;max-width: 24em; margin: 3em auto 3em 0;&#34;&gt;
     &lt;form id=&#34;newsletter-form&#34; 
       class=&#34;newsletter-form&#34;
-      action=&#34;https://app.kit.com/forms/7578059/subscriptions&#34;
+      action=&#34;https://assets.mailerlite.com/jsonp/1430245/forms/151481753002837465/subscribe&#34;
       method=&#34;post&#34;
       data-sv-form=&#34;7578059&#34;
       data-uid=&#34;455bee90fa&#34;
@@ -389,86 +462,6 @@ You can sign up below:&lt;/p&gt;
 &lt;h2 id=&#34;i-help-companies-grow-in-a-scalable-way&#34;&gt;I help companies grow in a scalable way&lt;/h2&gt;
 &lt;p&gt;I am a business consultant and advisor.&lt;/p&gt;
 &lt;p&gt;My work consists of helping companies grow in a scalable way through Strategy, Change Management, Sales and Business Development, Leadership Training and Coaching.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/en/about/</link>
-      <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
-      
-      <guid>http://localhost:1313/en/about/</guid>
-      <description>&lt;h2 id=&#34;in-short&#34;&gt;In short&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m Matteo Cervelli. I am a &lt;a href=&#34;http://localhost:1313/en/business-scalability-engineer/&#34;&gt;Business Scalability Engineer&lt;/a&gt;. I act as a &lt;a href=&#34;http://localhost:1313/en/work/&#34;&gt;Consultant and Advisor&lt;/a&gt;. Previously I managed &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt; as Co-CEO.&lt;/p&gt;
-&lt;p&gt;My purpose is to trigger people to build a more beautiful world, together. Today I help entrepreneurs and leaders grow their business through strategic development, effective management, and scalable sales processes.&lt;/p&gt;
-&lt;p&gt;I have been Sara&amp;rsquo;s husband for over 10 years, father of 3 little girls, Emma, Maria and Anna, and two dogs (Maple and Cookie). I live in Tuscany.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>The Tightrope Walker Manager: Mastering Leadership&#39;s Balancing Act</title>
-      <link>http://localhost:1313/en/tightrope-walker-manager/</link>
-      <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/en/tightrope-walker-manager/</guid>
-      <description>&lt;p&gt;It takes 20 years to build a new manager. 20 years where those responsible for delegating constantly oscillate on the edge of anxiety.&lt;/p&gt;
-&lt;h2 id=&#34;the-risk-behind-delegation&#34;&gt;The risk behind delegation&lt;/h2&gt;
-&lt;p&gt;Like tightrope walkers, managers swing between the fear of being surpassed by people who might have something more than them and the risk that their team will lose drive and, ultimately, competitiveness by relying on inadequate people. Leaders who take the path of delegation risk falling painfully. But those who make it and get to the end receive applause from the audience—the same audience that lives in constant expectation of the fatal misstep.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to Give LinkedIn Recommendations</title>
-      <link>http://localhost:1313/en/linkedin-referral/</link>
-      <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/en/linkedin-referral/</guid>
-      <description>&lt;h2 id=&#34;step-1-log-into-linkedin&#34;&gt;Step 1: Log into LinkedIn&lt;/h2&gt;
-&lt;p&gt;First, make sure you&amp;rsquo;re logged into your LinkedIn account. Go to &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;www.linkedin.com&lt;/a&gt; and sign in with your credentials.&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: LinkedIn Login&#34;&gt;
-  
-&lt;/div&gt; &lt;/p&gt;
-&lt;h2 id=&#34;step-2-access-the-profile-of-the-person-you-want-to-recommend&#34;&gt;Step 2: Access the Profile of the Person You Want to Recommend&lt;/h2&gt;
-&lt;p&gt;Important note: to leave a recommendation, you need to be a 1st-degree connection with the person you want to recommend.&lt;/p&gt;
-&lt;p&gt;To begin, use the search bar at the top:&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Search profile&#34;&gt;
-  
-&lt;/div&gt; &lt;/p&gt;
-&lt;p&gt;Type the name of the person you&amp;rsquo;re looking for, press enter, and click on their name in the search results that appear.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Find Your Villain, Learn Your Mission</title>
-      <link>http://localhost:1313/en/find-your-villain-learn-your-mission/</link>
-      <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/en/find-your-villain-learn-your-mission/</guid>
-      <description>&lt;p&gt;Everyone has a villain. I got acquainted with mine five years ago in a meeting room.&lt;/p&gt;
-&lt;p&gt;It was a hot summer day, and I was presenting a quarter update about a company we recently acquired. We couldn’t see the light at the end of the tunnel, but I was showing a PowerPoint filled with data and insights. Suddenly, Mr. Bowser started giving his own vision of the world, not caring about the information I provided. It was like all the job I did with my team was not real, while it was succumbing under a machine gun that fires repeated shots full of convictions taken from who knows what life experience.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Purpose and Values</title>
-      <link>http://localhost:1313/en/purpose-and-values/</link>
-      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/en/purpose-and-values/</guid>
-      <description>&lt;h2 id=&#34;my-golden-circle&#34;&gt;My Golden Circle&lt;/h2&gt;
-&lt;h3 id=&#34;why&#34;&gt;Why&lt;/h3&gt;
-&lt;p&gt;My purpose is to &lt;strong&gt;trigger people&amp;rsquo;s talent to build a more beautiful world.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Activating people&amp;rsquo;s potential sparks generativity: it drives people to dedicate their intelligence and time to make the world a beautiful place, spreading love and reducing poverty.&lt;/p&gt;
-&lt;p&gt;Beauty stimulates positive actions.&lt;/p&gt;
-&lt;p&gt;I dream of a world where everyone can dedicate their time to meaningful actions, and I want to make this possible through my actions.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Alberto Rossi</title>
-      <link>http://localhost:1313/en/testimonials/alberto-rossi/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/en/testimonials/alberto-rossi/</guid>
-      <description>&lt;p&gt;I have met many entrepreneurs, many good CEOs and a few extraordinary ones. Matteo has the courage to go further, from a human point of view and from a business vision point of view. He also has the stamina needed day by day to build that vision. It&amp;rsquo;s a pleasure to work with him.&lt;/p&gt;</description>
     </item>
     
   </channel>

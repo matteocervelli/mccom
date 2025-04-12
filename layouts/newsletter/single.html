@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="newsletter-single">
+  <!-- Hero Section personalizzata con immagine di sfondo e gradiente -->
+  <div class="hero relative">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ with .Params.featured_image }}{{ . }}{{ else }}/images/default-newsletter-bg.jpg{{ end }}');"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-mc-dark-purple/90 to-transparent"></div>
+    
+    <div class="container mx-auto px-4 md:px-6 py-16 md:py-24 relative z-10">
+      <div class="max-w-2xl text-white">
+        {{ with .Params.issue_number }}
+          <span class="inline-block mb-2 text-sm font-medium bg-mc-purple px-3 py-1 rounded-full">{{ i18n "issue" | default "Issue" }} #{{ . }}</span>
+        {{ end }}
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{{ .Title }}</h1>
+        <time class="text-white/80 text-sm block mb-6" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format (i18n "date_format_long" | default "January 2, 2006") }}
+        </time>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenuto della newsletter -->
+  <div class="container mx-auto px-4 md:px-6 py-8">
+    
+      <!-- Contenuto principale (ora a piena larghezza)-->
+      <div class="w-full">
+        <div class="prose max-w-none lg:prose-lg xl:prose-xl mt-4">
+          {{ .Content }}
+        </div>
+      </div>
+      
+      {{/* Sidebar rimossa */}}
+      
+  </div>
+</article>
+{{ end }} 

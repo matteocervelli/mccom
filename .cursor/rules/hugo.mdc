@@ -1,0 +1,120 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Hugo Development Rules
+
+## Principi Generali
+
+- Seguire le convenzioni di Hugo per organizzazione file
+- Utilizzare struttura template modulare e riutilizzabile
+- Implementare partials e shortcodes per componenti comuni
+- Utilizzare variabili di configurazione per personalizzazione
+- Ottimizzare per build time e performance
+
+## Struttura Template
+
+- Utilizzare la gerarchia di template di Hugo: baseof, list, single
+- Implementare blocks per aree personalizzabili
+- Sviluppare partials per componenti riutilizzabili
+- Creare shortcodes per funzionalità ripetibili
+- Utilizzare lookup order di Hugo efficacemente
+
+## Esempio di Template
+
+```html
+{{ define "main" }}
+<section class="page-section {{ with .Params.class }}{{ . }}{{ end }}">
+  <div class="container">
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+        <p class="lead">{{ . }}</p>
+      {{ end }}
+    </header>
+    
+    <div class="page-content">
+      {{ .Content }}
+      
+      {{ if .Params.showContactForm }}
+        {{ partial "components/contact-form.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+```
+
+## Esempio di Shortcode
+
+```html
+<!-- shortcodes/cta-box.html -->
+{{ $title := .Get "title" | default "Scopri di più" }}
+{{ $buttonText := .Get "button" | default "Inizia ora" }}
+{{ $url := .Get "url" | default "#" }}
+{{ $class := .Get "class" | default "" }}
+
+<div class="cta-box {{ $class }}">
+  <h3 class="cta-title">{{ $title }}</h3>
+  <div class="cta-content">{{ .Inner }}</div>
+  <a href="{{ $url }}" class="btn btn-primary">{{ $buttonText }}</a>
+</div>
+```
+
+## Archetype
+
+Utilizzare archetype per standardizzare la creazione di nuovi contenuti:
+
+```yaml
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: true
+description: ""
+summary: ""
+categories: []
+tags: []
+featured_image: ""
+author: "Matteo Cervelli"
+show_toc: false
+---
+
+Scrivi qui il contenuto dell'articolo.
+```
+
+## Performance
+
+- Utilizzare resource bundling per CSS e JavaScript
+- Implementare image processing per ottimizzazione immagini
+- Utilizzare la cache di Hugo dove appropriato
+- Minimizzare dipendenze esterne
+- Ottimizzare lookup di pagine per siti più grandi
+
+## Anti-Pattern
+
+```html
+<!-- ❌ Evitare questo approccio -->
+<div class="content">
+  {{ range .Site.Pages }}
+    <!-- Query inefficiente su tutte le pagine -->
+  {{ end }}
+  
+  <!-- HTML hardcoded invece di partials -->
+  <div class="hard-coded-footer">...</div>
+  
+  <!-- Logica complessa nei template -->
+  {{ if (and (eq .Section "blog") (gt .Date.Unix now.Unix) (in .Params.tags "featured")) }}
+    <!-- Logica complessa nidificata -->
+  {{ end }}
+</div>
+```
+
+## Note Aggiuntive
+
+- Utilizzare il locale appropriato per multilingual
+- Assicurarsi che RSS e sitemap siano configurati correttamente
+- Implementare i meta tag SEO in modo coerente
+- Testare build con Hugo extend per SCSS
+- Documentare struttura del sito per manutenzione futura

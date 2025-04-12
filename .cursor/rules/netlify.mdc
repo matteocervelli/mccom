@@ -1,0 +1,172 @@
+---
+title: Netlify Configuration Rules
+description: Guidelines for Netlify deployment and serverless functions
+pattern: "netlify.toml|functions/**/*.js"
+---
+
+# Netlify Configuration Rules
+
+## Principi Generali
+
+- Configurare build e deploy tramite netlify.toml
+- Implementare redirects e headers per SEO e sicurezza
+- Utilizzare variabili d'ambiente per configurazione
+- Implementare deploy preview per testing
+- Ottimizzare build per performance
+
+## Configurazione netlify.toml
+
+```toml
+[build]
+  command = "hugo --gc --minify"
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  HUGO_VERSION = "0.110.0"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com;"
+
+[[redirects]]
+  from = "/blog/old-slug"
+  to = "/blog/new-slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+```
+
+## Funzioni Serverless
+
+```javascript
+// netlify/functions/subscribe.js
+const axios = require('axios');
+
+exports.handler = async (event, context) => {
+  // Controllo metodo
+  if (event.httpMethod !== 'POST') {
+    return {
+      statusCode: 405,
+      body: JSON.stringify({ success: false, message: 'Method not allowed' })
+    };
+  }
+  
+  try {
+    // Parse del body
+    const payload = JSON.parse(event.body);
+    const { email, source } = payload;
+    
+    // Validazione
+    if (!email) {
+      return {
+        statusCode: 400,
+        body: JSON.stringify({ success: false, message: 'Email is required' })
+      };
+    }
+    
+    // Chiamata a MailerLite API
+    const response = await axios.post(
+      'https://connect.mailerlite.com/api/subscribers',
+      {
+        email,
+        fields: {
+          source: source || 'website'
+        },
+        groups: [process.env.MAILERLITE_GROUP_ID]
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.MAILERLITE_API_KEY}`
+        }
+      }
+    );
+    
+    return {
+      statusCode: 200,
+      body: JSON.stringify({
+        success: true,
+        message: 'Subscription successful'
+      })
+    };
+  } catch (error) {
+    console.error('Subscription error:', error.response?.data || error.message);
+    
+    // Handle API errors
+    if (error.response && error.response.status === 409) {
+      return {
+        statusCode: 200,
+        body: JSON.stringify({
+          success: true,
+          message: 'You are already subscribed!'
+        })
+      };
+    }
+    
+    return {
+      statusCode: 500,
+      body: JSON.stringify({
+        success: false,
+        message: 'An error occurred. Please try again later.'
+      })
+    };
+  }
+};
+```
+
+## Best Practices
+
+- Utilizzare cache headers appropriati
+- Implementare security headers
+- Configurare correttamente CORS
+- Utilizzare bundling/chunking per risorse statiche
+- Implementare CI/CD con branch deploys
+
+## Anti-Pattern
+
+```javascript
+// ❌ Evitare questo approccio
+// API keys hardcoded
+const API_KEY = "abc123secretkey";
+
+// Nessuna gestione errori
+exports.handler = async (event) => {
+  const data = await fetch("https://api.example.com/data");
+  const json = await data.json();
+  
+  return {
+    statusCode: 200,
+    body: JSON.stringify(json)
+  };
+};
+```
+
+## Note Aggiuntive
+
+- Utilizzare Netlify Edge Functions per operazioni sensibili alla latenza
+- Configurare Netlify Forms per moduli di contatto
+- Implementare monitoraggio uptime
+- Utilizzare Post Processing per ottimizzazioni aggiuntive
+- Configurare build hooks per aggiornamenti automatici

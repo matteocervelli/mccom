@@ -245,6 +245,8 @@ window.addEventListener('scroll', () => {
       
         <a href="/en/tags/guide">Guide</a>
       
+        <a href="/en/tags/kpi"></a>
+      
         <a href="/en/tags/leadership">Leadership</a>
       
         <a href="/en/tags/learning-organization">Learning Organization</a>
@@ -254,6 +256,8 @@ window.addEventListener('scroll', () => {
         <a href="/en/tags/marketing">Marketing</a>
       
         <a href="/en/tags/mission">Mission</a>
+      
+        <a href="/en/tags/newsletter"></a>
       
         <a href="/en/tags/personal">Personal</a>
       
@@ -278,6 +282,16 @@ window.addEventListener('scroll', () => {
     
     
     <ul class="posts-list">
+      
+        <li>
+          <span class="post-date">2025/04</span>
+          <a href="/en/5-kpi-scalability/">Beyond Revenue: 5 KPIs that Predict Your Scaling Capability</a>
+        </li>
+      
+        <li>
+          <span class="post-date">2025/04</span>
+          <a href="/en/3-pillars-of-scalability/">The 3 Pillars of Scalability: The Essential Elements for a Successful Business</a>
+        </li>
       
         <li>
           <span class="post-date">2025/02</span>
@@ -346,28 +360,73 @@ window.addEventListener('scroll', () => {
       </div>
   
       
-      <div style="max-width: 24em; margin: 3em auto 3em 0;">
+      <div id="mlb2-24760757" 
+     class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-24760757"
+     data-form-id="24760757"
+     data-redirect-url="http://localhost:1313/en/newsletter/thank-you/"
+     data-tracker-url="https://assets.mailerlite.com/jsonp/1430245/forms/151481753002837465/takel">
+  <div style="max-width: 24em; margin: 3em auto 3em 0;"> 
     <form id="newsletter-form" 
-      class="newsletter-form"
-      action="https://app.kit.com/forms/7578059/subscriptions"
+      class="newsletter-form" 
+      action="https://assets.mailerlite.com/jsonp/1430245/forms/151481753002837465/subscribe"
       method="post"
-      data-sv-form="7578059"
-      data-uid="455bee90fa"
+      data-form-id="7578059" 
       aria-label="Newsletter subscription form">
       <input type="email" 
-            name="email_address"
+            name="fields[email]"
             placeholder="Email Address"
-            class="newsletter-form__input"
+            class="newsletter-form__input" 
             aria-label="Enter your email address"
             id="newsletter-email"
+            autocomplete="email"
             required>
       <button id="newsletter-submit" data-umami-event="Newsletter Submit" type="submit"
-              class="newsletter-form__button"
+              class="newsletter-form__button" 
               aria-label="Subscribe to newsletter">
         Sign up
       </button>
+      
+      <input type="hidden" name="fields[language]" value="en">
+      <input type="hidden" name="ml-submit" value="1">
+      <input type="hidden" name="anticsrf" value="true">
+
     </form>
   </div>
+</div>
+
+
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '1430245');
+</script>
+
+
+<script>
+  
+  var container = document.querySelector('.ml-form-embedContainer');
+  var formId = container.getAttribute('data-form-id');
+  var redirectUrl = container.getAttribute('data-redirect-url');
+  var trackerUrl = container.getAttribute('data-tracker-url');
+  
+  
+  window["ml_webform_success_" + formId] = function() {
+    try {
+      window.top.location.href = redirectUrl;
+    } catch (e) {
+      window.location.href = redirectUrl;
+    }
+  };
+  
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch(trackerUrl);
+  });
+</script>
+
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
   
       
       <div class="legal-links">

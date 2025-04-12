@@ -1,0 +1,132 @@
+---
+description: 
+globs: **/*.css, **/*.scss
+alwaysApply: false
+---
+
+# CSS Styling Rules
+
+## Principi Generali
+
+- Utilizzare SCSS per organizzazione e manutenibilità del codice
+- Implementare un approccio mobile-first e responsive
+- Utilizzare variabili SCSS per coerenza visiva
+- Preferire unità relative (rem, %, vh/vw) a pixel fissi
+- Organizzare SCSS in modo modulare e per componente
+
+## Struttura SCSS
+
+- Implementare architettura 7-1 per SCSS:
+  1. abstracts/ (variabili, mixins, funzioni)
+  2. base/ (reset, tipografia, utility)
+  3. components/ (componenti riutilizzabili)
+  4. layout/ (strutture di layout)
+  5. pages/ (stili specifici per pagina)
+  6. themes/ (varianti tematiche)
+  7. vendors/ (dipendenze esterne)
+- Utilizzare main.scss come punto di entry
+
+## Esempio di Struttura SCSS
+
+```scss
+// abstracts/_variables.scss
+$color-primary: #1e88e5;
+$color-secondary: #26a69a;
+$color-accent: #ff9800;
+$font-family-base: 'Work Sans', 'Segoe UI', Roboto, sans-serif;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// components/_buttons.scss
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  
+  &-primary {
+    background-color: $color-primary;
+    color: white;
+    
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+  
+  &-secondary {
+    background-color: $color-secondary;
+    color: white;
+    
+    &:hover {
+      background-color: darken($color-secondary, 10%);
+    }
+  }
+}
+```
+
+## Media Queries
+
+Utilizzare mixins per media queries:
+
+```scss
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == md {
+    @media (min-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == xl {
+    @media (min-width: $breakpoint-xl) { @content; }
+  }
+}
+
+.hero {
+  padding: 2rem 1rem;
+  
+  @include respond-to(md) {
+    padding: 4rem 2rem;
+  }
+  
+  @include respond-to(lg) {
+    padding: 6rem 3rem;
+  }
+}
+```
+
+## Best Practices
+
+- Utilizzare BEM o altra metodologia per naming classi
+- Implementare design system coerente
+- Evitare selettori troppo specifici
+- Minimizzare uso di !important
+- Utilizzare commenti per sezioni complesse
+
+## Anti-Pattern
+
+```scss
+/* ❌ Evitare questo approccio */
+#header #nav ul li a.active {
+  // Selettore troppo specifico
+}
+
+.box {
+  width: 500px; // Valore fisso non responsive
+}
+
+// Duplicazione di codice invece di variabili/mixins
+.button-1 { background-color: #1e88e5; }
+.button-2 { background-color: #1e88e5; }
+```
+
+## Note Aggiuntive
+
+- Utilizzare PostCSS per ottimizzazioni (autoprefixer, minify)
+- Implementare strategie di critical CSS dove possibile
+- Testare su diversi browser e dispositivi
+- Considerare accessibilità nei colori e contrasto
+- Utilizzare CSS Grid per layout complessi

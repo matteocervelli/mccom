@@ -27,81 +27,151 @@
 &lt;/figure&gt;
 
 
-
-
-&lt;div id=&#34;lightbox&#34; class=&#34;lightbox&#34; onclick=&#34;closeLightbox()&#34;&gt;
-    &lt;button class=&#34;lightbox-close&#34; onclick=&#34;closeLightbox()&#34;&gt;&amp;times;&lt;/button&gt;
-    &lt;button class=&#34;lightbox-prev&#34; onclick=&#34;changeLightboxImage(-1)&#34;&gt;&amp;lt;&lt;/button&gt;
-    &lt;button class=&#34;lightbox-next&#34; onclick=&#34;changeLightboxImage(1)&#34;&gt;&amp;gt;&lt;/button&gt;
-    &lt;div class=&#34;lightbox-content&#34;&gt;
-        &lt;img src=&#34;&#34; alt=&#34;&#34;&gt;
-        &lt;figcaption class=&#34;image-caption&#34;&gt;&lt;/figcaption&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
-let currentImageIndex = 0;
-const images = [];
-
-function openLightbox(img) {
-    event.stopPropagation();
-    const lightbox = document.getElementById(&#39;lightbox&#39;);
-    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
-    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
-    
-    
-    images.length = 0;
-    document.querySelectorAll(&#39;.lightbox-trigger img&#39;).forEach(image =&gt; {
-        images.push({
-            src: image.src,
-            alt: image.alt,
-            caption: image.dataset.caption
-        });
-    });
-    
-    
-    currentImageIndex = images.findIndex(image =&gt; image.src === img.src);
-    
-    
-    lightboxImg.src = img.src;
-    lightboxImg.alt = img.alt;
-    lightboxCaption.textContent = img.dataset.caption;
-    
-    
-    lightbox.style.display = &#39;flex&#39;;
-    document.body.style.overflow = &#39;hidden&#39;;
-}
-
-function closeLightbox() {
-    const lightbox = document.getElementById(&#39;lightbox&#39;);
-    lightbox.style.display = &#39;none&#39;;
-    document.body.style.overflow = &#39;auto&#39;;
-}
-
-function changeLightboxImage(direction) {
-    event.stopPropagation();
-    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
-    const image = images[currentImageIndex];
-    const lightbox = document.getElementById(&#39;lightbox&#39;);
-    const lightboxImg = lightbox.querySelector(&#39;img&#39;);
-    const lightboxCaption = lightbox.querySelector(&#39;figcaption&#39;);
-    
-    lightboxImg.src = image.src;
-    lightboxImg.alt = image.alt;
-    lightboxCaption.textContent = image.caption;
-}
-
-
-document.addEventListener(&#39;keydown&#39;, function(e) {
-    if (document.getElementById(&#39;lightbox&#39;).style.display === &#39;flex&#39;) {
-        if (e.key === &#39;Escape&#39;) closeLightbox();
-        if (e.key === &#39;ArrowLeft&#39;) changeLightboxImage(-1);
-        if (e.key === &#39;ArrowRight&#39;) changeLightboxImage(1);
-    }
-});
-&lt;/script&gt;
  
 &lt;p&gt;L&amp;rsquo;evento ha devastato piccoli paesi, alcuni dei quali famosi anche per il turismo, come Norcia, città natale di San Benedetto, o Amatrice, ben nota per una salsa italiana per la pasta chiamata Amatriciana, che combina pomodoro, guanciale e pecorino per un sapore divino.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Grazie per l&#39;iscrizione!</title>
+      <link>http://localhost:1313/it/newsletter/grazie/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/newsletter/grazie/</guid>
+      <description>&lt;h2 id=&#34;grazie-per-liscrizione&#34;&gt;Grazie per l&amp;rsquo;iscrizione!&lt;/h2&gt;
+&lt;p&gt;La tua richiesta di iscrizione a &lt;em&gt;The Scalability Compass&lt;/em&gt; è stata ricevuta.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Per completare l&amp;rsquo;iscrizione, conferma il tuo indirizzo email cliccando sul link nell&amp;rsquo;email che ti abbiamo appena inviato.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Se non vedi l&amp;rsquo;email nella tua casella di posta, controlla nella cartella spam o promozioni.&lt;/p&gt;
+&lt;div class=&#34;resend-section&#34;&gt;
+  &lt;p&gt;
+    &lt;a href=&#34;javascript:void(0);&#34; id=&#34;resend-link&#34; class=&#34;resend-link&#34;&gt;Non hai ricevuto l&#39;email di conferma? Clicca qui per richiederne un nuovo invio&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;p id=&#34;resend-message&#34; class=&#34;resend-message&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+  const resendLink = document.getElementById(&#39;resend-link&#39;);
+  const messageEl = document.getElementById(&#39;resend-message&#39;);
+  let isSending = false; // Flag per evitare click multipli
+  
+  // Recupera email dai parametri URL
+  const urlParams = new URLSearchParams(window.location.search);
+  let email = urlParams.get(&#39;email&#39;) || &#39;&#39;;
+  
+  // Gestisci il click sul link
+  resendLink.addEventListener(&#39;click&#39;, function(e) {
+    e.preventDefault();
+    if (isSending) return; // Previene invii multipli
+
+    let emailToUse = email;
+    
+    // Se non abbiamo una email nell&#39;URL, mostriamo un prompt
+    if (!emailToUse) {
+      const userEmail = prompt(&#39;Inserisci il tuo indirizzo email per richiedere un nuovo invio:&#39;);
+      if (!userEmail || !isValidEmail(userEmail)) {
+        showMessage(&#39;Per favore, inserisci un indirizzo email valido.&#39;, &#39;error&#39;);
+        return;
+      }
+      emailToUse = userEmail;
+    }
+    
+    sendConfirmationRequest(emailToUse);
+  });
+  
+  function sendConfirmationRequest(emailAddress) {
+    isSending = true;
+    // Aggiorna UI
+    resendLink.classList.add(&#39;sending&#39;);
+    resendLink.textContent = &#39;Invio in corso...&#39;;
+    showMessage(&#39;&#39;, &#39;&#39;); // Pulisce messaggio precedente
+    
+    // Invia richiesta
+    fetch(&#39;/api/resend-confirmation&#39;, {
+      method: &#39;POST&#39;,
+      headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+      body: JSON.stringify({ email: emailAddress, language: &#39;it&#39; })
+    })
+    .then(response =&gt; response.json())
+    .then(data =&gt; {
+      showMessage(&#39;Richiesta inviata! Controlla la tua casella di posta (anche spam) per l\&#39;email di conferma.&#39;, &#39;success&#39;);
+    })
+    .catch(error =&gt; {
+      console.error(&#39;Error:&#39;, error);
+      showMessage(&#39;Si è verificato un errore. Riprova più tardi o contatta il supporto.&#39;, &#39;error&#39;);
+    })
+    .finally(() =&gt; {
+      isSending = false;
+      resendLink.classList.remove(&#39;sending&#39;);
+      resendLink.textContent = &#39;Non hai ricevuto l&#39;email di conferma? Clicca qui per richiederne un nuovo invio&#39;;
+    });
+  }
+  
+  function showMessage(text, type) {
+    messageEl.textContent = text;
+    messageEl.className = &#39;resend-message &#39; + type;
+    // Rende il messaggio visibile se c&#39;è testo
+    messageEl.style.display = text ? &#39;block&#39; : &#39;none&#39;; 
+  }
+  
+  function isValidEmail(emailToCheck) {
+    // Semplice regex per validazione email
+    return /\S+@\S+\.\S+/.test(emailToCheck);
+  }
+});
+&lt;/script&gt;
+&lt;p&gt;Puoi tornare alla &lt;a href=&#34;http://localhost:1313/it/&#34;&gt;Homepage&lt;/a&gt; o esplorare l&amp;rsquo;&lt;a href=&#34;http://localhost:1313/it/newsletter/&#34;&gt;Archivio Newsletter&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Iscrizione Confermata!</title>
+      <link>http://localhost:1313/it/newsletter/confermato/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/it/newsletter/confermato/</guid>
+      <description>&lt;h2 id=&#34;iscrizione-confermata&#34;&gt;Iscrizione Confermata!&lt;/h2&gt;
+&lt;p&gt;Grazie per aver confermato il tuo indirizzo email.&lt;/p&gt;
+&lt;p&gt;Sei ora ufficialmente iscritto alla newsletter &lt;em&gt;The Scalability Compass&lt;/em&gt;. Riceverai i prossimi aggiornamenti direttamente nella tua casella di posta.&lt;/p&gt;
+&lt;p&gt;Puoi tornare alla &lt;a href=&#34;http://localhost:1313/it/&#34;&gt;Homepage&lt;/a&gt; o esplorare l&amp;rsquo;&lt;a href=&#34;http://localhost:1313/it/newsletter/&#34;&gt;Archivio Newsletter&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Come Prevedere il Potenziale di Crescita della Tua Azienda (Prima che sia Troppo Tardi)</title>
+      <link>http://localhost:1313/it/newsletter/prevedere-potenziale-crescita/</link>
+      <pubDate>Thu, 10 Apr 2025 07:46:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/it/newsletter/prevedere-potenziale-crescita/</guid>
+      <description>Scopri i 5 KPI predittivi che ti rivelano la vera capacità della tua azienda di scalare in modo sostenibile, andando oltre il semplice fatturato.</description>
+    </item>
+    
+    <item>
+      <title>Oltre il Fatturato: 5 KPI che Predicono la Tua Capacità di Scalare</title>
+      <link>http://localhost:1313/it/5-kpi-scalabilita/</link>
+      <pubDate>Thu, 10 Apr 2025 07:46:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/it/5-kpi-scalabilita/</guid>
+      <description>&lt;p&gt;Stai guidando la tua azienda guardando solo lo specchietto retrovisore?&lt;/p&gt;
+&lt;p&gt;Il fatturato ti dice dove sei stato, non dove stai andando. Le aziende sane e sostenibili nel lungo periodo monitorano indicatori che sanno predire opportunità e rischi. I leader sanno che il successo a lungo termine richiede una visione completa al di là dei numeri di vendita.&lt;/p&gt;
+&lt;p&gt;Vuoi sapere quali sono gli indicatori chiave che gli imprenditori lungimiranti controllano?&lt;/p&gt;
+&lt;p&gt;In questo articolo ti indicherò il cruscotto di indicatori da aggiornare costantemente che fanno la differenza tra un business resiliente e uno vulnerabile agli imprevisti.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I 3 pilastri della Scalabilità: Gli elementi essenziali per un business di successo</title>
+      <link>http://localhost:1313/it/3-pilastri-della-scalabilita/</link>
+      <pubDate>Fri, 04 Apr 2025 10:00:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/it/3-pilastri-della-scalabilita/</guid>
+      <description>&lt;h2 id=&#34;150-grammi&#34;&gt;150 grammi&lt;/h2&gt;
+&lt;p&gt;Sai perché il cashmere costa così tanto? Perché la materia prima è rara. La produzione di cashmere infatti si basa sulla lana prodotta dalla cosiddetta capra comune, la capra hircus. la classica capretta bianca, ritenuta una tra le &lt;a href=&#34;https://it.wikipedia.org/wiki/Cento_specie_invasive_pi%C3%B9_dannose_al_mondo&#34;&gt;100 specie più infestanti al mondo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;150 grammi è la quantità di cashmere che una capra produce in un anno. Infatti, il cashmere viene preso pettinando il collo della capra. Non tosando. E per produrre il cashmere, la capra deve vivere in regioni molto fredde che sviluppano dei follicoli secondari che creano questo sotto-pelo da cui deriva la lana. Pettinato a mano, curato e preparato da una lavorazione molto intensiva a livello umano.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I 3 Pilastri Fondamentali per la Scalabilità del Tuo Business</title>
+      <link>http://localhost:1313/it/newsletter/3-pilastri-scalabilita/</link>
+      <pubDate>Fri, 04 Apr 2025 10:00:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/it/newsletter/3-pilastri-scalabilita/</guid>
+      <description>Scopri come costruire un modello di business scalabile concentrandoti su Persone, Processi e Tecnologia, ispirato al successo di Brunello Cucinelli.</description>
     </item>
     
     <item>
@@ -281,7 +351,7 @@ Puoi registrarti qui sotto:&lt;/p&gt;
 &lt;div style=&#34;max-width: 24em; margin: 3em auto 3em 0;&#34;&gt;
     &lt;form id=&#34;newsletter-form&#34; 
       class=&#34;newsletter-form&#34;
-      action=&#34;https://app.kit.com/forms/7578384/subscriptions&#34;
+      action=&#34;https://assets.mailerlite.com/jsonp/1430245/forms/151309607914964876/subscribe&#34;
       method=&#34;post&#34;
       data-sv-form=&#34;7578384&#34;
       data-uid=&#34;b47db62f73&#34;
@@ -374,87 +444,6 @@ Puoi registrarti qui sotto:&lt;/p&gt;
 &lt;p&gt;Questo sito è stato realizzato da Matteo Cervelli con un mix di competenze personali ed AI. Provenivo da un sito hostato e realizzato su WordPress.com e ho preferito ricostruire da me il sito a inizio 2025 per &amp;ldquo;tenere&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Volevo un sito leggero, veloce e responsive. E volevo imparare le basi sfruttando quello che la tecnologia mette a disposizione.&lt;/p&gt;
 &lt;p&gt;Prima di tutto, matteocervelli.com è un sito internet statico. È realizzato con &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; come SSG—Static Site Generator— ed è hostato su &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt; tramite &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;, mentre i DNS sono gestiti tramite &lt;a href=&#34;https://www.cloudflare.com&#34;&gt;Cloudflare&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Su di me</title>
-      <link>http://localhost:1313/it/about/</link>
-      <pubDate>Thu, 16 Jan 2025 17:26:30 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/about/</guid>
-      <description>&lt;h2 id=&#34;in-breve&#34;&gt;In breve&lt;/h2&gt;
-&lt;p&gt;Sono Matteo Cervelli. Sono un &lt;a href=&#34;http://localhost:1313/it/business-scalability-engineer/&#34;&gt;Ingegnere per la Scalabilità delle Imprese&lt;/a&gt;. &lt;a href=&#34;http://localhost:1313/it/lavora-con-me/&#34;&gt;Agisco come Consulente e Advisor&lt;/a&gt;. In precedenza ho gestito come Co-CEO &lt;a href=&#34;https://urania.group&#34;&gt;Urania Group&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Il mio scopo è innescare le persone a costruire un mondo più bello, insieme. Oggi aiuto imprenditori e leader a crescere il proprio business, attraverso lo sviluppo strategico, una gestione efficace, e processi di vendita scalabile.&lt;/p&gt;
-&lt;p&gt;Sono marito di Sara da oltre 10 anni, padre di 3 bambine piccole, Emma, Maria ed Anna, e di due cani (Maple e Cookie). Vivo in Toscana.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Il Manager Funambolo: Padroneggiare l&#39;Arte dell&#39;Equilibrio nella Leadership</title>
-      <link>http://localhost:1313/it/manager-funambolo/</link>
-      <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/it/manager-funambolo/</guid>
-      <description>&lt;p&gt;Ci vogliono 20 anni per far crescere un nuovo manager.&lt;/p&gt;
-&lt;p&gt;20 anni in cui chi ha il compito di delegare oscilla continuamente sul filo dell&amp;rsquo;ansia.&lt;/p&gt;
-&lt;h2 id=&#34;il-rischio-dietro-la-delega&#34;&gt;Il rischio dietro la delega&lt;/h2&gt;
-&lt;p&gt;Come funamboli, i manager dondolano tra il timore di essere superati da persone che potrebbero avere qualcosa in più di loro e il rischio che la loro squadra possa perdere la spinta e, in definitiva, la competitività per aver fatto affidamento su persone non adeguate.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Come Fare Referral su LinkedIn</title>
-      <link>http://localhost:1313/it/referral-linkedin/</link>
-      <pubDate>Fri, 19 Apr 2024 16:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/referral-linkedin/</guid>
-      <description>&lt;h2 id=&#34;step-1-accedere-a-linkedin&#34;&gt;Step 1: Accedere a LinkedIn&lt;/h2&gt;
-&lt;p&gt;Prima di tutto, assicurati di essere connesso al tuo account LinkedIn. Vai su &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;www.linkedin.com&lt;/a&gt; e accedi con le tue credenziali.&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/1.png&#34; alt=&#34;Step 1: Login LinkedIn&#34;&gt;
-  
-&lt;/div&gt; &lt;/p&gt;
-&lt;h2 id=&#34;step-2-accedere-al-profilo-della-persona-che-vuoi-raccomandare&#34;&gt;Step 2: Accedere al profilo della persona che vuoi raccomandare&lt;/h2&gt;
-&lt;p&gt;Nota importante: per lasciare una referenza, dovrai avere un collegamento di 1° grado con la persona che vuoi raccomandare.&lt;/p&gt;
-&lt;p&gt;Per cominciare, sulla barra di ricerca in alto:&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;image-container&#34;&gt;
-  &lt;img src=&#34;http://localhost:1313/images/linkedin-referral/2.png&#34; alt=&#34;Step 2: Cerca profilo&#34;&gt;
-  
-&lt;/div&gt; &lt;/p&gt;
-&lt;p&gt;Digita il nome della persona che stai cercando, premi invio e clicca sul nome nei risultati di ricerca che appariranno.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Trova il Tuo Antagonista, Scopri la Tua Missione</title>
-      <link>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</link>
-      <pubDate>Wed, 17 Apr 2024 00:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/trova-lantagonista-scopri-la-missione/</guid>
-      <description>&lt;p&gt;Ognuno ha un antagonista. Ho conosciuto il mio cinque anni fa in una sala riunioni.&lt;/p&gt;
-&lt;p&gt;Era una calda giornata estiva e stavo presentando un aggiornamento trimestrale su un&amp;rsquo;azienda che avevamo recentemente acquisito. Non riuscivamo a vedere la luce in fondo al tunnel, ma stavo mostrando una presentazione PowerPoint piena di dati e approfondimenti. All&amp;rsquo;improvviso, il signor Bowser ha iniziato a esporre la sua visione del mondo, ignorando completamente le informazioni che avevo fornito. Era come se tutto il lavoro che avevo fatto con il mio team non fosse reale, mentre soccombeva sotto una mitragliatrice che sparava ripetuti colpi pieni di convinzioni tratte da chissà quale esperienza di vita.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Scopo e Valori</title>
-      <link>http://localhost:1313/it/scopo-e-valori/</link>
-      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/it/scopo-e-valori/</guid>
-      <description>&lt;h2 id=&#34;il-mio-golden-circle&#34;&gt;Il mio Golden Circle&lt;/h2&gt;
-&lt;h3 id=&#34;perché-why&#34;&gt;Perché (WHY)&lt;/h3&gt;
-&lt;p&gt;Il mio scopo è &lt;strong&gt;innescare il talento delle persone per costruire un mondo più bello.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;L&amp;rsquo;attivazione del potenziale delle persone fa divampare la generatività: spinge le persone a dedicare la propria intelligenza e il proprio tempo a rende il mondo un posto bello, diffondendo amore e riducendo la povertà.&lt;/p&gt;
-&lt;p&gt;La bellezza stimola a compiere gesti positivi.&lt;/p&gt;
-&lt;p&gt;Sogno un mondo in cui ognuno possa dedicare il proprio tempo ad azioni ricche di significato, e voglio renderlo possibile attraverso le mie azioni.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Alberto Rossi</title>
-      <link>http://localhost:1313/it/testimonials/alberto-rossi/</link>
-      <pubDate>Tue, 19 Mar 2024 10:00:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/it/testimonials/alberto-rossi/</guid>
-      <description>&lt;p&gt;Ho conosciuto molti imprenditori, molti amministratori delegati bravi e qualcuno straordinario. Matteo ha il coraggio di andare oltre, dal punto di vista umano e dal punto di vista di visione del business. Ha anche la stamina che serve giorno per giorno per costruire quella visione. E&amp;rsquo; un piacere lavorare con lui.&lt;/p&gt;</description>
     </item>
     
   </channel>

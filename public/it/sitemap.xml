@@ -11,9 +11,121 @@
     </url>
   
     <url>
+      <loc>http://localhost:1313/it/newsletter/</loc>
+      
+        <lastmod>2025-04-12T00:00:00+00:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/newsletter/grazie/</loc>
+      
+        <lastmod>2025-04-12T00:00:00+00:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/newsletter/confermato/</loc>
+      
+        <lastmod>2025-04-12T00:00:00+00:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/tags/business/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
       <loc>http://localhost:1313/it/categories/</loc>
       
-        <lastmod>2025-03-15T17:47:12+01:00</lastmod>
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/newsletter/prevedere-potenziale-crescita/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/tags/kpi/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/categories/newsletter/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/tags/newsletter/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/5-kpi-scalabilita/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/categories/post/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/tags/scalability/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/tags/</loc>
+      
+        <lastmod>2025-04-10T07:46:24+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/3-pilastri-della-scalabilita/</loc>
+      
+        <lastmod>2025-04-05T08:26:27+02:00</lastmod>
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:1313/it/newsletter/3-pilastri-scalabilita/</loc>
+      
+        <lastmod>2025-04-04T10:00:00+02:00</lastmod>
       
       
     </url>
@@ -85,15 +197,7 @@
     <url>
       <loc>http://localhost:1313/it/37-anno-della-discesa/</loc>
       
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:1313/it/tags/business/</loc>
-      
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+        <lastmod>2025-04-04T15:54:05+02:00</lastmod>
       
       
     </url>
@@ -101,7 +205,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/family/</loc>
       
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+        <lastmod>2025-04-04T15:54:05+02:00</lastmod>
       
       
     </url>
@@ -109,23 +213,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/personal/</loc>
       
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:1313/it/categories/post/</loc>
-      
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:1313/it/tags/</loc>
-      
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+        <lastmod>2025-04-04T15:54:05+02:00</lastmod>
       
       
     </url>
@@ -133,7 +221,7 @@
     <url>
       <loc>http://localhost:1313/it/tags/transformation/</loc>
       
-        <lastmod>2025-02-21T12:31:17+01:00</lastmod>
+        <lastmod>2025-04-04T15:54:05+02:00</lastmod>
       
       
     </url>
@@ -236,14 +324,6 @@
   
     <url>
       <loc>http://localhost:1313/it/business-scalability-engineer/</loc>
-      
-        <lastmod>2025-02-15T10:23:19+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:1313/it/tags/scalability/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       
@@ -452,14 +532,6 @@
   
     <url>
       <loc>http://localhost:1313/it/testimonials/francesco-lagonigro/</loc>
-      
-        <lastmod>2025-02-15T10:23:19+01:00</lastmod>
-      
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:1313/it/testimonials/gianni-cordaro/</loc>
       
         <lastmod>2025-02-15T10:23:19+01:00</lastmod>
       

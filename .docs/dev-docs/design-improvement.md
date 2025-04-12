@@ -1,0 +1,4 @@
+- [ ] Rivedere i colori del sito
+- [ ] Footer che rimane sempre in basso nella vista
+- [ ] Subscribe button in alto
+- [ ] Settings

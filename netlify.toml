@@ -1,6 +1,7 @@
 [build]
   publish = "public"
   command = "hugo --gc --minify --cleanDestinationDir --environment production"
+  functions = "netlify/functions"
 
 [build.environment]
   HUGO_VERSION = "0.140.2"
@@ -160,5 +161,12 @@
 [[redirects]]
   from = "/*/legal/*"
   to = "/*/legal/:splat.html"
+  status = 200
+  force = true
+
+# API redirects for serverless functions
+[[redirects]]
+  from = "/api/resend-confirmation"
+  to = "/.netlify/functions/resend-confirmation"
   status = 200
   force = true

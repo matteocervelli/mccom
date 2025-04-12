@@ -193,7 +193,7 @@ You can sign up below:&lt;/p&gt;
 &lt;div style=&#34;max-width: 24em; margin: 3em auto 3em 0;&#34;&gt;
     &lt;form id=&#34;newsletter-form&#34; 
       class=&#34;newsletter-form&#34;
-      action=&#34;https://app.kit.com/forms/7578059/subscriptions&#34;
+      action=&#34;https://assets.mailerlite.com/jsonp/1430245/forms/151481753002837465/subscribe&#34;
       method=&#34;post&#34;
       data-sv-form=&#34;7578059&#34;
       data-uid=&#34;455bee90fa&#34;
