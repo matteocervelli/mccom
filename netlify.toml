@@ -69,9 +69,9 @@
 [[redirects]]
   from = "/api/resend-confirmation"
   to = "/.netlify/functions/resend-confirmation"
-  status = 200
+  status = 200!
   force = true
-  conditions = {Role = [], Language = [], Country = [], Method = ["POST", "OPTIONS"]}
+  conditions = {Method = ["POST", "OPTIONS"]}
 
 # Direct language paths should never be redirected elsewhere
 [[redirects]]
