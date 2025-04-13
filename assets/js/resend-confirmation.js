@@ -50,18 +50,30 @@ document.addEventListener('DOMContentLoaded', function() {
     resendLink.textContent = sendingLinkText;
     showMessage('', '');
 
-    fetch('/api/resend-confirmation', {
+    const apiUrl = `${window.location.origin}/api/resend-confirmation`;
+
+    fetch(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: emailAddress, language: language })
     })
-    .then(response => response.json())
+    .then(response => {
+      // Controlla se la risposta è OK prima di tentare il parsing JSON
+      if (!response.ok) {
+        // Se non è OK, leggi come testo per vedere l'errore (es. HTML 404)
+        return response.text().then(text => {
+          throw new Error(`Network response was not ok: ${response.status} ${response.statusText}. Response body: ${text}`);
+        });
+      }
+      return response.json();
+    })
     .then(data => {
       showMessage(successMessage, 'success');
     })
     .catch(error => {
-      console.error('Error:', error);
-      showMessage(errorMessage, 'error');
+      console.error('Error sending confirmation request:', error);
+      // Mostra un messaggio di errore più generico o specifico basato sull'errore
+      showMessage(errorMessage, 'error'); 
     })
     .finally(() => {
       isSending = false;
