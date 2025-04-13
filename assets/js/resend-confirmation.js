@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     resendLink.textContent = sendingLinkText;
     showMessage('', '');
 
-    // Modifica: Usa il percorso diretto della funzione Netlify
+    // Usa il percorso diretto della funzione Netlify
     const apiUrl = '/.netlify/functions/resend-confirmation';
     const fetchOptions = {
       method: 'POST',
@@ -58,33 +58,22 @@ document.addEventListener('DOMContentLoaded', function() {
       body: JSON.stringify({ email: emailAddress, language: language })
     };
 
-    // Debug: Logga l'URL e le opzioni prima del fetch
-    console.log('Attempting fetch to:', apiUrl);
-    console.log('Fetch options:', JSON.stringify(fetchOptions, null, 2));
-
     fetch(apiUrl, fetchOptions)
     .then(response => {
       // Controlla se la risposta è OK prima di tentare il parsing JSON
       if (!response.ok) {
-        // Se non è OK, leggi come testo per vedere l'errore (es. HTML 404)
         return response.text().then(text => {
-          // Debug: Logga lo status e il corpo della risposta fallita
           console.error('Fetch failed with status:', response.status, response.statusText);
-          console.error('Failed response body:', text);
-          throw new Error(`Network response was not ok: ${response.status} ${response.statusText}.`); // Rimosso il corpo dall'errore per leggibilità console
+          throw new Error(`Network response was not ok: ${response.status} ${response.statusText}`);
         });
       }
-       // Debug: Logga successo risposta
-       console.log('Fetch successful, status:', response.status);
       return response.json();
     })
     .then(data => {
-      // Debug: Logga i dati JSON ricevuti
-      console.log('Received data:', data);
       showMessage(successMessage, 'success');
     })
     .catch(error => {
-      console.error('Error sending confirmation request or processing response:', error);
+      console.error('Error sending confirmation request:', error);
       showMessage(errorMessage, 'error'); 
     })
     .finally(() => {
