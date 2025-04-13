@@ -1,0 +1,61 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 md:px-6 py-8">
+  <!-- Header della pagina (sempre all'inizio) -->
+  <header class="mb-8">
+    <h1 class="text-3xl font-bold">{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="prose max-w-none mt-4">{{ . }}</div>
+    {{ end }}
+  </header>
+
+  <!-- Form di iscrizione (sempre visibile, sopra la lista) -->
+  <div class="w-full px-4 mb-8">
+    <div class="bg-gray-100 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-3">{{ i18n "subscribe_to_newsletter" }}</h3>
+      <p class="text-sm text-gray-700 mb-4">
+        {{ i18n "newsletter_subscribe_intro" }}
+      </p>
+      <!-- Form di iscrizione alla newsletter -->
+      {{ partial "newsletter.html" . }}
+    </div>
+  </div>
+
+  <!-- Colonna principale (ora a piena larghezza) -->
+  <div class="w-full">
+    {{ $pagesToList := where .Pages "Params.exclude_from_list" "ne" true }}
+    {{ $pagesToList = where $pagesToList "Params.layout" "ne" "minimal" }}
+    {{ $paginator := .Paginate $pagesToList.ByDate.Reverse }}
+    {{ range $paginator.Pages }}
+      <article class="mb-8 flex items-center">
+        <!-- Issue Number -->
+        {{ with .Params.issue_number }}
+          <div class="mr-4 text-2xl font-semibold text-gray-400">#{{ . }}</div>
+        {{ else }}
+          <!-- Placeholder if no issue number -->
+          <div class="mr-4 w-10"></div> <!-- Adjust width as needed -->
+        {{ end }}
+
+        <!-- Title and Date -->
+        <div class="flex-grow">
+          <h2 class="text-xl font-semibold mb-1">
+            <a href="{{ .RelPermalink }}" class="hover:text-mc-purple no-underline">{{ .Title }}</a>
+          </h2>
+          <time class="text-gray-600 text-sm" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format (i18n "date_format_short" | default "January 2, 2006") }}
+          </time>
+        </div>
+
+        <!-- Arrow Icon -->
+        <a href="{{ .RelPermalink }}" aria-label="{{ i18n "read_issue" }} {{ .Title }}" class="ml-4 text-mc-purple hover:text-mc-dark-purple flex-shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </article>
+    {{ end }}
+
+    <!-- Pagination -->
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</div>
+{{ end }}

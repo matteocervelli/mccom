@@ -18,4 +18,50 @@
   height: 1.5rem;
   display: inline-block;
   vertical-align: middle;
+}
+
+/* Newsletter Styles */
+.newsletter-single .hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-single .hero .container {
+  width: 100%;
+}
+
+.newsletter-single .prose {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.newsletter-single .prose h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: var(--mc-purple, #6b46c1);
+}
+
+.newsletter-single .prose p {
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-single .prose blockquote {
+  border-left: 4px solid var(--mc-purple, #6b46c1);
+  padding-left: 1rem;
+  font-style: italic;
+  color: #4a5568;
+}
+
+/* Responsive adjustments for newsletter */
+@media (max-width: 768px) {
+  .newsletter-single .hero {
+    min-height: 40vh;
+  }
+}
+
+/* Newsletter list specific styles */
+.order-1.lg\:order-2 {
+  /* Stile per garantire che la sidebar sia stickata correttamente */
+  align-self: flex-start;
 } 

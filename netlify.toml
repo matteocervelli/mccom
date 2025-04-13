@@ -1,6 +1,7 @@
 [build]
   publish = "public"
   command = "hugo --gc --minify --cleanDestinationDir --environment production"
+  functions = "netlify/functions"
 
 [build.environment]
   HUGO_VERSION = "0.140.2"
@@ -64,6 +65,14 @@
   status = 200
   force = true
 
+# API redirects for serverless functions (Moved Higher)
+[[redirects]]
+  from = "/api/resend-confirmation"
+  to = "/.netlify/functions/resend-confirmation"
+  status = 200
+  force = true
+  conditions = {Method = ["POST", "OPTIONS"]}
+
 # Direct language paths should never be redirected elsewhere
 [[redirects]]
   from = "/it/*"
@@ -126,7 +135,6 @@
   from = "/*"
   to = "/en/:splat"
   status = 302
-  force = true
 
 [[redirects]]
   from = "/en/feed"

@@ -1,0 +1,50 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# WEB_mccom Project Rules
+
+## Panoramica del Progetto
+
+WEB_mccom è il sito web personale di Matteo Cervelli, focalizzato sulla sua identità professionale e contenuti relativi alla scalabilità aziendale. Il sito è costruito con Hugo e ospitato su Netlify.
+
+## Tecnologie Principali
+
+- Hugo come framework per sito statico
+- CSS/SCSS per lo styling
+- JavaScript per interazioni lato client
+- Netlify per hosting e funzioni serverless
+
+## Architettura del Sito
+
+Il sito segue l'architettura standard di Hugo:
+1. `content/`: Contenuti organizzati per sezione (blog, services, about)
+2. `layouts/`: Template per rendering delle pagine
+3. `static/`: File statici (immagini, font, ecc.)
+4. `assets/`: File da processare (SCSS, JS, ecc.)
+5. `data/`: Dati strutturati per il sito
+
+## Convenzioni di Codice
+
+- Utilizzare kebab-case per nomi file e directory
+- Strutturare i contenuti in modo coerente e organizzato
+- Seguire le pratiche di naming di Hugo per template parziali e shortcodes
+- Implementare un design system coerente e responsivo
+- Utilizzare variabili SCSS per coerenza visiva
+
+## Best Practices
+
+- Ottimizzare per SEO e performance
+- Implementare un design responsive e mobile-first
+- Creare shortcodes riutilizzabili per componenti comuni
+- Separare contenuto da presentazione
+- Implementare cache appropriato e ottimizzazioni front-end
+
+## Integrazione con Newsletter
+
+- Implementare form di iscrizione per The Scalability Compass
+- Assicurare conformità GDPR per raccolta dati utente
+- Ottimizzare conversioni con CTA strategiche
+- Collegare il sito con la piattaforma di email marketing

@@ -18,9 +18,9 @@ bsky: "https://bsky.app/profile/matteocervelli.com/post/3llyl3hqwjs25"
 
 Sai perché il cashmere costa così tanto? Perché la materia prima è rara. La produzione di cashmere infatti si basa sulla lana prodotta dalla cosiddetta capra comune, la capra hircus. la classica capretta bianca, ritenuta una tra le [100 specie più infestanti al mondo](https://it.wikipedia.org/wiki/Cento_specie_invasive_pi%C3%B9_dannose_al_mondo)
 
-150 grammi è la quantità di cashmere che una capra produce in un anno. Infatti, il cashmere viene preso pettinando il collo della capra. Non tosando. E per produrre il cashmere, la capra deve vivere in regioni molto fredde che sviluppano dei follicoli secondari che creano questo sottopelo da cui deriva la lana. Pettinato a mano, curato e preparato da una lavorazione molto intensiva a livello umano.
+150 grammi è la quantità di cashmere che una capra produce in un anno. Infatti, il cashmere viene preso pettinando il collo della capra. Non tosando. E per produrre il cashmere, la capra deve vivere in regioni molto fredde che sviluppano dei follicoli secondari che creano questo sotto-pelo da cui deriva la lana. Pettinato a mano, curato e preparato da una lavorazione molto intensiva a livello umano.
 
-Perchè parlo di cashmere? Di recente ho partecipato a un incontro per Giovani Industriali da Brunello Cucinelli. Un impero da 7 miliardi che si poggia su 150 grammi e su un piccolo paese, Solomeo, ricette strane per il successo e la scalabilità.
+Perché parlo di cashmere? Di recente ho partecipato a un incontro per Giovani Industriali da Brunello Cucinelli. Un impero da 7 miliardi che si poggia su 150 grammi e su un piccolo paese, Solomeo, ricette strane per il successo e la scalabilità.
 
 Questo ci porta alla distinzione cruciale tra semplice crescita e la scalabilità sostenibile. Mentre la crescita si riferisce spesso a un aumento delle dimensioni o dei ricavi, la scalabilità riguarda la costruzione di un modello di business che possa gestire efficacemente una domanda crescente senza un aumento proporzionale di risorse o costi.
 
@@ -40,7 +40,7 @@ I “3 Pilastri della Sostenibilità” – Persone, Processi e Tecnologia – s
 
 ## Persone: prima chi, poi cosa
 
-Durante la vistia da Brunello Cucinelli o potuto ascoltare la storia che hanno raccontato su come sta proseguendo la crescita dell'azienda, oltre la prima generazione.
+Durante la visita da Brunello Cucinelli o potuto ascoltare la storia che hanno raccontato su come sta proseguendo la crescita dell'azienda, oltre la prima generazione.
 
 Quello che colpisce della nuova generazione di Cucinelli è la serenità e la semplicità, il tono calmo con cui raccontano la loro storia. Scorrendo i profili Instagram si vedono persone sempre presenti ad eventi con star del cinema. Eppure i dipendenti dell’azienda raccontano, loro stessi con stupore, di come la famiglia sia sempre in azienda. Segno di una leadership vera, non costruita e che rimane fedele alla visione.
 

@@ -1,5 +1,12 @@
 {
     "files.associations": {
         "*.json.html": "gohtml"
-    }
+    },
+    "cSpell.words": [
+        "bsky",
+        "Cucinelli",
+        "Kalle",
+        "Lastmod",
+        "solomeo"
+    ]
 } 

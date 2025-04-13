@@ -87,6 +87,7 @@
     
     {{/* Verifica se la pagina dovrebbe avere la sidebar */}}
     {{ $shouldHaveSidebar := and 
+        (ne .Layout "minimal") 
         (not .IsHome) 
         (not .IsSection) 
         (gt (countwords .TableOfContents) 0) 
