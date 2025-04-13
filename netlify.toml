@@ -65,6 +65,14 @@
   status = 200
   force = true
 
+# API redirects for serverless functions (Moved Higher)
+[[redirects]]
+  from = "/api/resend-confirmation"
+  to = "/.netlify/functions/resend-confirmation"
+  status = 200
+  force = true
+  conditions = {Role = [], Language = [], Country = [], Method = ["POST", "OPTIONS"]}
+
 # Direct language paths should never be redirected elsewhere
 [[redirects]]
   from = "/it/*"
@@ -163,11 +171,3 @@
   to = "/*/legal/:splat.html"
   status = 200
   force = true
-
-# API redirects for serverless functions
-[[redirects]]
-  from = "/api/resend-confirmation"
-  to = "/.netlify/functions/resend-confirmation"
-  status = 200
-  force = true
-  conditions = {Role = [], Language = [], Country = [], Method = ["POST", "OPTIONS"]}
