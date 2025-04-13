@@ -135,7 +135,6 @@
   from = "/*"
   to = "/en/:splat"
   status = 302
-  force = true
 
 [[redirects]]
   from = "/en/feed"
