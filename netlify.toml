@@ -170,3 +170,4 @@
   to = "/.netlify/functions/resend-confirmation"
   status = 200
   force = true
+  conditions = {Role = [], Language = [], Country = [], Method = ["POST", "OPTIONS"]}
