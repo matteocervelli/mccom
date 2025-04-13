@@ -50,29 +50,41 @@ document.addEventListener('DOMContentLoaded', function() {
     resendLink.textContent = sendingLinkText;
     showMessage('', '');
 
-    const apiUrl = `${window.location.origin}/api/resend-confirmation`;
-
-    fetch(apiUrl, {
+    // Modifica: Usa il percorso diretto della funzione Netlify
+    const apiUrl = '/.netlify/functions/resend-confirmation';
+    const fetchOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: emailAddress, language: language })
-    })
+    };
+
+    // Debug: Logga l'URL e le opzioni prima del fetch
+    console.log('Attempting fetch to:', apiUrl);
+    console.log('Fetch options:', JSON.stringify(fetchOptions, null, 2));
+
+    fetch(apiUrl, fetchOptions)
     .then(response => {
       // Controlla se la risposta è OK prima di tentare il parsing JSON
       if (!response.ok) {
         // Se non è OK, leggi come testo per vedere l'errore (es. HTML 404)
         return response.text().then(text => {
-          throw new Error(`Network response was not ok: ${response.status} ${response.statusText}. Response body: ${text}`);
+          // Debug: Logga lo status e il corpo della risposta fallita
+          console.error('Fetch failed with status:', response.status, response.statusText);
+          console.error('Failed response body:', text);
+          throw new Error(`Network response was not ok: ${response.status} ${response.statusText}.`); // Rimosso il corpo dall'errore per leggibilità console
         });
       }
+       // Debug: Logga successo risposta
+       console.log('Fetch successful, status:', response.status);
       return response.json();
     })
     .then(data => {
+      // Debug: Logga i dati JSON ricevuti
+      console.log('Received data:', data);
       showMessage(successMessage, 'success');
     })
     .catch(error => {
-      console.error('Error sending confirmation request:', error);
-      // Mostra un messaggio di errore più generico o specifico basato sull'errore
+      console.error('Error sending confirmation request or processing response:', error);
       showMessage(errorMessage, 'error'); 
     })
     .finally(() => {
