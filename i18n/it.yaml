@@ -40,6 +40,8 @@ email_placeholder:
   other: "La tua email"
 sign_up:
   other: "Registrati"
+subscribe:
+  other: "Iscriviti"
 built_with:
   other: "Creato con"
 newsletter_form_action:
@@ -233,7 +235,7 @@ do_not_sell:
   other: "Non vendete o condividete le mie informazioni personali"
 view_document: 
   other: "Visualizza Documento"
-last_updated: 
+last_updated:
   other: "Ultimo aggiornamento"
 all_legal_documents: 
   other: "Tutti i Documenti Legali"
@@ -361,4 +363,10 @@ privacy_policy_link_prefix:
 cookie_policy_link_prefix:
   other: "Scopri come tratto i cookie nella mia"
 
-  
+subscribe_to_newsletter:
+  other: "Iscriviti alla newsletter"
+newsletter_subscribe_intro:
+  other: "Ogni giovedì, riceverai 1 strategia per scalare il tuo business, con suggerimenti, insights e risorse per aiutarti a implementarla"
+
+# Newsletter Popup
+newsletterPopupIntro: "Iscriviti per ricevere strategie per scalare il business nella tua email"

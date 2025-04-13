@@ -3,13 +3,11 @@ title: "{{ replace .File.ContentBaseName "-" " " | title }}"
 description: ""
 slug: "{{ .File.ContentBaseName }}"
 translationKey: "{{ .File.ContentBaseName }}"
-aliases: []
-language: en
+language: "{{ .Site.Language.Lang }}"
 date: {{ .Date }}
 lastmod: {{ .Date }}
-draft: true 
+draft: true
 tags: []
-categories: ['post']
+categories: ['list']
 featured_image: ""
-bsky: false
 ---

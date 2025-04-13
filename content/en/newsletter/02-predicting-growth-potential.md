@@ -1,13 +1,15 @@
 ---
 title: "How to Predict Your Company's Growth Potential (Before It's Too Late)"
-date: 2025-04-10T07:46:24+02:00 # Using original article date for consistency
-slug: "predicting-growth-potential"
+description: "Discover the 5 predictive KPIs that reveal your company's true ability to scale sustainably, moving beyond simple revenue."
+layout: "newsletter"
+issue_number: 2
+slug: "02-predicting-growth-potential"
+translationKey: "02-predicting-growth-potential"
+related_article_slug: "5-kpi-scalability"
 language: "en"
-translationKey: "newsletter-issue-02-predicting-growth"
-tags: ['newsletter', 'scalability', 'kpi']
+date: 2025-04-10T07:46:24+02:00 # Using original article date for consistency
+tags: ['kpi', 'scalability']
 categories: ['newsletter']
-summary: "Discover the 5 predictive KPIs that reveal your company's true ability to scale sustainably, moving beyond simple revenue."
-# issue_number: 2
 ---
 
 In this newsletter, I'm going to explain **how to accurately predict if your company is ready to scale** and grow sustainably.

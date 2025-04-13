@@ -1,7 +1,17 @@
 ---
-title: "Archivio Newsletter"
-layout: newsletter-list # Specifica il layout list.html dentro /layouts/newsletter/
-# Non serve slug qui, Hugo usa la directory
+title: "Scalability Compass"
+description: "Una newsletter centrata sulla scalabilità aziendale e sulle strategie di crescita sostenibile"
+slug: "newsletter"
+translationKey: "newsletter"
+language: "it"
+date: 2025-04-13T10:00:00+02:00
+lastmod: 2025-04-13T10:00:00+02:00
+draft: false
+tags: []
+categories: ['page']
+layout: newsletter-list
 ---
 
-Benvenuto nell'archivio della mia newsletter settimanale. Qui trovi tutti i numeri passati, ricchi di strategie e riflessioni sulla scalabilità aziendale e l'imprenditoria consapevole. 
+{{< newsletter-enhancer >}}
+
+## Numeri precedenti di Scalability Compass

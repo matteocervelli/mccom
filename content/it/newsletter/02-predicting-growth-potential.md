@@ -1,13 +1,15 @@
 ---
 title: "Come Prevedere il Potenziale di Crescita della Tua Azienda (Prima che sia Troppo Tardi)"
-date: 2025-04-10T07:46:24+02:00 # Data articolo originale
-slug: "prevedere-potenziale-crescita"
+description: "Scopri i 5 KPI predittivi che rivelano la reale capacità della tua azienda di scalare in modo sostenibile, superando la semplice metrica del fatturato."
+layout: "newsletter"
+issue_number: 2
+slug: "02-prevedere-potenziale-crescita"
+translationKey: "02-predicting-growth-potential"
+related_article_slug: "5-kpi-scalabilita"
 language: "it"
-translationKey: "newsletter-issue-02-predicting-growth"
-tags: ['newsletter', 'scalability', 'kpi']
+date: 2025-04-10T07:46:24+02:00 # Data articolo originale
+tags: ['kpi', 'scalability']
 categories: ['newsletter']
-summary: "Scopri i 5 KPI predittivi che ti rivelano la vera capacità della tua azienda di scalare in modo sostenibile, andando oltre il semplice fatturato."
-# issue_number: 2
 ---
 
 In questa newsletter, ti spiegherò come prevedere con precisione se la tua azienda è pronta a scalare e crescere in modo sostenibile.

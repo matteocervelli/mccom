@@ -3,7 +3,7 @@
      data-form-id="{{ if eq .Site.Language.Lang "en" }}24760757{{ else }}24694811{{ end }}"
      data-redirect-url="{{ if eq .Site.Language.Lang "en" }}{{ printf "/%s/newsletter/thank-you/" .Site.Language.Lang | absURL }}{{ else }}{{ printf "/%s/newsletter/grazie/" .Site.Language.Lang | absURL }}{{ end }}"
      data-tracker-url="{{ if eq .Site.Language.Lang "en" }}https://assets.mailerlite.com/jsonp/1430245/forms/151481753002837465/takel{{ else }}https://assets.mailerlite.com/jsonp/1430245/forms/151309607914964876/takel{{ end }}">
-  <div style="max-width: 24em; margin: 3em auto 3em 0;"> 
+  <div style="max-width: 24em; margin: 2em auto;"> 
     <form id="newsletter-form" 
       class="newsletter-form" 
       action="{{ i18n "newsletter_form_action" }}"
@@ -21,7 +21,7 @@
       <button id="newsletter-submit" data-umami-event="Newsletter Submit" type="submit"
               class="newsletter-form__button" 
               aria-label="Subscribe to newsletter">
-        {{ i18n "sign_up" }}
+        {{ i18n "subscribe" }}
       </button>
       
       <input type="hidden" name="fields[language]" value="{{ .Site.Language.Lang }}">

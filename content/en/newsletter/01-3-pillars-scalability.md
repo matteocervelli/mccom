@@ -1,13 +1,16 @@
 ---
-title: "The 3 Fundamental Pillars for Your Business Scalability"
-date: 2025-04-04T15:00:00+02:00 # Original article date
-slug: "3-pillars-scalability"
+title: "The 3 Pillars of Business Scalability"
+description: "Discover the foundational elements needed to scale your business effectively: People, Processes, and Technology."
+layout: "newsletter"
+issue_number: 1
+slug: "01-3-pillars-scalability"
+translationKey: "01-3-pillars-scalability"
+related_article_slug: "3-pillars-of-scalability"
 language: "en"
-translationKey: "newsletter-issue-01-3-pillars"
-tags: ['newsletter', 'scalability']
+date: 2025-04-04T10:00:00+02:00
+tags: ['scalability']
 categories: ['newsletter']
-summary: "Learn how to build a scalable business model by focusing on People, Processes, and Technology, inspired by Brunello Cucinelli's success."
-# issue_number: 1
+# mailerlite_campaign_id: "TODO" # Aggiungi ID se necessario
 ---
 
 In this newsletter, I'm going to explain **how to build a business model that can effectively handle increasing demand without a proportional increase in resources or costs** – in other words, how to make it truly scalable.

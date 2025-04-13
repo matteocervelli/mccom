@@ -48,6 +48,8 @@ email_placeholder:
   other: "Email Address"
 sign_up:
   other: "Sign up"
+subscribe:
+  other: "Subscribe"
 built_with:
   other: "Built with"
 newsletter_form_action:
@@ -358,3 +360,15 @@ privacy_policy_link_prefix:
   other: "Find out how to contact me and how I handle personal data in my"
 cookie_policy_link_prefix:
   other: "Find out how I handle cookies in my"
+
+# Newsletter
+subscribe_to_newsletter:
+  other: "Subscribe to the newsletter"
+newsletter_subscribe_intro:
+  other: "Every Thursday, you will receive 1 actionable strategy to scale your business, with tips, insights and resources to help you implement it"
+
+# Newsletter Popup
+newsletterPopupIntro: "Subscribe to receive business scaling strategies in your email"
+
+# Cookie Consent
+lastUpdatedOn: 'Last updated on'

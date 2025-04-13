@@ -1,13 +1,16 @@
 ---
 title: "I 3 Pilastri Fondamentali per la Scalabilità del Tuo Business"
-date: 2025-04-04T10:00:00+02:00 # Data articolo originale
-slug: "3-pilastri-scalabilita"
+description: "Scopri come costruire un modello di business scalabile concentrandoti su Persone, Processi e Tecnologia, 
+ispirato al successo di Brunello Cucinelli"
+layout: "newsletter"
+issue_number: 1
+slug: "01-3-pilastri-scalabilita"
+translationKey: "01-3-pillars-scalability"
+related_article_slug: "3-pillars-of-scalability"
 language: "it"
-translationKey: "newsletter-issue-01-3-pillars"
-tags: ['newsletter', 'scalability']
+date: 2025-04-04T10:00:00+02:00
+tags: ['scalability']
 categories: ['newsletter']
-summary: "Scopri come costruire un modello di business scalabile concentrandoti su Persone, Processi e Tecnologia, ispirato al successo di Brunello Cucinelli."
-# issue_number: 1 # Potremmo aggiungere un numero progressivo
 ---
 
 In questa newsletter ti spiegherò **come costruire un modello di business che possa gestire efficacemente una domanda crescente senza un aumento proporzionale di risorse o costi**, ovvero come renderlo veramente scalabile.

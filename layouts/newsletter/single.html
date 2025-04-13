@@ -1,35 +1,63 @@
 {{ define "main" }}
 <article class="newsletter-single">
-  <!-- Hero Section personalizzata con immagine di sfondo e gradiente -->
-  <div class="hero relative">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ with .Params.featured_image }}{{ . }}{{ else }}/images/default-newsletter-bg.jpg{{ end }}');"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-mc-dark-purple/90 to-transparent"></div>
-    
-    <div class="container mx-auto px-4 md:px-6 py-16 md:py-24 relative z-10">
-      <div class="max-w-2xl text-white">
+  <!-- Hero Section con sfondo a gradiente senza immagine -->
+  <div class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
         {{ with .Params.issue_number }}
-          <span class="inline-block mb-2 text-sm font-medium bg-mc-purple px-3 py-1 rounded-full">{{ i18n "issue" | default "Issue" }} #{{ . }}</span>
+          <span class="issue-badge">{{ i18n "issue" | default "Issue" }} #{{ . }}</span>
         {{ end }}
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{{ .Title }}</h1>
-        <time class="text-white/80 text-sm block mb-6" datetime="{{ .Date.Format "2006-01-02" }}">
-          {{ .Date.Format (i18n "date_format_long" | default "January 2, 2006") }}
-        </time>
+        <h1>{{ .Title }}</h1>
+        
+        <div class="meta-info">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{/* Soluzione manuale per la localizzazione della data */}}
+            {{ $month := .Date.Month }}
+            {{ $monthString := "" }}
+            {{ if eq $.Site.Language.Lang "it" }}
+              {{ if eq $month 1 }}{{ $monthString = "Gennaio" }}
+              {{ else if eq $month 2 }}{{ $monthString = "Febbraio" }}
+              {{ else if eq $month 3 }}{{ $monthString = "Marzo" }}
+              {{ else if eq $month 4 }}{{ $monthString = "Aprile" }}
+              {{ else if eq $month 5 }}{{ $monthString = "Maggio" }}
+              {{ else if eq $month 6 }}{{ $monthString = "Giugno" }}
+              {{ else if eq $month 7 }}{{ $monthString = "Luglio" }}
+              {{ else if eq $month 8 }}{{ $monthString = "Agosto" }}
+              {{ else if eq $month 9 }}{{ $monthString = "Settembre" }}
+              {{ else if eq $month 10 }}{{ $monthString = "Ottobre" }}
+              {{ else if eq $month 11 }}{{ $monthString = "Novembre" }}
+              {{ else if eq $month 12 }}{{ $monthString = "Dicembre" }}
+              {{ end }}
+            {{ else }}
+              {{ $monthString = .Date.Format "January" }}
+            {{ end }}
+            {{ .Date.Day }} {{ $monthString }} {{ .Date.Year }}
+          </time>
+          <span>•</span>
+          <span>{{ .ReadingTime }} {{ i18n "minutes" | default "min" }}</span>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Contenuto della newsletter -->
-  <div class="container mx-auto px-4 md:px-6 py-8">
-    
-      <!-- Contenuto principale (ora a piena larghezza)-->
-      <div class="w-full">
-        <div class="prose max-w-none lg:prose-lg xl:prose-xl mt-4">
-          {{ .Content }}
-        </div>
+  <div class="container">
+    <div class="content">
+      <div class="newsletter-content">
+        {{ .Content }}
       </div>
-      
-      {{/* Sidebar rimossa */}}
-      
+
+      {{/* Link all'articolo correlato se presente */}}
+      {{ with .Params.related_article_slug }}
+        {{ $relatedArticle := $.Site.GetPage (printf "/posts/%s" .) }}
+        {{ if $relatedArticle }}
+          <div class="related-article-link">
+            <p>{{ i18n "read_full_article" | default "Read the full article:" }}</p>
+            <a href="{{ $relatedArticle.RelPermalink }}">{{ $relatedArticle.Title }}</a>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
   </div>
 </article>
 {{ end }} 

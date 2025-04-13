@@ -33,12 +33,49 @@
       {{- if .Site.Menus.main -}}
       <div class="flex flex-wrap">
         {{- range .Site.Menus.main -}}
-            <a href="{{ .URL }}" class="nav-menu-items">{{ .Name }}</a>
-          {{- end -}}
+          <a href="{{ .URL }}" class="nav-menu-items">{{ .Name }}</a>
+        {{- end -}}
       </div>
       {{- end -}}
     </div>
-  </div>
+  
+    <!-- Wrapper per Newsletter -->
+    <div class="nav-newsletter-wrapper">
+      <button id="newsletter-toggle" class="newsletter-nav-toggle" onclick="toggleNewsletterBox()" data-umami-event="Newsletter Toggle">
+        {{ i18n "subscribe" }}
+      </button>
+
+      <!-- Box pop-up per la newsletter -->
+      <div id="newsletter-popup" class="newsletter-popup" style="display: none;">
+        <p class="newsletter-popup-intro">{{ i18n "newsletterPopupIntro" }}</p>
+        {{ partial "newsletter.html" . }}
+      </div>
+    </div>
 
   </div>
 </nav>
+
+<!-- Script per gestire il toggle del box newsletter -->
+<script>
+function toggleNewsletterBox() {
+  var popup = document.getElementById("newsletter-popup");
+  if (popup.style.display === "none" || popup.style.display === "") {
+    popup.style.display = "block";
+  } else {
+    popup.style.display = "none";
+  }
+}
+
+// Chiudi il popup se si clicca fuori da esso
+document.addEventListener('click', function(event) {
+  var popup = document.getElementById('newsletter-popup');
+  var button = document.getElementById('newsletter-toggle');
+  
+  // Controlla se il popup è visibile e se il click NON è avvenuto dentro il popup o sul bottone
+  if (popup.style.display === 'block' && 
+      !popup.contains(event.target) && 
+      event.target !== button) {
+    popup.style.display = 'none';
+  }
+});
+</script>
