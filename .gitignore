@@ -4,6 +4,7 @@
 # Hugo build directories
 /public/
 /resources/
+/.docs/
 
 # Netlify build directory
 .netlify/

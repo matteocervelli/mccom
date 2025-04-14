@@ -31,7 +31,7 @@ Questo documento traccia i passaggi necessari per migrare la newsletter da Conve
 
 **5. Design Pagine Newsletter:**
 
-- [ ] **5.1 Rivedere Layout List/Single:** Ottimizzare il design delle pagine `list.html` e `single.html` della newsletter. Rimuovere sidebar laterale, posizionare form in `list.html`, implementare visualizzazione numero issue stile Justin Welsh.
+- [x] **5.1 Rivedere Layout List/Single:** Ottimizzare il design delle pagine `list.html` e `single.html` della newsletter. Rimuovere sidebar laterale, posizionare form in `list.html`, implementare visualizzazione numero issue stile Justin Welsh.
 
 **6. Automazione MailerLite (Welcome Sequence):**
 

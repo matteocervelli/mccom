@@ -23,10 +23,10 @@ Unfortunately, many entrepreneurs confuse simple growth with scalability.
 
 This is the primary reason: focusing only on increasing size or revenue ignores the need to build solid foundations. But there are other reasons why people struggle:
 
--   They overlook the importance of choosing the right people before the strategic direction ("Who first, then what").
--   They don't invest enough in creating clear, documented, and dynamic processes capable of adapting to growth.
--   They underestimate the role of technology as a force multiplier to automate, increase efficiency, and generate strategic data.
--   They fail to cultivate a company culture that fosters curiosity, continuous learning, and widespread accountability.
+- They overlook the importance of choosing the right people before the strategic direction ("Who first, then what").
+- They don't invest enough in creating clear, documented, and dynamic processes capable of adapting to growth.
+- They underestimate the role of technology as a force multiplier to automate, increase efficiency, and generate strategic data.
+- They fail to cultivate a company culture that fosters curiosity, continuous learning, and widespread accountability.
 
 But fear not! You can overcome these challenges by adopting a strategic approach based on the three fundamental pillars of scalability.
 
@@ -58,4 +58,4 @@ Let's build a company together that not only grows, but thrives over time.
 
 See you soon,
 
-Matteo 
+Matteo

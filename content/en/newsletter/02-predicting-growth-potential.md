@@ -22,10 +22,10 @@ Unfortunately, most entrepreneurs continue to drive looking only in the rearview
 
 Many entrepreneurs fail to accurately predict their growth potential for several reasons:
 
--   **They confuse growth with scalability**: Increasing revenue doesn't necessarily mean building a stronger, more resilient company.
--   **They lack predictive indicators (Lead KPIs)**: They rely on metrics showing the past (Lag KPIs) instead of signaling what's about to happen.
--   **They don't measure what truly matters**: They overlook crucial indicators like cash conversion cycle (CCC) and operational efficiency (Gross Margin).
--   **They ignore internal signals**: They pay no attention to process standardization and key talent retention.
+- **They confuse growth with scalability**: Increasing revenue doesn't necessarily mean building a stronger, more resilient company.
+- **They lack predictive indicators (Lead KPIs)**: They rely on metrics showing the past (Lag KPIs) instead of signaling what's about to happen.
+- **They don't measure what truly matters**: They overlook crucial indicators like cash conversion cycle (CCC) and operational efficiency (Gross Margin).
+- **They ignore internal signals**: They pay no attention to process standardization and key talent retention.
 
 But there's a solution! You can overcome these challenges by implementing a system of predictive KPIs that will show you exactly where to intervene before it's too late.
 
@@ -55,4 +55,4 @@ Measuring is the first step to improving. Don't miss the opportunity to build so
 
 See you soon,
 
-Matteo 
+Matteo

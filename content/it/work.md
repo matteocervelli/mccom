@@ -33,7 +33,7 @@ Faccio il consulente, l'advisor e il formatore, oltre ad investire personalmente
 - La capacità delle imprese è proposta di valore unica, il potenziale la forza delle **relazioni** che il vertice intrattiene.
 - Un'impresa che evolve è basata su pochi **esperimenti**, ma di grande potenzialità. E allo stesso tempo, tanti stimoli diversificati di mastodontiche opportunità che crogiolano in silenzio.
 
-<a href="#prenota-ora-una-sessione-gratuita-per-parlarmi-della-tua-idea" class="mc-button">
+<a href="https://adlimen.com/it/landing/prenota-consulenza/?utm_source=mccom&utm_medium=work_page&utm_campaign=service_cta&utm_content=top_button" class="mc-button">
     Prenota ora una sessione gratuita
     <br>
     per parlarmi della tua idea
@@ -95,7 +95,7 @@ Che tu sia interessato a un corso accademico, una testimonianza della mia esperi
 
 Insieme alla formazione, possiamo attivare percorsi di supporto e coaching.
 
-<a href="#prenota-ora-una-sessione-gratuita-per-parlarmi-della-tua-idea" class="mc-button">
+<a href="https://adlimen.com/it/landing/prenota-consulenza/?utm_source=mccom&utm_medium=work_page&utm_campaign=service_cta&utm_content=bottom_button" class="mc-button">
     Prenota ora una sessione gratuita
     <br>
     per parlarmi della tua idea
@@ -109,9 +109,10 @@ Insieme alla formazione, possiamo attivare percorsi di supporto e coaching.
 
 {{< featured-projects >}}
 
-## Prenota ora una sessione gratuita per parlarmi della tua idea
+## Consulenza strategica gratuita
 
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/matteo-cervelli/free-strategic-coaching-session?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
+<div class="cta-box" style="margin: 2rem 0; padding: 2rem; background-color: rgba(var(--mc-purple-rgb), 0.1); border: 1px solid var(--mc-purple-light); border-radius: var(--border-radius); text-align: center;">
+  <h3 style="margin-top: 0; color: var(--color-highlight);">Hai un'idea o una sfida da affrontare?</h3>
+  <p>Prenota una consulenza strategica gratuita di 45 minuti per discutere della tua situazione aziendale e scoprire come posso aiutarti a raggiungere i tuoi obiettivi.</p>
+  <a href="https://adlimen.com/it/landing/prenota-consulenza/?utm_source=mccom&utm_medium=work_page&utm_campaign=service_cta&utm_content=bottom_section" class="cta-button" style="display: inline-block; background-color: var(--mc-purple); color: var(--mc-white); padding: 1rem 2rem; text-decoration: none; border-radius: var(--border-radius); font-weight: bold; margin-top: 1rem; transition: background-color 0.3s;">Prenota una consulenza gratuita</a>
+</div>

@@ -1,0 +1,198 @@
+{{ define "main" }}
+<div class="kpi-calculator-page">
+    <article>
+        <header>
+            <h1>{{ .Params.headline | default .Title }}</h1>
+            {{ with .Params.subheadline }}
+                <p class="subheadline">{{ . }}</p>
+            {{ end }}
+        </header>
+
+        {{/* Attention: Il problema principale */}}
+        <section id="attention">
+            {{ with .Params.attention_content }}
+                <p>{{ . | markdownify }}</p>
+            {{ else }}
+                <p>Stai guidando la tua azienda guardando solo lo specchietto retrovisore del fatturato? Scopri perché la crescita dei ricavi non basta e come anticipare le sfide prima che sia troppo tardi.</p>
+            {{ end }}
+        </section>
+
+        {{/* Interest: Cosa otterranno */}}
+        <section id="interest">
+            <h2>{{ .Params.interest_title | default "Scopri la Scalability KPI Dashboard" }}</h2>
+            {{ with .Params.interest_intro }}
+                <p>{{ . | markdownify }}</p>
+            {{ else }}
+                <p>Ho creato uno strumento semplice ma potente per aiutarti a monitorare i 5 indicatori chiave che *predicono* la tua reale capacità di scalare in modo sostenibile. Smetti di reagire, inizia a prevedere.</p>
+            {{ end }}
+
+            {{ with .Params.video_placeholder_text }}
+                <div class="placeholder">{{ . }}</div>
+            {{ else }}
+                <div class="placeholder">[Placeholder: Video Loom Demo (1-2 min)]</div>
+            {{ end }}
+
+            <h3>Cosa otterrai monitorando questi KPI:</h3>
+            {{ with .Params.benefits }}
+                <ul>
+                    {{ range . }}
+                        <li>{{ . | markdownify }}</li>
+                    {{ end }}
+                </ul>
+            {{ else }}
+                <ul>
+                    <li>Chiarezza sulla **sostenibilità commerciale** (rapporto LTV/CAC)</li>
+                    <li>Controllo della **liquidità** e della velocità del capitale (Ciclo di Conversione di Cassa)</li>
+                    <li>Visibilità sull'**efficienza operativa** reale (Margine Lordo)</li>
+                    <li>Capacità di **replicare il successo** (Processi Standardizzati)</li>
+                    <li>Solidità della **cultura e del know-how** (Mantenimento Talenti Chiave)</li>
+                </ul>
+            {{ end }}
+        </section>
+
+        {{/* Desire: Screenshot e prova sociale */}}
+        <section id="desire">
+            <h2>{{ .Params.desire_title | default "Progettato per Imprenditori e Manager Occupati" }}</h2>
+            {{ with .Params.desire_intro }}
+                <p>{{ . | markdownify }}</p>
+            {{ else }}
+                <p>Niente formule complesse o fogli di calcolo infiniti. Questa dashboard è pensata per darti una visione chiara e immediata dello stato di salute della tua scalabilità, con istruzioni semplici e benchmark di settore.</p>
+            {{ end }}
+
+            {{/* Implementazione del carosello di screenshot */}}
+            <div class="screenshot-carousel swiper">
+                <div class="swiper-wrapper">
+                    {{ $imgsPath := "images/projects/scalability-kpi-dashboard/" }}
+                    {{ range $index, $i := (seq 1 10) }}
+                        {{ $paddedIndex := printf "%02d" $i }}
+                        {{ $imgPath := print $imgsPath "The Scalability KPI Dashboard - it_v1_0 - Google Sheets - " $paddedIndex ".jpg" }}
+                        {{ $exists := fileExists (print "static/" $imgPath) }}
+                        {{ if $exists }}
+                            <div class="swiper-slide">
+                                <img src="{{ $imgPath | relURL }}" alt="Scalability KPI Dashboard - Screenshot {{ $i }}" class="dashboard-screenshot">
+                            </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- Optional: Placeholder for Social Proof/Testimonials -->
+            <!--
+            <div class="social-proof">
+                <h3>Cosa dicono gli altri imprenditori:</h3>
+                <div class="placeholder">[Placeholder: Testimonianze / Loghi Aziende]</div>
+            </div>
+            -->
+        </section>
+
+        {{/* Action: Form e CTA finale */}}
+        <section id="action" class="cta-section">
+            <h2>{{ .Params.action_title | default "Ottieni Subito la Tua Scalability KPI Dashboard Gratuita" }}</h2>
+            {{ with .Params.action_intro }}
+                <p>{{ . | markdownify }}</p>
+            {{ else }}
+                <p>Inserisci la tua email qui sotto per ricevere immediatamente il link alla Scalability KPI Dashboard e iniziare a prendere decisioni basate sui dati che contano davvero.</p>
+            {{ end }}
+
+            <div id="{{ if eq .Site.Language.Lang "en" }}mlb2-kpi-download-en{{ else }}mlb2-kpi-download-it{{ end }}" 
+                 class="ml-form-embedContainer ml-subscribe-form"
+                 data-form-id="{{ if eq .Site.Language.Lang "en" }}kpidownload-en{{ else }}kpidownload-it{{ end }}"
+                 data-redirect-url="{{ if eq .Site.Language.Lang "en" }}{{ printf "/%s/tools/kpi-thank-you/" .Site.Language.Lang | absURL }}{{ else }}{{ printf "/%s/tools/kpi-grazie/" .Site.Language.Lang | absURL }}{{ end }}"
+                 data-tracker-url="{{ if eq .Site.Language.Lang "en" }}https://assets.mailerlite.com/jsonp/1430245/forms/kpidownload-en/takel{{ else }}https://assets.mailerlite.com/jsonp/1430245/forms/kpidownload-it/takel{{ end }}">
+              <div style="max-width: 32em; margin: 0 auto 2em auto;"> 
+                <form id="kpi-download-form" 
+                  class="newsletter-form kpi-download-form" 
+                  action="{{ if eq .Site.Language.Lang "en" }}https://static.mailerlite.com/webforms/submit/kpidownload-en{{ else }}https://static.mailerlite.com/webforms/submit/kpidownload-it{{ end }}"
+                  method="post" 
+                  aria-label="{{ if eq .Site.Language.Lang "en" }}Download form{{ else }}Form di download{{ end }}">
+                  <div class="form-row">
+                    <input type="email" 
+                          name="fields[email]"
+                          placeholder="{{ if eq .Site.Language.Lang "en" }}Your email address{{ else }}Il tuo indirizzo email{{ end }}"
+                          class="newsletter-form__input" 
+                          aria-label="{{ if eq .Site.Language.Lang "en" }}Enter your email address{{ else }}Inserisci la tua email{{ end }}"
+                          id="kpi-email"
+                          autocomplete="email"
+                          required>
+                    <button id="kpi-submit" type="submit"
+                            class="newsletter-form__button" 
+                            aria-label="{{ if eq .Site.Language.Lang "en" }}Get the Dashboard{{ else }}Ottieni la Dashboard{{ end }}">
+                      {{ with .Params.final_cta }}{{ . }}{{ else }}{{ if eq .Site.Language.Lang "en" }}Get the Dashboard{{ else }}Ottieni la Dashboard{{ end }}{{ end }}
+                    </button>
+                  </div>
+                  
+                  <input type="hidden" name="fields[language]" value="{{ .Site.Language.Lang }}">
+                  <input type="hidden" name="fields[download]" value="scalability_kpi_dashboard">
+                  <input type="hidden" name="fields[signup_source]" value="website_tool_page">
+                  <input type="hidden" name="ml-submit" value="1">
+                  <input type="hidden" name="anticsrf" value="true">
+                </form>
+                <small style="display: block; text-align: center; margin-top: 0.5rem; color: var(--color-tx-muted);">
+                  {{ if eq .Site.Language.Lang "en" }}We respect your privacy. Unsubscribe at any time.{{ else }}Rispettiamo la tua privacy. Puoi cancellare l'iscrizione in qualsiasi momento.{{ end }}
+                </small>
+              </div>
+            </div>
+            
+            <script>
+              (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+              .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+              n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+              (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+              ml('account', '1430245');
+            </script>
+            
+            <script>
+              // Recupero i dati dagli attributi data-*
+              var container = document.querySelector('.ml-form-embedContainer');
+              var formId = container.getAttribute('data-form-id');
+              var redirectUrl = container.getAttribute('data-redirect-url');
+              var trackerUrl = container.getAttribute('data-tracker-url');
+              
+              // Definizione della funzione di successo
+              window["ml_webform_success_" + formId] = function() {
+                try {
+                  window.top.location.href = redirectUrl;
+                } catch (e) {
+                  window.location.href = redirectUrl;
+                }
+              };
+              
+              // Tracciamento al caricamento della pagina
+              document.addEventListener("DOMContentLoaded", function() {
+                fetch(trackerUrl);
+              });
+            </script>
+        </section>
+    </article>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.screenshot-carousel', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1
+            }
+        }
+    });
+});
+</script>
+{{ end }} 

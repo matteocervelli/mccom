@@ -23,10 +23,10 @@ Sfortunatamente, molti imprenditori confondono la semplice crescita con la scala
 
 Questo è il motivo principale: concentrarsi solo sull'aumento dimensionale o di fatturato ignora la necessità di costruire fondamenta solide. Ma ci sono anche altre ragioni per cui si fatica:
 
--   Si trascura l'importanza di scegliere le persone giuste prima della direzione strategica ("Prima chi, poi cosa").
--   Non si investe abbastanza nella creazione di processi chiari, documentati e dinamici, capaci di adattarsi alla crescita.
--   Si sottovaluta il ruolo della tecnologia come moltiplicatore di forze per automatizzare, aumentare l'efficienza e generare dati strategici.
--   Non si coltiva una cultura aziendale che favorisca curiosità, apprendimento continuo e responsabilizzazione diffusa.
+- Si trascura l'importanza di scegliere le persone giuste prima della direzione strategica ("Prima chi, poi cosa").
+- Non si investe abbastanza nella creazione di processi chiari, documentati e dinamici, capaci di adattarsi alla crescita.
+- Si sottovaluta il ruolo della tecnologia come moltiplicatore di forze per automatizzare, aumentare l'efficienza e generare dati strategici.
+- Non si coltiva una cultura aziendale che favorisca curiosità, apprendimento continuo e responsabilizzazione diffusa.
 
 Ma non temere! Puoi superare queste sfide adottando un approccio strategico basato sui tre pilastri fondamentali della scalabilità.
 
@@ -58,4 +58,4 @@ Costruiamo insieme un'azienda che non solo cresce, ma prospera nel tempo.
 
 A presto,
 
-Matteo 
+Matteo

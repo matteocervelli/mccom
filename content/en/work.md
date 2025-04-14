@@ -33,7 +33,7 @@ I work as a consultant, advisor, and trainer, as well as making personal investm
 - A company's capability is its unique value proposition, its potential lies in the strength of **relationships** that leadership maintains.
 - An evolving business is based on few **experiments**, but with great potential. And at the same time, many diversified stimuli of mammoth opportunities that simmer quietly.
 
-<a href="#book-now-a-free-session-to-talk-about-your-idea" class="mc-button" id="book-now-button" data-umami-event="Book Now Button Click 1">
+<a href="https://adlimen.com/en/landing/book-consultancy/?utm_source=mccom&utm_medium=work_page&utm_campaign=service_cta&utm_content=top_button" class="mc-button" id="book-now-button" data-umami-event="Book Now Button Click 1">
     Book now a free session
     <br>
     to talk about your idea
@@ -95,7 +95,7 @@ Whether you're interested in an academic course, a testimony of my experience, o
 
 Along with training, we can activate support and coaching paths.
 
-<a href="#book-now-a-free-session-to-talk-about-your-idea" class="mc-button" id="book-now-button" data-umami-event="Book Now Button Click 2">
+<a href="https://adlimen.com/en/landing/book-consultancy/?utm_source=mccom&utm_medium=work_page&utm_campaign=service_cta&utm_content=bottom_button" class="mc-button" id="book-now-button" data-umami-event="Book Now Button Click 2">
     Book now a free session
     <br>
     to talk about your idea
@@ -109,9 +109,10 @@ Along with training, we can activate support and coaching paths.
 
 {{< featured-projects >}}
 
-## Book now a free session to talk about your idea
+## Free Strategic Consultation
 
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/matteo-cervelli/free-strategic-coaching-session" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
+<div class="cta-box" style="margin: 2rem 0; padding: 2rem; background-color: rgba(var(--mc-purple-rgb), 0.1); border: 1px solid var(--mc-purple-light); border-radius: var(--border-radius); text-align: center;">
+  <h3 style="margin-top: 0; color: var(--color-highlight);">Do you have an idea or challenge to address?</h3>
+  <p>Book a free 45-minute strategic consultation to discuss your business situation and discover how I can help you achieve your goals.</p>
+  <a href="https://adlimen.com/en/landing/book-consultancy/?utm_source=mccom&utm_medium=work_page&utm_campaign=service_cta&utm_content=bottom_section" class="cta-button" style="display: inline-block; background-color: var(--mc-purple); color: var(--mc-white); padding: 1rem 2rem; text-decoration: none; border-radius: var(--border-radius); font-weight: bold; margin-top: 1rem; transition: background-color 0.3s;">Book a Free Consultation</a>
+</div>

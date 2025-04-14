@@ -4908,3 +4908,186 @@ tr:nth-child(even) {
 .related-article-link a:hover {
   text-decoration: underline;
 }
+
+/* Stili specifici per la pagina KPI Calculator */
+.kpi-calculator-page { 
+    padding: 2rem 1rem; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    font-family: var(--font-family-body); /* Usa font di base del tema */
+}
+.kpi-calculator-page section { 
+    margin-bottom: 3rem; 
+    padding: 1.5rem; 
+    border-radius: var(--border-radius); 
+    background-color: var(--color-bg-secondary);
+}
+.kpi-calculator-page h1, 
+.kpi-calculator-page h2, 
+.kpi-calculator-page h3 { 
+    color: var(--color-tx-normal); 
+    margin-bottom: 1rem; 
+    font-family: var(--font-family-heading); /* Usa font heading del tema */
+}
+.kpi-calculator-page h1 { 
+    font-size: var(--font-size-3xl); /* Usa variabile tema */
+    text-align: center; 
+    margin-bottom: 0.5rem; 
+    color: var(--color-highlight); /* Usa colore highlight tema */
+}
+.kpi-calculator-page .subheadline { 
+    font-size: var(--font-size-md); /* Usa variabile tema */
+    text-align: center; 
+    color: var(--color-tx-muted); /* Usa colore muted tema */
+    margin-bottom: 3rem; 
+}
+.kpi-calculator-page p { 
+    line-height: var(--line-height); 
+    color: var(--color-tx-normal);
+    margin-bottom: 1rem;
+}
+.kpi-calculator-page ul { 
+    list-style: disc; 
+    margin-left: 20px; 
+    padding-left: 10px; 
+}
+.kpi-calculator-page li { 
+    margin-bottom: 0.5rem; 
+    line-height: var(--line-height);
+}
+.kpi-calculator-page .placeholder { 
+    background-color: rgba(var(--color-tx-muted-rgb), 0.1); 
+    border: 1px dashed var(--color-tx-muted); 
+    padding: 2rem; 
+    text-align: center; 
+    color: var(--color-tx-muted); 
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+    font-style: italic; 
+    border-radius: var(--border-radius);
+}
+.kpi-calculator-page .cta-section { 
+    background-color: rgba(var(--mc-purple-rgb), 0.1); /* Usa colore highlight tema con opacità */
+    border: 1px solid var(--mc-purple-light);
+}
+.kpi-calculator-page .cta-button { 
+    display: inline-block; 
+    background-color: var(--mc-purple); /* Usa colore highlight tema */
+    color: var(--mc-white); 
+    padding: 1rem 2rem; 
+    text-decoration: none; 
+    border-radius: var(--border-radius); 
+    font-size: var(--font-size-md); /* Usa variabile tema */
+    font-weight: bold; 
+    text-align: center; 
+    margin-top: 1rem; 
+    transition: background-color 0.3s; 
+    font-family: var(--font-family-heading);
+}
+.kpi-calculator-page .cta-button:hover { 
+    background-color: var(--mc-purple-dark); /* Usa colore highlight tema scuro */
+}
+
+/* Stili per il carosello screenshot Scalability KPI Dashboard */
+.screenshot-carousel {
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    display: block;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--mc-purple);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: var(--mc-purple);
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .screenshot-carousel {
+        margin: 1rem 0;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 14px;
+    }
+}
+
+/* Stili per il form di download KPI Dashboard */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-row .newsletter-form__input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.kpi-download-form {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .screenshot-carousel {
+        margin: 1rem 0;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 14px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+}
