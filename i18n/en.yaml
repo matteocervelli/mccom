@@ -365,10 +365,76 @@ cookie_policy_link_prefix:
 subscribe_to_newsletter:
   other: "Subscribe to the newsletter"
 newsletter_subscribe_intro:
-  other: "Every Thursday, you will receive 1 actionable strategy to scale your business, with tips, insights and resources to help you implement it"
+  other: "Every Thursday, you'll get 1 strategy to grow your business, with tips, insights, and resources to help you implement it"
 
 # Newsletter Popup
-newsletterPopupIntro: "Subscribe to receive business scaling strategies in your email"
+newsletterPopupIntro: "Sign up to receive business growth strategies in your inbox"
 
-# Cookie Consent
-lastUpdatedOn: 'Last updated on'
+# Email templates base
+email_title: "Message from Adlimen Consulting"
+email_heading: "Important Information"
+email_greeting: "Hello%s,"
+email_main_text: "Thank you for your interest in Adlimen Consulting. We're here to help you grow your business in a sustainable way."
+email_button_text: "Learn More"
+email_closing: "Best regards,"
+email_signature: "Matteo"
+email_rights: "All rights reserved."
+email_privacy: "Privacy Policy"
+email_unsubscribe: "Unsubscribe"
+
+# Profile update template
+profile_update_title: "Confirm Profile Updates"
+profile_update_preheader: "Confirm your profile updates for The Scalability Compass"
+profile_update_heading: "Confirm Profile Updates"
+profile_update_greeting: "Hello%s,"
+profile_update_main_text: "We've received a request to update your profile information for The Scalability Compass. Please review the changes below and confirm by clicking the button."
+profile_update_email_label: "Email"
+profile_update_updates_label: "Requested Changes"
+profile_update_button: "Confirm Updates"
+profile_update_expiry_note: "This confirmation link will expire in 24 hours for your security."
+profile_update_closing: "If you didn't request these changes, please ignore this email or contact us for assistance."
+profile_update_help_text: "If you're having trouble with the button above, copy and paste the URL into your web browser."
+
+# KPI tool confirmation
+kpi_confirm_title: "Your Download is Ready"
+kpi_confirm_preheader: "Your scalability tool is ready for download"
+kpi_confirm_heading: "Your Download is Ready"
+kpi_confirm_greeting: "Hello%s,"
+kpi_confirm_main_text: "Thank you for your interest in our scalability tools. Your download is now ready. Click the button below to access your file."
+kpi_confirm_preview_alt: "Tool Preview"
+kpi_confirm_tool_name: "Tool"
+kpi_confirm_email_label: "Email"
+kpi_confirm_button: "Download Now"
+kpi_confirm_expiry_note: "This download link will expire in 7 days."
+kpi_confirm_additional_info: "We hope this tool helps you identify opportunities to grow your business. If you have questions about how to use it effectively, feel free to reply to this email."
+kpi_confirm_help_text: "For any assistance with using this tool, please contact our support team."
+
+# Sequence emails
+sequence_title: "The Scalability Compass | Insights"
+sequence_preheader: "Business growth insights from Adlimen Consulting"
+sequence_greeting: "Hello%s,"
+sequence_closing: "Looking forward to your growth journey,"
+sequence_unsubscribe_text: "You're receiving this email because you opted in to receive our business growth insights. We respect your inbox."
+
+# Newsletter
+newsletter_issue: "Issue"
+newsletter_date: "Published on"
+newsletter_closing: "Until next time,"
+newsletter_related_article: "This newsletter is based on the article:"
+newsletter_archive: "View in Browser"
+
+# Email KPI download
+kpi_download_title: "KPI Download Confirmation | Adlimen"
+kpi_download_heading: "Confirm Your KPI Download"
+kpi_download_greeting: "Hi {{.}}, "
+kpi_download_main_text: "Thank you for requesting our KPI tool. To complete the download process, please confirm your request by clicking the button below:"
+kpi_download_button_text: "Download KPI Tool"
+kpi_title: "Download Details"
+kpi_benefits_title: "Benefits of Our KPI Tool"
+kpi_benefits_1: "Track the most important metrics for your business"
+kpi_benefits_2: "Create custom dashboards tailored to your needs"
+kpi_benefits_3: "Share insights with your team through visual reports"
+kpi_benefits_4: "Make data-driven decisions with confidence"
+kpi_expiry_note: "This download link will expire in 48 hours for security reasons."
+kpi_help_text: "If the button above doesn't work, copy and paste this URL into your browser:"
+kpi_closing: "We look forward to helping you achieve your business goals with data-driven insights."

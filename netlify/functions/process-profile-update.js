@@ -1,8 +1,98 @@
 const axios = require('axios');
 const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
+const handlebars = require('handlebars');
+const yaml = require('js-yaml');
 
 // Log modulo caricato
 console.log('Modulo process-profile-update caricato');
+
+// Funzione per caricare le traduzioni dal file YAML
+function loadTranslations() {
+  try {
+    const enPath = path.resolve(__dirname, '../../i18n/en.yaml');
+    const itPath = path.resolve(__dirname, '../../i18n/it.yaml');
+    
+    const enContent = fs.readFileSync(enPath, 'utf8');
+    const itContent = fs.readFileSync(itPath, 'utf8');
+    
+    // Parsing YAML
+    const enTranslations = yaml.load(enContent);
+    const itTranslations = yaml.load(itContent);
+    
+    return {
+      en: enTranslations,
+      it: itTranslations
+    };
+  } catch (error) {
+    console.error('Errore nel caricamento delle traduzioni:', error);
+    // Fallback con traduzioni di base
+    return {
+      en: {
+        profile_update_title: { other: "Confirm Your Profile Updates" },
+        profile_update_heading: { other: "Confirm Profile Updates" },
+        profile_update_greeting: { other: "Hello%s," },
+        profile_update_main_text: { other: "We've received a request to update your profile information. Please review the changes below and confirm by clicking the button." },
+        profile_update_email_label: { other: "Email" },
+        profile_update_updates_label: { other: "Changes requested" },
+        profile_update_button: { other: "Confirm Updates" },
+        profile_update_expiry_note: { other: "This confirmation link will expire in 24 hours for your security." },
+        profile_update_closing: { other: "If you didn't request these changes, please ignore this email or contact us for assistance." },
+        profile_update_help_text: { other: "If you're having trouble with the button above, copy and paste the URL into your web browser." },
+        email_rights: { other: "All rights reserved." },
+        email_privacy: { other: "Privacy Policy" },
+        email_unsubscribe: { other: "Unsubscribe" }
+      },
+      it: {
+        profile_update_title: { other: "Conferma gli Aggiornamenti del Profilo" },
+        profile_update_heading: { other: "Conferma Aggiornamenti Profilo" },
+        profile_update_greeting: { other: "Ciao%s," },
+        profile_update_main_text: { other: "Abbiamo ricevuto una richiesta di aggiornamento delle informazioni del tuo profilo. Controlla le modifiche qui sotto e conferma cliccando il pulsante." },
+        profile_update_email_label: { other: "Email" },
+        profile_update_updates_label: { other: "Modifiche richieste" },
+        profile_update_button: { other: "Conferma Aggiornamenti" },
+        profile_update_expiry_note: { other: "Questo link di conferma scadrà tra 24 ore per la tua sicurezza." },
+        profile_update_closing: { other: "Se non hai richiesto queste modifiche, ignora questa email o contattaci per assistenza." },
+        profile_update_help_text: { other: "Se hai problemi con il pulsante sopra, copia e incolla l'URL nel tuo browser web." },
+        email_rights: { other: "Tutti i diritti riservati." },
+        email_privacy: { other: "Privacy Policy" },
+        email_unsubscribe: { other: "Cancellati" }
+      }
+    };
+  }
+}
+
+// Carica il template dell'email
+function loadEmailTemplate() {
+  try {
+    const templatePath = path.resolve(__dirname, '../../static/email-templates/profile-update-template.html');
+    const template = fs.readFileSync(templatePath, 'utf8');
+    return template;
+  } catch (error) {
+    console.error('Errore nel caricamento del template email:', error);
+    // Template di fallback
+    return `<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>{{heading}}</title>
+    </head>
+    <body>
+      <h1>{{heading}}</h1>
+      <p>{{greeting}}</p>
+      <p>{{intro_text}}</p>
+      <div>
+        <p>Email: {{email}}</p>
+        <p>{{updates_label}}: {{#if name}}{{name}}{{/if}} {{#if last_name}}{{last_name}}{{/if}} {{#if language}}{{language}}{{/if}}</p>
+      </div>
+      <p><a href="{{confirm_url}}">{{button_text}}</a></p>
+      <p>{{closing_text}}</p>
+      <p>{{help_text}}<br>{{confirm_url}}</p>
+    </body>
+    </html>`;
+  }
+}
 
 // Funzione per verificare un token
 function verifyToken(token) {

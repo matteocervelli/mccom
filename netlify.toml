@@ -12,7 +12,6 @@
   command = "hugo server -D -F"
   port = 8888
   targetPort = 1313
-  publish = "public" 
   # Framework detection hint (optional but good practice)
   framework = "hugo"
 

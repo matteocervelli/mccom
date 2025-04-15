@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{title}}</title>
+  <style type="text/css">
+    /* Base styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333333;
+      -webkit-font-smoothing: antialiased;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    table td {
+      vertical-align: top;
+      line-height: 1.8;
+    }
+    
+    /* Layout */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 15px;
+      background-color: #f8f8f8;
+    }
+    .content {
+      background-color: #ffffff;
+      padding: 50px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .header {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .logo {
+      width: 150px;
+      max-width: 100%;
+      height: auto;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 12px;
+      color: #666666;
+    }
+    
+    /* Typography */
+    h1 {
+      font-family: 'Lora', Georgia, serif;
+      color: #008080;
+      font-size: 24px;
+      margin: 0 0 25px 0;
+      font-weight: 600;
+    }
+    p {
+      margin: 0 0 15px 0;
+      line-height: 1.6;
+    }
+    a {
+      color: #008080;
+      text-decoration: none;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #008080;
+      color: #ffffff !important;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 5px;
+      font-weight: 500;
+      margin: 20px 0;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #006666;
+    }
+    
+    /* KPI specific styles */
+    .kpi-info-box {
+      background-color: #f5f9fa;
+      border-left: 4px solid #008080;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 0 5px 5px 0;
+    }
+    .kpi-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #008080;
+    }
+    .kpi-detail {
+      margin-bottom: 5px;
+      padding-left: 10px;
+    }
+    .kpi-list {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+    .kpi-list li {
+      margin-bottom: 8px;
+    }
+    .note {
+      font-size: 14px;
+      color: #666666;
+      font-style: italic;
+    }
+    .help-text {
+      font-size: 13px;
+      color: #888888;
+      margin-top: 25px;
+      border-top: 1px solid #eeeeee;
+      padding-top: 15px;
+    }
+    .file-info {
+      padding: 10px 15px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      font-family: monospace;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+    .small-url {
+      font-size: 12px;
+      word-break: break-all;
+      color: #666666;
+    }
+    
+    /* Responsive Styles */
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 20px 10px;
+      }
+      .content {
+        padding: 40px 25px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://adlimen.com/images/adlimen-logo.png" alt="Adlimen" class="logo">
+    </div>
+    
+    <div class="content">
+      <h1>{{heading}}</h1>
+      
+      <p>{{greeting}}</p>
+      
+      <p>{{main_text}}</p>
+      
+      {{#if kpi_info}}
+      <div class="kpi-info-box">
+        <div class="kpi-title">{{kpi_title}}</div>
+        <div class="kpi-detail">{{kpi_info}}</div>
+        
+        {{#if file_name}}
+        <div class="file-info">
+          {{file_name}}{{#if file_size}} ({{file_size}}){{/if}}
+        </div>
+        {{/if}}
+      </div>
+      {{/if}}
+      
+      {{#if kpi_benefits}}
+      <p>{{kpi_benefits_title}}</p>
+      <ul class="kpi-list">
+        {{#each kpi_benefits}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+      
+      <div style="text-align:center;">
+        <a href="{{download_url}}" class="btn">{{button_text}}</a>
+      </div>
+      
+      <p class="note">{{expiry_note}}</p>
+      
+      <p>{{closing}}</p>
+      
+      <div class="help-text">
+        <p>{{help_text}}</p>
+        <p class="small-url">{{download_url}}</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>&copy; 2023-2024 Adlimen. {{email_rights}}</p>
+      <p>
+        <a href="https://adlimen.com/privacy">{{email_privacy}}</a> | 
+        <a href="%unsubscribe_url%">{{email_unsubscribe}}</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html> 

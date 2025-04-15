@@ -3,7 +3,7 @@ title: "Profile Updated Successfully"
 date: 2025-04-15T10:00:00+02:00
 draft: false
 description: "Your newsletter profile has been updated successfully."
-layout: "single"
+layout: "minimal"
 ---
 
 Thank you for updating your profile for The Scalability Compass newsletter.

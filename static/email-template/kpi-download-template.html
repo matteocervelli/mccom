@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ i18n "kpi_download_title" . }}</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Raleway', Arial, sans-serif;
+            color: #333333;
+            background-color: #f7f7f7;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f7f7f7;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+        
+        .content {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 50px 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        h1 {
+            font-family: 'Lora', serif;
+            color: #008080;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #008080;
+            color: #ffffff !important;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .info-box {
+            background-color: #f0f7f7;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            border-left: 3px solid #a3d0d0;
+        }
+        
+        .link-url {
+            word-break: break-all;
+            color: #008080;
+            font-size: 14px;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #666666;
+            font-size: 12px;
+            padding: 20px 0;
+        }
+        
+        .footer a {
+            color: #666666;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 40px 25px;
+            }
+            
+            .logo {
+                width: 180px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            .btn {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{{.LogoURL}}" alt="Logo" class="logo">
+        </div>
+        
+        <div class="content">
+            <h1>{{ i18n "kpi_download_heading" . }}</h1>
+            
+            <p>{{ i18n "kpi_download_greeting" .Name }}</p>
+            
+            <p>{{ i18n "kpi_download_main_text" . }}</p>
+            
+            <a href="{{.DownloadURL}}" class="btn">{{ i18n "kpi_download_button_text" . }}</a>
+            
+            <div class="info-box">
+                {{ i18n "kpi_expiry_note" . }}
+            </div>
+            
+            <p>{{ i18n "kpi_download_usage_note" . }}</p>
+            
+            <p>{{ i18n "kpi_download_closing" . }}</p>
+            
+            <p>{{ i18n "kpi_download_help_text" . }}<br>
+                <span class="link-url">{{.DownloadURL}}</span>
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; {{.CurrentYear}} Adlimen. {{ i18n "email_rights" . }}</p>
+            <p>
+                <a href="{{.PrivacyURL}}">{{ i18n "email_privacy" . }}</a>
+                <a href="{{.UnsubscribeURL}}">{{ i18n "email_unsubscribe" . }}</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html> 

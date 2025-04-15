@@ -1,0 +1,179 @@
+# Traduzioni per i template email
+# Questo file contiene le traduzioni per tutti i template email
+
+# Template di base
+email_title:
+  en: "Message from Adlimen Consulting"
+  it: "Messaggio da Adlimen Consulting"
+
+email_heading:
+  en: "Important Information"
+  it: "Informazioni Importanti"
+
+email_greeting:
+  en: "Hello%s,"
+  it: "Ciao%s,"
+
+email_main_text:
+  en: "Thank you for your interest in Adlimen Consulting. We're here to help you scale your business sustainably."
+  it: "Grazie per il tuo interesse in Adlimen Consulting. Siamo qui per aiutarti a far crescere la tua azienda in modo sostenibile."
+
+email_button_text:
+  en: "Learn More"
+  it: "Scopri di Più"
+
+email_closing:
+  en: "Best regards,"
+  it: "Cordiali saluti,"
+
+email_signature:
+  en: "Matteo"
+  it: "Matteo"
+
+email_rights:
+  en: "All rights reserved."
+  it: "Tutti i diritti riservati."
+
+email_privacy:
+  en: "Privacy Policy"
+  it: "Privacy Policy"
+
+email_unsubscribe:
+  en: "Unsubscribe"
+  it: "Cancellati"
+
+# Template di aggiornamento profilo
+profile_update_title:
+  en: "Confirm Your Profile Updates"
+  it: "Conferma gli Aggiornamenti del Profilo"
+
+profile_update_preheader:
+  en: "Please confirm your profile updates for The Scalability Compass"
+  it: "Conferma gli aggiornamenti del tuo profilo per The Scalability Compass"
+
+profile_update_heading:
+  en: "Confirm Profile Updates"
+  it: "Conferma Aggiornamenti Profilo"
+
+profile_update_greeting:
+  en: "Hello%s,"
+  it: "Ciao%s,"
+
+profile_update_main_text:
+  en: "We've received a request to update your profile information for The Scalability Compass. Please review the changes below and confirm by clicking the button."
+  it: "Abbiamo ricevuto una richiesta di aggiornamento delle informazioni del tuo profilo per The Scalability Compass. Controlla le modifiche qui sotto e conferma cliccando il pulsante."
+
+profile_update_email_label:
+  en: "Email"
+  it: "Email"
+
+profile_update_updates_label:
+  en: "Changes requested"
+  it: "Modifiche richieste"
+
+profile_update_button:
+  en: "Confirm Updates"
+  it: "Conferma Aggiornamenti"
+
+profile_update_expiry_note:
+  en: "This confirmation link will expire in 24 hours for your security."
+  it: "Questo link di conferma scadrà tra 24 ore per la tua sicurezza."
+
+profile_update_closing:
+  en: "If you didn't request these changes, please ignore this email or contact us for assistance."
+  it: "Se non hai richiesto queste modifiche, ignora questa email o contattaci per assistenza."
+
+profile_update_help_text:
+  en: "If you're having trouble with the button above, copy and paste the URL into your web browser."
+  it: "Se hai problemi con il pulsante sopra, copia e incolla l'URL nel tuo browser web."
+
+# Template di conferma KPI tool
+kpi_confirm_title:
+  en: "Your Tool Download is Ready"
+  it: "Il Tuo Download dello Strumento è Pronto"
+
+kpi_confirm_preheader:
+  en: "Your Scalability Tool is ready for download"
+  it: "Il tuo Strumento di Scalabilità è pronto per il download"
+
+kpi_confirm_heading:
+  en: "Your Download is Ready"
+  it: "Il Tuo Download è Pronto"
+
+kpi_confirm_greeting:
+  en: "Hello%s,"
+  it: "Ciao%s,"
+
+kpi_confirm_main_text:
+  en: "Thank you for your interest in our scalability tools. Your download is now ready. Click the button below to access your file."
+  it: "Grazie per il tuo interesse nei nostri strumenti di scalabilità. Il tuo download è ora pronto. Clicca il pulsante qui sotto per accedere al tuo file."
+
+kpi_confirm_preview_alt:
+  en: "Tool Preview"
+  it: "Anteprima Strumento"
+
+kpi_confirm_tool_name:
+  en: "Tool"
+  it: "Strumento"
+
+kpi_confirm_email_label:
+  en: "Email"
+  it: "Email"
+
+kpi_confirm_button:
+  en: "Download Now"
+  it: "Scarica Ora"
+
+kpi_confirm_expiry_note:
+  en: "This download link will expire in 7 days."
+  it: "Questo link di download scadrà tra 7 giorni."
+
+kpi_confirm_additional_info:
+  en: "We hope this tool helps you identify opportunities for scaling your business. If you have any questions about how to use it effectively, feel free to reply to this email."
+  it: "Speriamo che questo strumento ti aiuti a identificare opportunità per far crescere la tua azienda. Se hai domande su come utilizzarlo efficacemente, sentiti libero di rispondere a questa email."
+
+kpi_confirm_help_text:
+  en: "For any assistance with using this tool, please contact our support team."
+  it: "Per qualsiasi assistenza nell'uso di questo strumento, contatta il nostro team di supporto."
+
+# Template per le email sequenziali
+sequence_title:
+  en: "The Scalability Compass | Insights"
+  it: "The Scalability Compass | Approfondimenti"
+
+sequence_preheader:
+  en: "Business scaling insights from Adlimen Consulting"
+  it: "Approfondimenti sulla scalabilità aziendale da Adlimen Consulting"
+
+sequence_greeting:
+  en: "Hello%s,"
+  it: "Ciao%s,"
+
+sequence_closing:
+  en: "Looking forward to your growth journey,"
+  it: "In attesa del tuo percorso di crescita,"
+
+sequence_unsubscribe_text:
+  en: "You're receiving this email because you opted in to our business scaling insights. We respect your inbox."
+  it: "Ricevi questa email perché hai scelto di ricevere i nostri approfondimenti sulla scalabilità aziendale. Rispettiamo la tua casella di posta."
+
+# Template per le newsletter
+newsletter_issue:
+  en: "Issue"
+  it: "Numero"
+
+newsletter_date:
+  en: "Published on"
+  it: "Pubblicato il"
+
+newsletter_closing:
+  en: "See you soon,"
+  it: "A presto,"
+
+newsletter_related_article:
+  en: "This newsletter is based on the article:"
+  it: "Questa newsletter è basata sull'articolo:"
+
+newsletter_archive:
+  en: "View in Browser"
+  it: "Visualizza nel Browser" 

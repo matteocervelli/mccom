@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ i18n "sequence_title" . }}</title>
+
+    <!--[if !mso]><!-->
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:400,500,600,700&family=Lora:400,500,600&display=swap');
+    </style>
+    <!--<![endif]-->
+
+    <style type="text/css" rel="stylesheet" media="all">
+        /* Base Styles */
+        body {
+            font-family: 'Raleway', Helvetica, Arial, sans-serif;
+            width: 100% !important;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: none;
+            background-color: #F5F5F5;
+            color: #1B2631;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 0;
+            margin-left: 0;
+            font-size: 16px;
+            line-height: 28px;
+            color: #1B2631;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Lora', Georgia, serif;
+            margin: 0 0 16px;
+            color: #1B2631;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #008080;
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 28px;
+            margin-top: 30px;
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #008080;
+            text-decoration: none;
+        }
+
+        .small {
+            font-size: 14px;
+            line-height: 21px;
+            color: #B3B6B7;
+        }
+
+        ul, ol {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 24px;
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 15px 25px;
+            border-left: 4px solid #008080;
+            background-color: #F5F5F5;
+            font-style: italic;
+        }
+
+        /* Layout Components */
+        .ms-body {
+            background-color: #F5F5F5;
+            width: 100%;
+        }
+
+        .ms-container {
+            width: 100%;
+        }
+
+        .ms-content {
+            width: 640px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px 0 rgba(0,0,0,0.05);
+        }
+
+        .ms-content-body {
+            padding: 60px 50px;
+        }
+
+        .ms-header {
+            width: 100%;
+        }
+
+        .ms-footer {
+            width: 640px;
+            margin: 0 auto;
+        }
+
+        /* Elements */
+        .btn {
+            background-color: #008080;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+            border-radius: 4px;
+        }
+
+        .btn a {
+            background-color: #008080;
+            padding: 14px 30px;
+            display: inline-block;
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+            border: 0px solid #008080;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 21px;
+            letter-spacing: 0.25px;
+        }
+
+        .btn-secondary {
+            background-color: #34495E;
+        }
+        
+        .btn-secondary a {
+            background-color: #34495E;
+            border-color: #34495E;
+        }
+
+        .info {
+            padding: 20px;
+            border-radius: 4px;
+            background-color: #F5F5F5;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .image-container img {
+            border-radius: 6px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-caption {
+            font-size: 14px;
+            color: #7F8C8D;
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        .divider {
+            border-top: 1px solid #F5E6D3;
+            margin: 30px 0;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 640px) {
+            .ms-header {
+                display: none !important;
+            }
+            .ms-content {
+                width: 100% !important;
+                border-radius: 0;
+            }
+            .ms-content-body {
+                padding: 40px 25px !important;
+            }
+            .ms-footer {
+                width: 100% !important;
+            }
+            .mobile-wide {
+                width: 100% !important;
+            }
+            .info {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+
+    <!--[if mso]>
+    <style type="text/css">
+    body { font-family: Arial, Helvetica, sans-serif !important; }
+    td { font-family: Arial, Helvetica, sans-serif !important; }
+    td * { font-family: Arial, Helvetica, sans-serif !important; }
+    td p { font-family: Arial, Helvetica, sans-serif !important; }
+    td a { font-family: Arial, Helvetica, sans-serif !important; }
+    td span { font-family: Arial, Helvetica, sans-serif !important; }
+    td div { font-family: Arial, Helvetica, sans-serif !important; }
+    td ul li { font-family: Arial, Helvetica, sans-serif !important; }
+    td ol li { font-family: Arial, Helvetica, sans-serif !important; }
+    td blockquote { font-family: Arial, Helvetica, sans-serif !important; }
+    th * { font-family: Arial, Helvetica, sans-serif !important; }
+    </style>
+    <![endif]-->
+</head>
+<body>
+
+<div class="preheader" style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">{{ i18n "sequence_preheader" . }}</div>
+
+<table class="ms-body" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+        <td align="center">
+
+            <table class="ms-container" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center">
+
+                        <table class="ms-header" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td height="40">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+
+                        <table class="ms-content" width="640" cellpadding="0" cellspacing="0" role="presentation">
+                            <tr>
+                                <td class="ms-content-body">
+
+                                    <p style="text-align: center">
+                                        <img src="https://cdn.adlimen.com/logos/adlimen-consulting/logo-horizontal.png" alt="Adlimen Consulting" width="200" style="max-width: 200px; height: auto;">
+                                    </p>
+
+                                    <h1>{{ .Title }}</h1>
+
+                                    <p>{{ i18n "sequence_greeting" .Name }}</p>
+
+                                    {{ if .Introduction }}
+                                    <p>{{ .Introduction }}</p>
+                                    {{ end }}
+
+                                    {{ .Content }}
+
+                                    {{ if .HasCTA }}
+                                    <table width="100%" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tr>
+                                            <td align="center" style="padding: 30px 0;">
+                                                <table class="mobile-wide" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                                    <tr>
+                                                        <td align="center" class="btn">
+                                                            <a href="{{ .CTAURL }}" target="_blank">{{ .CTAText }}</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    {{ end }}
+
+                                    {{ if .Signature }}
+                                    <p>{{ .Signature }}</p>
+                                    {{ else }}
+                                    <p>{{ i18n "sequence_closing" . }}<br>
+                                    {{ i18n "email_signature" . }}<br>
+                                    <span style="color: #B3B6B7;">Adlimen Consulting</span></p>
+                                    {{ end }}
+
+                                    {{ if .PS }}
+                                    <p><strong>P.S.</strong> {{ .PS }}</p>
+                                    {{ end }}
+
+                                    <div class="divider"></div>
+
+                                    <p class="small">{{ i18n "sequence_unsubscribe_text" . }}</p>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+
+                        <table class="ms-footer" width="640" cellpadding="0" cellspacing="0" role="presentation">
+                            <tr>
+                                <td align="center" style="padding: 40px 50px;">
+                                    <p class="small">&copy; {{ .CurrentYear }} Cervelli Matteo. {{ i18n "email_rights" . }}</p>
+                                    <p class="small">
+                                        <a href="https://adlimen.com/{{ .Language }}/privacy/" style="color: #B3B6B7;">{{ i18n "email_privacy" . }}</a> &bull; 
+                                        <a href="{{ .UnsubscribeURL }}" style="color: #B3B6B7;">{{ i18n "email_unsubscribe" . }}</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html> 

@@ -1,266 +1,316 @@
 const axios = require('axios');
 const crypto = require('crypto');
+const handlebars = require('handlebars');
+const fs = require('fs');
+const path = require('path');
+const yaml = require('js-yaml');
 
-// Funzione per generare un token sicuro
-function generateToken(email, data) {
-  // Crea un token con scadenza di 24 ore
-  const timestamp = Date.now() + 24 * 60 * 60 * 1000; // 24 ore di validità
-  const dataString = JSON.stringify({...data, timestamp});
-  
-  // Firma il token con una chiave segreta
-  const hmac = crypto.createHmac('sha256', process.env.TOKEN_SECRET || 'default-secret-key');
-  hmac.update(dataString);
-  const signature = hmac.digest('hex');
-  
-  // Codifica i dati e la firma in base64
-  const payload = Buffer.from(dataString).toString('base64');
-  
-  return `${payload}.${signature}`;
+// Log modulo caricato
+console.log('Modulo request-profile-update caricato');
+
+// Carica il template dell'email
+function loadEmailTemplate() {
+  try {
+    const templatePath = path.resolve(__dirname, '../../static/email-templates/profile-update-template.html');
+    const template = fs.readFileSync(templatePath, 'utf8');
+    return handlebars.compile(template);
+  } catch (error) {
+    console.error('Errore nel caricamento del template email:', error);
+    // Template fallback
+    const fallbackTemplate = `<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>{{title}}</title>
+    </head>
+    <body>
+      <h1>{{heading}}</h1>
+      <p>{{greeting}}</p>
+      <p>{{main_text}}</p>
+      <div>
+        <p>Email: {{email}}</p>
+        <p>{{updates_label}}: {{#if name}}{{name}}{{/if}} {{#if last_name}}{{last_name}}{{/if}} {{#if language}}{{language}}{{/if}}</p>
+      </div>
+      <p><a href="{{confirm_url}}">{{button_text}}</a></p>
+      <p>{{expiry_note}}</p>
+      <p>{{closing}}</p>
+      <p>{{help_text}}<br>{{confirm_url}}</p>
+    </body>
+    </html>`;
+    return handlebars.compile(fallbackTemplate);
+  }
 }
 
-exports.handler = async (event, context) => {
-  // Gestione richieste OPTIONS per CORS preflight
-  if (event.httpMethod === 'OPTIONS') {
+// Funzione per caricare le traduzioni dal file YAML
+function loadTranslations() {
+  try {
+    const enPath = path.resolve(__dirname, '../../i18n/en.yaml');
+    const itPath = path.resolve(__dirname, '../../i18n/it.yaml');
+    
+    const enContent = fs.readFileSync(enPath, 'utf8');
+    const itContent = fs.readFileSync(itPath, 'utf8');
+    
+    // Parsing YAML
+    const enTranslations = yaml.load(enContent);
+    const itTranslations = yaml.load(itContent);
+    
     return {
-      statusCode: 204,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'POST, OPTIONS'
+      en: enTranslations,
+      it: itTranslations
+    };
+  } catch (error) {
+    console.error('Errore nel caricamento delle traduzioni:', error);
+    // Fallback con traduzioni di base
+    return {
+      en: {
+        profile_update_title: { other: "Confirm Your Profile Updates" },
+        profile_update_heading: { other: "Confirm Profile Updates" },
+        profile_update_greeting: { other: "Hello%s," },
+        profile_update_main_text: { other: "We've received a request to update your profile information. Please review the changes below and confirm by clicking the button." },
+        profile_update_email_label: { other: "Email" },
+        profile_update_updates_label: { other: "Changes requested" },
+        profile_update_button: { other: "Confirm Updates" },
+        profile_update_expiry_note: { other: "This confirmation link will expire in 24 hours for your security." },
+        profile_update_closing: { other: "If you didn't request these changes, please ignore this email or contact us for assistance." },
+        profile_update_help_text: { other: "If you're having trouble with the button above, copy and paste the URL into your web browser." },
+        email_rights: { other: "All rights reserved." },
+        email_privacy: { other: "Privacy Policy" },
+        email_unsubscribe: { other: "Unsubscribe" }
       },
-      body: ''
+      it: {
+        profile_update_title: { other: "Conferma gli Aggiornamenti del Profilo" },
+        profile_update_heading: { other: "Conferma Aggiornamenti Profilo" },
+        profile_update_greeting: { other: "Ciao%s," },
+        profile_update_main_text: { other: "Abbiamo ricevuto una richiesta di aggiornamento delle informazioni del tuo profilo. Controlla le modifiche qui sotto e conferma cliccando il pulsante." },
+        profile_update_email_label: { other: "Email" },
+        profile_update_updates_label: { other: "Modifiche richieste" },
+        profile_update_button: { other: "Conferma Aggiornamenti" },
+        profile_update_expiry_note: { other: "Questo link di conferma scadrà tra 24 ore per la tua sicurezza." },
+        profile_update_closing: { other: "Se non hai richiesto queste modifiche, ignora questa email o contattaci per assistenza." },
+        profile_update_help_text: { other: "Se hai problemi con il pulsante sopra, copia e incolla l'URL nel tuo browser web." },
+        email_rights: { other: "Tutti i diritti riservati." },
+        email_privacy: { other: "Privacy Policy" },
+        email_unsubscribe: { other: "Cancellati" }
+      }
     };
   }
+}
 
-  // Verifica che il metodo HTTP sia POST
+// Funzione per generare un token sicuro
+function generateToken(payload) {
+  const tokenExpiry = 24 * 60 * 60 * 1000; // 24 ore in millisecondi
+  const tokenData = {
+    ...payload,
+    timestamp: Date.now() + tokenExpiry
+  };
+  const payloadString = JSON.stringify(tokenData);
+  const payloadBase64 = Buffer.from(payloadString).toString('base64');
+  
+  const secret = process.env.TOKEN_SECRET || 'default-secret-key';
+  const hmac = crypto.createHmac('sha256', secret);
+  hmac.update(payloadString);
+  const signature = hmac.digest('hex');
+  
+  return `${payloadBase64}.${signature}`;
+}
+
+// Funzione per inviare email tramite MailerSend
+async function sendEmail(to, lang, data) {
+  const mailersendApiKey = process.env.MAILERSEND_API_KEY;
+  if (!mailersendApiKey) {
+    console.error('MAILERSEND_API_KEY non configurata');
+    throw new Error('MAILERSEND_API_KEY non configurata');
+  }
+  
+  // Carica traduzioni
+  const translations = loadTranslations();
+  const i18n = lang.toLowerCase() === 'en' ? translations.en : translations.it;
+  
+  // Prepara il template
+  const compiledTemplate = loadEmailTemplate();
+  
+  // Estrai nome per il saluto personalizzato
+  const nameString = data.name ? ` ${data.name}` : '';
+  
+  // Prepara i dati per il template
+  const templateData = {
+    title: i18n.profile_update_title?.other || "Profile Update",
+    heading: i18n.profile_update_heading?.other || "Confirm Profile Updates",
+    greeting: (i18n.profile_update_greeting?.other || "Hello%s,").replace('%s', nameString),
+    main_text: i18n.profile_update_main_text?.other || "We've received a request to update your profile information.",
+    email: data.email,
+    updates_label: i18n.profile_update_updates_label?.other || "Changes requested",
+    name: data.name,
+    last_name: data.last_name,
+    language: data.language,
+    confirm_url: data.confirm_url,
+    button_text: i18n.profile_update_button?.other || "Confirm Updates",
+    expiry_note: i18n.profile_update_expiry_note?.other || "This confirmation link will expire in 24 hours.",
+    closing: i18n.profile_update_closing?.other || "If you didn't request these changes, please ignore this email.",
+    help_text: i18n.profile_update_help_text?.other || "If you're having trouble with the button above, copy and paste the URL into your web browser.",
+    email_rights: i18n.email_rights?.other || "All rights reserved.",
+    email_privacy: i18n.email_privacy?.other || "Privacy Policy",
+    email_unsubscribe: i18n.email_unsubscribe?.other || "Unsubscribe"
+  };
+  
+  // Genera il contenuto HTML dell'email
+  const emailHtml = compiledTemplate(templateData);
+  
+  // Costruisci il payload per MailerSend
+  const emailPayload = {
+    from: {
+      email: process.env.EMAIL_FROM || "no-reply@adlimen.com",
+      name: "Adlimen"
+    },
+    to: [
+      {
+        email: to,
+        name: data.name && data.last_name ? `${data.name} ${data.last_name}` : (data.name || to)
+      }
+    ],
+    subject: templateData.title,
+    html: emailHtml,
+    text: `${templateData.heading}\n\n${templateData.greeting}\n\n${templateData.main_text}\n\nEmail: ${data.email}\n${templateData.updates_label}: ${data.name || ''} ${data.last_name || ''} ${data.language || ''}\n\n${templateData.button_text}: ${data.confirm_url}\n\n${templateData.expiry_note}\n\n${templateData.closing}\n\n${templateData.help_text}\n${data.confirm_url}`
+  };
+  
+  // Tenta di usare il template MailerSend se configurato
+  const templateId = process.env.MAILERSEND_PROFILE_UPDATE_TEMPLATE_ID;
+  if (templateId) {
+    const variables = [
+      {
+        email: to,
+        substitutions: [
+          { var: 'name', value: data.name || '' },
+          { var: 'greeting', value: templateData.greeting },
+          { var: 'email', value: data.email },
+          { var: 'updates_label', value: templateData.updates_label },
+          { var: 'name_value', value: data.name || '' },
+          { var: 'last_name_value', value: data.last_name || '' },
+          { var: 'language_value', value: data.language || '' },
+          { var: 'confirm_url', value: data.confirm_url },
+          { var: 'button_text', value: templateData.button_text },
+          { var: 'expiry_note', value: templateData.expiry_note },
+          { var: 'closing', value: templateData.closing },
+          { var: 'help_text', value: templateData.help_text }
+        ]
+      }
+    ];
+    
+    // Usa il template MailerSend
+    return axios.post(
+      'https://api.mailersend.com/v1/email',
+      {
+        from: emailPayload.from,
+        to: emailPayload.to,
+        subject: emailPayload.subject,
+        template_id: templateId,
+        variables: variables
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${mailersendApiKey}`
+        }
+      }
+    );
+  }
+  
+  // Fallback: usa HTML diretto se nessun template è configurato
+  return axios.post(
+    'https://api.mailersend.com/v1/email',
+    emailPayload,
+    {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${mailersendApiKey}`
+      }
+    }
+  );
+}
+
+// Funzione handler della richiesta
+exports.handler = async (event, context) => {
+  console.log('Funzione request-profile-update invocata');
+  console.log('Metodo HTTP:', event.httpMethod);
+  console.log('Body presente:', !!event.body);
+  
   if (event.httpMethod !== 'POST') {
+    console.log('Errore: metodo non consentito', event.httpMethod);
     return {
       statusCode: 405,
-      headers: { 
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ success: false, message: 'Metodo non consentito' })
     };
   }
-
-  // Estrai i dati dal body della richiesta
-  let data;
+  
   try {
-    data = JSON.parse(event.body);
-  } catch (error) {
-    return {
-      statusCode: 400,
-      headers: { 
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify({ success: false, message: 'Formato dei dati non valido' })
-    };
-  }
-
-  // Verifica che l'email sia stata fornita
-  const { email, name, last_name, language } = data;
-  if (!email) {
-    return {
-      statusCode: 400,
-      headers: { 
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify({ success: false, message: 'Email non fornita' })
-    };
-  }
-
-  try {
-    const apiKey = process.env.MAILERLITE_API_KEY;
-    if (!apiKey) {
-      throw new Error('MAILERLITE_API_KEY non configurata');
-    }
-
-    // Verifica se l'iscritto esiste prima di procedere (su MailerLite)
-    try {
-      const searchUrl = `https://connect.mailerlite.com/api/subscribers/${encodeURIComponent(email)}`;
-      await axios({
-        method: 'GET',
-        url: searchUrl,
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`
-        }
-      });
-      
-      // Iscritto trovato, procedi a inviare email via MailerSend
-      const updateData = { email, name, last_name, language };
-      const token = generateToken(email, updateData);
-      const baseUrl = process.env.BASE_URL || 'https://matteocervelli.com';
-      const lang = language === 'en' ? 'en' : 'it';
-      const confirmUrl = `${baseUrl}/${lang}/newsletter/update-confirm/?token=${encodeURIComponent(token)}`;
-      
-      const emailSubjects = {
-        it: 'Conferma aggiornamento profilo newsletter',
-        en: 'Confirm newsletter profile update'
+    // Estrai dati dalla richiesta
+    const data = JSON.parse(event.body);
+    console.log('Dati ricevuti:', JSON.stringify(data, null, 2));
+    
+    // Validazione base
+    if (!data.email || !data.email.includes('@')) {
+      console.log('Errore: email non valida');
+      return {
+        statusCode: 400,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ success: false, message: 'Email non valida' })
       };
-      
-      const emailContents = {
-        it: `
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Conferma aggiornamento profilo</title>
-            <style>
-              body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
-              .header { text-align: center; margin-bottom: 30px; }
-              .logo { max-width: 150px; height: auto; }
-              .content { background-color: #f9f9f9; border-radius: 8px; padding: 25px; margin-bottom: 30px; }
-              .button-container { text-align: center; margin: 35px 0; }
-              .button { display: inline-block; background-color: #0066CC; color: white; font-weight: bold; padding: 14px 28px; text-decoration: none; border-radius: 4px; }
-              .footer { font-size: 14px; color: #666; text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px; }
-            </style>
-          </head>
-          <body>
-            <div class="header">
-              <h2>The Scalability Compass</h2>
-            </div>
-            <div class="content">
-              <p>Ciao${name ? ' ' + name : ''},</p>
-              <p>Abbiamo ricevuto una richiesta di aggiornamento del tuo profilo per The Scalability Compass.</p>
-              <p>Per confermare e applicare questi aggiornamenti, clicca sul pulsante qui sotto:</p>
-              
-              <div class="button-container">
-                <a href="${confirmUrl}" class="button">Conferma aggiornamento</a>
-              </div>
-              
-              <p>Se non hai richiesto questa modifica, puoi ignorare questa email.</p>
-              <p>Il link scadrà tra 24 ore per motivi di sicurezza.</p>
-            </div>
-            <div class="footer">
-              <p>Grazie,<br>Matteo Cervelli</p>
-              <p><small>The Scalability Compass - Strategie per la crescita sostenibile</small></p>
-            </div>
-          </body>
-          </html>
-        `,
-        en: `
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Confirm Profile Update</title>
-            <style>
-              body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
-              .header { text-align: center; margin-bottom: 30px; }
-              .logo { max-width: 150px; height: auto; }
-              .content { background-color: #f9f9f9; border-radius: 8px; padding: 25px; margin-bottom: 30px; }
-              .button-container { text-align: center; margin: 35px 0; }
-              .button { display: inline-block; background-color: #0066CC; color: white; font-weight: bold; padding: 14px 28px; text-decoration: none; border-radius: 4px; }
-              .footer { font-size: 14px; color: #666; text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px; }
-            </style>
-          </head>
-          <body>
-            <div class="header">
-              <h2>The Scalability Compass</h2>
-            </div>
-            <div class="content">
-              <p>Hello${name ? ' ' + name : ''},</p>
-              <p>We've received a request to update your profile for The Scalability Compass.</p>
-              <p>To confirm and apply these updates, please click the button below:</p>
-              
-              <div class="button-container">
-                <a href="${confirmUrl}" class="button">Confirm Update</a>
-              </div>
-              
-              <p>If you didn't request this change, you can safely ignore this email.</p>
-              <p>The link will expire in 24 hours for security reasons.</p>
-            </div>
-            <div class="footer">
-              <p>Thank you,<br>Matteo Cervelli</p>
-              <p><small>The Scalability Compass - Strategies for sustainable growth</small></p>
-            </div>
-          </body>
-          </html>
-        `
-      };
-
-      // Invia email di conferma tramite MailerSend
-      try {
-        const mailerSendPayload = {
-          from: {
-            name: 'Matteo Cervelli',
-            email: 'newsletter@adlimen.com' // Deve essere un sender verificato su MailerSend
-          },
-          to: [
-            { email: email } // L'email dell'utente
-          ],
-          subject: emailSubjects[lang] || emailSubjects['en'],
-          html: emailContents[lang] || emailContents['en']
-          // text: // Aggiungere versione testuale se necessario
-        };
-        const mailerSendApiKey = process.env.MAILERSEND_API_KEY;
-        if (!mailerSendApiKey) {
-          throw new Error('MAILERSEND_API_KEY non configurata');
-        }
-        await axios({
-          method: 'POST',
-          // URL API MailerSend
-          url: 'https://api.mailersend.com/v1/email', 
-          headers: {
-            'Content-Type': 'application/json',
-            // Autenticazione MailerSend
-            'Authorization': `Bearer ${mailerSendApiKey}` 
-          },
-          data: mailerSendPayload
-        });
-        
-        return {
-          statusCode: 200,
-          headers: { 
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Headers': 'Content-Type',
-            'Access-Control-Allow-Methods': 'POST, OPTIONS'
-          },
-          body: JSON.stringify({ success: true, message: lang === 'it' ? 'Email di conferma inviata.' : 'Confirmation email sent.' })
-        };
-      } catch (emailError) {
-        console.error("Errore invio MailerSend:", emailError.message, emailError.response?.data);
-        throw new Error('Failed to send confirmation email via MailerSend'); 
-      }
-      
-    } catch (searchError) {
-      // Errore specifico nella ricerca iscritto MailerLite
-      if (searchError.response && searchError.response.status === 404) {
-        const lang = language === 'en' ? 'en' : 'it';
-        return {
-          statusCode: 404,
-          headers: { 
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Headers': 'Content-Type',
-            'Access-Control-Allow-Methods': 'POST, OPTIONS'
-          },
-          body: JSON.stringify({ success: false, message: lang === 'it' ? 'Email non iscritta.' : 'Email not subscribed.' })
-        };
-      }
-      console.error("Errore ricerca MailerLite:", searchError.message);
-      throw searchError; // Rilancia altri errori di ricerca
     }
     
+    // Genera token che includa i dati da aggiornare
+    const updateData = {
+      email: data.email,
+      name: data.name || '',
+      last_name: data.last_name || '',
+      language: data.language || ''
+    };
+    console.log('Dati per token:', JSON.stringify(updateData));
+    
+    const token = generateToken(updateData);
+    console.log('Token generato (mostrati primi 15 caratteri):', token.substring(0, 15) + '...');
+    
+    // Costruisci URL di conferma
+    const baseUrl = process.env.URL || 'http://localhost:8888';
+    const confirmUrl = `${baseUrl}/.netlify/functions/process-profile-update?token=${token}`;
+    console.log('URL conferma generato');
+    
+    // Invia email di conferma
+    await sendEmail(
+      data.email, 
+      data.language || 'it', 
+      {
+        ...updateData,
+        confirm_url: confirmUrl
+      }
+    );
+    console.log('Email inviata con successo a:', data.email);
+    
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        success: true, 
+        message: data.language === 'en' ? 
+          'Check your email to confirm the profile update.' : 
+          'Controlla la tua email per confermare l\'aggiornamento del profilo.' 
+      })
+    };
+    
   } catch (error) {
-    // Errore generale o rilanciato
-    console.error("Errore generale request-profile-update:", error.message);
+    console.error('Errore durante l\'elaborazione:', error.message);
+    if (error.response) {
+      console.error('Dettagli errore API:', error.response.status, error.response.data);
+    }
+    
+    const errorMessage = error.message.includes('MAILERSEND_API_KEY') ?
+      'Errore di configurazione del server. Contattare l\'amministratore.' :
+      'Si è verificato un errore. Riprova più tardi.';
+    
     return {
       statusCode: 500,
-      headers: { 
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'POST, OPTIONS'
-      },
-      body: JSON.stringify({ success: false, message: 'Errore interno.' })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ success: false, message: errorMessage })
     };
   }
 }; 

@@ -366,7 +366,76 @@ cookie_policy_link_prefix:
 subscribe_to_newsletter:
   other: "Iscriviti alla newsletter"
 newsletter_subscribe_intro:
-  other: "Ogni giovedì, riceverai 1 strategia per scalare il tuo business, con suggerimenti, insights e risorse per aiutarti a implementarla"
+  other: "Ogni giovedì, riceverai 1 strategia per far crescere la tua azienda, con consigli, approfondimenti e risorse per aiutarti a implementarla"
 
 # Newsletter Popup
-newsletterPopupIntro: "Iscriviti per ricevere strategie per scalare il business nella tua email"
+newsletterPopupIntro: "Iscriviti per ricevere strategie di crescita aziendale nella tua casella di posta"
+
+# Email templates base
+email_title: "Messaggio da Adlimen Consulting"
+email_heading: "Informazioni Importanti"
+email_greeting: "Ciao%s,"
+email_main_text: "Grazie per il tuo interesse in Adlimen Consulting. Siamo qui per aiutarti a far crescere la tua azienda in modo sostenibile."
+email_button_text: "Scopri di Più"
+email_closing: "Cordiali saluti,"
+email_signature: "Matteo"
+email_rights: "Tutti i diritti riservati."
+email_privacy: "Privacy Policy"
+email_unsubscribe: "Cancellati"
+
+# Profile update template
+profile_update_title: "Conferma Aggiornamenti del Profilo"
+profile_update_preheader: "Conferma gli aggiornamenti del tuo profilo per The Scalability Compass"
+profile_update_heading: "Conferma Aggiornamenti del Profilo"
+profile_update_greeting: "Ciao%s,"
+profile_update_main_text: "Abbiamo ricevuto una richiesta di aggiornamento delle informazioni del tuo profilo per The Scalability Compass. Controlla le modifiche di seguito e conferma cliccando sul pulsante."
+profile_update_email_label: "Email"
+profile_update_updates_label: "Modifiche Richieste"
+profile_update_button: "Conferma Aggiornamenti"
+profile_update_expiry_note: "Questo link di conferma scadrà tra 24 ore per la tua sicurezza."
+profile_update_closing: "Se non hai richiesto queste modifiche, ignora questa email o contattaci per assistenza."
+profile_update_help_text: "Se hai problemi con il pulsante sopra, copia e incolla l'URL nel tuo browser web."
+
+# KPI tool confirmation
+kpi_confirm_title: "Il Tuo Download è Pronto"
+kpi_confirm_preheader: "Il tuo strumento di scalabilità è pronto per il download"
+kpi_confirm_heading: "Il Tuo Download è Pronto"
+kpi_confirm_greeting: "Ciao%s,"
+kpi_confirm_main_text: "Grazie per il tuo interesse nei nostri strumenti di scalabilità. Il tuo download è ora pronto. Clicca sul pulsante qui sotto per accedere al tuo file."
+kpi_confirm_preview_alt: "Anteprima Strumento"
+kpi_confirm_tool_name: "Strumento"
+kpi_confirm_email_label: "Email"
+kpi_confirm_button: "Scarica Ora"
+kpi_confirm_expiry_note: "Questo link di download scadrà tra 7 giorni."
+kpi_confirm_additional_info: "Speriamo che questo strumento ti aiuti a identificare opportunità per far crescere la tua azienda. Se hai domande su come utilizzarlo efficacemente, non esitare a rispondere a questa email."
+kpi_confirm_help_text: "Per qualsiasi assistenza con l'utilizzo di questo strumento, contatta il nostro team di supporto."
+
+# Sequence emails
+sequence_title: "The Scalability Compass | Approfondimenti"
+sequence_preheader: "Approfondimenti sulla crescita aziendale da Adlimen Consulting"
+sequence_greeting: "Ciao%s,"
+sequence_closing: "In attesa del tuo percorso di crescita,"
+sequence_unsubscribe_text: "Ricevi questa email perché hai scelto di ricevere i nostri approfondimenti sulla crescita aziendale. Rispettiamo la tua casella di posta."
+
+# Newsletter
+newsletter_issue: "Numero"
+newsletter_date: "Pubblicato il"
+newsletter_closing: "A presto,"
+newsletter_related_article: "Questa newsletter è basata sull'articolo:"
+newsletter_archive: "Visualizza nel Browser"
+
+# Email KPI download
+kpi_download_title: "Conferma Download KPI | Adlimen"
+kpi_download_heading: "Conferma il Download degli Indicatori KPI"
+kpi_download_greeting: "Ciao {{.}},"
+kpi_download_main_text: "Grazie per aver richiesto il nostro strumento KPI. Per completare il processo di download, conferma la tua richiesta cliccando sul pulsante qui sotto:"
+kpi_download_button_text: "Scarica Strumento KPI"
+kpi_title: "Dettagli del Download"
+kpi_benefits_title: "Vantaggi del Nostro Strumento KPI"
+kpi_benefits_1: "Monitora le metriche più importanti per la tua azienda"
+kpi_benefits_2: "Crea dashboard personalizzate in base alle tue esigenze"
+kpi_benefits_3: "Condividi analisi con il tuo team attraverso report visivi"
+kpi_benefits_4: "Prendi decisioni basate sui dati con sicurezza"
+kpi_expiry_note: "Questo link di download scadrà tra 48 ore per motivi di sicurezza."
+kpi_help_text: "Se il pulsante qui sopra non funziona, copia e incolla questo URL nel tuo browser:"
+kpi_closing: "Non vediamo l'ora di aiutarti a raggiungere i tuoi obiettivi aziendali con analisi basate sui dati."

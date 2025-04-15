@@ -4760,13 +4760,13 @@ tr:nth-child(even) {
 }
 
 /* Adatta il form dentro al popup */
-.newsletter-popup .newsletter-form {
+.newsletter-popup .newsletter-popup-form {
   border-bottom: none; /* Rimuovi bordo inferiore nel popup */
   flex-direction: column; /* Elementi in colonna */
   align-items: stretch; /* Allunga elementi */
 }
 
-.newsletter-popup .newsletter-form__input {
+.newsletter-popup .newsletter-popup-form .newsletter-form__input {
   width: 100%; /* Input a larghezza piena */
   margin-bottom: 0.5rem; /* Spazio sotto l'input */
   padding: 0.8rem;
@@ -4774,10 +4774,9 @@ tr:nth-child(even) {
   border-radius: 4px;
 }
 
-.newsletter-popup .newsletter-form__button {
+.newsletter-popup .newsletter-popup-form .newsletter-form__button {
   width: 100%; /* Pulsante a larghezza piena */
   padding: 0.8rem;
-  border-radius: 4px;
 }
 
 /* Assicurati che il contenuto interno del popup sia visibile */
@@ -5098,7 +5097,6 @@ tr:nth-child(even) {
     flex-shrink: 0;
     padding: 0.8rem 1.5rem;
     white-space: nowrap;
-    border-radius: 4px;
 }
 
 @media (max-width: 768px) {

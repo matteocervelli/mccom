@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ i18n "kpi_download_title" . }}</title>
+
+    <!--[if !mso]><!-->
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:400,500,600,700&family=Lora:400,500,600&display=swap');
+    </style>
+    <!--<![endif]-->
+
+    <style type="text/css" rel="stylesheet" media="all">
+        /* Base Styles */
+        body {
+            font-family: 'Raleway', Helvetica, Arial, sans-serif;
+            width: 100% !important;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: none;
+            background-color: #F5F5F5;
+            color: #1B2631;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 28px;
+            color: #1B2631;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Lora', Georgia, serif;
+            margin: 0 0 16px;
+            color: #1B2631;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+
+        a {
+            color: #008080;
+            text-decoration: none;
+        }
+
+        .small {
+            font-size: 14px;
+            line-height: 21px;
+            color: #B3B6B7;
+        }
+
+        /* Layout Components */
+        .ms-body {
+            background-color: #F5F5F5;
+            width: 100%;
+        }
+
+        .ms-container {
+            width: 100%;
+        }
+
+        .ms-content {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .ms-content-body {
+            padding: 50px 40px;
+        }
+
+        .ms-header, .ms-footer {
+            padding: 20px 0;
+        }
+
+        /* Button Styles */
+        .ms-button {
+            background-color: #008080;
+            color: #FFFFFF !important;
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+
+        .ms-button:hover {
+            background-color: #006666;
+        }
+
+        /* Info Box Styles */
+        .info-box {
+            background-color: #F8F9F9;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .benefits-list {
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        .benefits-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 640px) {
+            .ms-content {
+                width: 100% !important;
+            }
+
+            .ms-content-body {
+                padding: 40px 25px !important;
+            }
+
+            h1 {
+                font-size: 24px !important;
+                line-height: 32px !important;
+            }
+
+            .mobile-full-width {
+                width: 100% !important;
+            }
+
+            .mobile-center {
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<table class="ms-body" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+        <td align="center">
+
+            <table class="ms-container" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center">
+
+                        <table class="ms-header" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td height="40">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+
+                        <table class="ms-content" width="640" cellpadding="0" cellspacing="0" role="presentation">
+                            <tr>
+                                <td class="ms-content-body">
+
+                                    <p style="text-align: center">
+                                        <img src="https://cdn.adlimen.com/logos/adlimen-consulting/logo-horizontal.png" alt="Adlimen Consulting" width="200" style="max-width: 200px; height: auto;">
+                                    </p>
+
+                                    <h1>{{ i18n "kpi_download_heading" . }}</h1>
+
+                                    <p>{{ i18n "kpi_download_greeting" .Name }}</p>
+
+                                    <p>{{ i18n "kpi_download_main_text" . }}</p>
+
+                                    <!-- Pulsante Download KPI -->
+                                    <table width="100%" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tr>
+                                            <td align="center" style="padding: 20px 0;">
+                                                <table class="mobile-wide" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                                    <tr>
+                                                        <td align="center">
+                                                            <a href="{{.DownloadURL}}" target="_blank" class="ms-button">{{ i18n "kpi_download_button_text" . }}</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <!-- Sezione Vantaggi -->
+                                    <div class="info-box">
+                                        <h3>{{ i18n "kpi_benefits_title" . }}</h3>
+                                        <ul class="benefits-list">
+                                            <li>{{ i18n "kpi_benefits_1" . }}</li>
+                                            <li>{{ i18n "kpi_benefits_2" . }}</li>
+                                            <li>{{ i18n "kpi_benefits_3" . }}</li>
+                                            <li>{{ i18n "kpi_benefits_4" . }}</li>
+                                        </ul>
+                                    </div>
+
+                                    <p class="small">{{ i18n "kpi_expiry_note" . }}</p>
+
+                                    <p>{{ i18n "kpi_closing" . }}</p>
+
+                                    <!-- Fallback URL -->
+                                    <p class="small">
+                                        {{ i18n "kpi_help_text" . }}<br>
+                                        <a href="{{.DownloadURL}}" target="_blank">{{.DownloadURL}}</a>
+                                    </p>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+
+                        <table class="ms-footer" width="640" cellpadding="0" cellspacing="0" role="presentation">
+                            <tr>
+                                <td align="center" style="padding: 20px 0; text-align: center;" class="small">
+                                    <p>
+                                        &copy; {{ now.Format "2006" }} Adlimen. {{ i18n "email_rights" . }}
+                                    </p>
+                                    <p>
+                                        <a href="https://adlimen.com/privacy">{{ i18n "email_privacy" . }}</a> |
+                                        <a href="%unsubscribe_url%">{{ i18n "email_unsubscribe" . }}</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+</body>
+</html> 

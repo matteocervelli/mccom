@@ -3,7 +3,7 @@ title: "Profilo Aggiornato con Successo"
 date: 2025-04-15T10:00:00+02:00
 draft: false
 description: "Il tuo profilo newsletter è stato aggiornato con successo."
-layout: "single"
+layout: "minimal"
 ---
 
 Grazie per aver aggiornato il tuo profilo per la newsletter The Scalability Compass.
