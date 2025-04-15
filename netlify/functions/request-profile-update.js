@@ -3,95 +3,59 @@ const crypto = require('crypto');
 const handlebars = require('handlebars');
 const fs = require('fs');
 const path = require('path');
-const yaml = require('js-yaml');
+const jwt = require('jsonwebtoken');
+const { MailerSend, EmailParams, Recipient, Sender } = require('mailersend');
 
 // Log modulo caricato
 console.log('Modulo request-profile-update caricato');
 
-// Carica il template dell'email
-function loadEmailTemplate() {
-  try {
-    const templatePath = path.resolve(__dirname, '../../static/email-templates/profile-update-template.html');
-    const template = fs.readFileSync(templatePath, 'utf8');
-    return handlebars.compile(template);
-  } catch (error) {
-    console.error('Errore nel caricamento del template email:', error);
-    // Template fallback
-    const fallbackTemplate = `<!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="UTF-8">
-      <title>{{title}}</title>
-    </head>
-    <body>
-      <h1>{{heading}}</h1>
-      <p>{{greeting}}</p>
-      <p>{{main_text}}</p>
-      <div>
-        <p>Email: {{email}}</p>
-        <p>{{updates_label}}: {{#if name}}{{name}}{{/if}} {{#if last_name}}{{last_name}}{{/if}} {{#if language}}{{language}}{{/if}}</p>
-      </div>
-      <p><a href="{{confirm_url}}">{{button_text}}</a></p>
-      <p>{{expiry_note}}</p>
-      <p>{{closing}}</p>
-      <p>{{help_text}}<br>{{confirm_url}}</p>
-    </body>
-    </html>`;
-    return handlebars.compile(fallbackTemplate);
-  }
+// Helper per validare email
+function isValidEmail(email) {
+  const regex = /^[^ \s@]+@[^ \s@]+\.[^ \s@]+$/u;
+  return regex.test(String(email).toLowerCase());
 }
 
-// Funzione per caricare le traduzioni dal file YAML
-function loadTranslations() {
-  try {
-    const enPath = path.resolve(__dirname, '../../i18n/en.yaml');
-    const itPath = path.resolve(__dirname, '../../i18n/it.yaml');
-    
-    const enContent = fs.readFileSync(enPath, 'utf8');
-    const itContent = fs.readFileSync(itPath, 'utf8');
-    
-    // Parsing YAML
-    const enTranslations = yaml.load(enContent);
-    const itTranslations = yaml.load(itContent);
-    
+// Funzione per ottenere le traduzioni
+function getTranslations(language) {
+  // Traduzioni predefinite
+  if (language === 'it') {
     return {
-      en: enTranslations,
-      it: itTranslations
+      profile_update_title: { other: "Conferma Aggiornamenti del Profilo" },
+      profile_update_heading: { other: "Conferma Aggiornamenti del Profilo" },
+      profile_update_greeting: { other: "Ciao%s," },
+      profile_update_main_text: { other: "Abbiamo ricevuto una richiesta di aggiornamento delle informazioni del tuo profilo." },
+      profile_update_email_label: { other: "Email" },
+      profile_update_name_label: { other: "Nome" },
+      profile_update_last_name_label: { other: "Cognome" },
+      profile_update_language_label: { other: "Lingua" },
+      profile_update_updates_label: { other: "Modifiche richieste" },
+      profile_update_button: { other: "Conferma Modifiche" },
+      profile_update_expiry_note: { other: "Questo link di conferma scadrà tra 24 ore." },
+      profile_update_closing: { other: "Se non hai richiesto queste modifiche, ignora questa email." },
+      profile_update_help_text: { other: "Se hai problemi con il pulsante sopra, copia e incolla l'URL nel tuo browser web." },
+      email_rights: { other: "Tutti i diritti riservati." },
+      email_privacy: { other: "Informativa sulla Privacy" },
+      email_unsubscribe: { other: "Cancellati" }
     };
-  } catch (error) {
-    console.error('Errore nel caricamento delle traduzioni:', error);
-    // Fallback con traduzioni di base
+  } else {
+    // Inglese (default)
     return {
-      en: {
-        profile_update_title: { other: "Confirm Your Profile Updates" },
-        profile_update_heading: { other: "Confirm Profile Updates" },
-        profile_update_greeting: { other: "Hello%s," },
-        profile_update_main_text: { other: "We've received a request to update your profile information. Please review the changes below and confirm by clicking the button." },
-        profile_update_email_label: { other: "Email" },
-        profile_update_updates_label: { other: "Changes requested" },
-        profile_update_button: { other: "Confirm Updates" },
-        profile_update_expiry_note: { other: "This confirmation link will expire in 24 hours for your security." },
-        profile_update_closing: { other: "If you didn't request these changes, please ignore this email or contact us for assistance." },
-        profile_update_help_text: { other: "If you're having trouble with the button above, copy and paste the URL into your web browser." },
-        email_rights: { other: "All rights reserved." },
-        email_privacy: { other: "Privacy Policy" },
-        email_unsubscribe: { other: "Unsubscribe" }
-      },
-      it: {
-        profile_update_title: { other: "Conferma gli Aggiornamenti del Profilo" },
-        profile_update_heading: { other: "Conferma Aggiornamenti Profilo" },
-        profile_update_greeting: { other: "Ciao%s," },
-        profile_update_main_text: { other: "Abbiamo ricevuto una richiesta di aggiornamento delle informazioni del tuo profilo. Controlla le modifiche qui sotto e conferma cliccando il pulsante." },
-        profile_update_email_label: { other: "Email" },
-        profile_update_updates_label: { other: "Modifiche richieste" },
-        profile_update_button: { other: "Conferma Aggiornamenti" },
-        profile_update_expiry_note: { other: "Questo link di conferma scadrà tra 24 ore per la tua sicurezza." },
-        profile_update_closing: { other: "Se non hai richiesto queste modifiche, ignora questa email o contattaci per assistenza." },
-        profile_update_help_text: { other: "Se hai problemi con il pulsante sopra, copia e incolla l'URL nel tuo browser web." },
-        email_rights: { other: "Tutti i diritti riservati." },
-        email_privacy: { other: "Privacy Policy" },
-        email_unsubscribe: { other: "Cancellati" }
-      }
+      profile_update_title: { other: "Confirm Profile Updates" },
+      profile_update_heading: { other: "Confirm Profile Updates" },
+      profile_update_greeting: { other: "Hello%s," },
+      profile_update_main_text: { other: "We've received a request to update your profile information." },
+      profile_update_email_label: { other: "Email" },
+      profile_update_name_label: { other: "Name" },
+      profile_update_last_name_label: { other: "Last Name" },
+      profile_update_language_label: { other: "Language" },
+      profile_update_updates_label: { other: "Changes requested" },
+      profile_update_button: { other: "Confirm Updates" },
+      profile_update_expiry_note: { other: "This confirmation link will expire in 24 hours." },
+      profile_update_closing: { other: "If you didn't request these changes, please ignore this email." },
+      profile_update_help_text: { other: "If you're having trouble with the button above, copy and paste the URL into your web browser." },
+      email_rights: { other: "All rights reserved." },
+      email_privacy: { other: "Privacy Policy" },
+      email_unsubscribe: { other: "Unsubscribe" }
     };
   }
 }
@@ -114,162 +78,378 @@ function generateToken(payload) {
   return `${payloadBase64}.${signature}`;
 }
 
-// Funzione per inviare email tramite MailerSend
-async function sendEmail(to, lang, data) {
-  const mailersendApiKey = process.env.MAILERSEND_API_KEY;
-  if (!mailersendApiKey) {
-    console.error('MAILERSEND_API_KEY non configurata');
-    throw new Error('MAILERSEND_API_KEY non configurata');
-  }
-  
-  // Carica traduzioni
-  const translations = loadTranslations();
-  const i18n = lang.toLowerCase() === 'en' ? translations.en : translations.it;
-  
-  // Prepara il template
-  const compiledTemplate = loadEmailTemplate();
-  
-  // Estrai nome per il saluto personalizzato
+// Funzione per generare il template HTML dell'email
+function getEmailTemplate(data) {
+  // Template HTML di base
+  const template = `<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        body {
+            font-family: 'Raleway', Arial, sans-serif;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .logo {
+            max-width: 140px;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 50px 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        h1 {
+            font-family: 'Lora', Georgia, serif;
+            color: #008080;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        
+        .info-box {
+            background-color: #f5f5f5;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-item {
+            margin-bottom: 8px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            display: inline-block;
+            width: 100px;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #008080;
+            color: white !important;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .expire-note {
+            font-size: 14px;
+            color: #666666;
+            font-style: italic;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+            margin-top: 30px;
+        }
+        
+        .footer a {
+            color: #008080;
+            text-decoration: none;
+        }
+        
+        .url-fallback {
+            word-break: break-all;
+            font-size: 14px;
+            color: #666666;
+            margin-top: 15px;
+        }
+        
+        @media screen and (max-width: 480px) {
+            .content {
+                padding: 40px 25px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            .button {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <img src="https://adlimen.com/images/adlimen-logo.png" alt="Adlimen Logo" class="logo">
+        
+        <div class="content">
+            <h1>{{heading}}</h1>
+            <p>{{greeting}}</p>
+            <p>{{main_text}}</p>
+            
+            <div class="info-box">
+                <div class="info-item">
+                    <span class="info-label">{{email_label}}:</span>
+                    <span>{{email}}</span>
+                </div>
+                {{#if name}}
+                <div class="info-item">
+                    <span class="info-label">{{name_label}}:</span>
+                    <span>{{name}}</span>
+                </div>
+                {{/if}}
+                {{#if last_name}}
+                <div class="info-item">
+                    <span class="info-label">{{last_name_label}}:</span>
+                    <span>{{last_name}}</span>
+                </div>
+                {{/if}}
+                {{#if language}}
+                <div class="info-item">
+                    <span class="info-label">{{language_label}}:</span>
+                    <span>{{language}}</span>
+                </div>
+                {{/if}}
+            </div>
+            
+            <a href="{{confirm_url}}" class="button">{{button_text}}</a>
+            
+            <p class="expire-note">{{expiry_note}}</p>
+            <p>{{closing}}</p>
+            
+            <div class="url-fallback">
+                <p>{{help_text}}</p>
+                <p>{{confirm_url}}</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; ${new Date().getFullYear()} Adlimen. {{email_rights}}</p>
+            <p>
+                <a href="https://adlimen.com/it/privacy-policy/">{{email_privacy}}</a> | 
+                <a href="https://adlimen.com/it/newsletter/unsubscribe/">{{email_unsubscribe}}</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>`;
+
+  // Prepara le traduzioni basate sulla lingua
+  const lang = data.language?.toLowerCase() || 'en';
   const nameString = data.name ? ` ${data.name}` : '';
   
-  // Prepara i dati per il template
-  const templateData = {
-    title: i18n.profile_update_title?.other || "Profile Update",
-    heading: i18n.profile_update_heading?.other || "Confirm Profile Updates",
-    greeting: (i18n.profile_update_greeting?.other || "Hello%s,").replace('%s', nameString),
-    main_text: i18n.profile_update_main_text?.other || "We've received a request to update your profile information.",
+  // Traduzioni di base (fallback)
+  const translations = {
+    it: {
+      title: "Conferma Aggiornamenti del Profilo",
+      heading: "Conferma Aggiornamenti del Profilo",
+      greeting: `Ciao${nameString},`,
+      main_text: "Abbiamo ricevuto una richiesta di aggiornamento delle informazioni del tuo profilo.",
+      email_label: "Email",
+      name_label: "Nome",
+      last_name_label: "Cognome",
+      language_label: "Lingua",
+      updates_label: "Modifiche richieste",
+      button_text: "Conferma Aggiornamenti",
+      expiry_note: "Questo link di conferma scadrà tra 24 ore.",
+      closing: "Se non hai richiesto queste modifiche, ignora questa email.",
+      help_text: "Se hai problemi con il pulsante sopra, copia e incolla l'URL nel tuo browser web.",
+      email_rights: "Tutti i diritti riservati.",
+      email_privacy: "Privacy Policy",
+      email_unsubscribe: "Annulla iscrizione"
+    },
+    en: {
+      title: "Confirm Your Profile Updates",
+      heading: "Confirm Profile Updates",
+      greeting: `Hello${nameString},`,
+      main_text: "We've received a request to update your profile information.",
+      email_label: "Email",
+      name_label: "Name",
+      last_name_label: "Last Name",
+      language_label: "Language",
+      updates_label: "Changes requested",
+      button_text: "Confirm Updates",
+      expiry_note: "This confirmation link will expire in 24 hours.",
+      closing: "If you didn't request these changes, please ignore this email.",
+      help_text: "If you're having trouble with the button above, copy and paste the URL into your web browser.",
+      email_rights: "All rights reserved.",
+      email_privacy: "Privacy Policy",
+      email_unsubscribe: "Unsubscribe"
+    }
+  };
+  
+  // Seleziona le traduzioni corrette
+  const tr = translations[lang] || translations.en;
+  
+  // Sostituisci i placeholder nel template
+  const compiledTemplate = handlebars.compile(template);
+  return compiledTemplate({
+    title: tr.title,
+    heading: tr.heading,
+    greeting: tr.greeting,
+    main_text: tr.main_text,
+    email_label: tr.email_label,
+    name_label: tr.name_label,
+    last_name_label: tr.last_name_label,
+    language_label: tr.language_label,
+    updates_label: tr.updates_label,
     email: data.email,
-    updates_label: i18n.profile_update_updates_label?.other || "Changes requested",
     name: data.name,
     last_name: data.last_name,
     language: data.language,
     confirm_url: data.confirm_url,
-    button_text: i18n.profile_update_button?.other || "Confirm Updates",
-    expiry_note: i18n.profile_update_expiry_note?.other || "This confirmation link will expire in 24 hours.",
-    closing: i18n.profile_update_closing?.other || "If you didn't request these changes, please ignore this email.",
-    help_text: i18n.profile_update_help_text?.other || "If you're having trouble with the button above, copy and paste the URL into your web browser.",
-    email_rights: i18n.email_rights?.other || "All rights reserved.",
-    email_privacy: i18n.email_privacy?.other || "Privacy Policy",
-    email_unsubscribe: i18n.email_unsubscribe?.other || "Unsubscribe"
-  };
-  
-  // Genera il contenuto HTML dell'email
-  const emailHtml = compiledTemplate(templateData);
-  
-  // Costruisci il payload per MailerSend
-  const emailPayload = {
-    from: {
-      email: process.env.EMAIL_FROM || "no-reply@adlimen.com",
-      name: "Adlimen"
-    },
-    to: [
-      {
-        email: to,
-        name: data.name && data.last_name ? `${data.name} ${data.last_name}` : (data.name || to)
-      }
-    ],
-    subject: templateData.title,
-    html: emailHtml,
-    text: `${templateData.heading}\n\n${templateData.greeting}\n\n${templateData.main_text}\n\nEmail: ${data.email}\n${templateData.updates_label}: ${data.name || ''} ${data.last_name || ''} ${data.language || ''}\n\n${templateData.button_text}: ${data.confirm_url}\n\n${templateData.expiry_note}\n\n${templateData.closing}\n\n${templateData.help_text}\n${data.confirm_url}`
-  };
-  
-  // Rimuoviamo la logica per usare il template_id di MailerSend
-  // Usiamo sempre l'HTML generato localmente
-  return axios.post(
-    'https://api.mailersend.com/v1/email',
-    emailPayload,
-    {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${mailersendApiKey}`
-      }
-    }
-  );
+    button_text: tr.button_text,
+    expiry_note: tr.expiry_note,
+    closing: tr.closing,
+    help_text: tr.help_text,
+    email_rights: tr.email_rights,
+    email_privacy: tr.email_privacy,
+    email_unsubscribe: tr.email_unsubscribe
+  });
 }
 
-// Funzione handler della richiesta
-exports.handler = async (event, context) => {
-  console.log('Funzione request-profile-update invocata');
-  console.log('Metodo HTTP:', event.httpMethod);
-  console.log('Body presente:', !!event.body);
-  
-  if (event.httpMethod !== 'POST') {
-    console.log('Errore: metodo non consentito', event.httpMethod);
-    return {
-      statusCode: 405,
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ success: false, message: 'Metodo non consentito' })
-    };
-  }
-  
+// Funzione per inviare l'email di conferma
+async function sendEmail(data) {
   try {
-    // Estrai dati dalla richiesta
-    const data = JSON.parse(event.body);
-    console.log('Dati ricevuti:', JSON.stringify(data, null, 2));
+    console.log('Preparazione invio email a:', data.email);
     
-    // Validazione base
-    if (!data.email || !data.email.includes('@')) {
-      console.log('Errore: email non valida');
-      return {
-        statusCode: 400,
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ success: false, message: 'Email non valida' })
-      };
+    // Verifica presenza API key
+    if (!process.env.MAILERSEND_API_KEY) {
+      throw new Error('MAILERSEND_API_KEY non configurata');
     }
     
-    // Genera token che includa i dati da aggiornare
-    const updateData = {
-      email: data.email,
-      name: data.name || '',
-      last_name: data.last_name || '',
-      language: data.language || ''
-    };
-    console.log('Dati per token:', JSON.stringify(updateData));
+    const mailersend = new MailerSend({
+      api_key: process.env.MAILERSEND_API_KEY,
+    });
     
-    const token = generateToken(updateData);
-    console.log('Token generato (mostrati primi 15 caratteri):', token.substring(0, 15) + '...');
+    // Prepara il contenuto dell'email
+    const emailContent = getEmailTemplate(data);
     
-    // Costruisci URL di conferma
-    const baseUrl = process.env.URL || 'http://localhost:8888';
-    const confirmUrl = `${baseUrl}/.netlify/functions/process-profile-update?token=${token}`;
-    console.log('URL conferma generato');
+    // Configura i dettagli dell'email
+    const sentFrom = new Sender(process.env.EMAIL_FROM || "newsletter@adlimen.com", "Adlimen");
+    const recipients = [
+      new Recipient(data.email, `${data.name} ${data.last_name}`.trim())
+    ];
     
-    // Invia email di conferma
-    await sendEmail(
-      data.email, 
-      data.language || 'it', 
-      {
-        ...updateData,
-        confirm_url: confirmUrl
-      }
-    );
+    // Determina l'oggetto dell'email in base alla lingua
+    const subject = data.language === 'it' 
+      ? "Conferma Aggiornamenti del Profilo"
+      : "Confirm Your Profile Updates";
+    
+    // Crea l'email
+    const emailParams = new EmailParams()
+      .setFrom(sentFrom)
+      .setTo(recipients)
+      .setSubject(subject)
+      .setHtml(emailContent);
+    
+    // Invia l'email
+    console.log('Invio email in corso...');
+    const response = await mailersend.email.send(emailParams);
     console.log('Email inviata con successo a:', data.email);
     
     return {
-      statusCode: 200,
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ 
-        success: true, 
-        message: data.language === 'en' ? 
-          'Check your email to confirm the profile update.' : 
-          'Controlla la tua email per confermare l\'aggiornamento del profilo.' 
-      })
+      success: true,
+      message: `Email inviata con successo a: ${data.email}`
     };
     
   } catch (error) {
-    console.error('Errore durante l\'elaborazione:', error.message);
-    if (error.response) {
-      console.error('Dettagli errore API:', error.response.status, error.response.data);
+    console.error('Errore nell\'invio dell\'email:', error.message);
+    throw error;
+  }
+}
+
+// Funzione handler principale per gestire le richieste
+exports.handler = async (event, context) => {
+  // Verifica se la richiesta è di tipo POST
+  if (event.httpMethod !== "POST") {
+    return {
+      statusCode: 405,
+      body: JSON.stringify({ message: "Metodo non consentito" })
+    };
+  }
+
+  try {
+    // Ottieni i dati dal corpo della richiesta
+    const data = JSON.parse(event.body);
+    console.log('Dati ricevuti:', data);
+
+    // Controllo validità dell'email
+    if (!data.email || !isValidEmail(data.email)) {
+      console.log('Email invalida:', data.email);
+      return {
+        statusCode: 400,
+        body: JSON.stringify({ message: "Email non valida" })
+      };
     }
+
+    // Crea un token per il link di conferma
+    const payload = {
+      email: data.email,
+      name: data.name,
+      last_name: data.last_name,
+      language: data.language || 'en',
+      exp: Math.floor(Date.now() / 1000) + (60 * 60 * 24) // Scade dopo 24 ore
+    };
+
+    const token = generateToken(payload);
     
-    const errorMessage = error.message.includes('MAILERSEND_API_KEY') ?
-      'Errore di configurazione del server. Contattare l\'amministratore.' :
-      'Si è verificato un errore. Riprova più tardi.';
+    // URL base del sito
+    const baseUrl = process.env.URL || 'https://adlimen.com';
     
+    // Determina la lingua per il percorso dell'URL
+    const urlLang = data.language === 'it' ? '/it' : '';
+    
+    // Crea l'URL di conferma
+    const confirmationUrl = `${baseUrl}${urlLang}/newsletter/confirm-update/?token=${token}`;
+    
+    // Prepara i dati dell'email
+    const emailData = {
+      email: data.email,
+      name: data.name || '',
+      last_name: data.last_name || '',
+      language: data.language || 'en',
+      confirm_url: confirmationUrl
+    };
+
+    // Invia l'email
+    const result = await sendEmail(emailData);
+    console.log('Risultato invio email:', result);
+
+    // Risposta di successo
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: "Email di conferma inviata con successo" })
+    };
+  } catch (error) {
+    console.error('Errore nella gestione della richiesta:', error);
     return {
       statusCode: 500,
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ success: false, message: errorMessage })
+      body: JSON.stringify({ message: "Errore nella gestione della richiesta", error: error.message })
     };
   }
 }; 
