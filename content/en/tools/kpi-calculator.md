@@ -5,13 +5,13 @@ layout: "kpi-calculator"
 slug: "kpi-calculator-tool"
 translationKey: "kpi-calculator-tool"
 language: en
-date: 2024-07-27 # Page creation date
+date: 2025-04-14 # Page creation date
 draft: false # Set to false when ready for publishing
-tags: ['kpi', 'scalability', 'tool', 'business growth', 'dashboard']
+tags: ['kpi', 'scalability']
 categories: ['tools']
 
 # Specific parameters for the AIDA layout
-headline: "Are You Truly Scaling or Just Growing?"
+headline: "Are You Truly Scaling?"
 subheadline: "Revenue isn't enough. Download the Free Scalability KPI Dashboard to track the 5 KPIs that predict your TRUE ability to scale."
 
 # Attention

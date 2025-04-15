@@ -1,0 +1,50 @@
+{
+  "kpi-dashboard": {
+    "it": {
+      "title": "Scarica la Dashboard KPI di Scalabilità",
+      "description": "Utilizza questo strumento pratico per implementare immediatamente un sistema di misurazione efficace nella tua azienda e iniziare a monitorare la scalabilità in modo sistematico.",
+      "button_text": "Scarica Gratuitamente",
+      "url": "/it/tools/calcolatore-kpi-scalabilita/",
+      "tracking_id": "kpi-dashboard-article"
+    },
+    "en": {
+      "title": "Download the Scalability KPI Dashboard",
+      "description": "Use this practical tool to immediately implement an effective measurement system in your company and start monitoring scalability systematically.",
+      "button_text": "Download for Free",
+      "url": "/en/tools/kpi-calculator-tool/",
+      "tracking_id": "kpi-dashboard-article"
+    }
+  },
+  "scalability-score": {
+    "it": {
+      "title": "Scopri il Tuo Scalability Score",
+      "description": "Valuta rapidamente il potenziale di scalabilità della tua azienda attraverso un test strutturato che analizza i 12 fattori chiave che determinano la capacità di crescita sostenibile.",
+      "button_text": "Calcola il Tuo Scalability Score",
+      "url": "https://adlimen.com/it/services/scalability-score",
+      "tracking_id": "scalability-score-5-kpi-it"
+    },
+    "en": {
+      "title": "Discover Your Scalability Score",
+      "description": "Quickly assess your company's scalability potential through a structured test that analyzes the 12 key factors determining sustainable growth capacity.",
+      "button_text": "Calculate Your Scalability Score",
+      "url": "https://adlimen.com/en/services/scalability-score",
+      "tracking_id": "scalability-score-5-kpi-en"
+    }
+  },
+  "book-consultancy": {
+    "it": {
+      "title": "Prenota una Consulenza Gratuita",
+      "description": "Prenota una consulenza gratuita di 45 minuti per ricevere supporto personalizzato nell'implementare la Dashboard KPI di Scalabilità nella tua azienda.",
+      "button_text": "Prenota una Consulenza Gratuita",
+      "url": "https://adlimen.com/it/landing/prenota-consulenza/?utm_source=kpi_dashboard&utm_medium=thank_you_page&utm_campaign=tool_download&utm_content=calendly_cta",
+      "tracking_id": "book-consultancy-it"
+    },
+    "en": {
+      "title": "Book a Free Consultancy",
+      "description": "Book a free 45-minute consultancy to receive personalized support in implementing the Scalability KPI Dashboard in your business.",
+      "button_text": "Book a Free Consultancy",
+      "url": "https://adlimen.com/en/landing/book-consultancy/?utm_source=kpi_dashboard&utm_medium=thank_you_page&utm_campaign=tool_download&utm_content=calendly_cta",
+      "tracking_id": "book-consultancy-en"
+    }
+  }
+} 

@@ -11,5 +11,4 @@ draft: false
 tags: []
 categories: []
 featured_image: ""
-layout: posts
 --- 

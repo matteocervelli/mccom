@@ -8,7 +8,7 @@ language: en
 date: 2025-02-21T10:00:00+01:00
 lastmod: 2025-02-21T10:00:00+01:00
 draft: false
-tags: ['personal', 'business', 'transformation', 'family']
+tags: ['personal', 'purpose', 'family']
 categories: ['post']
 featured_image: "images/io-e-sara-velati.png"
 bsky: "https://bsky.app/profile/matteocervelli.com/post/3lioor4vpac2n"

@@ -8,7 +8,7 @@ language: it
 date: 2022-02-18
 Lastmod: 
 draft: false 
-tags: ['coaching', 'empathy', 'communication', 'guide']
+tags: ['coaching', 'empathy']
 categories: ['posts']
 featured_image: "images/empathy.jpg"
 bsky: "https://bsky.app/profile/matteocervelli.com/post/3lialqtfw6226"

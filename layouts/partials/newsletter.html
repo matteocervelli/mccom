@@ -1,5 +1,5 @@
 <div id="{{ if eq .Site.Language.Lang "en" }}mlb2-24760757{{ else }}mlb2-24694811{{ end }}" 
-     class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-{{ if eq .Site.Language.Lang "en" }}24760757{{ else }}24694811{{ end }}"
+     class="ml-form-embedContainer-newsletter ml-subscribe-form ml-subscribe-form-{{ if eq .Site.Language.Lang "en" }}24760757{{ else }}24694811{{ end }}"
      data-form-id="{{ if eq .Site.Language.Lang "en" }}24760757{{ else }}24694811{{ end }}"
      data-redirect-url="{{ if eq .Site.Language.Lang "en" }}{{ printf "/%s/newsletter/thank-you/" .Site.Language.Lang | absURL }}{{ else }}{{ printf "/%s/newsletter/grazie/" .Site.Language.Lang | absURL }}{{ end }}"
      data-tracker-url="{{ if eq .Site.Language.Lang "en" }}https://assets.mailerlite.com/jsonp/1430245/forms/151481753002837465/takel{{ else }}https://assets.mailerlite.com/jsonp/1430245/forms/151309607914964876/takel{{ end }}">
@@ -43,25 +43,39 @@
 <!-- End MailerLite Universal -->
 
 <script>
-  // Recupero i dati dagli attributi data-*
-  var container = document.querySelector('.ml-form-embedContainer');
-  var formId = container.getAttribute('data-form-id');
-  var redirectUrl = container.getAttribute('data-redirect-url');
-  var trackerUrl = container.getAttribute('data-tracker-url');
+  // Recupero i dati dagli attributi data-* specifici per questo container
+  var containerId = "{{ if eq .Site.Language.Lang "en" }}mlb2-24760757{{ else }}mlb2-24694811{{ end }}";
+  var container = document.getElementById(containerId);
   
-  // Definizione della funzione di successo
-  window["ml_webform_success_" + formId] = function() {
-    try {
-      window.top.location.href = redirectUrl;
-    } catch (e) {
-      window.location.href = redirectUrl;
+  if (container) {
+    var formId = container.getAttribute('data-form-id');
+    var redirectUrl = container.getAttribute('data-redirect-url');
+    var trackerUrl = container.getAttribute('data-tracker-url');
+    
+    // Definizione della funzione di successo solo se abbiamo trovato il container e i dati
+    if (formId && redirectUrl) {
+      window["ml_webform_success_" + formId] = function() {
+        try {
+          window.top.location.href = redirectUrl;
+        } catch (e) {
+          window.location.href = redirectUrl;
+        }
+      };
+    } else {
+      console.error("MailerLite config attributes not found for container: " + containerId);
     }
-  };
-  
-  // Tracciamento al caricamento della pagina
-  document.addEventListener("DOMContentLoaded", function() {
-    fetch(trackerUrl);
-  });
+    
+    // Tracciamento al caricamento della pagina
+    if (trackerUrl) {
+      document.addEventListener("DOMContentLoaded", function() {
+        fetch(trackerUrl).catch(error => console.error('Error fetching MailerLite tracker:', error));
+      });
+    } else {
+       console.error("MailerLite tracker URL not found for container: " + containerId);
+    }
+  } else {
+    console.error("MailerLite container not found with ID: " + containerId);
+  }
 </script>
 
 <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>

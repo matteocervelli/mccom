@@ -8,7 +8,7 @@ language: it
 date: 2022-02-11
 Lastmod: 
 draft: false 
-tags: ['leadership', 'learning-organization']
+tags: ['leadership']
 categories: ['posts']
 featured_image: ""
 ---

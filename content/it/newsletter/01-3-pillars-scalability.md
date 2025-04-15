@@ -2,7 +2,7 @@
 title: "I 3 Pilastri Fondamentali per la Scalabilità del Tuo Business"
 description: "Scopri come costruire un modello di business scalabile concentrandoti su Persone, Processi e Tecnologia, 
 ispirato al successo di Brunello Cucinelli"
-layout: "newsletter"
+layout: "single"
 issue_number: 1
 slug: "01-3-pilastri-scalabilita"
 translationKey: "01-3-pillars-scalability"
@@ -52,7 +52,7 @@ Identificare i colli di bottiglia nascosti tra questi tre pilastri è cruciale. 
 
 Compila il nostro ScalabilityScore. Ti aiuterà a identificare con precisione dove la tua azienda è forte e dove potrebbero nascondersi vulnerabilità che potrebbero limitare la tua crescita futura.
 
-**>> [Calcola il tuo ScalabilityScore](https://adlimen.com/it/services/scalability-score) <<**
+{{< tool-cta tool="scalability-score" style="primary" >}}
 
 Costruiamo insieme un'azienda che non solo cresce, ma prospera nel tempo.
 

@@ -62,16 +62,24 @@
             {{/* Implementazione del carosello di screenshot */}}
             <div class="screenshot-carousel swiper">
                 <div class="swiper-wrapper">
-                    {{ $imgsPath := "images/projects/scalability-kpi-dashboard/" }}
-                    {{ range $index, $i := (seq 1 10) }}
-                        {{ $paddedIndex := printf "%02d" $i }}
-                        {{ $imgPath := print $imgsPath "The Scalability KPI Dashboard - it_v1_0 - Google Sheets - " $paddedIndex ".jpg" }}
-                        {{ $exists := fileExists (print "static/" $imgPath) }}
-                        {{ if $exists }}
-                            <div class="swiper-slide">
-                                <img src="{{ $imgPath | relURL }}" alt="Scalability KPI Dashboard - Screenshot {{ $i }}" class="dashboard-screenshot">
-                            </div>
-                        {{ end }}
+                    {{ $cdnBaseUrl := "https://cdn.adlimen.com/tools/kpi-dashboard/" }}
+                    {{ $imageNames := slice 
+                        "scalability-kpi-01-welcome.jpg" 
+                        "scalability-kpi-02-dashboard.jpg" 
+                        "scalability-kpi-03-ltv-cac.jpg" 
+                        "scalability-kpi-04-ltv-cac.jpg" 
+                        "scalability-kpi-05-ccc.jpg" 
+                        "scalability-kpi-06-margine.jpg" 
+                        "scalability-kpi-07-processi-std.jpg" 
+                        "scalability-kpi-08-talenti.jpg" 
+                        "scalability-kpi-09-storici.jpg" 
+                        "scalability-kpi-10-guide.jpg" 
+                    }}
+                    {{ range $index, $imageName := $imageNames }}
+                        {{ $imgPath := print $cdnBaseUrl $imageName }}
+                        <div class="swiper-slide">
+                            <img src="{{ $imgPath }}" alt="Scalability KPI Dashboard - Screenshot {{ add $index 1 }}" class="dashboard-screenshot">
+                        </div>
                     {{ end }}
                 </div>
                 <div class="swiper-pagination"></div>
@@ -98,13 +106,12 @@
             {{ end }}
 
             <div id="{{ if eq .Site.Language.Lang "en" }}mlb2-kpi-download-en{{ else }}mlb2-kpi-download-it{{ end }}" 
-                 class="ml-form-embedContainer ml-subscribe-form"
+                 class="ml-form-embedContainer-kpi-download ml-subscribe-form"
                  data-form-id="{{ if eq .Site.Language.Lang "en" }}kpidownload-en{{ else }}kpidownload-it{{ end }}"
                  data-redirect-url="{{ if eq .Site.Language.Lang "en" }}{{ printf "/%s/tools/kpi-thank-you/" .Site.Language.Lang | absURL }}{{ else }}{{ printf "/%s/tools/kpi-grazie/" .Site.Language.Lang | absURL }}{{ end }}"
                  data-tracker-url="{{ if eq .Site.Language.Lang "en" }}https://assets.mailerlite.com/jsonp/1430245/forms/kpidownload-en/takel{{ else }}https://assets.mailerlite.com/jsonp/1430245/forms/kpidownload-it/takel{{ end }}">
-              <div style="max-width: 32em; margin: 0 auto 2em auto;"> 
                 <form id="kpi-download-form" 
-                  class="newsletter-form kpi-download-form" 
+                  class="kpi-download-form" 
                   action="{{ if eq .Site.Language.Lang "en" }}https://static.mailerlite.com/webforms/submit/kpidownload-en{{ else }}https://static.mailerlite.com/webforms/submit/kpidownload-it{{ end }}"
                   method="post" 
                   aria-label="{{ if eq .Site.Language.Lang "en" }}Download form{{ else }}Form di download{{ end }}">
@@ -133,7 +140,6 @@
                 <small style="display: block; text-align: center; margin-top: 0.5rem; color: var(--color-tx-muted);">
                   {{ if eq .Site.Language.Lang "en" }}We respect your privacy. Unsubscribe at any time.{{ else }}Rispettiamo la tua privacy. Puoi cancellare l'iscrizione in qualsiasi momento.{{ end }}
                 </small>
-              </div>
             </div>
             
             <script>

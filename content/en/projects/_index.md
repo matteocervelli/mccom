@@ -12,7 +12,6 @@ tags: []
 categories: ['page', 'work']
 featured_image: ""
 bsky: false
-layout: projects
 ---
 
 Each case study represents a unique challenge and solution. Here you'll find detailed accounts of projects I've led, problems I've solved, and the measurable impact achieved for my clients.

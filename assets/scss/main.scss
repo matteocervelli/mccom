@@ -1,0 +1,16 @@
+// Se il file non esiste, verranno creati i contenuti iniziali
+
+// Importa le variabili e le impostazioni base
+@import "variables";
+@import "base";
+
+// Importa i componenti
+@import "components/tool-cta";
+
+// Importa i layout
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/pages";
+
+// Importa utility
+@import "utilities"; 

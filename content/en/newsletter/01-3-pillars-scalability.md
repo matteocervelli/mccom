@@ -1,7 +1,7 @@
 ---
 title: "The 3 Pillars of Business Scalability"
 description: "Discover the foundational elements needed to scale your business effectively: People, Processes, and Technology."
-layout: "newsletter"
+layout: "single"
 issue_number: 1
 slug: "01-3-pillars-scalability"
 translationKey: "01-3-pillars-scalability"
@@ -52,7 +52,7 @@ Identifying hidden bottlenecks among these three pillars is crucial. To help you
 
 Complete our ScalabilityScore. It will help you pinpoint exactly where your company is strong and where vulnerabilities might be hiding that could limit your future growth.
 
-**>> [Calculate your ScalabilityScore](https://adlimen.com/en/services/scalability-score) <<**
+{{< tool-cta tool="scalability-score" style="primary" >}}
 
 Let's build a company together that not only grows, but thrives over time.
 

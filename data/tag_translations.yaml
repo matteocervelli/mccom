@@ -68,3 +68,15 @@ tags:
   transformation:
     en: transformation
     it: trasformazione
+  kpi:
+    en: kpi
+    it: kpi
+  tool:
+    en: tool
+    it: strumento
+  dashboard:
+    en: dashboard
+    it: dashboard
+  scalability-score:
+    en: scalability score
+    it: punteggio di scalabilità

@@ -8,7 +8,7 @@ language: it
 date: 2024-03-21
 lastmod: 2024-03-21
 draft: false
-tags: ["purpose and vision"]
+tags: ['purpose']
 categories: ['about', 'page']
 featured_image: ""
 bsky: false

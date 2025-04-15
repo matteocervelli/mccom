@@ -584,15 +584,17 @@ nav {
   border-bottom: 1px solid var(--color-highlight);
   font-family: 'Raleway', sans-serif;
   font-size: var(--font-size-normal);
+  width: 100%; /* Assicura che il form occupi il contenitore */
 }
 
 .newsletter-form__input {
-  width: 75%;
+  flex-grow: 1; /* Fa espandere l'input per occupare spazio */
   background-color: transparent;
   border: none;
   font-family: 'Raleway', sans-serif;
   font-size: var(--font-size-normal);
   color: var(--color-tx-normal);
+  min-width: 0; /* Permette all'input di restringersi se necessario */
 }
 
 .newsletter-form__input::placeholder {
@@ -605,7 +607,6 @@ nav {
 }
 
 .newsletter-form__button {
-  width: 25%;
   padding: 0.5rem;
   text-align: center;
   border: none;
@@ -4785,6 +4786,9 @@ tr:nth-child(even) {
   max-width: 100% !important; /* Rimuovi max-width ereditato */
 }
 
+.ml-form-embedContainer .newsletter-form {
+  border-bottom: 1px solid var(--color-highlight);
+}
 
 /* Responsive Popup Newsletter */
 @media (max-width: 860px) {
@@ -4817,11 +4821,6 @@ tr:nth-child(even) {
   margin: 0 auto;
   position: relative;
   z-index: 10;
-}
-
-@media (min-width: 768px) {
-  .newsletter-single .hero-container {
-  }
 }
 
 .newsletter-single .hero-content {
@@ -5048,27 +5047,58 @@ tr:nth-child(even) {
     }
 }
 
-/* Stili per il form di download KPI Dashboard */
-.form-row {
+/* Stili specifici per il form di download KPI Dashboard */
+.kpi-download-form {
+    margin: 1rem auto; /* Centra e aggiunge margine sopra/sotto */
+    max-width: 600px; /* Limitato la larghezza massima */
+}
+
+.kpi-download-form .form-row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.5rem;
     margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-highlight);
+    align-items: stretch;
+    width: 100%; /* Assicura che la riga occupi il form */
 }
 
-.form-row .newsletter-form__input {
-    flex: 1;
-    min-width: 200px;
+.ml-form-embedContainer-kpi-download {
+  margin: 2em auto;
+} 
+
+.ml-form-embedContainer-newsletter {
+  max-width: 24em; 
+  margin: 2em auto;
+} 
+
+.newsletter-form .newsletter-form__input {
+  width: 75%;
 }
 
-.form-group {
-    margin-bottom: 1rem;
-    width: 100%;
+.newsletter-form .newsletter-form__button {
+  width: 25%;
 }
 
-.kpi-download-form {
-    margin: 0 auto;
-    max-width: 100%;
+.kpi-download-form .newsletter-form__input {
+    flex-grow: 1;
+    min-width: 0;
+    padding: 0.8rem;
+    border: none; /* Rimosso bordo generico */
+    border-radius: 0; /* Rimosso radius se c'è bordo solo sotto */
+    background-color: transparent; /* Sfondo trasparente */
+}
+
+.kpi-download-form .newsletter-form__input:focus {
+    outline: none; /* Rimuovi outline al focus */
+    border-bottom-color: var(--color-highlight-faint); /* Cambia colore bordo al focus */
+}
+
+.kpi-download-form .newsletter-form__button {
+    flex-shrink: 0;
+    padding: 0.8rem 1.5rem;
+    white-space: nowrap;
+    border-radius: 4px;
 }
 
 @media (max-width: 768px) {
@@ -5087,7 +5117,142 @@ tr:nth-child(even) {
         font-size: 14px;
     }
     
-    .form-row {
+    /* Imposta flex-direction: column per il form KPI su mobile */
+    .kpi-download-form .form-row {
         flex-direction: column;
+        flex-wrap: wrap; /* Assicura che non ci sia bordo sulla riga in mobile */
+        border-bottom: 1px solid var(--color-highlight);
     }
+
+    /* Assicura che input e bottone prendano larghezza piena in colonna */
+    .kpi-download-form .newsletter-form__input,
+    .kpi-download-form .newsletter-form__button {
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 1;
+        min-width: auto;
+    }
+
+    .kpi-download-form .newsletter-form__button {
+        font-size: var(--font-size-normal); /* Ripristina font size normale */
+        padding: 0.8rem 1.5rem; /* Ripristina padding normale */
+    }
+}
+
+.tool-cta {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  background-color: rgba(var(--mc-purple-rgb), 0.1);
+  border: 1px solid var(--mc-purple-light);
+  text-align: center;
+
+  h3 {
+    margin-top: 0;
+    color: var(--color-highlight);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: var(--mc-purple);
+    color: var(--mc-white);
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  
+  /* Primary style per la sezione CTA (che contiene il form) */
+  &.cta-section {
+    background-color: rgba(var(--mc-purple-rgb), 0.1);
+    border: none; /* RIMOSSO il bordo generale della sezione */
+    text-align: center;
+  }
+
+  /* Secondary style */
+  &.secondary {
+    background-color: rgba(var(--mc-peach-dark-rgb), 0.3);
+    border: 1px solid var(--mc-peach-dark);
+    text-align: center;
+    
+    h3 {
+      color: var(--color-tx-faint);
+    }
+
+    .cta-button {
+      background-color: var(--mc-peach-dark);
+      color: var(--color-tx-faint);
+      
+      &:hover {
+        background-color: var(--mc-gray-dark);
+      }
+    }
+  }
+} 
+
+/* Newsletter Profile Form (Confirmed Page) */
+.newsletter-profile-form-wrapper {
+  max-width: 24em;
+  margin: 2em auto;
+}
+
+.newsletter-profile-form {
+  display: flex;
+  flex-direction: column; /* Elementi in colonna */
+  gap: 1rem; /* Spazio tra gli elementi */
+}
+
+.newsletter-profile-form__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-highlight); /* Solo bordo inferiore */
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--font-size-normal);
+  color: var(--color-tx-normal);
+  padding: 0.8rem 0.2rem; /* Padding verticale e piccolo orizzontale */
+  width: 100%;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.newsletter-profile-form__input::placeholder {
+  color: var(--color-tx-muted);
+  opacity: 0.7;
+}
+
+.newsletter-profile-form__input:focus {
+  outline: none;
+  border-bottom-color: var(--color-highlight-faint);
+}
+
+.newsletter-profile-form__button {
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  color: var(--mc-white);
+  background-color: var(--color-highlight);
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--font-size-normal);
+  transition: all 0.15s ease-in-out;
+  margin-top: 0.5rem; /* Spazio sopra il pulsante */
+}
+
+.newsletter-profile-form__button:hover {
+  background-color: var(--color-highlight-faint);
+  transform: translateY(-1px);
+}
+
+.newsletter-profile-form__note {
+  display: block; 
+  text-align: center; 
+  margin-top: 1rem; /* Aumentato spazio sopra la nota */
+  color: var(--color-tx-muted);
+  font-size: var(--font-size-sm);
 }

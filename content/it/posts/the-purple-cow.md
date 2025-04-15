@@ -8,8 +8,8 @@ language: it
 date: 2025-01-26T09:52:29+01:00
 Lastmod: 
 draft: false 
-tags: ['book-review', 'marketing', 'business', 'strategy']
-categories: ['posts']
+tags: ['marketing', 'business', 'strategy']
+categories: ['posts', 'book-review']
 featured_image: "images/the-purple-cow.jpg"
 bsky: false
 ---

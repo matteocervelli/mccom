@@ -1,0 +1,70 @@
+{{ $action := .Get "action" }}
+{{ $language := .Get "language" | default "en" }}
+{{ $formId := .Get "formId" }}
+
+{{ $placeholders := dict
+  "it" (dict "name" "Il tuo nome" "lastname" "Il tuo cognome (opzionale)")
+  "en" (dict "name" "Your first name" "lastname" "Your last name (optional)")
+}}
+{{ $labels := dict
+  "it" (dict "name" "Inserisci il tuo nome" "lastname" "Inserisci il tuo cognome" "submit" "Salva le mie informazioni" "note" "Questo passaggio è opzionale ma ci aiuta a personalizzare la tua esperienza.")
+  "en" (dict "name" "Enter your first name" "lastname" "Enter your last name" "submit" "Save my information" "note" "This step is optional but helps us personalize your experience.")
+}}
+
+{{ $currentPlaceholders := index $placeholders $language }}
+{{ $currentLabels := index $labels $language }}
+
+<div id="mlb2-{{ $formId }}" 
+     class="ml-form-embedContainer ml-subscribe-form newsletter-profile-form-wrapper">
+  <form id="profile-completion-form-{{ $formId }}" 
+        class="newsletter-profile-form" 
+        action="{{ $action }}"
+        method="post" 
+        target="_blank"
+        data-form-id="{{ $formId }}"
+        data-language="{{ $language }}"
+        data-label-submit="{{ $currentLabels.submit }}"
+        data-msg-submitting='{{ T "submitting" "Submitting..." }}'
+        data-msg-success-prefix='{{ T (printf "form_success_prefix_%s" $language) (T "form_success_prefix" "Thank you,") }}'
+        data-msg-success-fallback='{{ T (printf "form_success_fallback_name_%s" $language) (T "form_success_fallback_name" "subscriber") }}'
+        data-msg-success-suffix='{{ T (printf "form_success_suffix_%s" $language) (T "form_success_suffix" "Your information has been saved.") }}'
+        data-msg-error='{{ T (printf "form_error_%s" $language) (T "form_error" "An error occurred. Please try again.") }}'
+        data-msg-error-missing-email='{{ T (printf "form_error_missing_email_%s" $language) (T "form_error_missing_email" "Could not identify user. Please try again from the confirmation link.") }}'>
+
+    <input type="text" 
+           name="fields[name]"
+           placeholder="{{ $currentPlaceholders.name }}"
+           class="newsletter-profile-form__input" 
+           aria-label="{{ $currentLabels.name }}"
+           autocomplete="given-name">
+
+    <input type="text" 
+           name="fields[last_name]"
+           placeholder="{{ $currentPlaceholders.lastname }}"
+           class="newsletter-profile-form__input" 
+           aria-label="{{ $currentLabels.lastname }}"
+           autocomplete="family-name">
+
+    <input type="hidden" name="fields[language]" value="{{ $language }}">
+    <input type="hidden" name="ml-submit" value="1">
+    <input type="hidden" name="anticsrf" value="true">
+    
+    <button type="submit"
+            class="newsletter-profile-form__button" 
+            aria-label="{{ $currentLabels.submit }}">
+      {{ $currentLabels.submit }}
+    </button>
+  </form>
+  <small class="newsletter-profile-form__note">{{ $currentLabels.note }}</small>
+</div>
+
+{{/* Include and process the JavaScript file */}}
+{{ $script := resources.Get "js/newsletter-profile-form.js" }}
+{{ if $script }}
+  {{ if hugo.IsProduction }}
+    {{ $script = $script | resources.Minify | resources.Fingerprint }}
+  {{ end }}
+  <script src="{{ $script.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $script.Data.Integrity }}"{{ end }} defer></script>
+{{ else }}
+  {{ warnf "JavaScript file not found: js/newsletter-profile-form.js" }}
+{{ end }} 

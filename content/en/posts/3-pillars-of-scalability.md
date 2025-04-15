@@ -93,15 +93,15 @@ This is the result of Cucinelli's beauty: when you hold something beautiful, you
 
 ## Identifying Hidden Bottlenecks
 
-Having the three pillars well-defined is not enough, because there are always hidden elements that hinder sustainable growth. These "bottlenecks" are like small invisible obstacles, similar to a loose screw preventing a racing car's engine from reaching its full potential.
+Having well-defined pillars is not enough, because there are always hidden elements that hold back sustainable growth. These "bottlenecks" are like small invisible obstacles, similar to a loose screw that prevents a race car engine from expressing its full potential.
 
-To help you identify these bottlenecks, I have a practical tool: the Scalability Self-Assessment Matrix. This tool, based on the three pillars, allows you to systematically explore your company, clearly highlighting where to intervene to optimize your ability to scale.
+![Signs of bottlenecks](/images/segnali-collo-bottiglia.png)
 
-<a href="https://adlimen.com/en/services/scalability-score" class="mc-button" id="scalability-score" data-umami-event="scalability-score-3-pillars-en">
-    Calculate your scalability score
-</a>
+To help you identify these bottlenecks, I have a practical tool: the Scalability Self-Assessment Matrix. This tool, based on the three pillars, allows you to systematically explore your company, clearly revealing where to intervene to optimize your ability to scale.
 
-Scalability is not a goal to be reached once and for all, but a continuous journey. It requires constant attention, care, and the ability to adapt to changes. But it is precisely in this balance between people, processes, and technology that truly sustainable growth is born, ready to last over time and leave a mark.
+Scalability is not a goal to be achieved once and for all, but a continuous journey. It requires constant attention, care, and the ability to adapt to changes. But it is precisely in this balance between people, processes, and technology that truly sustainable growth is born, ready to last over time and make a mark.
+
+{{< tool-cta tool="scalability-score" style="primary" >}}
 
 I leave you with a question that I hope accompanies you on this path: which of the three pillars currently represents the greatest limitation to your growth? And what can you do, starting today, to begin overcoming it?
 

@@ -9,7 +9,6 @@ lastmod: 2025-04-13T10:00:00+02:00
 draft: false
 tags: []
 categories: ['page']
-layout: newsletter-list
 ---
 
 {{< newsletter-enhancer >}}

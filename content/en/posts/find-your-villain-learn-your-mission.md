@@ -8,7 +8,7 @@ language: en
 date: 2024-04-17T00:00:00+01:00
 Lastmod: 
 draft: false 
-tags: ['purpose', 'mission', 'lessons-learned']
+tags: ['purpose', 'lessons-learned']
 categories: ['posts']
 featured_image: "images/find-your-villain-learn-your-mission.jpg"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How to Predict Your Company's Growth Potential (Before It's Too Late)"
 description: "Discover the 5 predictive KPIs that reveal your company's true ability to scale sustainably, moving beyond simple revenue."
-layout: "newsletter"
+layout: "single"
 issue_number: 2
 slug: "02-predicting-growth-potential"
 translationKey: "02-predicting-growth-potential"
@@ -43,13 +43,13 @@ Many overlook this indicator, thinking it's just an administrative issue. Howeve
 
 The light at the end of the tunnel is a complete view of your ability to scale. These three indicators (Gross Margin for operational efficiency, % Standardized Processes for replicability, % Talent Retention for know-how) complete the picture. Together with the first two, they form a predictive dashboard. A manufacturing SME used this complete system to correct inefficiencies and high talent turnover hidden behind growing revenue, doubling both profitability and revenue in the following two years.
 
----
+{{< img-caption src="https://cdn.adlimen.com/tools/kpi-dashboard/scalability-kpi-dashboard.png" alt="A screenshot from the Scalability KPI Dashboard Tool" caption="The Scalability KPI Dashboard Tool" >}}
 
 **Want to start monitoring these 5 predictive KPIs right away?**
 
 I've created a simple yet powerful dashboard that you can customize for your company. It allows you to track all these indicators in one place and immediately identify where action is needed.
 
-**[DOWNLOAD THE ESSENTIAL KPI DASHBOARD →](https://docs.google.com/spreadsheets/d/1J9raN6pQozafV3NSC_sJLqLfI6gq15LmILzyG45WnUM/edit?usp=sharing)** (Note: The template is the same, the link points to it)
+{{< tool-cta tool="kpi-dashboard" style="primary" >}}
 
 Measuring is the first step to improving. Don't miss the opportunity to build solid foundations for your business.
 

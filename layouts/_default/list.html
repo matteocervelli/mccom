@@ -6,7 +6,8 @@
         {{ .Content }}
       </section>
       <ul class="posts-list">
-        {{ range .Paginator.Pages }}
+        {{ $filteredPages := where .Paginator.Pages "Params.layout" "ne" "minimal" }}
+        {{ range $filteredPages }}
           <li>
             <span class="post-date">{{ .Date.Format "2006/01" }}</span>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>

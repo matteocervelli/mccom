@@ -1,0 +1,57 @@
+/* Tool CTA Component */
+.tool-cta {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  
+  h3 {
+    margin-top: 0;
+    color: var(--color-highlight);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  
+  /* Primary style */
+  &.primary {
+    background-color: rgba(var(--mc-purple-rgb), 0.1);
+    border: 1px solid var(--mc-purple-light);
+    text-align: center;
+    
+    .cta-button {
+      background-color: var(--mc-purple);
+      color: var(--mc-white);
+      
+      &:hover {
+        background-color: var(--mc-purple-dark);
+      }
+    }
+  }
+  
+  /* Secondary style */
+  &.secondary {
+    background-color: rgba(var(--mc-gray-rgb), 0.05);
+    border: 1px solid var(--mc-gray-light);
+    text-align: left;
+    
+    .cta-button {
+      background-color: var(--mc-gray);
+      color: var(--mc-white);
+      
+      &:hover {
+        background-color: var(--mc-gray-dark);
+      }
+    }
+  }
+} 

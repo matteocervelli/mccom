@@ -12,7 +12,6 @@ tags: []
 categories: ['page', 'work']
 featured_image: ""
 bsky: false
-layout: projects
 ---
 
 Ogni caso studio rappresenta una sfida e una soluzione unica. Qui troverai resoconti dettagliati dei progetti che ho guidato, dei problemi che ho risolto e dell'impatto misurabile ottenuto per i miei clienti.

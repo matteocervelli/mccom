@@ -1,7 +1,7 @@
 ---
 title: "Come Prevedere il Potenziale di Crescita della Tua Azienda (Prima che sia Troppo Tardi)"
 description: "Scopri i 5 KPI predittivi che rivelano la reale capacità della tua azienda di scalare in modo sostenibile, superando la semplice metrica del fatturato."
-layout: "newsletter"
+layout: "single"
 issue_number: 2
 slug: "02-prevedere-potenziale-crescita"
 translationKey: "02-predicting-growth-potential"
@@ -43,13 +43,13 @@ Molti imprenditori commettono l'errore di ignorare questo indicatore, pensando c
 
 Stai per raggiungere la visione completa della tua capacità di scalare. Questi tre indicatori complementano i primi due, permettendoti di costruire un cruscotto completo che predice il tuo potenziale di crescita. Una PMI manifatturiera ha utilizzato questo sistema per identificare che, nonostante un fatturato in crescita, stava perdendo efficienza operativa e talenti chiave, permettendole di correggere il tiro prima di una crisi e raddoppiare non solo il fatturato ma anche la redditività nei due anni successivi.
 
----
+{{< img-caption src="https://cdn.adlimen.com/tools/kpi-dashboard/scalability-kpi-dashboard.png" alt="Uno screenshot dalla Dashboard dello Scalability KPI Tool" caption="Lo Scalability KPI Dashboard Tool" >}}
 
 **Vuoi iniziare subito a monitorare questi 5 KPI predittivi?**
 
 Ho creato una dashboard semplice ma potente che puoi personalizzare per la tua azienda. Ti permette di monitorare tutti questi indicatori in un unico luogo e identificare immediatamente dove intervenire.
 
-**[SCARICA LA DASHBOARD DEI KPI ESSENZIALI →](https://docs.google.com/spreadsheets/d/1J9raN6pQozafV3NSC_sJLqLfI6gq15LmILzyG45WnUM/edit?usp=sharing)**
+{{< tool-cta tool="kpi-dashboard" style="primary" >}}
 
 Misurare è il primo passo per migliorare. Non perdere l'opportunità di costruire fondamenta solide per il tuo business.
 

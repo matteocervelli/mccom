@@ -5,13 +5,13 @@ layout: "kpi-calculator"
 slug: "calcolatore-kpi-scalabilita"
 translationKey: "kpi-calculator-tool"
 language: it
-date: 2024-07-27 # Data di creazione della pagina
+date: 2025-04-14 # Data di creazione della pagina
 draft: false # Imposta a false quando è pronta per la pubblicazione
-tags: ['kpi', 'scalability', 'tool', 'crescita aziendale', 'dashboard']
+tags: ['kpi', 'scalability']
 categories: ['tools']
 
 # Parametri specifici per il layout AIDA
-headline: "Stai Scalando Davvero o Stai Solo Crescendo?"
+headline: "Stai Scalando Davvero?"
 subheadline: "Il fatturato non basta. Scarica la Scalability KPI Dashboard Gratuita per monitorare i 5 KPI che predicono la tua VERA capacità di scalare."
 
 # Attention

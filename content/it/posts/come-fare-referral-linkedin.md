@@ -8,8 +8,8 @@ language: it
 date: 2024-04-19T16:00:00+01:00
 lastmod: 2025-02-19T16:00:00+01:00
 draft: false
-tags: ['guide']
-categories: ['Work', 'Post']
+tags: []
+categories: ['Work', 'Post', 'guide']
 featured_image: ""
 ---
 

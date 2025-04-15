@@ -211,6 +211,8 @@ La chiave per una crescita sostenibile è avere una visione d'insieme, non focal
 
 Per questo ti invito a costruire una dashboard bilanciata che includa questi 5 KPI.
 
+{{< img-caption src="https://cdn.adlimen.com/tools/kpi-dashboard/scalability-kpi-dashboard.png" alt="Uno screenshot dalla Dashboard dello Scalability KPI Tool" caption="Lo Scalability KPI Dashboard Tool" >}}
+
 In questo modo potrai:
 
 - Prevedere potenziali criticità prima che impattino il fatturato
@@ -218,23 +220,9 @@ In questo modo potrai:
 - Bilanciare la crescita a breve termine con la sostenibilità a lungo termine
 - Creare una cultura aziendale orientata non solo ai risultati, ma ai parametri e alle scelte che li rendono possibili
 
-## Tool: Il Tuo Cruscotto di KPI Essenziali
+{{< tool-cta tool="kpi-dashboard" style="primary" >}}
 
-Per aiutarti a iniziare subito, ho creato un template semplice ma potente. Puoi utilizzarlo con Excel o Google Sheets:
-
-| KPI | Formula Semplificata | Target Ideale | Valore Attuale | Trend | Note/Azioni |
-|:--|:--|:--|:--|:--|:--|
-| **LTV/CAC** | Valore Totale Cliente / Costo Acquisizione | > 3 | [Inserisci] | [su/giù/stabile] | [Es: "Ottimizzare campagne"] |
-| **CCC (giorni)** | Giorni (Magazzino + Crediti - Debiti) | < 60 | [Inserisci] | [su/giù/stabile] | [Es: "Rivedere termini pagamento"] |
-| **Margine Lordo (%)** | (Ricavi - Costo Venduto) / Ricavi × 100 | > 50% | [Inserisci] | [su/giù/stabile] | [Es: "Aumentare efficienza"] |
-| **Processi Standardizzati (%)** | Processi documentati / Totale processi chiave × 100 | > 80% | [Inserisci] | [su/giù/stabile] | [Es: "Documentare onboarding"] |
-| **Ritenzione Talenti (%)** | Talenti chiave rimasti / Totale talenti chiave × 100 | > 90% | [Inserisci] | [su/giù/stabile] | [Es: "Implementare retention plan"] |
-
-[Template KPI](https://docs.google.com/spreadsheets/d/1J9raN6pQozafV3NSC_sJLqLfI6gq15LmILzyG45WnUM/edit?usp=sharing)
-
-Adatta i target alla realtà del tuo settore e alla fase di vita della tua azienda. L'importante è monitorare questi KPI regolarmente e agire quando vedi segnali che richiedono attenzione.
-
-## Il Vero Significato della Scalabilità
+## Il Vero Significato di Scalabilità
 
 La scalabilità non è solo diventare più grandi. È crescere più forti, più efficienti, più resilienti.
 
@@ -248,7 +236,7 @@ Per questo ho creato uno strumento che permette di misurare quanto la tua aziend
 
 Compila il nostro ScalabilityScore. Ti aiuterà a identificare con precisione dove la tua azienda è forte e dove potrebbero nascondersi vulnerabilità che potrebbero limitare la tua crescita futura.
 
-**>> [Calcola il tuo ScalabilityScore](https://adlimen.com/it/services/scalability-score) <<**
+{{< tool-cta tool="scalability-score" style="secondary" >}}
 
 La crescita senza solidità è solo un'illusione temporanea. Costruiamo insieme un'azienda che non solo cresce, ma prospera nel tempo.
 

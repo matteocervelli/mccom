@@ -1,0 +1,12 @@
+{{- $tool := .Get "tool" -}}
+{{- $style := .Get "style" | default "primary" -}}
+{{- $lang := .Page.Language.Lang | default "it" -}}
+
+{{- $toolData := index site.Data.tools $tool -}}
+{{- $langData := index $toolData $lang -}}
+
+<div class="tool-cta {{ $style }}">
+  <h3>{{ $langData.title }}</h3>
+  <p>{{ $langData.description }}</p>
+  <a href="{{ $langData.url }}" class="cta-button" id="{{ $tool }}" data-umami-event="{{ $langData.tracking_id }}">{{ $langData.button_text }}</a>
+</div> 

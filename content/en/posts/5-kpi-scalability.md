@@ -211,6 +211,8 @@ The key to sustainable growth is having an overall vision, not focusing on a sin
 
 This is why I invite you to build a balanced dashboard that includes these 5 KPIs.
 
+{{< img-caption src="https://cdn.adlimen.com/tools/kpi-dashboard/scalability-kpi-dashboard.png" alt="A screenshot from the Scalability KPI Dashboard Tool" caption="The Scalability KPI Dashboard Tool" >}}
+
 In this way you will be able to:
 
 - Predict potential criticalities before they impact revenue
@@ -218,23 +220,7 @@ In this way you will be able to:
 - Balance short-term growth with long-term sustainability
 - Create a company culture oriented not only to results, but to the parameters and choices that make them possible
 
-## Tool: Your Dashboard of Essential KPIs
-
-To help you start immediately, I have created a simple but powerful template. You can use it with Excel or Google Sheets:
-
-```text
-| KPI | Simplified Formula | Ideal Target | Current Value | Trend | Notes/Actions |
-|:--|:--|:--|:--|:--|:--|
-| **LTV/CAC** | Total Customer Value / Acquisition Cost | > 3 | [Insert] | [↑/↓/→] | [E.g.: "Optimize campaigns"] |
-| **CCC (days)** | Days (Inventory + Receivables - Payables) | < 60 | [Insert] | [↑/↓/→] | [E.g.: "Review payment terms"] |
-| **Gross Margin (%)** | (Revenue - Cost of Goods Sold) / Revenue × 100 | > 50% | [Insert] | [↑/↓/→] | [E.g.: "Increase efficiency"] |
-| **Standardized Processes (%)** | Documented processes / Total key processes × 100 | > 80% | [Insert] | [↑/↓/→] | [E.g.: "Document onboarding"] |
-| **Talent Retention (%)** | Key talents remained / Total key talents × 100 | > 90% | [Insert] | [↑/↓/→] | [E.g.: "Implement retention plan"] |
-```
-
-[Template KPI](https://docs.google.com/spreadsheets/d/1J9raN6pQozafV3NSC_sJLqLfI6gq15LmILzyG45WnUM/edit?usp=sharing)
-
-Adapt the targets to the reality of your sector and the life stage of your company. The important thing is to monitor these KPIs regularly and act when you see signals that require attention.
+{{< tool-cta tool="kpi-dashboard" style="primary" >}}
 
 ## The True Meaning of Scalability
 
@@ -248,9 +234,7 @@ This is why I have created a tool that allows you to measure how ready your comp
 
 **Are you ready to discover if your foundations are solid?**
 
-Complete our ScalabilityScore. It will help you identify precisely where your company is strong and where vulnerabilities might be hiding that could limit your future growth.
-
-**>> [Take the Scalability Assessment](https://adlimen.com/it/services/scalability-score) <<**
+{{< tool-cta tool="scalability-score" style="secondary" >}}
 
 Growth without solidity is just a temporary illusion. Let's build together a company that not only grows, but thrives over time.
 

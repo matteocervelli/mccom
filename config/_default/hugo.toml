@@ -84,6 +84,18 @@ enableGitInfo = true
     [module.hugoVersion]
         extended = true
         min = "0.55.0"
+    [[module.mounts]]
+        source = "assets"
+        target = "assets"
+    [[module.mounts]]
+        source = "static"
+        target = "static"
+
+[build]
+  writeStats = true
+
+[build.buildStats]
+  enable = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -98,10 +110,17 @@ enableGitInfo = true
     isPlainText = true
     protocol = "https://"
     noUgly = true
+  [outputFormats.CSS]
+    mediaType = "text/css"
+    baseName = "main"
+    isPlainText = true
+    notAlternative = true
 
 [mediaTypes]
   [mediaTypes."application/rss+xml"]
     suffixes = ["xml"]
+  [mediaTypes."text/css"]
+    suffixes = ["css"]
 
 [services]
   [services.rss]
