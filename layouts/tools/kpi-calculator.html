@@ -161,6 +161,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 {{/* Includiamo il nuovo script JS per il form */}}
-{{ $kpiFormJS := resources.Get "js/tools/kpi-form.js" | js.Build (dict "minify" true) | fingerprint }}
+{{ $kpiFormJS := resources.Get "js/kpi-form.js" | js.Build (dict "minify" true) | fingerprint }}
 <script src="{{ $kpiFormJS.RelPermalink }}" defer></script>
 {{ end }} 
