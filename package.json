@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "mdb-ui-kit": "^8.1.0",
-    "axios": "^1.7.2"
+    "axios": "^1.7.2",
+    "jsonwebtoken": "^9.0.2",
+    "js-yaml": "^4.1.0",
+    "handlebars": "^4.7.8"
   }
 }
