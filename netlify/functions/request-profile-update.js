@@ -85,26 +85,84 @@ exports.handler = async (event, context) => {
       
       const emailContents = {
         it: `
-          <p>Ciao${name ? ' ' + name : ''},</p>
-          <p>Abbiamo ricevuto una richiesta di aggiornamento del tuo profilo per The Scalability Compass.</p>
-          <p>Per confermare questi aggiornamenti, clicca sul pulsante qui sotto:</p>
-          <p style="text-align: center; margin: 30px 0;">
-            <a href="${confirmUrl}" style="display: inline-block; background-color: #0066CC; color: white; font-weight: bold; padding: 12px 24px; text-decoration: none; border-radius: 4px;">Conferma aggiornamento</a>
-          </p>
-          <p>Se non hai richiesto questa modifica, puoi ignorare questa email.</p>
-          <p>Il link scadrà tra 24 ore per motivi di sicurezza.</p>
-          <p>Grazie,<br>Matteo Cervelli</p>
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Conferma aggiornamento profilo</title>
+            <style>
+              body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { text-align: center; margin-bottom: 30px; }
+              .logo { max-width: 150px; height: auto; }
+              .content { background-color: #f9f9f9; border-radius: 8px; padding: 25px; margin-bottom: 30px; }
+              .button-container { text-align: center; margin: 35px 0; }
+              .button { display: inline-block; background-color: #0066CC; color: white; font-weight: bold; padding: 14px 28px; text-decoration: none; border-radius: 4px; }
+              .footer { font-size: 14px; color: #666; text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px; }
+            </style>
+          </head>
+          <body>
+            <div class="header">
+              <h2>The Scalability Compass</h2>
+            </div>
+            <div class="content">
+              <p>Ciao${name ? ' ' + name : ''},</p>
+              <p>Abbiamo ricevuto una richiesta di aggiornamento del tuo profilo per The Scalability Compass.</p>
+              <p>Per confermare e applicare questi aggiornamenti, clicca sul pulsante qui sotto:</p>
+              
+              <div class="button-container">
+                <a href="${confirmUrl}" class="button">Conferma aggiornamento</a>
+              </div>
+              
+              <p>Se non hai richiesto questa modifica, puoi ignorare questa email.</p>
+              <p>Il link scadrà tra 24 ore per motivi di sicurezza.</p>
+            </div>
+            <div class="footer">
+              <p>Grazie,<br>Matteo Cervelli</p>
+              <p><small>The Scalability Compass - Strategie per la crescita sostenibile</small></p>
+            </div>
+          </body>
+          </html>
         `,
         en: `
-          <p>Hello${name ? ' ' + name : ''},</p>
-          <p>We've received a request to update your profile for The Scalability Compass.</p>
-          <p>To confirm these updates, please click the button below:</p>
-          <p style="text-align: center; margin: 30px 0;">
-            <a href="${confirmUrl}" style="display: inline-block; background-color: #0066CC; color: white; font-weight: bold; padding: 12px 24px; text-decoration: none; border-radius: 4px;">Confirm Update</a>
-          </p>
-          <p>If you didn't request this change, you can safely ignore this email.</p>
-          <p>The link will expire in 24 hours for security reasons.</p>
-          <p>Thank you,<br>Matteo Cervelli</p>
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Confirm Profile Update</title>
+            <style>
+              body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { text-align: center; margin-bottom: 30px; }
+              .logo { max-width: 150px; height: auto; }
+              .content { background-color: #f9f9f9; border-radius: 8px; padding: 25px; margin-bottom: 30px; }
+              .button-container { text-align: center; margin: 35px 0; }
+              .button { display: inline-block; background-color: #0066CC; color: white; font-weight: bold; padding: 14px 28px; text-decoration: none; border-radius: 4px; }
+              .footer { font-size: 14px; color: #666; text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px; }
+            </style>
+          </head>
+          <body>
+            <div class="header">
+              <h2>The Scalability Compass</h2>
+            </div>
+            <div class="content">
+              <p>Hello${name ? ' ' + name : ''},</p>
+              <p>We've received a request to update your profile for The Scalability Compass.</p>
+              <p>To confirm and apply these updates, please click the button below:</p>
+              
+              <div class="button-container">
+                <a href="${confirmUrl}" class="button">Confirm Update</a>
+              </div>
+              
+              <p>If you didn't request this change, you can safely ignore this email.</p>
+              <p>The link will expire in 24 hours for security reasons.</p>
+            </div>
+            <div class="footer">
+              <p>Thank you,<br>Matteo Cervelli</p>
+              <p><small>The Scalability Compass - Strategies for sustainable growth</small></p>
+            </div>
+          </body>
+          </html>
         `
       };
       
