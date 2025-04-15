@@ -112,71 +112,114 @@ const addSubscriberToMailerLite = async (email, language) => {
   }
 };
 
-exports.handler = async function(event, context) {
-  // Verifica che sia una richiesta GET
+exports.handler = async (event, context) => {
+  // Verifica metodo GET
   if (event.httpMethod !== 'GET') {
     return {
       statusCode: 405,
-      body: 'Method Not Allowed'
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ success: false, message: 'Method Not Allowed' })
     };
   }
 
-  // Estrai i parametri dalla query string
-  const params = new URLSearchParams(event.queryStringParameters);
-  const email = params.get('email') || event.queryStringParameters.email;
-  const language = (params.get('language') || event.queryStringParameters.language || 'en').toLowerCase();
-  const token = params.get('token') || event.queryStringParameters.token;
+  const { token, email, language } = event.queryStringParameters;
+  const lang = (language || 'en').toLowerCase(); // Default a 'en'
 
-  // Verifica che tutti i parametri necessari siano presenti
-  if (!email || !token) {
+  if (!token || !email) {
+    const message = lang === 'it' ? 'Parametri mancanti.' : 'Missing parameters.';
     return {
       statusCode: 400,
-      headers: {
-        'Content-Type': 'text/html; charset=UTF-8'
-      },
-      body: getHtmlResponse(false, language)
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ success: false, message: message })
+    };
+  }
+
+  const secret = process.env.JWT_CONFIRM_SECRET;
+  if (!secret) {
+    console.error('JWT_CONFIRM_SECRET non configurata');
+    const message = lang === 'it' ? 'Errore di configurazione del server.' : 'Server configuration error.';
+    return {
+      statusCode: 500,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ success: false, message: message })
     };
   }
 
   try {
-    // Verifica la validità del token JWT
-    const secret = process.env.JWT_CONFIRM_SECRET;
-    if (!secret) {
-      throw new Error('JWT_CONFIRM_SECRET environment variable not set.');
+    // Verifica token
+    const decoded = jwt.verify(token, secret);
+
+    // Verifica corrispondenza email (opzionale ma buona pratica)
+    if (decoded.email !== email) {
+      console.warn(`Email mismatch: token (${decoded.email}), query (${email})`);
+      const message = lang === 'it' ? 'Link non valido.' : 'Invalid link.';
+      return {
+        statusCode: 400,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ success: false, message: message })
+      };
     }
-    const decodedToken = jwt.verify(token, secret);
     
-    // Verifica che il token contenga l'email corretta e non sia scaduto
-    if (decodedToken.email !== email) {
-      throw new Error('Token mismatch');
+    // Verifica lingua (opzionale)
+    if (decoded.language !== lang) {
+        console.warn(`Language mismatch: token (${decoded.language}), query (${lang})`);
+        // Potresti decidere di procedere comunque o dare errore
     }
 
-    // Aggiungi l'utente a MailerLite
-    const subscriptionSuccess = await addSubscriberToMailerLite(email, language);
-    
-    if (!subscriptionSuccess) {
-      console.warn('Failed to add subscriber to MailerLite, but token was valid');
-      // Continuiamo comunque, l'utente non deve essere penalizzato per errori dell'API
+    // Recupera URL Google Drive da env
+    const googleDriveUrl = process.env.KPI_GOOGLE_DRIVE_URL;
+    if (!googleDriveUrl) {
+      console.error('KPI_GOOGLE_DRIVE_URL non configurata!');
+      const message = lang === 'it' ? 'Risorsa non disponibile al momento.' : 'Resource currently unavailable.';
+      return {
+        statusCode: 500,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ success: false, message: message })
+      };
     }
 
-    // Restituisci una pagina di successo
+    // TODO: Fase 3 - Attivazione Sequenza Email
+    // Qui aggiungeremo la logica per aggiungere l'utente a un gruppo MailerLite 
+    // specifico per la sequenza KPI o chiamare un'altra funzione Netlify.
+    console.log(`SEQUENZA KPI: Attivare per ${email} in lingua ${lang}`);
+    // Esempio placeholder aggiunta a gruppo MailerLite (richiede API Key e logica):
+    // try {
+    //   await addUserToMailerliteGroup(email, MAILERLITE_KPI_SEQUENCE_GROUP_ID);
+    // } catch (mailerliteError) {
+    //   console.error('Errore aggiunta utente a gruppo sequenza KPI:', mailerliteError);
+    //   // Decidere se bloccare il redirect o solo loggare l'errore
+    // }
+
+    // Reindirizza al file Google Drive
+    console.log(`Conferma KPI riuscita per ${email}. Reindirizzamento a: ${googleDriveUrl}`);
     return {
-      statusCode: 200,
+      statusCode: 302,
       headers: {
-        'Content-Type': 'text/html; charset=UTF-8'
+        'Location': googleDriveUrl,
+        'Cache-Control': 'no-cache' // Evita caching del redirect
       },
-      body: getHtmlResponse(true, language)
+      body: '' // Body vuoto per redirect
     };
+
   } catch (error) {
-    console.error('Token validation error:', error.message);
+    console.error('Errore verifica token KPI:', error.message);
+    let message;
+    let statusCode = 400;
+    if (error.name === 'TokenExpiredError') {
+      message = lang === 'it' ? 'Link scaduto. Richiedi nuovamente lo strumento.' : 'Link expired. Please request the tool again.';
+    } else if (error.name === 'JsonWebTokenError') {
+      message = lang === 'it' ? 'Link non valido.' : 'Invalid link.';
+    } else {
+      message = lang === 'it' ? 'Errore durante la verifica.' : 'Error during verification.';
+      statusCode = 500;
+    }
     
-    // Restituisci una pagina di errore
+    // Potresti reindirizzare a una pagina di errore specifica invece di JSON
+    // Ad esempio: /it/tools/kpi-link-error/ o /en/tools/kpi-link-error/
     return {
-      statusCode: 401,
-      headers: {
-        'Content-Type': 'text/html; charset=UTF-8'
-      },
-      body: getHtmlResponse(false, language)
+      statusCode: statusCode,
+      headers: { 'Content-Type': 'application/json' }, // O text/html se reindirizzi a pagina errore
+      body: JSON.stringify({ success: false, message: message })
     };
   }
 }; 

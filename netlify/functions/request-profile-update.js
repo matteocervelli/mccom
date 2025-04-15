@@ -173,49 +173,8 @@ async function sendEmail(to, lang, data) {
     text: `${templateData.heading}\n\n${templateData.greeting}\n\n${templateData.main_text}\n\nEmail: ${data.email}\n${templateData.updates_label}: ${data.name || ''} ${data.last_name || ''} ${data.language || ''}\n\n${templateData.button_text}: ${data.confirm_url}\n\n${templateData.expiry_note}\n\n${templateData.closing}\n\n${templateData.help_text}\n${data.confirm_url}`
   };
   
-  // Tenta di usare il template MailerSend se configurato
-  const templateId = process.env.MAILERSEND_PROFILE_UPDATE_TEMPLATE_ID;
-  if (templateId) {
-    const variables = [
-      {
-        email: to,
-        substitutions: [
-          { var: 'name', value: data.name || '' },
-          { var: 'greeting', value: templateData.greeting },
-          { var: 'email', value: data.email },
-          { var: 'updates_label', value: templateData.updates_label },
-          { var: 'name_value', value: data.name || '' },
-          { var: 'last_name_value', value: data.last_name || '' },
-          { var: 'language_value', value: data.language || '' },
-          { var: 'confirm_url', value: data.confirm_url },
-          { var: 'button_text', value: templateData.button_text },
-          { var: 'expiry_note', value: templateData.expiry_note },
-          { var: 'closing', value: templateData.closing },
-          { var: 'help_text', value: templateData.help_text }
-        ]
-      }
-    ];
-    
-    // Usa il template MailerSend
-    return axios.post(
-      'https://api.mailersend.com/v1/email',
-      {
-        from: emailPayload.from,
-        to: emailPayload.to,
-        subject: emailPayload.subject,
-        template_id: templateId,
-        variables: variables
-      },
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${mailersendApiKey}`
-        }
-      }
-    );
-  }
-  
-  // Fallback: usa HTML diretto se nessun template è configurato
+  // Rimuoviamo la logica per usare il template_id di MailerSend
+  // Usiamo sempre l'HTML generato localmente
   return axios.post(
     'https://api.mailersend.com/v1/email',
     emailPayload,

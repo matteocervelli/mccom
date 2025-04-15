@@ -106,7 +106,7 @@
             {{ end }}
 
             <div id="kpi-form-container" class="kpi-download-form-container">
-                <form id="kpi-download-form" class="kpi-download-form">
+                <form id="kpi-download-form" class="kpi-download-form" data-lang="{{ .Site.Language.Lang }}">
                   <div class="form-row">
                     <input type="email" 
                           name="email"
@@ -129,103 +129,6 @@
                   {{ if eq .Site.Language.Lang "en" }}We respect your privacy. Unsubscribe at any time.{{ else }}Rispettiamo la tua privacy. Puoi cancellare l'iscrizione in qualsiasi momento.{{ end }}
                 </small>
             </div>
-            
-            <script>
-              document.addEventListener('DOMContentLoaded', function() {
-                const form = document.getElementById('kpi-download-form');
-                const submitBtn = document.getElementById('kpi-submit');
-                const statusMessage = document.getElementById('kpi-form-status');
-                const googleSheetUrl = 'https://docs.google.com/spreadsheets/d/1Y0GFlGVZnafTWBYsewsLpgG8blEp7fxa_8ruU4dpaBk/edit?usp=sharing';
-                const language = '{{ .Site.Language.Lang }}';
-                
-                // Funzione per mostrare messaggi di stato
-                function showStatus(message, type) {
-                  statusMessage.textContent = message;
-                  statusMessage.className = `form-status form-status--${type}`;
-                  statusMessage.style.display = 'block';
-                  
-                  if (type === 'success') {
-                    setTimeout(() => {
-                      window.open(googleSheetUrl, '_blank');
-                    }, 500);
-                  }
-                }
-                
-                // Funzione per attivare/disattivare stato di caricamento
-                function toggleLoading(isLoading) {
-                  submitBtn.disabled = isLoading;
-                  submitBtn.classList.toggle('is-loading', isLoading);
-                  submitBtn.setAttribute('aria-busy', isLoading);
-                  
-                  if (isLoading) {
-                    submitBtn.dataset.originalText = submitBtn.textContent;
-                    submitBtn.textContent = language === 'it' ? 'Attendere...' : 'Please wait...';
-                  } else if (submitBtn.dataset.originalText) {
-                    submitBtn.textContent = submitBtn.dataset.originalText;
-                  }
-                }
-                
-                // Gestione invio form
-                form.addEventListener('submit', async function(event) {
-                  event.preventDefault();
-                  
-                  const emailInput = document.getElementById('kpi-email');
-                  const email = emailInput.value.trim();
-                  
-                  // Validazione email base
-                  if (!email || !email.includes('@') || !email.includes('.')) {
-                    showStatus(
-                      language === 'it' ? 'Inserisci un indirizzo email valido.' : 'Please enter a valid email address.',
-                      'error'
-                    );
-                    return;
-                  }
-                  
-                  // Attiva stato di caricamento
-                  toggleLoading(true);
-                  statusMessage.style.display = 'none';
-                  
-                  try {
-                    // Chiamata alla funzione Netlify
-                    const response = await fetch('/.netlify/functions/request-kpi-confirmation', {
-                      method: 'POST',
-                      headers: {
-                        'Content-Type': 'application/json'
-                      },
-                      body: JSON.stringify({
-                        email: email,
-                        language: language
-                      })
-                    });
-                    
-                    const result = await response.json();
-                    
-                    if (response.ok && result.success) {
-                      // Success
-                      showStatus(
-                        language === 'it' 
-                          ? 'Email di conferma inviata! Controlla la tua casella di posta e apri il link per completare l\'iscrizione. Nel frattempo puoi accedere al tuo Google Sheet!' 
-                          : 'Confirmation email sent! Check your inbox and open the link to complete your subscription. Meanwhile, you can access your Google Sheet!',
-                        'success'
-                      );
-                      form.reset();
-                    } else {
-                      // API error
-                      showStatus(result.message || (language === 'it' ? 'Si è verificato un errore. Riprova.' : 'An error occurred. Please try again.'), 'error');
-                    }
-                  } catch (error) {
-                    // Network/other error
-                    console.error('Error:', error);
-                    showStatus(
-                      language === 'it' ? 'Errore di rete. Riprova più tardi.' : 'Network error. Please try again later.',
-                      'error'
-                    );
-                  } finally {
-                    toggleLoading(false);
-                  }
-                });
-              });
-            </script>
         </section>
     </article>
 </div>
@@ -256,4 +159,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+{{/* Includiamo il nuovo script JS per il form */}}
+{{ $kpiFormJS := resources.Get "js/tools/kpi-form.js" | js.Build (dict "minify" true) | fingerprint }}
+<script src="{{ $kpiFormJS.RelPermalink }}" defer></script>
 {{ end }} 
