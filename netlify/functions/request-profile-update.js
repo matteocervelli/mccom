@@ -430,7 +430,6 @@ exports.handler = async (event, context) => {
       name: data.name,
       last_name: data.last_name,
       language: data.language || 'en',
-      exp: Math.floor(Date.now() / 1000) + (60 * 60 * 24) // Scade dopo 24 ore
     };
 
     const token = generateToken(payload);
@@ -438,11 +437,8 @@ exports.handler = async (event, context) => {
     // URL base del sito
     const baseUrl = process.env.URL || 'https://adlimen.com';
     
-    // Determina la lingua per il percorso dell'URL
-    const urlLang = data.language === 'it' ? '/it' : '';
-    
-    // Crea l'URL di conferma
-    const confirmationUrl = `${baseUrl}${urlLang}/newsletter/confirm-update/?token=${token}`;
+    // Punta alla funzione Netlify ESISTENTE 'process-profile-update'
+    const confirmationUrl = `${baseUrl}/.netlify/functions/process-profile-update?token=${encodeURIComponent(token)}`;
     
     // Prepara i dati dell'email
     const emailData = {
