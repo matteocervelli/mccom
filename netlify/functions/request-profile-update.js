@@ -332,45 +332,48 @@ function getEmailTemplate(data) {
   });
 }
 
-// Funzione per inviare l'email di conferma
+// Funzione per inviare l'email di conferma - MODIFICATA per usare Axios
 async function sendEmail(data) {
   try {
-    console.log('Preparazione invio email a:', data.email);
+    console.log('Preparazione invio email a:', data.email, 'usando Axios');
     
+    const apiKey = process.env.MAILERSEND_API_KEY;
+    const senderEmail = process.env.EMAIL_FROM || "newsletter@adlimen.com";
+    const senderName = "Adlimen"; // O un nome più specifico se necessario
+
     // Verifica presenza API key
-    if (!process.env.MAILERSEND_API_KEY) {
+    if (!apiKey) {
       throw new Error('MAILERSEND_API_KEY non configurata');
     }
     
-    const mailersend = new MailerSend({
-      api_key: process.env.MAILERSEND_API_KEY,
-    });
-    
-    // Prepara il contenuto dell'email
-    const emailContent = getEmailTemplate(data);
-    
-    // Configura i dettagli dell'email
-    const sentFrom = new Sender(process.env.EMAIL_FROM || "newsletter@adlimen.com", "Adlimen");
-    const recipients = [
-      new Recipient(data.email, `${data.name} ${data.last_name}`.trim())
-    ];
+    // Prepara il contenuto dell'email usando il template esistente
+    const emailHtml = getEmailTemplate(data);
     
     // Determina l'oggetto dell'email in base alla lingua
     const subject = data.language === 'it' 
       ? "Conferma Aggiornamenti del Profilo"
       : "Confirm Your Profile Updates";
+
+    // Prepara il payload per l'API MailerSend v1/email
+    const payload = {
+      from: { name: senderName, email: senderEmail },
+      to: [{ email: data.email, name: `${data.name} ${data.last_name}`.trim() }],
+      subject: subject,
+      html: emailHtml
+      // Aggiungere 'text: ' se si ha una versione plain text
+    };
     
-    // Crea l'email
-    const emailParams = new EmailParams()
-      .setFrom(sentFrom)
-      .setTo(recipients)
-      .setSubject(subject)
-      .setHtml(emailContent);
+    // Invia l'email tramite Axios
+    console.log('Invio email via Axios in corso...');
+    const response = await axios.post('https://api.mailersend.com/v1/email', payload, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+        'X-Requested-With': 'XMLHttpRequest' // Header a volte utile
+      }
+    });
     
-    // Invia l'email
-    console.log('Invio email in corso...');
-    const response = await mailersend.email.send(emailParams);
-    console.log('Email inviata con successo a:', data.email);
+    console.log('Email inviata con successo via Axios a:', data.email, 'Risposta API:', response.status);
     
     return {
       success: true,
@@ -378,9 +381,21 @@ async function sendEmail(data) {
     };
     
   } catch (error) {
-    // Log più dettagliato dell'errore
-    console.error('Errore dettagliato nell\'invio dell\'email:', JSON.stringify(error, null, 2)); 
-    console.error('Errore nell\'invio dell\'email (messaggio):', error?.message); // Mantiene il log originale ma più sicuro
+    // Log migliorato degli errori Axios/MailerSend
+    console.error('Errore dettagliato nell\'invio dell\'email via Axios:');
+    if (error.response) {
+      // Errore dalla risposta API
+      console.error('Status:', error.response.status);
+      console.error('Headers:', JSON.stringify(error.response.headers, null, 2));
+      console.error('Body:', JSON.stringify(error.response.data, null, 2));
+    } else if (error.request) {
+      // Richiesta fatta ma nessuna risposta ricevuta
+      console.error('Nessuna risposta ricevuta:', error.request);
+    } else {
+      // Errore nella configurazione della richiesta
+      console.error('Errore configurazione richiesta:', error.message);
+    }
+    console.error('Configurazione Axios:', JSON.stringify(error.config, null, 2)); // Log config per debug
     throw error; // Rilancia l'errore per la gestione esterna
   }
 }
