@@ -179,3 +179,14 @@
   to = "/*/legal/:splat.html"
   status = 200
   force = true
+
+# Redirects for profile update confirmation link
+[[redirects]]
+  from = "/it/newsletter/update-confirm"
+  to = "/.netlify/functions/process-profile-update"
+  status = 200 # Execute the function
+
+[[redirects]]
+  from = "/en/newsletter/update-confirm"
+  to = "/.netlify/functions/process-profile-update"
+  status = 200 # Execute the function
