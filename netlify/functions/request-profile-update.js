@@ -116,7 +116,7 @@ exports.handler = async (event, context) => {
         },
         from: {
           name: 'Matteo Cervelli',
-          email: 'newsletter@matteocervelli.com'
+          email: 'newsletter@adlimen.com'
         },
         to: [{ email }]
       };

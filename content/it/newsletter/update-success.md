@@ -8,7 +8,7 @@ layout: "single"
 
 Grazie per aver aggiornato il tuo profilo per la newsletter The Scalability Compass.
 
-Le tue informazioni sono state aggiornate con successo nei nostri sistemi. Utilizzeremo questi dati per personalizzare la tua esperienza e migliorare la nostra comunicazione.
+Le tue informazioni sono state aggiornate con successo nei miei sistemi. Utilizzeremo questi dati per personalizzare la tua esperienza e migliorare la mia comunicazione.
 
 ## Cosa succede ora?
 
@@ -16,7 +16,7 @@ Le tue informazioni sono state aggiornate con successo nei nostri sistemi. Utili
 - Le tue preferenze e informazioni aggiornate saranno utilizzate immediatamente
 - Puoi sempre aggiornare nuovamente le tue informazioni o annullare l'iscrizione in qualsiasi momento
 
-Se hai domande o hai bisogno di assistenza, non esitare a contattarci rispondendo a qualsiasi email della newsletter.
+Se hai domande o hai bisogno di assistenza, non esitare a contattarcmi rispondendo a qualsiasi email della newsletter.
 
 Grazie per essere parte della community di The Scalability Compass!
 
