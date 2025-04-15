@@ -36,6 +36,9 @@
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
 
+# --- REDIRECTS --- #
+# Order matters! Specific rules should come before general ones.
+
 # Force WWW and HTTP to HTTPS non-WWW
 [[redirects]]
   from = "https://www.matteocervelli.com/*"
@@ -74,13 +77,29 @@
   status = 200
   force = true
 
-# API redirects for serverless functions (Moved Higher)
+# --- Specific Function Redirects --- #
+# Moved Higher to ensure they match before general rules
+
+# API redirects for serverless functions (like resend-confirmation)
 [[redirects]]
   from = "/api/resend-confirmation"
   to = "/.netlify/functions/resend-confirmation"
   status = 200
   force = true
   conditions = {Method = ["POST", "OPTIONS"]}
+
+# Redirects for profile update confirmation link
+[[redirects]]
+  from = "/it/newsletter/update-confirm"
+  to = "/.netlify/functions/process-profile-update"
+  status = 200 # Execute the function
+
+[[redirects]]
+  from = "/en/newsletter/update-confirm"
+  to = "/.netlify/functions/process-profile-update"
+  status = 200 # Execute the function
+
+# --- General Content Redirects --- #
 
 # Direct language paths should never be redirected elsewhere
 [[redirects]]
@@ -179,14 +198,3 @@
   to = "/*/legal/:splat.html"
   status = 200
   force = true
-
-# Redirects for profile update confirmation link
-[[redirects]]
-  from = "/it/newsletter/update-confirm"
-  to = "/.netlify/functions/process-profile-update"
-  status = 200 # Execute the function
-
-[[redirects]]
-  from = "/en/newsletter/update-confirm"
-  to = "/.netlify/functions/process-profile-update"
-  status = 200 # Execute the function
