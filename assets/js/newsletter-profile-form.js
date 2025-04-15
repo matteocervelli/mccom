@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Seleziona tutti i form di profilo newsletter presenti nella pagina
   const profileForms = document.querySelectorAll('.newsletter-profile-form');
+  const urlParams = new URLSearchParams(window.location.search);
+  const emailFromUrl = urlParams.get('email');
 
   profileForms.forEach(form => {
     // Leggi i dati dagli attributi data-*
@@ -17,28 +19,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const nameInput = form.querySelector('input[name="fields[name]"]');
     const lastnameInput = form.querySelector('input[name="fields[last_name]"]');
     const submitButton = form.querySelector('button[type="submit"]');
+    const emailInput = form.querySelector('input[name="fields[email]"]');
+
+    // Popola il campo email nascosto al caricamento della pagina
+    if (emailInput && emailFromUrl) {
+      emailInput.value = emailFromUrl;
+    } else if (!emailInput) {
+      console.error('Campo email nascosto non trovato nel form.');
+    } // Non mostrare errore se manca solo l'email nell'URL, verrà gestito al submit
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      // Recupero email dall'URL e verifico la sua presenza
-      const urlParams = new URLSearchParams(window.location.search);
-      const email = urlParams.get('email');
+      // Verifica che l'email sia nel campo nascosto (potrebbe mancare se URL non conteneva email)
+      const currentEmail = emailInput ? emailInput.value : null;
+      if (!currentEmail) {
+        console.error("Email non trovata nel campo nascosto del form.");
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = labelSubmit;
+        }
+        // Usa lo stesso messaggio di errore di prima
+        displayMessage(form, msgErrorMissingEmail, 'error'); 
+        return; // Interrompo l'esecuzione
+      }
 
       // Rimuovi eventuali messaggi di errore precedenti
       const existingError = form.parentElement.querySelector('.form-error-message');
       if (existingError) {
         existingError.remove();
-      }
-
-      if (!email) {
-        console.error("Parametro email mancante nell'URL.");
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.textContent = labelSubmit;
-        }
-        displayMessage(form, msgErrorMissingEmail, 'error');
-        return; // Interrompo l'esecuzione
       }
 
       const name = nameInput ? nameInput.value : '';
@@ -72,7 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       const formData = new FormData(form);
-      formData.append('fields[email]', email);
+      // Rimuovi l'aggiunta esplicita di fields[email], è già nel FormData
+      // formData.append('fields[email]', email);
 
       const urlEncoded = new URLSearchParams(formData).toString();
       xhr.send(urlEncoded);
