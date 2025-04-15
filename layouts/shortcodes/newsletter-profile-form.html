@@ -1,27 +1,23 @@
-{{ $action := .Get "action" }}
 {{ $language := .Get "language" | default "en" }}
-{{ $formId := .Get "formId" }}
 
 {{ $placeholders := dict
-  "it" (dict "name" "Il tuo nome" "lastname" "Il tuo cognome (opzionale)")
-  "en" (dict "name" "Your first name" "lastname" "Your last name (optional)")
+  "it" (dict "name" "Il tuo nome" "lastname" "Il tuo cognome (opzionale)" "email" "La tua email")
+  "en" (dict "name" "Your first name" "lastname" "Your last name (optional)" "email" "Your email address")
 }}
 {{ $labels := dict
-  "it" (dict "name" "Inserisci il tuo nome" "lastname" "Inserisci il tuo cognome" "submit" "Salva le mie informazioni" "note" "Questo passaggio è opzionale ma ci aiuta a personalizzare la tua esperienza.")
-  "en" (dict "name" "Enter your first name" "lastname" "Enter your last name" "submit" "Save my information" "note" "This step is optional but helps us personalize your experience.")
+  "it" (dict "name" "Inserisci il tuo nome" "lastname" "Inserisci il tuo cognome" "email" "Inserisci la tua email" "submit" "Richiedi aggiornamento" "note" "Inserisci l'email con cui sei iscritto alla newsletter e i dati che desideri aggiornare.")
+  "en" (dict "name" "Enter your first name" "lastname" "Enter your last name" "email" "Enter your email address" "submit" "Request update" "note" "Enter the email you used to subscribe to the newsletter and the data you wish to update.")
 }}
 
 {{ $currentPlaceholders := index $placeholders $language }}
 {{ $currentLabels := index $labels $language }}
 
-<div id="mlb2-{{ $formId }}" 
-     class="ml-form-embedContainer ml-subscribe-form newsletter-profile-form-wrapper">
-  <form id="profile-completion-form-{{ $formId }}" 
+<div id="profile-form-container" 
+     class="newsletter-profile-form-wrapper">
+  <form id="newsletter-profile-form" 
         class="newsletter-profile-form" 
-        action="{{ $action }}"
+        action="/.netlify/functions/request-profile-update"
         method="post" 
-        target="_blank"
-        data-form-id="{{ $formId }}"
         data-language="{{ $language }}"
         data-label-submit="{{ $currentLabels.submit }}"
         data-msg-submitting='{{ T "submitting" "Submitting..." }}'
@@ -29,26 +25,31 @@
         data-msg-success-fallback='{{ T (printf "form_success_fallback_name_%s" $language) (T "form_success_fallback_name" "subscriber") }}'
         data-msg-success-suffix='{{ T (printf "form_success_suffix_%s" $language) (T "form_success_suffix" "Your information has been saved.") }}'
         data-msg-error='{{ T (printf "form_error_%s" $language) (T "form_error" "An error occurred. Please try again.") }}'
-        data-msg-error-missing-email='{{ T (printf "form_error_missing_email_%s" $language) (T "form_error_missing_email" "Could not identify user. Please try again from the confirmation link.") }}'>
+        data-msg-invalid-email='{{ T (printf "form_error_invalid_email_%s" $language) (T "form_error_invalid_email" "Please enter a valid email address.") }}'>
+
+    <input type="email" 
+           name="email"
+           placeholder="{{ $currentPlaceholders.email }}"
+           class="newsletter-profile-form__input" 
+           aria-label="{{ $currentLabels.email }}"
+           autocomplete="email"
+           required>
 
     <input type="text" 
-           name="fields[name]"
+           name="name"
            placeholder="{{ $currentPlaceholders.name }}"
            class="newsletter-profile-form__input" 
            aria-label="{{ $currentLabels.name }}"
            autocomplete="given-name">
 
     <input type="text" 
-           name="fields[last_name]"
+           name="last_name"
            placeholder="{{ $currentPlaceholders.lastname }}"
            class="newsletter-profile-form__input" 
            aria-label="{{ $currentLabels.lastname }}"
            autocomplete="family-name">
 
-    <input type="hidden" name="fields[email]" value="">
-    <input type="hidden" name="fields[language]" value="{{ $language }}">
-    <input type="hidden" name="ml-submit" value="1">
-    <input type="hidden" name="anticsrf" value="true">
+    <input type="hidden" name="language" value="{{ $language }}">
     
     <button type="submit"
             class="newsletter-profile-form__button" 
@@ -59,13 +60,107 @@
   <small class="newsletter-profile-form__note">{{ $currentLabels.note }}</small>
 </div>
 
-{{/* Include and process the JavaScript file */}}
-{{ $script := resources.Get "js/newsletter-profile-form.js" }}
-{{ if $script }}
-  {{ if hugo.IsProduction }}
-    {{ $script = $script | resources.Minify | resources.Fingerprint }}
-  {{ end }}
-  <script src="{{ $script.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $script.Data.Integrity }}"{{ end }} defer></script>
-{{ else }}
-  {{ warnf "JavaScript file not found: js/newsletter-profile-form.js" }}
-{{ end }} 
+{{/* Script per l'aggiornamento del profilo */}}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const profileForm = document.getElementById('newsletter-profile-form');
+  if (!profileForm) return;
+  
+  // Leggi attributi data dal form
+  const msgSubmitting = profileForm.dataset.msgSubmitting;
+  const msgSuccessPrefix = profileForm.dataset.msgSuccessPrefix;
+  const msgSuccessFallback = profileForm.dataset.msgSuccessFallback;
+  const msgSuccessSuffix = profileForm.dataset.msgSuccessSuffix;
+  const msgError = profileForm.dataset.msgError;
+  const msgInvalidEmail = profileForm.dataset.msgInvalidEmail;
+  const labelSubmit = profileForm.dataset.labelSubmit;
+  
+  // Gestione submit form
+  profileForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Verifica email
+    const emailInput = profileForm.querySelector('input[name="email"]');
+    const email = emailInput.value.trim();
+    if (!email || !isValidEmail(email)) {
+      displayMessage(profileForm, msgInvalidEmail, 'error');
+      return;
+    }
+    
+    // Cambia stato pulsante
+    const submitButton = profileForm.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.textContent = msgSubmitting;
+    
+    // Prepara dati da inviare
+    const formData = {
+      email: email,
+      name: profileForm.querySelector('input[name="name"]').value,
+      last_name: profileForm.querySelector('input[name="last_name"]').value,
+      language: profileForm.querySelector('input[name="language"]').value
+    };
+    
+    try {
+      // Chiama la funzione serverless
+      const response = await fetch(profileForm.action, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      const result = await response.json();
+      
+      // Ripristina pulsante
+      submitButton.disabled = false;
+      submitButton.textContent = labelSubmit;
+      
+      if (result.success) {
+        // Mostra messaggio di successo e sostituisci il form
+        const formContainer = profileForm.closest('.newsletter-profile-form-wrapper');
+        if (formContainer) {
+          formContainer.innerHTML = `<p style="text-align: center; padding: 1rem 0;">${result.message}</p>`;
+        }
+      } else {
+        // Mostra messaggio di errore
+        displayMessage(profileForm, result.message || msgError, 'error');
+      }
+    } catch (error) {
+      console.error('Errore nella richiesta:', error);
+      submitButton.disabled = false;
+      submitButton.textContent = labelSubmit;
+      displayMessage(profileForm, msgError, 'error');
+    }
+  });
+  
+  // Funzione helper per validare email
+  function isValidEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+  
+  // Funzione helper per visualizzare messaggi
+  function displayMessage(formElement, message, type = 'error') {
+    // Rimuovi eventuali messaggi esistenti
+    const existingMessages = document.querySelectorAll('.form-message');
+    existingMessages.forEach(el => el.remove());
+    
+    const messageElement = document.createElement('p');
+    messageElement.classList.add('form-message');
+    messageElement.classList.add(type === 'error' ? 'form-error-message' : 'form-success-message');
+    messageElement.style.color = type === 'error' ? 'red' : 'green';
+    messageElement.style.textAlign = 'center';
+    messageElement.style.marginTop = '1rem';
+    messageElement.textContent = message;
+    
+    // Inserisci dopo il form o dopo la nota
+    const noteElement = formElement.nextElementSibling;
+    if (noteElement && noteElement.classList.contains('newsletter-profile-form__note')) {
+      noteElement.parentNode.insertBefore(messageElement, noteElement.nextSibling);
+    } else {
+      formElement.parentNode.appendChild(messageElement);
+    }
+  }
+});
+</script> 

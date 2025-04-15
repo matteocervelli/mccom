@@ -7,7 +7,7 @@ slug: "02-predicting-growth-potential"
 translationKey: "02-predicting-growth-potential"
 related_article_slug: "5-kpi-scalability"
 language: "en"
-date: 2025-04-10T07:46:24+02:00 # Using original article date for consistency
+date: 2025-04-17T07:46:24+02:00 # Using original article date for consistency
 tags: ['kpi', 'scalability']
 categories: ['newsletter']
 ---
