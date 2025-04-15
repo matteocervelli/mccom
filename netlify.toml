@@ -7,6 +7,15 @@
   HUGO_VERSION = "0.140.2"
   HUGO_ENABLEGITINFO = "true"
 
+# --- Development Settings --- #
+[dev]
+  command = "hugo server -D -F"
+  port = 8888
+  targetPort = 1313
+  publish = "public" 
+  # Framework detection hint (optional but good practice)
+  framework = "hugo"
+
 [[headers]]
   for = "/*.xml"
   [headers.values]

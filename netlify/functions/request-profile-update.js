@@ -216,31 +216,41 @@ exports.handler = async (event, context) => {
       `
     };
     
-    // Invia email di conferma tramite MailerLite API
-    const emailData = {
-      subject: emailSubjects[lang] || emailSubjects['en'],
-      content: {
-        html: emailContents[lang] || emailContents['en']
-      },
-      from: {
-        name: 'Matteo Cervelli',
-        email: 'newsletter@adlimen.com'
-      },
-      to: [{ email }]
-    };
-    
-    console.log('Tentativo invio email di conferma...');
+    // Invia email di conferma tramite MailerSend
+    console.log('Tentativo invio email di conferma tramite MailerSend...');
     try {
+      // Payload per l'API MailerSend
+      const mailerSendPayload = {
+        from: {
+          name: 'Matteo Cervelli',
+          email: 'newsletter@adlimen.com' // Deve essere un sender verificato su MailerSend
+        },
+        to: [
+          { email: email } // L'email dell'utente
+        ],
+        subject: emailSubjects[lang] || emailSubjects['en'],
+        html: emailContents[lang] || emailContents['en']
+        // text: // Aggiungere versione testuale se necessario
+      };
+
+      const mailerSendApiKey = process.env.MAILERSEND_API_KEY;
+      if (!mailerSendApiKey) {
+        console.log('Errore: MAILERSEND_API_KEY non configurata');
+        throw new Error('MAILERSEND_API_KEY non configurata');
+      }
+
       await axios({
         method: 'POST',
-        url: 'https://connect.mailerlite.com/api/emails',
+        // URL API MailerSend
+        url: 'https://api.mailersend.com/v1/email', 
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`
+          // Autenticazione MailerSend
+          'Authorization': `Bearer ${mailerSendApiKey}` 
         },
-        data: emailData
+        data: mailerSendPayload
       });
-      console.log('Email di conferma inviata con successo a', email);
+      console.log('Email di conferma inviata con successo via MailerSend a', email);
       
       return {
         statusCode: 200,
@@ -258,10 +268,10 @@ exports.handler = async (event, context) => {
         })
       };
     } catch (emailError) {
-      console.error("Errore durante l'invio dell'email:", emailError.message);
-      console.error('Dettagli errore invio email:', emailError.response?.data || 'Nessun dato di risposta');
+      console.error("Errore durante l'invio dell'email via MailerSend:", emailError.message);
+      console.error('Dettagli errore invio MailerSend:', emailError.response?.data || 'Nessun dato di risposta');
       // Rilancia l'errore per essere catturato dal blocco catch esterno
-      throw new Error('Failed to send confirmation email'); 
+      throw new Error('Failed to send confirmation email via MailerSend'); 
     }
     
   } catch (searchError) {
