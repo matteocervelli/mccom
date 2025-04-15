@@ -378,8 +378,10 @@ async function sendEmail(data) {
     };
     
   } catch (error) {
-    console.error('Errore nell\'invio dell\'email:', error.message);
-    throw error;
+    // Log più dettagliato dell'errore
+    console.error('Errore dettagliato nell\'invio dell\'email:', JSON.stringify(error, null, 2)); 
+    console.error('Errore nell\'invio dell\'email (messaggio):', error?.message); // Mantiene il log originale ma più sicuro
+    throw error; // Rilancia l'errore per la gestione esterna
   }
 }
 

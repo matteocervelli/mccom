@@ -166,6 +166,19 @@ exports.handler = async (event, context) => {
         // Potresti decidere di procedere comunque o dare errore
     }
 
+    // Aggiunge l'utente al gruppo MailerLite
+    try {
+      const mailerliteSuccess = await addSubscriberToMailerLite(email, lang);
+      if (!mailerliteSuccess) {
+          // Log dell'errore già gestito dentro addSubscriberToMailerLite
+          // Si decide di non bloccare il redirect anche in caso di fallimento MailerLite
+          console.warn(`Fallimento aggiunta ${email} al gruppo MailerLite per lingua ${lang}, ma si procede comunque con il redirect.`);
+      }
+    } catch (mailerliteError) {
+      console.error(`Errore imprevisto durante chiamata ad addSubscriberToMailerLite per ${email}:`, mailerliteError);
+      // Anche qui, non bloccare il redirect
+    }
+
     // Recupera URL Google Drive da env
     const googleDriveUrl = process.env.KPI_GOOGLE_DRIVE_URL;
     if (!googleDriveUrl) {
@@ -177,18 +190,6 @@ exports.handler = async (event, context) => {
         body: JSON.stringify({ success: false, message: message })
       };
     }
-
-    // TODO: Fase 3 - Attivazione Sequenza Email
-    // Qui aggiungeremo la logica per aggiungere l'utente a un gruppo MailerLite 
-    // specifico per la sequenza KPI o chiamare un'altra funzione Netlify.
-    console.log(`SEQUENZA KPI: Attivare per ${email} in lingua ${lang}`);
-    // Esempio placeholder aggiunta a gruppo MailerLite (richiede API Key e logica):
-    // try {
-    //   await addUserToMailerliteGroup(email, MAILERLITE_KPI_SEQUENCE_GROUP_ID);
-    // } catch (mailerliteError) {
-    //   console.error('Errore aggiunta utente a gruppo sequenza KPI:', mailerliteError);
-    //   // Decidere se bloccare il redirect o solo loggare l'errore
-    // }
 
     // Reindirizza al file Google Drive
     console.log(`Conferma KPI riuscita per ${email}. Reindirizzamento a: ${googleDriveUrl}`);
