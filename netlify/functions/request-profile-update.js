@@ -1,8 +1,12 @@
 const axios = require('axios');
 const crypto = require('crypto');
 
+// Log per verificare che il modulo sia caricato
+console.log('Modulo request-profile-update caricato');
+
 // Funzione per generare un token sicuro
 function generateToken(email, data) {
+  console.log('Generazione token per:', email);
   // Crea un token con scadenza di 24 ore
   const timestamp = Date.now() + 24 * 60 * 60 * 1000; // 24 ore di validità
   const dataString = JSON.stringify({...data, timestamp});
@@ -19,11 +23,34 @@ function generateToken(email, data) {
 }
 
 exports.handler = async (event, context) => {
+  console.log('Funzione request-profile-update invocata');
+  console.log('Metodo HTTP:', event.httpMethod);
+  console.log('Headers:', JSON.stringify(event.headers));
+  console.log('Path:', event.path);
+  
+  // Gestione richieste OPTIONS per CORS preflight
+  if (event.httpMethod === 'OPTIONS') {
+    console.log('Richiesta OPTIONS ricevuta (CORS preflight)');
+    return {
+      statusCode: 204,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS'
+      },
+      body: ''
+    };
+  }
+
   // Verifica che il metodo HTTP sia POST
   if (event.httpMethod !== 'POST') {
+    console.log('Errore: metodo non consentito', event.httpMethod);
     return {
       statusCode: 405,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
       body: JSON.stringify({ success: false, message: 'Metodo non consentito' })
     };
   }
@@ -31,21 +58,34 @@ exports.handler = async (event, context) => {
   // Estrai i dati dal body della richiesta
   let data;
   try {
+    console.log('Body grezzo:', event.body);
     data = JSON.parse(event.body);
+    console.log('Dati parsed:', JSON.stringify(data));
   } catch (error) {
+    console.log('Errore parsing JSON:', error.message);
     return {
       statusCode: 400,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
       body: JSON.stringify({ success: false, message: 'Formato dei dati non valido' })
     };
   }
 
   // Verifica che l'email sia stata fornita
   const { email, name, last_name, language } = data;
+  console.log('Email ricevuta:', email);
+  console.log('Lingua:', language);
+  
   if (!email) {
+    console.log('Errore: email mancante');
     return {
       statusCode: 400,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
       body: JSON.stringify({ success: false, message: 'Email non fornita' })
     };
   }
@@ -54,19 +94,28 @@ exports.handler = async (event, context) => {
     // Ottieni la chiave API di MailerLite dall'ambiente
     const apiKey = process.env.MAILERLITE_API_KEY;
     if (!apiKey) {
+      console.log('Errore: MAILERLITE_API_KEY non configurata');
       throw new Error('MAILERLITE_API_KEY non configurata');
     }
+    console.log('API Key presente (non mostrata per sicurezza)');
 
     // Verifica se l'iscritto esiste prima di procedere
     try {
+      console.log('Verifica esistenza email:', email);
+      const searchUrl = `https://connect.mailerlite.com/api/subscribers/${encodeURIComponent(email)}`;
+      console.log('URL ricerca:', searchUrl);
+      
       const searchResponse = await axios({
         method: 'GET',
-        url: `https://connect.mailerlite.com/api/subscribers/${encodeURIComponent(email)}`,
+        url: searchUrl,
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${apiKey}`
         }
       });
+      
+      console.log('Risposta ricerca:', searchResponse.status);
+      console.log('Subscriber trovato:', searchResponse.data?.data?.email);
       
       // L'iscritto esiste, genera un token per l'aggiornamento
       const updateData = { email, name, last_name, language };
@@ -74,8 +123,10 @@ exports.handler = async (event, context) => {
       
       // Costruisci l'URL di conferma
       const baseUrl = process.env.BASE_URL || 'https://matteocervelli.com';
+      console.log('BASE_URL:', baseUrl);
       const lang = language === 'en' ? 'en' : 'it';
       const confirmUrl = `${baseUrl}/${lang}/newsletter/update-confirm/?token=${encodeURIComponent(token)}`;
+      console.log('URL conferma creato:', confirmUrl);
       
       // Prepara i contenuti dell'email in base alla lingua
       const emailSubjects = {
@@ -189,9 +240,16 @@ exports.handler = async (event, context) => {
         data: emailData
       });
       
+      console.log('Email di conferma inviata con successo');
+      
       return {
         statusCode: 200,
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': 'Content-Type',
+          'Access-Control-Allow-Methods': 'POST, OPTIONS'
+        },
         body: JSON.stringify({ 
           success: true, 
           message: lang === 'it' ? 
@@ -202,11 +260,21 @@ exports.handler = async (event, context) => {
       
     } catch (searchError) {
       // L'iscritto non esiste
+      console.log('Errore ricerca iscritto:', searchError.message);
+      console.log('Status ricerca:', searchError.response?.status);
+      console.log('Dati risposta:', JSON.stringify(searchError.response?.data || {}));
+      
       if (searchError.response && searchError.response.status === 404) {
         const lang = language === 'en' ? 'en' : 'it';
+        console.log('Utente non trovato (404)');
         return {
           statusCode: 404,
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS'
+          },
           body: JSON.stringify({ 
             success: false, 
             message: lang === 'it' ? 
@@ -220,6 +288,7 @@ exports.handler = async (event, context) => {
     
   } catch (error) {
     console.error('Errore nella richiesta di aggiornamento:', error.response?.data || error.message);
+    console.log('Stack trace:', error.stack);
     
     let statusCode = 500;
     let errorMessage = 'Si è verificato un errore. Si prega di riprovare più tardi.';
@@ -227,18 +296,26 @@ exports.handler = async (event, context) => {
     // Gestione errori specifici dell'API
     if (error.response) {
       statusCode = error.response.status;
+      console.log('Status errore API:', error.response.status);
       
       if (error.response.data && error.response.data.message) {
         errorMessage = error.response.data.message;
+        console.log('Messaggio errore API:', error.response.data.message);
       }
     } else if (error.message.includes('MAILERLITE_API_KEY')) {
       statusCode = 500;
       errorMessage = 'Errore di configurazione del server. Contattare l\'amministratore.';
+      console.log('Errore configurazione API key');
     }
     
     return {
       statusCode,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS'
+      },
       body: JSON.stringify({ success: false, message: errorMessage })
     };
   }
