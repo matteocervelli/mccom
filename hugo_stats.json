@@ -59,7 +59,8 @@
       "title",
       "tr",
       "u",
-      "ul"
+      "ul",
+      "video"
     ],
     "classes": [
       "active",
@@ -186,6 +187,7 @@
       "kpi-calculator-page",
       "kpi-download-form",
       "kpi-download-form-container",
+      "kpi-video",
       "label",
       "language-switcher",
       "last-updated",
@@ -600,11 +602,8 @@
       "filters-sidebar",
       "fn:1",
       "fn:2",
-      "fn:3",
       "fnref:1",
       "fnref:2",
-      "fnref:3",
-      "footnotes",
       "formazione-e-insegnamento",
       "fractional-executive",
       "free-strategic-consultation",

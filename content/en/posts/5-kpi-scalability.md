@@ -122,7 +122,38 @@ The Gross Margin ((Revenue - Cost of Goods Sold) / Revenue × 100) is the percen
 
 **Why it is crucial**: A low or decreasing gross margin indicates structural problems in your value proposition or in your operational efficiency.
 
-**How to interpret it**: The gross margin should remain stable or improve with growth. If it decreases while you grow, you are sacrificing efficiency for volume. Each sector has its own logic and there is not an[^2] absolute reference value.
+**How to interpret it**: The gross margin should remain stable or improve with growth. If it decreases while you grow, you are sacrificing efficiency for volume. Each sector has its own logic and there is not an absolute reference value. However, here's a comparative effort on the gross margin below which you should not go:
+
+- **Manufacturing**
+  - Mass consumer goods: 20-35%
+  - Industrial products: 25-40%
+  - Electronics: 30-45%
+  - Specialized machinery: 35-50%
+  - Luxury/high-quality products: 45-65%
+- **Contract Work**
+  - Textile/clothing: 15-25%
+  - Mechanical processing: 20-30%
+  - Electronic assembly: 18-28%
+  - Packaging: 15-25%
+  - Food processing: 12-22%
+- **Service Companies**
+  - Strategic/management consulting: 60-75%
+  - IT services and system integration: 40-55%
+  - Professional firms (legal, accounting): 65-80%
+  - Creative/design services: 45-60%
+  - Training and coaching: 50-70%
+- **SaaS (Software as a Service)**
+  - Enterprise SaaS: 75-85%
+  - SaaS for SMEs: 70-80%
+  - SaaS with hardware/implementation: 60-75%
+  - SaaS with high customer support: 65-75%
+  - Freemium SaaS with conversion to paid: 80-90%
+- **Commercial**
+  - Organized large-scale retail: 15-25%
+  - Specialized retail: 30-45%
+  - Pure e-commerce: 30-40%
+  - B2B distributors: 20-30%
+  - Luxury retail: 50-65%
 
 **How to measure it in a simple way**:
 
@@ -243,3 +274,7 @@ And makes the world a more beautiful place.
 See you soon,
 
 Matteo
+
+[^1]: A clarification on the difference between metric, indicator, and KPI that are often used interchangeably: **metric**: data that is measured (e.g. km traveled), **indicator**: representation tool that gives meaning to the metric (e.g. odometer), **KPI**: a set of indicators that evaluates progress towards critical objectives (e.g. arrival time at destination), **objective**: direction to be taken in a precise area (e.g. arriving in Paris), **target**: quantitative value associated with an objective in the metric (e.g. if the metric is hours of travel, arriving in Paris within 10 hours)
+
+[^3]: This parameter is valid in companies that set growth, especially in long periods, as a true strategy and believe in it. Otherwise, it can express a stagnant culture. In general, it depends on how objective we are in defining key talents with respect to the strategic objective.

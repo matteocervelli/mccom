@@ -122,7 +122,38 @@ Il Margine Lordo ((Ricavi - Costo del Venduto) / Ricavi × 100) è la percentual
 
 **Perché è cruciale**: Un margine lordo basso o in diminuzione indica problemi strutturali nella tua proposta di valore o nella tua efficienza operativa.
 
-**Come interpretarlo**: Il margine lordo dovrebbe mantenersi stabile o migliorare con la crescita. Se diminuisce mentre cresci, stai sacrificando l'efficienza per il volume. Ogni settore ha delle sue logiche e non esiste un[^2] valore di riferimento assoluto.
+**Come interpretarlo**: Il margine lordo dovrebbe mantenersi stabile o migliorare con la crescita. Se diminuisce mentre cresci, stai sacrificando l'efficienza per il volume. Ogni settore ha delle sue logiche e non esiste un valore di riferimento assoluto. Tuttavia, ecco uno sforzo comparativo sul margine lordo sotto il quale non dovresti scendere:
+
+- **Manifattura**
+  - Beni di consumo di massa: 20-35%
+  - Prodotti industriali: 25-40%
+  - Elettronica: 30-45%
+  - Macchinari specializzati: 35-50%
+  - Prodotti di lusso/alta qualità: 45-65%
+- **Conto Lavoro**
+  - Tessile/abbigliamento: 15-25%
+  - Lavorazioni meccaniche: 20-30%
+  - Assemblaggio elettronico: 18-28%
+  - Packaging/confezionamento: 15-25%
+  - Lavorazioni alimentari: 12-22%
+- **Aziende di Servizi**
+  - Consulenza strategica/management: 60-75%
+  - Servizi IT e system integration: 40-55%
+  - Studi professionali (legali, contabili): 65-80%
+  - Servizi creativi/design: 45-60%
+  - Formazione e coaching: 50-70%
+- **SaaS (Software as a Service)**
+  - Enterprise SaaS: 75-85%
+  - SaaS per PMI: 70-80%
+  - SaaS con hardware/implementazione: 60-75%
+  - SaaS con elevato supporto clienti: 65-75%
+  - Freemium SaaS con conversione a pagamento: 80-90%
+- **Commerciale**
+  - Grande distribuzione organizzata: 15-25%
+  - Commercio al dettaglio specializzato: 30-45%
+  - E-commerce puro: 30-40%
+  - Distributori B2B: 20-30%
+  - Retail di lusso: 50-65%
 
 **Come misurarlo in modo semplice**:
 
@@ -252,41 +283,6 @@ Foto di copertina di <a href="https://unsplash.com/it/@custodiancontent?utm_cont
 
 ---
 
-## Footnotes
-
 [^1]: Una precisazione sulla differenza tra metrica, indicatore e KPI che spesso sono usati indifferentemente: **metrica**: dato che viene misurato (es. km percorsi), **indicatore**: strumento di rappresentazione che dà senso alla metrica (es. contachilometri), **KPI**: un set di indicatori che valuta il progresso verso obiettivi critici (es. tempo di arrivo a destinazione), **obiettivo**: direzione da intraprendere in un preciso ambito (es. arrivare a Parigi), **target**: valore quantitativo associato a un obiettivo nella metrica (es. se la metrica sono le ore di viaggio, arrivare a Parigi entro 10 ore)
-
-[^2]: Anche se non esiste un valore assoluto, ecco uno sforzo comparativo sul margine lordo sotto il quale non dovresti scendere:
-
-- Manifattura
-  - Beni di consumo di massa: 20-35%
-  - Prodotti industriali: 25-40%
-  - Elettronica: 30-45%
-  - Macchinari specializzati: 35-50%
-  - Prodotti di lusso/alta qualità: 45-65%
-- Conto Lavoro
-  - Tessile/abbigliamento: 15-25%
-  - Lavorazioni meccaniche: 20-30%
-  - Assemblaggio elettronico: 18-28%
-  - Packaging/confezionamento: 15-25%
-  - Lavorazioni alimentari: 12-22%
-- Aziende di Servizi
-  - Consulenza strategica/management: 60-75%
-  - Servizi IT e system integration: 40-55%
-  - Studi professionali (legali, contabili): 65-80%
-  - Servizi creativi/design: 45-60%
-  - Formazione e coaching: 50-70%
-- SaaS (Software as a Service)
-  - Enterprise SaaS: 75-85%
-  - SaaS per PMI: 70-80%
-  - SaaS con hardware/implementazione: 60-75%
-  - SaaS con elevato supporto clienti: 65-75%
-  - Freemium SaaS con conversione a pagamento: 80-90%
-- Commerciale
-  - Grande distribuzione organizzata: 15-25%
-  - Commercio al dettaglio specializzato: 30-45%
-  - E-commerce puro: 30-40%
-  - Distributori B2B: 20-30%
-  - Retail di lusso: 50-65%
 
 [^3]: Questo parametro è valido in aziende che impostano la crescita, soprattutto in periodi lunghi, come strategia vera e ci credono. Altrimenti può esprimere una cultura stagnante. In generale, dipende da quanto siamo oggettivi nel definire i talenti chiave rispetto all'obiettivo strategico.

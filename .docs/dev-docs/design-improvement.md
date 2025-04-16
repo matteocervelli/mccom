@@ -1,4 +1,6 @@
-- [ ] Rivedere i colori del sito
+# Design Improvement
+
+- [ ] Rivedere i colori del sito con Adlimen
 - [ ] Footer che rimane sempre in basso nella vista
-- [ ] Subscribe button in alto
-- [ ] Settings
+- [ ] Settings e tipografia
+- [ ] Check WCAG

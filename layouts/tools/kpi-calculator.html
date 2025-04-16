@@ -26,11 +26,11 @@
                 <p>Ho creato uno strumento semplice ma potente per aiutarti a monitorare i 5 indicatori chiave che *predicono* la tua reale capacità di scalare in modo sostenibile. Smetti di reagire, inizia a prevedere.</p>
             {{ end }}
 
-            {{ with .Params.video_placeholder_text }}
-                <div class="placeholder">{{ . }}</div>
-            {{ else }}
-                <div class="placeholder">[Placeholder: Video Loom Demo (1-2 min)]</div>
-            {{ end }}
+                <video controls width="100%" class="kpi-video" poster="{{ .Params.video_poster | default "" }}">
+                    <source src="https://cdn.adlimen.com/tools/kpi-dashboard/Introduzione%20alla%20Dashboard%20per%20KPI.mp4" type="video/mp4">
+                    Il tuo browser non supporta la riproduzione di video HTML5.
+                </video>
+
 
             <h3>Cosa otterrai monitorando questi KPI:</h3>
             {{ with .Params.benefits }}
