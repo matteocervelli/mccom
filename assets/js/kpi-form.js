@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const statusMessage = document.getElementById('kpi-form-status');
     const language = form.dataset.lang || 'en'; // Leggi la lingua dal data attribute
     const thankYouUrl = language === 'it' ? '/it/tools/kpi-grazie/' : '/en/tools/kpi-thank-you/';
+    const toolId = 'kpi-dashboard'; // ID dello strumento fisso per questo form
 
     // Gestione invio form
     form.addEventListener('submit', async function(event) {
@@ -52,14 +53,15 @@ document.addEventListener('DOMContentLoaded', function() {
         statusMessage.style.display = 'none';
 
         try {
-            // Chiamata alla funzione Netlify
-            const response = await fetch('/.netlify/functions/request-kpi-confirmation', {
+            // Chiamata alla funzione Netlify generica handle-tool-download
+            const response = await fetch('/.netlify/functions/handle-tool-download', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
                     email: email,
+                    toolId: toolId,
                     language: language
                 })
             });

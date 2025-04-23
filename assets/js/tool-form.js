@@ -147,9 +147,8 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
-    // Costruisci l'URL della pagina di ringraziamento e il nome della funzione serverless
+    // Costruisci l'URL della pagina di ringraziamento
     const thankYouUrl = language === 'it' ? `/it/tools/${toolId}-grazie/` : `/en/tools/${toolId}-thank-you/`;
-    const functionName = `request-${toolId}-confirmation`;
 
     // Gestione invio form
     form.addEventListener('submit', async function(event) {
@@ -173,14 +172,15 @@ document.addEventListener('DOMContentLoaded', function() {
         statusMessage.style.display = 'none';
 
         try {
-            // Chiamata alla funzione Netlify generica
-            const response = await fetch(`/.netlify/functions/${functionName}`, {
+            // Chiamata alla funzione Netlify generica handle-tool-download
+            const response = await fetch(`/.netlify/functions/handle-tool-download`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
                     email: email,
+                    toolId: toolId,
                     language: language
                 })
             });
