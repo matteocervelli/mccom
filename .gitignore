@@ -10,8 +10,14 @@
 .netlify/
 
 # OS generated files
+content/it/.DS_Store
+content/.DS_Store
+content/en/.DS_Store
 .DS_Store
 Thumbs.db
 
 # Node dependencies (if used)
 /node_modules/ 
+
+hugo_stats.json
+

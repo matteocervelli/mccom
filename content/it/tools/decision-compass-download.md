@@ -9,11 +9,7 @@ robots: "noindex, nofollow"
 
 ## Porta il tuo Decision Making al livello successivo
 
-Prima di scaricare la tua Bussola Decisionale, scopri come la tua azienda si posiziona su tutti i fattori chiave di scalabilità:
-
-{{< tool-cta tool="scalability-score" style="primary" >}}
-
-## Scegli il tuo formato preferito
+### Scegli il tuo formato preferito
 
 Seleziona il formato che meglio si adatta al tuo modo di lavorare:
 
@@ -50,5 +46,11 @@ Seleziona il formato che meglio si adatta al tuo modo di lavorare:
 ### Inizia subito
 
 Scegli il formato e applica immediatamente il metodo OODA Loop alla tua prossima decisione importante.
+
+## Calcola il tuo Score di Scalabilità
+
+Scopri come la tua azienda si posiziona su tutti i fattori chiave di scalabilità:
+
+{{< tool-cta tool="scalability-score" style="primary" >}}
 
 [Torna alla Homepage]({{< relref "/" >}}) 
