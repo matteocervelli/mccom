@@ -142,8 +142,6 @@ Alla prossima,
 
 Matteo
 
-## Footnotes
-
 [^1]: [Decision making in the age of urgency](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/decision-making-in-the-age-of-urgency), McKinsey, 30 April 2019
 [^2]: Basato sul conteggio: 30% del tempo a fare attività di decision making, di cui il 50% del tempo è inefficace. Su 50 persone (minimo per una media impresa), sono 220 giorni x 8 ore x 50 persone x 30% decision making x 50% buttato = 13.200 ore, valorizzato a 30 €/h = 396.000 €
 [^3]: 80.000 ore nella vita di un lavoratore, il 30% in riunioni di cui il 50% inutile = 13.000 ore
