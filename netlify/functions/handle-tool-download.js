@@ -246,7 +246,9 @@ exports.handler = async (event, context) => {
     );
 
     // Costruisci URL di conferma
-    const baseUrl = process.env.URL || event.headers.host || 'matteocervelli.com';
+    let baseUrl = process.env.URL || event.headers.host || 'matteocervelli.com';
+    // Rimuovi eventuali protocolli dall'URL base
+    baseUrl = baseUrl.replace(/^https?:\/\//, '');
     const confirmationUrl = `https://${baseUrl}/.netlify/functions/confirm-tool-download?token=${encodeURIComponent(token)}&email=${encodeURIComponent(email)}&toolId=${toolId}&language=${language}`;
 
     // Aggiungi subscriber a MailerLite
