@@ -66,7 +66,7 @@ const EMAIL_TEMPLATES = {
     it: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
         <div style="text-align: center; padding: 20px;">
-          <img src="https://www.adlimen.com/images/logo-adlimen.png" alt="Ad Limen Logo" style="max-width: 200px;">
+          <img src="https://cdn.adlimen.com/logos/adlimen-consulting/logo-horizontal.png" alt="Ad Limen Logo" style="max-width: 200px;">
         </div>
         <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
           <h1 style="color: #006d77; margin-bottom: 20px;">Conferma Download Decision Compass</h1>
@@ -87,7 +87,7 @@ const EMAIL_TEMPLATES = {
     en: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
         <div style="text-align: center; padding: 20px;">
-          <img src="https://www.adlimen.com/images/logo-adlimen.png" alt="Ad Limen Logo" style="max-width: 200px;">
+          <img src="https://cdn.adlimen.com/logos/adlimen-consulting/logo-horizontal.png" alt="Ad Limen Logo" style="max-width: 200px;">
         </div>
         <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
           <h1 style="color: #006d77; margin-bottom: 20px;">Confirm Decision Compass Download</h1>
@@ -110,7 +110,7 @@ const EMAIL_TEMPLATES = {
     it: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
         <div style="text-align: center; padding: 20px;">
-          <img src="https://www.adlimen.com/images/logo-adlimen.png" alt="Ad Limen Logo" style="max-width: 200px;">
+          <img src="https://cdn.adlimen.com/logos/adlimen-consulting/logo-horizontal.png" alt="Ad Limen Logo" style="max-width: 200px;">
         </div>
         <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
           <h1 style="color: #006d77; margin-bottom: 20px;">Conferma Download KPI Dashboard</h1>
@@ -131,7 +131,7 @@ const EMAIL_TEMPLATES = {
     en: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
         <div style="text-align: center; padding: 20px;">
-          <img src="https://www.adlimen.com/images/logo-adlimen.png" alt="Ad Limen Logo" style="max-width: 200px;">
+          <img src="https://cdn.adlimen.com/logos/adlimen-consulting/logo-horizontal.png" alt="Ad Limen Logo" style="max-width: 200px;">
         </div>
         <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
           <h1 style="color: #006d77; margin-bottom: 20px;">Confirm KPI Dashboard Download</h1>

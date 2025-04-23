@@ -7,6 +7,12 @@ description: "Download the Decision Compass in your preferred format"
 robots: "noindex, nofollow"
 ---
 
+## Take Your Decision-Making to the Next Level
+
+Before downloading your Decision Compass, discover how your company scores on all key scalability factors:
+
+{{< tool-cta tool="scalability-score" style="primary" >}}
+
 ## Choose Your Preferred Format
 
 Select the format that best suits your workflow:

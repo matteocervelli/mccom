@@ -13,8 +13,8 @@ const TOOLS_CONFIG = {
     en: '/en/tools/decision-compass-download/'
   },
   'kpi-dashboard': {
-    it: '/it/tools/kpi-dashboard-download/',
-    en: '/en/tools/kpi-dashboard-download/'
+    it: 'https://docs.google.com/spreadsheets/d/1Y0GFlGVZnafTWBYsewsLpgG8blEp7fxa_8ruU4dpaBk/edit?usp=sharing',
+    en: 'https://docs.google.com/spreadsheets/d/1Y0GFlGVZnafTWBYsewsLpgG8blEp7fxa_8ruU4dpaBk/edit?usp=sharing'
   }
 };
 
