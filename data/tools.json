@@ -46,5 +46,21 @@
       "url": "https://adlimen.com/en/landing/book-consultancy/?utm_source=kpi_dashboard&utm_medium=thank_you_page&utm_campaign=tool_download&utm_content=calendly_cta",
       "tracking_id": "book-consultancy-en"
     }
+  },
+  "decision-compass": {
+    "it": {
+      "title": "Bussola Decisionale da 10 minuti",
+      "description": "Scopri come prendere decisioni più veloci e migliori con la Bussola Decisionale da 10 minuti.",
+      "button_text": "Scarica Gratuitamente",
+      "url": "/it/tools/bussola-decisionale",
+      "tracking_id": "decision-compass-it"
+    },
+    "en": {
+      "title": "Decision Compass in 10 minutes",
+      "description": "Discover how to make faster and better decisions with the Decision Compass in 10 minutes.",
+      "button_text": "Download for Free",
+      "url": "/en/tools/decision-compass",
+      "tracking_id": "decision-compass-en"
+    }
   }
 } 

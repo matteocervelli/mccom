@@ -1,0 +1,59 @@
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.tool-download-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+}
+
+.tool-download-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.tool-download-content {
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  p {
+    color: #4a5568;
+    margin: 0 0 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+.tool-download-button {
+  display: inline-block;
+  background: #2c7a7b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+  
+  &:hover {
+    background: #285e61;
+  }
+} 

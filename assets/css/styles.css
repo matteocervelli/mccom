@@ -4997,6 +4997,8 @@ tr:nth-child(even) {
 .dashboard-screenshot {
     width: 100%;
     height: auto;
+    max-height: 450px; /* Added max-height */
+    object-fit: cover; /* Added object-fit */
     border-radius: var(--border-radius);
     display: block;
 }
@@ -5253,4 +5255,126 @@ tr:nth-child(even) {
   margin-top: 1rem; /* Aumentato spazio sopra la nota */
   color: var(--color-tx-muted);
   font-size: var(--font-size-sm);
+}
+
+/* Stili duplicati per Tool Landing Form */
+#tool-download-form {
+    /* Stessi stili di .kpi-download-form */
+    margin: 2rem auto;
+    max-width: 600px; /* O la larghezza desiderata */
+}
+
+#tool-download-form .form-row {
+    /* Stessi stili di .kpi-download-form .form-row */
+    display: flex;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+#tool-download-form .newsletter-form__input {
+    /* Stessi stili di .kpi-download-form .newsletter-form__input */
+    flex-grow: 1;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid var(--color-border-visible);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-normal);
+    background-color: var(--color-bg-primary);
+    color: var(--color-tx-normal);
+}
+
+#tool-download-form .newsletter-form__input:focus {
+    /* Stessi stili di .kpi-download-form .newsletter-form__input:focus */
+    outline: none;
+    border-color: var(--color-highlight);
+    box-shadow: 0 0 0 2px rgba(var(--mc-purple-rgb), 0.3);
+}
+
+#tool-download-form .newsletter-form__button {
+    /* Stessi stili di .kpi-download-form .newsletter-form__button */
+    /* Ereditati da .newsletter-form__button, ma puoi aggiungere/sovrascrivere qui */
+    /* Esempio: padding specifico se necessario */
+    padding: 0.8rem 1.5rem; 
+}
+@media (max-width: 768px) {
+    /* Regole KPI esistenti... */
+
+    /* Regole duplicate per Tool Landing Form */
+    #tool-download-form .form-row {
+        /* Stessi stili di .kpi-download-form .form-row (mobile) */
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #tool-download-form .newsletter-form__input,
+    #tool-download-form .newsletter-form__button {
+        /* Stessi stili di .kpi-download-form input/button (mobile) */
+        width: 100%;
+        font-size: var(--font-size-md); /* Leggermente più grande su mobile? */
+    }
+
+    #tool-download-form .newsletter-form__button {
+        /* Stessi stili di .kpi-download-form button (mobile) */
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* Tool Download Grid */
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.tool-download-card {
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tool-download-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--color-control-shadow);
+}
+
+.tool-download-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.tool-download-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tool-download-content h3 {
+  margin: 0 0 0.5rem;
+  font-size: var(--font-size-md);
+  padding-top: 0;
+}
+
+.tool-download-content p {
+  color: var(--color-tx-muted);
+  margin: 0 0 1rem;
+  font-size: var(--font-size-sm);
+}
+
+.tool-download-button {
+  display: inline-block;
+  background: var(--color-highlight);
+  color: var(--mc-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: all 0.2s ease;
+}
+
+.tool-download-button:hover {
+  background: var(--color-highlight-faint);
+  transform: translateY(-1px);
 }

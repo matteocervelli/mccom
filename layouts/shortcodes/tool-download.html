@@ -1,0 +1,31 @@
+{{ $title := .Get "title" }}
+{{ $icon := .Get "icon" }}
+{{ $url := .Get "url" }}
+{{ $tracking := .Get "tracking" }}
+{{ $description := .Get "description" }}
+
+<div class="tool-download-card">
+  <div class="tool-download-icon">
+    {{ if eq $icon "pdf" }}
+    <img src="https://cdn.adlimen.com/ui/icons/icon-pdf.png" alt="{{ $title }} icon">
+    {{ else if eq $icon "notion" }}
+    <img src="https://cdn.adlimen.com/ui/icons/icon-notion.svg" alt="{{ $title }} icon">
+    {{ else if eq $icon "word" }}
+    <img src="https://cdn.adlimen.com/ui/icons/icon-microsoft-word.svg" alt="{{ $title }} icon">
+    {{ else if eq $icon "google-docs" }}
+    <img src="https://cdn.adlimen.com/ui/icons/icon-google-docs.svg" alt="{{ $title }} icon">
+    {{ end }}
+  </div>
+  <div class="tool-download-content">
+    <h3>{{ $title }}</h3>
+    <p>{{ $description }}</p>
+    <a href="{{ $url }}" 
+       class="tool-download-button"
+       data-umami-event="tool-download"
+       data-umami-event-format="{{ $tracking }}"
+       target="_blank"
+       rel="noopener">
+      Download
+    </a>
+  </div>
+</div> 

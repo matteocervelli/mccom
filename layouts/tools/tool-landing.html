@@ -1,0 +1,137 @@
+{{ define "main" }}
+<div class="kpi-calculator-page">
+    <article>
+        <header>
+            <h1>{{ .Params.headline | default .Title }}</h1>
+            {{ with .Params.subheadline }}
+                <p class="subheadline">{{ . }}</p>
+            {{ end }}
+        </header>
+
+        {{/* Attention: Il problema principale */}}
+        <section id="attention">
+            {{ with .Params.attention_content }}
+                <p>{{ . | markdownify }}</p>
+            {{ end }}
+        </section>
+
+        {{/* Interest: Cosa otterranno */}}
+        <section id="interest">
+            <h2>{{ .Params.interest_title }}</h2>
+            {{ with .Params.interest_intro }}
+                <p>{{ . | markdownify }}</p>
+            {{ end }}
+
+            {{ if .Params.video_url }}
+                <video controls width="100%" class="tool-video" poster="{{ .Params.video_poster | default "" }}">
+                    <source src="{{ .Params.video_url }}" type="video/mp4">
+                    {{ if eq .Site.Language.Lang "en" }}
+                        Your browser does not support HTML5 video playback.
+                    {{ else }}
+                        Il tuo browser non supporta la riproduzione di video HTML5.
+                    {{ end }}
+                </video>
+            {{ end }}
+
+            {{ with .Params.benefits }}
+                <h3>{{ if eq $.Site.Language.Lang "en" }}What you'll get:{{ else }}Cosa otterrai:{{ end }}</h3>
+                <ul>
+                    {{ range . }}
+                        <li>{{ . | markdownify }}</li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+        </section>
+
+        {{/* Desire: Screenshot e prova sociale */}}
+        <section id="desire">
+            <h2>{{ .Params.desire_title }}</h2>
+            {{ with .Params.desire_intro }}
+                <p>{{ . | markdownify }}</p>
+            {{ end }}
+
+            {{/* Carosello screenshot */}}
+            {{ if .Params.screenshots }}
+            <div class="screenshot-carousel swiper" style="max-width: 800px; margin: 2rem auto;">
+                <div class="swiper-wrapper">
+                    {{ range .Params.screenshots }}
+                        <div class="swiper-slide">
+                            <img src="{{ . }}" alt="{{ $.Title }} Screenshot" class="dashboard-screenshot">
+                        </div>
+                    {{ end }}
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            {{ end }}
+        </section>
+
+        {{/* Action: Form e CTA finale */}}
+        <section id="action" class="cta-section">
+            <h2>{{ .Params.action_title }}</h2>
+            {{ with .Params.action_intro }}
+                <p>{{ . | markdownify }}</p>
+            {{ end }}
+
+            <div id="tool-form-container" class="tool-download-form-container">
+                <form id="tool-download-form" class="tool-download-form" data-lang="{{ .Site.Language.Lang }}" data-tool="{{ .Params.tool_id }}">
+                  <div class="form-row">
+                    <input type="email" 
+                          name="email"
+                          placeholder="{{ if eq .Site.Language.Lang "en" }}Your email address{{ else }}Il tuo indirizzo email{{ end }}"
+                          class="newsletter-form__input" 
+                          aria-label="{{ if eq .Site.Language.Lang "en" }}Enter your email address{{ else }}Inserisci la tua email{{ end }}"
+                          id="tool-email"
+                          autocomplete="email"
+                          required>
+                    <button id="tool-submit" type="submit"
+                            class="newsletter-form__button" 
+                            aria-label="{{ if eq .Site.Language.Lang "en" }}Get the Tool{{ else }}Ottieni lo Strumento{{ end }}">
+                      {{ with .Params.final_cta }}{{ . }}{{ else }}{{ if eq .Site.Language.Lang "en" }}Get it Now{{ else }}Ottienilo Ora{{ end }}{{ end }}
+                    </button>
+                  </div>
+                  
+                  <div id="tool-form-status" class="form-status" aria-live="polite" style="display: none;"></div>
+                </form>
+                <small style="display: block; text-align: center; margin-top: 0.5rem; color: var(--color-tx-muted);">
+                  {{ if eq .Site.Language.Lang "en" }}We respect your privacy. Unsubscribe at any time.{{ else }}Rispettiamo la tua privacy. Puoi cancellare l'iscrizione in qualsiasi momento.{{ end }}
+                </small>
+            </div>
+        </section>
+    </article>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (document.querySelector('.screenshot-carousel')) {
+        new Swiper('.screenshot-carousel', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1
+                }
+            }
+        });
+    }
+});
+</script>
+
+{{/* Includiamo lo script JS per il form */}}
+{{ $toolFormJS := resources.Get "js/tool-form.js" | js.Build (dict "minify" true) | fingerprint }}
+<script src="{{ $toolFormJS.RelPermalink }}" defer></script>
+{{ end }} 

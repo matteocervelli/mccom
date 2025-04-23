@@ -62,9 +62,6 @@ tags:
   family:
     en: family
     it: famiglia  
-  business:
-    en: business
-    it: business
   transformation:
     en: transformation
     it: trasformazione
@@ -80,3 +77,6 @@ tags:
   scalability-score:
     en: scalability score
     it: punteggio di scalabilità
+  decision-making:
+    en: decision making
+    it: decision making
