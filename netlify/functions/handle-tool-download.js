@@ -64,61 +64,89 @@ async function addSubscriberToMailerLite(email, toolId, language) {
 const EMAIL_TEMPLATES = {
   'decision-compass': {
     it: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h1 style="color: #333;">Conferma Download Decision Compass</h1>
-        <p>Ciao,</p>
-        <p>Grazie per il tuo interesse nel Decision Compass. Per scaricare lo strumento, clicca sul pulsante qui sotto:</p>
-        <div style="text-align: center; margin: 30px 0;">
-          <a href="{{confirmation_url}}" style="background-color: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">Scarica Decision Compass</a>
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <div style="text-align: center; padding: 20px;">
+          <img src="https://www.adlimen.com/images/logo-adlimen.png" alt="Ad Limen Logo" style="max-width: 200px;">
         </div>
-        <p>Se il pulsante non funziona, copia e incolla questo link nel tuo browser:</p>
-        <p>{{confirmation_url}}</p>
-        <p>Il link scadrà tra 30 minuti per motivi di sicurezza.</p>
-        <p>Cordiali saluti,<br>Matteo Cervelli</p>
+        <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
+          <h1 style="color: #006d77; margin-bottom: 20px;">Conferma Download Decision Compass</h1>
+          <p style="color: #333; line-height: 1.6;">Ciao,</p>
+          <p style="color: #333; line-height: 1.6;">Grazie per il tuo interesse nel Decision Compass. Per scaricare lo strumento, clicca sul pulsante qui sotto:</p>
+          <div style="text-align: center; margin: 30px 0;">
+            <a href="{{confirmation_url}}" style="background-color: #006d77; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Scarica Decision Compass</a>
+          </div>
+          <p style="color: #666; font-size: 14px;">Se il pulsante non funziona, copia e incolla questo link nel tuo browser:</p>
+          <p style="color: #006d77; word-break: break-all; font-size: 14px;">{{confirmation_url}}</p>
+          <p style="color: #666; font-size: 14px;">Il link scadrà tra 24 ore per motivi di sicurezza.</p>
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p style="color: #333; margin: 0;">Cordiali saluti,<br>Matteo Cervelli</p>
+          </div>
+        </div>
       </div>
     `,
     en: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h1 style="color: #333;">Confirm Decision Compass Download</h1>
-        <p>Hello,</p>
-        <p>Thank you for your interest in the Decision Compass. To download the tool, click the button below:</p>
-        <div style="text-align: center; margin: 30px 0;">
-          <a href="{{confirmation_url}}" style="background-color: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">Download Decision Compass</a>
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <div style="text-align: center; padding: 20px;">
+          <img src="https://www.adlimen.com/images/logo-adlimen.png" alt="Ad Limen Logo" style="max-width: 200px;">
         </div>
-        <p>If the button doesn't work, copy and paste this link in your browser:</p>
-        <p>{{confirmation_url}}</p>
-        <p>The link will expire in 30 minutes for security reasons.</p>
-        <p>Best regards,<br>Matteo Cervelli</p>
+        <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
+          <h1 style="color: #006d77; margin-bottom: 20px;">Confirm Decision Compass Download</h1>
+          <p style="color: #333; line-height: 1.6;">Hello,</p>
+          <p style="color: #333; line-height: 1.6;">Thank you for your interest in the Decision Compass. To download the tool, click the button below:</p>
+          <div style="text-align: center; margin: 30px 0;">
+            <a href="{{confirmation_url}}" style="background-color: #006d77; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Download Decision Compass</a>
+          </div>
+          <p style="color: #666; font-size: 14px;">If the button doesn't work, copy and paste this link in your browser:</p>
+          <p style="color: #006d77; word-break: break-all; font-size: 14px;">{{confirmation_url}}</p>
+          <p style="color: #666; font-size: 14px;">The link will expire in 24 hours for security reasons.</p>
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p style="color: #333; margin: 0;">Best regards,<br>Matteo Cervelli</p>
+          </div>
+        </div>
       </div>
     `
   },
   'kpi-dashboard': {
     it: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h1 style="color: #333;">Conferma Download KPI Dashboard</h1>
-        <p>Ciao,</p>
-        <p>Grazie per il tuo interesse nella KPI Dashboard. Per scaricare lo strumento, clicca sul pulsante qui sotto:</p>
-        <div style="text-align: center; margin: 30px 0;">
-          <a href="{{confirmation_url}}" style="background-color: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">Scarica KPI Dashboard</a>
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <div style="text-align: center; padding: 20px;">
+          <img src="https://www.adlimen.com/images/logo-adlimen.png" alt="Ad Limen Logo" style="max-width: 200px;">
         </div>
-        <p>Se il pulsante non funziona, copia e incolla questo link nel tuo browser:</p>
-        <p>{{confirmation_url}}</p>
-        <p>Il link scadrà tra 30 minuti per motivi di sicurezza.</p>
-        <p>Cordiali saluti,<br>Matteo Cervelli</p>
+        <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
+          <h1 style="color: #006d77; margin-bottom: 20px;">Conferma Download KPI Dashboard</h1>
+          <p style="color: #333; line-height: 1.6;">Ciao,</p>
+          <p style="color: #333; line-height: 1.6;">Grazie per il tuo interesse nella KPI Dashboard. Per scaricare lo strumento, clicca sul pulsante qui sotto:</p>
+          <div style="text-align: center; margin: 30px 0;">
+            <a href="{{confirmation_url}}" style="background-color: #006d77; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Scarica KPI Dashboard</a>
+          </div>
+          <p style="color: #666; font-size: 14px;">Se il pulsante non funziona, copia e incolla questo link nel tuo browser:</p>
+          <p style="color: #006d77; word-break: break-all; font-size: 14px;">{{confirmation_url}}</p>
+          <p style="color: #666; font-size: 14px;">Il link scadrà tra 24 ore per motivi di sicurezza.</p>
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p style="color: #333; margin: 0;">Cordiali saluti,<br>Matteo Cervelli</p>
+          </div>
+        </div>
       </div>
     `,
     en: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h1 style="color: #333;">Confirm KPI Dashboard Download</h1>
-        <p>Hello,</p>
-        <p>Thank you for your interest in the KPI Dashboard. To download the tool, click the button below:</p>
-        <div style="text-align: center; margin: 30px 0;">
-          <a href="{{confirmation_url}}" style="background-color: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">Download KPI Dashboard</a>
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <div style="text-align: center; padding: 20px;">
+          <img src="https://www.adlimen.com/images/logo-adlimen.png" alt="Ad Limen Logo" style="max-width: 200px;">
         </div>
-        <p>If the button doesn't work, copy and paste this link in your browser:</p>
-        <p>{{confirmation_url}}</p>
-        <p>The link will expire in 30 minutes for security reasons.</p>
-        <p>Best regards,<br>Matteo Cervelli</p>
+        <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
+          <h1 style="color: #006d77; margin-bottom: 20px;">Confirm KPI Dashboard Download</h1>
+          <p style="color: #333; line-height: 1.6;">Hello,</p>
+          <p style="color: #333; line-height: 1.6;">Thank you for your interest in the KPI Dashboard. To download the tool, click the button below:</p>
+          <div style="text-align: center; margin: 30px 0;">
+            <a href="{{confirmation_url}}" style="background-color: #006d77; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Download KPI Dashboard</a>
+          </div>
+          <p style="color: #666; font-size: 14px;">If the button doesn't work, copy and paste this link in your browser:</p>
+          <p style="color: #006d77; word-break: break-all; font-size: 14px;">{{confirmation_url}}</p>
+          <p style="color: #666; font-size: 14px;">The link will expire in 24 hours for security reasons.</p>
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p style="color: #333; margin: 0;">Best regards,<br>Matteo Cervelli</p>
+          </div>
+        </div>
       </div>
     `
   }
@@ -242,7 +270,7 @@ exports.handler = async (event, context) => {
     const token = jwt.sign(
       { email, toolId, language },
       process.env.JWT_CONFIRM_SECRET,
-      { expiresIn: '30m' }
+      { expiresIn: '24h' }
     );
 
     // Costruisci URL di conferma
@@ -269,7 +297,10 @@ exports.handler = async (event, context) => {
 
     // Ottieni il template HTML appropriato
     const emailTemplate = EMAIL_TEMPLATES[toolId][language];
-    const emailHtml = emailTemplate.replace(/{{confirmation_url}}/g, confirmationUrl);
+    const emailHtml = emailTemplate
+      .replace(/{{confirmation_url}}/g, confirmationUrl)
+      .replace(/30 minuti/g, '24 ore')
+      .replace(/30 minutes/g, '24 hours');
 
     // Prepara l'email
     const emailParams = new EmailParams()
