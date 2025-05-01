@@ -7,7 +7,7 @@ slug: "03-decidi-subito-vinci-prima"
 translationKey: "03-decide-now-win-first"
 related_article_slug: ""
 language: "it"
-date: 2025-04-22 # Data articolo originale
+date: 2025-04-24 # Data articolo originale
 tags: ['decision-making']
 categories: ['newsletter']
 ---

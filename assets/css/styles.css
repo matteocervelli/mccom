@@ -1,6 +1,77 @@
 /* Importazione dei font da Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap');
 
+/* Definizione dei font locali */
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/Raleway-Regular.woff2') format('woff2'),
+       url('/fonts/raleway/Raleway-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/Raleway-Medium.woff2') format('woff2'),
+       url('/fonts/raleway/Raleway-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/Raleway-SemiBold.woff2') format('woff2'),
+       url('/fonts/raleway/Raleway-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/Raleway-Bold.woff2') format('woff2'),
+       url('/fonts/raleway/Raleway-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora/Lora-Regular.woff2') format('woff2'),
+       url('/fonts/lora/Lora-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora/Lora-Medium.woff2') format('woff2'),
+       url('/fonts/lora/Lora-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora/Lora-SemiBold.woff2') format('woff2'),
+       url('/fonts/lora/Lora-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora/Lora-Bold.woff2') format('woff2'),
+       url('/fonts/lora/Lora-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 *, *:before, *:after {
   box-sizing:inherit;}
 

@@ -66,8 +66,8 @@ tags:
     en: transformation
     it: trasformazione
   kpi:
-    en: kpi
-    it: kpi
+    en: KPI
+    it: KPI
   tool:
     en: tool
     it: strumento
@@ -80,3 +80,6 @@ tags:
   decision-making:
     en: decision making
     it: decision making
+  innovation:
+    en: innovation
+    it: innovazione

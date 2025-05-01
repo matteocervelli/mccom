@@ -7,7 +7,7 @@ slug: "03-decide-now-win-first"
 translationKey: "03-decide-now-win-first"
 related_article_slug: ""
 language: "en"
-date: 2025-04-22
+date: 2025-04-24
 tags: ['decision-making']
 categories: ['newsletter']
 ---
