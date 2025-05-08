@@ -301,7 +301,13 @@ exports.handler = async (event, context) => {
           it: '/it/tools/kpi-dashboard-download/',
           en: '/en/tools/kpi-dashboard-download/'
         }
-      }
+      },
+      'weekly-dashboard': {
+        redirectUrl: {
+          it: '/it/tools/weekly-dashboard-download/',
+          en: '/en/tools/weekly-dashboard-download/'
+        }
+      } 
     };
 
     const config = toolConfigs[toolId];
