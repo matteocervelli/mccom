@@ -25,4 +25,5 @@ Se hai domande o hai bisogno di assistenza, non esitare a rispondere direttament
 
 {{< tool-cta tool="book-consultancy" style="primary" >}}
 
-[Torna alla Homepage]({{< relref "/" >}}) 
+[Torna alla Homepage]({{< relref "/" >}})
+ 

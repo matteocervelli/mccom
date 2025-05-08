@@ -18,7 +18,7 @@ mailerlite_campaign_id: ""
 
 Se la tua azienda ha smesso di crescere, il problema non è l'intelligenza artificiale o la crisi globale.
 
-Forse il vero problema è che ti stai perdendo i segnali di allarme che ti lampeggiano davanti agli occhi. La storia delle imprese ci racconta che la crisi che abbatte non deriva da concorrenti esterni o da nuove tecnologie. Le imprese cadono quando vengono intrappolate nella protezione del loro stesso successo,.
+Forse il vero problema è che ti stai perdendo i segnali di allarme che ti lampeggiano davanti agli occhi. La storia delle imprese ci racconta che la crisi che abbatte non deriva da concorrenti esterni o da nuove tecnologie. Le imprese cadono quando vengono intrappolate nella protezione del loro stesso successo.
 
 Questa trappola si chiama **Esperienza**
 
@@ -43,7 +43,7 @@ Quando un concorrente ci mangiò il mercato per una tecnologia che il nostro sis
 Allora capii che il problema non era esterno, ma che le nostre stesse, indubbie, competenze si erano trasformate in una trappola.
 
 Purtroppo, molti CEO e dirigenti italiani, proprio come successo a noi, non riescono a vedere questi segnali fino a che non è troppo tardi. Il vento cambia e la vela della concorrenza ormai è troppo distante.
-![La trappola della conoscenza](https://cdn.adlimen.com/branding/visuals/trappola-della-conoscenza.png)
+![La trappola della conoscenza](https://cdn.adlimen.com/branding/visuals/trappola-della-competenza.png)
 
 ## I 5 segnali d'allarme che preannunciano la catastrofe
 
@@ -65,7 +65,7 @@ Io capii di essere in trappola durante una riunione in una stanza zeppa di perso
 4. "Il problema è che non abbiamo un reparto R&D"
 5. "Va bene, è deciso, ora ci impegneremo e faremo così"
 
-Rimasi a osservare i quadrotti di cartongesso alle pareti, mentre le persone con i propri blocchi appunti lasciavano la stanza senza un vero piano.
+Rimasi a osservare i quadrotti di cartongesso sul soffitto, mentre gli altricon i propri blocchi appunti lasciavano la stanza senza un vero piano.
 
 Ma c'è un modo per prendere in mano la situazione. Ecco come, in 3 passi:
 

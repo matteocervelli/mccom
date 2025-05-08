@@ -28,6 +28,12 @@ async function addSubscriberToMailerLite(email, toolId, language) {
         it: '151299805553886624', // Download_Scalability_KPI_Dashboard_IT
         en: '151763289938855658'  // Download_Scalability_KPI_Dashboard_EN
       }
+    },
+    'weekly-dashboard': {
+      groups: {
+        it: '153802741608613667', // Download_Weekly_Control_Panel_IT
+        en: '153802748659238095'  // Download_Weekly_Control_Panel_EN
+      }
     }
   };
 

@@ -62,5 +62,21 @@
       "url": "/en/tools/decision-compass",
       "tracking_id": "decision-compass-en"
     }
+  },
+  "weekly-dashboard": {
+    "it": {
+      "title": "Scarica il Pannello di Controllo Settimanale",
+      "description": "Utilizza questo strumento pratico per implementare immediatamente un sistema di misurazione efficace nella tua azienda e iniziare a monitorare la scalabilità in modo sistematico.",
+      "button_text": "Scarica Gratuitamente",
+      "url": "/it/tools/pannello-controllo-settimanale",
+      "tracking_id": "weekly-dashboard-it"
+    },
+    "en": {
+      "title": "Download the Weekly Control Panel",
+      "description": "Use this practical tool to immediately implement an effective measurement system in your business and start monitoring scalability systematically.",
+      "button_text": "Download for Free",
+      "url": "/en/tools/weekly-dashboard",
+      "tracking_id": "weekly-dashboard-en"
+    }
   }
 } 

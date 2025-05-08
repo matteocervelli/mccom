@@ -15,6 +15,10 @@ const TOOLS_CONFIG = {
   'kpi-dashboard': {
     it: 'https://docs.google.com/spreadsheets/d/1Y0GFlGVZnafTWBYsewsLpgG8blEp7fxa_8ruU4dpaBk/edit?usp=sharing',
     en: 'https://docs.google.com/spreadsheets/d/1Y0GFlGVZnafTWBYsewsLpgG8blEp7fxa_8ruU4dpaBk/edit?usp=sharing'
+  },
+  'weekly-dashboard': {
+    it: 'https://docs.google.com/spreadsheets/d/1tSO1tLpZ8wj5dASkuo04SvGU2X7EFYtYpDwxqG49Fec/edit?usp=sharing',
+    en: 'https://docs.google.com/spreadsheets/d/1tSO1tLpZ8wj5dASkuo04SvGU2X7EFYtYpDwxqG49Fec/edit?usp=sharing'
   }
 };
 
