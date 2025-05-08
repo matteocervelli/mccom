@@ -2,6 +2,7 @@
 title: "Grazie per aver scaricato il Pannello di Controllo Settimanale!"
 date: 2025-05-08
 draft: false
+slug: "weekly-dashboard-grazie"
 layout: "minimal"
 description: "Grazie per il tuo interesse nel Pannello di Controllo Settimanale."
 robots: "noindex, nofollow"

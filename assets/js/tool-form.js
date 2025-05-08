@@ -61,7 +61,7 @@ const TOOL_CONFIGS = {
         en: ['https://matteocervelli.com/en/tools/weekly-dashboard']
       },
       thankYouPage: {
-        it: '/it/tools/weekly-dashboard-thank-you/',
+        it: '/it/tools/weekly-dashboard-grazie/',
         en: '/en/tools/weekly-dashboard-thank-you/'
       }
     }
