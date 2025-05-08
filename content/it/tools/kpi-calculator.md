@@ -9,6 +9,7 @@ date: 2025-04-14 # Data di creazione della pagina
 draft: false # Imposta a false quando è pronta per la pubblicazione
 tags: ['kpi', 'scalability']
 categories: ['tools']
+tool_id: "kpi-dashboard"
 
 # Parametri specifici per il layout AIDA
 headline: "Stai Scalando Davvero?"

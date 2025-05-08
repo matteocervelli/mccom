@@ -14,16 +14,10 @@ const TOOL_CONFIGS = {
       },
       links: {
         it: [
-          'https://example.com/it/ooda-loop-template',
-          'https://example.com/it/meeting-checklist',
-          'https://example.com/it/strategic-framework',
-          'https://example.com/it/decision-log'
+          'https://matteocervelli.com/it/tools/decision-compass'
         ],
         en: [
-          'https://example.com/en/ooda-loop-template',
-          'https://example.com/en/meeting-checklist',
-          'https://example.com/en/strategic-framework',
-          'https://example.com/en/decision-log'
+          'https://matteocervelli.com/en/tools/decision-compass'
         ]
       },
       thankYouPage: {
@@ -43,16 +37,36 @@ const TOOL_CONFIGS = {
         en: 'Your KPI Dashboard is Ready!'
       },
       links: {
-        it: ['https://example.com/it/kpi-dashboard'],
-        en: ['https://example.com/en/kpi-dashboard']
+        it: ['https://matteocervelli.com/it/tools/kpi-dashboard'],
+        en: ['https://matteocervelli.com/en/tools/kpi-dashboard']
       },
       thankYouPage: {
         it: '/it/tools/kpi-dashboard-grazie/',
         en: '/en/tools/kpi-dashboard-thank-you/'
       }
     }
+  },
+  'weekly-dashboard': {
+    mailerLiteGroups: {
+      it: '84827395827399',
+      en: '84827395827400'
+    },
+    emailTemplate: {
+      subject: {
+        it: 'Il tuo Pannello di Controllo Settimanale è pronto!',
+        en: 'Your Weekly Control Panel is Ready!'
+      },
+      links: {
+        it: ['https://matteocervelli.com/it/tools/weekly-dashboard'],
+        en: ['https://matteocervelli.com/en/tools/weekly-dashboard']
+      },
+      thankYouPage: {
+        it: '/it/tools/weekly-dashboard-thank-you/',
+        en: '/en/tools/weekly-dashboard-thank-you/'
+      }
+    }
   }
-};
+}
 
 // Funzione per mostrare messaggi di stato
 function showToolStatus(statusElement, message, type) {

@@ -9,6 +9,7 @@ date: 2025-05-08
 draft: false
 tags: ['kpi', 'scalability']
 categories: ['tools']
+tool_id: "weekly-dashboard"
 
 # Parametri specifici per il layout tool-landing
 headline: "Recupera 45 giorni di ritardo decisionale con il Pannello di Controllo Settimanale"

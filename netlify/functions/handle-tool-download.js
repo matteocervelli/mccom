@@ -155,7 +155,51 @@ const EMAIL_TEMPLATES = {
         </div>
       </div>
     `
-  }
+  },
+  'weekly-dashboard': {
+    it: `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <div style="text-align: center; padding: 20px;">
+          <img src="https://cdn.adlimen.com/logos/adlimen-consulting/logo-horizontal.png" alt="Ad Limen Logo" style="max-width: 200px;">
+        </div>
+        <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
+          <h1 style="color: #006d77; margin-bottom: 20px;">Conferma Download KPI Dashboard</h1>
+          <p style="color: #333; line-height: 1.6;">Ciao,</p>
+          <p style="color: #333; line-height: 1.6;">Grazie per il tuo interesse nel Pannello di Controllo Settimanale. Per scaricare lo strumento, clicca sul pulsante qui sotto:</p>
+          <div style="text-align: center; margin: 30px 0;">
+            <a href="{{confirmation_url}}" style="background-color: #006d77; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Scarica Pannello di Controllo Settimanale</a>
+          </div>
+          <p style="color: #666; font-size: 14px;">Se il pulsante non funziona, copia e incolla questo link nel tuo browser:</p>
+          <p style="color: #006d77; word-break: break-all; font-size: 14px;">{{confirmation_url}}</p>
+          <p style="color: #666; font-size: 14px;">Il link scadrà tra 24 ore per motivi di sicurezza.</p>
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p style="color: #333; margin: 0;">Cordiali saluti,<br>Matteo Cervelli</p>
+          </div>
+        </div>
+      </div>
+    `,
+    en: `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <div style="text-align: center; padding: 20px;">
+          <img src="https://cdn.adlimen.com/logos/adlimen-consulting/logo-horizontal.png" alt="Ad Limen Logo" style="max-width: 200px;">
+        </div>
+        <div style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; margin: 20px;">
+          <h1 style="color: #006d77; margin-bottom: 20px;">Confirm Weekly Control Panel Download</h1>
+          <p style="color: #333; line-height: 1.6;">Hello,</p>
+          <p style="color: #333; line-height: 1.6;">Thank you for your interest in the Weekly Control Panel. To download the tool, click the button below:</p>
+          <div style="text-align: center; margin: 30px 0;">
+            <a href="{{confirmation_url}}" style="background-color: #006d77; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Download Weekly Control Panel</a>
+          </div>
+          <p style="color: #666; font-size: 14px;">If the button doesn't work, copy and paste this link in your browser:</p>
+          <p style="color: #006d77; word-break: break-all; font-size: 14px;">{{confirmation_url}}</p>
+          <p style="color: #666; font-size: 14px;">The link will expire in 24 hours for security reasons.</p>
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p style="color: #333; margin: 0;">Best regards,<br>Matteo Cervelli</p>
+          </div>
+        </div>
+      </div>
+    `
+  },
 };
 
 exports.handler = async (event, context) => {

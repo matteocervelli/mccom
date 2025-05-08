@@ -3,7 +3,7 @@ title: "Grazie per aver scaricato la Bussola Decisionale!"
 date: 2024-04-12
 draft: false
 layout: "minimal"
-description: "Grazie per il tuo interesse nella Bussola Decisionale."
+description: "Grazie per il tuo interesse  nella Bussola Decisionale."
 robots: "noindex, nofollow"
 ---
 
@@ -26,4 +26,3 @@ Se hai domande o hai bisogno di assistenza, non esitare a rispondere direttament
 {{< tool-cta tool="book-consultancy" style="primary" >}}
 
 [Torna alla Homepage]({{< relref "/" >}})
- 
